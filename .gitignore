@@ -1,0 +1,18 @@
+# files ############################
+.env
+*.pid
+*.seed
+*.pid.lock
+
+# specific folders #################
+/log/
+## .vscode/
+
+# folders ##########################
+.idea/
+node_modules/
+build/
+tmp/
+temp/
+dist/
+
