@@ -1,5 +1,5 @@
 /*============ hosting_menu css =============*/
-// # f8636b -> #33b987
+// # f8636b -> #5fb48b
 // # f6626a -> #33b986
 .hosting_menu{
     &.menu_four{
@@ -9,8 +9,8 @@
             color: #fff;
             line-height: 42px;
             &:hover{
-                background: #33b987;
-                border-color: #33b987;
+                background: #5fb48b;
+                border-color: #5fb48b;
             }
         }
         .w_menu >.nav-item{
@@ -21,19 +21,19 @@
             }
             &:hover,&.active{
                 >.nav-link{
-                    color: #33b987;
+                    color: #5fb48b;
                 }
             }
             &.submenu .dropdown-menu .nav-item{
                 &:hover,&:focus,&.active{
                     > .nav-link{
-                        color: #33b987;
+                        color: #5fb48b;
                     }
                 }
             }
         }
         .menu > .nav-item.submenu.mega_menu.mega_menu_two .mega_menu_inner .dropdown-menu .nav-item .item .text:hover{
-            color: #33b987;
+            color: #5fb48b;
         }
     }
 }
@@ -41,12 +41,12 @@
     .hosting_menu{
         &.menu_four{
             .btn_get{
-                background: #33b987;
-                border-color: #33b987;
+                background: #5fb48b;
+                border-color: #5fb48b;
                 color: #fff;
                 &:hover{
-                    background: #33b987;
-                    border-color: #33b987;
+                    background: #5fb48b;
+                    border-color: #5fb48b;
                 }
             }
         }
@@ -88,7 +88,7 @@
 
 /*================= hosting_banner_area css ==============*/
 .hosting_banner_area{
-    background: #020230;
+    background: #282d3a;
     min-height: 650px;
     height: 100vh;
     display: flex;
@@ -154,7 +154,7 @@
     }
 }
 .hosting_btn{
-    background: #33b987;
+    background: #5fb48b;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -202,7 +202,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
-    border-left: 8px solid #33b987;
+    border-left: 8px solid #5fb48b;
     input{
         width: 64%;
         border: 0px;
@@ -329,7 +329,7 @@
         font-weight: 400;
     }
     &:hover{
-        border-color: #33b987;
+        border-color: #5fb48b;
         background: #fff;
         box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1),0px -6px 0px 0px rgba(248, 99, 107, 0.004);
     }
@@ -367,7 +367,7 @@
 }
 a .h_head{
     &:hover{
-        color: #33b987;
+        color: #5fb48b;
     }
 }
 
@@ -445,7 +445,7 @@ a .h_head{
             color: #2c2c51;
             transition: color 0.2s linear;
             &:hover{
-                color: #33b987;
+                color: #5fb48b;
             }
         }
         .post_time{
@@ -456,7 +456,7 @@ a .h_head{
             margin-bottom: 10px;
             display: inline-block;
             i{
-                color: #33b987;
+                color: #5fb48b;
                 margin-right: 5px;
             }
         }
@@ -475,14 +475,14 @@ a .h_head{
                 &:before{
                     content: "";
                     height: 1px;
-                    background: #33b987;
+                    background: #5fb48b;
                     position: absolute;
                     bottom: 0px;
                     width: 0;
                     transition: width 0.2s linear;
                 }
                 &:hover{
-                    color: #33b987;
+                    color: #5fb48b;
                     &:before{
                         width: 100%;
                     }
@@ -503,7 +503,7 @@ a .h_head{
                 font-size: 14px;
                 line-height: 16px;
                 i{
-                    color: #33b987; 
+                    color: #5fb48b; 
                     padding-right: 3px;
                 }
             }
@@ -556,7 +556,7 @@ a .h_head{
 /*========== h_blog_area css ========*/
 
 .h_action_promo_area{
-    background: #33b987;
+    background: #5fb48b;
     position: relative;
     padding: 130px 0px;
     z-index: 1;
@@ -574,7 +574,7 @@ a .h_head{
     }
     .hosting_btn{
         background: #fff;
-        color: #33b987;
+        color: #5fb48b;
         box-shadow: 0px 20px 30px 0px rgba(57, 35, 125, 0.1);
         border-radius: 2px;
         padding: 16px 34px;
@@ -630,7 +630,7 @@ a .h_head{
                 line-height: 25px;
                 color: #fff;
                 border-radius: 45px;
-                background: #33b987;
+                background: #5fb48b;
                 padding: 0px 12px;
                 text-transform: uppercase;
                 position: absolute;
@@ -643,7 +643,7 @@ a .h_head{
                     height: 0;
                     border-style: solid;
                     border-width: 6px 5px 0 5px;
-                    border-color: #33b987 transparent transparent transparent;
+                    border-color: #5fb48b transparent transparent transparent;
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%);
@@ -654,7 +654,7 @@ a .h_head{
                 width:8px;
                 height: 8px;
                 border-radius: 50%;
-                background:#33b987;
+                background:#5fb48b;
                 position: relative;
                 &:before,&:after{
                     content: "";
@@ -662,7 +662,7 @@ a .h_head{
                     height: 100%;
                     position: absolute;
                     border-radius: 50%;
-                    background:#33b987;
+                    background:#5fb48b;
                 }
                 &:before{
                     transform: scale(2.6);
@@ -742,9 +742,9 @@ a .h_head{
                 color: #7b7b93;
                 border: 1px solid #2c3445;
                 &:hover{
-                    background: #33b987;
+                    background: #5fb48b;
                     color: #fff;
-                    border-color: #33b987;
+                    border-color: #5fb48b;
                 }
             }
         }
@@ -758,10 +758,10 @@ a .h_head{
             margin-bottom: 10px;
             a{
                 &:before{
-                    background: #33b987;
+                    background: #5fb48b;
                 }
                 &:hover{
-                    color: #33b987;
+                    color: #5fb48b;
                 }
             }
         } 
@@ -1194,14 +1194,14 @@ a .h_head{
                 border: 1px solid #f8c0c3;
                 font-size: 14px;
                 font-weight: 500;
-                color: #33b987;
+                color: #5fb48b;
                 border-radius: 4px;
                 padding: 11px 20px;
                 transition: all 0.3s linear;
                 display: inline-block;
                 &:hover{
-                    background: #33b987;
-                    border-color: #33b987;
+                    background: #5fb48b;
+                    border-color: #5fb48b;
                     color: #fff;
                 }
             }
