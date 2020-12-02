@@ -1604,7 +1604,7 @@
         top: 0;
     }
     .menu_scroll.menu_poss .w_menu.search_cart a.nav-link{
-        color: #051441;
+        color: #282d3a;
     }
     .menu_scroll .menu > .nav-item:nth-last-child(-n+2).submenu .dropdown-menu{
         left: 0;
@@ -2138,7 +2138,7 @@
         padding: 15px 0px;
     }
     .w_menu .nav-item .nav-link{
-        color: #051441;
+        color: #282d3a;
     }
     .w_menu .nav-item:hover .nav-link, .w_menu .nav-item.active .nav-link{
         color: #00aff0;
@@ -2147,7 +2147,7 @@
         padding-top: 140px;
     }
     .menu_four .menu > .nav-item .nav-link,.menu_five .menu > .nav-item .nav-link,.menu_six .menu > .nav-item .nav-link,.menu_seven .menu .nav-item .nav-link{
-        color: #051441;
+        color: #282d3a;
     }
     .menu_five .menu > .nav-item:hover .nav-link,.menu_five .menu > .nav-item.active .nav-link{
         color: #3d64f4;
@@ -2697,7 +2697,7 @@
         color: #5e53fb;
     }
     .navbar_fixed .menu_pos .container .menu_toggle .hamburger span,.navbar_fixed .menu_pos .container .menu_toggle .hamburger-cross span{
-        background: #051441;
+        background: #282d3a;
     }
     .ticket_item{
         width: calc(94% / 3);
@@ -5736,7 +5736,7 @@
         color: #677294;
     }
     .testimonial_slider_four .item h5,.testimonial_slider_four .item h6{
-        color: #051441;
+        color: #282d3a;
     }
     .stratup_testimonial_info:before{
         display: none;
