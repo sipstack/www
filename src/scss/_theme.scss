@@ -4,5 +4,9 @@
     
 }
 .ss-green {
-    color: #5fb48b;
+
+    color: #5fb48b !important;
+    &-background {
+        background-color: #5fb48b !important
+    }
 }
