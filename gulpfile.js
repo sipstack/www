@@ -27,8 +27,8 @@ function html(cb) {
     //   templates: true
     //  }))
 	.pipe(urlPrefixer.html({
-    	tags: ['img'],
-		attrs: ['src','srcset'],
+    	tags: ['img','svg'],
+		attrs: ['src','srcset','data'],
      	prefix: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/'
     }))
 		.pipe(dest("dist"));

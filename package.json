@@ -17,8 +17,10 @@
   ],
   "author": "Jonathan Geller",
   "license": "UNLICENSED",
+  "npm.exclude": "**/@(vendor|node_modules|bower_components|dist|static)/**",
   "dependencies": {
-    "@icon/linea-basic": "^1.0.0-alpha.4"
+    "@icon/linea-basic": "^1.0.0-alpha.4",
+    "vivus": "^0.4.5"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
