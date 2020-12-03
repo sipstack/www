@@ -816,9 +816,9 @@
       &:hover,
       &.active {
         .nav-link {
-          color: #3d57f4;
+          color: #5fb48b;
           &:before {
-            background: #3d57f4;
+            background: #5fb48b;
           }
         }
       }
@@ -829,7 +829,7 @@
             &:focus,
             &.active {
               > .nav-link {
-                color: #3d57f4;
+                color: #5fb48b;
               }
             }
           }
@@ -863,8 +863,8 @@
     line-height: 43px;
     color: #fff;
     &:hover {
-      background: #3d57f4;
-      border-color: #3d57f4;
+      background: #5fb48b;
+      border-color: #5fb48b;
     }
   }
 }
@@ -1512,9 +1512,9 @@
           &:hover,
           &.active {
             > .nav-link {
-              color: #3d57f4;
+              color: #5fb48b;
               &:before {
-                background: #3d57f4;
+                background: #5fb48b;
               }
             }
           }
@@ -1524,14 +1524,14 @@
         .hamburger-cross,
         .hamburger {
           span {
-            background: #3d57f4;
+            background: #5fb48b;
           }
         }
       }
       .btn_get {
-        border-color: #3d57f4;
+        border-color: #5fb48b;
         box-shadow: none;
-        color: #3d57f4;
+        color: #5fb48b;
         &:hover {
           color: #fff;
         }
