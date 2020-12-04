@@ -4,9 +4,121 @@
     
 }
 .ss-green {
-
     color: #5fb48b !important;
     &-background {
         background-color: #5fb48b !important
     }
+}
+
+.landing-img {
+    max-height: 620px;
+}
+
+.h_map li:hover {
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    &-center {
+        @extend .flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// Pricing
+.plans-container {
+    width: 90vw;
+}
+
+// Logo Animation
+.la {
+	&-container {
+		position: relative;
+		width: 93.75px;
+		height: 125px;
+		transition: transform 0.8s;
+        transform: translate(0, -20px);
+        margin: 0 40px 20px 0;
+		&-trans {
+			transform: translate(0, 20px);
+		}
+	}
+	&-block {
+		position: absolute;
+		background: #0fac81;
+		min-height: 10%;
+		border-radius: 6px;
+		transition: transform 1.55s, opacity 0.55s;
+		transform: rotate(-90deg);
+		opacity: 0;
+		&-1 {
+			@extend .la-block;
+			bottom: 0;
+			left: 0;
+			min-width: 50%;
+		}
+		&-2 {
+			@extend .la-block;
+			bottom: 15.5%;
+			right: 1%;
+			min-width: 65%;
+		}
+		&-3 {
+			@extend .la-block;
+			bottom: 22.5%;
+			left: -10.5%;
+			min-width: 90%;
+		}
+		&-4 {
+			@extend .la-block;
+			bottom: 45%;
+			right: 0%;
+			min-width: 70%;
+		}
+		&-5 {
+			@extend .la-block;
+			bottom: 30.5%;
+			left: -32%;
+			min-width: 65%;
+		}
+		&-6 {
+			@extend .la-block;
+			bottom: 52.5%;
+			right: 16.5%;
+			min-width: 98%;
+			border-radius: 15px !important
+		}
+		&-7 {
+			@extend .la-block;
+			top: 15%;
+			right: 32%;
+			min-width: 50%;
+		}
+		&-8 {
+			@extend .la-block;
+			top: 30%;
+			right: 65%;
+			min-width: 65%;
+		}
+		&-trans {
+			&-0 {
+				transform: rotate(0deg);
+				opacity: 1;
+			}
+			&-45 {
+				transform: rotate(45deg);
+				opacity: 1;
+			}
+			&-n45 {
+				transform: rotate(-45deg);
+				opacity: 1;
+			}
+		}
+	}
 }
