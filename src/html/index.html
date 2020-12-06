@@ -32,8 +32,7 @@
                                 Sipstack. The world's first scriptable
                                 enterprise multi-tenant PBX platform that scales as communication needs evolve.</p>
                             <div class="action_btn d-flex align-items-center mt_60">
-                                <a href="" class="hosting_btn btn_hover wow fadeInUp" data-wow-delay="0.7s">Get
-                                    Started</a>
+                                <a href="/signup.html" class="hosting_btn btn_hover wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
                                 <!-- <a href="#" class="agency_banner_btn_two wow fadeInUp" style="color: white; " data-wow-delay="0.9s">Free $100 credit<i class="ti-arrow-right"></i></a></div> -->
                                 <a href="https://www.youtube.com/watch?v=H8Hx_1lLh2E"
                                     class=" video_btn popup-youtube wow fadeInUp" style="color: white; "
@@ -386,7 +385,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 text-right">
-                        <a href="#" class="hosting_btn btn_hover">Sign up</a>
+                        <a href="/signup.html" class="hosting_btn btn_hover">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -410,14 +409,7 @@
             $(this).find(".place_name").toggleClass("d-none");
         });
 
-        $(window).on("scroll", () => {
-            if ($("html, body").scrollTop() > 5160) {
-                $(".la-block-1, .la-block-7").addClass("la-block-trans-0");
-                $(".la-block-2, .la-block-3, .la-block-6, .la-block-8").addClass("la-block-trans-n45");
-                $(".la-block-4, .la-block-5").addClass("la-block-trans-45");
-                $(".la-container").addClass("la-container-trans");
-            }
-        })
+        applyLogoEffect(4160);
     </script>
 </body>
 
