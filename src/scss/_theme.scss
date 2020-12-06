@@ -1,4 +1,8 @@
-// INDEX
+// GENERAL
+a {
+	color: #0fac81;
+}
+
 .ss-logo {
     max-width: 200px;
     
@@ -25,15 +29,57 @@
 .flex {
     display: flex;
     &-center {
-        @extend .flex;
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+	&-top-center {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+    &-column {
+		display: flex;
+		flex-direction: column;
+	}
+    &-space-between {
+		display: flex;
+		justify-content: space-between;
     }
 }
 
 // Pricing
 .plans-container {
     width: 90vw;
+}
+
+// Sign Up
+.btn_three {
+	background: #0fac81 !important;
+	border: none;
+	color: white;
+	&:hover {
+		background: #0e9873 !important;
+	}
+}
+
+// Legal
+#legal {
+	&-text-container {
+		margin: 20px;
+		max-height: 550px;
+		overflow: scroll;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+	&-options-container {
+		@extend .flex-column, .flex-space-between;
+		margin: 20px;
+		font-size: 17px;
+		height: 200px;
+		background: #fafafa;
+		padding: 30px;
+	}
 }
 
 // Logo Animation

@@ -72,6 +72,7 @@ function assets(cb) {
 	// copy .example assets
 	src(["src/assets/css/**"]).pipe(dest("dist/assets/css"));
 	src(["src/assets/vendors/**"]).pipe(dest("dist/assets/vendors"));
+	src(["src/assets/legal/**"]).pipe(dest("dist/assets/legal"));
 	src([".example/vendors/**"]).pipe(dest("dist/assets/vendors"));
 	
 
