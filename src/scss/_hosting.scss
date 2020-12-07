@@ -639,7 +639,7 @@ a .h_head{
                 text-transform: uppercase;
                 position: absolute;
                 top: -100%;
-                width: max-content;
+                white-space: nowrap;
                 box-shadow: 0px 20px 30px 0px rgba(214, 43, 51, 0.2);
                 &:before{
                     content: "";
@@ -714,8 +714,8 @@ a .h_head{
             }
             /*tokyo*/
             &:nth-child(5){
-                top: 164px;
-                left: 93.5%;
+                top: 250px;
+                left: 87%;
             }
             /*dallas*/
             &:nth-child(6){
