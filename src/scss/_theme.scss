@@ -3,6 +3,12 @@ a {
 	color: #0fac81;
 }
 
+// Bootstrap Icons
+.bi {
+	margin-right: 17.5px;
+	color: #0fac81;
+}
+
 .ss-logo {
     max-width: 200px;
     
@@ -50,7 +56,20 @@ a {
 
 // Pricing
 .plans-container {
-    width: 90vw;
+	width: 90vw;
+}
+
+.col-lg-3 {
+	margin: 10px 0 10px 0;
+}
+
+.expansion-price {
+	color: #0fac81;
+	font-size: 26px;
+}
+
+#benefits-table {
+	max-width: 800px;
 }
 
 // Sign Up
@@ -100,7 +119,7 @@ a {
 		background: #0fac81;
 		min-height: 10%;
 		border-radius: 6px;
-		transition: transform 1.55s, opacity 0.55s;
+		transition: transform 1.55s, opacity 0.75s;
 		transform: rotate(-90deg);
 		opacity: 0;
 		&-1 {
