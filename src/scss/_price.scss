@@ -753,7 +753,7 @@
     display: table;
     width: 100%;
     .p_head {
-      width: calc(100% / 4);
+      width: 10%;
       text-align: center;
       color: #fff;
       vertical-align: middle;
@@ -774,13 +774,16 @@
         color: #fff;
       }
       &:nth-child(2) {
-        background: #0ed1b3;
+        background: #a5a5a5;
       }
       &:nth-child(3) {
-        background: #6c84ee;
+        background: #8497b0;
       }
       &:nth-child(4) {
-        background: #ee6cda;
+        background: #333f4f;
+      }
+      &:nth-child(5) {
+        background: #0fac81;
       }
       h5 {
         font-size: 20px;
@@ -790,7 +793,8 @@
     }
   }
   .price_item {
-    width: calc(100% / 4);
+    width: 10%;
+    max-width: 80px;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
@@ -801,7 +805,7 @@
     }
     &:first-child {
       text-align: left;
-      padding-left: 30px;
+      padding-left: 15px;
     }
     h5 {
       margin-bottom: 0;
@@ -832,7 +836,7 @@
       }
     }
     .check {
-      color: #0ed1b3;
+      color: #0fac81;
     }
     .cros {
       color: #afb5c7;
@@ -841,6 +845,15 @@
   .pr_list {
     display: table;
     width: 100%;
+  }
+  .header {
+    @extend .flex-center;
+    background: #4a4a4a;
+    height: 40px;
+    p {
+      color: white;
+      margin-top: 17.5px;
+    }
   }
   .price_btn {
     border-radius: 45px;
@@ -881,17 +894,22 @@
   }
 }
 
+
+
 .price_info_three {
   .price_head {
     .p_head {
       &:nth-child(2) {
-        background: #fba820;
+        background: #a5a5a5;
       }
       &:nth-child(3) {
-        background: #e63779;
+        background: #8497b0;
       }
       &:nth-child(4) {
-        background: #0e79de;
+        background: #333f4f;
+      }
+      &:nth-child(5) {
+        background: #0fac81;
       }
     }
   }
@@ -907,7 +925,7 @@
       }
     }
     .check {
-      color: #0e79de;
+      color: #0fac81;
     }
     .cros {
       color: #fc3f48;
