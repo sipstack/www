@@ -32,8 +32,7 @@
     </div>
     @@include("../.parts/scripts.html")
     <script>
-        applyLogoEffect(775);
-        $.get("/assets/legal/e911.txt", (content) => {
+        $.get("./documents/e911.txt", (content) => {
             $("#legal-text-container").text(content);
         })
     </script>
