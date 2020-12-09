@@ -58,6 +58,17 @@
                                         <input type="email" placeholder="jbourne@treadstone.com">
                                     </div>
                                     <div class="form-group text_box">
+                                        <label class="f_p text_c f_400">Plan</label><br>
+                                        <select class="custom-select" required>
+                                            <option value="" selected disabled hidden>Select an Option</option>
+                                            <option value="free">Free</option>
+                                            <option value="starter">Starter</option>
+                                            <option value="competitor">Competitor</option>
+                                            <option value="provider">Provider</option>
+                                            <option value="undecided">Undecided</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Your Message / Additional Comments</label>
                                         <textarea placeholder="Tell us your story"></textarea>
                                     </div>
@@ -86,6 +97,10 @@
     @@include(".parts/scripts.html")
     <script>
         applyLogoEffect(1300);
+
+        if (window.sessionStorage.getItem("ss-planSelected")) {
+            $("select").val(window.sessionStorage.getItem("ss-planSelected")).change();
+        }
     </script>
 </body>
 
