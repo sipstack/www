@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { src, dest, parallel, series, watch } = require("gulp");
 // Gulp Sass
 const sass = require("gulp-sass");
@@ -8,9 +9,11 @@ sass.compiler = require("node-sass");
 const urlPrefixer = require("gulp-url-prefixer");
 const rename = require("gulp-rename");
 const concat = require("gulp-concat");
+const environments = require("gulp-environments");
+
+var production = environments.production;
 
 function html(cb) {
-	
 	src(["src/html/**/*.html", "src/html/**/*.txt", "!src/html/.parts/**"])
 		.pipe(
 			fileinclude({
@@ -18,19 +21,23 @@ function html(cb) {
 				basepath: "@file",
 			})
 		)
-	// 	.pipe(assetpaths({
-    //   newDomain: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets',
-    //   oldDomain : '',
-    //   docRoot : '',
-    //   filetypes : ['jpg','jpeg','png','ico','gif','css'],
-    //   customAttributes: ['srcset'],
-    //   templates: true
-    //  }))
-	.pipe(urlPrefixer.html({
-    	tags: ['img','svg'],
-		attrs: ['src','srcset','data'],
-     	prefix: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/'
-    }))
+		// 	.pipe(assetpaths({
+		//   newDomain: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets',
+		//   oldDomain : '',
+		//   docRoot : '',
+		//   filetypes : ['jpg','jpeg','png','ico','gif','css'],
+		//   customAttributes: ['srcset'],
+		//   templates: true
+		//  }))
+		.pipe(
+			production(
+				urlPrefixer.html({
+					tags: ["img", "svg"],
+					attrs: ["src", "srcset", "data"],
+					prefix: "https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/",
+				})
+			)
+		)
 		.pipe(dest("dist"));
 
 	cb();
@@ -49,13 +56,16 @@ function scss(cb) {
 		// 	customAttributes: [],
 		// 	templates: true
 		// }))
-		.pipe(urlPrefixer.css({
-			tags: ['background'],
-			attrs: ['url'],
-			prefix: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/'
-		}))
+		.pipe(
+			production(
+				urlPrefixer.css({
+					tags: ["background"],
+					attrs: ["url"],
+					prefix: "https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/",
+				})
+			)
+		)
 		.pipe(dest("dist/assets/css"));
-
 
 	cb();
 }
@@ -67,25 +77,23 @@ function js_scripts(cb) {
 	cb();
 }
 
-
 function assets(cb) {
 	// copy .example assets
 	src(["src/assets/css/**"]).pipe(dest("dist/assets/css"));
 	src(["src/assets/vendors/**"]).pipe(dest("dist/assets/vendors"));
 	src(["src/assets/img/**"]).pipe(dest("dist/assets/img"));
 	src([".example/vendors/**"]).pipe(dest("dist/assets/vendors"));
-	
 
 	// upload assets to S3 ---------------------------
-	// var options = { 
+	// var options = {
 	// headers: {
 	// 	'Cache-Control': 'max-age=315360000, no-transform, public',
 	// 	'x-amz-acl': 'private'
-	// } 
+	// }
 	// };
 	// gulp.src('./dist/**', {read: false})
 	// 	.pipe(s3(AWS, options));
-		
+
 	cb();
 }
 
