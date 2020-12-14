@@ -11,7 +11,7 @@ const concat = require("gulp-concat");
 
 function html(cb) {
 	
-	src(["src/html/**/*.html", "!src/html/.parts/**"])
+	src(["src/html/**/*.html", "src/html/**/*.txt", "!src/html/.parts/**"])
 		.pipe(
 			fileinclude({
 				prefix: "@@",
