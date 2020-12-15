@@ -36,20 +36,3 @@ read -p "Are you pull requesting? (y/n): " PR
     exit 0
 fi
 
-read -p "Ready to deploy to PRODUCTION environment using branch: ${BRANCH}? (y/n): " SE 
-    SE=${SE:-n} 
-    case "$SE" in 
-    y|Y ) echo "yes";;
-    n|N ) echo "no" && exit 0;;
-    * ) echo "Options: y/n" && exit 0;;
-    esac
-
-
-if [[ "${SE}" == "y" ]]; then
-    ## update the ecosystem.config.js file to stage current branch
-    git add . && git commit -m "stage test on branch: ${BRANCH}" && git push
-    node_modules/.bin/gulp publish --env production
-   
-    echo "If Success: check https://www.sipstack.com and logs."
-    exit 0
-fi
