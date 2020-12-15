@@ -6,7 +6,8 @@
 	"scripts": {
 		"example": "cd .example && http-server -c-1 --log-ip",
 		"develop": "gulp build && gulp develop",
-		"test": "cd dist && http-server -c-1 --log-ip"
+		"test": "cd dist && http-server -c-1 --log-ip",
+		"staging": "bin/stage.sh"
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +26,7 @@
 	"devDependencies": {
 		"dotenv": "^8.2.0",
 		"gulp": "^4.0.2",
+		"gulp-awspublish": "^4.1.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-environments": "^1.0.1",
@@ -34,6 +36,7 @@
 		"gulp-s3": "^0.11.0",
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
+		"gulp-ssh": "^0.7.0",
 		"gulp-uglify": "^3.0.2",
 		"gulp-url-prefixer": "^1.0.2",
 		"gulp-watch": "^5.0.1",
