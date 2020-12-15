@@ -24,14 +24,14 @@
                 content: "";
                 width: 0;
                 height: 1px;
-                background: #5e2ced;
+                background: #34B987;
                 position: absolute;
                 left: 0;
                 bottom: 0;
                 transition: width 0.2s linear;
             }
             &.active{
-                color: #5e2ced;
+                color: #34B987;
                 &:before{
                     width: 100%;
                 }
@@ -52,7 +52,7 @@
                 border: 0px;
                 background: transparent;
                 .btn{
-                    color: #5e2ced;
+                    color: #34B987;
                     display: block;
                     width: 100%;
                     text-align: left;
