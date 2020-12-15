@@ -30,7 +30,7 @@ read -p "Are you pull requesting? (y/n): " PR
 #             esac
     
     ## revert the ecosystem.config.js file to stage develop branch by default
-    sed -i "s|origin/${BRANCH}|origin/develop|g" ecosystem.config.js
+    # sed -i "s|origin/${BRANCH}|origin/develop|g" ecosystem.config.js
     git add . && git commit -m "pull request from branch: ${BRANCH}" && git push
     echo "Please pull request from Azure DevOps"
     exit 0
