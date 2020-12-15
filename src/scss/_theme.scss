@@ -72,7 +72,7 @@ a {
 
 //Side-nav
 #side-nav-container {
-    height: 500px;
+    height: 480px;
 
 	padding: 60px 24px 60px 24px;
 	
@@ -92,19 +92,13 @@ a {
 }
 
 #side-nav-description {
-    padding-top: 10px;
-    padding-left: 10px;
-    
-    font-size: 20px;
+	font-size: 20px;
     
     grid-row: 2 / 3;
     grid-column: 3 / 4;
 }
 
 #side-nav-options {
-    padding-top: 10px;
-    padding-left: 10px;
-
     grid-row: 2 / 4;
     grid-column: 2 / 3;
 }
@@ -148,7 +142,6 @@ a {
 
 #side-nav-text {
     padding-top: 10px;
-    padding-left: 10px;
 
     font-size: 24px;
 
