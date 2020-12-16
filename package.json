@@ -6,9 +6,7 @@
 	"scripts": {
 		"example": "cd .example && http-server -c-1 --log-ip",
 		"develop": "gulp build && gulp develop",
-		"test": "cd dist && http-server -c-1 --log-ip",
-		"staging": "bin/stage.sh",
-		"production": "node_modules/.bin/gulp publish --env production"
+		"stage": "cd dist && http-server -c-1 -p 8090 --log-ip"
 	},
 	"repository": {
 		"type": "git",
