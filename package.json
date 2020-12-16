@@ -4,9 +4,9 @@
 	"description": "SIPSTACK WWW Home",
 	"main": "gulpfile.js",
 	"scripts": {
-		"example": "cd .example && http-server -c-1 --log-ip",
-		"develop": "gulp build && gulp develop",
-		"stage": "cd dist && http-server -c-1 -p 8090 --log-ip"
+		"http-example": "cd .example && http-server -c-1 --log-ip",
+		"http-dev": "cd dist && http-server -c-1 -p 8090 --log-ip",
+		"gulp-develop": "gulp build && gulp develop"
 	},
 	"repository": {
 		"type": "git",
