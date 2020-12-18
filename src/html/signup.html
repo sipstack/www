@@ -44,22 +44,22 @@
                         <div class="col-lg-7">
                             <div class="login_info">
                                 <h2 class="f_p f_600 f_size_24 t_color3 mb_40">Request an invitation</h2>
-                                <form action="#" class="login-form sign-in-form">
+                                <form method="POST" action="https://dev.api.sipstack.com/v1/-/www/signup" class="login-form sign-in-form">
                                     <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Company Name</label>
-                                        <input type="text" placeholder="SIPSTACK">
+                                        <input type="text" name="company" placeholder="SIPSTACK">
                                     </div>
                                     <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Full Name</label>
-                                        <input type="text" placeholder="Jason Bourne">
+                                        <input type="text" name="fullName" placeholder="Jason Bourne">
                                     </div>
                                     <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Email Address</label>
-                                        <input type="email" placeholder="jbourne@treadstone.com">
+                                        <input type="email" name="email" placeholder="jbourne@treadstone.com">
                                     </div>
                                     <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Plan</label><br>
-                                        <select class="custom-select" required>
+                                        <select class="custom-select" name="plan" required>
                                             <option value="" selected disabled hidden>Select an Option</option>
                                             <option value="free">Free</option>
                                             <option value="starter">Starter</option>
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="form-group text_box">
                                         <label class="f_p text_c f_400">Your Message / Additional Comments</label>
-                                        <textarea placeholder="Tell us your story"></textarea>
+                                        <textarea name="message" placeholder="Tell us your story"></textarea>
                                     </div>
                                     <div class="extra mb_20">
                                         <div class="checkbox remember">
