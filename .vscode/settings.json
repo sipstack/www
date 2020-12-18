@@ -1,2 +1,19 @@
 {
+	"problems.showCurrentInStatus": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"eslint.validate": ["javascript", "javascriptreact", "vue"],
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"todo-tree.highlights.enabled": true,
+	// "terminal.integrated.shell.linux": "/bin/bash" // "remote.WSL.fileWatcher.polling": true
+	"todo-tree.tree.scanMode": "workspace",
+	"todo-tree.tree.labelFormat": "${after}",
+	"todo-tree.tree.showCountsInTree": true,
+	"todo-tree.tree.showScanModeButton": false,
+	"git.enableSmartCommit": true
 }
