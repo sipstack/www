@@ -1,80 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		@@include(".parts/head.html",{title:"SIPSTACK | Contact Us"})
+	</head>
 
-<head>
-    @@include(".parts/head.html",{title:"SIPSTACK | Contact Us"})
-</head>
+	<body>
+		<!-- insert preloader here (optional) -->
+		<div class="body_wrapper">
+			@@include(".parts/header.html")
 
-<body>
-    <!-- insert preloader here (optional) -->
-    <div class="body_wrapper">
-        @@include(".parts/header.html")
+			<section class="breadcrumb_area">
+				<!-- <img class="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt=""> -->
+				<div class="container">
+					<div class="breadcrumb_content text-center">
+						<h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Contact Us</h1>
+						<p class="f_400 w_color f_size_16 l_height26">
+							Why I say old chap that is spiffing off his nut arse pear shaped plastered<br />
+							Jeffrey bodge barney some dodgy.!!
+						</p>
+					</div>
+				</div>
+			</section>
 
-        <section class="breadcrumb_area">
-            <!-- <img class="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt=""> -->
-            <div class="container">
-                <div class="breadcrumb_content text-center">
-                    <h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">Contact Us</h1>
-                    <p class="f_400 w_color f_size_16 l_height26">Why I say old chap that is spiffing off his nut arse pear shaped plastered<br> Jeffrey bodge barney some dodgy.!!</p>
-                </div>
-            </div>
-        </section>
+			<section class="sign_in_area bg_color sec_pad">
+				<div class="container">
+					<div class="sign_info">
+						<div class="full-width flex-center">
+							<div class="login_info">
+								<h2 class="f_p f_600 f_size_24 t_color3">Contact Us</h2>
+								<div class="mb_40"><span>We normally respond within a business day</span></div>
+								<form action="#" class="login-form sign-in-form">
+									<div class="form-group text_box">
+										<label class="f_p text_c f_400">Company Name</label>
+										<input type="text" name="company" placeholder="SIPSTACK" />
+									</div>
+									<div class="form-group text_box">
+										<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Full Name</label>
+										<input type="text" name="fullName" placeholder="Jason Bourne" required />
+									</div>
+									<div class="form-group text_box">
+										<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Email Address</label>
+										<input type="email" name="email" placeholder="jbourne@treadstone.com" required />
+									</div>
+									<div class="form-group text_box">
+										<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Your Message / Additional Comments</label>
+										<textarea placeholder="Tell us your story" name="message" required></textarea>
+									</div>
+									<button type="submit" class="btn_three">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <section class="sign_in_area bg_color sec_pad">
-            <div class="container">
-                <div class="sign_info">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="login_info">
-                                <h2 class="f_p f_600 f_size_24 t_color3 mb_40">Request an invitation</h2>
-                                <form action="#" class="login-form sign-in-form">
-                                    <div class="form-group text_box">
-                                        <label class="f_p text_c f_400">Company Name</label>
-                                        <input type="text" placeholder="SIPSTACK">
-                                    </div>
-                                    <div class="form-group text_box">
-                                        <label class="f_p text_c f_400">Full Name</label>
-                                        <input type="text" placeholder="Jason Bourne">
-                                    </div>
-                                    <div class="form-group text_box">
-                                        <label class="f_p text_c f_400">Email Address</label>
-                                        <input type="email" placeholder="jbourne@treadstone.com">
-                                    </div>
-                                    <div class="form-group text_box">
-                                        <label class="f_p text_c f_400">How did you hear about us?</label><br>
-                                        <select class="custom-select" required id="contact-us-options">
-                                            <option value="" selected disabled hidden>Select an Option</option>
-                                            <option value="google">Google</option>
-                                            <option value="linked-in">LinkedIn</option>
-                                            <option value="social-media">Social Media</option>
-                                            <option value="partner">Partner</option>
-                                            <option value="employee">Employee</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group text_box" id="contact-us-who">
-                                        <label class="f_p text_c f_400">More Info</label>
-                                        <input type="text" placeholder="">
-                                    </div>
-                                    <div class="form-group text_box">
-                                        <label class="f_p text_c f_400">Your Message / Additional Comments</label>
-                                        <textarea placeholder="Tell us your story"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn_three">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<footer class="footer_area footer_dark_one footer_dark_ten">@@include('.parts/footer.html')</footer>
+		</div>
 
-        <footer class="footer_area footer_dark_one footer_dark_ten">
-            @@include('.parts/footer.html')
-        </footer>
-    </div>
-
-    @@include(".parts/scripts.html")
-</body>
-
+		@@include(".parts/scripts.html")
+	</body>
 </html>
