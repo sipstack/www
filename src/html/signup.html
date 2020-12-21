@@ -48,19 +48,19 @@
 									<h2 class="f_p f_600 f_size_24 t_color3 mb_40">Request an invitation</h2>
 									<form class="login-form sign-in-form">
 										<div class="form-group text_box">
-											<label class="f_p text_c f_400">Company Name</label>
+											<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Company Name</label>
 											<input type="text" name="company" placeholder="SIPSTACK" required />
 										</div>
 										<div class="form-group text_box">
-											<label class="f_p text_c f_400">Full Name</label>
+											<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Full Name</label>
 											<input type="text" name="fullName" placeholder="Jason Bourne" required />
 										</div>
 										<div class="form-group text_box">
-											<label class="f_p text_c f_400">Email Address</label>
+											<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Email Address</label>
 											<input type="email" name="email" placeholder="jbourne@treadstone.com" required />
 										</div>
 										<div class="form-group text_box">
-											<label class="f_p text_c f_400">Plan</label><br />
+											<label class="f_p text_c f_400"><span class="red">*&nbsp;</span>Plan</label><br />
 											<select class="custom-select" name="plan" required>
 												<option value="" selected disabled hidden>Select an Option</option>
 												<option value="free">Free</option>
@@ -71,8 +71,24 @@
 											</select>
 										</div>
 										<div class="form-group text_box">
+											<label class="f_p text_c f_400">How did you hear about us?</label><br />
+											<select class="custom-select" name="discover" required>
+												<option value="" selected>Select an Option</option>
+												<option value="google">Google</option>
+												<option value="linkedin">LinkedIn</option>
+												<option value="social">Social Media</option>
+												<option value="partner">Partner</option>
+												<option value="employee">Employee</option>
+												<option value="other">Other</option>
+											</select>
+										</div>
+										<div class="form-group text_box" id="contact-discover-info">
+											<label class="f_p text_c f_400">More Info</label>
+											<input type="text" name="discover-info" placeholder="" />
+										</div>
+										<div class="form-group text_box">
 											<label class="f_p text_c f_400">Your Message / Additional Comments</label>
-											<textarea name="message" placeholder="Tell us your story" required></textarea>
+											<textarea name="message" placeholder="Tell us your story"></textarea>
 										</div>
 										<div class="extra mb_20">
 											<div class="checkbox remember">
@@ -95,23 +111,9 @@
 		@@include(".parts/scripts.html")
 		<script>
 			(function () {
-				$(".login-form").on("submit", function () {
-					$.ajax({
-						type: "POST",
-						url: "https://dev.api.sipstack.com/v1/-/www/signup",
-						data: $(this).serialize(),
-						success: (data) => {
-							window.location.href = `${window.location.origin}`;
-						},
-						error: (XMLHttpRequest) => {
-							console.log(XMLHttpRequest.responseText);
-						}
-					});
-				});
-
 				// Set plan default if coming from pricing page
 				if (window.sessionStorage.getItem("ss-planSelected")) {
-					$("select").val(window.sessionStorage.getItem("ss-planSelected")).change();
+					$("select[name='plan']").val(window.sessionStorage.getItem("ss-planSelected")).change();
 				}
 			})();
 		</script>
