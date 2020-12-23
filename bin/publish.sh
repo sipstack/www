@@ -27,18 +27,18 @@ if [[ "${SE}" == "y" ]]; then
     git commit -a -m "${BRANCH} -> master ($VER})"
     git push origin ${BRANCH}
     git checkout master
-    git merge --no-ff ${BRANCH}
-    git tag -a {$VER}
+    git merge -m "${VER}" --no-ff ${BRANCH} 
+    git tag -a ${VER} -m "${VER}"
     git add .
     git commit -m "${BRANCH} -> master ($VER})"
     git push
-    git push origin --tags
+    git push origin --tags -m "${VER}"
 
     node_modules/.bin/gulp build --env production && node_modules/.bin/gulp publish --env production 
     rsync --recursive --exclude=assets dist/ lamp:/var/www/html/www/
 
     git checkout develop
-    git merge --no-ff ${BRANCH}
+    git merge -m "${VER}" --no-ff ${BRANCH}
     git add .
     git commit -m "${BRANCH} -> master ($VER})"
     git push
