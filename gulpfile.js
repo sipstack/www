@@ -38,7 +38,7 @@ function html(cb) {
 		.pipe(
 			production(
 				urlPrefixer.html({
-					tags: ["img", "svg"],
+					tags: ["img", "svg", "link"],
 					attrs: ["src", "srcset", "data", "href"],
 					prefix: "https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/",
 				})
