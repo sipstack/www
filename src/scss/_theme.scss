@@ -1,0 +1,296 @@
+// Bootstrap Icons
+.bi {
+	margin-right: 17.5px;
+	color: #0fac81;
+}
+
+// GENERAL
+a {
+	color: #0fac81;
+}
+
+.ss-logo {
+	max-width: 200px;
+}
+
+.ss-green {
+	color: #5fb48b !important;
+	&-background {
+		background-color: #5fb48b !important;
+	}
+}
+
+.red {
+	color: red;
+}
+
+.landing-img {
+	max-height: 620px;
+}
+
+.h_map li:hover {
+	cursor: pointer;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+	&-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-top-center {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&-center-left {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&-column {
+		display: flex;
+		flex-direction: column;
+	}
+	&-space-between {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.custom-select {
+	width: 100%;
+	height: 60px;
+	border: none;
+	box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+	padding: 1px 2px 1px 30px;
+	&:invalid {
+		color: #9ca4c0 !important;
+	}
+}
+
+.section-side-padding {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+//Responsive video embeds
+.video-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.video-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+//Side-nav
+.side-nav-btn {
+	white-space: nowrap;
+	background-color: transparent;
+	position: relative;
+
+	padding: 15px 20px 15px 20px;
+
+	border-width: 0px 0px 0px 1px;
+	border-left-color: #5fb48b6b;
+
+	color: #5fb48b6b;
+	font-size: 16px;
+	text-align: left;
+
+	outline: none;
+
+	&:before {
+		position: absolute;
+		top: 0px;
+		left: -1px;
+
+		content: "";
+		display: block;
+		height: 0%;
+		border-left: 1px solid #5fb48b;
+		transition: 0.5s;
+	}
+
+	&:hover {
+		cursor: pointer;
+		&::before {
+			height: 100%;
+		}
+	}
+
+	&.active {
+		color: #5fb48b;
+		border-left-color: #5fb48b;
+	}
+}
+
+#side-nav-text {
+	font-size: calc(12.5px + 0.35vw);
+	color: white;
+	margin-left: 10px;
+}
+
+// Nav Bar
+.header_area.navbar_fixed .menu_four .menu_toggle .hamburger span,
+.header_area.navbar_fixed .menu_four .menu_toggle .hamburger-cross span {
+	background: #5fb48b;
+}
+
+// Pricing
+.plans-container {
+	width: 90vw;
+}
+
+.col-lg-3 {
+	margin: 10px 0 10px 0;
+}
+
+.expansion-price {
+	color: #0fac81;
+	font-size: 26px;
+}
+
+#benefits-table {
+	max-width: 800px;
+}
+
+.rewards-logo {
+	height: 40px;
+	margin: 2px 0 2px 0;
+}
+
+// Sign Up
+.btn_three {
+	background: #0fac81 !important;
+	border: none;
+	color: white;
+	&:hover {
+		background: #0e9873 !important;
+	}
+}
+
+// Legal
+#legal {
+	&-text-container {
+		margin: 20px;
+		max-height: 550px;
+		overflow: scroll;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+	&-options-container {
+		@extend .flex-column, .flex-space-between;
+		margin: 20px;
+		font-size: 17px;
+		height: 200px;
+		background: #fafafa;
+		padding: 30px;
+	}
+}
+
+// Logo Animation
+.la {
+	&-container {
+		position: relative;
+		width: 93.75px;
+		height: 125px;
+		transition: transform 0.8s;
+		transform: translate(0, -20px);
+		margin: 0 40px 20px 0;
+		&-trans {
+			transform: translate(0, 20px);
+		}
+	}
+	&-block {
+		position: absolute;
+		background: #0fac81;
+		min-height: 10%;
+		border-radius: 6px;
+		transition: transform 1.55s, opacity 0.75s;
+		transform: rotate(-90deg);
+		opacity: 0;
+		&-1 {
+			@extend .la-block;
+			bottom: 0;
+			left: 0;
+			min-width: 50%;
+		}
+		&-2 {
+			@extend .la-block;
+			bottom: 15.5%;
+			right: 1%;
+			min-width: 65%;
+		}
+		&-3 {
+			@extend .la-block;
+			bottom: 22.5%;
+			left: -10.5%;
+			min-width: 90%;
+		}
+		&-4 {
+			@extend .la-block;
+			bottom: 45%;
+			right: 0%;
+			min-width: 70%;
+		}
+		&-5 {
+			@extend .la-block;
+			bottom: 30.5%;
+			left: -32%;
+			min-width: 65%;
+		}
+		&-6 {
+			@extend .la-block;
+			bottom: 52.5%;
+			right: 16.5%;
+			min-width: 98%;
+			border-radius: 15px !important;
+		}
+		&-7 {
+			@extend .la-block;
+			top: 15%;
+			right: 32%;
+			min-width: 50%;
+		}
+		&-8 {
+			@extend .la-block;
+			top: 30%;
+			right: 65%;
+			min-width: 65%;
+		}
+		&-trans {
+			&-0 {
+				transform: rotate(0deg);
+				opacity: 1;
+			}
+			&-45 {
+				transform: rotate(45deg);
+				opacity: 1;
+			}
+			&-n45 {
+				transform: rotate(-45deg);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// MOBILE STYLING
+@media only screen and (max-width: 600px) {
+	.price_item {
+		max-width: 800px !important;
+	}
+}
