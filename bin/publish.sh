@@ -11,28 +11,38 @@ echo "##########################################################################
 echo ""
 
 BRANCH=$(git status | head -1 | cut -c 11-)
+RELEASE=$(tail -1 RELEASE)
 
-read -p "Are you pull requesting? (y/n): " PR 
-    PR=${PR:-n} 
-    case "$PR" in 
-    y|Y ) echo "yes";;
-    n|N ) echo "no";;
-    * ) echo "Options: y/n" && exit 0;;
-    esac
-
-# if [[ "${PR}" == "y" ]]; then
-#     read -p "Did you export insomnia? (y/n): " IN 
-#         IN=${IN:-n} 
-#             case "$IN" in 
-#             y|Y ) echo "yes";;
-#             n|N ) echo "Please import insomnia first and re-run." && exit 0;;
-#             * ) echo "Options: y/n" && exit 0;;
-#             esac
-    
-    ## revert the ecosystem.config.js file to stage develop branch by default
-    # sed -i "s|origin/${BRANCH}|origin/develop|g" ecosystem.config.js
-    git add . && git commit -m "pull request from branch: ${BRANCH}" && git push
-    echo "Please pull request from Azure DevOps"
+## check if branch passed requirement (release)
+if [[ "${BRANCH}" != "release-"* ]]; then 
+    echo "Cannot publish from this branch (${BRANCH}).";
     exit 0
 fi
 
+read -p "Specify new version to release (Current: ${RELEASE}): " VER
+read -p "Are you ready to publish ${BRANCH} to master: (y/n)?: " SE
+if [[ "${SE}" == "y" ]]; then
+    echo ${VER} > RELEASE
+    sed -i "s|\"version\": \"${RELEASE}\"|\"version\": \"${VER}\"|g" package.json
+    git commit -a -m "${BRANCH} -> master ($VER})"
+    git push origin ${BRANCH}
+    git checkout master
+    git merge --no-ff ${BRANCH}
+    git tag -a {$VER}
+    git add .
+    git commit -m "${BRANCH} -> master ($VER})"
+    git push
+    git push origin --tags
+
+    node_modules/.bin/gulp build --env production && node_modules/.bin/gulp publish --env production 
+    rsync --recursive --exclude=assets dist/ lamp:/var/www/html/www/
+
+    git checkout develop
+    git merge --no-ff ${BRANCH}
+    git add .
+    git commit -m "${BRANCH} -> master ($VER})"
+    git push
+    git branch -d ${BRANCH}
+    
+    exit 0
+fi
