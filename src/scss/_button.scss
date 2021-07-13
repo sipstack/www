@@ -91,15 +91,15 @@
 .agency_banner_btn{
     font: 500 14px $pop;
     color: #fff;
-    background: #5e2ced;
+    background: #34B987;
     box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
     border-radius: 3px;
     padding: 16px 38px;
-    border:1px solid #5e2ced;
+    border:1px solid #34B987;
     transition: all 0.2s linear;
     cursor: pointer;
     &:hover{
-        color: #5e2ced;
+        color: #34B987;
         box-shadow: none;
         background: transparent;
     }
