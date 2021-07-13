@@ -1,8 +1,8 @@
 (function () {
 	let content = [
-		"We foster the global developer and entrepreneurial communities because they are the source of our ideas and innovation and essential to our sustained growth.",
-		"We make decisions that eliminate complexity and obstacles to our moving fast so we can enable our customers to focus on testing their Ideas, building their businesses and realizing their dreams.",
-		"We create an environment where we are transparent and respectful so we are confident in bringing our best selves on behalf of our customers and each other, every day.",
+		"Our vision is to keep the world communicating safely and sustainably.",
+		"Our mission is to provide the most advanced and flexible cloud communications platform that is secure, scalable and innovative.",
+		"We are commited in being ethical and inclusive in pursuit of greatness.",
 	];
 
 	// Index of current selected option

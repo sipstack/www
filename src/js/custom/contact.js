@@ -1,14 +1,15 @@
 (function () {
-	$(".login-form").on("submit", function () {
+	$(".contact-btn").on("click", function () {
 		$.ajax({
 			type: "POST",
-			url: "https://dev.api.sipstack.com/v1/-/www/signup",
-			data: $(this).serialize(),
+			url: "https://dev.api.sipstack.com/v1/-/www/contact",
+			data: $(".contact-form").serialize(),
 			success: () => {
+				window.sessionStorage.setItem("ss_snackbar", JSON.stringify({ variant: "success", message: "Message recieved. We'll get back to you shortly!" }));
 				window.location.href = `${window.location.origin}`;
 			},
 			error: (XMLHttpRequest) => {
-				console.log(XMLHttpRequest.responseText);
+				window.sessionStorage.setItem("ss_snackbar", JSON.stringify({ variant: "danger", message: "There was a server error. We'll get right on it." }));
 			},
 		});
 	});
