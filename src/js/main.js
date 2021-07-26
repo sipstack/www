@@ -5,18 +5,19 @@
 	  Navbar 
 	-------------------------------------------------------------------------------*/
 
-	function navbarFixed() {
-		if ($(".header_area").length) {
-			$(window).scroll(function () {
-				var scroll = $(window).scrollTop();
-				if (scroll) {
-					$(".header_area").addClass("navbar_fixed");
-				} else {
-					$(".header_area").removeClass("navbar_fixed");
-				}
-			});
-		}
-	}
+	// Commented, to make navbar static
+	// function navbarFixed() {
+	// 	if ($(".header_area").length) {
+	// 		$(window).scroll(function () {
+	// 			var scroll = $(window).scrollTop();
+	// 			if (scroll) {
+	// 				$(".header_area").addClass("navbar_fixed");
+	// 			} else {
+	// 				$(".header_area").removeClass("navbar_fixed");
+	// 			}
+	// 		});
+	// 	}
+	// }
 	navbarFixed();
 
 	function offcanvasActivator() {
