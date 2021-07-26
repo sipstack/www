@@ -93,7 +93,7 @@
 
 /*================= hosting_banner_area css ==============*/
 .hosting_banner_area {
-	background: #282d3a;
+	background: var(--main-background-color);
 	min-height: 650px;
 	height: 100vh;
 	display: flex;
