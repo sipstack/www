@@ -206,8 +206,18 @@
 
 /*============== job_details_area css =============*/
 .job_details_area {
+	background-color: var(--main-background-color);
 }
 .details_content {
+	h3 {
+		color: var(--sipstack-green);
+	}
+	p {
+		color: var(--dynamic-text-color);
+	}
+	li {
+		color: var(--static-text-color);
+	}
 	.f_size_22 {
 		font-size: 22px;
 	}
@@ -252,6 +262,9 @@
 	.info_head {
 		border-bottom: 1px solid #eeebf6;
 		padding-bottom: 18px;
+		h6 {
+			color: var(--dynamic-text-color);
+		}
 		i {
 			font-size: 40px;
 			color: #5fb48b;
@@ -277,12 +290,13 @@
 			font-family: $pop;
 			font-weight: 400;
 			margin-bottom: 5px;
+			color: var(--dynamic-text-color);
 		}
 		p {
 			margin-bottom: 0px;
 			font-size: 14px;
 			font-weight: 300;
-			color: #677294;
+			color: var(--static-text-color);
 		}
 	}
 }
