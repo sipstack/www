@@ -152,3 +152,25 @@ Table of Content:
 /*====================================================*/
 @import "theme";
 /*====================================================*/
+
+// Theme color variables
+:root {
+	--sipstack-green: #34b987;
+	--main-background-color: #ffffff;
+	--primary-heading-color: #383e45;
+	--secondary-heading-color: #3ab889;
+	--static-text-color: #909090;
+	--dynamic-text-color: black;
+	--button-background-color: #3ab889;
+	--button-text-color: #ffffff;
+	--alternate-color: #f6f6f6;
+}
+
+// Theme relevant rules
+.footer_area {
+	background-color: var(--main-background-color);
+}
+
+.dynamic_text {
+	color: var(--dynamic-text-color) !important;
+}
