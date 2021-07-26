@@ -138,13 +138,15 @@ a {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		color: white;
-		background-color: #5fb48b;
+		// color: white;
+		// background-color: #5fb48b;
+		background-color: var(--main-background-color);
+		color: var(--dynamic-text-color);
 		z-index: 2;
 		padding: 20px;
 		text-align: center;
 		a {
-			color: #282e3a;
+			color: var(--sipstack-green);
 		}
 	}
 	&-description {
@@ -155,8 +157,8 @@ a {
 		min-width: 150px;
 		border: none;
 		border-radius: 5px;
-		background-color: white;
-		color: #5fb48b;
+		background-color: var(--sipstack-green);
+		color: var(--main-background-color);
 		padding: 10px;
 		cursor: pointer;
 	}
