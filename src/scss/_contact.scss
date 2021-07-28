@@ -260,8 +260,8 @@
 .sign_in_area {
 }
 .sign_info {
-	border: 20px solid #fff;
-	background: #fbfbfd;
+	border: 20px solid var(--main-background-color);
+	background: var(--main-background-color);
 	padding: 80px 50px;
 	box-shadow: 0px 50px 100px 0px rgba(12, 0, 46, 0.05);
 	.login_info {
