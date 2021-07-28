@@ -18,7 +18,7 @@
 	// 		});
 	// 	}
 	// }
-	navbarFixed();
+	// navbarFixed();
 
 	function offcanvasActivator() {
 		if ($(".bar_menu").length) {
