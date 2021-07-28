@@ -34,16 +34,17 @@
                             <div class="action_btn d-flex align-items-center mt_60">
                                 <a href="/signup.html" class="hosting_btn btn_hover wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
                                 <!-- <a href="#" class="agency_banner_btn_two wow fadeInUp" style="color: white; " data-wow-delay="0.9s">Free $100 credit<i class="ti-arrow-right"></i></a></div> -->
-                                <a href="https://www.youtube.com/watch?v=H8Hx_1lLh2E"
-                                    class=" video_btn popup-youtube wow fadeInUp" style="color: white; "
-                                    data-wow-delay="0.9s">
-                                    <div class="icon"><i class="ti-control-play"></i></div><span>Watch Video</span>
                             </div></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
-                        <img class="/assets/img-fluid wow fadeInRight landing-img" data-wow-delay="0.7s"
-                            src="/assets/img/landing-main.png" alt="">
+                        <!-- <img class="/assets/img-fluid wow fadeInRight landing-img" data-wow-delay="0.7s"
+                            src="/assets/img/landing-main.png" alt=""> -->
+
+                        <iframe class="wow fadeInRight" data-wow-delay="0.7s" height="297" width="528"
+                            src="https://www.youtube.com/embed/H8Hx_1lLh2E?autoplay=1&mute=1&controls=0&rel=0&fs=0" 
+                            style="border:none;">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -62,13 +63,22 @@
                         <div class="hosting_service_item text-center">
                             <div id="svg1" style="height: 60px;"></div>
                             <a href="#">
+                                <h4 class="h_head pt_120">Open Source</h4>
+                            </a>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
+                        <div class="hosting_service_item text-center">
+                            <div id="svg2" style="height: 60px;"></div>
+                            <a href="#">
                                 <h4 class="h_head pt_120">White label</h4>
                             </a>
                             <p>Create your fully branded VoIP service and give your customers the experience they have
                                 come to expect.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
+                    <!-- <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
                         <div class="hosting_service_item text-center">
 
                             <div id="svg2" style="height: 60px;"></div>
@@ -79,18 +89,17 @@
                             <p>SIPSTACK is capable of serving multiple distinct clients with a single instance. Saving
                                 you time and money.</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-4 col-sm-6" onmouseenter="svg3.reset().play(1);">
                         <div class="hosting_service_item text-center">
                             <div id="svg3" style="height: 60px;"></div>
                             <a href="#">
                                 <h4 class="h_head pt_120">Global Regions</h4>
                             </a>
-                            <p>Multi region allows you to operate from datacenters closest to your customer base, for
-                                local access, low latency and certified security.</p>
+                            <p>Multi region allows you to store and backup customers data based on their requirements.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg4.reset().play(1);">
+                    <!-- <div class="col-lg-4 col-sm-6" onmouseenter="svg4.reset().play(1);">
                         <div class="hosting_service_item text-center">
                             <div id="svg4" style="height: 60px;"></div>
                             <a href="#">
@@ -118,7 +127,7 @@
                             <p>Build and adapt with customized scripts and API's to empower your customers to achieve
                                 functionality no other provider can match.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -404,13 +413,17 @@
     @@include(".parts/scripts.html")
     <script>
         //  new Vivus('my-svg', { duration: 60 });
-        var svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
-            svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_arrows/_SVG/arrows_squares.svg' }),
-            svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' }),
-            svg4 = new Vivus('svg4', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock.svg' }),
-            svg5 = new Vivus('svg5', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_cart.svg' }),
-            svg6 = new Vivus('svg6', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_link.svg' });
+        var 
+            svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock_open.svg' }),
+            svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
+            svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' });
 
+            // Deprecated icons
+            // svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_arrows/_SVG/arrows_squares.svg' }),
+            // svg4 = new Vivus('svg4', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock.svg' }),
+            // svg5 = new Vivus('svg5', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_cart.svg' }),
+            // svg6 = new Vivus('svg6', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_link.svg' })
+            
         $(".h_map li").on("mouseenter mouseleave", function() {
             $(this).find(".place_name").toggleClass("d-none");
         });
