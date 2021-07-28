@@ -178,3 +178,70 @@ Table of Content:
 .static_text {
 	color: var(--static-text-color) !important;
 }
+
+.sipstack_green {
+	color: var(--sipstack-green) !important;
+}
+
+#values-container {
+	width: 100%;
+	height: 488px;
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"img driven team"
+		"img brilliant inclusive";
+
+	.value-panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 24px 15px 8px 15px;
+
+		h3,
+		p {
+			margin-bottom: 8px;
+		}
+	}
+
+	#driven {
+		grid-area: driven;
+		background-color: #383e45;
+		h3 {
+			color: white !important;
+		}
+		p {
+			color: var(--alternate-color);
+		}
+	}
+	#team {
+		grid-area: team;
+		background-color: #e9ecef;
+	}
+	#brilliant {
+		grid-area: brilliant;
+		background-color: #e9ecef;
+	}
+	#inclusive {
+		grid-area: inclusive;
+		background-color: #09d198;
+	}
+}
+
+#team-btn {
+	color: var(--sipstack-green);
+	border-color: var(--sipstack-green);
+}
+
+#team-btn:hover {
+	color: #fff;
+	background-color: var(--sipstack-green);
+}
+
+section {
+	background-color: var(--main-background-color);
+	color: var(--dynamic-text-color) !important;
+}
