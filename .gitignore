@@ -3,6 +3,7 @@
 *.pid
 *.seed
 *.pid.lock
+*.DS_Store
 
 # specific folders #################
 /log/
