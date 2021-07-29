@@ -16,19 +16,21 @@ function getStorage(key, type = "session") {
 	return value;
 }
 
+// $('#theme-switcher').is(":checked")
+
 function updateTheme() {
 	let ss_test = getStorage("ss_test", "local");
 
 	if (ss_test.theme == "light") {
-		$(".theme-switcher").find(".bi-sun").css("display", "flex");
-		$(".theme-switcher").find(".bi-sun-fill").css("display", "none");
+		// $("#theme-switcher").prop("checked", false);
+		$("#theme-switcher").attr("checked", false);
 
 		document.body.style.setProperty("--main-background-color", "#ffffff");
 		document.body.style.setProperty("--primary-heading-color", "#383e45");
 		document.body.style.setProperty("--dynamic-text-color", "#4b505e");
 	} else if (ss_test.theme == "dark") {
-		$(".theme-switcher").find(".bi-sun-fill").css("display", "flex");
-		$(".theme-switcher").find(".bi-sun").css("display", "none");
+		// $("#theme-switcher").prop("checked", true);
+		$("#theme-switcher").attr("checked", true);
 
 		document.body.style.setProperty("--main-background-color", "#383e45");
 		document.body.style.setProperty("--primary-heading-color", "#ffffff");
@@ -64,5 +66,5 @@ function toggleTheme() {
 
 	updateTheme();
 
-	$(".theme-switcher").on("click", toggleTheme);
+	$("#theme-switcher").on("click", toggleTheme);
 })();
