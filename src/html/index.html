@@ -3,6 +3,7 @@
 
 <head>
     @@include(".parts/head.html",{title:"SIPSTACK"})
+    <script src="https://kit.fontawesome.com/bb3347cb47.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -59,18 +60,21 @@
                         built to adapt and scale.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg1.reset().play(1);">
+
+                    <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item text-center">
-                            <div id="svg1" style="height: 60px;"></div>
+                            <!-- <div id="svg1" style="height: 60px;"></div> -->
+                            <i class="fab fa-osi fa-7x"></i>
                             <a href="#">
                                 <h4 class="h_head pt_120">Open Source</h4>
                             </a>
                             <p>Lorem ipsum dolor.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item text-center">
-                            <div id="svg2" style="height: 60px;"></div>
+                            <!-- <div id="svg2" style="height: 60px;"></div> -->
+                            <i class="fas fa-tag fa-7x"></i>
                             <a href="#">
                                 <h4 class="h_head pt_120">White label</h4>
                             </a>
@@ -90,9 +94,11 @@
                                 you time and money.</p>
                         </div>
                     </div> -->
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg3.reset().play(1);">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item text-center">
-                            <div id="svg3" style="height: 60px;"></div>
+                            <!-- <div id="svg3" style="height: 60px;"></div> -->
+                            <i class="fas fa-globe-americas fa-7x"></i>
+
                             <a href="#">
                                 <h4 class="h_head pt_120">Global Regions</h4>
                             </a>
@@ -413,10 +419,10 @@
     @@include(".parts/scripts.html")
     <script>
         //  new Vivus('my-svg', { duration: 60 });
-        var 
-            svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock_open.svg' }),
-            svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
-            svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' });
+        // var 
+            // svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock_open.svg' }),
+            // svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
+            // svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' });
 
             // Deprecated icons
             // svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_arrows/_SVG/arrows_squares.svg' }),
