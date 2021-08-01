@@ -308,12 +308,12 @@ input:checked + .slider:before {
 	}
 }
 
-#team-btn {
+.btn-green {
 	color: var(--sipstack-green);
-	border-color: var(--sipstack-green);
+	border-color: var(--sipstack-green) !important;
 }
 
-#team-btn:hover {
+.btn-green:hover {
 	color: #fff;
 	background-color: var(--sipstack-green);
 }
@@ -321,4 +321,8 @@ input:checked + .slider:before {
 section {
 	background-color: var(--main-background-color);
 	color: var(--dynamic-text-color) !important;
+}
+
+html {
+	background-color: var(--main-background-color);
 }
