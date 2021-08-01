@@ -411,7 +411,7 @@ a .h_head {
 
 /*========== h_action_area css ========*/
 .h_action_area {
-	background: #282d3a;
+	background: var(--main-background-color);
 	padding: 80px 0px;
 }
 .h_action_content {
