@@ -33,7 +33,7 @@
 		padding-top: 35px;
 		> .nav-link {
 			font: 500 15px $pop;
-			color: $h_dk;
+			color: var(--dynamic-text-color);
 			padding: 0px;
 			transition: color 0.3s ease 0s;
 			position: relative;
@@ -61,7 +61,7 @@
 				left: -40px;
 				min-width: 200px;
 				padding: 0px;
-				background: #fff;
+				background: var(--main-background-color);
 				box-shadow: -1px 2px 19px 3px rgba(14, 0, 40, 0.05);
 				@media (min-width: 992px) {
 					transform: translateY(20px);
@@ -80,7 +80,7 @@
 						padding: 0px;
 						white-space: nowrap;
 						font: 400 14px/34px $pop;
-						color: $h_dk;
+						color: var(--dynamic-text-color);
 						transition: color 0.2s linear;
 						&:after {
 							display: none;
@@ -773,7 +773,7 @@
 					> .dropdown-menu {
 						> .nav-item {
 							> .nav-link {
-								color: #282d3a;
+								color: var(--dynamic-text-color);
 							}
 						}
 					}
@@ -837,7 +837,7 @@
 					> .dropdown-menu {
 						> .nav-item {
 							> .nav-link {
-								color: #282d3a;
+								color: var(--dynamic-text-color);
 							}
 						}
 					}
@@ -899,7 +899,7 @@
 					> .dropdown-menu {
 						> .nav-item {
 							> .nav-link {
-								color: #282d3a;
+								color: var(--dynamic-text-color);
 							}
 						}
 					}
@@ -953,7 +953,7 @@
 					> .dropdown-menu {
 						> .nav-item {
 							> .nav-link {
-								color: #282d3a;
+								color: var(--dynamic-text-color);
 							}
 						}
 					}
@@ -1373,9 +1373,9 @@
 		.w_menu {
 			.nav-item {
 				.nav-link {
-					color: #282d3a;
+					color: var(--dynamic-text-color);
 					&:before {
-						background: #282d3a;
+						background: var(--dynamic-text-color);
 					}
 				}
 			}
@@ -1429,7 +1429,7 @@
 				.hamburger-cross,
 				.hamburger {
 					span {
-						background: #282d3a;
+						background: var(--dynamic-text-color);
 					}
 				}
 			}
@@ -1470,8 +1470,8 @@
 				}
 			}
 			.event_btn {
-				color: #282d3a;
-				border-color: #282d3a;
+				color: var(--dynamic-text-color);
+				border-color: var(--dynamic-text-color);
 				&:hover {
 					border-color: #fd475d;
 					color: #fff;
@@ -1480,7 +1480,7 @@
 		}
 		.nav_right_btn {
 			.login_btn {
-				color: #282d3a;
+				color: var(--dynamic-text-color);
 			}
 		}
 		.menu_five {
@@ -1506,7 +1506,7 @@
 			.menu {
 				> .nav-item {
 					> .nav-link {
-						color: #282d3a;
+						color: var(--dynamic-text-color);
 					}
 					&:hover,
 					&.active {
@@ -1540,7 +1540,7 @@
 			.menu {
 				> .nav-item {
 					> .nav-link {
-						color: #282d3a;
+						color: var(--dynamic-text-color);
 					}
 					&:hover,
 					&.active {
@@ -1957,7 +1957,7 @@
 	font-size: 25px;
 	display: flex;
 	align-items: center;
-	color: #282d3a;
+	color: var(--dynamic-text-color);
 	margin-left: 25px;
 }
 
@@ -2029,7 +2029,7 @@
 				font-size: 3.5vh;
 				line-height: 4vh;
 				font-weight: 700;
-				color: #282d3a;
+				color: var(--dynamic-text-color);
 				margin-bottom: 1vh;
 			}
 			a {
