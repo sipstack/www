@@ -352,17 +352,22 @@ html {
 
 		.item {
 			display: flex;
-			padding: 10px;
-			width: 100%;
+
+			@media (max-width: 600px) {
+				padding: 10px;
+				width: 100%;
+			}
 		}
 
 		div.icon-container {
 			display: flex;
 			align-items: center;
 			color: var(--sipstack-green);
-			min-width: 5vw !important;
-			padding-right: 15px;
-
+			@media (max-width: 600px) {
+				display: none;
+				min-width: 5vw !important;
+				padding-right: 15px;
+			}
 			.svg-inline--fa {
 				font-size: 40px;
 			}
