@@ -321,6 +321,9 @@ input:checked + .slider:before {
 section {
 	background-color: var(--main-background-color);
 	color: var(--dynamic-text-color) !important;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 html {
@@ -375,4 +378,12 @@ html {
 	p {
 		padding-bottom: 10px;
 	}
+}
+
+#navbarSupportedContent > ul {
+	background-color: var(--main-background-color);
+}
+
+#navbarSupportedContent {
+	background-color: var(--main-background-color);
 }

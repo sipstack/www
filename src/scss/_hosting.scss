@@ -337,7 +337,7 @@
 	}
 	&:hover {
 		border-color: #5fb48b;
-		background: #fff;
+		background: var(--main-background-color);
 		box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
 	}
 }
