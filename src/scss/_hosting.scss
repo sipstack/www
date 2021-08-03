@@ -337,7 +337,7 @@
 	}
 	&:hover {
 		border-color: #5fb48b;
-		background: #fff;
+		background: var(--main-background-color);
 		box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
 	}
 }
@@ -411,7 +411,7 @@ a .h_head {
 
 /*========== h_action_area css ========*/
 .h_action_area {
-	background: #282d3a;
+	background: var(--main-background-color);
 	padding: 80px 0px;
 }
 .h_action_content {
@@ -695,25 +695,25 @@ a .h_head {
 					will-change: transform;
 				}
 			}
-			/*san jose*/
+			/*los angeles*/
 			&:nth-child(1) {
-				top: 220px;
-				left: 100px;
+				top: 265px;
+				left: 115px;
 			}
-			/*toronto*/
+			/*montreal*/
 			&:nth-child(2) {
-				top: 180px;
-				left: 250px;
+				top: 205px;
+				left: 265px;
 			}
 			/*london*/
 			&:nth-child(3) {
 				top: 170px;
 				left: 525px;
 			}
-			/*chennai*/
+			/*new york*/
 			&:nth-child(4) {
-				top: 345px;
-				left: 69%;
+				top: 230px;
+				left: 270px;
 			}
 			/*tokyo*/
 			&:nth-child(5) {
@@ -725,15 +725,15 @@ a .h_head {
 				top: 255px;
 				left: 185px;
 			}
-			/*frankfurt*/
+			/*amsterdarm*/
 			&:nth-child(7) {
 				top: 32%;
 				left: 47.5%;
 			}
-			/*sydney*/
+			/*auckland*/
 			&:nth-child(8) {
 				top: 85%;
-				left: 90%;
+				left: 95%;
 			}
 		}
 	}
