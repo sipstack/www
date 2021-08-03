@@ -25,12 +25,22 @@ function updateTheme() {
 		// $("#theme-switcher").prop("checked", false);
 		$("#theme-switcher").attr("checked", false);
 
+		$(".fa-sun").removeClass("far");
+		$(".fa-sun").addClass("fas");
+		$(".fa-moon").removeClass("fas");
+		$(".fa-moon").addClass("far");
+
 		document.body.style.setProperty("--main-background-color", "#ffffff");
 		document.body.style.setProperty("--primary-heading-color", "#383e45");
 		document.body.style.setProperty("--dynamic-text-color", "#4b505e");
 	} else if (ss_test.theme == "dark") {
 		// $("#theme-switcher").prop("checked", true);
 		$("#theme-switcher").attr("checked", true);
+
+		$(".fa-moon").removeClass("far");
+		$(".fa-moon").addClass("fas");
+		$(".fa-sun").removeClass("fas");
+		$(".fa-sun").addClass("far");
 
 		document.body.style.setProperty("--main-background-color", "#383e45");
 		document.body.style.setProperty("--primary-heading-color", "#ffffff");
