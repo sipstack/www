@@ -353,7 +353,7 @@ html {
 		.item {
 			display: flex;
 
-			@media (max-width: 600px) {
+			@media (min-width: 600px) {
 				padding: 10px;
 				width: 100%;
 			}
@@ -365,9 +365,9 @@ html {
 			color: var(--sipstack-green);
 			@media (max-width: 600px) {
 				display: none;
-				min-width: 5vw !important;
-				padding-right: 15px;
 			}
+			min-width: 5vw !important;
+			padding-right: 15px;
 			.svg-inline--fa {
 				font-size: 40px;
 			}
