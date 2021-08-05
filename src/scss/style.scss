@@ -392,3 +392,18 @@ html {
 #navbarSupportedContent {
 	background-color: var(--main-background-color);
 }
+
+// Removing the extra at the tops of pages
+.sec_pad {
+	// padding-top: 0;
+}
+
+.breadcrumb_area {
+	padding-bottom: 0;
+}
+
+// Adding github icon to signup button
+#gabagool::before {
+	font-family: fontAwesome;
+	content: "\f09b\00a0";
+}
