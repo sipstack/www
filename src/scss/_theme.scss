@@ -295,13 +295,13 @@ a {
 		overflow: scroll;
 		white-space: pre-wrap;
 		word-wrap: break-word;
+		color: var(--dynamic-text-color);
 	}
 	&-options-container {
 		@extend .flex-column, .flex-space-between;
 		margin: 20px;
 		font-size: 17px;
 		height: 200px;
-		background: #fafafa;
 		padding: 30px;
 	}
 }
