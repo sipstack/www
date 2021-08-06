@@ -399,3 +399,10 @@ a {
 		max-width: 800px !important;
 	}
 }
+
+// Footer link hover
+.footer_top {
+	a:hover {
+		color: var(--sipstack-green) !important;
+	}
+}
