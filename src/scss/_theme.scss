@@ -5,6 +5,22 @@
 }
 
 // GENERAL
+html {
+	background-color: var(--main-background-color);
+}
+
+section {
+	background-color: var(--main-background-color);
+	color: var(--dynamic-text-color) !important;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.breadcrumb_area {
+	padding-bottom: 0;
+}
+
 a {
 	color: #0fac81;
 }
@@ -254,6 +270,14 @@ a {
 	background: #5fb48b;
 }
 
+#navbarSupportedContent > ul {
+	background-color: var(--main-background-color);
+}
+
+#navbarSupportedContent {
+	background-color: var(--main-background-color);
+}
+
 // Pricing
 .plans-container {
 	width: 90vw;
@@ -404,5 +428,216 @@ a {
 .footer_top {
 	a:hover {
 		color: var(--sipstack-green) !important;
+	}
+}
+
+// THEME COLORS
+:root {
+	--sipstack-green: #34b987;
+	--main-background-color: #ffffff;
+	--primary-heading-color: #383e45;
+	--secondary-heading-color: #3ab889;
+	--static-text-color: #909090;
+	--dynamic-text-color: black;
+	--button-background-color: #3ab889;
+	--button-text-color: #ffffff;
+	--alternate-color: #f6f6f6;
+}
+
+.sipstack_green {
+	color: var(--sipstack-green) !important;
+}
+
+.dynamic_text {
+	color: var(--dynamic-text-color) !important;
+}
+
+.static_text {
+	color: var(--static-text-color) !important;
+}
+
+// THEME TOGGLE
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	height: 28px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--main-background-color);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 21px;
+	width: 21px;
+	left: 3px;
+	bottom: 3px;
+	background-color: var(--sipstack-green);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(41px);
+	-ms-transform: translateX(41px);
+	transform: translateX(41px);
+}
+
+.slider.round {
+	border-radius: 34px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--sipstack-green);
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+// TEAM VALUES COMPONENT
+#values-container {
+	width: 100%;
+	height: 488px;
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"img driven team"
+		"img brilliant inclusive";
+
+	.value-panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 24px 15px 8px 15px;
+
+		h3,
+		p {
+			margin-bottom: 8px;
+		}
+	}
+
+	#value-image {
+		grid-area: img;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			object-fit: cover;
+			width: auto;
+			height: 488px;
+		}
+	}
+
+	#driven {
+		grid-area: driven;
+		background-color: #383e45;
+
+		h3 {
+			color: white !important;
+		}
+
+		p {
+			color: var(--alternate-color);
+		}
+	}
+
+	#team {
+		grid-area: team;
+		background-color: #e9ecef;
+	}
+
+	#brilliant {
+		grid-area: brilliant;
+		background-color: #e9ecef;
+	}
+
+	#inclusive {
+		grid-area: inclusive;
+		background-color: #09d198;
+	}
+}
+
+// GREEN BUTTON OVERRIDE CLASS
+.btn-green {
+	color: var(--sipstack-green);
+	border-color: var(--sipstack-green) !important;
+}
+
+.btn-green:hover {
+	color: #fff;
+	background-color: var(--sipstack-green);
+}
+
+// BECOME-A-PARTNER POSSIBILITIES PANEL
+.partner-container {
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.column {
+		display: flex;
+		flex-direction: column;
+
+		.item {
+			display: flex;
+
+			@media (min-width: 600px) {
+				padding: 10px;
+				width: 100%;
+			}
+		}
+
+		div.icon-container {
+			display: flex;
+			align-items: center;
+			color: var(--sipstack-green);
+			@media (max-width: 600px) {
+				display: none;
+			}
+			min-width: 5vw !important;
+			padding-right: 15px;
+			.svg-inline--fa {
+				#navbarSupportedContent > ul {
+					background-color: var(--main-background-color);
+				}
+
+				#navbarSupportedContent {
+					background-color: var(--main-background-color);
+				}
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+// FEATURES 3-COLOR COMPONENT
+.s_text_highlight > .container {
+	h3 {
+		padding-top: 10px;
+	}
+
+	p {
+		padding-bottom: 10px;
 	}
 }
