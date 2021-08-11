@@ -6,6 +6,18 @@
 	.app_service_info {
 		margin-bottom: -30px;
 	}
+	h2,
+	h3,
+	h5 {
+		color: var(--sipstack-green);
+	}
+	p {
+		color: var(--dynamic-text-color);
+	}
+	.app_service_item {
+		background-color: var(--main-background-color);
+		border: none;
+	}
 }
 
 .job_listing {
@@ -55,7 +67,7 @@
 		.list_item {
 			display: table;
 			width: 100%;
-			background: #fff;
+			background: var(--main-background-color);
 			box-shadow: 0px 2px 8px 0px rgba(12, 0, 46, 0.04);
 			padding: 20px 45px 20px 20px;
 			margin-bottom: 30px;
@@ -93,6 +105,7 @@
 						font-size: 20px;
 						margin-bottom: 5px;
 						display: inline-block;
+						color: var(--dynamic-text-color);
 						&:hover {
 							color: #5fb48b;
 						}
@@ -143,7 +156,7 @@
 					float: right;
 					.apply_btn {
 						font: 300 14px/36px $pop;
-						color: #5c6789;
+						color: var(--dynamic-text-color);
 						border: 1px solid #e7e7f6;
 						border-radius: 3px;
 						display: inline-block;
@@ -206,8 +219,18 @@
 
 /*============== job_details_area css =============*/
 .job_details_area {
+	background-color: var(--main-background-color);
 }
 .details_content {
+	h3 {
+		color: var(--sipstack-green);
+	}
+	p {
+		color: var(--dynamic-text-color);
+	}
+	li {
+		color: var(--static-text-color);
+	}
 	.f_size_22 {
 		font-size: 22px;
 	}
@@ -246,13 +269,15 @@
 	}
 }
 .job_info {
-	border: 1px solid rgb(244, 244, 249);
-	background-color: rgb(255, 255, 255);
+	background-color: var(--main-background-color);
 	box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
 	padding: 50px;
 	.info_head {
 		border-bottom: 1px solid #eeebf6;
 		padding-bottom: 18px;
+		h6 {
+			color: var(--dynamic-text-color);
+		}
 		i {
 			font-size: 40px;
 			color: #5fb48b;
@@ -278,12 +303,13 @@
 			font-family: $pop;
 			font-weight: 400;
 			margin-bottom: 5px;
+			color: var(--dynamic-text-color);
 		}
 		p {
 			margin-bottom: 0px;
 			font-size: 14px;
 			font-weight: 300;
-			color: #677294;
+			color: var(--static-text-color);
 		}
 	}
 }
@@ -297,21 +323,21 @@
 	textarea,
 	.selectpickers {
 		border-radius: 4px;
-		background-color: rgb(255, 255, 255);
+		background-color: var(--main-background-color);
 		box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
 		font: 300 15px/60px $pop;
 		color: #9ca3b9;
 		width: 100%;
 		height: 60px;
 		padding-left: 30px;
-		border: 1px solid #fff;
+		border: 1px solid var(--static-text-color);
 		&:focus {
 			box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
-			border-color: rgb(242, 239, 252);
+			border-color: var(--sipstack-green);
 			outline: none;
 		}
 		@include placeholder {
-			color: #9ca3b9;
+			color: var(--static-text-color);
 		}
 	}
 	textarea {
@@ -319,6 +345,7 @@
 	}
 	.selectpickers {
 		width: 100%;
+		color: var(--static-text-color);
 	}
 	.upload_box {
 		width: 100%;
