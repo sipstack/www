@@ -3,6 +3,7 @@
 
 <head>
     @@include(".parts/head.html",{title:"SIPSTACK"})
+    <script src="https://kit.fontawesome.com/bb3347cb47.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -10,7 +11,7 @@
     <div class="body_wrapper">
         @@include(".parts/header.html")
         <section class="hosting_banner_area">
-            <ul class="list-unstyled b_line">
+            <!-- <ul class="list-unstyled b_line">
                 <li class="wow fadeInUp" data-wow-delay="0.4s"><img src="/assets/img/hosting/line_01.png" alt=""></li>
                 <li class="wow fadeInUp" data-wow-delay="0.7s"><img src="/assets/img/hosting/line_02.png" alt=""></li>
                 <li class="wow fadeInUp" data-wow-delay="0.9s"><img src="/assets/img/hosting/line_03.png" alt=""></li>
@@ -19,31 +20,32 @@
                 <li class="wow fadeInUp" data-wow-delay="1s"><img src="/assets/img/line_05.png" alt=""></li>
                 <li class="wow fadeInUp" data-wow-delay="1s"><img src="/assets/img/line_07.png" alt=""></li>
                 <li class="wow fadeInUp" data-wow-delay="1.3s"><img src="/assets/img/line_06.png" alt=""></li>
-            </ul>
+            </ul> -->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7 d-flex align-items-center">
                         <div class="hosting_content">
-                            <h4 class="wow fadeInUp ss-green" data-wow-delay="0.3s">Scriptable Cloud Communication
+                            <h4 class="wow fadeInUp ss-green" data-wow-delay="0.3s">Cloud Communication
                                 Platform</h4>
-                            <h2 class="wow fadeInUp" data-wow-delay="0.5s">Built for Service
+                            <h2 class="wow fadeInUp dynamic_text" data-wow-delay="0.5s">Built for Service
                                 Providers</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.7s">Future proof your customers VoIP with
-                                SIPSTACK. The world's first scriptable
+                            <p class="wow fadeInUp dynamic_text" data-wow-delay="0.7s">Future proof your customers VoIP with
+                                SIPSTACK. The world's most advanced open source
                                 enterprise multi-tenant PBX platform that scales as communication needs evolve.</p>
                             <div class="action_btn d-flex align-items-center mt_60">
                                 <a href="/signup.html" class="hosting_btn btn_hover wow fadeInUp" data-wow-delay="0.7s">Get Started</a>
                                 <!-- <a href="#" class="agency_banner_btn_two wow fadeInUp" style="color: white; " data-wow-delay="0.9s">Free $100 credit<i class="ti-arrow-right"></i></a></div> -->
-                                <a href="https://www.youtube.com/watch?v=H8Hx_1lLh2E"
-                                    class=" video_btn popup-youtube wow fadeInUp" style="color: white; "
-                                    data-wow-delay="0.9s">
-                                    <div class="icon"><i class="ti-control-play"></i></div><span>Watch Video</span>
                             </div></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
-                        <img class="/assets/img-fluid wow fadeInRight landing-img" data-wow-delay="0.7s"
-                            src="/assets/img/landing-main.png" alt="">
+                        <!-- <img class="/assets/img-fluid wow fadeInRight landing-img" data-wow-delay="0.7s"
+                            src="/assets/img/landing-main.png" alt=""> -->
+
+                        <iframe class="wow fadeInRight" data-wow-delay="0.7s" height="297" width="528"
+                            src="https://www.youtube.com/embed/H8Hx_1lLh2E?autoplay=1&mute=1&controls=0&rel=0&fs=0" 
+                            style="border:none;">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -54,13 +56,24 @@
                 <div class="hosting_title text-center">
                     <h2 class="wow fadeInUp" data-wow-delay="0.3s">Designed to white label.<br>Built to evolve.</h2>
                     <p class="wow fadeInUp" data-wow-delay="0.5s">Deploy and manage multiple independent PBXs within a
-                        single portal to offer customers powerful PBX features in a secure hosted environment that is
-                        built to adapt and scale.</p>
+                        single portal to offer customers powerful PBX features.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg1.reset().play(1);">
+
+                    <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item text-center">
-                            <div id="svg1" style="height: 60px;"></div>
+                            <!-- <div id="svg1" style="height: 60px;"></div> -->
+                            <i class="fab fa-osi fa-7x"></i>
+                            <a href="#">
+                                <h4 class="h_head pt_120">Open Source</h4>
+                            </a>
+                            <p>Built for the VoIP community as an Open Source platform.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="hosting_service_item text-center">
+                            <!-- <div id="svg2" style="height: 60px;"></div> -->
+                            <i class="fas fa-tag fa-7x"></i>
                             <a href="#">
                                 <h4 class="h_head pt_120">White label</h4>
                             </a>
@@ -68,7 +81,7 @@
                                 come to expect.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
+                    <!-- <div class="col-lg-4 col-sm-6" onmouseenter="svg2.reset().play(1);">
                         <div class="hosting_service_item text-center">
 
                             <div id="svg2" style="height: 60px;"></div>
@@ -79,18 +92,19 @@
                             <p>SIPSTACK is capable of serving multiple distinct clients with a single instance. Saving
                                 you time and money.</p>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg3.reset().play(1);">
+                    </div> -->
+                    <div class="col-lg-4 col-sm-6">
                         <div class="hosting_service_item text-center">
-                            <div id="svg3" style="height: 60px;"></div>
+                            <!-- <div id="svg3" style="height: 60px;"></div> -->
+                            <i class="fas fa-globe-americas fa-7x"></i>
+
                             <a href="#">
                                 <h4 class="h_head pt_120">Global Regions</h4>
                             </a>
-                            <p>Multi region allows you to operate from datacenters closest to your customer base, for
-                                local access, low latency and certified security.</p>
+                            <p>Multi region allows you to store and backup customers data based on their requirements.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6" onmouseenter="svg4.reset().play(1);">
+                    <!-- <div class="col-lg-4 col-sm-6" onmouseenter="svg4.reset().play(1);">
                         <div class="hosting_service_item text-center">
                             <div id="svg4" style="height: 60px;"></div>
                             <a href="#">
@@ -118,11 +132,11 @@
                             <p>Build and adapt with customized scripts and API's to empower your customers to achieve
                                 functionality no other provider can match.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
-        <section class="hosting_features_area">
+        <!-- <section class="hosting_features_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -161,7 +175,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="h_action_area">
             <div class="container">
@@ -178,7 +192,7 @@
                             <p>Businessess need to be agile and adaptable with their communication infrastructure.
                                 SIPSTACK ensures your customers will have access to the latest
                                 technology, ensuring they will not be left behind.</p>
-                            <a href="" class="hosting_btn btn_hover">Sign up</a>
+                            <a href="" class="hosting_btn btn_hover">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -195,14 +209,14 @@
                 <div class="h_map">
                     <ul class="list-unstyled">
                         <li class="wow fadeIn" data-wow-delay="0.1s">
-                            <div class="place_name d-none" data-wow-delay="0.3s"" >San Jose, USA</div>
+                            <div class="place_name d-none" data-wow-delay="0.3s"" >Los Angeles, USA</div>
                             <div class="round">
                                 <div class="dot"></div>
                             </div>
                         </li>
                         <li class="wow fadeIn" data-wow-delay="0.2s">
                             <!-- <div class="place_name wow fadeInUp" data-wow-delay="0.4s">Toronto, Canada</div> -->
-                            <div class="place_name d-none">Toronto, Canada</div>
+                            <div class="place_name d-none">Montreal, Canada</div>
                             <div class="round">
                                 <div class="dot"></div>
                             </div>
@@ -214,16 +228,16 @@
                             </div>
                         </li>
                         <li class="wow fadeIn" data-wow-delay="0.4s">
-                            <div class="place_name d-none" data-wow-delay="0.6s"">Chennai, India</div>
+                            <div class="place_name d-none" data-wow-delay="0.6s"">New York, USA</div>
                             <div class="round">
                                 <div class="dot"></div>
                             </div>
                         </li>
                         <li class="wow fadeIn" data-wow-delay="0.5s">
-                            <div class="place_name d-none" data-wow-delay="0.7s"">Tokyo, Japan</div>
+                            <!--<div class="place_name d-none" data-wow-delay="0.7s"">Tokyo, Japan</div>
                             <div class="round">
                                 <div class="dot"></div>
-                            </div>
+                            </div>-->
                         </li>
                         <li class="wow fadeIn" data-wow-delay="0.6s">
                             <div class="place_name d-none" data-wow-delay="0.8s"">Dallas, USA</div>
@@ -232,13 +246,13 @@
                             </div>
                         </li>
                         <li class="wow fadeIn" data-wow-delay="0.7s">
-                             <div class="place_name d-none" data-wow-delay="0.9s"">Frankfurt, Germany</div>
+                             <div class="place_name d-none" data-wow-delay="0.9s"">Amsterdam, The Netherlands</div>
                             <div class="round">
                                 <div class="dot"></div>
                             </div>
                         </li>
                         <li class="fadeIn">
-                             <div class="place_name d-none" data-wow-delay="0.10s"">Sydney, Australia</div>
+                             <div class="place_name d-none" data-wow-delay="0.10s"">Aukland, New Zealand</div>
                             <div class="round">
                                 <div class="dot"></div>
                             </div>
@@ -374,10 +388,10 @@
             </div>
         </section>
     -->
-        <section class="h_action_promo_area">
-            <!-- <div class="overlay_bg"
+       <!-- <section class="h_action_promo_area">
+            <div class="overlay_bg"
                 style="background: url('https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/hosting/hosting_action_bg.png');">
-            </div> -->
+            </div> 
               <div class="overlay_bg"
                 style="background: url('https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/polycom-bg-2.jpg');">
             </div>
@@ -395,7 +409,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <footer class="footer_area footer_dark_one footer_dark_ten">
             @@include('.parts/footer.html')
         </footer>
@@ -404,13 +418,17 @@
     @@include(".parts/scripts.html")
     <script>
         //  new Vivus('my-svg', { duration: 60 });
-        var svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
-            svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_arrows/_SVG/arrows_squares.svg' }),
-            svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' }),
-            svg4 = new Vivus('svg4', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock.svg' }),
-            svg5 = new Vivus('svg5', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_cart.svg' }),
-            svg6 = new Vivus('svg6', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_link.svg' });
+        // var 
+            // svg1 = new Vivus('svg1', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock_open.svg' }),
+            // svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_sale.svg' }),
+            // svg3 = new Vivus('svg3', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_world.svg' });
 
+            // Deprecated icons
+            // svg2 = new Vivus('svg2', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_arrows/_SVG/arrows_squares.svg' }),
+            // svg4 = new Vivus('svg4', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_lock.svg' }),
+            // svg5 = new Vivus('svg5', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_ecommerce/_SVG/ecommerce_cart.svg' }),
+            // svg6 = new Vivus('svg6', { duration: 60, file: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets/img/svg/linea/_basic/_SVG/basic_link.svg' })
+            
         $(".h_map li").on("mouseenter mouseleave", function() {
             $(this).find(".place_name").toggleClass("d-none");
         });
