@@ -6,7 +6,7 @@
 	"scripts": {
 		"http-example": "cd .example && http-server -c-1 --log-ip",
 		"http-dev": "cd dist && http-server -c-1 -p 8091 --log-ip",
-		"gulp-develop": "gulp build && gulp develop"
+		"gulp-develop": "rm -rf dist && gulp build && gulp develop"
 	},
 	"repository": {
 		"type": "git",
