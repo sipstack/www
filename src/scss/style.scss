@@ -244,3 +244,151 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+.sipstack_green {
+	color: var(--sipstack-green) !important;
+}
+
+#values-container {
+	width: 100%;
+	height: 488px;
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"img driven team"
+		"img brilliant inclusive";
+
+	.value-panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 24px 15px 8px 15px;
+
+		h3,
+		p {
+			margin-bottom: 8px;
+		}
+	}
+
+	#value-image {
+		grid-area: img;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			object-fit: cover;
+			width: auto;
+			height: 488px;
+		}
+	}
+	#driven {
+		grid-area: driven;
+		background-color: #383e45;
+		h3 {
+			color: white !important;
+		}
+		p {
+			color: var(--alternate-color);
+		}
+	}
+	#team {
+		grid-area: team;
+		background-color: #e9ecef;
+	}
+	#brilliant {
+		grid-area: brilliant;
+		background-color: #e9ecef;
+	}
+	#inclusive {
+		grid-area: inclusive;
+		background-color: #09d198;
+	}
+}
+
+.btn-green {
+	color: var(--sipstack-green);
+	border-color: var(--sipstack-green) !important;
+}
+
+.btn-green:hover {
+	color: #fff;
+	background-color: var(--sipstack-green);
+}
+
+section {
+	background-color: var(--main-background-color);
+	color: var(--dynamic-text-color) !important;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+html {
+	background-color: var(--main-background-color);
+}
+
+.circle-icon {
+	background: var(--dynamic-text-color);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+	padding: 30px;
+}
+
+.partner-container {
+	display: flex;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.column {
+		display: flex;
+		flex-direction: column;
+
+		.item {
+			display: flex;
+
+			@media (min-width: 600px) {
+				padding: 10px;
+				width: 100%;
+			}
+		}
+
+		div.icon-container {
+			display: flex;
+			align-items: center;
+			color: var(--sipstack-green);
+			@media (max-width: 600px) {
+				display: none;
+			}
+			min-width: 5vw !important;
+			padding-right: 15px;
+			.svg-inline--fa {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+.s_text_highlight > .container {
+	h3 {
+		padding-top: 10px;
+	}
+
+	p {
+		padding-bottom: 10px;
+	}
+}
+
+#navbarSupportedContent > ul {
+	background-color: var(--main-background-color);
+}
+
+#navbarSupportedContent {
+	background-color: var(--main-background-color);
+}
