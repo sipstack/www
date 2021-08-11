@@ -103,6 +103,11 @@ function assets(cb) {
 	cb();
 }
 
+function docs(cb) {
+	src(["src/docs/**"]).pipe(dest("dist/docs"));
+	cb();
+}
+
 function web(cb) {
 	src(["dist/*.html"]).pipe(gulpSSH.dest("/var/www/html/www/"));
 	cb();
@@ -153,7 +158,7 @@ function cdn(cb) {
 	cb();
 }
 
-exports.build = series(html, scss, js_scripts, assets);
+exports.build = series(html, scss, js_scripts, assets, docs);
 
 exports.publish = series((html, scss, js_scripts, assets, cdn), web);
 
@@ -162,4 +167,5 @@ exports.develop = function () {
 	watch(["src/html/**/*.html", "src/html/.parts/*.html"], html);
 	watch(["src/img/**"], assets);
 	watch(["src/js/*.js", "src/js/custom/*.js"], js_scripts);
+	watch(["src/docs/**"], docs);
 };
