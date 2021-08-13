@@ -4,6 +4,7 @@
 *.seed
 *.pid.lock
 .DS_Store
+._*
 
 # specific folders #################
 /log/
