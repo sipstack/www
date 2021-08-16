@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		@@include("../.parts/head.html",{ title:"SIPSTACK | Terms of Use" })
+		@@include(".parts/head.html",{ title:"SIPSTACK | e911" })
 	</head>
 	<body>
 		<div class="body_wrapper wow fadeInUp">
-			@@include("../.parts/header.html")
+			@@include(".parts/header.html")
 
 			<section class="breadcrumb_area">
 				<!-- <img class="breadcrumb_shap" src="img/breadcrumb/banner_bg.png" alt=""> -->
 				<div class="container">
 					<div class="breadcrumb_content text-center">
-						<h1 class="f_p f_700 f_size_50 dynamic_text l_height50 mb_20">Terms of Use</h1>
+						<h1 class="f_p f_700 f_size_50 w_color l_height50 mb_20">e911 Policy</h1>
 					</div>
 				</div>
 			</section>
 
 			<div style="margin-top: 60px" class="full-width flex-top-center row">
 				<div class="col-md-2" id="legal-options-container">
-					<a href="/legal/termsofuse.html"><strong>Terms of Use</strong></a>
+					<a href="/legal/termsofuse.html">Terms of Use</a>
 					<a href="/legal/privacypolicy.html">Privacy Policy</a>
-					<a href="/legal/e911.html">e911</a>
+					<a href="/legal/e911.html"><strong>e911</strong></a>
 				</div>
 				<div class="col-md-7" id="legal-text-container"></div>
 			</div>
 
-			@@include('../.parts/footer.html')
+			@@include('.parts/footer.html')
 		</div>
-		@@include("../.parts/scripts.html")
+		@@include(".parts/scripts.html")
 		<script>
-			$.get("./documents/termsofuse.txt", (content) => {
+			$.get("./documents/e911.txt", (content) => {
 				$("#legal-text-container").text(content);
 			});
 		</script>
