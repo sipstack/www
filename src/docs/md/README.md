@@ -1,2 +1,2 @@
-# Home docs landing
-remember to use readme.md for index
+# SIPSTACK Docs
+Check back soon for updates while we get things ready here...
