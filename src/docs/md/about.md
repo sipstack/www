@@ -1,4 +1,2 @@
 # About
-### This is a simple doc test page!
-
-test
+Check back soon for updates while we get things ready here...
