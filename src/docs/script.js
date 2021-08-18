@@ -13,19 +13,21 @@ new Docute({
 	// },
 	detectSystemDarkTheme: true,
 	darkThemeToggler: true,
-	banner: `Please <a href="https://donate.com/link">
-  donate</a> <ExternalLinkIcon /> to support this project!`,
+	// banner: `Please <a href="https://donate.com/link">donate</a> <ExternalLinkIcon /> to support this project!`,
 	versions: {
+		"v1 (Deprecated)": {},
 		"v2 (Latest)": {
 			link: "/",
-		},
-		v3: {
-			link: "docs/",
 		},
 	},
 	nav: [
 		{
 			title: "Home",
+			link: "https://www.sipstack.com/",
+			openInNewTab: false,
+		},
+		{
+			title: "Docs",
 			link: "/",
 		},
 		{
@@ -35,17 +37,16 @@ new Docute({
 	],
 	sidebar: [
 		{
-			title: "Organization",
+			title: "Introdution",
 			links: [
 				{
 					title: "About   ",
 					link: "/about",
 				},
-				{
-					title: "Installation",
-					link: "/installation",
-				},
 			],
+		},
+		{
+			title: "Getting Started",
 		},
 	],
 });
