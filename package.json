@@ -6,7 +6,8 @@
 	"scripts": {
 		"http-example": "cd .example && http-server -c-1 --log-ip",
 		"http-dev": "cd dist && http-server -c-1 -p 8091 --log-ip",
-		"gulp-develop": "rm -rf dist && gulp build && gulp develop"
+		"gulp-develop": "rm -rf dist && gulp build && gulp develop",
+		"publish": "rsync -r dist/* www.sipstack.com:/srv/swag/www/www/"
 	},
 	"repository": {
 		"type": "git",
