@@ -89,6 +89,7 @@ function assets(cb) {
 	src(["src/assets/vendors/**"]).pipe(dest("dist/assets/vendors"));
 	src(["src/assets/img/**"]).pipe(dest("dist/assets/img"));
 	src([".example/vendors/**"]).pipe(dest("dist/assets/vendors"));
+	src(["src/assets/img/favicon.ico"]).pipe(dest("dist"));
 
 	// upload assets to S3 ---------------------------
 	// var options = {
