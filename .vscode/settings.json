@@ -1,19 +1,28 @@
 {
-	"problems.showCurrentInStatus": true,
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
-	},
-	"eslint.validate": ["javascript", "javascriptreact", "vue"],
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"todo-tree.highlights.enabled": true,
-	// "terminal.integrated.shell.linux": "/bin/bash" // "remote.WSL.fileWatcher.polling": true
-	"todo-tree.tree.scanMode": "workspace",
-	"todo-tree.tree.labelFormat": "${after}",
-	"todo-tree.tree.showCountsInTree": true,
-	"todo-tree.tree.showScanModeButton": false,
-	"git.enableSmartCommit": true
+  "css.validate": true,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "prettier.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "i18n-ally.localesPaths": ["src/locales"],
+  "stylelint.validate": [
+    "scss",
+    "vue"
+  ],
+  "volar.showWelcomePage": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar"
+  }
 }
