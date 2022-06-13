@@ -1,0 +1,20 @@
+{
+  "Vue 3 w/ Setup": {
+    "scope": "vue",
+    "prefix": ["script setup", "<script setup"],
+    "description": "Vue 3 component <script setup>",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$3",
+      "</script>",
+      "",
+      "<template>",
+      "$1",
+      "</template>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "$2",
+      "</style>"
+    ]
+  }
+}
