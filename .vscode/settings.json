@@ -1,0 +1,28 @@
+{
+  "css.validate": true,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "prettier.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "i18n-ally.localesPaths": ["src/locales"],
+  "stylelint.validate": [
+    "scss",
+    "vue"
+  ],
+  "volar.showWelcomePage": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar"
+  }
+}
