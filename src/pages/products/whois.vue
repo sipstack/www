@@ -4,7 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { socialLinks } from "/@src/data/sipstack";
+// import { socialLinks } from "/@src/data/sipstack";
 const demoLinks = [
 	{
 		label: "Overview",
@@ -214,7 +214,7 @@ const faq = {
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" title="Smarter Communications Begin Here" subtitle="Credit card not required to sign up.">
+				<CtaBlockJ small-text="Get started" title="Smarter CNAM Begin Here" subtitle="Credit card not required to sign up.">
 					<form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>
@@ -232,12 +232,6 @@ const faq = {
 			</Container>
 		</Section>
 
-		<FooterCC
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare non possum. Apparet statim, quae sint officia, quae actiones."
-			color="dark"
-			:social-links="socialLinks"
-		>
-			<!-- <cookie1></cookie1> -->
-		</FooterCC>
+		<ssFooter></ssFooter>
 	</div>
 </template>

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-**/*.md
-=======
 # Ignore artifacts:
 build
 dist
@@ -14,4 +11,3 @@ CHANGELOG.md
 
 # bulma-css-vars
 bulma-colors.js
->>>>>>> 37fec278751495115859ec4076f23fd0d25c23a2

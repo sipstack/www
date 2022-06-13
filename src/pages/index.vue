@@ -5,7 +5,7 @@ meta:
 </route>
 
 <script setup lang="ts">
-import { ssProducts, socialLinks } from "/@src/data/sipstack";
+// import { ssProducts, socialLinks } from "/@src/data/sipstack";
 // const starterTemplates = [
 //   {
 //     name: 'Vue.js',
@@ -217,7 +217,6 @@ const features: IconFeature[] = [
         </CtaBlockJ>
       </Container>
     </Section> -->
-		<FooterCC text="Better telecommunications through AI" color="dark" :social-links="socialLinks"></FooterCC>
-		<cookie />
+		<ssFooter></ssFooter>
 	</div>
 </template>
