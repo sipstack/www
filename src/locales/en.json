@@ -1,0 +1,7 @@
+{
+  "select-language": "Select Language",
+  "offline-ready": "{appName} is ready to work offline",
+  "need-refresh": "A new version of {appName} is available, click on reload button to update.",
+  "reload-button": "Reload",
+  "close-button": "Close"
+}
