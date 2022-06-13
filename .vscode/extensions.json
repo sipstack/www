@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "syler.sass-indented",
+    "stylelint.vscode-stylelint",
+    "johnsoncodehk.volar",
+    "antfu.iconify",
+  ]
+}
