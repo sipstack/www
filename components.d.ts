@@ -75,6 +75,7 @@ declare module "@vue/runtime-core" {
 		CtaBlockH: typeof import("./src/components/blocks/cta-blocks/CtaBlockH.vue")["default"];
 		CtaBlockI: typeof import("./src/components/blocks/cta-blocks/CtaBlockI.vue")["default"];
 		CtaBlockJ: typeof import("./src/components/blocks/cta-blocks/CtaBlockJ.vue")["default"];
+		CtaDefault: typeof import("./src/components/custom/cta/ctaDefault.vue")["default"];
 		DarkImage: typeof import("./src/components/base/image/DarkImage.vue")["default"];
 		Default: typeof import("./src/layouts/default.vue")["default"];
 		Demo: typeof import("./src/layouts/demo.vue")["default"];
@@ -160,6 +161,7 @@ declare module "@vue/runtime-core" {
 		HeroSub: typeof import("./src/components/layout/hero/heroSub/HeroSub.vue")["default"];
 		HeroWaveMask: typeof import("./src/components/misc/masks/HeroWaveMask.vue")["default"];
 		HeroWhois: typeof import("./src/components/layout/hero/HeroWhois.vue")["default"];
+		ICilCheckCircle: typeof import("~icons/cil/check-circle")["default"];
 		Icon: typeof import("./src/components/base/icon/Icon.vue")["default"];
 		IconBox: typeof import("./src/components/base/icon/IconBox.vue")["default"];
 		IconPopover: typeof import("./src/components/base/popover/modules/IconPopover.vue")["default"];
@@ -297,6 +299,9 @@ declare module "@vue/runtime-core" {
 		SimpleTableRow: typeof import("./src/components/base/table/SimpleTableRow.vue")["default"];
 		SolidNav: typeof import("./src/layouts/solid-nav.vue")["default"];
 		SpinnerSection: typeof import("./src/components/advanced/features/spinner-section/SpinnerSection.vue")["default"];
+		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
+		SsCtaDefault: typeof import("./src/components/custom/cta/ssCtaDefault.vue")["default"];
+		SsFooter: typeof import("./src/components/custom/footer/ssFooter.vue")["default"];
 		StackedSection: typeof import("./src/components/advanced/features/stacked-section/StackedSection.vue")["default"];
 		SubscriptionBlock: typeof import("./src/components/misc/subscription/SubscriptionBlock.vue")["default"];
 		SubscriptionCompact: typeof import("./src/components/misc/subscription/SubscriptionCompact.vue")["default"];

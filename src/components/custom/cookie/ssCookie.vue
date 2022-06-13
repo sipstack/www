@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { useRegisterSW } from 'virtual:pwa-register/vue'
-import { ref } from "vue";
+import { ref, onBeforeMount } from "vue";
 import VueCookies from "vue-cookies";
 // import { useI18n } from 'vue-i18n'
 
@@ -14,14 +14,16 @@ export interface VReloadPromptProps {
 
 // const { t } = useI18n()
 // const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW()
-const cookie = ref(true);
+
+const needCookie = ref(true); // no cookie
+
 const close = () => {
 	//   loading.value = false
 	//   offlineReady.value = false
 	//   needRefresh.value = false
-	cookie.value = false;
-	$cookies.set("cookie_name", "cookie_value");
-	VueCookies.set("name", name, "1h");
+	needCookie.value = false;
+
+	VueCookies.set("ss_cookie", Date.now(), "1y");
 };
 
 // const update = async () => {
@@ -29,12 +31,17 @@ const close = () => {
 //   await updateServiceWorker()
 //   loading.value = false
 // }
+
+onBeforeMount(() => {
+	console.log(VueCookies.get("ss_cookie"));
+	if (VueCookies.get("ss_cookie")) needCookie.value = false;
+});
 </script>
 
 <template>
 	<Transition name="from-bottom">
 		<!-- v-if="offlineReady || needRefresh" -->
-		<Card v-if="cookie" class="pwa-toast" role="alert" radius="smooth">
+		<Card v-if="needCookie" class="pwa-toast" role="alert" radius="smooth">
 			<div class="pwa-message">
 				<slot name="logo"></slot>
 				<div class="container">
