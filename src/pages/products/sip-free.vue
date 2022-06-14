@@ -4,72 +4,74 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { socialLinks } from "/@src/data/sipstack";
-const demoLinks = [
-	{
-		label: "Overview",
-		target: "t1",
-	},
-	{
-		label: "Features",
-		target: "t2",
-	},
-	{
-		label: "Pricing",
-		target: "t3",
-	},
-	{
-		label: "FAQs",
-		target: "t3",
-	},
-];
+import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/products/sip-free";
 </script>
 
 <template>
 	<div>
-		<HeroProducts title="SIP Free" subtitle="Unlimited Toll-free call termination in North America, for FREE" />
+		<HeroProducts title="SIP Free" subtitle="Unlimited SIP termination to toll free numbers in North America" button1-title="Create account" button1-href="/get-started" />
 
-		<DemoLinks :links="demoLinks" width="400px" />
-		<Section id="t1" bordered-bottom>
+		<DemoLinks :links="pageLinks" width="400px" />
+		<!-- <PageTitle
+      title="Make it count again"
+      subtitle="Get Started"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui ita affectus, beatum esse numquam probabis"
+    >
+      <template #content>
+        <Buttons alignment="centered" class="mt-4">
+          <Button color="primary" :long="3" bold raised>Get Started</Button>
+          <Button :long="3" bold>Learn More</Button>
+        </Buttons>
+      </template>
+    </PageTitle> -->
+		<Section id="overview">
 			<Container>
-				<CtaBlockJ small-text="14-Day Trial" title="Start Building" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?">
-					<Field grouped>
-						<Control expanded icon="feather:mail">
-							<VInput placeholder="Email Address" />
-						</Control>
-						<Control>
-							<Button size="form" color="primary" :long="2" bold raised> Get Started </Button>
-						</Control>
-					</Field>
+				<SectionTitle title="Get Started &#8212; It's Free" subtitle="Overview" />
+
+				<SubscriptionCompactBlock
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam."
+					label="Get Started Free"
+					placeholder="Enter your email"
+				/>
+
+				<TimelineFeatures :items="workoutTimeline" />
+			</Container>
+		</Section>
+
+		<Section id="features" color="grey">
+			<Container>
+				<SectionTitle title="Whois does it all" subtitle="Features" />
+				<FeatureBlockH :features="features" :columns="3" :limit="8" />
+			</Container>
+		</Section>
+
+		<Section id="pricing" bordered-bottom>
+			<Container>
+				<SectionTitle title="Free for everyone" subtitle="Pricing" />
+				<div>&nbsp;</div>
+				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+			</Container>
+		</Section>
+
+		<Section id="faqs">
+			<Container>
+				<SectionTitle title="Frequently Asked Questions" subtitle="FAQs" />
+				<DoubleFaqCollapse :left="faq.left" :right="faq.right" chevrons />
+			</Container>
+		</Section>
+
+		<Section color="grey">
+			<Container>
+				<CtaBlockJ
+					small-text="Help us go further"
+					title="Become a supporter"
+					subtitle="Your help will alow us to expand this product and by meeting sponsorship goals will allow us to expand this product beyond just Toll Free termination."
+				>
+					<Button size="medium" color="dark" :long="2" icon-left="fa:github"> Sponsor us on GitHub </Button>
 				</CtaBlockJ>
 			</Container>
 		</Section>
-		<Section id="t2" bordered-bottom>
-			<Container>
-				<CtaBlockJ small-text="14-Day Trial" title="Start Building" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?">
-					<Field grouped>
-						<Control expanded icon="feather:mail">
-							<VInput placeholder="Email Address" />
-						</Control>
-						<Control>
-							<Button size="form" color="primary" :long="2" bold raised> Get Started </Button>
-						</Control>
-					</Field>
-				</CtaBlockJ>
-			</Container>
-		</Section>
-		<!-- <Section color="grey" wave="wave-2" shape-color="footer-dark">
-      <Container>
-        <CompanyGrid class="-mt-6" title="The best insurance deals" />
-      </Container>
-    </Section> -->
 
-		<FooterCC
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare non possum. Apparet statim, quae sint officia, quae actiones."
-			color="dark"
-			:social-links="socialLinks"
-		>
-			<!-- <cookie1></cookie1> -->
-		</FooterCC>
+		<ssFooter></ssFooter>
 	</div>
 </template>
