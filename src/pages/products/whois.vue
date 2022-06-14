@@ -4,145 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-// import { socialLinks } from "/@src/data/sipstack";
-const demoLinks = [
-	{
-		label: "Overview",
-		target: "overview",
-	},
-	{
-		label: "Features",
-		target: "features",
-	},
-	{
-		label: "Pricing",
-		target: "pricing",
-	},
-
-	{
-		label: "FAQs",
-		target: "faqs",
-	},
-];
-const salesFeatures: SimpleIconFeature[] = [
-	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:star-outline",
-	},
-	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:user-scan",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:input-field",
-	},
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:journal",
-	},
-];
-
-const features: IconFeature[] = [
-	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "primary",
-		icon: "iconoir:user-scan",
-		link: "/",
-	},
-	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
-		icon: "iconoir:star-outline",
-		link: "/",
-	},
-
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "purple",
-		icon: "iconoir:journal",
-		link: "/",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
-		icon: "iconoir:input-field",
-		link: "/",
-	},
-	{
-		title: "Personal Dashboard",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "info",
-		icon: "feather:grid",
-		link: "/",
-	},
-	{
-		title: "Website",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "red",
-		icon: "iconoir:www",
-		link: "/",
-	},
-	{
-		title: "Social Integrations",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "success",
-		icon: "feather:facebook",
-		link: "/",
-	},
-	{
-		title: "Dynamic rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "orange",
-		icon: "iconoir:star-half-dashed",
-		link: "/",
-	},
-];
-
-const faq = {
-	left: [
-		{
-			title: "How much does it cost?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-		{
-			title: "Does it really work anywhere?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-		{
-			title: "How does it differ from other tools?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-	],
-	right: [
-		{
-			title: "How does it work?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-		{
-			title: "Can I try it for free?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-		{
-			title: "How many agents are allowed?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
-		},
-	],
-};
+import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/data/products/whois";
 </script>
 
 <template>
@@ -151,12 +13,12 @@ const faq = {
 			title="Whois"
 			subtitle="CallerID name lookup for everyone"
 			button1-title="Create account"
-			button1-href=""
+			button1-href="/get-started"
 			button2-title="Try now"
 			button2-href="https://whois.sipstack.com"
 		/>
 
-		<DemoLinks :links="demoLinks" width="400px" />
+		<DemoLinks :links="pageLinks" width="400px" />
 		<!-- <PageTitle
       title="Make it count again"
       subtitle="Get Started"
@@ -184,6 +46,7 @@ const faq = {
 				/>
 			</Container>
 		</Section>
+
 		<HeroWhois color="" size="medium" />
 
 		<Section id="features" color="grey">
@@ -197,15 +60,11 @@ const faq = {
 			<Container>
 				<SectionTitle title="Free for everyone" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<PricingSoloCentered
-					:features="['Unlimited projects', 'Desktop and mobile app', 'Unlimited tasks', 'Email integration', 'Unlimited time records']"
-					:price="0"
-					link-label="Start searching"
-					link="/"
-				/>
+				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
 			</Container>
 		</Section>
-		<Section id="faqs" color="">
+
+		<Section id="faqs">
 			<Container>
 				<SectionTitle title="Frequently Asked Questions" subtitle="FAQs" />
 				<DoubleFaqCollapse :left="faq.left" :right="faq.right" chevrons />
@@ -214,7 +73,7 @@ const faq = {
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" title="Smarter CNAM Begin Here" subtitle="Credit card not required to sign up.">
+				<CtaBlockJ small-text="Get started" :title="cta.title" :subtitle="cta.subtitle">
 					<form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>

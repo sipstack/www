@@ -57,6 +57,29 @@ export const salesFeatures: SimpleIconFeature[] = [
 	},
 ];
 
+export const workoutTimeline = [
+	{
+		icon: "ph:device-mobile-camera-duotone",
+		title: "Install the app",
+		text: "Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit.",
+	},
+	{
+		icon: "ph:user-circle-plus-duotone",
+		title: "Build your profile",
+		text: "Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit.",
+	},
+	{
+		icon: "ph:circles-three-duotone",
+		title: "Choose a program",
+		text: "Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit.",
+	},
+	{
+		icon: "ph:confetti-duotone",
+		title: "Reach success",
+		text: "Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum inermis iudicabit.",
+	},
+];
+
 export const features: IconFeature[] = [
 	{
 		title: "Name display",

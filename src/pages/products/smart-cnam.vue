@@ -1,106 +1,96 @@
-<route lang="yaml">
+<!-- <route lang="yaml">
 meta:
   layout: inverted-nav
-</route>
+</route> -->
 
 <script setup lang="ts">
-// import { customerLogos } from '/@src/data/pages/logos'
-// import { iconValues } from '/@src/data/blocks/advanced/values'
-// import { gridTeam } from '/@src/data/blocks/team'
-// import { founders } from '/@src/data/blocks/advanced/team'
-// import { plantValues } from '/@src/data/blocks/advanced/values'
-// import { press } from '/@src/data/blocks/advanced/press'
-import { socialLinks } from "/@src/data/sipstack";
+import { pageLinks, features, pricing, faq, cta } from "/@src/data/products/smart-cnam";
 </script>
 
 <template>
 	<div>
-		<Section
-			v-background="{
-				src: '/assets/shapes/lowpoly-pattern.png',
-				placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
-			}"
-			color="darker"
-		>
+		<HeroProducts
+			title="Smart CNAM"
+			subtitle="Caller ID lookups just got smarter"
+			button1-title="Create account"
+			button1-href="/get-started"
+			button2-title="Try Whois"
+			button2-href="https://whois.sipstack.com"
+		/>
+
+		<DemoLinks :links="pageLinks" width="400px" />
+		<!-- <PageTitle
+      title="Make it count again"
+      subtitle="Get Started"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui ita affectus, beatum esse numquam probabis"
+    >
+      <template #content>
+        <Buttons alignment="centered" class="mt-4">
+          <Button color="primary" :long="3" bold raised>Get Started</Button>
+          <Button :long="3" bold>Learn More</Button>
+        </Buttons>
+      </template>
+    </PageTitle> -->
+
+		<Section id="overview" :bottom-narrow="true">
 			<Container>
-				<SpinnerSection
-					inverted
-					subtitle="TOP 3%"
-					title="A High-Performing Senior Elite Team"
-					content="Partner with our advertising experts to save time, boost performance, and meet your milestones on your growth journey."
-					cta="Learn more"
-					to="/"
-					image="/assets/illustrations/chart/tech-chart.png"
-					layer-base="/assets/illustrations/chart/tech-chart"
-					layer-extension="svg"
-				/>
+				<SectionTitle title="Integrate Smart CNAM simply with curl" subtitle="overview" />
+				<ssDevWindows />
+
+				<SsBlockWhois></SsBlockWhois>
+				<!-- <TestimonialBlock
+					image="/assets/img/lady-1.jpg"
+					title="I had trouble finding a fair deal. Then I simply decided to start using Vulk and it actually worked!"
+					content="Isabella's insurance policy deals that were found on our platform completely changed her life and removed all the hassle."
+					link-label="Read Isabella's Story"
+					link="/about"
+				/> -->
+				<!-- <ResourceGrid :posts="posts" :limit="3" upside-down /> -->
+			</Container>
+		</Section>
+		<!-- <HeroWhois size="medium"></HeroWhois> -->
+		<Section id="features" color="grey">
+			<Container>
+				<SectionTitle title="Smart CNAM ratings dynamically retreived in real-time" subtitle="Features" />
+				<FeatureBlockH :features="features" :columns="3" :limit="8" />
 			</Container>
 		</Section>
 
-		<!-- <Section color="grey">
-      <Container>
-        <SectionTitle title="Our Company Values" subtitle="Dedicated Team" />
+		<Section id="pricing" bordered-bottom>
+			<Container>
+				<SectionTitle title="Free for everyone" subtitle="Pricing" />
+				<div>&nbsp;</div>
+				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+			</Container>
+		</Section>
 
-        <ValuesIconSection :values="iconValues" polka-dots />
+		<Section id="faqs">
+			<Container>
+				<SectionTitle title="Frequently Asked Questions" subtitle="FAQs" />
+				<DoubleFaqCollapse :left="faq.left" :right="faq.right" chevrons />
+			</Container>
+		</Section>
 
-        <LogoMarquee :logos="customerLogos" compact />
-      </Container>
-    </Section> -->
+		<Section color="grey">
+			<Container>
+				<CtaBlockJ small-text="Get started" :title="cta.title" :subtitle="cta.subtitle">
+					<form>
+						<Field grouped>
+							<Control icon="feather:mail" expanded>
+								<VInput placeholder="Email" />
+							</Control>
+							<Control icon="feather:lock" expanded>
+								<VInput placeholder="Password" password />
+							</Control>
+							<Control>
+								<Button size="form" color="primary" :long="2"> Create account </Button>
+							</Control>
+						</Field>
+					</form>
+				</CtaBlockJ>
+			</Container>
+		</Section>
 
-		<!-- <Section color="grey">
-      <Container>
-        <SectionTitle title="About The Founders" subtitle="The Big Guys" />
-
-        <FoundersSection :founders="founders" :limit="2" />
-      </Container>
-    </Section> -->
-
-		<!-- <Section color="grey">
-      <Container>
-        <SectionTitle title="Meet The Team" subtitle="And The Others" />
-
-        <TeamBlockE :items="gridTeam" :limit="12" shapes />
-      </Container>
-    </Section> -->
-
-		<!-- <Section color="grey">
-      <Container>
-        <div class="mb-6">
-          <SectionTitle
-            title="We are in the press"
-            subtitle="They talk about us"
-          />
-        </div>
-
-        <PressSection :releases="press" />
-      </Container>
-    </Section> -->
-
-		<!-- <Section color="grey" wave="wave-1" shape-color="white">
-      <Container>
-        <ValuesSection :values="plantValues" image-height="130px" />
-
-        <CtaBlockB
-          title-primary="Start Now!"
-          content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-primary="Free Trial"
-          cta-primary-link="/"
-          title-secondary="More info?"
-          content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-secondary="Contact Us"
-          cta-secondary-link="/"
-          boxed
-          shapes
-          animated
-        />
-      </Container>
-    </Section> -->
-
-		<FooterD
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
-              non possum. Apparet statim, quae sint officia, quae actiones."
-			color="light"
-			:social-links="socialLinks"
-		/>
+		<ssFooter></ssFooter>
 	</div>
 </template>

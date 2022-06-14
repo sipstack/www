@@ -28,7 +28,7 @@ const props = defineProps<HeroProductsProps>();
 						<Button :href="props.button1Href" color="primary" elevated bold>
 							{{ props.button1Title }}
 						</Button>
-						<Button :href="props.button2Href" elevated bold>
+						<Button v-if="props.button2Title" :href="props.button2Href" elevated bold>
 							{{ props.button2Title }}
 						</Button>
 					</Buttons>
