@@ -84,10 +84,10 @@ watch(
 					<a
 						role="button"
 						class="navbar-item"
-						:class="[activeDropdown === 'services-drop' && 'is-selected']"
+						:class="[activeDropdown === 'solutions-drop' && 'is-selected']"
 						tabindex="0"
-						@mouseover="() => selectMobileMenu('services-drop')"
-						@focusin="() => selectMobileMenu('services-drop')"
+						@mouseover="() => selectMobileMenu('solutions-drop')"
+						@focusin="() => selectMobileMenu('solutions-drop')"
 					>
 						<span class="has-naver mr-1">Solutions</span>
 						<i class="iconify" data-icon="feather:chevron-down"></i>
@@ -130,7 +130,7 @@ watch(
 		<div class="megamenu" :class="[isMegamenuOpen && 'is-active']">
 			<ProductsMegamenu v-if="activeDropdown === 'products-drop'" @close="() => selectMobileMenu()" />
 			<CompanyMegamenu v-if="activeDropdown === 'company-drop'" @close="() => selectMobileMenu()" />
-			<ServicesMegamenu v-if="activeDropdown === 'services-drop'" @close="() => selectMobileMenu()" />
+			<SolutionsMegamenu v-if="activeDropdown === 'solutions-drop'" @close="() => selectMobileMenu()" />
 			<ResourcesMegamenu v-if="activeDropdown === 'resources-drop'" @close="() => selectMobileMenu()" />
 		</div>
 	</nav>
