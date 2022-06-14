@@ -47,9 +47,8 @@ onBeforeMount(() => {
 				<div class="container">
 					<div class="columns">
 						<p class="column is-10 paragraph rem-90">
-							We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our Privacy Policy.
-							<br />
-							By continuing to browse our website, you agree to our use of cookies.
+							We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our
+							<a href="/legal/privacy">Privacy Policy</a>. By continuing to browse our website, you agree to our use of cookies.
 						</p>
 						<Buttons class="column is-2 has-text-right has-text-centered-mobile">
 							<Button color="primary" icon="ion:reload-outline" raised @click="() => close()"> Accept </Button>
