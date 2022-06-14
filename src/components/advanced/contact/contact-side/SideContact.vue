@@ -27,7 +27,8 @@ const props = withDefaults(defineProps<SideContactProps>(), {
 				</div>
 				<div class="column is-7">
 					<div class="contact-map">
-						<MapBox :lng="props.lng" :lat="props.lat" :zoom="props.zoom" absolute />
+						<!-- <MapBox :lng="props.lng" :lat="props.lat" :zoom="props.zoom" absolute /> -->
+						<ImageRatio ratio="4by3"><img src="/assets/img/contact-us.jpg" alt="Contact us" /></ImageRatio>
 					</div>
 				</div>
 			</div>

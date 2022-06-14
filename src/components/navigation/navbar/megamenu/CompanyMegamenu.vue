@@ -52,7 +52,7 @@ const emit = defineEmits(["close"]);
 						<h4>REACH US</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/subpages/contact" class="list-link"> Contact </RouterLink>
+								<RouterLink v-preload-link to="/contact" class="list-link"> Contact </RouterLink>
 							</li>
 							<li>
 								<RouterLink v-preload-link to="/subpages/help" class="list-link"> Investor Relations </RouterLink>
