@@ -279,7 +279,6 @@ declare module "@vue/runtime-core" {
 		SectionMap: typeof import("./src/components/layout/section/modules/SectionMap.vue")["default"];
 		SectionTitle: typeof import("./src/components/base/title/SectionTitle.vue")["default"];
 		Serpentin: typeof import("./src/components/misc/geometry/Serpentin.vue")["default"];
-		ServicesMegamenu: typeof import("./src/components/navigation/navbar/megamenu/ServicesMegamenu.vue")["default"];
 		SideBenefits: typeof import("./src/components/advanced/features/side-benefits/SideBenefits.vue")["default"];
 		SideContact: typeof import("./src/components/advanced/contact/contact-side/SideContact.vue")["default"];
 		SideSection: typeof import("./src/components/advanced/features/side-section/SideSection.vue")["default"];
@@ -296,6 +295,7 @@ declare module "@vue/runtime-core" {
 		SimpleTableHeader: typeof import("./src/components/base/table/SimpleTableHeader.vue")["default"];
 		SimpleTableRow: typeof import("./src/components/base/table/SimpleTableRow.vue")["default"];
 		SolidNav: typeof import("./src/layouts/solid-nav.vue")["default"];
+		SolutionsMegamenu: typeof import("./src/components/navigation/navbar/megamenu/SolutionsMegamenu.vue")["default"];
 		SpinnerSection: typeof import("./src/components/advanced/features/spinner-section/SpinnerSection.vue")["default"];
 		SsBlockWhois: typeof import("./src/components/custom/block/ssBlockWhois.vue")["default"];
 		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
