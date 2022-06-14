@@ -42,9 +42,9 @@ const emit = defineEmits(["close"]);
 							<li>
 								<RouterLink v-preload-link to="/" class="list-link"> MSPs </RouterLink>
 							</li>
-							<li>
+							<!-- <li>
 								<RouterLink v-preload-link to="/" class="list-link"> Call Centers </RouterLink>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
