@@ -44,7 +44,8 @@ const props = withDefaults(defineProps<ResourceItemProps>(), {
 
 			<div class="is-flex is-align-items-center is-justify-content-space-between">
 				<div>
-					<RouterLink :to="{ name: 'blog-post' }" class="is-flex is-align-items-center">
+					<!-- <RouterLink :to="{ name: 'blog-post' }" class="is-flex is-align-items-center"> -->
+					<RouterLink :to="props.post.link" class="is-flex is-align-items-center">
 						<span class="mr-2">Read More</span>
 						<i class="iconify" data-icon="feather:arrow-right"></i>
 					</RouterLink>

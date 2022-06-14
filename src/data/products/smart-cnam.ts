@@ -1,18 +1,5 @@
-// deprecated
-// export const heroFeatures: BaseFeature[] = [
-// 	{
-// 		title: "AI Powered",
-// 		text: "Our AI handles every complex operation, letting you focus.",
-// 	},
-// 	{
-// 		title: "Real-Time Data",
-// 		text: "All your data is processed in real-time, for better performance.",
-// 	},
-// 	{
-// 		title: "Fast and Secure",
-// 		text: "Your data is virtually unhackable compared to traditional net.",
-// 	},
-// ];
+// import type { PostItem } from "/@src/components/advanced/blog/blog-grid-item/BlogGridItem.vue";
+import type { SimpleIconFeature } from "/@src/types";
 
 export const pageLinks = [
 	{
@@ -54,6 +41,69 @@ export const salesFeatures: SimpleIconFeature[] = [
 		title: "Caller details",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
 		icon: "iconoir:journal",
+	},
+];
+
+export const posts = [
+	{
+		id: 0,
+		image: "/assets/illustrations/blog/commerce-1.svg",
+		title: "Increase conversion rates and learn how to manage abandonned carts",
+		likes: "112",
+		categories: [
+			{
+				name: "Commerce",
+			},
+			{
+				name: "Conversion",
+			},
+			{
+				name: "Profit",
+			},
+		],
+		date: "March 17th, 2022",
+		duration: 2,
+		link: "tttt",
+	},
+	{
+		id: 1,
+		image: "/assets/illustrations/blog/commerce-2.svg",
+		title: "How order bumps can help increasing your revenue and conversions",
+		likes: "319",
+		categories: [
+			{
+				name: "Orders",
+			},
+			{
+				name: "Checkout",
+			},
+			{
+				name: "Conversion",
+			},
+		],
+		date: "March 17th, 2022",
+		duration: 2,
+		link: "",
+	},
+	{
+		id: 2,
+		image: "/assets/illustrations/blog/commerce-3.svg",
+		title: "How a rich and well maintained catalogue easily converts customers",
+		likes: "519",
+		categories: [
+			{
+				name: "Conversion",
+			},
+			{
+				name: "Sales",
+			},
+			{
+				name: "Products",
+			},
+		],
+		date: "March 17th, 2022",
+		duration: 2,
+		link: "",
 	},
 ];
 
