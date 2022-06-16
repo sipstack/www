@@ -1,36 +1,20 @@
-<!-- <route lang="yaml">
-meta:
-  layout: inverted-nav
-</route> -->
-
 <script setup lang="ts">
-// import { pageLinks } from "/@src/data/products/whois";
 import { contactInfo, faq } from "/@src/data/contact";
 </script>
 
 <template>
 	<div>
-		<HeroProducts
-			title="Contact"
-			subtitle="Have questions? Please review our resources or contact us."
-			button1-title="Knowledge Base"
-			button1-href="/resources/knowledge-base"
-			button2-title="Frequently Asked Questions"
-			button2-href="/contact/#faq"
-		/>
-
-		<!-- <DemoLinks :links="pageLinks" width="400px" /> -->
-		<Section>
+		<Section color="grey">
 			<Container>
-				<!-- <PageTitle title="Contact" subtitle="Reach Us" /> -->
+				<PageTitle title="Contact" subtitle="Reach Us" />
 
-				<SideContact title="Contact Us" subtitle="General contact or department specific below" :lng="12.550343" :lat="55.665957" :zoom="16" />
+				<SideContact title="Contact Us" subtitle="Fill out the form below to reach us" :lng="12.550343" :lat="55.665957" :zoom="16" />
 
 				<ContactInfo :infos="contactInfo" />
 			</Container>
 		</Section>
 
-		<Section id="faq" color="grey">
+		<Section color="grey">
 			<Container>
 				<SectionTitle title="Read our FAQs" subtitle="Have a Question?" />
 
