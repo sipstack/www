@@ -154,6 +154,7 @@ declare module "@vue/runtime-core" {
 		HeroL: typeof import("./src/components/layout/hero/HeroL.vue")["default"];
 		HeroPeople: typeof import("./src/components/layout/hero/modules/HeroPeople.vue")["default"];
 		HeroProducts: typeof import("./src/components/custom/hero/HeroProducts.vue")["default"];
+		"HeroProducts.1": typeof import("./src/components/custom/hero/HeroProducts.1.vue")["default"];
 		HeroSlantMask: typeof import("./src/components/misc/masks/HeroSlantMask.vue")["default"];
 		HeroStacks: typeof import("./src/components/layout/hero/modules/HeroStacks.vue")["default"];
 		HeroSub: typeof import("./src/components/layout/hero/heroSub/HeroSub.vue")["default"];
@@ -304,9 +305,16 @@ declare module "@vue/runtime-core" {
 		SsDualBoxes: typeof import("./src/components/custom/misc/ssDualBoxes.vue")["default"];
 		SsFooter: typeof import("./src/components/custom/footer/ssFooter.vue")["default"];
 		SsGlobeStats: typeof import("./src/components/custom/misc/ssGlobeStats.vue")["default"];
+		SsHeroSimple: typeof import("./src/components/custom/hero/ssHeroSimple.vue")["default"];
+		SsLinks: typeof import("./src/components/custom/misc/ssLinks.vue")["default"];
+		SsLinksHash: typeof import("./src/components/custom/misc/ssLinksHash.vue")["default"];
+		"SsLinksHash.1": typeof import("./src/components/custom/misc/ssLinksHash.1.vue")["default"];
+		SsLinksHero: typeof import("./src/components/custom/misc/ssLinksHero.vue")["default"];
+		SsLinksHref: typeof import("./src/components/custom/misc/ssLinksHref.vue")["default"];
 		SsSideSection: typeof import("./src/components/custom/misc/ssSideSection.vue")["default"];
 		SsSubscriptionCompact: typeof import("./src/components/custom/forms/ssSubscriptionCompact.vue")["default"];
 		SsSubscriptionCompactBlock: typeof import("./src/components/custom/misc/ssSubscriptionCompactBlock.vue")["default"];
+		SsTermsBlock: typeof import("./src/components/custom/misc/ssTermsBlock.vue")["default"];
 		SsTimelineInvest: typeof import("./src/components/custom/misc/ssTimelineInvest.vue")["default"];
 		SsTimelineTitleSub: typeof import("./src/components/custom/misc/ssTimelineTitleSub.vue")["default"];
 		StackedSection: typeof import("./src/components/advanced/features/stacked-section/StackedSection.vue")["default"];
