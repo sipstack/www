@@ -73,7 +73,7 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" :title="cta.title" :subtitle="cta.subtitle">
+				<CtaBlockJ small-text="Integrate" :title="cta.title" :subtitle="cta.subtitle">
 					<form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>

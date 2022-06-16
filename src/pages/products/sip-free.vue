@@ -28,9 +28,9 @@ import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/p
 			<Container>
 				<SectionTitle title="Get Started &#8212; It's Free" subtitle="Overview" />
 
-				<SubscriptionCompactBlock
+				<ssSubscriptionCompactBlock
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam."
-					label="Get Started Free"
+					label="Create account"
 					placeholder="Enter your email"
 				/>
 

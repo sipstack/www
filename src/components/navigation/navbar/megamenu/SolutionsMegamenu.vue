@@ -18,7 +18,7 @@ const emit = defineEmits(["close"]);
 							<div class="media-content">
 								<h3>Solutions</h3>
 								<p>Find out why it's important to partner with SIPSTACK, in a better connected tomorrow.</p>
-								<RouterLink v-preload-link to="/blocks/colors">
+								<RouterLink v-preload-link to="/resources/blog">
 									<span>Read the blog</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
 								</RouterLink>
