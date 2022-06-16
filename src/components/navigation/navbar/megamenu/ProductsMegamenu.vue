@@ -26,7 +26,7 @@ const emit = defineEmits(["close"]);
 								<p>The most modern & advanced unified communication tools.</p>
 								<RouterLink v-preload-link to="/whois">
 									<span>Whois phone number lookup</span>
-									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
+									<i class="iconify" data-icon="feather:external-link" data-inline="false"></i>
 								</RouterLink>
 							</div>
 						</div>

@@ -26,7 +26,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
     </PageTitle> -->
 		<Section id="overview">
 			<Container>
-				<SideSection
+				<ssSideSection
 					subtitle="Overview"
 					title="Market based DSP managed service"
 					content="Whether you're looking to maximize reach, grow incremental profits, or optimize towards custom metrics, our team of experts is here to ensure success is targeted to your KPIs."
@@ -35,11 +35,12 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 					image-width="800"
 					image-height="625"
 					to="/"
+					image-mockup
 				>
 					<template #content>
 						<QuickFeatures class="mt-4" :features="['Budget efficiency', 'Focus on your work']" />
 					</template>
-				</SideSection>
+				</ssSideSection>
 			</Container>
 		</Section>
 

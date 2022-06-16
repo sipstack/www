@@ -36,13 +36,13 @@ const emit = defineEmits(["close"]);
 						<h4>WHO WE ARE</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/about/about-5" class="list-link"> Meet the team </RouterLink>
+								<RouterLink v-preload-link to="/about#team" class="list-link"> Meet the team </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/about/about-6" class="list-link"> Our values </RouterLink>
+								<RouterLink v-preload-link to="/about" class="list-link"> Our values </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/about/about-4" class="list-link"> In the media </RouterLink>
+								<RouterLink v-preload-link to="/about#media" class="list-link"> In the media </RouterLink>
 							</li>
 						</ul>
 					</div>
@@ -55,10 +55,10 @@ const emit = defineEmits(["close"]);
 								<RouterLink v-preload-link to="/contact" class="list-link"> Contact </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/subpages/help" class="list-link"> Investor Relations </RouterLink>
+								<RouterLink v-preload-link to="/invest" class="list-link"> Investor Relations </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/subpages/help" class="list-link"> Knowledge Base </RouterLink>
+								<RouterLink v-preload-link to="/abuse" class="list-link"> Report Abuse </RouterLink>
 							</li>
 						</ul>
 					</div>
