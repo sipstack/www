@@ -301,7 +301,14 @@ declare module "@vue/runtime-core" {
 		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
 		SsCtaDefault: typeof import("./src/components/custom/cta/ssCtaDefault.vue")["default"];
 		SsDevWindows: typeof import("./src/components/custom/dev/ssDevWindows.vue")["default"];
+		SsDualBoxes: typeof import("./src/components/custom/misc/ssDualBoxes.vue")["default"];
 		SsFooter: typeof import("./src/components/custom/footer/ssFooter.vue")["default"];
+		SsGlobeStats: typeof import("./src/components/custom/misc/ssGlobeStats.vue")["default"];
+		SsSideSection: typeof import("./src/components/custom/misc/ssSideSection.vue")["default"];
+		SsSubscriptionCompact: typeof import("./src/components/custom/forms/ssSubscriptionCompact.vue")["default"];
+		SsSubscriptionCompactBlock: typeof import("./src/components/custom/misc/ssSubscriptionCompactBlock.vue")["default"];
+		SsTimelineInvest: typeof import("./src/components/custom/misc/ssTimelineInvest.vue")["default"];
+		SsTimelineTitleSub: typeof import("./src/components/custom/misc/ssTimelineTitleSub.vue")["default"];
 		StackedSection: typeof import("./src/components/advanced/features/stacked-section/StackedSection.vue")["default"];
 		SubscriptionBlock: typeof import("./src/components/misc/subscription/SubscriptionBlock.vue")["default"];
 		SubscriptionCompact: typeof import("./src/components/misc/subscription/SubscriptionCompact.vue")["default"];
