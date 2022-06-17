@@ -56,10 +56,10 @@ const emit = defineEmits(["close"]);
 							</li>
 
 							<li>
-								<a href="https://www2.sipstack.com/abuse" class="list-link"> Report Abuse </a>
+								<a href="https://www2.sipstack.com/jobs" class="list-link"> Careers </a>
 							</li>
 							<li>
-								<a href="https://www2.sipstack.com/jobs" class="list-link"> Careers </a>
+								<a href="https://www2.sipstack.com/abuse" class="list-link"> Report Abuse </a>
 							</li>
 						</ul>
 					</div>

@@ -8,15 +8,12 @@
 			<div class="columns is-vcentered">
 				<div class="column is-5">
 					<Title tag="h1" :size="2" weight="bold">
-						The
-						<u>first</u>
-						&
-						<u>only</u>
-						AI-powered suite of communication tools
+						Smart Telecom Tools
+						<span class="text-primary">AI/ML Powered</span>
 					</Title>
 					<Subtitle tag="p" :size="5" classes="b-centered-tablet-p text-medium">
-						Machine learning & community sourced data drives our Unified Communications platform and suite of tools, bringing real-time information to the forefront of connecting
-						people.
+						Post-modern VoIP & telecommunication tools like no other. AI / machine learning data provides unparalleled experience within existing VoIP platforms or natively in our
+						Cloud UC.<br /><br />SIPSTACK is connecting our future.
 					</Subtitle>
 					<!--Buttons-->
 					<div class="buttons is-relative z-1">

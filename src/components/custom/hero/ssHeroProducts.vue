@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export interface HeroProductsProps {
+export interface ssHeroProductsProps {
 	title: string;
 	subtitle: string;
 	button1Title: string;
@@ -8,7 +8,14 @@ export interface HeroProductsProps {
 	button2Href: string;
 }
 
-const props = defineProps<HeroProductsProps>();
+const props = withDefaults(defineProps<ssHeroProductsProps>(), {
+	title: "",
+	subtitle: "",
+	button1Title: "",
+	button1Href: "",
+	button2Title: "",
+	button2Href: "",
+});
 </script>
 
 <template>

@@ -9,7 +9,7 @@ import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/p
 
 <template>
 	<div>
-		<HeroProducts title="SIP Free" subtitle="Unlimited SIP termination to toll free numbers in North America" button1-title="Create account" button1-href="/get-started" />
+		<ssHeroProducts title="SIP Free" subtitle="Unlimited SIP termination to toll free numbers in North America" button1-title="Create account" button1-href="/get-started" />
 
 		<DemoLinks :links="pageLinks" width="400px" />
 		<!-- <PageTitle

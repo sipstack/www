@@ -6,23 +6,24 @@ meta:
 <script setup lang="ts">
 // import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/data/products/whois";
 import { termsOfService } from "/@src/data-example/pages/terms";
+
 const pageLinks = [
 	{
-		label: "Privacy",
+		label: "Terms of Service",
+		target: "/legal/tos",
+	},
+	{
+		label: "Acceptable Use Policy",
+		target: "/legal/aup",
+	},
+	{
+		label: "Privacy Policy",
 		target: "/legal/privacy",
-	},
-	{
-		label: "Features",
-		target: "features",
-	},
-	{
-		label: "Pricing",
-		target: "pricing",
 	},
 
 	{
-		label: "FAQs",
-		target: "faqs",
+		label: "Cookie Policy",
+		target: "/legal/cookie",
 	},
 ];
 </script>
@@ -31,7 +32,7 @@ const pageLinks = [
 	<div>
 		<ssHeroSimple title="Legal" subtitle="Terms of Service" />
 
-		<ssLinksHref :links="pageLinks" width="400px" />
+		<ssLinksHref :links="pageLinks" width="700px" />
 
 		<Section id="overview">
 			<Container>
