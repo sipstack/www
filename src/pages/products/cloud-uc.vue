@@ -9,7 +9,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 
 <template>
 	<div>
-		<HeroProducts title="Cloud UC" subtitle="The VoIP management console you've been waiting for" button1-title="Request invite" button1-href="/get-started" />
+		<ssHeroProducts title="Cloud UC" subtitle="The VoIP management console you've been waiting for" button1-title="Request invite" button1-href="/get-started" />
 
 		<DemoLinks :links="pageLinks" width="400px" />
 		<!-- <PageTitle
@@ -107,7 +107,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 
 		<Section>
 			<Container>
-				<CaseStudy background="data:image/gif;base64,replace_with_your_image">
+				<CaseStudy background="/assets/img/1.jpeg">
 					<SideSection
 						subtitle="Success Stories"
 						title="Learn how they built a successful business"

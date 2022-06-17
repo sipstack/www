@@ -7,7 +7,13 @@ import { viaPlaceholderErrorHandler } from "/@src/utils/viaPlaceholderErrorHandl
 	<div class="circle-hero columns is-vcentered">
 		<div class="column is-5">
 			<div class="hero-caption">
-				<Title tag="h2">Always learning</Title>
+				<Title tag="h2" :size="3" weight="bold">Always learning</Title>
+				<Subtitle tag="h3" :size="6">
+					<span>
+						<slot name="subtitle">Find out whos calling with trust ratings dynamic for your location.</slot>
+					</span>
+				</Subtitle>
+
 				<Subtitle
 					id="ss-subtitle"
 					tag="p"
@@ -15,9 +21,6 @@ import { viaPlaceholderErrorHandler } from "/@src/utils/viaPlaceholderErrorHandl
 					classes="b-centered-tablet-p"
 					style="font-size: 0.95rem; font-weight: unset !important; line-height: unset !important; padding-top: 5px"
 				>
-					Find out whos calling with trust ratings dynamic for your location.
-					<br />
-					<br />
 					Powered by AI and community users like you. Because everyone deserves the right to know who is calling, without any strings attached. Because everyone deserves the right
 					to know who is calling, without any strings attached. Because everyone deserves the right to know who is calling, without any strings attached.
 				</Subtitle>

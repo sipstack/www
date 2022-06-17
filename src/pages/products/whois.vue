@@ -9,7 +9,7 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 
 <template>
 	<div>
-		<HeroProducts
+		<ssHeroProducts
 			title="Whois"
 			subtitle="CallerID name lookup for everyone"
 			button1-title="Create account"
@@ -44,10 +44,9 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 					blob
 					reverse
 				/>
+				<SsBlockWhois></SsBlockWhois>
 			</Container>
 		</Section>
-
-		<HeroWhois color="" size="medium" />
 
 		<Section id="features" color="grey">
 			<Container>
@@ -79,9 +78,9 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 							<Control icon="feather:mail" expanded>
 								<VInput placeholder="Email" />
 							</Control>
-							<Control icon="feather:lock" expanded>
+							<!-- <Control icon="feather:lock" expanded>
 								<VInput placeholder="Password" password />
-							</Control>
+							</Control> -->
 							<Control>
 								<Button size="form" color="primary" :long="2"> Create account </Button>
 							</Control>

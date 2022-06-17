@@ -6,7 +6,7 @@
 			<div class="columns">
 				<div class="column is-7">
 					<!--#region First browser window-->
-					<div class="code-window">
+					<!-- <div class="code-window">
 						<div class="window-head">
 							<div class="dots">
 								<div class="dot bg-danger"></div>
@@ -24,12 +24,6 @@
 								<div class="code-line">4</div>
 							</div>
 
-							<!--
-exten => _X.,GotoIf($["${CALLERID(name)}" != ""]?hasCNAM:getCNAM)
-same => n(getCNAM),Verbose(Getting Smart CNAM from SIPSTACK)
-same => n,Set(CALLERID(name)=${CURL(https://api.sipstack.com/v1/a/cnam/${CALLERID(num)}/${EXTEN})})
-same => n(hasCNAME),Verbose(Continue dialplan) 
--->
 							<div class="code-content">
 								<div class="code-content-line">
 									<span class="bold">exten =>&nbsp;</span>_X.,GotoIf($["${CALLERID(name)}" != ""]?<span class="bold text-secondary">hasCNAM</span>:<span class="bold text-primary"
@@ -42,7 +36,8 @@ same => n(hasCNAME),Verbose(Continue dialplan)
 								<div class="code-content-line"><span class="bold">&nbsp;same =>&nbsp;</span>n(<span class="bold text-secondary">hasCNAM</span>),Verbose(Continue dialplan)</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					<SsTimelineBashWindow></SsTimelineBashWindow>
 					<!--#endregion -->
 
 					<!--#region Second browser window-->
