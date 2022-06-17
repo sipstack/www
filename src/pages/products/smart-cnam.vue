@@ -4,12 +4,12 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { pageLinks, features, pricing, faq, cta } from "/@src/data/products/smart-cnam";
+import { pageLinks, features, faq, cta } from "/@src/data/products/smart-cnam";
 </script>
 
 <template>
 	<div>
-		<HeroProducts
+		<ssHeroProducts
 			title="Smart CNAM"
 			subtitle="Caller ID lookups just got smarter"
 			button1-title="Create account"
@@ -34,21 +34,18 @@ import { pageLinks, features, pricing, faq, cta } from "/@src/data/products/smar
 
 		<Section id="overview" :bottom-narrow="true">
 			<Container>
-				<SectionTitle title="Integrate Smart CNAM simply with curl" subtitle="overview" />
+				<SectionTitle title="Integrate Smart CNAM simply with curl" subtitle="Overview" />
 				<ssDevWindows />
-
+				<CollectionTitle
+					title="Add CNAM lookup to your call flows"
+					subtitle="With a few lines, get real-time CNAM data and risk score, or just pluging free Caller ID"
+				></CollectionTitle
+				><br />
+				<ssTimelineCodeWindow />
 				<SsBlockWhois></SsBlockWhois>
-				<!-- <TestimonialBlock
-					image="/assets/img/lady-1.jpg"
-					title="I had trouble finding a fair deal. Then I simply decided to start using Vulk and it actually worked!"
-					content="Isabella's insurance policy deals that were found on our platform completely changed her life and removed all the hassle."
-					link-label="Read Isabella's Story"
-					link="/about"
-				/> -->
-				<!-- <ResourceGrid :posts="posts" :limit="3" upside-down /> -->
 			</Container>
 		</Section>
-		<!-- <HeroWhois size="medium"></HeroWhois> -->
+
 		<Section id="features" color="grey">
 			<Container>
 				<SectionTitle title="Smart CNAM ratings dynamically retreived in real-time" subtitle="Features" />
@@ -60,7 +57,27 @@ import { pageLinks, features, pricing, faq, cta } from "/@src/data/products/smar
 			<Container>
 				<SectionTitle title="Free for everyone" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+				<!-- <PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" /> -->
+				<PricingSolo
+					title="Solution pricing"
+					subtitle="All features you'll ever need to run a project"
+					:features="[
+						'Unlimited projects',
+						'Desktop and mobile app',
+						'Unlimited tasks',
+						'Email integration',
+						'Unlimited time records',
+						'Client management',
+						'Task dependencies',
+						'Budget tracking',
+						'Recurring tasks',
+						'Advanced reports',
+					]"
+					:monthly-price="7"
+					:yearly-price="79"
+					link-label="Start Free Trial"
+					link="/"
+				/>
 			</Container>
 		</Section>
 

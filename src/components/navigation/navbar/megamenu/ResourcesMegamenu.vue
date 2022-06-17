@@ -53,13 +53,14 @@ const emit = defineEmits(["close"]);
 								<RouterLink v-preload-link to="/blocks/features" class="list-link"> Forums </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/content" class="list-link"> Feedback </RouterLink>
-							</li>
-							<li>
 								<RouterLink v-preload-link to="/blocks/team" class="list-link"> Feature requests </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/testimonials" class="list-link"> Testimonials </RouterLink>
+								<RouterLink v-preload-link to="/blocks/content" class="list-link"> Feedback </RouterLink>
+							</li>
+
+							<li>
+								<RouterLink v-preload-link to="/blocks/testimonials" class="list-link"> Contribute </RouterLink>
 							</li>
 						</ul>
 					</div>

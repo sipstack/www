@@ -6,32 +6,7 @@ meta:
 
 <script setup lang="ts">
 import { ssProducts } from "/@src/data/sipstack";
-// const starterTemplates = [
-//   {
-//     name: 'Vue.js',
-//     image: 'data:image/gif;base64,replace_with_your_image',
-//     icon: '/assets/stacks/vuejs-light.svg',
-//     link: '/',
-//   },
-//   {
-//     name: 'React.js',
-//     image: 'data:image/gif;base64,replace_with_your_image',
-//     icon: '/assets/stacks/reactjs-light.svg',
-//     link: '/',
-//   },
-//   {
-//     name: 'Nuxt.js',
-//     image: 'data:image/gif;base64,replace_with_your_image',
-//     icon: '/assets/stacks/nuxt-light.svg',
-//     link: '/',
-//   },
-//   {
-//     name: 'Next.js',
-//     image: 'data:image/gif;base64,replace_with_your_image',
-//     icon: '/assets/stacks/next-light.svg',
-//     link: '/',
-//   },
-// ]
+import { features8 } from "/@src/data-example/blocks/features";
 
 const features: IconFeature[] = [
 	{
@@ -97,15 +72,47 @@ const features: IconFeature[] = [
 <template>
 	<div>
 		<HeroHome />
-
 		<Section wave="wave-2">
 			<Container>
+				<CollectionTitle
+					title="Beyond Telecom"
+					subtitle="Not just for telecommunication providers, SIPSTACK integrates into any system tapping into data like never before."
+				></CollectionTitle>
+				<ssFeatureBlockJ :features="features8" links />
+
+				<!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
+				<BoxedFeatures :features="ssProducts" /> -->
+
+				<!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" /> -->
+				<ssGlobeStats />
+				<!-- <BoxedFeatures :features="ssProducts" /> -->
+
 				<!-- <ContentBlockB
           :title="productStacks.title"
           :subtitle="productStacks.subtitle"
           :text="productStacks.text"
           :images="productStacks.images"
         /> -->
+			</Container>
+		</Section>
+
+		<Section color="grey">
+			<Container>
+				<SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
+
+				<BoxedFeatures :features="ssProducts" />
+			</Container>
+		</Section>
+
+		<Section>
+			<Container>
+				<SectionTitle title="Sneak Peek of Cloud UC" subtitle="Preview" />
+				<FeatureBlockC :features="features" :limit="3" size="medium" links animated />
+			</Container>
+		</Section>
+
+		<Section>
+			<Container>
 				<BoxedSection
 					minititle="Join Early Access!"
 					title="Your next UCaaS platform, powered by AI & you"
@@ -119,58 +126,7 @@ const features: IconFeature[] = [
 			</Container>
 		</Section>
 
-		<Section color="grey">
-			<Container>
-				<SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
-
-				<BoxedFeatures :features="ssProducts" />
-
-				<!-- <ButtonsCta title="Get Started" subtitle="Get started with SIPSTACK">
-          <Button color="primary" href="" :long="2" raised>
-            <span>Get Started</span>
-          </Button>
-          <a href="https://support.cssninja.io" class="button second-button">
-            Join our Community
-          </a>
-        </ButtonsCta> -->
-			</Container>
-		</Section>
-
 		<Section>
-			<Container>
-				<SectionTitle title="Sneak Peek of Cloud UC" subtitle="Preview" />
-				<FeatureBlockC :features="features" :limit="3" size="medium" links animated />
-			</Container>
-		</Section>
-
-		<!-- <Section color="grey">
-      <Container>
-        <SectionTitle title="Sneak Peek of Cloud UC" subtitle="Preview" />
-
-        <DualBoxes :templates="starterTemplates" />
-      </Container>
-    </Section> -->
-
-		<Section>
-			<Container>
-				<CaseStudy background="/assets/img/1.jpeg">
-					<SideSection
-						subtitle="Success Stories"
-						title="Learn how they built a successful business"
-						content="See how some of our customers leverage Vulk technology to increase profits and take back control from resellers"
-						image="/assets/illustrations/features/feature-3.png"
-						dark-image="/assets/illustrations/features/feature-3-dark.png"
-						image-width="967"
-						image-height="800"
-						cta="Read success stories"
-						inverted
-						to="index"
-					/>
-				</CaseStudy>
-			</Container>
-		</Section>
-
-		<Section color="grey">
 			<Container>
 				<SectionTitle title="Sneak Peek of Cloud UC" subtitle="Preview" />
 				<Buttons alignment="centered" class="py-5">
@@ -197,26 +153,40 @@ const features: IconFeature[] = [
 				</div>
 			</Container>
 		</Section>
-		<!-- <Section color="grey">
-      <Container>
-        <CtaBlockJ
-          small-text="14-Day Trial"
-          title="Start Building"
-          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-        >
-          <Field grouped>
-            <Control expanded icon="feather:mail">
-              <VInput placeholder="Email Address" />
-            </Control>
-            <Control>
-              <Button size="form" color="primary" :long="2" bold raised>
-                Get Started
-              </Button>
-            </Control>
-          </Field>
-        </CtaBlockJ>
-      </Container>
-    </Section> -->
+
+		<Section>
+			<Container>
+				<CaseStudy background="/assets/img/1.jpeg">
+					<SideSection
+						subtitle="Success Stories"
+						title="Learn how they built a successful business"
+						content="See how some of our customers leverage Vulk technology to increase profits and take back control from resellers"
+						image="/assets/illustrations/features/feature-3.png"
+						dark-image="/assets/illustrations/features/feature-3-dark.png"
+						image-width="967"
+						image-height="800"
+						cta="Read success stories"
+						inverted
+						to="index"
+					/>
+				</CaseStudy>
+			</Container>
+		</Section>
+
+		<Section color="grey">
+			<Container>
+				<CtaBlockJ small-text="Get Started" title="Start Connecting" subtitle="Seen enough? It's free to start now.">
+					<Field grouped>
+						<Control expanded icon="feather:mail">
+							<VInput placeholder="Email Address" />
+						</Control>
+						<Control>
+							<Button size="form" color="primary" :long="2" bold raised> Create account </Button>
+						</Control>
+					</Field>
+				</CtaBlockJ>
+			</Container>
+		</Section>
 		<ssFooter></ssFooter>
 	</div>
 </template>
