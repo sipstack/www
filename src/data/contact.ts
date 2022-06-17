@@ -4,7 +4,7 @@ export const contactInfo = [
 		title: "Sales",
 		info: "sales@sipstack.com",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ille pellit, qui permulcet sensum voluptate.",
-		color: "warning",
+		color: "success",
 	},
 	{
 		icon: "ph:lifebuoy-duotone",
@@ -18,7 +18,7 @@ export const contactInfo = [
 		title: "Billing",
 		info: "billing@sipstack.com",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ille pellit, qui permulcet sensum voluptate.",
-		color: "success",
+		color: "default",
 	},
 	{
 		icon: "ph:chart-line-up-duotone",

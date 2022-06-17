@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { Directive } from "vue";
-import { ref, watch, computed } from "vue";
-import { useElementVisibility, useWindowScroll } from "@vueuse/core";
-// import VueScrollTo from "vue-scrollto";
+import { computed } from "vue";
+import { useWindowScroll } from "@vueuse/core";
 
 export interface DemoLink {
 	label: string;
@@ -26,20 +25,28 @@ const isScrolled = computed(() => {
 
 const vActiveOnVisible: Directive = {
 	mounted: (el: HTMLElement, binding: any) => {
-		const target = ref(document.getElementById(binding.value));
-		const targetIsVisible = useElementVisibility(target);
+		console.log(binding.value);
+		console.log(window.location.pathname);
+		if (binding.value == window.location.pathname) {
+			el.classList.add("is-active");
+		} else {
+			el.classList.remove("is-active");
+		}
 
-		watch(
-			targetIsVisible,
-			() => {
-				if (targetIsVisible.value) {
-					el.classList.add("is-active");
-				} else {
-					el.classList.remove("is-active");
-				}
-			},
-			{ immediate: true }
-		);
+		// const target = ref(document.getElementById(binding.value));
+		// const targetIsVisible = useElementVisibility(target);
+
+		// watch(
+		// 	targetIsVisible,
+		// 	() => {
+		// 		if (targetIsVisible.value) {
+		// 			el.classList.add("is-active");
+		// 		} else {
+		// 			el.classList.remove("is-active");
+		// 		}
+		// 	},
+		// 	{ immediate: true }
+		// );
 	},
 };
 
