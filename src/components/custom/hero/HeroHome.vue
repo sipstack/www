@@ -12,8 +12,7 @@
 						<span class="text-primary">AI/ML Powered</span>
 					</Title>
 					<Subtitle tag="p" :size="5" classes="b-centered-tablet-p text-medium">
-						Post-modern VoIP & telecommunication tools like no other. AI / machine learning data provides unparalleled experience within existing VoIP platforms or natively in our
-						Cloud UC.<br /><br />SIPSTACK is connecting our future.
+						Post-modern suite of Telecommunication & VoIP tools. AI / ML at it's core, provides unprecedented meta data across the platform.
 					</Subtitle>
 					<!--Buttons-->
 					<div class="buttons is-relative z-1">
