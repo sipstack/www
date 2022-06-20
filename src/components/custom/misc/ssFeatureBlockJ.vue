@@ -40,7 +40,7 @@ const textClasses = computed(() => [props.inverted && "text-light"]);
 			<div v-for="(feature, index) in props.features.slice(0, 4)" :key="index" class="column is-3">
 				<div class="py-2 medium:py-4">
 					<Title tag="h3" :size="6" weight="semi" narrow :inverted="props.inverted">
-						<span>{{ feature.title }}</span>
+						<span> {{ feature.title }}</span>
 					</Title>
 					<p class="paragraph rem-95 pt-2 max-w-3" :class="textClasses">
 						{{ feature.text }}
