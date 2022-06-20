@@ -116,11 +116,9 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 									</Title>
 									<ul>
 										<li>
-											<RouterLink to="about" class="level-item footer-link"> Our values </RouterLink>
+											<RouterLink to="about" class="level-item footer-link"> About us </RouterLink>
 										</li>
-										<li>
-											<RouterLink to="team" class="level-item footer-link"> Meet the team </RouterLink>
-										</li>
+
 										<li>
 											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> In the media </RouterLink>
 										</li>
@@ -148,12 +146,18 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 				</div>
 				<div class="column is-8 has-text-right has-text-centered-mobile">
 					<span id="footer-link-social" class="footer-text rem-90">
-						<RouterLink v-for="(link, index) in props.socialLinks" :key="index" class="footer-link footer-link-social" :to="link.url">
+						<!-- <RouterLink v-for="(link, index) in props.socialLinks" :key="index" class="footer-link footer-link-social" :to="link.url">
 							<span class="icon">
 								<i class="iconify" :data-icon="link.icon"></i>
 								<span class="is-sr-only">{{ link.name }}</span>
 							</span>
-						</RouterLink>
+						</RouterLink> -->
+						<a v-for="(link, index) in props.socialLinks" :key="index" class="footer-link footer-link-social" :href="link.url" target="_blank">
+							<span class="icon">
+								<i class="iconify" :data-icon="link.icon"></i>
+								<span class="is-sr-only">{{ link.name }}</span>
+							</span>
+						</a>
 					</span>
 				</div>
 			</div>
