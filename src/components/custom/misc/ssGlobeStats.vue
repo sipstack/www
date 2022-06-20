@@ -33,10 +33,10 @@
 					<div class="block-inner">
 						<Title tag="h3" :size="1" weight="bold" narrow>
 							<span></span>
-							<Counter :number="180" />
-							<span>GB+</span>
+							<Counter :number="3800" />
+							<span>+</span>
 						</Title>
-						<p class="paragraph is-upper">Voice Model Training</p>
+						<p class="paragraph is-upper">Voice Model Training Hours</p>
 					</div>
 				</div>
 				<div class="stat-block">

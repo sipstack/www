@@ -296,6 +296,7 @@ declare module "@vue/runtime-core" {
 		SolutionsMegamenu: typeof import("./src/components/navigation/navbar/megamenu/SolutionsMegamenu.vue")["default"];
 		SpinnerSection: typeof import("./src/components/advanced/features/spinner-section/SpinnerSection.vue")["default"];
 		SsBlockWhois: typeof import("./src/components/custom/block/ssBlockWhois.vue")["default"];
+		SsBoxedFeatures: typeof import("./src/components/custom/misc/ssBoxedFeatures.vue")["default"];
 		SsBoxesHero: typeof import("./src/components/custom/misc/ssBoxesHero.vue")["default"];
 		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
 		SsCtaDefault: typeof import("./src/components/custom/cta/ssCtaDefault.vue")["default"];
