@@ -46,7 +46,7 @@ export const ssProducts = [
 
 export const featuresBeyond: IconFeature[] = [
 	{
-		title: "Origins",
+		title: "Origin",
 		text: "Every phone number cites origin data including regional, switch and carrier details.",
 		color: "primary",
 		icon: "feather:mail",
