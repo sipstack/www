@@ -5,6 +5,7 @@ meta:
 
 <script setup lang="ts">
 import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc";
+import { content3 } from "/@src/data-example/blocks/content";
 </script>
 
 <template>
@@ -28,17 +29,16 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 			<Container>
 				<ssSideSection
 					subtitle="Overview"
-					title="Market based DSP managed service"
-					content="Whether you're looking to maximize reach, grow incremental profits, or optimize towards custom metrics, our team of experts is here to ensure success is targeted to your KPIs."
+					title="Level up your hosted PBX service offering"
+					content="Cloud UC is a unified communications platform, open source and asterisk based, that allows you to scale and manage from a single console. Cloud UC augments Smart CNAM and other rich data into all elements of the experience."
 					image="/assets/img/console-pbx.jpeg"
-					dark-image="/assets/img/console-pbx-d.jpeg"
 					image-width="800"
 					image-height="625"
 					to="/"
 					image-mockup
 				>
 					<template #content>
-						<QuickFeatures class="mt-4" :features="['Budget efficiency', 'Focus on your work']" />
+						<QuickFeatures class="mt-4" :features="['Multi-brand', 'Multi-tenant', 'Self-hosted']" />
 					</template>
 				</ssSideSection>
 			</Container>
@@ -48,18 +48,14 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 			<Container>
 				<SideSection
 					reverse
-					title="Build campaigns aligned to your goals in minutes"
-					content="Start with your business goals at a product level and let us automatically create ad groups and campaigns targeted to the right audiences. Do all of this at scale in just a few minutes with four simple steps."
-					image="/assets/illustrations/features/feature-2.png"
-					dark-image="/assets/illustrations/features/feature-2-dark.png"
+					title="Create multiple whitelabel brands"
+					content="Whether you want to allow re-sellers Cloud UC capabiltities while managing & scaling hosts for them or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for whitelabeling."
+					image="/assets/img/create-brand.png"
+					dark-image="/assets/img/create-brand.png"
 					image-width="967"
 					image-height="800"
 					blob
-					to="/"
 				>
-					<template #content>
-						<QuickFeatures class="mt-4" :benefits="['By product campaigns', 'Buyer targeting']" />
-					</template>
 				</SideSection>
 			</Container>
 		</Section>
@@ -67,41 +63,22 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc"
 		<Section>
 			<Container>
 				<SideSection
-					title="We find the best keywords based on your parameters"
-					content="Automate and customize your keyword selection by setting thresholds on conversions, cost per conversion, and click rates, and free up valuable time you can use for other important business tasks."
-					image="/assets/illustrations/features/feature-3.png"
-					dark-image="/assets/illustrations/features/feature-3-dark.png"
+					title="Multi-tenant access across hosts"
+					content="Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and whitelabel portal."
+					image="/assets/img/create-pbx.png"
+					dark-image="/assets/img/create-pbx.png"
 					image-width="967"
 					image-height="800"
 					blob
 					to="index"
 				>
-					<template #content>
-						<!--Hero Benefits-->
-						<QuickFeatures class="mt-4" :benefits="['Add / remove keywords', 'Automatic refine']" />
-					</template>
 				</SideSection>
 			</Container>
 		</Section>
 
 		<Section>
 			<Container>
-				<SideSection
-					reverse
-					title="Understand your business metrics, your way"
-					content="Drill and slice into your advertising performance data by different metrics, brand names, campaigns, targeting types, and more."
-					image="/assets/illustrations/features/feature-4.png"
-					dark-image="/assets/illustrations/features/feature-4-dark.png"
-					image-width="967"
-					image-height="800"
-					blob
-					to="index"
-				>
-					<template #content>
-						<!--Hero Benefits-->
-						<QuickFeatures class="mt-4" :benefits="['Assess profitability', 'Export bulk data']" />
-					</template>
-				</SideSection>
+				<ContentBlockB :title="content3.title" :subtitle="content3.subtitle" :text="content3.text" :images="content3.images" link="index" squared />
 			</Container>
 		</Section>
 

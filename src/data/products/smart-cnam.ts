@@ -1,5 +1,5 @@
 // import type { PostItem } from "/@src/components/advanced/blog/blog-grid-item/BlogGridItem.vue";
-import type { SimpleIconFeature } from "/@src/types";
+import type { IconFeature } from "/@src/types";
 
 export const pageLinks = [
 	{
@@ -21,190 +21,59 @@ export const pageLinks = [
 	},
 ];
 
-export const salesFeatures: SimpleIconFeature[] = [
-	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:star-outline",
-	},
-	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:user-scan",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:input-field",
-	},
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:journal",
-	},
-];
-
-export const posts = [
-	{
-		id: 0,
-		image: "/assets/illustrations/blog/commerce-1.svg",
-		title: "Increase conversion rates and learn how to manage abandonned carts",
-		likes: "112",
-		categories: [
-			{
-				name: "Commerce",
-			},
-			{
-				name: "Conversion",
-			},
-			{
-				name: "Profit",
-			},
-		],
-		date: "March 17th, 2022",
-		duration: 2,
-		link: "tttt",
-	},
-	{
-		id: 1,
-		image: "/assets/illustrations/blog/commerce-2.svg",
-		title: "How order bumps can help increasing your revenue and conversions",
-		likes: "319",
-		categories: [
-			{
-				name: "Orders",
-			},
-			{
-				name: "Checkout",
-			},
-			{
-				name: "Conversion",
-			},
-		],
-		date: "March 17th, 2022",
-		duration: 2,
-		link: "",
-	},
-	{
-		id: 2,
-		image: "/assets/illustrations/blog/commerce-3.svg",
-		title: "How a rich and well maintained catalogue easily converts customers",
-		likes: "519",
-		categories: [
-			{
-				name: "Conversion",
-			},
-			{
-				name: "Sales",
-			},
-			{
-				name: "Products",
-			},
-		],
-		date: "March 17th, 2022",
-		duration: 2,
-		link: "",
-	},
-];
-
 export const features: IconFeature[] = [
 	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
+		title: "Simple text response",
+		text: "Returns a 20 character string response including a prefixed score followed by calle name.",
 		color: "primary",
-		icon: "iconoir:user-scan",
+		icon: "iconoir:text",
 		link: "/",
 	},
 	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
-		icon: "iconoir:star-outline",
-		link: "/",
-	},
-
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "purple",
-		icon: "iconoir:journal",
-		link: "/",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
-		icon: "iconoir:input-field",
-		link: "/",
-	},
-	{
-		title: "Personal Dashboard",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "info",
-		icon: "feather:grid",
-		link: "/",
-	},
-	{
-		title: "Website",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "red",
-		icon: "iconoir:www",
-		link: "/",
-	},
-	{
-		title: "Social Integrations",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "success",
-		icon: "feather:facebook",
-		link: "/",
-	},
-	{
-		title: "Dynamic rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "orange",
-		icon: "iconoir:star-half-dashed",
+		title: "Advanced JSON response",
+		text: "When more details are required, JSON responses can be returned with rich data sets.",
+		color: "primary",
+		icon: "iconoir:code-brackets",
 		link: "/",
 	},
 ];
 
-export const pricing = {
-	features: ["Unlimited projects", "Desktop and mobile app", "Unlimited tasks", "Email integration", "Unlimited time records"],
-	price: 0,
-};
+// export const pricing = {
+// 	features: ["Unlimited projects", "Desktop and mobile app", "Unlimited tasks", "Email integration", "Unlimited time records"],
+// 	price: 0,
+// };
 
 export const faq = {
 	left: [
 		{
-			title: "How much does it cost?",
+			title: "What is the difference between a Partner & Vertical?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide, but wish to receive caller information can do so without a destination number for a cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.",
 		},
 		{
-			title: "Does it really work anywhere?",
+			title: "How accurate is the information returned?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"Very accurate! Our AI/ML is constantly learning and adapting ensuring that caller information is up to date, and any meta data such as websites, emails, social, etc... are all current. Caller badges indicate call details are verified, however call ratings will always be dynamic.",
 		},
 		{
-			title: "How does it differ from other tools?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+			title: "How does it differ from regular CNAM lookup tools?",
+			content: "Smart CNAM is a next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.",
 		},
 	],
 	right: [
 		{
-			title: "How does it work?",
+			title: "Why some people receive different scores?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"Depending on many factors, our AI/ML will determine the distance between callers, how often a caller makes calls to those regions or numbers just to list a few that makeup the learning conditions. Call rating will always be dynamic.",
 		},
 		{
-			title: "Can I try it for free?",
+			title: "Why is a caller suddently receiving lower scores?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"If the same number is calling the same destination and score changes dramatically, could indicate that abnormal or fraudulent call behavious has been suspected and community feedback has verified. Scoring is adaptive and much like any turning on any new system, there is a warm up phase.",
 		},
 		{
-			title: "How many agents are allowed?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+			title: "Are there any limitations?",
+			content: "Yes, please read through our Terms of Service, Acceptable Use Policy and our API Rate limits from our Resource center.",
 		},
 	],
 };

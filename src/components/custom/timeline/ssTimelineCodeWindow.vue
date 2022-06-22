@@ -31,15 +31,18 @@ export interface ssTimelineCodeWindow {
 			</div>
 
 			<div class="code-content">
+				<div class="code-content-line">...</div>
+				<div class="code-content-line"><span class="bold">same =>&nbsp;</span>n,Verbose(Getting Smart CNAM)</div>
 				<div class="code-content-line">
-					<span class="bold">exten =>&nbsp;</span>_X.,GotoIf($["${CALLERID(name)}" != ""]?<span class="bold text-secondary">hasCNAM</span>:<span class="bold text-primary"
-						>getCNAM</span
-					>)
+					<span class="bold">same =>&nbsp;</span>n,Set(CALLERID(name)=${CURL(https://api.sipstack.com/v1/t/cnam/<span class="bold">${CALLERID(num)}</span>/<span class="bold"
+						>${EXTEN}</span
+					>)})
 				</div>
-				<div class="code-content-line"><span class="bold">&nbsp;same =>&nbsp;</span>n(<span class="bold text-primary">getCNAM</span>),Verbose(Getting Smart CNAM)</div>
-				<div class="code-content-line"><span class="bold">&nbsp;same =>&nbsp;</span>n,Set(CALLERID(name)=</div>
-				<div class="code-content-line">${CURL(https://api.sipstack.com/v1/a/cnam/<span class="bold">${CALLERID(num)}</span>/<span class="bold">${EXTEN}</span>)})</div>
-				<div class="code-content-line"><span class="bold">&nbsp;same =>&nbsp;</span>n(<span class="bold text-secondary">hasCNAM</span>),Verbose(Continue dialplan)</div>
+				<div class="code-content-line">
+					<span class="bold">same =>&nbsp;</span>n,Verbose(Returns: <span class="bold">${CALLERID(num)}</span>) ; <span class="bold text-secondary">SCORE</span
+					><span class="bold text-primary">CALLERNAME</span>
+				</div>
+				<div class="code-content-line">...</div>
 			</div>
 		</div>
 	</div>
@@ -49,7 +52,7 @@ export interface ssTimelineCodeWindow {
 .code-window {
 	position: relative;
 	width: 100%;
-	height: 320px;
+	height: 220px;
 	background: var(--wrap-muted-color);
 	border: 1px solid var(--card-border-color);
 	border-radius: 0.5rem;

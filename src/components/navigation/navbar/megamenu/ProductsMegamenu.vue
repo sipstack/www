@@ -24,8 +24,8 @@ const emit = defineEmits(["close"]);
 							<div class="media-content">
 								<h3>Products</h3>
 								<p>The most modern & advanced unified communication tools.</p>
-								<RouterLink v-preload-link to="/whois">
-									<span>Whois phone number lookup</span>
+								<RouterLink v-preload-link to="/about">
+									<span>About SIPSTACK</span>
 									<i class="iconify" data-icon="feather:external-link" data-inline="false"></i>
 								</RouterLink>
 							</div>
