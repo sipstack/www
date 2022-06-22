@@ -4,14 +4,14 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/data/products/whois";
+import { pageLinks, features, pricing, faq } from "/@src/data/products/whois";
 </script>
 
 <template>
 	<div>
 		<ssHeroProducts
 			title="Whois"
-			subtitle="CallerID name lookup for everyone"
+			subtitle="Advanced CallerID name lookup for everyone"
 			button1-title="Create account"
 			button1-href="/get-started"
 			button2-title="Try now"
@@ -35,12 +35,13 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 			<Container>
 				<SideSectionIcons
 					subtitle="Overview"
-					title="Say goodbye to spammers"
+					title="Say goodbye to spam calls"
 					content="Find out whos calling with trust ratings dynamic for your location. Powered by AI and community users like you."
-					:features="salesFeatures"
+					:features="features"
 					image="/assets/img/whois-mobile.png"
 					image-width="900"
 					image-height="788"
+					:limit="4"
 					blob
 					reverse
 				/>
@@ -59,7 +60,7 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 			<Container>
 				<SectionTitle title="Free for everyone" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Start searching" link="/" />
 			</Container>
 		</Section>
 
@@ -72,20 +73,21 @@ import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/dat
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Integrate" :title="cta.title" :subtitle="cta.subtitle">
-					<form>
+				<CtaBlockJ small-text="Integrate" title="Smarter CNAM Begin Here" subtitle="Integrate your systems with Smart CNAM for Free">
+					<!-- <form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>
 								<VInput placeholder="Email" />
 							</Control>
-							<!-- <Control icon="feather:lock" expanded>
+							<Control icon="feather:lock" expanded>
 								<VInput placeholder="Password" password />
-							</Control> -->
+							</Control>
 							<Control>
 								<Button size="form" color="primary" :long="2"> Create account </Button>
 							</Control>
 						</Field>
-					</form>
+					</form> -->
+					<Button size="form" color="primary" :long="2" to="/products/smart-cnam"> Learn more </Button>
 				</CtaBlockJ>
 			</Container>
 		</Section>

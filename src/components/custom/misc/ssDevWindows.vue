@@ -91,21 +91,32 @@
 				<div class="column is-4 is-offset-1">
 					<div class="text-block max-w-4">
 						<Title tag="h2" :size="4" weight="bold" leading>
-							<span>HMR Reloading</span>
+							<span>For Carriers</span>
 						</Title>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde disputat, quod cuiusque generis animantium statui deceat extremum.</p>
+						<p class="paragraph">
+							Integrate Smart CNAM into your system call flows and always receive the latest name information and call scores. Dynamic call scoring can return a 5 character spacing
+							prefix to be handled or stripped on your inbound routes.
+						</p>
 					</div>
 					<div class="text-block max-w-4">
 						<Title tag="h2" :size="4" weight="bold" leading>
-							<span>Dynamic Models</span>
+							<span>For Mobile Apps</span>
 						</Title>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde disputat, quod cuiusque generis animantium statui deceat extremum.</p>
+						<p class="paragraph">API calls can be used in a variety of mobile application for unique use cases. Provide your users with a rich experiences with Smart CNAM.</p>
 					</div>
 					<div class="text-block max-w-4">
 						<Title tag="h2" :size="4" weight="bold" leading>
-							<span>Environment Config</span>
+							<span>Other Verticals</span>
 						</Title>
-						<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Deinde disputat, quod cuiusque generis animantium statui deceat extremum.</p>
+						<p class="paragraph">Smart CNAM can be used a wide range of applications. See Solutions for more details and industry specific use cases.</p>
+					</div>
+					<div class="text-block max-w-4">
+						<Title tag="h2" :size="4" weight="bold" leading>
+							<span>Whois Powered</span>
+						</Title>
+						<p class="paragraph">
+							Whois by SIPSTACK is powered by the same powerful API that Smart CNAM offers, generating rich unique experiences on both web browsers and mobile.
+						</p>
 					</div>
 				</div>
 				<!--#endregion -->

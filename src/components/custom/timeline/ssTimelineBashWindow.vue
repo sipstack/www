@@ -6,7 +6,7 @@ export interface ssTimelineCodeWindow {
 
 const props = withDefaults(defineProps<ssTimelineCodeWindow>(), {
 	title: "Bash",
-	command: "curl https://api.sipstack.com/v1/...",
+	command: "curl https://api.sipstack.com/v1/t/cnam/14164772004",
 });
 </script>
 

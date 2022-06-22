@@ -1,19 +1,4 @@
-// deprecated
-// export const heroFeatures: BaseFeature[] = [
-// 	{
-// 		title: "AI Powered",
-// 		text: "Our AI handles every complex operation, letting you focus.",
-// 	},
-// 	{
-// 		title: "Real-Time Data",
-// 		text: "All your data is processed in real-time, for better performance.",
-// 	},
-// 	{
-// 		title: "Fast and Secure",
-// 		text: "Your data is virtually unhackable compared to traditional net.",
-// 	},
-// ];
-
+import type { IconFeature } from "/@src/types";
 export const pageLinks = [
 	{
 		label: "Overview",
@@ -31,29 +16,6 @@ export const pageLinks = [
 	{
 		label: "FAQs",
 		target: "faqs",
-	},
-];
-
-export const salesFeatures: SimpleIconFeature[] = [
-	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:star-outline",
-	},
-	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:user-scan",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:input-field",
-	},
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:journal",
 	},
 ];
 
