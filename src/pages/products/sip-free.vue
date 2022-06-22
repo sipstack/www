@@ -4,7 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/products/sip-free";
+import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products/sip-free";
 </script>
 
 <template>
@@ -29,27 +29,27 @@ import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/p
 				<SectionTitle title="Get Started &#8212; It's Free" subtitle="Overview" />
 
 				<ssSubscriptionCompactBlock
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam."
+					text="Simple SIP Trunking with free termination to North Americal Toll-Free destination. Supporting ULAW, G729, G722 and T.38 where available."
 					label="Create account"
 					placeholder="Enter your email"
 				/>
 
-				<TimelineFeatures :items="workoutTimeline" />
+				<TimelineFeatures :items="timeline" />
 			</Container>
 		</Section>
 
 		<Section id="features" color="grey">
 			<Container>
-				<SectionTitle title="Whois does it all" subtitle="Features" />
-				<FeatureBlockH :features="features" :columns="3" :limit="8" />
+				<SectionTitle title="Plug & play SIP termination" subtitle="Features" />
+				<FeatureBlockH :features="features" :columns="6" :limit="2" />
 			</Container>
 		</Section>
 
 		<Section id="pricing" bordered-bottom>
 			<Container>
-				<SectionTitle title="Free for everyone" subtitle="Pricing" />
+				<SectionTitle title="Absolutely Free" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Integrate SIP Free" link="https://hub.sipstack.com" />
 			</Container>
 		</Section>
 
@@ -65,9 +65,9 @@ import { pageLinks, workoutTimeline, features, pricing, faq } from "/@src/data/p
 				<CtaBlockJ
 					small-text="Help us go further"
 					title="Become a supporter"
-					subtitle="Your help will alow us to expand this product and by meeting sponsorship goals will allow us to expand this product beyond just Toll Free termination."
+					subtitle="Your help will alow us to expand this product by contributing to our sponsorship goals that would allow us to expand this product to additional destinations."
 				>
-					<Button size="medium" color="dark" :long="2" icon-left="fa:github"> Sponsor us on GitHub </Button>
+					<Button size="medium" color="dark" :long="2" icon-left="fa:github" href="https://github.com/sponsor/sipstack"> Sponsor us on GitHub </Button>
 				</CtaBlockJ>
 			</Container>
 		</Section>

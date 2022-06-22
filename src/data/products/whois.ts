@@ -1,18 +1,4 @@
-// deprecated
-// export const heroFeatures: BaseFeature[] = [
-// 	{
-// 		title: "AI Powered",
-// 		text: "Our AI handles every complex operation, letting you focus.",
-// 	},
-// 	{
-// 		title: "Real-Time Data",
-// 		text: "All your data is processed in real-time, for better performance.",
-// 	},
-// 	{
-// 		title: "Fast and Secure",
-// 		text: "Your data is virtually unhackable compared to traditional net.",
-// 	},
-// ];
+import type { IconFeature } from "/@src/types";
 
 export const pageLinks = [
 	{
@@ -34,127 +20,105 @@ export const pageLinks = [
 	},
 ];
 
-export const salesFeatures: SimpleIconFeature[] = [
-	{
-		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:star-outline",
-	},
-	{
-		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:user-scan",
-	},
-	{
-		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:input-field",
-	},
-	{
-		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.",
-		icon: "iconoir:journal",
-	},
-];
-
 export const features: IconFeature[] = [
 	{
 		title: "Name display",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
+		text: "Latest caller information including regional & carrier data.",
 		color: "primary",
 		icon: "iconoir:user-scan",
 		link: "/",
 	},
 	{
 		title: "Trust rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
+		text: "Real-time risk score assesment based on AI & community feedback.",
+		color: "primary",
 		icon: "iconoir:star-outline",
 		link: "/",
 	},
 
 	{
 		title: "Caller details",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "purple",
+		text: "See other phone numbers, website, email & social links at a glance.",
+		color: "primary",
 		icon: "iconoir:journal",
 		link: "/",
 	},
 	{
 		title: "Community feedback",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "yellow",
+		text: "Get the latest comments from users like you on recent call activity.",
+		color: "primary",
 		icon: "iconoir:input-field",
 		link: "/",
 	},
 	{
 		title: "Personal Dashboard",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "info",
+		text: "View recent lookups, reviews & shares at a glance from your dashboard.",
+		color: "primary",
 		icon: "feather:grid",
 		link: "/",
 	},
-	{
-		title: "Website",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "red",
-		icon: "iconoir:www",
-		link: "/",
-	},
+
 	{
 		title: "Social Integrations",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "success",
+		text: "Help others by sharing recently reviewed calls to your social networks.",
+		color: "primary",
 		icon: "feather:facebook",
 		link: "/",
 	},
 	{
-		title: "Dynamic rating",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.",
-		color: "orange",
-		icon: "iconoir:star-half-dashed",
+		title: "My Number",
+		text: "Verify your phone number & control information accuracy for others.",
+		color: "primary",
+		icon: "iconoir:verified-user",
+		link: "/",
+	},
+	{
+		title: "Mobile Ready",
+		text: "Responsive design with PWA support & native apps coming soon.",
+		color: "primary",
+		icon: "iconoir:smartphone-device",
 		link: "/",
 	},
 ];
 
 export const pricing = {
-	features: ["Unlimited projects", "Desktop and mobile app", "Unlimited tasks", "Email integration", "Unlimited time records"],
+	features: ["Search 1.1B+ phone numbers", "Dynmic risk rating", "Personal dashboard", "Community feedback", "Social sharing", "Mobile ready"],
 	price: 0,
+	pricePer: "Always free",
 };
 
 export const faq = {
 	left: [
 		{
-			title: "How much does it cost?",
-			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+			title: "Is it really free?",
+			content: "Yes, we believe that everyone should have access to who is calling them. It is the only real way to help identify authentic from fraudulent callers.",
 		},
 		{
-			title: "Does it really work anywhere?",
+			title: "How does the rating / risk scoring work?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"A broad range of factors are taken into account, and scoring is always changing depending on a broad range of things. Community feedback also is accounted for and is processed by our AI/ML before providing a caller score.",
 		},
 		{
 			title: "How does it differ from other tools?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"Whois by SIPSTACK is the only tool that provides dyanmic call scoring along with any related information from websites, email addresses, locations and social networks.",
 		},
 	],
 	right: [
 		{
-			title: "How does it work?",
+			title: "How can I manage my own phone number listing?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"In the description card box, you can click 'This is my phone number', which will guide you to creating an account, followed by steps to verify your phone number before being able to update and manage the listing. This option may not be available in all regions yet.",
 		},
 		{
-			title: "Can I try it for free?",
+			title: "How can I improve my phone number call score?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"A number of factors are processed by our AI/ML systems before providing a call score. Additionally people looking up your number from different regions may see different scores depending on how often you call those areas, and how often community members rate your call as OK are some elements accounted for in call scoring process. Scores will always be dynamic.",
 		},
 		{
-			title: "How many agents are allowed?",
+			title: "Can I claim multiple phone numbers?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.",
+				"Yes, this is particularly important for companies and business owners. You can verify multiple phone numbers from a single Whois community account, or have greater control when using a SIPSTACK Cloud UC powered phone system. Talk to your ITSP / MSP about deploying a SIPSTACK powered system for your business.",
 		},
 	],
 };

@@ -4,7 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { pageLinks, features, faq, cta } from "/@src/data/products/smart-cnam";
+import { pageLinks, features, faq } from "/@src/data/products/smart-cnam";
 </script>
 
 <template>
@@ -34,7 +34,7 @@ import { pageLinks, features, faq, cta } from "/@src/data/products/smart-cnam";
 
 		<Section id="overview" :bottom-narrow="true">
 			<Container>
-				<SectionTitle title="Integrate Smart CNAM simply with curl" subtitle="Overview" />
+				<SectionTitle title="Integrate Smart CNAM anywhere" subtitle="Overview" />
 				<ssDevWindows />
 				<CollectionTitle
 					title="Add CNAM lookup to your call flows"
@@ -49,32 +49,36 @@ import { pageLinks, features, faq, cta } from "/@src/data/products/smart-cnam";
 		<Section id="features" color="grey">
 			<Container>
 				<SectionTitle title="Smart CNAM ratings dynamically retreived in real-time" subtitle="Features" />
-				<FeatureBlockH :features="features" :columns="3" :limit="8" />
+				<FeatureBlockH :features="features" :columns="6" :limit="2" />
+				<!-- <ssFeatureBlockJ :features="features" /> -->
 			</Container>
 		</Section>
 
 		<Section id="pricing" bordered-bottom>
 			<Container>
-				<SectionTitle title="Free for everyone" subtitle="Pricing" />
+				<SectionTitle title="Smart CNAM Solutions" subtitle="Pricing" />
 				<div>&nbsp;</div>
 				<!-- <PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" /> -->
-				<PricingSolo
-					title="Solution pricing"
-					subtitle="All features you'll ever need to run a project"
+				<ssPricingSolo
+					title="Smart CNAM pricing"
+					subtitle="Free API requests for Partners when destination included in query."
+					monthly-tab="Partner billing"
+					yearly-tab="Vertical billing"
 					:features="[
-						'Unlimited projects',
-						'Desktop and mobile app',
-						'Unlimited tasks',
-						'Email integration',
-						'Unlimited time records',
-						'Client management',
-						'Task dependencies',
-						'Budget tracking',
-						'Recurring tasks',
-						'Advanced reports',
+						'Caller ID Name',
+						'Dynamic call score',
+						'Regional data',
+						'Website (+)',
+						'Address (+)',
+						'Emails (+)',
+						'Social (+)',
+						'Community Feedback (+)',
+						'Caller Badges (+)',
 					]"
-					:monthly-price="7"
-					:yearly-price="79"
+					:monthly-price="0"
+					:yearly-price="0.001"
+					monthly-per="Starting from, per request"
+					yearly-per="Starting from, per request"
 					link-label="Start Free Trial"
 					link="/"
 				/>
@@ -90,15 +94,15 @@ import { pageLinks, features, faq, cta } from "/@src/data/products/smart-cnam";
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" :title="cta.title" :subtitle="cta.subtitle">
+				<CtaBlockJ small-text="Get started" title="Smarter CNAM Begin Here" subtitle="Credit card not required to sign up.">
 					<form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>
 								<VInput placeholder="Email" />
 							</Control>
-							<Control icon="feather:lock" expanded>
+							<!-- <Control icon="feather:lock" expanded>
 								<VInput placeholder="Password" password />
-							</Control>
+							</Control> -->
 							<Control>
 								<Button size="form" color="primary" :long="2"> Create account </Button>
 							</Control>
