@@ -298,6 +298,7 @@ declare module "@vue/runtime-core" {
 		SsBlockWhois: typeof import("./src/components/custom/block/ssBlockWhois.vue")["default"];
 		SsBoxedFeatures: typeof import("./src/components/custom/misc/ssBoxedFeatures.vue")["default"];
 		SsBoxesHero: typeof import("./src/components/custom/misc/ssBoxesHero.vue")["default"];
+		SsCaseStudyTelair: typeof import("./src/components/custom/sections/ssCaseStudyTelair.vue")["default"];
 		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
 		SsCtaDefault: typeof import("./src/components/custom/cta/ssCtaDefault.vue")["default"];
 		SsDevWindows: typeof import("./src/components/custom/misc/ssDevWindows.vue")["default"];
@@ -305,6 +306,7 @@ declare module "@vue/runtime-core" {
 		SsFeatureBlockD: typeof import("./src/components/custom/misc/ssFeatureBlockD.vue")["default"];
 		SsFeatureBlockJ: typeof import("./src/components/custom/misc/ssFeatureBlockJ.vue")["default"];
 		SsFooter: typeof import("./src/components/custom/footer/ssFooter.vue")["default"];
+		SsFoundersSection: typeof import("./src/components/custom/misc/ssFoundersSection.vue")["default"];
 		SsGlobeStats: typeof import("./src/components/custom/misc/ssGlobeStats.vue")["default"];
 		SsHeroProducts: typeof import("./src/components/custom/hero/ssHeroProducts.vue")["default"];
 		SsHeroSimple: typeof import("./src/components/custom/hero/ssHeroSimple.vue")["default"];
@@ -315,6 +317,7 @@ declare module "@vue/runtime-core" {
 		SsSideSection: typeof import("./src/components/custom/misc/ssSideSection.vue")["default"];
 		SsSubscriptionCompact: typeof import("./src/components/custom/forms/ssSubscriptionCompact.vue")["default"];
 		SsSubscriptionCompactBlock: typeof import("./src/components/custom/misc/ssSubscriptionCompactBlock.vue")["default"];
+		SsTeamBlockC: typeof import("./src/components/custom/block/ssTeamBlockC.vue")["default"];
 		SsTermsBlock: typeof import("./src/components/custom/misc/ssTermsBlock.vue")["default"];
 		SsTimelineBashWindow: typeof import("./src/components/custom/timeline/ssTimelineBashWindow.vue")["default"];
 		SsTimelineCnam: typeof import("./src/components/custom/timeline/ssTimelineCnam.vue")["default"];

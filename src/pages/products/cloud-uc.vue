@@ -4,8 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { pageLinks, features, pricing, faq } from "/@src/data/products/cloud-uc";
-import { content3 } from "/@src/data-example/blocks/content";
+import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc";
 </script>
 
 <template>
@@ -13,18 +12,7 @@ import { content3 } from "/@src/data-example/blocks/content";
 		<ssHeroProducts title="Cloud UC" subtitle="The VoIP management console you've been waiting for" button1-title="Request invite" button1-href="/get-started" />
 
 		<DemoLinks :links="pageLinks" width="400px" />
-		<!-- <PageTitle
-      title="Make it count again"
-      subtitle="Get Started"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui ita affectus, beatum esse numquam probabis"
-    >
-      <template #content>
-        <Buttons alignment="centered" class="mt-4">
-          <Button color="primary" :long="3" bold raised>Get Started</Button>
-          <Button :long="3" bold>Learn More</Button>
-        </Buttons>
-      </template>
-    </PageTitle> -->
+
 		<Section id="overview">
 			<Container>
 				<ssSideSection
@@ -49,6 +37,7 @@ import { content3 } from "/@src/data-example/blocks/content";
 				<SideSection
 					reverse
 					title="Create multiple whitelabel brands"
+					subtitle=""
 					content="Whether you want to allow re-sellers Cloud UC capabiltities while managing & scaling hosts for them or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for whitelabeling."
 					image="/assets/img/create-brand.png"
 					dark-image="/assets/img/create-brand.png"
@@ -64,6 +53,7 @@ import { content3 } from "/@src/data-example/blocks/content";
 			<Container>
 				<SideSection
 					title="Multi-tenant access across hosts"
+					subtitle=""
 					content="Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and whitelabel portal."
 					image="/assets/img/create-pbx.png"
 					dark-image="/assets/img/create-pbx.png"
@@ -78,44 +68,45 @@ import { content3 } from "/@src/data-example/blocks/content";
 
 		<Section>
 			<Container>
-				<ContentBlockB :title="content3.title" :subtitle="content3.subtitle" :text="content3.text" :images="content3.images" link="index" squared />
+				<ssSideSection
+					reverse
+					subtitle=""
+					title="Branded desktop & mobile experience"
+					content="Customize domain, theme color and logo with your own. Offer customers an enhanced experience tailored to your existing brand."
+					image="/assets/img/cloud-uc_hamburger.png"
+					dark-image="/assets/img/cloud-uc_hamburger.png"
+					image-width="383"
+					image-height="682"
+					blob
+					style="width: 200px"
+				>
+				</ssSideSection>
 			</Container>
 		</Section>
 
 		<Section>
 			<Container>
-				<CaseStudy background="/assets/img/1.jpeg">
-					<SideSection
-						subtitle="Success Stories"
-						title="Learn how they built a successful business"
-						content="See how some of our customers leverage Vulk technology to increase profits and take back control from resellers"
-						image="/assets/illustrations/features/feature-3.png"
-						dark-image="/assets/illustrations/features/feature-3-dark.png"
-						image-width="967"
-						image-height="800"
-						cta="Read success stories"
-						inverted
-						to="index"
-					/>
-				</CaseStudy>
+				<ContentBlockB :title="content3.title" subtitle="" :text="content3.text" :images="content3.images" squared />
 			</Container>
 		</Section>
 
+		<SsCaseStudyTelair></SsCaseStudyTelair>
+
 		<Section id="features" color="grey">
 			<Container>
-				<SectionTitle title="Whois does it all" subtitle="Features" />
-				<FeatureBlockH :features="features" :columns="3" :limit="8" />
-				<SectionTitle title="Three reasons you’ll love our solution" />
-
-				<TabbedSectionCentered />
+				<SectionTitle title="Asterisk trusted, AI/ML augmented data" subtitle="Features" />
+				<FeatureBlockH :features="features" :columns="3" :limit="4" />
+				<!-- <SectionTitle title="Three reasons you’ll love our solution" />
+				<TabbedSectionCentered /> -->
 			</Container>
 		</Section>
 
 		<Section id="pricing" bordered-bottom>
 			<Container>
-				<SectionTitle title="Free for everyone" subtitle="Pricing" />
+				<SectionTitle title="Pricing not available" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" />
+				<Subtitle tag="h3" :size="6" weight="thin" leading style="text-align: center"> Stay tuned for updates. </Subtitle>
+				<!-- <PricingSoloCentered :features="pricing.features" :price="pricing.price" link-label="Start searching" link="/" /> -->
 			</Container>
 		</Section>
 
@@ -128,7 +119,7 @@ import { content3 } from "/@src/data-example/blocks/content";
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" title="See the future" subtitle="Request your access to our limited preview before launch">
+				<CtaBlockJ small-text="Get started" title="See the future" subtitle="Request your access to a limited preview">
 					<form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>
@@ -138,7 +129,7 @@ import { content3 } from "/@src/data-example/blocks/content";
 								<VInput placeholder="Password" password />
 							</Control> -->
 							<Control>
-								<Button size="form" color="primary" :long="2"> Request invite </Button>
+								<Button size="form" color="primary" :long="2"> Create account & request invite </Button>
 							</Control>
 						</Field>
 					</form>
