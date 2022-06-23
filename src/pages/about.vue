@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import { customerLogos } from "/@src/data-example/pages/logos";
-import { iconValues } from "/@src/data-example/blocks/advanced/values";
-import { gridTeam } from "/@src/data-example/blocks/team";
-import { founders, longTeam } from "/@src/data-example/blocks/advanced/team";
-// import { plantValues } from "/@src/data-example/blocks/advanced/values";
-import { press } from "/@src/data-example/blocks/advanced/press";
+// import { customerLogos } from "/@src/data-example/pages/logos";
+import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/about";
 </script>
 
 <template>
@@ -14,22 +10,8 @@ import { press } from "/@src/data-example/blocks/advanced/press";
 				<CompanyStory
 					main-title="Our Story"
 					secondary-title="Our Mission"
-					main-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ille
-              pellit, qui permulcet sensum voluptate. Hoc non est positum in
-              nostra actione. Primum in nostrane potestate est, quid
-              meminerimus? Duo Reges: constructio interrete. Respondent extrema
-              primis, media utrisque, omnia omnibus. Non risu potius quam
-              oratione eiciendum? Eam si varietatem diceres, intellegerem, ut
-              etiam non dicente te intellego; Quae tamen a te agetur non melior,
-              quam illae sunt."
-					secondary-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ille
-              pellit, qui permulcet sensum voluptate. Hoc non est positum in
-              nostra actione. Primum in nostrane potestate est, quid
-              meminerimus? Duo Reges: constructio interrete. Respondent extrema
-              primis, media utrisque, omnia omnibus. Non risu potius quam
-              oratione eiciendum? Eam si varietatem diceres, intellegerem, ut
-              etiam non dicente te intellego; Quae tamen a te agetur non melior,
-              quam illae sunt."
+					main-text="While every aspect of our lives are changing, from social to econimcal, we are all apart of the same transition. While spending over 2 decades proving managed telecom solutions, many problems in the industry were identified and continue to persist without real solutions. SIPSTACK was started to begin solving some of these problem allowing by creating a unified management platform for Asterisk, elastic by nature, could scale an adapt while maintaining single point of administration and access. This has become Cloud UC, the PBX management tool every carrier and provider has been waiting for. Fraudulent calls has always bee a problem attempted to be fixed by technology, however efforts have failed to stop this 55 billion dollar industry (US alone). "
+					secondary-text="Our products are designed with 2 purposes, first to provide next generation experiences and services to the telecommunications industry, and secondly eradicate fraudulent and spam calling, period. By driving authentic data through our AI/ML models, in addition to various other data collection methods including community feedback, we are able to provide hyper-accurate call ratings that are dynamic to the recipient of the call. While our efforts are only in the begining stages, we will be targeting this epidemic from all levels and angles to end this era of fraud over voice and text messaging for good."
 					:images="{
 						imageOne: '/assets/img/team-v-5.jpg',
 						imageTwo: '/assets/img/team-v-11.jpg',
@@ -49,7 +31,7 @@ import { press } from "/@src/data-example/blocks/advanced/press";
 
 				<ValuesIconSection :values="iconValues" polka-dots />
 
-				<LogoMarquee :logos="customerLogos" compact />
+				<!-- <LogoMarquee :logos="customerLogos" compact /> -->
 			</Container>
 		</Section>
 
@@ -57,7 +39,7 @@ import { press } from "/@src/data-example/blocks/advanced/press";
 			<Container>
 				<SectionTitle title="About Our Founder" subtitle="Meet the team" />
 
-				<FoundersSection :founders="founders" :limit="1" />
+				<ssFoundersSection :founders="founders" :limit="1" />
 			</Container>
 		</Section>
 
@@ -85,11 +67,11 @@ import { press } from "/@src/data-example/blocks/advanced/press";
 					title-primary="We're Hiring!"
 					content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
 					cta-primary="Job offers"
-					cta-primary-link="/"
+					cta-primary-link="https://www2.sipstack.com/jobs"
 					title-secondary="Help us grow"
 					content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
 					cta-secondary="Sponsor page"
-					cta-secondary-link="/"
+					cta-secondary-link="https://github.com/sponsor/sipstack"
 					boxed
 					shapes
 					animated
@@ -101,7 +83,7 @@ import { press } from "/@src/data-example/blocks/advanced/press";
 		<Section id="media" color="grey">
 			<Container>
 				<div class="mb-6">
-					<SectionTitle title="We are in the press" subtitle="They talk about us" />
+					<SectionTitle title="Recent articles" subtitle="Media" />
 				</div>
 
 				<PressSection :releases="press" />
