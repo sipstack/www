@@ -18,6 +18,7 @@ export interface SideSectionProps {
 	blob?: boolean;
 	reverse?: boolean;
 	imageMockup?: boolean; // jon
+	style?: string; //jon
 }
 
 const props = withDefaults(defineProps<SideSectionProps>(), {
@@ -32,6 +33,7 @@ const props = withDefaults(defineProps<SideSectionProps>(), {
 	blob: false,
 	reverse: false,
 	imageMockup: false, // jon
+	style: "",
 });
 
 const sideSectionClasses = computed(() => [props.bordered && `is-bordered`, props.inverted && `is-inverted`, props.reverse && `is-reverse`]);
@@ -81,6 +83,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`]);
 					alt="side section image"
 					:width="props.imageWidth"
 					:height="props.imageHeight"
+					:style="props.style"
 				/>
 			</div>
 		</div>

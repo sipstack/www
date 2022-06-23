@@ -4,13 +4,12 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-// import { pageLinks } from "/@src/data/products/whois";
 import { contactInfo, faq } from "/@src/data/contact";
 </script>
 
 <template>
 	<div>
-		<HeroProducts
+		<ssHeroProducts
 			title="Contact"
 			subtitle="Have questions? Please review our resources or contact us."
 			button1-title="Knowledge Base"
@@ -38,13 +37,13 @@ import { contactInfo, faq } from "/@src/data/contact";
 
 				<CtaBlockB
 					title-primary="Start Now!"
-					content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-					cta-primary="Free Trial"
+					content-primary="Seen enough? It's free to open an account and get started with SIPSTACK."
+					cta-primary="Create account"
 					cta-primary-link="/"
-					title-secondary="More info?"
-					content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-					cta-secondary="Contact Us"
-					cta-secondary-link="/"
+					title-secondary="Become a Contributor."
+					content-secondary="Want to help contribute to Cloud UC open source code or community support?"
+					cta-secondary="Join the team"
+					cta-secondary-link=""
 					boxed
 					shapes
 					animated
