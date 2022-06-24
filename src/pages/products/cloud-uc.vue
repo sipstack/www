@@ -94,7 +94,7 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 
 		<Section id="features" color="grey">
 			<Container>
-				<SectionTitle title="Asterisk trusted, AI/ML augmented data" subtitle="Features" />
+				<SectionTitle title="Asterisk trusted, AI/ML augmented" subtitle="Features" />
 				<FeatureBlockH :features="features" :columns="3" :limit="4" />
 				<!-- <SectionTitle title="Three reasons you’ll love our solution" />
 				<TabbedSectionCentered /> -->

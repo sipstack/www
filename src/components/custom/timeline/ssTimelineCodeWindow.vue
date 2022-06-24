@@ -23,11 +23,11 @@ export interface ssTimelineCodeWindow {
 		</div>
 		<div class="window-body">
 			<div class="code-lines">
+				<div class="code-line"></div>
 				<div class="code-line">1</div>
 				<div class="code-line">2</div>
 				<div class="code-line">3</div>
 				<div class="code-line"></div>
-				<div class="code-line">4</div>
 			</div>
 
 			<div class="code-content">
