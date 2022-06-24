@@ -25,14 +25,14 @@ export const features: IconFeature[] = [
 	{
 		title: "Simple text response",
 		text: "Returns a 20 character string response including a prefixed score followed by calle name.",
-		color: "primary",
+		color: "purple",
 		icon: "iconoir:text",
 		link: "/",
 	},
 	{
 		title: "Advanced JSON response",
 		text: "When more details are required, JSON responses can be returned with rich data sets.",
-		color: "primary",
+		color: "purple",
 		icon: "iconoir:code-brackets",
 		link: "/",
 	},

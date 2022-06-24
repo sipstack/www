@@ -23,7 +23,7 @@ const emit = defineEmits(["close"]);
 							</div>
 							<div class="media-content">
 								<h3>Products</h3>
-								<p>The most modern & advanced unified communication tools.</p>
+								<p>The most modern & advanced unified SIP based communication tools ever.</p>
 								<RouterLink v-preload-link to="/about">
 									<span>About SIPSTACK</span>
 									<i class="iconify" data-icon="feather:external-link" data-inline="false"></i>

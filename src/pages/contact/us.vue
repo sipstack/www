@@ -4,7 +4,7 @@ meta:
 </route> -->
 
 <script setup lang="ts">
-import { contactInfo, faq } from "/@src/data/contact";
+import { contactInfo, faq } from "/@src/data/contact/us";
 </script>
 
 <template>
