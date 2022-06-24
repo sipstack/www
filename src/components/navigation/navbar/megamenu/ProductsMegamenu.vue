@@ -67,7 +67,7 @@ const emit = defineEmits(["close"]);
 							<div class="media-content">
 								<h3>Developer documentation</h3>
 								<p>Learn more about how you can get the most from the SIPSTACK platform and API library.</p>
-								<a href="https://docs.cssninja.io/vulk">
+								<a href="/resources/docs">
 									<span>Read Documentation</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
 								</a>
