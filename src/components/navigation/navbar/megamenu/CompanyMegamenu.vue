@@ -22,7 +22,7 @@ const emit = defineEmits(["close"]);
 							</div>
 							<div class="media-content">
 								<h3 class="text-primary">SIPSTACK</h3>
-								<p>The world's first and only AI-powered suite of communication tools, conneting tomorrow.</p>
+								<p>Data sciences through telecom.<br />Building a safer connected tomorrow, today.</p>
 								<RouterLink to="/about">
 									<span>More about us</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
@@ -52,14 +52,14 @@ const emit = defineEmits(["close"]);
 						<h4>REACH US</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/contact" class="list-link"> Contact </RouterLink>
+								<RouterLink v-preload-link to="/contact/us" class="list-link"> Contact </RouterLink>
 							</li>
 
 							<li>
 								<a href="https://www2.sipstack.com/jobs" class="list-link"> Careers </a>
 							</li>
 							<li>
-								<a href="https://www2.sipstack.com/abuse" class="list-link"> Report Abuse </a>
+								<RouterLink v-preload-link to="/contact/abuse" class="list-link"> Report Abuse </RouterLink>
 							</li>
 						</ul>
 					</div>
