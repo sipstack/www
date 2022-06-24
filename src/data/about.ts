@@ -30,7 +30,7 @@ export const founders = [
 		photo: "/assets/img/team/jon-full.png",
 		name: "Jonathan Geller",
 		role: "CEO & Founder",
-		bio: "With over 2 decades in the Telecommunications industry, our founder's inspiration comes from his interactions from real people across all industries. While finding commonality in feedback, Jonathan has taken a very personal mission to delivery better technology while ending an epidimeic of epic proportions.",
+		bio: "With over 2 decades in the Telecommunications industry, our founder's inspiration comes from his interactions from real people across all industries. While finding commonality in feedback, Jonathan has taken a very personal mission to delivery better technology while ending telecom fraud at various levels.",
 		socialLinks: [
 			{
 				name: "Linkedin",
@@ -55,8 +55,8 @@ export const longTeam = [
 	{
 		image: "/assets/img/team/stam.jpg",
 		name: "Stamatis Loizides",
-		position: "Chief Innovation Officer",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		position: "Chief of Staff",
+		bio: "Stam lived and worked in over ten different countries. He creates processes and procedures to ensure everything within SIPSTACK runs as smoothly as possible and maintains the overall day-to-day of the organization. Stam has an MBA.",
 		socialLinks: [
 			{
 				name: "Linkedin",
@@ -75,7 +75,7 @@ export const longTeam = [
 		image: "/assets/img/team/errol.jpg",
 		name: "Errol Geller",
 		position: "Chief Financial Officer",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		bio: "Errol loves taking on challenges and is very good at math. He has several decades of experience as a Senior Risk Management Executive at IBM. Errol is instrumental in getting SIPSTACK to where it is today.",
 		socialLinks: [
 			{
 				name: "Linkedin",
@@ -87,7 +87,7 @@ export const longTeam = [
 	{
 		image: "/assets/img/team/elon.jpg",
 		name: "Elon Spielberg",
-		position: "Cloud UC Leader",
+		position: "Lead Clouc UC Manager",
 		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		socialLinks: [
 			{
@@ -101,7 +101,7 @@ export const longTeam = [
 		image: "/assets/img/team/ralph.jpg",
 		name: "Ralph Rouhana",
 		position: "Lead Software Engineer",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		bio: "Pursuing a computer engineering degree from the prestigious University of Waterloo, Ralph has been building software since he was 12. There is no problem that Ralph can't solve.",
 		socialLinks: [
 			{
 				name: "Linkedin",
@@ -167,10 +167,11 @@ export const gridTeam = [
 			},
 		],
 	},
+
 	{
 		image: "data:image/gif;base64,replace_with_your_image",
 		name: "Irina Smirkova",
-		position: "Sales Director",
+		position: "Place holder",
 		socialLinks: [
 			{
 				name: "Linkedin",
@@ -186,28 +187,6 @@ export const gridTeam = [
 				name: "Facebook",
 				icon: "feather:facebook",
 				url: "https://facebook.com",
-			},
-		],
-	},
-	{
-		image: "data:image/gif;base64,replace_with_your_image",
-		name: "Aymeric Boulard",
-		position: "Technical Lead",
-		socialLinks: [
-			{
-				name: "Linkedin",
-				icon: "feather:linkedin",
-				url: "https://linkedin.com",
-			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
-			{
-				name: "GitHub",
-				icon: "feather:github",
-				url: "https://github.com",
 			},
 		],
 	},

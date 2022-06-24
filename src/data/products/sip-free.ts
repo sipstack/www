@@ -27,12 +27,12 @@ export const timeline = [
 	{
 		icon: "iconoir:ip-address",
 		title: "Authorize your hosts",
-		text: "Enable each of your hosts by authorizing their IP address on our network.",
+		text: "Enable each of your hosts by authorizing their IP address, then add to your routes.",
 	},
 	{
 		icon: "iconoir:password-cursor",
-		title: "Connect your hosts",
-		text: "Add our SIP Trunk to your system and prioritize your new route for outbound calls.",
+		title: "Authorize your DIDs",
+		text: "Submit your phone numbers in bulk or integrate via API to add additional layer of call security.",
 	},
 	{
 		icon: "iconoir:phone",
@@ -45,7 +45,7 @@ export const features: IconFeature[] = [
 	{
 		title: "Premium Tier",
 		text: "SIP Free utelizes premium tier routes only supporting ULAW, G729, G722 & T.38 where available.",
-		color: "primary",
+		color: "purple",
 		icon: "iconoir:three-stars",
 		link: "/",
 	},
@@ -53,7 +53,7 @@ export const features: IconFeature[] = [
 	{
 		title: "Enhanced CDR Reports",
 		text: "Call Detail Records with regional & reverse name display help you get the most from our reports.",
-		color: "primary",
+		color: "purple",
 		icon: "iconoir:google-docs",
 		link: "/",
 	},

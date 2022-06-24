@@ -29,7 +29,7 @@ export const content3 = {
 		},
 		{
 			paragraph:
-				"The API, web portals and email relays are all contained within the SISPTACK network across regional datacenters keeping data within borders where compliance and regulatory board require.",
+				"The API, web portals and email relays are all contained within the SISPTACK network across regional datacenters keeping data within borders where compliance and regulatory boards require.",
 		},
 	],
 	images: [

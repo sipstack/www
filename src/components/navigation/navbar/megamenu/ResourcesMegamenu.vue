@@ -17,7 +17,7 @@ const emit = defineEmits(["close"]);
 							</div>
 							<div class="media-content">
 								<h3>Resources</h3>
-								<p>Read our latest in business news, ecommerce, and data trends. Explore our customer resources.</p>
+								<p>Read our latest posts, knowledge base articles, and case studies.</p>
 								<RouterLink v-preload-link to="/blocks">
 									<span>Open knowledge base</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
