@@ -121,7 +121,7 @@ watch(
 					</div>
 					<a href="https://hub.sipstack.com" class="navbar-item has-naver"> Login </a>
 					<div class="navbar-item">
-						<Button href="https://buy.cssninja.io/vulk" target="_blank" color="primary" raised bold> Get Started </Button>
+						<Button href="https://hub.sipstack.com" target="_blank" color="primary" raised bold> Get Started </Button>
 					</div>
 				</div>
 			</div>
