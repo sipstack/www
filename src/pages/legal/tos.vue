@@ -5,7 +5,7 @@ meta:
 
 <script setup lang="ts">
 // import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/data/products/whois";
-import { termsOfService } from "/@src/data-example/pages/terms";
+import { termsOfService } from "/@src/data/legal/tos";
 
 const pageLinks = [
 	{

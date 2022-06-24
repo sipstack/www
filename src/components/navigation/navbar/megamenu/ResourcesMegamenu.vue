@@ -31,16 +31,16 @@ const emit = defineEmits(["close"]);
 						<h4>Learn</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/blocks" class="list-link"> Knowledge base </RouterLink>
+								<RouterLink v-preload-link to="/resources/knowledge-base" class="list-link"> Knowledge base </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/colors" class="list-link"> Documentation </RouterLink>
+								<RouterLink v-preload-link to="/resources/docs" class="list-link"> Documentation </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/utilities" class="list-link"> Case Studies </RouterLink>
+								<RouterLink v-preload-link to="/resources/case-studies" class="list-link"> Case Studies </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/plugins" class="list-link"> Latest posts </RouterLink>
+								<RouterLink v-preload-link to="/resources/blog" class="list-link"> Latest posts </RouterLink>
 							</li>
 						</ul>
 					</div>
