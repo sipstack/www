@@ -1,7 +1,7 @@
 <script setup lang="ts">
 export interface ssTimelineCodeWindow {
-	title: string;
-	command: string;
+	// title: string;
+	// command: string;
 }
 
 // const props = withDefaults(defineProps<ssTimelineCodeWindow>(), {

@@ -81,6 +81,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`]);
 					alt="side section image"
 					:width="props.imageWidth"
 					:height="props.imageHeight"
+					style="width: 200px"
 				/>
 			</div>
 		</div>
