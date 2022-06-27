@@ -31,16 +31,16 @@ const emit = defineEmits(["close"]);
 						<h4>Partners</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Government </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Government </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Carriers </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Carriers </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> ITSPs </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> ITSPs </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> MSPs </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> MSPs </RouterLink>
 							</li>
 							<!-- <li>
 								<RouterLink v-preload-link to="/" class="list-link"> Call Centers </RouterLink>
@@ -53,16 +53,16 @@ const emit = defineEmits(["close"]);
 						<h4>Verticals</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Financial </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Financial </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Healthcare </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Healthcare </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Insurance </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Insurance </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/" class="list-link"> Retail & Services </RouterLink>
+								<RouterLink v-preload-link to="" class="list-link"> Retail & Services </RouterLink>
 							</li>
 						</ul>
 					</div>
@@ -73,7 +73,7 @@ const emit = defineEmits(["close"]);
 							<DarkImage src="/assets/img/banner-gov-1.jpg" alt="Megamenu image" width="500" height="309" />
 							<div class="inner-block">
 								<p class="paragraph rem-85">Join our campaign to end phone fraud</p>
-								<ActionLink label="Learn more" link="/blog" size="small" narrow heavy />
+								<ActionLink label="Learn more" link="" size="small" narrow heavy />
 							</div>
 						</div>
 					</div>

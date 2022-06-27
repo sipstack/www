@@ -99,16 +99,16 @@ import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get Started" title="Start Connecting" subtitle="Seen enough? It's free to start now.">
-					<Field grouped>
+				<ssCtaDefault small-text="Get Started" title="Start Connecting" subtitle="Seen enough? It's free to start now.">
+					<!-- <Field grouped>
 						<Control expanded icon="feather:mail">
 							<VInput placeholder="Email Address" />
 						</Control>
 						<Control>
 							<Button size="form" color="primary" :long="2" bold raised> Create account </Button>
 						</Control>
-					</Field>
-				</CtaBlockJ>
+					</Field> -->
+				</ssCtaDefault>
 			</Container>
 		</Section>
 		<ssFooter></ssFooter>

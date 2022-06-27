@@ -38,7 +38,7 @@ import { pageLinks, features, faq } from "/@src/data/products/smart-cnam";
 				<ssDevWindows />
 				<CollectionTitle
 					title="Add CNAM lookup to your call flows"
-					subtitle="With a few lines, get real-time CNAM data and risk score, or just pluging free Caller ID"
+					subtitle="With a few lines, get real-time CNAM data and risk score, or simply request Caller ID only."
 				></CollectionTitle
 				><br />
 				<ssTimelineCodeWindow />
@@ -80,7 +80,7 @@ import { pageLinks, features, faq } from "/@src/data/products/smart-cnam";
 					monthly-per="Starting from, per request"
 					yearly-per="Starting from, per request"
 					link-label="Start Free Trial"
-					link="/"
+					link="/signup"
 				/>
 			</Container>
 		</Section>
@@ -94,21 +94,7 @@ import { pageLinks, features, faq } from "/@src/data/products/smart-cnam";
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" title="Smarter CNAM Begin Here" subtitle="Credit card not required to sign up.">
-					<form>
-						<Field grouped>
-							<Control icon="feather:mail" expanded>
-								<VInput placeholder="Email" />
-							</Control>
-							<!-- <Control icon="feather:lock" expanded>
-								<VInput placeholder="Password" password />
-							</Control> -->
-							<Control>
-								<Button size="form" color="primary" :long="2"> Create account </Button>
-							</Control>
-						</Field>
-					</form>
-				</CtaBlockJ>
+				<SsCtaDefault small-text="Get started" title="Smarter CNAM Begin Here" subtitle="Credit card not required to sign up."> </SsCtaDefault>
 			</Container>
 		</Section>
 

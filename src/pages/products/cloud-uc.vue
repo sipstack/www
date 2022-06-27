@@ -9,7 +9,14 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 
 <template>
 	<div>
-		<ssHeroProducts title="Cloud UC" subtitle="The VoIP management console you've been waiting for" button1-title="Request invite" button1-href="/get-started" />
+		<ssHeroProducts
+			title="Cloud UC"
+			subtitle="The VoIP management console you've been waiting for"
+			button1-title="Request invite"
+			button1-href="/get-started"
+			button2-title=""
+			button2-href=""
+		/>
 
 		<DemoLinks :links="pageLinks" width="400px" />
 
@@ -18,7 +25,7 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 				<ssSideSection
 					subtitle="Overview"
 					title="Level up your hosted PBX service offering"
-					content="Cloud UC is a unified communications platform, open source and asterisk based, that allows you to scale and manage from a single console. Cloud UC augments Smart CNAM and other rich data into all elements of the experience."
+					content="Cloud UC is an Asterisk based, open source, unified communications platform, that allows you to scale and manage from a single console. Cloud UC augments Smart CNAM and other rich data into all elements of the experience."
 					image="/assets/img/console-pbx.jpeg"
 					image-width="800"
 					image-height="625"
@@ -36,9 +43,9 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 			<Container>
 				<SideSection
 					reverse
-					title="Create multiple whitelabel brands"
+					title="Create multiple white-label brands"
 					subtitle=""
-					content="Whether you want to allow re-sellers Cloud UC capabiltities while managing & scaling hosts for them or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for whitelabeling."
+					content="Whether you want to allow re-sellers Cloud UC capabilities while still managing & scaling their hosts or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for white labeling."
 					image="/assets/img/create-brand.png"
 					dark-image="/assets/img/create-brand.png"
 					image-width="967"
@@ -54,7 +61,7 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 				<SideSection
 					title="Multi-tenant access across hosts"
 					subtitle=""
-					content="Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and whitelabel portal."
+					content="Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and white-labelled portal."
 					image="/assets/img/create-pbx.png"
 					dark-image="/assets/img/create-pbx.png"
 					image-width="967"
@@ -68,19 +75,18 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 
 		<Section>
 			<Container>
-				<ssSideSection
+				<ssSideSectionStyle
 					reverse
 					subtitle=""
 					title="Branded desktop & mobile experience"
-					content="Customize domain, theme color and logo with your own. Offer customers an enhanced experience tailored to your existing brand."
+					content="Offer customers an enhanced experience tailored to your existing brand by customizing domain, theme color and logo."
 					image="/assets/img/cloud-uc_hamburger.png"
 					dark-image="/assets/img/cloud-uc_hamburger.png"
 					image-width="383"
 					image-height="682"
 					blob
-					style="width: 200px"
-				>
-				</ssSideSection>
+					width="200px"
+				/>
 			</Container>
 		</Section>
 
@@ -119,21 +125,7 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Get started" title="See the future" subtitle="Request your access to a limited preview">
-					<form>
-						<Field grouped>
-							<Control icon="feather:mail" expanded>
-								<VInput placeholder="Email" />
-							</Control>
-							<!-- <Control icon="feather:lock" expanded>
-								<VInput placeholder="Password" password />
-							</Control> -->
-							<Control>
-								<Button size="form" color="primary" :long="2"> Create account & request invite </Button>
-							</Control>
-						</Field>
-					</form>
-				</CtaBlockJ>
+				<ssCtaDefault small-text="Get started" title="See the future" subtitle="Request your access to a limited preview" />
 			</Container>
 		</Section>
 

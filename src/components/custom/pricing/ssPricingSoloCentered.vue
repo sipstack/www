@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export interface PricingSoloCenteredProps {
+export interface ssPricingSoloCenteredProps {
 	features: string[];
 	price: number;
 	link: string;
@@ -7,7 +7,7 @@ export interface PricingSoloCenteredProps {
 	pricePer: string;
 }
 
-const props = withDefaults(defineProps<PricingSoloCenteredProps>(), {
+const props = withDefaults(defineProps<ssPricingSoloCenteredProps>(), {
 	pricePer: "per user, per month",
 });
 </script>

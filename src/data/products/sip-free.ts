@@ -22,7 +22,7 @@ export const timeline = [
 	{
 		icon: "iconoir:add-user",
 		title: "Create your account",
-		text: "Following the signing wizard to get create your account, and confirm your email.",
+		text: "Sign up and confirm your email by following the sign-up wizard.",
 	},
 	{
 		icon: "iconoir:ip-address",
@@ -73,13 +73,13 @@ export const faq = {
 				"As a data science through telecom company, we offer products that drive data into our AI/ML learning models to help us achieve our primary goals, making a safer connected tomorrow.",
 		},
 		{
-			title: "How does that data help SIPSTACK?",
+			title: "How does caller driven data help SIPSTACK?",
 			content: "Learning more about traffic patterns provide our AI/ML added insight into our dynamic call rating system when providing a call score.",
 		},
 		{
 			title: "Do my calls have to originate from US or Canada?",
 			content:
-				"No, you can add use SIP Free in your product and originate calls from everywhere as long as the original caller ID number has been authorized on your account. Please see our Terms of Service, Acceptable Use Policy for more details.",
+				"No, you can add SIP Free in your product and originate calls from everywhere as long as the original caller ID number has been authorized on your account. Please see our Terms of Service, Acceptable Use Policy for more details.",
 		},
 	],
 	right: [

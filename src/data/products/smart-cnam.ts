@@ -24,7 +24,7 @@ export const pageLinks = [
 export const features: IconFeature[] = [
 	{
 		title: "Simple text response",
-		text: "Returns a 20 character string response including a prefixed score followed by calle name.",
+		text: "Returns a 20-character string response including a prefixed score followed by caller name.",
 		color: "purple",
 		icon: "iconoir:text",
 		link: "/",
@@ -48,7 +48,7 @@ export const faq = {
 		{
 			title: "What is the difference between a Partner & Vertical?",
 			content:
-				"Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide, but wish to receive caller information can do so without a destination number for a cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.",
+				"Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.",
 		},
 		{
 			title: "How accurate is the information returned?",
@@ -69,7 +69,7 @@ export const faq = {
 		{
 			title: "Why is a caller suddently receiving lower scores?",
 			content:
-				"If the same number is calling the same destination and score changes dramatically, could indicate that abnormal or fraudulent call behavious has been suspected and community feedback has verified. Scoring is adaptive and much like any turning on any new system, there is a warm up phase.",
+				"If the same number is calling the same destination and the score changes dramatically, this could indicate that abnormal or fraudulent call behaviours have been suspected and community feedback has been verified. Scoring is adaptive and much like turning on any new system, there is a warm up phase.",
 		},
 		{
 			title: "Are there any limitations?",

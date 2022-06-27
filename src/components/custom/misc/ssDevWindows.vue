@@ -37,7 +37,7 @@
 							</div>
 						</div>
 					</div> -->
-					<SsTimelineBashWindow></SsTimelineBashWindow>
+					<SsTimelineBashWindow title="Bash" command="curl https://api.sipstack.com/v1/t/cnam/14164772004"></SsTimelineBashWindow>
 					<!--#endregion -->
 
 					<!--#region Second browser window-->
@@ -108,7 +108,7 @@
 						<Title tag="h2" :size="4" weight="bold" leading>
 							<span>Other Verticals</span>
 						</Title>
-						<p class="paragraph">Smart CNAM can be used a wide range of applications. See Solutions for more details and industry specific use cases.</p>
+						<p class="paragraph">Smart CNAM can be used in a wide range of applications. See Solutions for more details and industry specific use cases.</p>
 					</div>
 					<div class="text-block max-w-4">
 						<Title tag="h2" :size="4" weight="bold" leading>

@@ -82,7 +82,7 @@ export const features: IconFeature[] = [
 ];
 
 export const pricing = {
-	features: ["Search 1.1B+ phone numbers", "Dynmic risk rating", "Personal dashboard", "Community feedback", "Social sharing", "Mobile ready"],
+	features: ["Search 1.1B+ phone numbers", "Dynamic risk rating", "Personal dashboard", "Community feedback", "Social sharing", "Mobile ready"],
 	price: 0,
 	pricePer: "Always free",
 };
