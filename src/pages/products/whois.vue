@@ -36,7 +36,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/whois";
 				<SideSectionIcons
 					subtitle="Overview"
 					title="Say goodbye to spam calls"
-					content="Find out whos calling with trust ratings dynamic for your location. Powered by AI and community users like you."
+					content="Find out who is calling with trust ratings dynamic for your location. Powered by AI and community users like you."
 					:features="features"
 					image="/assets/img/whois-mobile.png"
 					image-width="900"
@@ -60,7 +60,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/whois";
 			<Container>
 				<SectionTitle title="Free for everyone" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Start searching" link="/" />
+				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Start searching" link="/r/whois" />
 			</Container>
 		</Section>
 
@@ -73,7 +73,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/whois";
 
 		<Section color="grey">
 			<Container>
-				<CtaBlockJ small-text="Integrate" title="Smarter CNAM Begin Here" subtitle="Integrate your systems with Smart CNAM for Free">
+				<CtaBlockJ small-text="Integrate" title="Smarter CNAM Begins Here" subtitle="Integrate your systems with Smart CNAM for Free">
 					<!-- <form>
 						<Field grouped>
 							<Control icon="feather:mail" expanded>

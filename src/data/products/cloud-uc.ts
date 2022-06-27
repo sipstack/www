@@ -25,11 +25,11 @@ export const content3 = {
 	text: [
 		{
 			paragraph:
-				"SIPSTACK Cloud UC have several major components that make up the platform. The core PBX functions are built on Asterisk and is provided as an open source download in several installer methods and from our GitHub page.",
+				"SIPSTACK Cloud UC has several major components that make up the platform. The core PBX functions are built on Asterisk and is provided as an open-source download in several installer methods and from our GitHub page.",
 		},
 		{
 			paragraph:
-				"The API, web portals and email relays are all contained within the SISPTACK network across regional datacenters keeping data within borders where compliance and regulatory boards require.",
+				"The API, web portals and email relays are all contained within the SISPTACK network, across regional datacenters keeping data within borders where compliance and regulatory boards require.",
 		},
 	],
 	images: [
@@ -108,17 +108,17 @@ export const faq = {
 		{
 			title: "How much does it cost?",
 			content:
-				"Pricing has not been announced yes as the product is till in beta. Partners who request an invite and get accepted will not be charged until full pricing is announced.",
+				"Pricing has not been announced yet as the product is still in beta. Partners who request an invite and get accepted will not be charged until full pricing is announced.",
 		},
 		{
 			title: "Can we contribute to the project?",
 			content:
-				"Yes, via our GitHub page, you can open issues, contribute to our community forums / discussions. You may also request to join our contribution team, more details availble on our resources section.",
+				"Yes, via our GitHub page, you can open issues, contribute to our community forums / discussions. You may also request to join our contribution team, more details available in our resources section.",
 		},
 		{
 			title: "How does it differ from other portals?",
 			content:
-				"Cloud UC allows Partners to bring their brands to the latest in management features while continueing to manage and scale the physical hosts within their own borders and environments. Cloud UC bridges all hosts regardless of cloud, public or private, and provides unparalled administration across hosts from a single portal. Cloud UC users will also benefit from augmented caller data across user experiences. For example incoming calls to users on the mobile apps will see enhanced Caller ID information including dynamic call score, and access to website, social, email and other relavant information.",
+				"Cloud UC allows Partners to bring their brands and utlilize the latest in management features while continuing to manage and scale the physical hosts within their own borders and environments. Cloud UC bridges all hosts regardless of cloud, public or private, and provides unparalleled administration across hosts from a single portal. Cloud UC users will also benefit from augmented caller data across user experiences. For example, incoming calls to users on the mobile apps will see enhanced Caller ID information including dynamic call score, and access to website, social, email and other relevant information.",
 		},
 	],
 	right: [

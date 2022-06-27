@@ -2,6 +2,6 @@
 import { socialLinks } from "/@src/data/sipstack";
 </script>
 <template>
-	<FooterCC text="Data science through telecom." color="dark" :social-links="socialLinks"> </FooterCC>
+	<ssFooterCC text="Data sciences through telecom." color="dark" :social-links="socialLinks"> </ssFooterCC>
 	<ssCookie />
 </template>

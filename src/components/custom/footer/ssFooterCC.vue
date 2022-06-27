@@ -67,16 +67,16 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 									</Title>
 									<ul>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Cloud UC </RouterLink>
+											<RouterLink to="/products/cloud-uc" class="level-item footer-link"> Cloud UC </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Smart CNAM </RouterLink>
+											<RouterLink to="/products/smart-cnam" class="level-item footer-link"> Smart CNAM </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> SIP Free </RouterLink>
+											<RouterLink to="/products/sip-free" class="level-item footer-link"> SIP Free </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Whois </RouterLink>
+											<RouterLink to="/products/whois" class="level-item footer-link"> Whois </RouterLink>
 										</li>
 									</ul>
 								</slot>
@@ -90,19 +90,19 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 									</Title>
 									<ul>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Knowledge Base </RouterLink>
+											<RouterLink to="/resources/knowledge-base" class="level-item footer-link"> Knowledge Base </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Documentation </RouterLink>
+											<RouterLink to="/resources/docs" class="level-item footer-link"> Documentation </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Case studies </RouterLink>
+											<RouterLink to="/resources/case-studies" class="level-item footer-link"> Case studies </RouterLink>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Forums </RouterLink>
+											<a href="https://github.com/sipstack/sipstack/discussions" class="level-item footer-link" target="_blank"> Forums </a>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Latest posts </RouterLink>
+											<RouterLink to="/resources/blog" class="level-item footer-link"> Latest posts </RouterLink>
 										</li>
 									</ul>
 								</slot>
@@ -116,17 +116,17 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 									</Title>
 									<ul>
 										<li>
-											<RouterLink to="about" class="level-item footer-link"> About us </RouterLink>
+											<RouterLink to="/about" class="level-item footer-link"> About us </RouterLink>
 										</li>
 
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> In the media </RouterLink>
+											<a href="/about#media" class="level-item footer-link"> In the media </a>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Investor Relations </RouterLink>
+											<a href="mailto://invest@sipstack.com" class="level-item footer-link"> Investor Relations </a>
 										</li>
 										<li>
-											<RouterLink :to="{ name: 'index' }" class="level-item footer-link"> Contact </RouterLink>
+											<RouterLink to="/contact/us" class="level-item footer-link"> Contact </RouterLink>
 										</li>
 									</ul>
 								</slot>
@@ -183,10 +183,10 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 				<div class="column is-8 has-text-right has-text-centered-mobile">
 					<span class="footer-text rem-90">
 						<span id="footer-link-legal">
-							<a class="footer-link pr-10">Terms of Service</a>
-							<a class="footer-link pr-10">Acceptable Use Policy</a>
-							<a class="footer-link pr-10">Privacy Policy</a>
-							<a class="footer-link pr-10">Cookie Policy</a>
+							<a href="/legal/tos" class="footer-link pr-10">Terms of Service</a>
+							<a href="/legal/aup" class="footer-link pr-10">Acceptable Use Policy</a>
+							<a href="/legal/privacy" class="footer-link pr-10">Privacy Policy</a>
+							<a href="/legal/cookie" class="footer-link pr-10">Cookie Policy</a>
 						</span>
 					</span>
 				</div>

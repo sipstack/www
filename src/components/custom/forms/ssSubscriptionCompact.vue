@@ -12,7 +12,7 @@ const f_email = ref("");
 //  @submit="() => submit(this)"
 const submit = () => {
 	// console.log(e);
-	console.log(f_email.value);
+	window.location.href = "/signup?email=" + f_email.value;
 };
 </script>
 
