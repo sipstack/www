@@ -9,7 +9,14 @@ import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products
 
 <template>
 	<div>
-		<ssHeroProducts title="SIP Free" subtitle="Unlimited SIP termination to toll free numbers in North America" button1-title="Create account" button1-href="/get-started" />
+		<ssHeroProducts
+			title="SIP Free"
+			subtitle="Unlimited SIP termination to toll free numbers in North America"
+			button1-title="Create account"
+			button1-href="/get-started"
+			button2-title=""
+			button2-href=""
+		/>
 
 		<DemoLinks :links="pageLinks" width="400px" />
 		<!-- <PageTitle
@@ -49,7 +56,7 @@ import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products
 			<Container>
 				<SectionTitle title="Absolutely Free" subtitle="Pricing" />
 				<div>&nbsp;</div>
-				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Integrate SIP Free" link="https://hub.sipstack.com" />
+				<ssPricingSoloCentered :features="pricing.features" :price="pricing.price" :price-per="pricing.pricePer" link-label="Integrate SIP Free" link="/signup" />
 			</Container>
 		</Section>
 
@@ -65,7 +72,7 @@ import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products
 				<CtaBlockJ
 					small-text="Help us go further"
 					title="Become a supporter"
-					subtitle="Your help will alow us to expand this product by contributing to our sponsorship goals that would allow us to expand this product to additional destinations."
+					subtitle="Your contributions to our sponsorship goals will allow us to expand this product to additional regions & destinations."
 				>
 					<Button size="medium" color="dark" :long="2" icon-left="fa:github" href="https://github.com/sponsor/sipstack"> Sponsor us on GitHub </Button>
 				</CtaBlockJ>

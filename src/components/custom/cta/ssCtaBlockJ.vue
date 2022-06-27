@@ -13,13 +13,7 @@ const props = withDefaults(defineProps<CtaBlockJProps>(), {
 });
 
 const textClasses = computed(() => [props.inverted && `text-white`]);
-
-const isSubmit = () => {
-	const email = document.getElementById("email");
-	window.location.href = "/signup?email=" + email.value;
-};
 </script>
-
 
 <template>
 	<div class="py-6">
@@ -36,21 +30,7 @@ const isSubmit = () => {
 				<p class="paragraph rem-115 mb-5 max-w-4 mx-auto" :class="textClasses">
 					{{ props.subtitle }}
 				</p>
-				<slot>
-					<form @submit.prevent>
-						<Field grouped>
-							<Control icon="feather:mail" expanded>
-								<VInput id="email" placeholder="Email" />
-							</Control>
-							<!-- <Control icon="feather:lock" expanded>
-								<VInput placeholder="Password" password />
-							</Control> -->
-							<Control>
-								<Button size="form" color="primary" :long="2" @click="() => isSubmit()"> Create account </Button>
-							</Control>
-						</Field>
-					</form>
-				</slot>
+				<slot></slot>
 			</div>
 		</div>
 	</div>

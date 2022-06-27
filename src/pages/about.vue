@@ -5,7 +5,7 @@ import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/abou
 
 <template>
 	<div>
-		<Section color="grey">
+		<Section id="story" color="grey">
 			<Container>
 				<CompanyStory
 					main-title="Our Story"
@@ -95,10 +95,10 @@ import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/abou
 					cta-primary-link="/"
 					cta-secondary="Learn More"
 					cta-secondary-link="/"
-					:logos="customerLogos"
 					boxed
 					shapes
 				/>
+				<!-- :logos="customerLogos" -->
 			</Container>
 		</Section>
 

@@ -22,11 +22,11 @@ import { viaPlaceholderErrorHandler } from "/@src/utils/viaPlaceholderErrorHandl
 					style="font-size: 0.95rem; font-weight: unset !important; line-height: unset !important; padding-top: 5px"
 				>
 					Powered by AI and community users like you. SIPSTACK uses machine learning along with community feedback to provide hyper-accurate call ratings along with information
-					related to the caller including website, email addresses, social profiles, local addresses and even other phone numbers associated to the caller.
+					related to the caller including website, email addresses, social profiles, local addresses and even other phone numbers.
 				</Subtitle>
 				<!--Buttons-->
 				<div class="buttons is-relative z-1">
-					<Button color="primary" :long="2" raised bold>Search Now</Button>
+					<Button color="primary" :long="2" raised bold href="https://whois.sipstack.com">Search Now</Button>
 				</div>
 				<!-- <div class="mx-auto">
               <SubscriptionCompact

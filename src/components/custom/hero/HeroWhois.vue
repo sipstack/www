@@ -17,11 +17,11 @@ import { viaPlaceholderErrorHandler } from "/@src/utils/viaPlaceholderErrorHandl
 							classes="b-centered-tablet-p"
 							style="font-size: 0.95rem; font-weight: unset !important; line-height: unset !important; padding-top: 5px"
 						>
-							Find out whos calling with trust ratings dynamic for your location.
+							Find out who's calling with trusted ratings that are dynamically based on your location.
 							<br />
 							<br />
-							Powered by AI and community users like you. Because everyone deserves the right to know who is calling, without any strings attached. Because everyone deserves the
-							right to know who is calling, without any strings attached. Because everyone deserves the right to know who is calling, without any strings attached.
+							Powered by AI and community users like you. SIPSTACK uses machine learning along with community feedback to provide hyper-accurate call ratings along with information
+							related to the caller including website, email addresses, social profiles, local addresses, and even other phone numbers associated to the caller.
 						</Subtitle>
 						<!--Buttons-->
 						<div class="buttons is-relative z-1">
