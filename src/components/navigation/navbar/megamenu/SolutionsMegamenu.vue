@@ -17,11 +17,12 @@ const emit = defineEmits(["close"]);
 							</div>
 							<div class="media-content">
 								<h3>Solutions</h3>
-								<p>Find out why it's important to partner with SIPSTACK, in a better connected tomorrow.</p>
+								<!-- <p>Find out why it's important to partner with SIPSTACK, in a better connected tomorrow.</p>
 								<RouterLink v-preload-link to="/resources/blog">
 									<span>Read the blog</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
-								</RouterLink>
+								</RouterLink> -->
+								<p>Partner and vertical specific links will be available soon!</p>
 							</div>
 						</div>
 					</div>
@@ -67,7 +68,7 @@ const emit = defineEmits(["close"]);
 						</ul>
 					</div>
 				</div>
-				<div class="column is-4 b-hidden-mobile b-hidden-tablet-p">
+				<!-- <div class="column is-4 b-hidden-mobile b-hidden-tablet-p">
 					<div class="megamenu-block is-left-bordered">
 						<div class="image-block">
 							<DarkImage src="/assets/img/banner-gov-1.jpg" alt="Megamenu image" width="500" height="309" />
@@ -77,7 +78,7 @@ const emit = defineEmits(["close"]);
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</Container>
 	</div>

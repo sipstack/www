@@ -156,6 +156,7 @@ declare module "@vue/runtime-core" {
 		HeroStacks: typeof import("./src/components/layout/hero/modules/HeroStacks.vue")["default"];
 		HeroWaveMask: typeof import("./src/components/misc/masks/HeroWaveMask.vue")["default"];
 		HeroWhois: typeof import("./src/components/custom/hero/HeroWhois.vue")["default"];
+		ICilCheckCircle: typeof import("~icons/cil/check-circle")["default"];
 		Icon: typeof import("./src/components/base/icon/Icon.vue")["default"];
 		IconBox: typeof import("./src/components/base/icon/IconBox.vue")["default"];
 		IconPopover: typeof import("./src/components/base/popover/modules/IconPopover.vue")["default"];
@@ -297,6 +298,7 @@ declare module "@vue/runtime-core" {
 		SsBoxedFeatures: typeof import("./src/components/custom/misc/ssBoxedFeatures.vue")["default"];
 		SsBoxesHero: typeof import("./src/components/custom/misc/ssBoxesHero.vue")["default"];
 		SsCaseStudyTelair: typeof import("./src/components/custom/sections/ssCaseStudyTelair.vue")["default"];
+		SsContactForm: typeof import("./src/components/custom/forms/ssContactForm.vue")["default"];
 		SsCookie: typeof import("./src/components/custom/cookie/ssCookie.vue")["default"];
 		SsCtaBlockJ: typeof import("./src/components/custom/cta/ssCtaBlockJ.vue")["default"];
 		SsCtaDefault: typeof import("./src/components/custom/cta/ssCtaDefault.vue")["default"];
@@ -315,6 +317,7 @@ declare module "@vue/runtime-core" {
 		SsLoginDouble: typeof import("./src/components/custom/auth/ssLoginDouble.vue")["default"];
 		SsPricingSolo: typeof import("./src/components/custom/pricing/ssPricingSolo.vue")["default"];
 		SsPricingSoloCentered: typeof import("./src/components/custom/pricing/ssPricingSoloCentered.vue")["default"];
+		SsSideContact: typeof import("./src/components/custom/misc/ssSideContact.vue")["default"];
 		SsSideSection: typeof import("./src/components/custom/misc/ssSideSection.vue")["default"];
 		SsSideSectionStyle: typeof import("./src/components/custom/misc/ssSideSectionStyle.vue")["default"];
 		SsSubscriptionCompact: typeof import("./src/components/custom/forms/ssSubscriptionCompact.vue")["default"];
