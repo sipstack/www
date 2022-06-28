@@ -1,17 +1,25 @@
-## Docker no longer used in development
-## see gulp 'deploy'
+FROM bitnami/node:16 AS build
+WORKDIR /app
 
-FROM alpine:latest
-# MAINTAINER Jonathan Geller <jgeller@sipstack.com>
+ARG SITEMAP_HOST
 
-RUN apk update
-RUN apk add nodejs
-RUN apk add npm
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+COPY package.json ./
+COPY yarn.lock ./
+#RUN CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile
+RUN CYPRESS_INSTALL_BINARY=0 yarn
 
-RUN npm install -g http-server
+COPY . .
+RUN SITEMAP_HOST=$SITEMAP_HOST \
+  yarn run build
 
-ADD dist/* /var/www/html
-WORKDIR /var/www/html
+FROM bitnami/node:16-prod AS prod
+WORKDIR /app
 
-CMD ["http-server", "-c-1"]
+COPY --from=build /app/dist dist
+COPY --from=build /app/node_modules node_modules
+COPY --from=build /app/package.json .
+COPY --from=build /app/server.ts .
+
+EXPOSE 3000
+
+CMD ["yarn", "run", "serve"]

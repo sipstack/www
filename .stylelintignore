@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+dist
+coverage
+node_modules
+public
+
+bulma-extensions
+
+# bulma-css-vars
+generated-vars.sass
+generated-fallback.css
