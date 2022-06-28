@@ -184,7 +184,7 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 					<span class="footer-text rem-90">
 						<span id="footer-link-legal">
 							<a href="/legal/tos" class="footer-link pr-10">Terms of Service</a>
-							<a href="/legal/aup" class="footer-link pr-10">Acceptable Use Policy</a>
+							<!-- <a href="/legal/aup" class="footer-link pr-10">Acceptable Use Policy</a> -->
 							<a href="/legal/privacy" class="footer-link pr-10">Privacy Policy</a>
 							<a href="/legal/cookie" class="footer-link pr-10">Cookie Policy</a>
 						</span>

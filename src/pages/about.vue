@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { customerLogos } from "/@src/data-example/pages/logos";
-import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/about";
+import { iconValues, founders, longTeam, gridTeam } from "/@src/data/about";
 </script>
 
 <template>
@@ -55,7 +55,7 @@ import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/abou
 			<Container>
 				<SectionTitle title="About Our Talent" subtitle="Meet the team" />
 
-				<TeamBlockE :items="gridTeam" :limit="3" squared shapes />
+				<TeamBlockE :items="gridTeam" :limit="3" shapes />
 			</Container>
 		</Section>
 
@@ -65,13 +65,13 @@ import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/abou
 
 				<CtaBlockB
 					title-primary="We're Hiring!"
-					content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
+					content-primary="Interested in changing the world? Check our our current job offers regularly."
 					cta-primary="Job offers"
-					cta-primary-link="https://www2.sipstack.com/jobs"
+					cta-primary-link="/r/link?href=https://www2.sipstack.com/jobs"
 					title-secondary="Help us grow"
-					content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
+					content-secondary="Like what we're doing and want to contribute to our products and offers?"
 					cta-secondary="Sponsor page"
-					cta-secondary-link="https://github.com/sponsor/sipstack"
+					cta-secondary-link="/r/link?href=https://github.com/sponsor/sipstack"
 					boxed
 					shapes
 					animated
@@ -86,15 +86,15 @@ import { iconValues, founders, longTeam, gridTeam, press } from "/@src/data/abou
 					<SectionTitle title="Recent articles" subtitle="Media" />
 				</div>
 
-				<PressSection :releases="press" />
+				<!-- <PressSection :releases="press" /> -->
 
 				<CtaBlockA
 					title="Media Kit"
 					subtitle="Interested in learning more about our products and are a social reviewer?"
 					cta-primary="Request kit"
-					cta-primary-link="/"
+					cta-primary-link="/contact/us"
 					cta-secondary="Learn More"
-					cta-secondary-link="/"
+					cta-secondary-link="/resources/media-kit"
 					boxed
 					shapes
 				/>

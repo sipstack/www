@@ -23,7 +23,7 @@ import { contactInfo, faq } from "/@src/data/contact/us";
 			<Container>
 				<!-- <PageTitle title="Contact" subtitle="Reach Us" /> -->
 
-				<SideContact title="Contact Us" subtitle="General contact or department specific below" :lng="12.550343" :lat="55.665957" :zoom="16" />
+				<ssSideContact title="Contact Us" subtitle="General contact or department specific below" :lng="12.550343" :lat="55.665957" :zoom="16" />
 
 				<ContactInfo :infos="contactInfo" />
 			</Container>
@@ -39,7 +39,7 @@ import { contactInfo, faq } from "/@src/data/contact/us";
 					title-primary="Start Now!"
 					content-primary="Seen enough? It's free to open an account and get started with SIPSTACK."
 					cta-primary="Create account"
-					cta-primary-link="/"
+					cta-primary-link="/signup"
 					title-secondary="Become a Contributor."
 					content-secondary="Want to help contribute to Cloud UC open source code or community support?"
 					cta-secondary="Join the team"
