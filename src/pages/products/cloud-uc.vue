@@ -5,7 +5,14 @@ meta:
 
 <script setup lang="ts">
 import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc";
+// import { beforeR } from "vue";
+// onMounted(() => {
+// 	//   document.querySelector('meta[name="description"]').setAttribute("content", description);
+// 	document.title = 'teatomg';
+// });
 </script>
+
+
 
 <template>
 	<div>

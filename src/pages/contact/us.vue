@@ -15,7 +15,7 @@ import { contactInfo, faq } from "/@src/data/contact/us";
 			button1-title="Knowledge Base"
 			button1-href="/resources/knowledge-base"
 			button2-title="Frequently Asked Questions"
-			button2-href="/contact/#faq"
+			button2-href="/contact/us#faq"
 		/>
 
 		<!-- <DemoLinks :links="pageLinks" width="400px" /> -->
@@ -43,7 +43,7 @@ import { contactInfo, faq } from "/@src/data/contact/us";
 					title-secondary="Become a Contributor."
 					content-secondary="Want to help contribute to Cloud UC open source code or community support?"
 					cta-secondary="Join the team"
-					cta-secondary-link=""
+					cta-secondary-link="/r/github"
 					boxed
 					shapes
 					animated
