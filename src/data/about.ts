@@ -35,17 +35,17 @@ export const founders = [
 			{
 				name: "Linkedin",
 				icon: "feather:linkedin",
-				url: "https://linkedin.com",
+				url: "/r/link?href=https://www.linkedin.com/in/jonathangeller1/",
 			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
+			// {
+			// 	name: "Twitter",
+			// 	icon: "feather:twitter",
+			// 	url: "https://twitter.com/",
+			// },
 			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/jonathangeller",
 			},
 		],
 	},
@@ -61,18 +61,18 @@ export const longTeam = [
 			{
 				name: "Linkedin",
 				icon: "feather:linkedin",
-				url: "https://linkedin.com",
+				url: "/r/link?href=https://www.linkedin.com/in/stamloizides/",
 			},
 
 			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/sloizides",
 			},
 		],
 	},
 	{
-		image: "/assets/img/team/errol.jpg",
+		image: "/assets/img/team/errol.png",
 		name: "Errol Geller",
 		position: "Chief Financial Officer",
 		bio: "Errol loves taking on challenges and is very good at math. He has several decades of experience as a Senior Risk Management Executive at IBM. Errol is instrumental in getting SIPSTACK to where it is today.",
@@ -80,20 +80,20 @@ export const longTeam = [
 			{
 				name: "Linkedin",
 				icon: "feather:linkedin",
-				url: "https://linkedin.com",
+				url: "/r/link?href=https://www.linkedin.com/in/errolgeller/",
 			},
 		],
 	},
 	{
-		image: "/assets/img/team/elon.jpg",
+		image: "/assets/img/team/elon.jpeg",
 		name: "Elon Spielberg",
 		position: "Lead Clouc UC Manager",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		bio: "With over a decade in the telecommunication industry, Elon is one of the fastest thinkers and problem solvers in the business. Our Cloud UC  team could not be in more capable hands with his guidance. ",
 		socialLinks: [
 			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/espielberg",
 			},
 		],
 	},
@@ -101,22 +101,18 @@ export const longTeam = [
 		image: "/assets/img/team/ralph.jpg",
 		name: "Ralph Rouhana",
 		position: "Lead Software Engineer",
-		bio: "Pursuing a computer engineering degree from the prestigious University of Waterloo, Ralph has been building software since he was 12. There is no problem that Ralph can't solve.",
+		bio: "Pursuing a computer engineering degree from the prestigious University of Waterloo, Ralph has been building software since he was 12 and a contiued leader at SIPSTACK. We have yet to see a problem that Ralph can not solve.",
 		socialLinks: [
 			{
 				name: "Linkedin",
 				icon: "feather:linkedin",
-				url: "https://linkedin.com",
+				url: "/r/link?href=https://www.linkedin.com/in/ralph-rouhana-b23aa31a8/",
 			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
+
 			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/ralphr123",
 			},
 		],
 	},
@@ -131,17 +127,13 @@ export const gridTeam = [
 			{
 				name: "Linkedin",
 				icon: "feather:linkedin",
-				url: "https://linkedin.com",
+				url: "/r/link?href=https://www.linkedin.com/in/iniyan-chelladurai-67307a194/",
 			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
+
 			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/iniyuh",
 			},
 		],
 	},
@@ -151,42 +143,22 @@ export const gridTeam = [
 		position: "Technical Writer",
 		socialLinks: [
 			{
-				name: "Linkedin",
-				icon: "feather:linkedin",
-				url: "https://linkedin.com",
-			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
-			{
 				name: "GitHub",
 				icon: "feather:github",
-				url: "https://github.com",
+				url: "/r/link?href=https://github.com/kxtkrvn",
 			},
 		],
 	},
 
 	{
-		image: "data:image/gif;base64,replace_with_your_image",
-		name: "Irina Smirkova",
-		position: "Place holder",
+		image: "/assets/img/team/terry.png",
+		name: "Terry Wu",
+		position: "Product (Sales) Development",
 		socialLinks: [
 			{
-				name: "Linkedin",
-				icon: "feather:linkedin",
-				url: "https://linkedin.com",
-			},
-			{
-				name: "Twitter",
-				icon: "feather:twitter",
-				url: "https://twitter.com",
-			},
-			{
-				name: "Facebook",
-				icon: "feather:facebook",
-				url: "https://facebook.com",
+				name: "GitHub",
+				icon: "feather:github",
+				url: "/r/link?href=https://github.com",
 			},
 		],
 	},
