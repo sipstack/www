@@ -121,7 +121,6 @@ declare module "@vue/runtime-core" {
 		FooterB: typeof import("./src/components/blocks/footer-blocks/FooterB.vue")["default"];
 		FooterBubbles: typeof import("./src/components/layout/footer/modules/FooterBubbles.vue")["default"];
 		FooterC: typeof import("./src/components/blocks/footer-blocks/FooterC.vue")["default"];
-		FooterCC: typeof import("./src/components/custom/footer/FooterCC.vue")["default"];
 		FooterCta: typeof import("./src/components/layout/footer/modules/FooterCta.vue")["default"];
 		FooterD: typeof import("./src/components/blocks/footer-blocks/FooterD.vue")["default"];
 		FooterMap: typeof import("./src/components/layout/footer/modules/FooterMap.vue")["default"];
@@ -157,7 +156,6 @@ declare module "@vue/runtime-core" {
 		HeroStacks: typeof import("./src/components/layout/hero/modules/HeroStacks.vue")["default"];
 		HeroWaveMask: typeof import("./src/components/misc/masks/HeroWaveMask.vue")["default"];
 		HeroWhois: typeof import("./src/components/custom/hero/HeroWhois.vue")["default"];
-		ICilCheckCircle: typeof import("~icons/cil/check-circle")["default"];
 		Icon: typeof import("./src/components/base/icon/Icon.vue")["default"];
 		IconBox: typeof import("./src/components/base/icon/IconBox.vue")["default"];
 		IconPopover: typeof import("./src/components/base/popover/modules/IconPopover.vue")["default"];

@@ -70,17 +70,17 @@ const emit = defineEmits(["close"]);
 						<h4>Legal</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/blocks/features" class="list-link"> Terms of Service </RouterLink>
+								<RouterLink v-preload-link to="/legal/tos" class="list-link"> Terms of Service </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/team" class="list-link"> Acceptable Use Policy </RouterLink>
+								<RouterLink v-preload-link to="/legal/aup" class="list-link"> Acceptable Use Policy </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/content" class="list-link"> Privacy Policy </RouterLink>
+								<RouterLink v-preload-link to="/legal/privacy" class="list-link"> Privacy Policy </RouterLink>
 							</li>
 
 							<li>
-								<RouterLink v-preload-link to="/blocks/testimonials" class="list-link"> Cookie Policy </RouterLink>
+								<RouterLink v-preload-link to="/legal/cookie" class="list-link"> Cookie Policy </RouterLink>
 							</li>
 						</ul>
 					</div>

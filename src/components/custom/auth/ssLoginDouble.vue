@@ -19,6 +19,21 @@ const isSubmit = () => {
 		form_data[el.name] = el.value;
 	});
 
+	// post to api
+	(async () => {
+		const rawResponse = await fetch("https://api.sipstack.com/v1/f/www/cap/invite", {
+			method: "POST",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(form_data),
+		});
+		rawResponse.json();
+		// const content = await rawResponse.json();
+		// console.log(content); // debug
+	})();
+
 	// console.log(window.btoa(JSON.stringify(form_data)));
 	VueCookies.remove("ss_signup"); // remove previous cookie, updates current
 	VueCookies.set("ss_signup", window.btoa(JSON.stringify(form_data)), "1y");

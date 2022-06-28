@@ -7,7 +7,7 @@
 					title="Learn how TELAIR built a better managed PBX offering"
 					content="Migrating to SIPSTACK Cloud UC simplified administration and enhanced customer self care and experience."
 					image="/assets/img/ta-console-v0.png"
-					dark-image="/assets/illustrations/features/feature-3-dark.png"
+					dark-image="/assets/img/ta-console-v0.png"
 					image-width="967"
 					image-height="800"
 					cta="Read success stories"
