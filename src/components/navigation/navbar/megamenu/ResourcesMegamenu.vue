@@ -50,17 +50,17 @@ const emit = defineEmits(["close"]);
 						<h4>Community</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/blocks/features" class="list-link"> Forums </RouterLink>
+								<a href="https://github.com/sipstack/sipstack/discussions" class="list-link" targe="_blank"> Forums </a>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/team" class="list-link"> Feature requests </RouterLink>
+								<a href="https://github.com/sipstack/sipstack/discussions/categories/ideas" class="list-link" targe="_blank"> Feature requests </a>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/blocks/content" class="list-link"> Feedback </RouterLink>
+								<RouterLink v-preload-link to="/contact/us" class="list-link"> Feedback </RouterLink>
 							</li>
 
 							<li>
-								<RouterLink v-preload-link to="/blocks/testimonials" class="list-link"> Contribute </RouterLink>
+								<a href="https://github.com/sipstack/sipstack/" class="list-link" target="_blank"> Contribute </a>
 							</li>
 						</ul>
 					</div>
@@ -72,9 +72,9 @@ const emit = defineEmits(["close"]);
 							<li>
 								<RouterLink v-preload-link to="/legal/tos" class="list-link"> Terms of Service </RouterLink>
 							</li>
-							<li>
+							<!-- <li>
 								<RouterLink v-preload-link to="/legal/aup" class="list-link"> Acceptable Use Policy </RouterLink>
-							</li>
+							</li> -->
 							<li>
 								<RouterLink v-preload-link to="/legal/privacy" class="list-link"> Privacy Policy </RouterLink>
 							</li>
