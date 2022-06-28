@@ -5,7 +5,7 @@ meta:
 
 <script setup lang="ts">
 // import { pageLinks, salesFeatures, features, pricing, faq, cta } from "/@src/data/products/whois";
-import { termsOfService } from "/@src/data/legal/tos";
+import { fromMarkdown } from "/@src/data/legal/tos";
 
 const pageLinks = [
 	{
@@ -30,22 +30,13 @@ const pageLinks = [
 
 <template>
 	<div>
-		<ssHeroSimple title="Legal" subtitle="Terms of Service" />
+		<ssHeroSimple title="Terms of Service" subtitle="You must read & agree with all the details before you using any of our products or services." />
 
 		<ssLinksHref :links="pageLinks" width="700px" />
 
 		<Section id="overview">
 			<Container>
-				<ssTermsBlock
-					title="Terms Of Service"
-					subtitle="You must read through the entire Terms of Service below and agree with all the details before you use any of our sites."
-					updated="March 22, 2022"
-					image="/assets/illustrations/hero/terms-hero.svg"
-					dark-image="/assets/illustrations/hero/terms-hero.svg"
-					image-height="1152"
-					image-width="517"
-					:terms="termsOfService"
-				/>
+				<ssTermsBlock :terms="fromMarkdown" />
 			</Container>
 		</Section>
 
