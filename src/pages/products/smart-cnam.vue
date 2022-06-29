@@ -13,7 +13,7 @@ import { pageLinks, features, faq } from "/@src/data/products/smart-cnam";
 			title="Smart CNAM"
 			subtitle="Caller ID lookups just got smarter"
 			button1-title="Create account"
-			button1-href="/get-started"
+			button1-href="/signup"
 			button2-title="Try Whois"
 			button2-href="https://whois.sipstack.com"
 		/>
