@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { customerLogos } from "/@src/data-example/pages/logos";
-import { iconValues, founders, longTeam, gridTeam } from "/@src/data/about";
+import { iconValues, founders, longTeam } from "/@src/data/about";
 </script>
 
 <template>
@@ -51,13 +51,13 @@ import { iconValues, founders, longTeam, gridTeam } from "/@src/data/about";
 			</Container>
 		</Section>
 
-		<Section>
+		<!-- <Section>
 			<Container>
 				<SectionTitle title="About Our Talent" subtitle="Meet the team" />
 
 				<TeamBlockE :items="gridTeam" :limit="3" shapes />
 			</Container>
-		</Section>
+		</Section> -->
 
 		<Section>
 			<Container>
