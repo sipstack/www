@@ -60,7 +60,7 @@ const emit = defineEmits(["close"]);
 							</li>
 
 							<li>
-								<a href="https://www2.sipstack.com/jobs" class="list-link"> Careers </a>
+								<a href="https://www2.sipstack.com/jobs/" class="list-link"> Careers </a>
 							</li>
 							<li>
 								<RouterLink v-preload-link to="/contact/abuse" class="list-link"> Report Abuse </RouterLink>
