@@ -90,19 +90,19 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 									</Title>
 									<ul>
 										<li>
-											<RouterLink to="/resources/knowledge-base" class="level-item footer-link"> Knowledge Base </RouterLink>
+											<RouterLink to="/resources/knowledge-base/" class="level-item footer-link"> Knowledge Base </RouterLink>
 										</li>
 										<li>
 											<RouterLink to="/resources/docs" class="level-item footer-link"> Documentation </RouterLink>
 										</li>
 										<li>
-											<RouterLink to="/resources/case-studies" class="level-item footer-link"> Case studies </RouterLink>
+											<RouterLink to="/resources/case-studies/" class="level-item footer-link"> Case studies </RouterLink>
 										</li>
 										<li>
 											<a href="https://github.com/sipstack/sipstack/discussions" class="level-item footer-link" target="_blank"> Forums </a>
 										</li>
 										<li>
-											<RouterLink to="/resources/blog" class="level-item footer-link"> Latest posts </RouterLink>
+											<RouterLink to="/resources/blog/" class="level-item footer-link"> Latest posts </RouterLink>
 										</li>
 									</ul>
 								</slot>
