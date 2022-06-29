@@ -167,3 +167,4 @@ public/robots.txt
 
 # sipstack additional
 .example/
+.env
