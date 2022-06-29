@@ -18,10 +18,10 @@ const emit = defineEmits(["close"]);
 							<div class="media-content">
 								<h3>Resources</h3>
 								<p>Read our latest posts, knowledge base articles, and case studies.</p>
-								<RouterLink v-preload-link to="/blocks">
+								<a href="/resources/knowledge-base/">
 									<span>Open knowledge base</span>
 									<i class="iconify" data-icon="feather:arrow-right" data-inline="false"></i>
-								</RouterLink>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -31,16 +31,16 @@ const emit = defineEmits(["close"]);
 						<h4>Learn</h4>
 						<ul>
 							<li>
-								<RouterLink v-preload-link to="/resources/knowledge-base" class="list-link"> Knowledge base </RouterLink>
+								<RouterLink v-preload-link to="/resources/knowledge-base/" class="list-link"> Knowledge base </RouterLink>
 							</li>
 							<li>
 								<RouterLink v-preload-link to="/resources/docs" class="list-link"> Documentation </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/resources/case-studies" class="list-link"> Case Studies </RouterLink>
+								<RouterLink v-preload-link to="/resources/case-studies/" class="list-link"> Case Studies </RouterLink>
 							</li>
 							<li>
-								<RouterLink v-preload-link to="/resources/blog" class="list-link"> Latest posts </RouterLink>
+								<RouterLink v-preload-link to="/resources/blog/" class="list-link"> Latest posts </RouterLink>
 							</li>
 						</ul>
 					</div>
