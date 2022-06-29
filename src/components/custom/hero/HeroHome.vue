@@ -16,7 +16,7 @@
 					</Subtitle>
 					<!--Buttons-->
 					<div class="buttons is-relative z-1">
-						<Button color="primary" :long="2" raised bold>Get Started</Button>
+						<Button color="primary" :long="2" raised bold to="signup">Get Started</Button>
 						<!-- <Button elevated bold :long="2">Demo</Button> -->
 					</div>
 				</div>
