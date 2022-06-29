@@ -116,8 +116,13 @@ const plugins = [
 	ViteRadar({
 		enableDev: true,
 		gtm: {
-			id: "GTM-P4BKNDB",
+			id: "GTM-N4WF9M7",
 		},
+		analytics: [
+			{
+				id: "UA-58952630-4",
+			},
+		],
 	}),
 
 	/**
@@ -129,8 +134,8 @@ const plugins = [
 		base: "/",
 		includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
 		manifest: {
-			name: "Vulk - Vue 3 Landing Pages",
-			short_name: "Vulk",
+			name: "SIPSTACK | AI/ML Powered Telecom Tools",
+			short_name: "SIPSTACK",
 			start_url: "/?utm_source=pwa",
 			display: "standalone",
 			theme_color: "#ffffff",
