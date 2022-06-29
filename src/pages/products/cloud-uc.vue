@@ -20,7 +20,7 @@ import { pageLinks, content3, features, faq } from "/@src/data/products/cloud-uc
 			title="Cloud UC"
 			subtitle="The VoIP management console you've been waiting for"
 			button1-title="Request invite"
-			button1-href="/get-started"
+			button1-href="/signup"
 			button2-title=""
 			button2-href=""
 		/>
