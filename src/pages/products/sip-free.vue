@@ -13,7 +13,7 @@ import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products
 			title="SIP Free"
 			subtitle="Unlimited SIP termination to toll free numbers in North America"
 			button1-title="Create account"
-			button1-href="/get-started"
+			button1-href="/signup"
 			button2-title=""
 			button2-href=""
 		/>

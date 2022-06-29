@@ -13,7 +13,7 @@ import { pageLinks, features, pricing, faq } from "/@src/data/products/whois";
 			title="Whois"
 			subtitle="Advanced CallerID name lookup for everyone"
 			button1-title="Create account"
-			button1-href="/get-started"
+			button1-href="/signup"
 			button2-title="Try now"
 			button2-href="https://whois.sipstack.com"
 		/>
