@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/sipstack/www/compare/v4.1.0...v4.2.0) (2022-06-29)
+
+
+### Features
+
+* 4.1.1 ([7c824b4](https://github.com/sipstack/www/commit/7c824b452b3d96c34fe6be23a934dd864c48a2cb))
+* merging 4.1.0 from develop into main ([8404176](https://github.com/sipstack/www/commit/84041761b86bdad24f4dd22aa9565cd618672113))
+
+
+### Bug Fixes
+
+* added signup link to get started ([746c522](https://github.com/sipstack/www/commit/746c522d01d23499d0a98094f37e5ae330f51eb3))
+* corrected various signup links ([3596f17](https://github.com/sipstack/www/commit/3596f1739907c414029377fc8659aad15ffca3b9))
+* fixed links for resources with trailing / ([7b595cd](https://github.com/sipstack/www/commit/7b595cd3d3c7fcd1d48e7059051535acb04b9d10))
+
 ## 4.1.0 (2022-06-28)
 
 
