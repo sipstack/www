@@ -41,10 +41,15 @@ const plugins = [
 	 * @see https://github.com/hannoeru/vite-plugin-pages
 	 */
 	Pages({
+		exclude: ["**/src/pages/r/**"],
 		pagesDir: [
 			{
 				dir: "src/pages",
 				baseRoute: "",
+			},
+			{
+				dir: "src_content/resources",
+				baseRoute: "/resources",
 			},
 		],
 		onRoutesGenerated: (routes) =>
