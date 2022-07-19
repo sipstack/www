@@ -24,5 +24,8 @@
   "volar.showWelcomePage": false,
   "[typescript]": {
     "editor.defaultFormatter": "johnsoncodehk.volar"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
   }
 }
