@@ -19,6 +19,7 @@ const props = defineProps<HeroProductsProps>();
 					<Subtitle tag="p" :size="5" weight="thin" class="mx-auto max-w-6 b-centered-tablet-p pt-2">
 						{{ props.subtitle }}
 					</Subtitle>
+					<slot name="content"></slot>
 				</div>
 			</div>
 		</template>

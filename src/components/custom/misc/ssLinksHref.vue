@@ -69,7 +69,7 @@ const vActiveOnVisible: Directive = {
 .demo-links {
 	display: flex;
 	justify-content: center;
-	max-width: v-bind(width);
+	max-width: 475px;
 	margin: -33px auto 0;
 	background: var(--demo-links-bg-color);
 	border: 1px solid var(--demo-links-border-color);
