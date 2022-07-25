@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PostItem } from "../blog-grid-item/BlogGridItem.vue";
+import { PostItem } from "./BlogGridItem.vue";
 import Markdown from "vue3-markdown-it";
 
 export interface SinglePostProps {

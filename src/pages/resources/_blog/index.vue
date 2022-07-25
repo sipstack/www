@@ -1,18 +1,23 @@
+
+
 <script setup lang="ts">
-import { posts } from "/@src/data/resources/blog/example";
+import { posts } from "/@src/data/resources/blog";
+import "/@src/vue-select/dist/vue-select.css";
+// import BlogSearch from "/@src/components/advanced/blog/blog-meta/BlogSearch.vue";
 </script>
+
+
+
 
 <template>
 	<div>
-		<Section color="grey" overflown>
+		<Section overflown>
 			<Container>
 				<div class="mx-auto max-w-9">
 					<PageTitle title="Our Latest News" subtitle="Company Blog">
 						<template #content>
 							<div class="mx-auto max-w-6 mt-2">
-								<p class="paragraph rem-115">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vides, quid faciat. Mihi vero, inquit, placet agi subtilius et, ut ipse.
-								</p>
+								<p class="paragraph rem-115">Stay updated</p>
 							</div>
 
 							<div class="mx-auto max-w-4 mt-4">
@@ -24,7 +29,8 @@ import { posts } from "/@src/data/resources/blog/example";
 
 				<div class="columns">
 					<div class="column is-8">
-						<ssBlogGrid :posts="posts" side-grid upside-down />
+						<ssBlogList id="ttt" :posts="posts" single-list side-list :limit="1" />
+						<!-- <BlogList :posts="posts" /> -->
 
 						<div class="load-more py-6">
 							<div class="buttons is-centered">
@@ -35,7 +41,7 @@ import { posts } from "/@src/data/resources/blog/example";
 
 					<div class="column is-4">
 						<BlogStickySide>
-							<BlogSearch />
+							<!-- <BlogSearch /> -->
 
 							<ssBlogRecentPosts :posts="posts" />
 

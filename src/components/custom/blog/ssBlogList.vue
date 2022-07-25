@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { PostListItem } from "../blog-list-item/ssBlogListItem.vue";
+import { PostListItem } from "./ssBlogListItem.vue";
 
 export interface PostListProps {
 	posts: PostListItem[];
