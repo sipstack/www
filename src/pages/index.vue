@@ -15,7 +15,7 @@ import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack
 		<Section wave="wave-2">
 			<Container>
 				<CollectionTitle
-					title="Beyond Telecom"
+					title="Beyond Marc"
 					subtitle="Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before."
 				></CollectionTitle>
 				<ssFeatureBlockJ :features="featuresBeyond" />

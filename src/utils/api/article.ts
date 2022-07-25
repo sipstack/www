@@ -1,5 +1,5 @@
 import sleep from "/@src/utils/sleep";
-import { helpCenterCategories } from "/@src/data/pages/help";
+import { helpCenterCategories } from "../../data/resources/knowledge-base/smart-cnam";
 
 const helpCenterArticlesMapped = helpCenterCategories.map(
 	(categories) =>
