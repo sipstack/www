@@ -1,157 +1,54 @@
-export const blockGroups = {
-	titles: [{ name: "API Intro" }],
-};
-
-export const content = `
-# API Intro
-This is a sample doc
-
-
-## sub title 1
-info1
-
-
-## sub title 2  
-### 3sub test  
-info here
-
-`;
 export const markdownObject = `
-# Choose a plan first
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+
+#### Choose a plan first
+
 Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
 *   Discovery pricing
 *   Business pricing
 
+#### Activate your account
 
-## Activate your account
 Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
 
+#### Perform initial setup
 
-## Perform initial setup
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-*   -Create a company
-*   -Add users to your team
-*   -Start working
+
+*   Create a company
+*   Add users to your team
+*   Start working
 `;
-export const articles = [
-	{
-		slug: "creating-a-project",
-		title: "Creating a project",
-		subtitle: "Create your first project and start adding tasks",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
-		updated: "one month ago",
-		author: {
-			name: "Jake Rowland",
-			picture: "data:image/gif;base64,replace_with_your_image",
-		},
-		content: markdownObject,
-	},
-	{
-		slug: "managing-tasks",
-		title: "Managing tasks",
-		subtitle: "Assign, revoke and manage your tasks",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
-		updated: "one week ago",
-		author: {
-			name: "Helen Miller",
-			picture: "data:image/gif;base64,replace_with_your_image",
-		},
-		content: markdownObject,
-	},
-	{
-		slug: "uploading-attachments",
-		title: "Uploading attachments",
-		subtitle: "Start uploading documents, images and videos",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
-		updated: "2 weeks ago",
-		author: {
-			name: "Helen Miller",
-			picture: "data:image/gif;base64,replace_with_your_image",
-		},
-		content: markdownObject,
-	},
-	{
-		slug: "managing-user-access",
-		title: "Managing user access",
-		subtitle: "Manage permissions and user rights",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
-		updated: "one week ago",
-		author: {
-			name: "Jake Rowland",
-			picture: "data:image/gif;base64,replace_with_your_image",
-		},
-		content: markdownObject,
-	},
-	{
-		slug: "configuring-a-gantt-view",
-		title: "Configuring a Gantt view",
-		subtitle: "Plan efficiently by using the built-in Gantt view",
-		abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
-		updated: "one week ago",
-		author: {
-			name: "Jake Rowland",
-			picture: "data:image/gif;base64,replace_with_your_image",
-		},
-		content: markdownObject,
-	},
-];
+
 export const helpCenterTopics = [
 	{
-		icon: "iconoir:settings-cloud",
+		icon: "ph:files-duotone",
 		iconColor: "primary",
-		title: "Cloud UC",
-		text: "Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.",
-		link: "/",
-	},
-	{
-		icon: "iconoir:shield-search",
-		iconColor: "blue",
-		title: "Smart CNAM",
-		text: "AI/ML & Community driven CNAM / Caller ID Name lookup, absolutely FREE!",
-		link: "smart-cnam",
-	},
-	{
-		icon: "iconoir:glass-empty",
-		iconColor: "secondary",
-		title: "SIP Free",
-		text: "TF SIP trunk temination. Available for any SIP based system, 100% FREE!",
-		link: "/",
-	},
-	{
-		icon: "iconoir:pc-check",
-		iconColor: "warning",
-		title: "Whois",
+		title: "Documentation",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		link: "/",
 	},
-];
-export const docCenterTopics = [
 	{
-		icon: "iconoir:settings-cloud",
-		iconColor: "primary",
-		title: "Cloud UC",
-		text: "Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.",
+		icon: "ph:atom-duotone",
+		iconColor: "info",
+		title: "User Guides",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		link: "/",
 	},
 	{
-		icon: "iconoir:shield-search",
-		iconColor: "blue",
-		title: "Smart CNAM",
-		text: "AI/ML & Community driven CNAM / Caller ID Name lookup, absolutely FREE!",
-		link: "docs/category/smart-cnam",
-	},
-	{
-		icon: "iconoir:glass-empty",
+		icon: "ph:swap-duotone",
 		iconColor: "secondary",
-		title: "SIP Free",
-		text: "TF SIP trunk temination. Available for any SIP based system, 100% FREE!",
+		title: "API",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		link: "/",
 	},
 	{
-		icon: "iconoir:pc-check",
+		icon: "ph:circles-three-duotone",
 		iconColor: "warning",
-		title: "Whois",
+		title: "Forums",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		link: "/",
 	},

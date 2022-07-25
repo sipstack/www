@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "@vue/reactivity";
 import { ref } from "vue";
-import { blocks } from "/@src/data/resources/docs";
+import { blocks } from "/@src/data/resources/docs"; // for search bar
 export interface HelpCenterTopic {
 	icon: string;
 	iconColor: string;
@@ -17,6 +17,13 @@ export interface HelpCenterHeaderProps {
 	topics?: HelpCenterTopic[];
 	compact?: boolean;
 }
+
+const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
+	topics: () => [],
+	compact: false,
+	text: undefined,
+});
+
 const filter = ref("");
 
 const filteredData = computed(() => {
@@ -28,17 +35,10 @@ const filteredData = computed(() => {
 		});
 	}
 });
-
-const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
-	topics: () => [],
-	compact: false,
-	text: undefined,
-});
 </script>
 
 <template>
 	<div>
-		<Section overflown></Section>
 		<PageTitle :title="props.title" :subtitle="props.subtitle" :text="props.text">
 			<template #content>
 				<div class="library-search mx-auto max-w-4 pt-4">
@@ -86,9 +86,22 @@ const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
 				</div>
 			</template>
 		</PageTitle>
+
+		<div v-if="!props.compact" class="help-center-navigation">
+			<div class="columns is-multiline b-columns-half-tablet-p">
+				<div v-for="(topic, index) in props.topics.slice(0, 4)" :key="index" class="column is-3">
+					<RouterLink :to="topic.link" class="box">
+						<i class="iconify" :data-icon="topic.icon" :class="topic.iconColor && `text-${topic.iconColor}`"></i>
+						<Title tag="h3" :size="6" weight="semi" narrow>
+							<span>{{ topic.title }}</span>
+						</Title>
+						<p class="paragraph rem-85">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</RouterLink>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
-
 
 <style scoped lang="scss">
 .library-search {

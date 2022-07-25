@@ -6,7 +6,7 @@ meta:
 <script setup lang="ts">
 import { ref } from "vue";
 import VueScrollTo from "vue-scrollto";
-import { blockGroups, content } from "/@src/data/resources/docs/smart-cnam/api";
+import { blockGroups, content } from "/@src/data-example/pages/help";
 import Markdown from "vue3-markdown-it";
 
 const scrollTo = VueScrollTo.scrollTo;
