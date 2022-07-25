@@ -16,7 +16,7 @@ RELEASE=$(tail -1 RELEASE)
 ## check if branch passed requirement (release)
 if [[ "${BRANCH}" != "release-"* ]]; then 
     echo "Cannot publish from this branch (${BRANCH}).";
-    exit 0
+    # exit 0
 fi
 
 read -p "Specify new version to release (Current: ${RELEASE}): " VER
