@@ -10,6 +10,6 @@
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-@@include("what-is-a2p-10dlc.md")
+# test 2
 `
 },
