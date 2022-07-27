@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
 import { posts } from "/@src/data/resources/blog";
-import "/@src/vue-select/dist/vue-select.css";
+// import "/@src/vue-select/dist/vue-select.css";
 // import BlogSearch from "/@src/components/advanced/blog/blog-meta/BlogSearch.vue";
 </script>
 

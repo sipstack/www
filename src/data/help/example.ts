@@ -144,6 +144,18 @@ export const helpCenterCategories = [
 		],
 		articles: [
 			{
+				slug: "making-your-first-steps",
+				title: "Getting started 22 inside project",
+				subtitle: "Making your first steps with our application",
+				abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.",
+				updated: "one week ago",
+				author: {
+					name: "Jake Rowland",
+					picture: "data:image/gif;base64,replace_with_your_image",
+				},
+				content: markdownObject,
+			},
+			{
 				slug: "creating-a-project",
 				title: "Creating a project",
 				subtitle: "Create your first project and start adding tasks",
