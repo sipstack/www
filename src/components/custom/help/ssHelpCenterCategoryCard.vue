@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { useRoute } from "vue-router";
+
 import { HelpCenterCategory } from "/@src/types";
 
 export interface HelpCenterCategoryCardProps {
 	category: HelpCenterCategory;
 }
 
+const route = useRoute();
+var basePath = "";
+if (route.fullPath.substring(route.fullPath.length - 1) != "/") basePath = route.fullPath + "/";
 const props = defineProps<HelpCenterCategoryCardProps>();
 </script>
 
@@ -17,7 +22,7 @@ const props = defineProps<HelpCenterCategoryCardProps>();
 					params: { slug: props.category.slug },
 				}"
 			> -->
-			<RouterLink :to="props.category.slug + '/'">
+			<RouterLink :to="basePath + props.category.slug + '/'">
 				<!-- <a :href="'resources/help/category/' + props.category.slug"> -->
 				<div class="icon">
 					<i class="iconify" :data-icon="props.category.icon" :class="props.category.iconColor && `text-${props.category.iconColor}`"></i>
@@ -32,10 +37,10 @@ const props = defineProps<HelpCenterCategoryCardProps>();
 						</span>
 					</div>
 					<div class="card-meta">
-						<!-- <img v-for="(contributor, c) in props.category.contributors.slice(0, 2)" :key="c" class="small-avatar" :src="contributor.picture" alt="Contributor picture" /> -->
+						<img v-for="(contributor, c) in props.category.contributors.slice(0, 2)" :key="c" class="small-avatar" :src="contributor.picture" alt="Contributor picture" />
 						<div class="meta-info">
 							<div class="articles-number">{{ props.category.articles.length }} articles in this section</div>
-							<!-- <div class="authors">
+							<div class="authors">
 								Written by
 								<span class="contributor-name">
 									{{ props.category.contributors[0].name }}
@@ -45,7 +50,7 @@ const props = defineProps<HelpCenterCategoryCardProps>();
 									<span v-if="props.category.contributors.length - 2 < 1"> other </span>
 									<span v-else>others</span>
 								</span>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>

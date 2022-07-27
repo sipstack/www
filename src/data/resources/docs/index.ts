@@ -1,7 +1,8 @@
 export const blocks = [
 	{
 		icon: "bi:person-circle",
-		name: "API Introduction",
+		iconColor: "yellow",
+		name: "API test",
 		type: "Smart CNAM", // product
 		link: "smart-cnam/introduction",
 	},
