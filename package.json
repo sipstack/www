@@ -22,7 +22,8 @@
     "lint:stylelint:fix": "stylelint ./src/**/*.{vue,css,scss} --fix",
     "commit": "commit",
     "release": "run-s test build release:*",
-    "release:standard-version": "standard-version"
+    "release:standard-version": "standard-version",
+    "gulp:res_kb": "gulp build_res_kb"
   },
   "dependencies": {
     "@iconify/iconify": "2.2.1",
@@ -38,6 +39,8 @@
     "cobe": "0.5.0",
     "compression": "1.7.4",
     "date-fns": "2.28.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
     "mapbox-gl": "2.8.1",
     "npm": "^7.24.2",
     "nprogress": "0.2.0",
@@ -85,6 +88,10 @@
     "eslint-plugin-prettier-vue": "3.1.0",
     "eslint-plugin-vue": "8.6.0",
     "eslint-plugin-vuejs-accessibility": "1.1.1",
+    "gulp-append-prepend": "^1.0.9",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
     "h3": "0.7.4",
     "hint": "6.1.11",
     "jiti": "1.13.0",
