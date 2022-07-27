@@ -34,7 +34,7 @@ watch(() => route.fullPath, fetchCategory);
 	<div>
 		<Section color="grey" overflown>
 			<Container v-if="category">
-				<ssHelpCenterHeader :title="category.name" subtitle="Category" compact />
+				<ssHelpCenterHeader :title="category.name" subtitle="Category" :search="helpCenterCategories" :search-category="slug" compact />
 
 				<ssHelpCenterCategoryBlock :category="category" />
 			</Container>

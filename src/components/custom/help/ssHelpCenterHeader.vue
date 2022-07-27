@@ -17,6 +17,7 @@ export interface HelpCenterHeaderProps {
 	topics?: HelpCenterTopic[];
 	compact?: boolean;
 	search?: Array[];
+	searchCategory?: string;
 }
 
 const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
@@ -24,15 +25,45 @@ const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
 	compact: false,
 	text: undefined,
 	search: () => [],
+	searchCategory: "",
 });
+
+// console.log(props.search);
 
 const filter = ref("");
 
 const filteredData = computed(() => {
+	var search = props.search;
+	// check if props.search is a flat array of objects (manaul assignment) or if help / article style to parse
+	if (search.length > 0 && !search[0].link) {
+		var _flat = [];
+
+		search.forEach((category) => {
+			category.articles.forEach((article) => {
+				if (props.searchCategory) {
+					// search from article page filtering just catagory
+					if (category.slug == props.searchCategory) {
+						filterArticles(category, article);
+					}
+				} else {
+					filterArticles(category, article);
+				}
+			});
+		});
+		function filterArticles(category, article) {
+			var basePath = "";
+			if (!props.searchCategory) basePath = category.slug + "/";
+			category.articles.forEach((article) => {
+				_flat.push({ icon: category.icon, iconColor: category.iconColor, name: article.title, type: category.name, link: basePath + article.slug });
+			});
+		}
+		// console.log(_flat); // debug
+		search = _flat;
+	}
 	if (filter.value === "") {
 		return [];
 	} else {
-		return props.search.filter((item) => {
+		return search.filter((item) => {
 			return item.icon.match(new RegExp(filter.value, "i")) || item.name.match(new RegExp(filter.value, "i")) || item.type.match(new RegExp(filter.value, "i"));
 		});
 	}
@@ -58,7 +89,7 @@ const filteredData = computed(() => {
 										<RouterLink :to="result.link">
 											<div class="filter-result-item">
 												<div class="result-icon">
-													<i class="iconify" :data-icon="result.icon"></i>
+													<i class="iconify" :data-icon="result.icon" :class="result.iconColor && `text-${result.iconColor}`"></i>
 												</div>
 												<div class="meta">
 													<h3>{{ result.name }}</h3>
@@ -215,6 +246,9 @@ const filteredData = computed(() => {
 					font-weight: 600;
 					font-size: 0.9rem;
 					color: var(--title-color);
+				}
+				p {
+					text-align: left;
 				}
 			}
 

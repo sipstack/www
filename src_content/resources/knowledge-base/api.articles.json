@@ -1,29 +1,15 @@
-export const helpCenterCategories = [
-	{
-		slug: "api",
-		icon: "eos-icons:api",
-		iconColor: "yellow",
-		name: "API",
-		text: "General information on API and use.",
-		contributors: [
-			{
-				name: "Kanasu Nagathihalli",
-				picture: "/assets/img/team/kanasu.png",
-			},
-		],
-		articles: [
-			{
-				slug: "rate-limits",
-				title: "API Rate Limits",
-				subtitle: "This article gives you all the information you need to know about SIPSTACK API Rate Limits.",
-				abstract: "",
-				created: "16/04/2021", //dd/mm/yyyy
-				updated: "",
-				author: {
-					name: "Kanasu Nagathihalli",
-					picture: "/assets/img/team/kanasu.png",
-				},
-				content: `
+{
+    slug: "rate-limits",
+    title: "API Rate Limits",
+    subtitle: "This article gives you all the information you need to know about SIPSTACK API Rate Limits.",
+    abstract: "",
+    created: "16/04/2021", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
 This article gives you all the information you need to know about SIPSTACK API Rate Limits.
 
 ## What is a Rate Limit?
@@ -87,38 +73,5 @@ If you encounter a HTTP Response Header 503, wait a default amount of time and r
 
     - Default retry time
     - Max number of retries
-`,
-			},
-		],
-	},
-	{
-		slug: "text-messaging",
-		icon: "fa6-solid:comment-sms",
-		iconColor: "success",
-		name: "Text Messaging",
-		text: "General information on SMS / MMS text messaging.",
-		contributors: [
-			{
-				name: "Kanasu Nagathihalli",
-				picture: "/assets/img/team/kanasu.png",
-			},
-		],
-		articles: [
-			{
-				slug: "what-is-a2p-10dlc",
-				title: "What is A2P 10DLC?",
-				subtitle: "A2P 10DLC refers to a system that allows businesses to send Application-to-Person (A2P) type messaging via standard 10-digit long code (10DLC) phone numbers. ",
-				abstract: "",
-				created: "03/03/2021",
-				updated: "",
-				author: {
-					name: "Kanasu Nagathihalli",
-					picture: "/assets/img/team/kanasu.png",
-				},
-				content: `
-# test 2
-`,
-			},
-		],
-	},
-];
+`
+},
