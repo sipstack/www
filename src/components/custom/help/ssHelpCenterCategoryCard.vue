@@ -11,12 +11,14 @@ const props = defineProps<HelpCenterCategoryCardProps>();
 <template>
 	<div class="flex-card category-card light-bordered">
 		<div class="card-body">
-			<RouterLink
+			<!-- <RouterLink
 				:to="{
 					name: 'resources-help-category-slug',
 					params: { slug: props.category.slug },
 				}"
-			>
+			> -->
+			<RouterLink :to="props.category.slug + '/'">
+				<!-- <a :href="'resources/help/category/' + props.category.slug"> -->
 				<div class="icon">
 					<i class="iconify" :data-icon="props.category.icon" :class="props.category.iconColor && `text-${props.category.iconColor}`"></i>
 				</div>
@@ -47,6 +49,7 @@ const props = defineProps<HelpCenterCategoryCardProps>();
 						</div>
 					</div>
 				</div>
+				<!-- </a> -->
 			</RouterLink>
 		</div>
 	</div>
