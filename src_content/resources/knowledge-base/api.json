@@ -1,0 +1,14 @@
+{
+    slug: "api",
+    icon: "eos-icons:api",
+    iconColor: "yellow",
+    name: "API",
+    text: "General information on API and use.",
+    contributors: [
+        {
+            name: "Kanasu Nagathihalli",
+            picture: "/assets/img/team/kanasu.png",
+        },
+    ],
+    articles: [@@include("api/articles.ts")]
+}

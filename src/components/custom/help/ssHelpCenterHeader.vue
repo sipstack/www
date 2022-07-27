@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "@vue/reactivity";
 import { ref } from "vue";
-import { blocks } from "/@src/data/resources/docs"; // for search bar
+// import { blocks } from "/@src/data/resources/docs"; // for search bar
 export interface HelpCenterTopic {
 	icon: string;
 	iconColor: string;
@@ -16,12 +16,14 @@ export interface HelpCenterHeaderProps {
 	text?: string;
 	topics?: HelpCenterTopic[];
 	compact?: boolean;
+	search?: Array[];
 }
 
 const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
 	topics: () => [],
 	compact: false,
 	text: undefined,
+	search: () => [],
 });
 
 const filter = ref("");
@@ -30,7 +32,7 @@ const filteredData = computed(() => {
 	if (filter.value === "") {
 		return [];
 	} else {
-		return blocks.filter((item) => {
+		return props.search.filter((item) => {
 			return item.icon.match(new RegExp(filter.value, "i")) || item.name.match(new RegExp(filter.value, "i")) || item.type.match(new RegExp(filter.value, "i"));
 		});
 	}
@@ -41,7 +43,7 @@ const filteredData = computed(() => {
 	<div>
 		<PageTitle :title="props.title" :subtitle="props.subtitle" :text="props.text">
 			<template #content>
-				<div class="library-search mx-auto max-w-4 pt-4">
+				<div v-if="props.search.length > 0" class="library-search mx-auto max-w-4 pt-4">
 					<Field>
 						<Control icon="feather:search">
 							<VInput v-model="filter" type="text" placeholder="Search library..." />

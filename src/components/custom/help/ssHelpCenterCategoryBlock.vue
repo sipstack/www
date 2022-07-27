@@ -63,7 +63,7 @@ const props = defineProps<HelpCenterCategoryBlockProps>();
 								<span>{{ article.title }}</span>
 							</Title>
 							<div class="inner-text">
-								{{ article.abstract }}
+								{{ article.subtitle }}
 							</div>
 							<div class="card-meta">
 								<img class="small-avatar" :src="article.author.picture" alt="Article author" />
@@ -72,7 +72,8 @@ const props = defineProps<HelpCenterCategoryBlockProps>();
 										Written by
 										<span>{{ article.author.name }}</span>
 									</div>
-									<div class="status">Updated about {{ article.updated }}</div>
+									<div v-if="article.updated" class="status">Updated {{ article.updated }}</div>
+									<div v-else-if="article.created" class="status">Created {{ article.created }}</div>
 								</div>
 							</div>
 						</div>
