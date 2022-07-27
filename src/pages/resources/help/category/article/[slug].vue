@@ -8,7 +8,7 @@ import { HelpCenterArticle } from "/@src/types";
 const route = useRoute();
 const router = useRouter();
 const slug = route.params.slug as string;
-
+console.log(route.params.slug);
 // get article data
 const article = ref<HelpCenterArticle>();
 async function fetchArticle() {
