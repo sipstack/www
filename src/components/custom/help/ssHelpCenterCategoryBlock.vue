@@ -50,12 +50,14 @@ const props = defineProps<HelpCenterCategoryBlockProps>();
 
 			<div class="articles-list">
 				<div v-for="(article, index) in props.category.articles" :key="index" class="help-article">
-					<RouterLink
+					<!-- <RouterLink
 						:to="{
 							name: 'resources-help-category-article-slug',
 							params: { slug: article.slug },
 						}"
-					>
+					> -->
+					<!-- <RouterLink :to="props.category.slug + '/' + article.slug"> -->
+					<RouterLink :to="article.slug">
 						<div class="inner-content">
 							<Title tag="h3" :size="5" weight="semi" leading>
 								<span>{{ article.title }}</span>
