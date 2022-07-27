@@ -30,13 +30,14 @@ const activeRating = ref("");
 					<span>{{ props.article.subtitle }}</span>
 				</Subtitle>
 				<div class="article-meta">
-					<!-- <img class="small-avatar" :src="props.article.author.picture" alt="Author photo" /> -->
+					<img class="small-avatar" :src="props.article.author.picture" alt="Author photo" />
 					<div class="meta-info">
 						<div class="author">
 							Written by
 							<span>{{ props.article.author.name }}</span>
 						</div>
-						<div class="status">Updated {{ props.article.updated }}</div>
+						<div v-if="props.article.created" class="status">Created {{ props.article.created }}</div>
+						<div v-else-if="props.article.updated" class="status">Updated {{ props.article.updated }}</div>
 					</div>
 				</div>
 
