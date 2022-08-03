@@ -1,0 +1,15 @@
+{
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("blocking-as-spam.md")
+`
+},

@@ -1,0 +1,15 @@
+{
+    slug: "what-is-a-message-ssid",
+    title: "What is a Message SSID?",
+    subtitle: "",
+    abstract: "",
+    created: "01/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("what-is-a-message-ssid.md")
+`
+},

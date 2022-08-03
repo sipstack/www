@@ -1,0 +1,15 @@
+{
+    slug: "receiving-international-sms-messages",
+    title: "Can Canadian and US phone numbers receive international SMS messages?",
+    subtitle: "",
+    abstract: "",
+    created: "24/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("receiving-international-sms-messages.md")
+`
+},
