@@ -1,0 +1,2 @@
+Created 7 April 2021 Author Kanasu Nagathihalli Category Text Messaging
+SIPSTACK will do the best we can to ensure that the emoji in your message is delivered to your mobile carrier. However, since emoji support has not been standardized across carriers, we cannot guarantee support for emoji across all carriers.

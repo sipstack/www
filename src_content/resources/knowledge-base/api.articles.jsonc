@@ -12,8 +12,8 @@
     content: `
 This article gives you all the information you need to know about SIPSTACK API Rate Limits.
 
-## What is a Rate Limit?
-A "rate limit" is a policy that affects the frequency with which an API can be called. They are put in place to protect server infrastructure from being abused or misused. SIPSTACK employs rate limits to enable consistent load allocation with our platform.
+## What is a Rate Limit? im not sure
+A “rate limit” is a policy that affects the frequency with which an API can be called. They are put in place to protect server infrastructure from being abused or misused. SIPSTACK employs rate limits to enable consistent load allocation with our platform.
 
 ## Applying Rate Limits
 SIPSTACK assigns API requests into four different policies where each policy is restricted to a different rate limit. This allows SIPSTACK to optimize and distribute load across the platform to better secure and protect it. The four policies are described in Table 1 below:
@@ -26,7 +26,7 @@ SIPSTACK assigns API requests into four different policies where each policy is 
 | Auth | 5 requests/minute | 0 seconds |
 *Table 1*
 
-Within the above presented limits, your API requests are allowed to send 10 heavy, 40 medium, 50 light and 5 authorization requests per user / per minute. If you exceed these limits, the server returns the '429 Too Many Requests' HTTP error code. It means that the client is throttled by the server due to the high request rate. The retry period (in seconds) after which more requests can be sent, is specified in Retry-After response header.
+Within the above presented limits, your API requests are allowed to send 10 heavy, 40 medium, 50 light and 5 authorization requests per user / per minute. If you exceed these limits, the server returns the ‘429 Too Many Requests’ HTTP error code. It means that the client is throttled by the server due to the high request rate. The retry period (in seconds) after which more requests can be sent, is specified in Retry-After response header.
 
 How best to detect and respond to rate limits
 
@@ -42,7 +42,7 @@ Rate Limits are returned in specific headers in response to each request, unless
 
 These headers are returned in order to enable apps to preemptively respond to circumstances in which their requests may be impacted by a rate limit enforcement.
 
-\`\`\`
+```
 HTTP/1.1 200 OK
 X-Rate-Limit-Policy: light
 
@@ -58,7 +58,7 @@ Content-Type: application/json; charset=UTF-8
     "data: {},
     "link" : {}
 }
-\`\`\`
+```
 
 ## What to do when your requests hit a rate limit?
 Consider the following two use cases in which you might hit a rate limit.

@@ -1,0 +1,15 @@
+{
+    slug: "phone-number-types-and-capabilities",
+    title: "SIPSTACK Phone Number Types and Their Capabilities",
+    subtitle: "SIPSTACK offers a range of phone number types that differ in their costs and capabilities. The details of each of the options are listed below",
+    abstract: "",
+    created: "14/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("phone-number-types-and-capabilities.md")
+`
+},
