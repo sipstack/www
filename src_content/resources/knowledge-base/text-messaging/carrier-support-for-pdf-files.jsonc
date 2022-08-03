@@ -1,0 +1,15 @@
+{
+    slug: "carrier-support-for-pdf-files",
+    title: "Carrier support for PDF files sent using SIPSTACK MMS",
+    subtitle: "SIPSTACK MMS messaging is a popular way to send media files, especially images, to end users in Canada and US.",
+    abstract: "",
+    created: "22/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("carrier-support-for-pdf-files.md")
+`
+},

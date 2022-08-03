@@ -1,0 +1,15 @@
+{
+    slug: "forbidden-message-categories",
+    title: "Forbidden message categories for toll-free SMS and MMS in Canada and US",
+    subtitle: "The following messaging use cases are not allowed on toll-free SMS or MMS in Canada and US.",
+    abstract: "",
+    created: "15/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("forbidden-message-categories.md")
+`
+},

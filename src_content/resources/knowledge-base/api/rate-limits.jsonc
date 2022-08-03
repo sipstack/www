@@ -9,7 +9,7 @@
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
-    content: `
+    content: '
 @@include("rate-limits.md")
 `
 },

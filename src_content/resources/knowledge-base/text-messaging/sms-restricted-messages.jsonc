@@ -1,0 +1,15 @@
+{
+    slug: "sms-restricted-messages",
+    title: "What kind of messages are restricted on SIPSTACK SMS?",
+    subtitle: "SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("sms-restricted-messages.md")
+`
+},

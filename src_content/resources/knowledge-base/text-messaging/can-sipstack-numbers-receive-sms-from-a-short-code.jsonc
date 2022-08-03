@@ -1,0 +1,15 @@
+{
+    slug: "can-sipstack-numbers-receive-sms-from-a-short-code",
+    title: "Can SIPSTACK numbers receive SMS from a short code",
+    subtitle: "",
+    abstract: "",
+    created: "26/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("can-sipstack-numbers-receive-sms-from-a-short-code.md")
+`
+},

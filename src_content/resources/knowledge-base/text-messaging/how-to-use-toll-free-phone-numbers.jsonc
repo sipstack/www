@@ -1,0 +1,15 @@
+{
+    slug: "how-to-use-toll-free-phone-numbers",
+    title: "How to use toll-free phone numbers for SMS and MMS in Canada",
+    subtitle: "Toll-free numbers are designated for business messaging use by most major mobile carriers in Canada (Rogers, Fido, Telus and Videotron) and by all major carriers in the US.",
+    abstract: "",
+    created: "19/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("how-to-use-toll-free-phone-numbers.md")
+`
+},
