@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { posts } from "/@src/data/resources/blog/example";
+import { posts } from "/@src/data/resources/blog";
 </script>
 
 <template>
@@ -39,7 +39,8 @@ import { posts } from "/@src/data/resources/blog/example";
 
 							<ssBlogRecentPosts :posts="posts" />
 
-							<ssBlogCategories
+							<!-- TODO: figure out categories -->
+							<!-- <ssBlogCategories
 								:categories="[
 									{
 										name: 'Business',
@@ -51,57 +52,23 @@ import { posts } from "/@src/data/resources/blog/example";
 										slug: 'technology',
 										postCount: 23,
 									},
-									{
-										name: 'Startups',
-										slug: 'startups',
-										postCount: 16,
-									},
-									{
-										name: 'Development',
-										slug: 'development',
-										postCount: 31,
-									},
-									{
-										name: 'Design',
-										slug: 'desgin',
-										postCount: 9,
-									},
-									{
-										name: 'Conception',
-										slug: 'conception',
-										postCount: 11,
-									},
-								]"
-							/>
 
-							<BlogTags
+								]"
+							/> -->
+
+							<!-- TODO: figure out tags -->
+							<!-- <BlogTags
 								:tags="[
 									{
 										name: 'Design',
 										slug: 'design',
 									},
 									{
-										name: 'UI/UX',
-										slug: 'ui-ux',
-									},
-									{
-										name: 'Development',
-										slug: 'development',
-									},
-									{
-										name: 'Apps',
-										slug: 'apps',
-									},
-									{
-										name: 'Collaboration',
-										slug: 'collaboration',
-									},
-									{
 										name: 'Management',
 										slug: 'management',
 									},
 								]"
-							/>
+							/> -->
 						</BlogStickySide>
 					</div>
 				</div>

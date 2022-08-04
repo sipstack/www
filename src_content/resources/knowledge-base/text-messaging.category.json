@@ -10,5 +10,5 @@
             picture: "/assets/img/team/kanasu.png",
         },
     ],
-    articles: [@@include("text-messaging.articles.jsonc")]
+    articles: [@@include("text-messaging.articles.json")]
 },

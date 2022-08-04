@@ -33,7 +33,7 @@ const close = () => {
 // }
 
 onBeforeMount(() => {
-	console.log(VueCookies.get("ss_cookie"));
+	// console.log(VueCookies.get("ss_cookie")); // debug
 	if (VueCookies.get("ss_cookie")) needCookie.value = false;
 });
 </script>

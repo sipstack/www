@@ -23,7 +23,8 @@
     "commit": "commit",
     "release": "run-s test build release:*",
     "release:standard-version": "standard-version",
-    "gulp:res_kb": "gulp build_res_kb"
+    "gulp:res_kb": ":> src/data/resources/knowledge-base/index.ts && gulp build_res_kb",
+    "gulp:res_blog": "gulp build_res_blog"
   },
   "dependencies": {
     "@iconify/iconify": "2.2.1",
@@ -41,6 +42,7 @@
     "date-fns": "2.28.0",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
+    "gulp-tap": "^2.0.0",
     "mapbox-gl": "2.8.1",
     "npm": "^7.24.2",
     "nprogress": "0.2.0",

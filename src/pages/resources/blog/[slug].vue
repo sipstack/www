@@ -1,37 +1,44 @@
 <script setup lang="ts">
-// import { ref, onMounted, onServerPrefetch, watch } from "vue";
-// import { useRoute, useRouter } from "vue-router";
+import { ref, onMounted, onServerPrefetch, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { getPost } from "/@src/utils/api/ssPost";
 
-// import { getArticle } from "/@src/utils/api/blog-post"; // will modify for blog
-// import { HelpCenterArticle } from "/@src/types";
-import { post } from "/@src/data/resources/blog/post";
+// import { PostItem } from "/@src/components/custom/blog/ssBlogGridItem.vue";
 
-// const route = useRoute();
-// const router = useRouter();
-// const slug = route.params.slug as string;
+import { posts } from "/@src/data/resources/blog";
 
-// get article data
-// const article = ref<HelpCenterArticle>();
-// async function fetchArticle() {
-// 	try {
-// 		article.value = await getArticle(slug);
-// 	} catch {
-// 		router.replace({
-// 			name: "all",
-// 			params: { all: `not-found-${route.params.slug}` },
-// 		});
-// 	}
-// }
+const route = useRoute();
+const router = useRouter();
+const slug = route.params.slug as string;
 
-// onMounted(fetchArticle);
-// onServerPrefetch(fetchArticle);
-// watch(() => route.fullPath, fetchArticle);
+// const post = posts.find(function (data) {
+// 	if (data.slug == slug) return true;
+// });
+
+const post = ref();
+async function fetchPost() {
+	try {
+		post.value = await getPost(slug, posts);
+	} catch {
+		// router.replace({
+		// 	name: "all",
+		// 	params: { all: `not-found-${slug}` },
+		// });
+		router.replace({
+			path: "/resources/blog",
+			params: { all: `not-found-${slug}` },
+		});
+	}
+}
+onMounted(fetchPost);
+onServerPrefetch(fetchPost);
+watch(() => route.fullPath, fetchPost);
 </script>
 
 <template>
 	<div>
 		<Section>
-			<Container>
+			<Container v-if="post">
 				<ssBlogPost :content="post" />
 			</Container>
 		</Section>
