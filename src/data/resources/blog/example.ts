@@ -1,6 +1,5 @@
 export const posts = [
 	{
-		id: 0,
 		image: "/assets/posts/post-1.svg",
 		slug: "how-3d",
 		title: "How 3D and augmented reality are changing our world",

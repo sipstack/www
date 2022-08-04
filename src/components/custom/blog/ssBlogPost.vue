@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PostItem } from "./BlogGridItem.vue";
+import { PostItem } from "./ssBlogGridItem.vue";
 import Markdown from "vue3-markdown-it";
 
 export interface SinglePostProps {
@@ -22,7 +22,7 @@ const props = defineProps<SinglePostProps>();
 						<Title tag="h1" :size="2" weight="bold">
 							{{ props.content.title }}
 						</Title>
-						<Subtitle tag="p" :size="5" weight="thin" class="pt-2"> {{ props.content.date }} — {{ props.content.duration }} min read </Subtitle>
+						<Subtitle tag="p" :size="5" weight="thin" class="pt-2"> {{ props.content.created }} — {{ props.content.duration }} min read </Subtitle>
 					</div>
 					<div class="metadata">
 						<AvatarSimple :size="props.centered ? 'big' : 'medium'" :picture="props.content.author.photo" />
