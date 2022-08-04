@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { PostItem } from "./BlogGridItem.vue";
+import { PostItem } from "./ssBlogGridItem.vue";
+import { useRoute } from "vue-router";
 
 export interface RecentPostsProps {
 	posts: PostItem[];
@@ -12,6 +13,9 @@ const props = withDefaults(defineProps<RecentPostsProps>(), {
 	posts: () => [],
 	limit: 4,
 });
+const route = useRoute();
+var basePath = "";
+if (route.fullPath.substring(route.fullPath.length - 1) != "/") basePath = route.fullPath + "/";
 </script>
 
 <template>
@@ -21,7 +25,7 @@ const props = withDefaults(defineProps<RecentPostsProps>(), {
 		</Title>
 
 		<div class="blog-recent-posts-inner">
-			<RouterLink v-for="(post, index) in props.posts.slice(0, props.limit)" :key="index" to="/resources/blog/first-blog-test" class="blog-recent-post">
+			<RouterLink v-for="(post, index) in props.posts.slice(0, props.limit)" :key="index" :to="basePath + post.slug" class="blog-recent-post">
 				<div class="post-image">
 					<img :src="post.image" alt="Post thumbnail" />
 				</div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { PostItem } from "./BlogGridItem.vue";
+import { PostItem } from "./ssBlogGridItem.vue";
 
 export interface PostGridProps {
 	posts: PostItem[];
