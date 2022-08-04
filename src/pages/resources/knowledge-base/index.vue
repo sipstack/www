@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { helpCenterCategories } from "/@src/data/resources/knowledge-base";
 
-import { blocks } from "/@src/data/resources/docs"; // for search bar
+// import { blocks } from "/@src/data/resources/docs"; // for search bar
 </script>
 
 <template>

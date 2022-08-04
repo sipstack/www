@@ -53,9 +53,9 @@ const filteredData = computed(() => {
 		function filterArticles(category, article) {
 			var basePath = "";
 			if (!props.searchCategory) basePath = category.slug + "/";
-			category.articles.forEach((article) => {
-				_flat.push({ icon: category.icon, iconColor: category.iconColor, name: article.title, type: category.name, link: basePath + article.slug });
-			});
+			// category.articles.forEach((article) => {
+			_flat.push({ icon: category.icon, iconColor: category.iconColor, name: article.title, type: category.name, link: basePath + article.slug });
+			// });
 		}
 		// console.log(_flat); // debug
 		search = _flat;
@@ -246,6 +246,7 @@ const filteredData = computed(() => {
 					font-weight: 600;
 					font-size: 0.9rem;
 					color: var(--title-color);
+					text-align: left;
 				}
 				p {
 					text-align: left;

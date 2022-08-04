@@ -1,4 +1,3 @@
-
 ## What is a Rate Limit?
 A “rate limit” is a policy that affects the frequency with which an API can be called. They are put in place to protect server infrastructure from being abused or misused. SIPSTACK employs rate limits to enable consistent load allocation with our platform.
 
