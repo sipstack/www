@@ -1,21 +1,21 @@
 export const posts = [
-	{
-		slug: "analog-technology",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "What is Analog Technology?",
-		abstract: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
-		created: "31/03/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 1, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+{
+    slug: "analog-technology",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "What is Analog Technology?",
+    abstract: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
+    created: "31/03/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 ![tech](src_content/resources/blog/analog-technology/tech.jpeg)
 Photo by [Julius Drost](https://unsplash.com/@juliusdrost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
@@ -24,25 +24,25 @@ Analog technology, as the name suggests, refers to technologies that are **analo
 Similarly, the process of taking an audio signal (the human voice), and translating it into pulses over the telephone wire, and translating back to an audio signal (the same human voice) is an analogous process.
 
 All analog technologies are limited by their physicality. How many songs you can record on an audio cassette depends on how long the plastic reel of the cassette is. How many transcontinental telephone calls you can make at the same time is limited by the number of copper and fibre optic lines laid beneath the oceans.
-`,
-	},
-	{
-		slug: "announcing-ucs-transition-into-open-source",
-		image: "/assets/posts/post-3.svg",
-		category: "Press",
-		tags: ["announcement"],
-		views: 0,
-		title: "Announcing UCS transition into Open Source",
-		abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
-		created: "12/06/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 2, // minute read
-		author: {
-			name: "Jonathan Geller",
-			role: "CEO & Founder",
-			photo: "/assets/img/team/jon.jpg",
-		},
-		content: `
+`
+},
+{
+    slug: "announcing-ucs-transition-into-open-source",
+    image: "/assets/posts/post-3.svg",
+    category: "Press",
+    tags: ["announcement"],
+    views: 0,
+    title: "Announcing UCS transition into Open Source",
+    abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
+    created: "12/06/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 2, // minute read
+    author: {
+        name: "Jonathan Geller",
+        role: "CEO & Founder",
+        photo: "/assets/img/team/jon.jpg",
+    },
+    content: `
 Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months. With the rise of the Covid-19 pandemic, the world began working from home, making all efforts to continue their operations at any capacity. For some businesses, these changes were effortless, but for most, the struggle and cost to adapt was staggering. SIPSTACK by design, is built to enable any business to adapt and rise to the new communication challenges with confidence by bringing secure, managed and affordable telecommunication environments to meet these pivotal demands. 
 
 Our technology started off like most have in today's environment – in the virtual clouds only to make its way to IBM / Softlayer, a cloud company that brings high end Metal-as-a-Service (MaaS) coupled with their global secured network, truly enabling our services to scale world-wide within their one-of-a-kind offering that no other company can match.
@@ -58,25 +58,25 @@ While our teams have been working overtime re-configuring our code to remove any
 We fully understand the depth and impact this decision has, but re-iterate our team remains fully committed to the platform and the community. Please continue to follow us on our website and social media for upcoming announcements.
 
 You can read more about the event that occurred on our github page here: https://github.com/sipstack/ibm_softlayer-gross-negligence. Official announcement available on this page.
-`,
-	},
-	{
-		slug: "dedicated-phone number",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP for Business",
-		tags: [],
-		views: 0,
-		title: "Your Business Needs a Dedicated Phone Number. Here's Why.",
-		abstract: "Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.",
-		created: "24/03/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 3, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "dedicated-phone number",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP for Business",
+    tags: [],
+    views: 0,
+    title: "Your Business Needs a Dedicated Phone Number. Here's Why.",
+    abstract: "Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.",
+    created: "24/03/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 3, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 ![phone3](src_content/resources/blog/dedicated-phone-number/phone3.jpeg)
 Photo by [Adomas Aleno](https://unsplash.com/@aleno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
@@ -135,30 +135,27 @@ Listing one phone number streamlines the sales process. Today, VoIP technology h
 SIPSTACK gives our [partners](https://www.sipstack.com/find-a-partner) the tools to set up a dedicated business lines in minutes, making it is easier than ever for your customers to reach you.
 
 If you're looking for a comprehensive VoIP solution for your business or want to be a SIPSTACK partner [contact us](https://www.sipstack.com/contact/us) and we will be able to help you.
-`,
-	},
-	{
-		slug: "history-of-the-phone",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP Innovation",
-		tags: [],
-		views: 0,
-		title: "3 Takeaways from the Invention of the Telephone",
-		abstract:
-			"The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. Read the story behind these incredible nineteenth century innovations that dramatically changed our civilization.",
-		created: "27/02/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 4, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "history-of-the-phone",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP Innovation",
+    tags: [],
+    views: 0,
+    title: "3 Takeaways from the Invention of the Telephone",
+    abstract: "The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. Read the story behind these incredible nineteenth century innovations that dramatically changed our civilization.",
+    created: "27/02/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 ![lampphone](src_content/resources/blog/history-of-the-phone/lampphone.jpeg)
 Photo by [Johnny Briggs](https://unsplash.com/@johnnyboylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-<table><tr><td> <img src="/assets/img/resources/blog/history-of-the-phone/lampphone.jpeg" /> </td><td>Everyone probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important. In fact, the more I read about the innovators, the private companies and the milieu of the nineteenth century, the more amazed I am about the infinite and ever-changing possibilities of the communications industry. Each invention dramatically changed our civilization. The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. My intention, however, is not merely to recount the science behind and the history of these inventions, but to extract from the story of telecommunication, important takeaways on what drives innovation, and how SIPSTACK fits into the story of innovation. After all, isn't the purpose of history to learn from it?</td></tr></table>
 
 Everyone probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.
 
@@ -249,51 +246,50 @@ As we head into a post-pandemic world, the landscape of the communications indus
 - Building platforms where companies can innovate freely and share in each other's innovations.
 
 Become part of our origin story. [Partner](https://www.sipstack.com/signup) with SIPSTACK to stay ahead of the game.
-`,
-	},
-	{
-		slug: "telephone-technology-explained",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "Telephone Technology Explained",
-		abstract:
-			"When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
-		created: "01/04/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 1, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "telephone-technology-explained",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "Telephone Technology Explained",
+    abstract: "When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
+    created: "01/04/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 ![phonebooth](src_content/resources/blog/telephone-technology-explained/phonebooth.jpeg)
 Photo by [Paul Carmona](https://unsplash.com/@sydneylens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange. When you dial the phone number, a second circuit is opened between the telephone exchange and the person you're calling. For as long as you're on the phone, the circuit remains open, and data (in the form of your voice) is sent and received over that open line. This [analog](http://sipstack.com/resources/blog/analog-technology) technology is called **circuit switching**.
 
 Landline telephones are connected to the **Public Switched Telephone Network** (PSTN), a network of physical copper and fibre-optic cables that carry electric signals across vast distances.
-`,
-	},
-	{
-		slug: "the-evolution-of-voip",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "The Evolution of VoIP",
-		abstract: "Trace the evolution of VoIP from the traditional private branch exchange to a unified communication platform hosted on the cloud.",
-		created: "05/05/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 4, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "the-evolution-of-voip",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "The Evolution of VoIP",
+    abstract: "Trace the evolution of VoIP from the traditional private branch exchange to a unified communication platform hosted on the cloud.",
+    created: "05/05/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 Over the last two decades, VoIP has transitioned from hardware reliant technology to a unified communication platform that can be hosted on the cloud. Now that we understand [the history of VoIP](http://sipstack.com/resources/blog/the-history-of-voip) and [how VoIP works](http://sipstack.com/resources/blog/voip-technology-explaned), we can dive into how this shift from hardware-dependence to software-first philosophy changed the landscape of VoIP.
 
 ![Voip](src_content/resources/blog/the-evolution-of-voip/voip.png)
@@ -379,25 +375,25 @@ While each of these capabilities had to be configured at the hardware and softwa
 SIPSTACK offers a dynamic UCaas solution that can be completely customized for each unique business case. Check out our fully stacked feature list, designed to evolve with your needs.
 
 
-`,
-	},
-	{
-		slug: "the-history-of-voip",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "The History of VoIP",
-		abstract: "VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.",
-		created: "08/04/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 3, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "the-history-of-voip",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "The History of VoIP",
+    abstract: "VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.",
+    created: "08/04/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 3, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 The history of telecommunication dates back to 1662, when Robert Hooke discovered that sound could be transmitted over a string into an attached earpiece or mouthpiece.
 
 The telephone was invented two centuries later, in 1876. To understand how the invention of the telephone changed the world, read our blog on the [history of the phone](http://sipstack.com/resources/blog/history-of-the-phone).
@@ -460,26 +456,25 @@ Although VoIP has been around for over two decades, the technology is just matur
 As VoIP technology continues to evolve at breakneck speeds, we invite the telecommunications community to [join SIPSTACK](https://www.sipstack.com/signup) in our mission to uphold the original values that VoIP was founded on — making communication solutions accessible to everyone.
 
 
-`,
-	},
-	{
-		slug: "voip-technology-explained",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "VoIP Technology Explained",
-		abstract:
-			"VoIP emerged as a result of decades of experimentation with different scientific ideas and technologies such as packet switching, Linear Predictive Coding, TCP/IP and the internet.",
-		created: "16/04/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 4, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "voip-technology-explained",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "VoIP Technology Explained",
+    abstract: "VoIP emerged as a result of decades of experimentation with different scientific ideas and technologies such as packet switching, Linear Predictive Coding, TCP/IP and the internet.",
+    created: "16/04/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 As a Technical Writer at a cloud communication company, I'm invested in understanding technologies fundamental to the telecommunications industry. Now that I have written about the [invention of the telephone](http://sipstack.com/resources/blog/history-of-the-phone) and [the history of VoIP](http://sipstack.com/resources/blog/the-history-of-voip), I set out to answer a few fundamental questions about VoIP, such as how VoIP technology is different from [telephone technology](http://sipstack.com/resources/blog/telephone-technology-explained), and whether VoIP works over the telephone network or the internet.
 
 ## What is VoIP?
@@ -529,29 +524,29 @@ Each of these technologies — packet switching, LPC, internet and TCP/IP ha
 Today's VoIP solutions do much more than transmit voice — they support audio and video conferencing, faxing, voicemail functions, and text messaging. A good VoIP platform will also support a wide range of integrations with third-party applications. The best VoIP solutions are powerful and agile enough to power customizations at scale.
 
 SIPSTACK is at the forefront of pushing the boundaries of VoIP. Stay ahead of your communication needs by [partnering with us](https://www.sipstack.com/partner).
-`,
-	},
-	{
-		slug: "voip-timeline",
-		image: "/assets/posts/post-2.svg",
-		category: "VoIP History",
-		tags: [],
-		views: 0,
-		title: "VoIP Timeline - An Infographic look",
-		abstract: "Voice over internet protocol (VoIP) is the capability to transmit voice signals in real time over the internet and telephone network.",
-		created: "18/05/2021", //dd/mm/yyyy
-		updated: "",
-		duration: 1, // minute read
-		author: {
-			name: "Kanasu Nagathihalli",
-			role: "Author",
-			photo: "/assets/img/team/kanasu.png",
-		},
-		content: `
+`
+},
+{
+    slug: "voip-timeline",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "VoIP Timeline - An Infographic look",
+    abstract: "Voice over internet protocol (VoIP) is the capability to transmit voice signals in real time over the internet and telephone network.",
+    created: "18/05/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
 ![VOIP](src_content/resources/blog/voip-timeline/voipp.png)
 Timeline of VoIP History
 
 
-`,
-	},
-];
+`
+},
+]
