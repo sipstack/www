@@ -45,7 +45,7 @@ const props = defineProps<SinglePostProps>();
 				<!-- eslint-disable-next-line vue/no-v-html -->
 				<!-- <div class="content" v-html="props.content.content"></div> -->
 				<div class="content">
-					<Markdown :source="props.content.content" :breaks="true" />
+					<Markdown :source="props.content.content" :breaks="true" html />
 				</div>
 			</div>
 			<div class="sharing-options">

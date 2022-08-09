@@ -1,0 +1,20 @@
+{
+    slug: "the-evolution-of-voip",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "The Evolution of VoIP",
+    abstract: "Trace the evolution of VoIP from the traditional private branch exchange to a unified communication platform hosted on the cloud.",
+    created: "05/05/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
