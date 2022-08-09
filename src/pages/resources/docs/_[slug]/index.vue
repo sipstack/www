@@ -2,7 +2,7 @@
 import { ref, onMounted, onServerPrefetch, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
-import { getArticle } from "/@src/utils/api/article";
+import { getArticle } from "/@src/utils/api/ssDoc";
 import { HelpCenterArticle } from "/@src/types";
 
 const route = useRoute();

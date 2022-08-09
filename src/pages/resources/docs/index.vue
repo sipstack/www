@@ -16,7 +16,7 @@ const topics = [
 		iconColor: "primary",
 		title: "Whois",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		link: "/",
+		link: "whois",
 	},
 	{
 		icon: "ph:atom-duotone",

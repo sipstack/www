@@ -177,6 +177,11 @@ const props = defineProps<SinglePostProps>();
 				font-size: 1.15rem;
 				color: var(--blog-post-text-color) !important;
 			}
+			// blockquote {
+			// 	background-color: rgb(134, 27, 27);
+			// 	border-left: 5px solid hsl(0deg, 0%, 86%);
+			// 	padding: 1.25em 1.5em;
+			// }
 		}
 	}
 
@@ -212,6 +217,12 @@ const props = defineProps<SinglePostProps>();
 			}
 		}
 	}
+}
+
+.ss-table-default {
+	font-family: var(--font);
+	font-size: 1.15rem;
+	color: var(--blog-post-text-color) !important;
 }
 
 @media only screen and (max-width: 767px) {
