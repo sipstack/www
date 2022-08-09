@@ -130,7 +130,7 @@ function res_blog_posts(cb) {
 
 function res_blog_images(cb) {
 	// var slug;
-	src(["src_content/resources/blog/**/*.png"])
+	src(["src_content/resources/blog/**/*.png", "src_content/resources/blog/**/*.jpeg", "src_content/resources/blog/**/*.jpg"])
 		// .pipe(
 		// 	tap(function (file, t) {
 		// 		slug = file.path.split("/").slice(-2, -1)[0];
