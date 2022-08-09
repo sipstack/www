@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { content } from "/@src/data/resources/docs/whois";
+import { blockGroups, content } from "/@src/data/resources/docs/smart-cnam/api";
 
 import { ref } from "vue";
 import VueScrollTo from "vue-scrollto";
