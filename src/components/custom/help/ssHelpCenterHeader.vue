@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "@vue/reactivity";
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 // import { blocks } from "/@src/data/resources/docs"; // for search bar
 export interface HelpCenterTopic {
 	icon: string;
@@ -68,6 +69,10 @@ const filteredData = computed(() => {
 		});
 	}
 });
+
+const route = useRoute();
+var basePath = "";
+if (route.fullPath.substring(route.fullPath.length - 1) != "/") basePath = route.fullPath + "/";
 </script>
 
 <template>
@@ -123,7 +128,7 @@ const filteredData = computed(() => {
 		<div v-if="!props.compact" class="help-center-navigation">
 			<div class="columns is-multiline b-columns-half-tablet-p">
 				<div v-for="(topic, index) in props.topics.slice(0, 4)" :key="index" class="column is-3">
-					<RouterLink :to="topic.link" class="box">
+					<RouterLink :to="basePath + topic.link" class="box">
 						<i class="iconify" :data-icon="topic.icon" :class="topic.iconColor && `text-${topic.iconColor}`"></i>
 						<Title tag="h3" :size="6" weight="semi" narrow>
 							<span>{{ topic.title }}</span>
