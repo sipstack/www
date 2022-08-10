@@ -1,4 +1,4 @@
-![phone3](src_content/resources/blog/dedicated-phone-number/phone3.jpeg)
+![phone3](./phone3.jpeg)
 Photo by [Adomas Aleno](https://unsplash.com/@aleno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 In the post-pandemic era, how robust your communication is will perhaps be the biggest determiner of how well your business will fare. Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.

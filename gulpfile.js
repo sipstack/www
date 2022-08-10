@@ -89,11 +89,11 @@ function res_kb_categories(cb) {
 function res_blog_posts(cb) {
 	var slug;
 	src(["src_content/resources/blog/**/index.json"])
-		// .pipe(
-		// 	sort({
-		// 		asc: false,
-		// 	})
-		// )
+		.pipe(
+			sort({
+				asc: false,
+			})
+		)
 		.pipe(
 			// tap(function (file, t) {
 			tap(function (file) {
