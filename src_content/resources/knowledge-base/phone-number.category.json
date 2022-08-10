@@ -1,0 +1,14 @@
+{
+    slug: "phone-numbers",
+    icon: "eos-icons:api",
+    iconColor: "purple",
+    name: "Phone Numbers",
+    text: "General information on phone numbers and use.",
+    contributors: [
+        {
+            name: "Kanasu Nagathihalli",
+            picture: "/assets/img/team/kanasu.png",
+        },
+    ],
+    articles: [@@include("phone-number.articles.json")]
+},

@@ -1,5 +1,5 @@
 import sleep from "/@src/utils/sleep";
-import { helpCenterCategories } from "/@src/data/pages/help";
+import { helpCenterCategories } from "/@src/data/help/example";
 
 const helpCenterArticlesMapped = helpCenterCategories.map(
 	(categories) =>
@@ -13,7 +13,7 @@ const array = helpCenterArticles.map((item) => item.article);
 
 export async function getArticle(slug: string) {
 	const article = array.find((item) => item.slug === slug);
-
+	console.log(article);
 	// simulate api call
 	await sleep(200);
 

@@ -1,26 +1,33 @@
-// import type { IconFeature, CompleteFeature, ImageFeature } from '/@src/types'
 import type { IconFeature } from "/@src/types";
 
-export const ssProducts = [
+export const ssProducts: IconFeature[] = [
 	{
 		icon: "iconoir:settings-cloud",
 		title: "Cloud UC",
 		text: "Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.",
+		link: "/",
+		color: "primary",
 	},
 	{
 		icon: "iconoir:shield-search",
 		title: "Smart CNAM",
 		text: "AI/ML & Community driven CNAM / Caller ID Name lookup, absolutely FREE!",
+		link: "/resources/docs/smart-cnam/introduction",
+		color: "primary",
 	},
 	{
 		icon: "iconoir:glass-empty",
 		title: "SIP Free",
 		text: "TF SIP trunk temination. Available for any SIP based system, 100% FREE!",
+		link: "/",
+		color: "primary",
 	},
 	{
 		icon: "iconoir:pc-check",
 		title: "Whois",
 		text: "Public CNAM / Caller ID Name lookup, because everyone deserves to know.",
+		link: "/",
+		color: "primary",
 	},
 	// {
 	// 	icon: "iconoir:shield-check",
@@ -47,9 +54,9 @@ export const ssProducts = [
 export const featuresBeyond: IconFeature[] = [
 	{
 		title: "Origin",
+		icon: "feather:grid",
 		text: "Every phone number cites origin data including regional, switch and carrier details.",
 		color: "primary",
-		icon: "feather:mail",
 		link: "/",
 	},
 	{
