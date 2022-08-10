@@ -1,0 +1,15 @@
+{
+    slug: "opt-out-keyword-handling-for-toll-free-sms",
+    title: "Opt-out keyword handling for toll-free SMS",
+    subtitle: "Toll-free SMS is a great way to send messages to recipients in Canada and US.",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

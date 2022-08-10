@@ -1,0 +1,15 @@
+{
+    slug: "sending-and-receiving-mms-messages",
+    title: "Sending and receiving MMS messages",
+    subtitle: "",
+    abstract: "",
+    created: "28/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

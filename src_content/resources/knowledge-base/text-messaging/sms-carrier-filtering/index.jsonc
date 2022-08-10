@@ -1,0 +1,15 @@
+{
+    slug: "sms-carrier-filtering",
+    title: "SMS Carrier Filtering in Canada and US",
+    subtitle: "This guide discusses how SMS filtering by different wireless carriers in Canada and US can affect delivery of your programmable SIPSTACK SMS messages. The guide will also provide you with best practices you can use to improve your delivery rates.",
+    abstract: "",
+    created: "21/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
