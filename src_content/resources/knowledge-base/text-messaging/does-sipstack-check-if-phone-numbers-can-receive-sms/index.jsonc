@@ -1,0 +1,15 @@
+{
+    slug: "does-sipstack-check-if-phone-numbers-can-receive-sms",
+    title: "Does SIPSTACK check if phone numbers can receive SMS?",
+    subtitle: "",
+    abstract: "",
+    created: "21/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
