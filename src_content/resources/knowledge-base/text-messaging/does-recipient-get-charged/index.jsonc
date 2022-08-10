@@ -1,0 +1,15 @@
+{
+    slug: "does-recipient-get-charged",
+    title: "Does the recipient of my SIPSTACK message get charged?",
+    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
+    abstract: "",
+    created: "13/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

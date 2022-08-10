@@ -1,5 +1,5 @@
 import sleep from "/@src/utils/sleep";
-import { helpCenterCategories } from "/@src/data/pages/help";
+import { helpCenterCategories } from "/@src/data/help/example";
 
 export async function getCategory(slug: string) {
 	const category = helpCenterCategories.find((category) => category.slug === slug);

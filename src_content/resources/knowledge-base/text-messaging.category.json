@@ -1,0 +1,14 @@
+{
+    slug: "text-messaging",
+    icon: "fa6-solid:comment-sms",
+    iconColor: "success",
+    name: "Text Messaging",
+    text: "General information on SMS / MMS text messaging.",
+    contributors: [
+        {
+            name: "Kanasu Nagathihalli",
+            picture: "/assets/img/team/kanasu.png",
+        },
+    ],
+    articles: [@@include("text-messaging.articles.json")]
+},

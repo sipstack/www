@@ -1,172 +1,157 @@
-require("dotenv").config();
-const { src, dest, parallel, series, watch } = require("gulp");
+// require("dotenv").config();
+
+const { src, dest, series } = require("gulp");
 // Gulp Sass
-const sass = require("gulp-sass");
 const fileinclude = require("gulp-file-include");
-const sourcemaps = require("gulp-sourcemaps");
-sass.compiler = require("node-sass");
-
-const urlPrefixer = require("gulp-url-prefixer");
-const rename = require("gulp-rename");
+const replace = require("gulp-replace");
+// const rename = require("gulp-rename");
 const concat = require("gulp-concat");
-const environments = require("gulp-environments");
-var production = environments.production;
+const gap = require("gulp-append-prepend");
+// const urlPrefixer = require("gulp-url-prefixer");
+const tap = require("gulp-tap");
+const sort = require("gulp-sort");
 
-const awspublish = require("gulp-awspublish");
-const GulpSSH = require("gulp-ssh");
-var gulpSSH = new GulpSSH({
-	ignoreErrors: false,
-	sshConfig: { host: "corp.sipstack.com", port: 209, username: process.env.SSH_USERNAME, password: process.env.SSH_PASSWORD },
-});
-
-function html(cb) {
-	src(["src/html/**/*.html", "src/html/**/*.txt", "!src/html/.parts/**"])
+function res_kb_articles(cb) {
+	src(["src_content/resources/knowledge-base/api/*.json", "src_content/resources/knowledge-base/api/*.jsonc"])
 		.pipe(
 			fileinclude({
 				prefix: "@@",
 				basepath: "@file",
 			})
 		)
-		// 	.pipe(assetpaths({
-		//   newDomain: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets',
-		//   oldDomain : '',
-		//   docRoot : '',
-		//   filetypes : ['jpg','jpeg','png','ico','gif','css'],
-		//   customAttributes: ['srcset'],
-		//   templates: true
-		//  }))
+		.pipe(concat("api.articles.json"))
+		.pipe(dest("src_content/resources/knowledge-base/"));
+
+	src(["src_content/resources/knowledge-base/text-messaging/*.json", "src_content/resources/knowledge-base/text-messaging/*.jsonc"])
 		.pipe(
-			production(
-				urlPrefixer.html({
-					tags: ["img", "svg", "script", "link"],
-					attrs: ["src", "srcset", "data", "href"],
-					prefix: "https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/",
-				})
-			)
-		)
-		.pipe(dest("dist"));
-
-	cb();
-}
-
-function scss(cb) {
-	src(["src/scss/*.scss"])
-		// .pipe(sourcemaps.init())
-		.pipe(sass().on("error", sass.logError))
-		// .pipe(sourcemaps.write('./'))
-		// .pipe(assetpaths({
-		// 	newDomain: 'https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/assets',
-		// 	oldDomain : '../',
-		// 	docRoot : '',
-		// 	filetypes : ['jpg','jpeg','png','ico','gif'],
-		// 	customAttributes: [],
-		// 	templates: true
-		// }))
-		.pipe(
-			production(
-				urlPrefixer.css({
-					tags: ["background"],
-					attrs: ["url"],
-					prefix: "https://s3.ca-central-1.amazonaws.com/cdn.sipstack.com/www/",
-				})
-			)
-		)
-		.pipe(dest("dist/assets/css"));
-
-	cb();
-}
-
-function js_scripts(cb) {
-	src(["src/js/*.js", "!src/js/bundle.js", "!src/js/custom/*.js"]).pipe(dest("dist/assets/js"));
-	src(["src/js/custom/*.js"]).pipe(concat("custom.js")).pipe(dest("dist/assets/js"));
-
-	cb();
-}
-
-function assets(cb) {
-	// copy .example assets
-	src(["src/assets/css/**"]).pipe(dest("dist/assets/css"));
-	src(["src/assets/vendors/**"]).pipe(dest("dist/assets/vendors"));
-	src(["src/assets/img/**"]).pipe(dest("dist/assets/img"));
-	src([".example/vendors/**"]).pipe(dest("dist/assets/vendors"));
-	src(["src/assets/img/favicon.ico"]).pipe(dest("dist"));
-
-	// upload assets to S3 ---------------------------
-	// var options = {
-	// headers: {
-	// 	'Cache-Control': 'max-age=315360000, no-transform, public',
-	// 	'x-amz-acl': 'private'
-	// }
-	// };
-	// gulp.src('./dist/**', {read: false})
-	// 	.pipe(s3(AWS, options));
-
-	cb();
-}
-
-function docs(cb) {
-	src(["src/docs/**"]).pipe(dest("dist/docs"));
-	cb();
-}
-
-function web(cb) {
-	src(["dist/*.html"]).pipe(gulpSSH.dest("/var/www/html/www/"));
-	cb();
-}
-function cdn(cb) {
-	var publisher = awspublish.create(
-		{
-			region: "ca-central-1",
-			params: {
-				Bucket: "cdn.sipstack.com",
-			},
-			credentials: {
-				accessKeyId: process.env.AWS_AKEY,
-				secretAccessKey: process.env.AWS_SKEY,
-				signatureVersion: "v3",
-			},
-		},
-		{
-			cacheFileName: "./tmp/cache",
-		}
-	);
-
-	// define custom headers
-	var headers = {
-		"Cache-Control": "max-age=315360000, no-transform, public",
-	};
-
-	src(["dist/**", "!dist/**/*.html"])
-		.pipe(
-			rename(function (path) {
-				path.dirname = "/www/" + path.dirname;
-				// path.basename += "www";
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
 			})
 		)
-		// // gzip, Set Content-Encoding headers and add .gz extension
-		// // .pipe(awspublish.gzip({ ext: ".gz" }))
+		.pipe(concat("text-messaging.articles.json"))
+		.pipe(dest("src_content/resources/knowledge-base/"));
 
-		// // publisher will add Content-Length, Content-Type and headers specified above
-		// // If not specified it will set x-amz-acl to public-read by default
-		.pipe(publisher.publish(headers))
+	src(["src_content/resources/knowledge-base/fax/*.json", "src_content/resources/knowledge-base/fax/*.jsonc"])
+		.pipe(
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
+			})
+		)
+		.pipe(concat("fax.articles.json"))
+		.pipe(dest("src_content/resources/knowledge-base/"));
 
-		// // create a cache file to speed up consecutive uploads
-		.pipe(publisher.cache())
+	src(["src_content/resources/knowledge-base/regulatory/*.json", "src_content/resources/knowledge-base/regulatory/*.jsonc"])
+		.pipe(
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
+			})
+		)
+		.pipe(concat("regulatory.articles.json"))
+		.pipe(dest("src_content/resources/knowledge-base/"));
 
-		// // print upload updates to console
-		.pipe(awspublish.reporter());
+	src(["src_content/resources/knowledge-base/phone-number/*.json", "src_content/resources/knowledge-base/phone-number/*.jsonc"])
+		.pipe(
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
+			})
+		)
+		.pipe(concat("phone-number.articles.json"))
+		.pipe(dest("src_content/resources/knowledge-base/"));
+
+	cb();
+}
+function res_kb_categories(cb) {
+	src(["src_content/resources/knowledge-base/*.category.json"])
+		.pipe(
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
+			})
+		)
+		.pipe(concat("index.ts"))
+		// replace incompatible characters
+		.pipe(replace("“", '"'))
+		.pipe(replace("”", '"'))
+		.pipe(replace("‘", "'"))
+		.pipe(replace("’", "'"))
+		.pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+		// prepend / append export for ts file
+		.pipe(gap.prependText("export const helpCenterCategories = ["))
+		.pipe(gap.appendText("]"))
+		.pipe(dest("src/data/resources/knowledge-base/"));
+	cb();
+}
+
+function res_blog_posts(cb) {
+	var slug;
+	src(["src_content/resources/blog/**/index.json"])
+		.pipe(
+			sort({
+				asc: false,
+			})
+		)
+		.pipe(
+			// tap(function (file, t) {
+			tap(function (file) {
+				// console.log(file.path);
+				slug = file.path.split("/").slice(-2, -1)[0];
+				// console.log(slug);
+				return slug;
+			})
+		)
+		.pipe(
+			fileinclude({
+				prefix: "@@",
+				basepath: "@file",
+			})
+		)
+		// prefix image urls (must have ./ prefix in markdown)
+		.pipe(
+			replace("./", function () {
+				return `/assets/img/resources/blog/${slug}/`;
+			})
+		)
+		// .pipe(concat("articles.json"))
+		// .pipe(dest("src_content/resources/blog/"));
+		// -----
+		.pipe(concat("index.ts"))
+
+		// replace incompatible characters
+		.pipe(replace("“", '"'))
+		.pipe(replace("”", '"'))
+		.pipe(replace("‘", "'"))
+		.pipe(replace("’", "'"))
+		.pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+		// prepend / append export for ts file
+		.pipe(gap.prependText("export const posts = ["))
+		.pipe(gap.appendText("]"))
+		.pipe(dest("src/data/resources/blog/"));
 
 	cb();
 }
 
-exports.build = series(html, scss, js_scripts, assets, docs);
+function res_blog_images(cb) {
+	// var slug;
+	src(["src_content/resources/blog/**/*.png", "src_content/resources/blog/**/*.jpeg", "src_content/resources/blog/**/*.jpg"])
+		// .pipe(
+		// 	tap(function (file, t) {
+		// 		slug = file.path.split("/").slice(-2, -1)[0];
+		// 		console.log(slug);
+		// 		return slug;
+		// 	})
+		// )
+		.pipe(dest("public/assets/img/resources/blog/"));
 
-exports.publish = series((html, scss, js_scripts, assets, cdn), web);
+	cb();
+}
 
-exports.develop = function () {
-	watch(["src/scss/*.scss", "src/scss/**"], scss);
-	watch(["src/html/**/*.html", "src/html/.parts/*.html"], html);
-	watch(["src/img/**"], assets);
-	watch(["src/js/*.js", "src/js/custom/*.js"], js_scripts);
-	watch(["src/docs/**"], docs);
-};
+exports.build_res_kb = series(res_kb_articles, res_kb_categories);
+exports.build_res_blog = series(res_blog_posts, res_blog_images);
+
+// exports.develop = function () {
+// 	watch(["src/scss/*.scss", "src/scss/**"], scss);
+// };

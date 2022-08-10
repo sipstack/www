@@ -1,0 +1,20 @@
+{
+    slug: "announcing-ucs-transition-into-open-source",
+    image: "/assets/posts/post-23.svg",
+    category: "Press",
+    tags: ["announcement"],
+    views: 0,
+    title: "Announcing UCS transition into Open Source",
+    abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
+    created: "12/06/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 2, // minute read
+    author: {
+        name: "Jonathan Geller",
+        role: "CEO & Founder",
+        photo: "/assets/img/team/jon.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
