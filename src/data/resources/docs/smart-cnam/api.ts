@@ -1,5 +1,5 @@
 export const blockGroups = {
-	titles: [{ name: "API Intro" }, { name: "sub title 1" }, { name: "sub title 3" }],
+	titles: [{ name: "API Intro" }, { name: "sub title 1" }, { name: "sub title 2" }],
 };
 
 export const content = `
