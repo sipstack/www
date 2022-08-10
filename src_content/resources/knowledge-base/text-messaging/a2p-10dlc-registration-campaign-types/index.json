@@ -1,0 +1,15 @@
+{
+    slug: "a2p-10dlc-registration-campaign-types",
+    title: "A2P 10DLC Registration Campaign (Use Case) Types",
+    subtitle: "The tables below show Campaign Types that have become available since the new A2P 10DLC registration was launched for AT&T in the US on April 1, 2021.",
+    abstract: "",
+    created: "25/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
