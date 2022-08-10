@@ -1,0 +1,15 @@
+{
+    slug: "register-my-business",
+    title: "How do I register my business under the new A2P 10DLC regulations?",
+    subtitle: "A2P 10DLC refers to a system that allows businesses to send Application-to-Person (A2P) type messaging via standard 10-digit long code (10DLC) phone numbers.",
+    abstract: "",
+    created: "18/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
