@@ -1,3 +1,0 @@
-Yes, SIPSTACK will automatically resize supported images file types (.png, .gif, and .jpg) to the necessary size for delivery based on carrier specifications. That said, the total combined request size (message and attachments) must be under 5MB in size. An API request with an image larger than 5MB will fail with an error.
-
-If you prefer to resize your own images, we recommend that images be no larger than 600KB.
