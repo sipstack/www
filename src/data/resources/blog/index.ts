@@ -1,66 +1,6 @@
 export const posts = [
 {
-    slug: "analog-technology",
-    image: "/assets/posts/post-2.svg",
-    category: "VoIP History",
-    tags: [],
-    views: 0,
-    title: "What is Analog Technology?",
-    abstract: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
-    created: "31/03/2021", //dd/mm/yyyy
-    updated: "",
-    duration: 1, // minute read
-    author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
-    },
-    content: `
-![tech](src_content/resources/blog/analog-technology/tech.jpeg)
-Photo by [Julius Drost](https://unsplash.com/@juliusdrost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-Analog technology, as the name suggests, refers to technologies that are **analogous** to the process occurring behind the technology. Consider, for example, the process of converting a piece of film into a developed photograph. The film negative is used to print a representation of the scene you photographed. The developed photograph, therefore, is an **analogy** of the image you captured.
-
-Similarly, the process of taking an audio signal (the human voice), and translating it into pulses over the telephone wire, and translating back to an audio signal (the same human voice) is an analogous process.
-
-All analog technologies are limited by their physicality. How many songs you can record on an audio cassette depends on how long the plastic reel of the cassette is. How many transcontinental telephone calls you can make at the same time is limited by the number of copper and fibre optic lines laid beneath the oceans.
-`
-},
-{
-    slug: "announcing-ucs-transition-into-open-source",
-    image: "/assets/posts/post-3.svg",
-    category: "Press",
-    tags: ["announcement"],
-    views: 0,
-    title: "Announcing UCS transition into Open Source",
-    abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
-    created: "12/06/2021", //dd/mm/yyyy
-    updated: "",
-    duration: 2, // minute read
-    author: {
-        name: "Jonathan Geller",
-        role: "CEO & Founder",
-        photo: "/assets/img/team/jon.jpg",
-    },
-    content: `
-Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months. With the rise of the Covid-19 pandemic, the world began working from home, making all efforts to continue their operations at any capacity. For some businesses, these changes were effortless, but for most, the struggle and cost to adapt was staggering. SIPSTACK by design, is built to enable any business to adapt and rise to the new communication challenges with confidence by bringing secure, managed and affordable telecommunication environments to meet these pivotal demands. 
-
-Our technology started off like most have in today's environment – in the virtual clouds only to make its way to IBM / Softlayer, a cloud company that brings high end Metal-as-a-Service (MaaS) coupled with their global secured network, truly enabling our services to scale world-wide within their one-of-a-kind offering that no other company can match.
-
-Recently, an event at the IBM / Softlayer TOR01 datacenter occurred affecting our  Lenovo SR630 ThinkSystem equipment within our environment. IBM / Softlayer reported that the reason for the series of component failures were likely a result of firmware updates and advisories ignored. Advisories from Lenovo pre-dating our systems deployment. While technicians quickly rebuilt new systems, recovery of affected equipment containing data became top priority of ours to secure and recover. As a regulated company by the CRTC, we worked very hard to recover damaged equipment containing sensitive data to ensure public interests were protected, and any proprietary code. Despite several attempts at recovery, IBM / Softlayer refused to cooperate unless SIPSTACK Inc. waived an addendum limiting "IBM's gross negligence" for damages. We were only able to physically secure the damaged equipment weeks later that contained sensitive data after SIPSTACK retained special legal counsel and intervened. The data contents were completely inaccessible and without risk during that time due to the nature of the damages to the equipment.
-
-As a result of this event, and with our pleading attempts to resolve this matter amicably with IBM / Softlayer, we unfortunately remain at a standstill while all our contracted services remain unsupported, leading us to announce today that SIPSTACK Inc. will no longer be able to provide secure managed hosts across the IBM / Softlayer global network and will be releasing our unified communication software as open source for anyone to download and run within their local environments.
-
-![ibm-gross-negligence](/assets/img/resources/blog/announcing-ucs-transition-into-open-source/ibm-gross-negligence-half.png)
-
-While our teams have been working overtime re-configuring our code to remove any IBM / Softlayer architecture & SDK integration to fully prepare the solution for use on any network, with any voice provider, we expect to release the code to github within 90 days of this announcement.
-
-We fully understand the depth and impact this decision has, but re-iterate our team remains fully committed to the platform and the community. Please continue to follow us on our website and social media for upcoming announcements.
-
-You can read more about the event that occurred on our github page here: https://github.com/sipstack/ibm_softlayer-gross-negligence. Official announcement available on this page.
-`
-},
-{
+    id: 2,
     slug: "dedicated-phone number",
     image: "/assets/posts/post-2.svg",
     category: "VoIP for Business",
@@ -135,6 +75,92 @@ Listing one phone number streamlines the sales process. Today, VoIP technology h
 SIPSTACK gives our [partners](https://www.sipstack.com/find-a-partner) the tools to set up a dedicated business lines in minutes, making it is easier than ever for your customers to reach you.
 
 If you're looking for a comprehensive VoIP solution for your business or want to be a SIPSTACK partner [contact us](https://www.sipstack.com/contact/us) and we will be able to help you.
+`
+},
+{
+    slug: "analog-technology",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "What is Analog Technology?",
+    abstract: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
+    created: "31/03/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
+![tech](src_content/resources/blog/analog-technology/tech.jpeg)
+Photo by [Julius Drost](https://unsplash.com/@juliusdrost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Analog technology, as the name suggests, refers to technologies that are **analogous** to the process occurring behind the technology. Consider, for example, the process of converting a piece of film into a developed photograph. The film negative is used to print a representation of the scene you photographed. The developed photograph, therefore, is an **analogy** of the image you captured.
+
+Similarly, the process of taking an audio signal (the human voice), and translating it into pulses over the telephone wire, and translating back to an audio signal (the same human voice) is an analogous process.
+
+All analog technologies are limited by their physicality. How many songs you can record on an audio cassette depends on how long the plastic reel of the cassette is. How many transcontinental telephone calls you can make at the same time is limited by the number of copper and fibre optic lines laid beneath the oceans.
+`
+},
+{
+    slug: "telephone-technology-explained",
+    image: "/assets/posts/post-2.svg",
+    category: "VoIP History",
+    tags: [],
+    views: 0,
+    title: "Telephone Technology Explained",
+    abstract: "When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
+    created: "01/04/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
+![phonebooth](src_content/resources/blog/telephone-technology-explained/phonebooth.jpeg)
+Photo by [Paul Carmona](https://unsplash.com/@sydneylens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange. When you dial the phone number, a second circuit is opened between the telephone exchange and the person you're calling. For as long as you're on the phone, the circuit remains open, and data (in the form of your voice) is sent and received over that open line. This [analog](http://sipstack.com/resources/blog/analog-technology) technology is called **circuit switching**.
+
+Landline telephones are connected to the **Public Switched Telephone Network** (PSTN), a network of physical copper and fibre-optic cables that carry electric signals across vast distances.
+`
+},
+{
+    slug: "announcing-ucs-transition-into-open-source",
+    image: "/assets/posts/post-3.svg",
+    category: "Press",
+    tags: ["announcement"],
+    views: 0,
+    title: "Announcing UCS transition into Open Source",
+    abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
+    created: "12/06/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 2, // minute read
+    author: {
+        name: "Jonathan Geller",
+        role: "CEO & Founder",
+        photo: "/assets/img/team/jon.jpg",
+    },
+    content: `
+Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months. With the rise of the Covid-19 pandemic, the world began working from home, making all efforts to continue their operations at any capacity. For some businesses, these changes were effortless, but for most, the struggle and cost to adapt was staggering. SIPSTACK by design, is built to enable any business to adapt and rise to the new communication challenges with confidence by bringing secure, managed and affordable telecommunication environments to meet these pivotal demands. 
+
+Our technology started off like most have in today's environment – in the virtual clouds only to make its way to IBM / Softlayer, a cloud company that brings high end Metal-as-a-Service (MaaS) coupled with their global secured network, truly enabling our services to scale world-wide within their one-of-a-kind offering that no other company can match.
+
+Recently, an event at the IBM / Softlayer TOR01 datacenter occurred affecting our  Lenovo SR630 ThinkSystem equipment within our environment. IBM / Softlayer reported that the reason for the series of component failures were likely a result of firmware updates and advisories ignored. Advisories from Lenovo pre-dating our systems deployment. While technicians quickly rebuilt new systems, recovery of affected equipment containing data became top priority of ours to secure and recover. As a regulated company by the CRTC, we worked very hard to recover damaged equipment containing sensitive data to ensure public interests were protected, and any proprietary code. Despite several attempts at recovery, IBM / Softlayer refused to cooperate unless SIPSTACK Inc. waived an addendum limiting "IBM's gross negligence" for damages. We were only able to physically secure the damaged equipment weeks later that contained sensitive data after SIPSTACK retained special legal counsel and intervened. The data contents were completely inaccessible and without risk during that time due to the nature of the damages to the equipment.
+
+As a result of this event, and with our pleading attempts to resolve this matter amicably with IBM / Softlayer, we unfortunately remain at a standstill while all our contracted services remain unsupported, leading us to announce today that SIPSTACK Inc. will no longer be able to provide secure managed hosts across the IBM / Softlayer global network and will be releasing our unified communication software as open source for anyone to download and run within their local environments.
+
+![ibm-gross-negligence](/assets/img/resources/blog/announcing-ucs-transition-into-open-source/ibm-gross-negligence-half.png)
+
+While our teams have been working overtime re-configuring our code to remove any IBM / Softlayer architecture & SDK integration to fully prepare the solution for use on any network, with any voice provider, we expect to release the code to github within 90 days of this announcement.
+
+We fully understand the depth and impact this decision has, but re-iterate our team remains fully committed to the platform and the community. Please continue to follow us on our website and social media for upcoming announcements.
+
+You can read more about the event that occurred on our github page here: https://github.com/sipstack/ibm_softlayer-gross-negligence. Official announcement available on this page.
 `
 },
 {
@@ -246,31 +272,6 @@ As we head into a post-pandemic world, the landscape of the communications indus
 - Building platforms where companies can innovate freely and share in each other's innovations.
 
 Become part of our origin story. [Partner](https://www.sipstack.com/signup) with SIPSTACK to stay ahead of the game.
-`
-},
-{
-    slug: "telephone-technology-explained",
-    image: "/assets/posts/post-2.svg",
-    category: "VoIP History",
-    tags: [],
-    views: 0,
-    title: "Telephone Technology Explained",
-    abstract: "When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
-    created: "01/04/2021", //dd/mm/yyyy
-    updated: "",
-    duration: 1, // minute read
-    author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
-    },
-    content: `
-![phonebooth](src_content/resources/blog/telephone-technology-explained/phonebooth.jpeg)
-Photo by [Paul Carmona](https://unsplash.com/@sydneylens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange. When you dial the phone number, a second circuit is opened between the telephone exchange and the person you're calling. For as long as you're on the phone, the circuit remains open, and data (in the form of your voice) is sent and received over that open line. This [analog](http://sipstack.com/resources/blog/analog-technology) technology is called **circuit switching**.
-
-Landline telephones are connected to the **Public Switched Telephone Network** (PSTN), a network of physical copper and fibre-optic cables that carry electric signals across vast distances.
 `
 },
 {

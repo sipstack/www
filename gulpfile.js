@@ -9,6 +9,7 @@ const concat = require("gulp-concat");
 const gap = require("gulp-append-prepend");
 // const urlPrefixer = require("gulp-url-prefixer");
 const tap = require("gulp-tap");
+const sort = require("gulp-sort");
 
 function res_kb_articles(cb) {
 	src(["src_content/resources/knowledge-base/api/*.json", "src_content/resources/knowledge-base/api/*.jsonc"])
@@ -88,6 +89,11 @@ function res_kb_categories(cb) {
 function res_blog_posts(cb) {
 	var slug;
 	src(["src_content/resources/blog/**/index.json"])
+		// .pipe(
+		// 	sort({
+		// 		asc: false,
+		// 	})
+		// )
 		.pipe(
 			// tap(function (file, t) {
 			tap(function (file) {

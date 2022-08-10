@@ -28,14 +28,14 @@ import { posts } from "/@src/data/resources/blog";
 
 						<div class="load-more py-6">
 							<div class="buttons is-centered">
-								<Button color="primary" :long="3" raised bold>Load More</Button>
+								<Button color="primary" :long="1" raised bold>Load More</Button>
 							</div>
 						</div>
 					</div>
 
 					<div class="column is-4">
 						<BlogStickySide>
-							<BlogSearch />
+							<!-- <BlogSearch /> -->
 
 							<ssBlogRecentPosts :posts="posts" />
 
