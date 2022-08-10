@@ -1,4 +1,5 @@
 {
+    id: 2,
     slug: "dedicated-phone number",
     image: "/assets/posts/post-2.svg",
     category: "VoIP for Business",
