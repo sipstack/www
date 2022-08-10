@@ -249,21 +249,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `
 },
 {
-    slug: "delivery-order-of-multiple-media-files-via-mms",
-    title: "Delivery order of multiple media files via MMS",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
-`
-},
-{
     slug: "does-recipient-get-charged",
     title: "Does the recipient of my SIPSTACK message get charged?",
     subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
@@ -280,6 +265,21 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
+`
+},
+{
+    slug: "delivery-order-of-multiple-media-files-via-mms",
+    title: "Delivery order of multiple media files via MMS",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `
 },
 {
@@ -417,6 +417,31 @@ Sending messages to deactivated phone numbers still incurs costs to you, so keep
 `
 },
 {
+    slug: "is-mms-supported-for-all-carriers",
+    title: "Is MMS supported for all carriers in Canada and US?",
+    subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
+    abstract: "",
+    created: "18/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+## MMS from Long Code (10-digit) numbers
+Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
+
+**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
+
+**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
+
+## What happens when I send an MMS to an unsupported carrier?
+When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
+
+The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
+`
+},
+{
     slug: "how-to-use-toll-free-phone-numbers",
     title: "How to use toll-free phone numbers for SMS and MMS in Canada",
     subtitle: "Toll-free numbers are designated for business messaging use by most major mobile carriers in Canada (Rogers, Fido, Telus and Videotron) and by all major carriers in the US.",
@@ -467,31 +492,6 @@ A short code is the ideal solution for high-volume A2P use cases. By default, sh
 Toll-free phone numbers may be a better fit for certain use cases. Unlike short codes, toll-free phone numbers can be used for placing and receiving voice calls in addition to SMS messages. Toll-free SMS may also be a good choice for a business that needs A2P-type communications, but is not ready to apply for a short code.
 
 
-`
-},
-{
-    slug: "is-mms-supported-for-all-carriers",
-    title: "Is MMS supported for all carriers in Canada and US?",
-    subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
-    abstract: "",
-    created: "18/05/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-## MMS from Long Code (10-digit) numbers
-Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
-
-**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
-
-**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
-
-## What happens when I send an MMS to an unsupported carrier?
-When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
-
-The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
 `
 },
 {
@@ -1013,51 +1013,15 @@ No, SIPSTACK currently does not offer short code phone numbers.
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
+## A2P Messaging
+A2P or Application-to-person messaging, as the name suggests, refers to messages a person receives from an application. All messaging traffic from automated messages, appointment reminders, chat bots, virtual assistants, one-time-password (OTP) and PIN codes fall into the category of A2P messages. 
 
-## How does this affect me?
-If you don’t need to send messages to users in the United States, the new A2P 10DLC registration system does not affect you, and you don’t need to do anything. 
+A2P messages are subject to local country regulations. Customers need to be aware that these regulations have implications for their business. In some cases, messages may be filtered by recipient carriers. In other cases, the delivery of messages may be delayed. 
 
-If your business is sending messages in the US, continue reading. 
+## P2P Messaging
+P2P or Person-to-Person messaging is defined as a two-way conversation between two humans. Any messaging traffic between two people using their phones to send messages falls into the category of P2P messages. 
 
-## How do the new A2P 10DLC regulation affect my business?
-Under the new A2P 10DLC system, businesses are required to provide the following information to [The Campaign Registry](https://www.campaignregistry.com/) (TCR), the central hub for registering A2P 10DLC messaging campaigns. 
-
-1. **Brand Registration:** Businesses must identify who they are to the carrier networks.
-2. **Campaign Registration:** Businesses must identify what type of messages, i.e. notifications they are sending. 
-
-## What happens after I register my brand?
-Once you complete your A2P profile, TCR will give your brand a Trust Score of **Low**, **Medium** or **High**. 
-
-## What is a Trust Score, and how is it determined?
-TCR uses a reputation algorithm to assign your business a Trust Score. Your **Trust Score level**, (Low, Medium or High), combined with your **Campaign Type** will determine the message throughput allotted to your Campaign.
-
-## What is a Campaign?
-A Campaign represents a use case. In other words, a Campaign is a description of the type of message you plan to send. Each type of message your business sends will fall into a different campaign. For example, if you plan to send authentication codes and marketing messages, you should register two Campaigns. 
-
-
-## Do I need to buy new phone numbers to use the new A2P 10DLC services?
-You don’t have to buy new numbers if you’re already using long code phone numbers. You can enable existing phone numbers to use the new A2P 10DLC service by following the registration process. 
-
-## Once my Brand and Campaign have been registered with the TRC, how can I make sure my phone numbers use 10DLC?
-After your Brand(s) and Campaign(s) are approved, please ensure that your inbound message configuration (e.g. the webhook for your application) is applied on your Messaging Service. Currently, the inbound configuration settings of a Messaging Service takes precedence over the existing inbound settings on those numbers.
-
-## Do I need to use a different method to send outbound messages?
-If you don’t use Messaging Services in your application to send outbound messages, you don’t need to make any changes within your application. Modifying your application to include the Messaging Service SID in your API requests is not necessary. To associate phone numbers to a Campaign, you only need to add phone numbers to a Messaging Service.
-
-## How does the A2P 10DLC regulation affect MMS messaging?
-
-While long code MMS messaging remains subject to throughput limits, short code is still the best option for high-volume MMS use cases in the United States. 
-
-## Does the regulation affect Toll-Free phone numbers in Canada and the US?
-No, US Toll-Free phone numbers are not affected by these changes. Toll-Free SMS is still a great way to send A2P SMS in Canada as well as the United States. 
-
-## Is messaging to Canada affected by these changes?
-No, Canadian mobile carriers may introduce registered A2P 10DLC solutions in the future, but at this time carriers have not announced any plans to do so.
-
-## Is WhatsApp messaging affected by A2P 10DLC?
-No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages are transmitted over the Internet, rather than through carrier networks like SMS and MMS.
-
-
+According to the telecom regulations of Canada and the United States, P2P messaging has a very narrow definition, and cannot consist of any application-mediated messaging.
 `
 },
 {
