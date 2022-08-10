@@ -3,4 +3,5 @@ module.exports = {
   singleQuote: true,
   htmlWhitespaceSensitivity: 'ignore',
   quoteProps: 'as-needed',
+  bracketSameLine: true
 }
