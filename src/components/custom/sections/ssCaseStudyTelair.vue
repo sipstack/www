@@ -12,7 +12,7 @@
 					image-height="800"
 					cta="Read success stories"
 					inverted
-					to="/resources/case-studies/telair"
+					to="/r/link?href=https://www.sipstack.com/resources/knowledge-base/simplifying-customization-with-sipstack/"
 				/>
 			</CaseStudy>
 		</Container>
