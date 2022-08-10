@@ -9,8 +9,8 @@ Unlike the telephone, VoIP was not [invented](http://sipstack.com/resources/blog
 I will thread a needle through the stories behind these technologies to help explain how the technology behind VoIP works.
 
 ## Circuit Switching and Packet Switching
-![PS](src_content/resources/blog/voip-technology-explained/packet-switching.jpeg)
-Photo by [Spencer](https://unsplash.com/@spen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/circuit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+![PS](./packet-switching.jpeg)
+<sup>Photo by [Spencer](https://unsplash.com/@spen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/circuit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</sup>
 
 Remember, how, in the movie Up, the grandpa flies his entire air-balloon house to Paradise Falls? He used **circuit switching** (a form of [analog technology]((http://sipstack.com/resources/blog/analog-technology))) to move his house. Instead, if he had shipped parts of the house to Paradise Falls in chunks, along different routes, he would’ve used **packet switching** technology.
 
@@ -22,8 +22,8 @@ Packet switching is a much more efficient way of sending and receiving data beca
 In 1966, two Japanese researchers invented a way to convert speech into a digital signal so that it could be stored and played back on computers. This ability to synthesize and transmit speech is called the Linear Predictive Coding (LPC) method and is used in VoIP to this day.
 
 ## The Internet and the World Wide Web
-![PS2](src_content/resources/blog/voip-technology-explained/internet.jpeg)
-Photo by [Kvistholt](https://unsplash.com/@freeche?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) Photography on [Unsplash](https://unsplash.com/s/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+![PS2](./internet.jpeg)
+<sup>Photo by [Kvistholt](https://unsplash.com/@freeche?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) Photography on [Unsplash](https://unsplash.com/s/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</sup>
 
 In 1969, the US Department of Defence funded the creation of ARPANET (Advanced Research Projects Agency Network), a decentralized phone network that would not be disrupted by a global war. The ARPANET connected computers via modems at numerous locations across the United States, and used TCP/IP to switch packets of data between different locations over a telephone line. Eventually, more computers were added to this network, and the network was made publicly available.
 
@@ -39,7 +39,7 @@ The **Transmission Control Protocol** sorts out how packets of data move back an
 The **Internet Protocol (IP)** is the Internet’s addressing system. Each machine on the internet is identified by a unique IP address which takes the form of a series of digits separated by dots or colons.
 
 ## The Evolution of VoIP
-![Evolution](src_content/resources/blog/voip-technology-explained/evolution.jpeg)
+![Evolution](./evolution.jpeg)
 Photo by [NordWood Themes](https://unsplash.com/@nordwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) Photography on [Unsplash](https://unsplash.com/s/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Each of these technologies — packet switching, LPC, internet and TCP/IP has shaped VoIP as we know it today. While LPC provided a way to record and transmit speech digitally, packet switching allowed data to be transmitted without an open line. TCP/IP provided a protocol for packets of data to travel across the internet to specific destinations.

@@ -106,6 +106,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != "/") basePath = route
 		// overflow: hidden;
 		// text-overflow: ellipsis;
 		// max-width: 128ch;
+		min-height: 2.25em; // 1.125x2
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 2; /* Number of lines displayed before it truncate */
