@@ -1,0 +1,15 @@
+{
+    slug: "common-fax-issues",
+    title: "Common Fax Issues",
+    subtitle: " ",
+    abstract: "",
+    created: "7/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
