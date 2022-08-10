@@ -12,4 +12,4 @@ While our teams have been working overtime re-configuring our code to remove any
 
 We fully understand the depth and impact this decision has, but re-iterate our team remains fully committed to the platform and the community. Please continue to follow us on our website and social media for upcoming announcements.
 
-You can read more about the event that occurred on our github page here: https://github.com/sipstack/ibm_softlayer-gross-negligence. Official announcement available on this page.
+You can read more about the event that occurred on our github page here: [https://github.com/sipstack/ibm_softlayer-gross-negligence](https://github.com/sipstack/ibm_softlayer-gross-negligence). Official announcement available on this page.

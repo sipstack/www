@@ -1,6 +1,6 @@
 Over the last two decades, VoIP has transitioned from hardware reliant technology to a unified communication platform that can be hosted on the cloud. Now that we understand [the history of VoIP](http://sipstack.com/resources/blog/the-history-of-voip) and [how VoIP works](http://sipstack.com/resources/blog/voip-technology-explaned), we can dive into how this shift from hardware-dependence to software-first philosophy changed the landscape of VoIP.
 
-![Voip](src_content/resources/blog/the-evolution-of-voip/voip.png)
+![Voip](./voip.png)
 
 ## PBX
 Have you ever called a business, and selected numbers from menu options, or dialed an office extension? Then, you’ve used a PBX.

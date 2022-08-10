@@ -23,8 +23,9 @@
     "commit": "commit",
     "release": "run-s test build release:*",
     "release:standard-version": "standard-version",
-    "gulp:res_kb": ":> src/data/resources/knowledge-base/index.ts && gulp build_res_kb",
-    "gulp:res_blog": "gulp build_res_blog"
+    "gulp": "run-s gulp:*",
+    "gulp:res_blog": ":> src/data/resources/blog/index.ts && gulp build_res_blog",
+    "gulp:res_kb": ":> src/data/resources/knowledge-base/index.ts && gulp build_res_kb"
   },
   "dependencies": {
     "@iconify/iconify": "2.2.1",

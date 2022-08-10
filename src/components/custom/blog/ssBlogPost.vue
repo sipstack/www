@@ -57,11 +57,11 @@ const props = defineProps<SinglePostProps>();
 					<i class="iconify" data-icon="fa-brands:twitter"></i>
 					<span class="is-sr-only">Twitter</span>
 				</a>
-				<a>
+				<a href="https://www.linkedin.com/shareArticle?mini=true&url={articleUrl}&title={articleTitle}&summary={articleSummary}&source={articleSource}">
 					<i class="iconify" data-icon="fa-brands:linkedin-in"></i>
 					<span class="is-sr-only">Linkedin</span>
 				</a>
-				<a>
+				<a :href="'mailto:?subject=' + props.content.title + '&amp;body=https://www.sipstack.com/resources/blog/' + props.content.slug">
 					<i class="iconify" data-icon="fa-solid:envelope"></i>
 					<span class="is-sr-only">Email</span>
 				</a>

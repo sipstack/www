@@ -1,7 +1,7 @@
 {
     id: 2,
     slug: "dedicated-phone number",
-    image: "/assets/posts/post-2.svg",
+    image: "/assets/posts/post-1.svg",
     category: "VoIP for Business",
     tags: [],
     views: 0,
