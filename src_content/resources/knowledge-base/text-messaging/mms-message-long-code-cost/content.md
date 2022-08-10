@@ -1,0 +1,1 @@
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).

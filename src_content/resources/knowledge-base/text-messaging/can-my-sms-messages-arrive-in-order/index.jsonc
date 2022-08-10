@@ -1,0 +1,15 @@
+{
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
