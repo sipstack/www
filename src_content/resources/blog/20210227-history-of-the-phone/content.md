@@ -1,4 +1,4 @@
-![lampphone](src_content/resources/blog/history-of-the-phone/lampphone.jpeg)
+![lampphone](./lampphone.jpeg)
 Photo by [Johnny Briggs](https://unsplash.com/@johnnyboylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Everyone probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.

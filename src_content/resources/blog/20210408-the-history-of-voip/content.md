@@ -5,7 +5,7 @@ The telephone was invented two centuries later, in 1876. To understand how the i
 The history of VoIP (Voice over Internet Protocol) begins a whole century after the telephone was invented. While the telephone was invented to overcome the limitations of the telegraph, [VoIP was invented](http://sipstack.com/resources/blog/history-of-the-phone) to overcome the limitations of the landline phone.
 
 ## Limitations of Landline Phones
-![phone](src_content/resources/blog/the-history-of-voip/phone.jpeg)
+![phone](./phone.jpeg)
 Photo by [Debby Hudson](https://unsplash.com/@hudsoncrafted?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Telephone systems are extremely reliable. Until the late 1900s, they were the most widely used form of communication. However, they had three big limitations:
@@ -20,7 +20,7 @@ The first VoIP solutions used the internet to establish connections and transmit
 Soon after dialup internet became widely available, in 1995, VocalTec Communications came out with the first commercial VoIP solution, and called it the Internet Phone. VocalTec capitalized on the biggest limitation of the telephone — they saved customers big on international and long-distance calling rates.
 
 ## Interfacing with PSTN
-![wires](src_content/resources/blog/the-history-of-voip/wires.jpeg)
+![wires](./wires.jpeg)
 Photo by [Lars Kienle](https://unsplash.com/@larskienle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 While it was exciting to be able to make voice calls over the internet, it wasn’t convenient enough for the widespread adoption of VoIP yet. People still used the telephone and its underlying PSTN (Public Switched Telephone Network) as the primary form of communication.
@@ -30,7 +30,7 @@ Initially, a piece of hardware facilitated this analog-digital conversion and ac
 
 For Telephone Service Providers (TSP) who were slowly transitioning their legacy PSTN to VoIP, this was an expensive but inevitable option. TSPs were completely reliant on the vendor’s hardware to deliver their service. TSPs could also not afford to build their own features, manufacture their own equipment and install it throughout their network. Essentially, the investment needed put feature creation out of reach for everyone in the telecommunications community except the biggest players.
 ## Interfacing with PSTN
-![phone2](src_content/resources/blog/the-history-of-voip/phone2.jpeg)
+![phone2](./phone2.jpeg)
 Photo by [Julian Hochgesang](https://unsplash.com/@julianhochgesang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Initially, a piece of hardware facilitated this analog-digital conversion and acted as a gateway between the PSTN and the internet. In the late 1990s, hardware manufacturers began producing equipment that supported analog-digital conversion. Although this made VoIP technology less reliant on computers, it was still tethered VoIP to physical devices.
@@ -52,7 +52,7 @@ SIP is an open protocol that’s free and available for anyone to use. Because S
 SIP has made VoIP easy to use. It has also made VoIP accessible to the broader telecommunications community, including TSPs, MSPs and ISPs.
 
 ## The Future of VoIP
-![tablets](src_content/resources/blog/the-history-of-voip/tablets.jpeg)
+![tablets](./tablets.jpeg)
 Photo by [HalGatewood.com](https://unsplash.com/@halacious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 Although VoIP has been around for over two decades, the technology is just maturing. The scope of VoIP has exceeded well beyond its original definition. VoIP has become a malleable and resourceful tool that can be employed differently for different use cases.

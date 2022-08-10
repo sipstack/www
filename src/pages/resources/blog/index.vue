@@ -7,12 +7,12 @@ import { posts } from "/@src/data/resources/blog";
 		<Section color="grey" overflown>
 			<Container>
 				<div class="mx-auto max-w-9">
-					<PageTitle title="Our Latest News" subtitle="Company Blog">
+					<PageTitle title="Our Latest Posts" subtitle="Company Blog">
 						<template #content>
 							<div class="mx-auto max-w-6 mt-2">
-								<p class="paragraph rem-115">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vides, quid faciat. Mihi vero, inquit, placet agi subtilius et, ut ipse.
-								</p>
+								<!-- <p class="paragraph rem-115">
+									Get tips and advice on delivering exceptional customer service, engaging and delighting your customers, and building a customer-centric company.
+								</p> -->
 							</div>
 
 							<div class="mx-auto max-w-4 mt-4">
@@ -23,24 +23,23 @@ import { posts } from "/@src/data/resources/blog";
 				</div>
 
 				<div class="columns">
-					<div class="column is-8">
-						<ssBlogGrid :posts="posts" side-grid upside-down />
+					<div class="column is-12">
+						<ssBlogGrid :posts="posts" upside-down />
 
-						<div class="load-more py-6">
+						<!-- <div class="load-more py-6">
 							<div class="buttons is-centered">
 								<Button color="primary" :long="1" raised bold>Load More</Button>
 							</div>
-						</div>
+						</div> -->
 					</div>
-
+					<!-- 
 					<div class="column is-4">
 						<BlogStickySide>
-							<!-- <BlogSearch /> -->
+							<BlogSearch />
 
 							<ssBlogRecentPosts :posts="posts" />
 
-							<!-- TODO: figure out categories -->
-							<!-- <ssBlogCategories
+							<ssBlogCategories
 								:categories="[
 									{
 										name: 'Business',
@@ -54,10 +53,10 @@ import { posts } from "/@src/data/resources/blog";
 									},
 
 								]"
-							/> -->
+							/>
 
-							<!-- TODO: figure out tags -->
-							<!-- <BlogTags
+						
+							<BlogTags
 								:tags="[
 									{
 										name: 'Design',
@@ -68,9 +67,9 @@ import { posts } from "/@src/data/resources/blog";
 										slug: 'management',
 									},
 								]"
-							/> -->
+							/>
 						</BlogStickySide>
-					</div>
+					</div> -->
 				</div>
 			</Container>
 		</Section>
