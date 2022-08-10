@@ -5,6 +5,8 @@ import { ref } from "vue";
 import VueScrollTo from "vue-scrollto";
 // import { blockGroups, content } from "/@src/data-example/pages/help";
 import Markdown from "vue3-markdown-it";
+// import SsHelpCenterHeader1 from "/@src/components/custom/help/ssHelpCenterHeader.vue";
+import SsapiIntroCenterHeader1 from "../../../components/advanced/help/help-center-header/SsapiIntroCenterHeader.vue";
 
 const scrollTo = VueScrollTo.scrollTo;
 const activeMenuItem = ref(0);
@@ -12,25 +14,30 @@ const activeMenuItem = ref(0);
 
 <template>
 	<div>
-		<SsapiIntroCenterHeader title="API Introduction" subtitle="Subtitle" text="You must read & agree with all the details before you using any of our products or services." />
+		<SsapiIntroCenterHeader1 title="API Introduction" subtitle="Subtitle" text="You must read & agree with all the details before you using any of our products or services." />
 
 		<Section overflown>
 			<Container>
 				<div class="vulk-docs">
 					<div class="left">
 						<div class="left-menu">
-							<ul>
-								<li v-for="(group, index) in blockGroups.titles" :key="index" @click="activeMenuItem = index" @keydown.space.prevent="activeMenuItem = index">
+							<ul overflown>
+								<li
+									v-for="group in blockGroups.titles"
+									:key="group.name.replace(/ /g, '-').toLowerCase()"
+									@click="activeMenuItem = group.name.replace(/ /g, '-').toLowerCase()"
+									@keydown.space.prevent="activeMenuItem = group.name.replace(/ /g, '-').toLowerCase()"
+								>
 									<a
-										:class="activeMenuItem === index ? 'is-active' : ''"
+										:class="activeMenuItem === group.name.replace(/ /g, '-').toLowerCase() ? 'is-active' : ''"
 										@click.prevent="
-											scrollTo(`#components-group-${index}`, 800, {
+											scrollTo(`#${group.name.replace(/ /g, '-').toLowerCase()}`, 800, {
 												offset: -100,
 											})
 										"
 										@keydown.space.prevent="
 											() =>
-												scrollTo(`#components-group-${index}`, 800, {
+												scrollTo(`#${group.name.replace(/ /g, '-').toLowerCase()}`, 800, {
 													offset: -100,
 												})
 										"
