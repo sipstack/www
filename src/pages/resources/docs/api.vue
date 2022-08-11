@@ -7,7 +7,7 @@
     <Section color="grey" overflown>
       <Container>
         <ssHelpCenterHeaderDoc
-          title="Whois"
+          title="API"
           subtitle="Documentation"
           class="mt-10" />
       </Container>

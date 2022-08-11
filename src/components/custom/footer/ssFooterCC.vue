@@ -96,7 +96,8 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 											<RouterLink to="/resources/docs" class="level-item footer-link"> Documentation </RouterLink>
 										</li>
 										<li>
-											<RouterLink to="/resources/case-studies/" class="level-item footer-link"> Case studies </RouterLink>
+											<!-- <RouterLink to="/resources/case-studies/" class="level-item footer-link"> Case studies </RouterLink> -->
+											<a class="level-item footer-link">Case studies</a>
 										</li>
 										<li>
 											<a href="https://github.com/sipstack/sipstack/discussions" class="level-item footer-link" target="_blank"> Forums </a>
@@ -183,10 +184,10 @@ const footerClasses = computed(() => [props.color && `footer-${props.color}`, pr
 				<div class="column is-8 has-text-right has-text-centered-mobile">
 					<span class="footer-text rem-90">
 						<span id="footer-link-legal">
-							<a href="/legal/tos" class="footer-link pr-10">Terms of Service</a>
+							<a href="/legal/tos" class="footer-link pr-10"> Terms of Service </a>
 							<!-- <a href="/legal/aup" class="footer-link pr-10">Acceptable Use Policy</a> -->
-							<a href="/legal/privacy" class="footer-link pr-10">Privacy Policy</a>
-							<a href="/legal/cookie" class="footer-link pr-10">Cookie Policy</a>
+							<a href="/legal/privacy" class="footer-link pr-10"> Privacy Policy </a>
+							<a href="/legal/cookie" class="footer-link pr-10"> Cookie Policy </a>
 						</span>
 					</span>
 				</div>

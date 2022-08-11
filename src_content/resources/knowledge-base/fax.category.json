@@ -1,6 +1,6 @@
 {
     slug: "fax",
-    icon: "eos-icons:api",
+    icon: "fa:fax",
     iconColor: "orange",
     name: "Fax",
     text: "General information on fax and use.",
