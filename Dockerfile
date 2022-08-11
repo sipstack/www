@@ -6,7 +6,6 @@ ARG SITEMAP_HOST
 COPY package.json ./
 COPY yarn.lock ./
 RUN npm i -D --legacy-peer-deps
-RUN npm run gulp
 #RUN CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile
 RUN CYPRESS_INSTALL_BINARY=0 yarn
 
