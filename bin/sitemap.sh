@@ -7,7 +7,7 @@ URL="https://www.sipstack.com/resources"
 FREQ="daily"
 
 # begin new sitemap
-exec 1> sitemap.xml
+# exec 1> sitemap.xml
 
 # print head
 # echo '<?xml version="1.0" encoding="UTF-8"?>'
@@ -30,13 +30,13 @@ while read -r line; do
     # echo " <lastmod>$DATE</lastmod>"
     # echo " <changefreq>$FREQ</changefreq>"
     # echo "</url>"
-     echo "<url><loc>${URL}${FILE}</loc><lastmod>$DATE</lastmod><changefreq>$FREQ</changefreq></url>"
+     echo "<url><loc>${URL}${FILE}</loc><lastmod>$DATE</lastmod><changefreq>$FREQ</changefreq></url>" >> sitemap.xml
   fi
   ((n++))
 done
 
 # print foot
-echo "</urlset>"
+echo "</urlset>" >> sitemap.xml
 
 # merge into vite generated sitemap
 sed -i 's|</urlset>||g' public/sitemap.xml
@@ -44,3 +44,13 @@ sed -i ':a;N;$!ba;s/\n/ /g' sitemap.xml # remove linebreaks
 sed -i 's/ //g' sitemap.xml
 cat sitemap.xml >> public/sitemap.xml
 rm sitemap.xml
+# output to log for review 
+cat public/sitemap.xml
+
+if [[ -d dist ]]; then
+  cp public/sitemap.xml dist/server/
+  cp public/sitemap.xml dist/client/
+  echo "Sitemap updated in production build!"
+fi
+
+exit 0
