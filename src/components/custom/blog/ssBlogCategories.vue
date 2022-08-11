@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $URL } from "ufo";
+// import { $URL } from "ufo";
 
 export interface BlogCategory {
 	name: string;
@@ -14,7 +14,7 @@ export interface BlogCategoriesProps {
 const props = defineProps<BlogCategoriesProps>();
 
 const testClick = () => {
-	document.getElementById("ttt").remove();
+	document.getElementById("").remove();
 };
 </script>
 
