@@ -11,18 +11,27 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.formatOnSave": true
   },
-  "prettier.enable": false,
+
+  "prettier.enable": true,
+  "prettier.requireConfig": true,
   "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib",
   "i18n-ally.localesPaths": ["src/locales"],
-  "stylelint.validate": [
-    "scss",
-    "vue"
-  ],
+  "stylelint.validate": ["scss", "vue"],
   "volar.showWelcomePage": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "johnsoncodehk.volar"
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "johnsoncodehk.volar"
+  // },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "json.validate.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    
   }
+  
 }

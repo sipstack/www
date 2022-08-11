@@ -1,0 +1,15 @@
+{
+    slug: "rate-limits",
+    title: "API Rate Limits",
+    subtitle: "This article gives you all the information you need to know about SIPSTACK API Rate Limits.",
+    abstract: "",
+    created: "16/04/2021", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

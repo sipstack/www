@@ -1,0 +1,20 @@
+{
+    slug: "history-of-the-phone",
+    image: "/assets/posts/post-17.svg",
+    category: "VoIP Innovation",
+    tags: [],
+    views: 0,
+    title: "3 Takeaways from the Invention of the Telephone",
+    abstract: "The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. Read the story behind these incredible nineteenth century innovations that dramatically changed our civilization.",
+    created: "27/02/2021", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

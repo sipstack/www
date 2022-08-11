@@ -1,0 +1,15 @@
+{
+    slug: "emojis-on-sipstack-sms",
+    title: "Can SIPSTACK SMS send and receive emoji?",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

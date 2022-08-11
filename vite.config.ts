@@ -35,24 +35,31 @@ const plugins = [
 		include: path.resolve(__dirname, "./src/locales/**"),
 	}),
 
-	/**
-	 * vite-plugin-pages plugin generate routes based on file system
-	 *
-	 * @see https://github.com/hannoeru/vite-plugin-pages
-	 */
-	Pages({
-		pagesDir: [
-			{
-				dir: "src/pages",
-				baseRoute: "",
-			},
-		],
-		onRoutesGenerated: (routes) =>
-			generateSitemap({
-				routes,
-				hostname: SITEMAP_HOST,
-			}),
-	}),
+  /**
+   * vite-plugin-pages plugin generate routes based on file system
+   *
+   * @see https://github.com/hannoeru/vite-plugin-pages
+   */
+  Pages({
+    exclude: ['**/src/pages/r/**'],
+    extensions: ['vue', 'ts', 'js'],
+    pagesDir: [
+      {
+        dir: 'src/pages',
+        baseRoute: '',
+      },
+      // {
+      //   dir: 'src_content/resources/knowledge-base/**/',
+      //   baseRoute: '/resources',
+
+      // },
+    ],
+    onRoutesGenerated: (routes) =>
+      generateSitemap({
+        routes,
+        hostname: SITEMAP_HOST,
+      }),
+  }),
 
 	/**
 	 * unplugin-vue-components plugin is responsible of autoloading components
@@ -108,53 +115,63 @@ const plugins = [
 	 */
 	PurgeIcons(),
 
-	/**
-	 * vite-plugin-radar plugin inject snippets from analytics providers
-	 *
-	 * @see https://github.com/stafyniaksacha/vite-plugin-radar
-	 */
-	ViteRadar({
-		enableDev: true,
-		gtm: {
-			id: "GTM-P4BKNDB",
-		},
-	}),
+  /**
+   * vite-plugin-radar plugin inject snippets from analytics providers
+   *
+   * @see https://github.com/stafyniaksacha/vite-plugin-radar
+   */
+  ViteRadar({
+    enableDev: true,
+    gtm: {
+      id: 'GTM-N4WF9M7',
+    },
+    analytics: [
+      {
+        id: 'UA-58952630-4',
+      },
+    ],
+  }),
 
-	/**
-	 * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
-	 *
-	 * @see https://github.com/antfu/vite-plugin-pwa
-	 */
-	VitePWA({
-		base: "/",
-		includeAssets: ["favicon.svg", "favicon.ico", "robots.txt", "apple-touch-icon.png"],
-		manifest: {
-			name: "Vulk - Vue 3 Landing Pages",
-			short_name: "Vulk",
-			start_url: "/?utm_source=pwa",
-			display: "standalone",
-			theme_color: "#ffffff",
-			background_color: "#ffffff",
-			icons: [
-				{
-					src: "pwa-192x192.png",
-					sizes: "192x192",
-					type: "image/png",
-				},
-				{
-					src: "pwa-512x512.png",
-					sizes: "512x512",
-					type: "image/png",
-				},
-				{
-					src: "pwa-512x512.png",
-					sizes: "512x512",
-					type: "image/png",
-					purpose: "any maskable",
-				},
-			],
-		},
-	}),
+  /**
+   * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
+   *
+   * @see https://github.com/antfu/vite-plugin-pwa
+   */
+  VitePWA({
+    base: '/',
+    includeAssets: [
+      'favicon.svg',
+      'favicon.ico',
+      'robots.txt',
+      'apple-touch-icon.png',
+    ],
+    manifest: {
+      name: 'SIPSTACK | AI/ML Powered Telecom Tools',
+      short_name: 'SIPSTACK',
+      start_url: '/?utm_source=pwa',
+      display: 'standalone',
+      theme_color: '#ffffff',
+      background_color: '#ffffff',
+      icons: [
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
+  }),
 
 	/**
 	 * vite-imagetools plugin allow to perform transformation (blur, resize, crop, etc)

@@ -1,0 +1,14 @@
+{
+    slug: "regulatory",
+    icon: "carbon:rule-cancelled",
+    iconColor: "blue",
+    name: "Regulatory",
+    text: "General information on Regulatory boards.",
+    contributors: [
+        {
+            name: "Kanasu Nagathihalli",
+            picture: "/assets/img/team/kanasu.png",
+        },
+    ],
+    articles: [@@include("regulatory.articles.json")]
+},
