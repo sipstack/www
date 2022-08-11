@@ -60,16 +60,40 @@ const props = defineProps<SinglePostProps>()
         </div>
       </div>
       <div class="sharing-options">
-        <a>
+        <a
+          :href="
+            'https://www.facebook.com/share.php?u=' +
+            'https://www.sipstack.com/resources/blog/' +
+            props.content.slug
+          "
+          target="_blank">
           <i class="iconify" data-icon="fa-brands:facebook-f"></i>
           <span class="is-sr-only">Facebook</span>
         </a>
-        <a>
+        <a
+          :href="
+            'http://twitter.com/share?text=' +
+            props.content.title +
+            '&url=' +
+            'https://www.sipstack.com/resources/blog/' +
+            props.content.slug +
+            '&hashtags=sipstack,whois,stopthespam,stoprobocallers'
+          "
+          target="_blank">
           <i class="iconify" data-icon="fa-brands:twitter"></i>
           <span class="is-sr-only">Twitter</span>
         </a>
         <a
-          href="https://www.linkedin.com/shareArticle?mini=true&url={articleUrl}&title={articleTitle}&summary={articleSummary}&source={articleSource}">
+          :href="
+            'https://www.linkedin.com/shareArticle?mini=true&url=' +
+            'https://www.sipstack.com/resources/blog/' +
+            props.content.slug +
+            '&title=' +
+            props.content.title +
+            '&summary=' +
+            props.content.abstract
+          "
+          target="_blank">
           <i class="iconify" data-icon="fa-brands:linkedin-in"></i>
           <span class="is-sr-only">Linkedin</span>
         </a>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import { blockGroups, content } from '/@src/data/resources/docs/smart-cnam/api'
+import { blockGroups, content } from '/@src/data/resources/docs/smart-cnam/api'
 </script>
 
 <template>
@@ -7,7 +7,7 @@
     <Section color="grey" overflown>
       <Container>
         <ssHelpCenterHeaderDoc
-          title="Whois"
+          title="Smart CNAM"
           subtitle="Documentation"
           class="mt-10" />
       </Container>

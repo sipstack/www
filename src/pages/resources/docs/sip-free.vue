@@ -7,7 +7,7 @@
     <Section color="grey" overflown>
       <Container>
         <ssHelpCenterHeaderDoc
-          title="Whois"
+          title="SIP Free"
           subtitle="Documentation"
           class="mt-10" />
       </Container>

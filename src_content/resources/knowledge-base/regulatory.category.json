@@ -1,7 +1,7 @@
 {
     slug: "regulatory",
-    icon: "eos-icons:api",
-    iconColor: "orange",
+    icon: "carbon:rule-cancelled",
+    iconColor: "blue",
     name: "Regulatory",
     text: "General information on Regulatory boards.",
     contributors: [
