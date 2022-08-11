@@ -249,6 +249,21 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `
 },
 {
+    slug: "delivery-order-of-multiple-media-files-via-mms",
+    title: "Delivery order of multiple media files via MMS",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`
+},
+{
     slug: "does-recipient-get-charged",
     title: "Does the recipient of my SIPSTACK message get charged?",
     subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
@@ -265,21 +280,6 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`
-},
-{
-    slug: "delivery-order-of-multiple-media-files-via-mms",
-    title: "Delivery order of multiple media files via MMS",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `
 },
 {
@@ -417,31 +417,6 @@ Sending messages to deactivated phone numbers still incurs costs to you, so keep
 `
 },
 {
-    slug: "is-mms-supported-for-all-carriers",
-    title: "Is MMS supported for all carriers in Canada and US?",
-    subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
-    abstract: "",
-    created: "18/05/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-## MMS from Long Code (10-digit) numbers
-Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
-
-**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
-
-**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
-
-## What happens when I send an MMS to an unsupported carrier?
-When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
-
-The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
-`
-},
-{
     slug: "how-to-use-toll-free-phone-numbers",
     title: "How to use toll-free phone numbers for SMS and MMS in Canada",
     subtitle: "Toll-free numbers are designated for business messaging use by most major mobile carriers in Canada (Rogers, Fido, Telus and Videotron) and by all major carriers in the US.",
@@ -492,6 +467,31 @@ A short code is the ideal solution for high-volume A2P use cases. By default, sh
 Toll-free phone numbers may be a better fit for certain use cases. Unlike short codes, toll-free phone numbers can be used for placing and receiving voice calls in addition to SMS messages. Toll-free SMS may also be a good choice for a business that needs A2P-type communications, but is not ready to apply for a short code.
 
 
+`
+},
+{
+    slug: "is-mms-supported-for-all-carriers",
+    title: "Is MMS supported for all carriers in Canada and US?",
+    subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
+    abstract: "",
+    created: "18/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+## MMS from Long Code (10-digit) numbers
+Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
+
+**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
+
+**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
+
+## What happens when I send an MMS to an unsupported carrier?
+When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
+
+The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
 `
 },
 {

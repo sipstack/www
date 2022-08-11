@@ -4,8 +4,9 @@ const { src, dest, series } = require('gulp')
 // Gulp Sass
 const fileinclude = require('gulp-file-include')
 const replace = require('gulp-replace')
-// const rename = require("gulp-rename");
+// const rename = require('gulp-rename')
 const concat = require('gulp-concat')
+// const concats = require('gulp-concat-multi')
 const gap = require('gulp-append-prepend')
 // const urlPrefixer = require("gulp-url-prefixer");
 const tap = require('gulp-tap')
@@ -79,6 +80,7 @@ function res_kb_articles(cb) {
 
   cb()
 }
+
 function res_kb_categories(cb) {
   src(['src_content/resources/knowledge-base/*.category.json'])
     .pipe(
@@ -93,7 +95,7 @@ function res_kb_categories(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-		.pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const helpCenterCategories = ['))
     .pipe(gap.appendText(']'))
@@ -140,7 +142,7 @@ function res_blog_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-		.pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
     .pipe(gap.appendText(']'))

@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
-import { useRoute } from 'vue-router'
-// import { blocks } from "/@src/data/resources/docs"; // for search bar
+import { blocks } from '/@src/data/resources/docs'
 export interface HelpCenterTopic {
   icon: string
   iconColor: string
@@ -17,60 +16,14 @@ export interface HelpCenterHeaderProps {
   text?: string
   topics?: HelpCenterTopic[]
   compact?: boolean
-  search?: Array[]
-  searchCategory?: string
 }
-
-const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
-  topics: () => [],
-  compact: false,
-  text: undefined,
-  search: () => [],
-  searchCategory: '',
-})
-
-// console.log(props.search);
-
 const filter = ref('')
 
 const filteredData = computed(() => {
-  var search = props.search
-  // check if props.search is a flat array of objects (manaul assignment) or if help / article style to parse
-  if (search.length > 0 && !search[0].link) {
-    var _flat = []
-
-    search.forEach((category) => {
-      category.articles.forEach((article) => {
-        if (props.searchCategory) {
-          // search from article page filtering just catagory
-          if (category.slug == props.searchCategory) {
-            filterArticles(category, article)
-          }
-        } else {
-          filterArticles(category, article)
-        }
-      })
-    })
-    function filterArticles(category, article) {
-      var basePath = ''
-      if (!props.searchCategory) basePath = category.slug + '/'
-      // category.articles.forEach((article) => {
-      _flat.push({
-        icon: category.icon,
-        iconColor: category.iconColor,
-        name: article.title,
-        type: category.name,
-        link: basePath + article.slug,
-      })
-      // });
-    }
-    // console.log(_flat); // debug
-    search = _flat
-  }
   if (filter.value === '') {
     return []
   } else {
-    return search.filter((item) => {
+    return blocks.filter((item) => {
       return (
         item.icon.match(new RegExp(filter.value, 'i')) ||
         item.name.match(new RegExp(filter.value, 'i')) ||
@@ -80,22 +33,22 @@ const filteredData = computed(() => {
   }
 })
 
-const route = useRoute()
-var basePath = ''
-if (route.fullPath.substring(route.fullPath.length - 1) != '/')
-  basePath = route.fullPath + '/'
+const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
+  topics: () => [],
+  compact: false,
+  text: undefined,
+})
 </script>
 
 <template>
   <div>
-    <PageTitle
+    <ssPageTitle
       :title="props.title"
       :subtitle="props.subtitle"
-      :text="props.text">
-      <template #content>
-        <div
-          v-if="props.search.length > 0"
-          class="library-search mx-auto max-w-4 pt-4">
+      :text="props.text"
+      small>
+      <!-- <template #content>
+        <div class="library-search mx-auto max-w-4 pt-4">
           <Field>
             <Control icon="feather:search">
               <VInput
@@ -116,12 +69,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
                     <RouterLink :to="result.link">
                       <div class="filter-result-item">
                         <div class="result-icon">
-                          <i
-                            class="iconify"
-                            :data-icon="result.icon"
-                            :class="
-                              result.iconColor && `text-${result.iconColor}`
-                            "></i>
+                          <i class="iconify" :data-icon="result.icon"></i>
                         </div>
                         <div class="meta">
                           <h3>{{ result.name }}</h3>
@@ -151,30 +99,11 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
             </div>
           </Field>
         </div>
-      </template>
-    </PageTitle>
-
-    <div v-if="!props.compact" class="help-center-navigation">
-      <div class="columns is-multiline b-columns-half-tablet-p">
-        <div
-          v-for="(topic, index) in props.topics.slice(0, 4)"
-          :key="index"
-          class="column is-3">
-          <RouterLink :to="basePath + topic.link" class="box">
-            <i
-              class="iconify"
-              :data-icon="topic.icon"
-              :class="topic.iconColor && `text-${topic.iconColor}`"></i>
-            <Title tag="h3" :size="6" weight="semi" narrow>
-              <span>{{ topic.title }}</span>
-            </Title>
-            <p class="paragraph rem-85">{{ topic.text }}</p>
-          </RouterLink>
-        </div>
-      </div>
-    </div>
+      </template> -->
+    </ssPageTitle>
   </div>
 </template>
+
 
 <style scoped lang="scss">
 .library-search {
@@ -286,10 +215,6 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
           font-weight: 600;
           font-size: 0.9rem;
           color: var(--title-color);
-          text-align: left;
-        }
-        p {
-          text-align: left;
         }
       }
 

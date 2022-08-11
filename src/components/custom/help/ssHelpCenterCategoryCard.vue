@@ -31,8 +31,7 @@ const props = defineProps<HelpCenterCategoryCardProps>()
             :data-icon="props.category.icon"
             :class="
               props.category.iconColor && `text-${props.category.iconColor}`
-            "
-          ></i>
+            "></i>
         </div>
         <div class="inner-content">
           <Title tag="h3" :size="4" weight="thin" leading>
@@ -52,8 +51,7 @@ const props = defineProps<HelpCenterCategoryCardProps>()
               :key="c"
               class="small-avatar"
               :src="contributor.picture"
-              alt="Contributor picture"
-            />
+              alt="Contributor picture" />
             <div class="meta-info">
               <div class="articles-number">
                 {{ props.category.articles.length }} articles in this section
