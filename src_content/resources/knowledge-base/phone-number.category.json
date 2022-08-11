@@ -1,6 +1,6 @@
 {
     slug: "phone-numbers",
-    icon: "eos-icons:api",
+    icon: "carbon:phone-voice-filled",
     iconColor: "purple",
     name: "Phone Numbers",
     text: "General information on phone numbers and use.",

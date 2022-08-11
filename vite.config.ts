@@ -42,16 +42,17 @@ const plugins = [
    */
   Pages({
     exclude: ['**/src/pages/r/**'],
-    extensions: ['vue', 'ts', 'js', 'jsonc'],
+    extensions: ['vue', 'ts', 'js'],
     pagesDir: [
       {
         dir: 'src/pages',
         baseRoute: '',
       },
-      {
-        dir: 'src_content/resources',
-        baseRoute: '/resources',
-      },
+      // {
+      //   dir: 'src_content/resources/knowledge-base/**/',
+      //   baseRoute: '/resources',
+
+      // },
     ],
     onRoutesGenerated: (routes) =>
       generateSitemap({
