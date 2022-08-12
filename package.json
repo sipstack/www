@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "jiti server.ts",
     "build": "run-s build:*",
+    "build:gulp": "run-s gulp:*",
     "build:update-bulma-colors": "bulma-css-vars",
     "build:vite": "run-s build:vite:*",
     "build:vite:client": "vite build --ssrManifest --outDir dist/client",
     "build:vite:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
     "build:sitemap-sh": "bin/sitemap.sh",
-    "build:gulp": "run-s gulp:*",
     "serve": "cross-env NODE_ENV=production jiti server.ts",
     "clean": "rimraf dist",
     "test": "run-p test:*",
