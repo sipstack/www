@@ -11,6 +11,7 @@
     "build:vite:client": "vite build --ssrManifest --outDir dist/client",
     "build:vite:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
     "build:sitemap-sh": "bin/sitemap.sh",
+    "build:gulp": "run-s gulp:*",
     "serve": "cross-env NODE_ENV=production jiti server.ts",
     "clean": "rimraf dist",
     "test": "run-p test:*",
