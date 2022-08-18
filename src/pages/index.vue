@@ -5,54 +5,68 @@ meta:
 </route>
 
 <script setup lang="ts">
-import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack";
+import {
+  ssProducts,
+  featuresBeyond,
+  featuresPreview,
+} from '/@src/data/sipstack'
 </script>
 
 
 <template>
-	<div>
-		<HeroHome />
-		<Section wave="wave-2">
-			<Container>
-				<CollectionTitle
-					title="Beyond Marc"
-					subtitle="Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before."
-				></CollectionTitle>
-				<ssFeatureBlockJ :features="featuresBeyond" />
+  <div>
+    <HeroHome />
+    <Section wave="wave-2">
+      <Container>
+        <CollectionTitle
+          title="Beyond Unified Communications"
+          subtitle="Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before."></CollectionTitle>
+        <ssFeatureBlockJ :features="featuresBeyond" />
 
-				<!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
+        <!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
 				<BoxedFeatures :features="ssProducts" /> -->
 
-				<!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" /> -->
-				<ssGlobeStats />
-				<!-- <BoxedFeatures :features="ssProducts" /> -->
+        <!-- <SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" /> -->
+        <ssGlobeStats />
+        <!-- <BoxedFeatures :features="ssProducts" /> -->
 
-				<!-- <ContentBlockB
+        <!-- <ContentBlockB
           :title="productStacks.title"
           :subtitle="productStacks.subtitle"
           :text="productStacks.text"
           :images="productStacks.images"
         /> -->
-			</Container>
-		</Section>
+      </Container>
+    </Section>
 
-		<Section color="grey">
-			<Container>
-				<SectionTitle title="Beyond Unified Communications" subtitle="Amazing Features" />
+    <Section color="grey">
+      <Container>
+        <SectionTitle
+          title="Beyond Unified Communications"
+          subtitle="Amazing Features" />
 
-				<ssBoxedFeatures :features="ssProducts" />
-			</Container>
-		</Section>
+        <ssBoxedFeatures :features="ssProducts" />
+      </Container>
+    </Section>
 
-		<Section>
-			<Container>
-				<SectionTitle title="Your next UCaaS platform, powered by AI & you" subtitle="Cloud UC" />
-				<FeatureBlockC :features="featuresPreview" :limit="3" size="medium" animated />
-				<img class="text-center" src="/assets/img/cloud-uc-preview.png" alt="TELAIR Success" />
-			</Container>
-		</Section>
+    <Section>
+      <Container>
+        <SectionTitle
+          title="Your next UCaaS platform, powered by AI & you"
+          subtitle="Cloud UC" />
+        <FeatureBlockC
+          :features="featuresPreview"
+          :limit="3"
+          size="medium"
+          animated />
+        <img
+          class="text-center"
+          src="/assets/img/cloud-uc-preview.png"
+          alt="TELAIR Success" />
+      </Container>
+    </Section>
 
-		<!-- <Section>
+    <!-- <Section>
 			<Container>
 				<BoxedSection
 					minititle="Join Early Access!"
@@ -67,7 +81,7 @@ import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack
 			</Container>
 		</Section> -->
 
-		<!-- <Section>
+    <!-- <Section>
 			<Container>
 				<SectionTitle title="Sneak Peek of Cloud UC" subtitle="Preview" />
 				<Buttons alignment="centered" class="py-5">
@@ -95,12 +109,15 @@ import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack
 			</Container>
 		</Section> -->
 
-		<SsCaseStudyTelair></SsCaseStudyTelair>
+    <SsCaseStudyTelair></SsCaseStudyTelair>
 
-		<Section color="grey">
-			<Container>
-				<ssCtaDefault small-text="Get Started" title="Start Connecting" subtitle="Seen enough? It's free to start now.">
-					<!-- <Field grouped>
+    <Section color="grey">
+      <Container>
+        <ssCtaDefault
+          small-text="Get Started"
+          title="Start Connecting"
+          subtitle="Seen enough? It's free to start now.">
+          <!-- <Field grouped>
 						<Control expanded icon="feather:mail">
 							<VInput placeholder="Email Address" />
 						</Control>
@@ -108,9 +125,9 @@ import { ssProducts, featuresBeyond, featuresPreview } from "/@src/data/sipstack
 							<Button size="form" color="primary" :long="2" bold raised> Create account </Button>
 						</Control>
 					</Field> -->
-				</ssCtaDefault>
-			</Container>
-		</Section>
-		<ssFooter></ssFooter>
-	</div>
+        </ssCtaDefault>
+      </Container>
+    </Section>
+    <ssFooter></ssFooter>
+  </div>
 </template>
