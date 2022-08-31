@@ -1,14 +1,14 @@
 export const abuseTypes = [
   {
     title: 'Spam',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.',
+    text: 'Spam is Unsolicited Bulk Email distributed to recipients who have not provided direct consent.',
     // color: 'primary',
     // icon: 'feather:mail',
     link: 'abuse/spam',
   },
   {
     title: 'Phishing',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.',
+    text: 'Spam is Unsolicited Bulk Email distributed to recipients who have not provided direct consent.',
     color: 'green',
     // icon: 'feather:briefcase',
     link: 'abuse/phishing',
@@ -22,14 +22,14 @@ export const abuseTypes = [
   },
   {
     title: 'Intrusion/Exploit attempts',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.',
+    text: 'Intrusion/exploit attempts (Bruteforce, Scans etc) attacks are when malicious applications makes several attempts to access, crack, or locate vulnerabilities on machines they have no right accessing. This is a technique commonly employed by malicious actors in order to find an attack vector to utilize against a server/website.',
     // color: 'purple',
     // icon: 'feather:credit-card',
     link: 'abuse/intrusion-exploit',
   },
   {
     title: 'Other',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus. Hoc est non dividere, sed frangere.',
+    text: 'Please utilize this form to provide HostX with evidence of any abuse outside of our categories listed.',
     color: 'green',
     // icon: 'feather:briefcase',
     link: 'abuse/other',
