@@ -7,10 +7,10 @@ export interface JobDetailsProps {
 }
 const props = defineProps<JobDetailsProps>()
 </script>
-
-<template>
+  
+  <template>
   <div class="job-wrapper">
-    <RouterLink to="/landing/landing-28" class="back-link">
+    <RouterLink to="/jobs" class="back-link">
       <i class="iconify" aria-hidden="true" data-icon="feather:arrow-left"></i>
       <span>Back to jobs</span>
     </RouterLink>
@@ -98,14 +98,14 @@ const props = defineProps<JobDetailsProps>()
     </div>
   </div>
 </template>
-
-<style>
+  
+  <style>
 body {
   overflow: initial;
 }
 </style>
-
-<style lang="scss" scoped>
+  
+  <style lang="scss" scoped>
 .job-wrapper {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -333,3 +333,4 @@ body {
   }
 }
 </style>
+  

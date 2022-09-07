@@ -1,96 +1,92 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
 import Markdown from 'vue3-markdown-it'
-import type { Job } from '/@src/types'
+// import type { Job } from '/@src/types'
+
+export interface JobDetailsSubProps {
+  slug?: string
+  position?: string
+  salary?: string
+  type?: string
+  department?: string
+  location?: string
+  email?: string
+  recruiter?: string
+  description?: string
+  extra?: []
+}
 
 export interface JobDetailsProps {
-  job: Job
+  job: JobDetailsSubProps
 }
-const props = defineProps<JobDetailsProps>()
-</script>
 
-<template>
+const props = defineProps<JobDetailsProps>()
+
+const route = useRoute()
+var basePath = ''
+if (route.fullPath.substring(route.fullPath.length - 1) != '/')
+  basePath = route.fullPath
+</script>
+  
+  <template>
   <div class="job-wrapper">
-    <RouterLink to="/landing/landing-28" class="back-link">
+    <RouterLink to="/jobs" class="back-link">
       <i class="iconify" aria-hidden="true" data-icon="feather:arrow-left"></i>
       <span>Back to jobs</span>
     </RouterLink>
 
     <div class="job-header">
       <div class="left">
-        <div class="job-icon">
-          <img :src="props.job.icon" alt="" />
-        </div>
+        <!-- <div class="job-icon">
+            <img :src="props.job.job.icon" alt="" />
+          </div> -->
         <div class="meta">
-          <h3 class="job-title">{{ props.job.title }}</h3>
-          <h4
-            v-if="props.job.location || props.job.duration"
-            class="job-subtitle">
+          <h3 class="job-title">{{ props.job.position }}</h3>
+          <h4 v-if="props.job.location || props.job.type" class="job-subtitle">
             <i
               class="iconify"
               aria-hidden="true"
               data-icon="feather:map-pin"></i>
             {{ props.job.location }} -
             <i class="iconify" aria-hidden="true" data-icon="feather:clock"></i>
-            {{ props.job.duration }}
+            {{ props.job.type }}
           </h4>
         </div>
       </div>
-      <div v-if="props.job.contact" class="right">
-        <Button color="primary" :long="3" outlined raised>Apply</Button>
-      </div>
+      <!-- <div v-if="props.job.email" class="right">
+          <RouterLink :to="basePath + '/apply'">
+            <Button color="primary" :long="3" outlined raised>Apply</Button>
+          </RouterLink>
+        </div> -->
     </div>
     <div class="job-body">
       <div class="columns">
         <div class="column is-7">
-          <template
-            v-for="(content, descKey) in props.job.content.description"
-            :key="descKey">
-            <h3>{{ content.title }}</h3>
-            <Markdown :source="content.text" />
-          </template>
-
-          <div v-if="props.job.content.aptitude" class="requirements-list">
-            <template
-              v-for="(content, aptKey) in props.job.content.aptitude"
-              :key="aptKey">
-              <h3>{{ content.title }}</h3>
-
-              <li v-for="(skill, skillKey) in content.skills" :key="skillKey">
-                <div class="block-icon">
-                  <i
-                    class="iconify"
-                    aria-hidden="true"
-                    data-icon="fa-solid:check"></i>
-                </div>
-                <span>{{ skill }}</span>
-              </li>
-              <hr class="is-invisible" />
-            </template>
-          </div>
+          <!-- <template
+              v-for="(content, descKey) in props.job.description" :key="descKey"> -->
+          <h3>{{ props.job.position }}</h3>
+          <Markdown
+            :source="props.job.description"
+            :breaks="true"
+            html
+            xhtml-out />
+          <!-- </template> -->
         </div>
         <div class="column is-4 is-offset-1">
-          <div v-if="props.job.content.technologies" class="recommended-skills">
-            <template
-              v-for="(content, techKey) in props.job.content.technologies"
-              :key="techKey">
-              <h3>{{ content.title }}</h3>
+          <div v-if="props.job.extra">
+            <h3>Additional</h3>
+            <Markdown :source="props.job.extra" :breaks="true" html />
 
-              <div
-                v-for="(skill, toolKey) in content.tools"
-                :key="toolKey"
-                :class="'skill-block'">
-                <img :src="skill.icon" alt="Skill icon" />
-                <p>{{ skill.title }}</p>
-              </div>
-              <hr class="is-invisible" />
-            </template>
+            <hr class="is-invisible" />
           </div>
 
-          <div v-if="props.job.salary || props.job.contact" class="apply-card">
+          <div v-if="props.job.salary || props.job.email" class="apply-card">
             <h3>Salary</h3>
             <p v-if="props.job.salary">{{ props.job.salary }}</p>
-            <div v-if="props.job.contact" class="action">
-              <Button color="primary" raised fullwidth>Apply</Button>
+            <div v-if="props.job.email" class="action">
+              <RouterLink :to="basePath + '/apply'">
+                <Button color="primary" raised fullwidth>Apply</Button>
+              </RouterLink>
             </div>
           </div>
         </div>
@@ -98,14 +94,14 @@ const props = defineProps<JobDetailsProps>()
     </div>
   </div>
 </template>
-
-<style>
+  
+  <style>
 body {
   overflow: initial;
 }
 </style>
-
-<style lang="scss" scoped>
+  
+  <style lang="scss" scoped>
 .job-wrapper {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -115,6 +111,8 @@ body {
     display: flex;
     align-items: center;
     color: var(--primary);
+    margin-left: 50rem;
+    // margin-top: 1rem;
 
     .iconify {
       margin-right: 0.5rem;
@@ -333,3 +331,4 @@ body {
   }
 }
 </style>
+  
