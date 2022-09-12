@@ -1,0 +1,20 @@
+{
+    slug: "whois-reaching-masses",
+    image: "/assets/posts/post-7.svg",
+    category: "Press",
+    tags: ["whois"],
+    views: 0,
+    title: "Whois already reaching the masses",
+    abstract: "",
+    created: "13/09/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Anajana ",
+        role: "Author",
+        photo: "/assets/img/team/anaja.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
