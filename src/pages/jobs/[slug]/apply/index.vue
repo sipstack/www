@@ -1,79 +1,58 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import VueCookies from 'vue-cookies'
-import { onServerPrefetch, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import type { Job } from '/@src/types'
+// import { ref } from 'vue'
 
-import { getJob } from '/@src/utils/api/job'
-// import { jobs } from '/@src/data/resources/jobs'
-
-// import { socialLinks } from '/@src/data/blocks/advanced/social'
-// import type { Job } from '/@src/types'
-
-export interface JobDetailsProps {
-  job: Job
-}
-
-const route = useRoute()
-const router = useRouter()
-const slug = route.params.slug as string
-
-const options = ref([''])
-
-const email = ref()
-const submit = ref(false)
-const options1 = ref(['Option 1'])
-const props = defineProps<JobDetailsProps>()
-
-const isSubmit = () => {
+const submit = () => {
   submit.value = true
   const form = document.getElementById('form')
   // const formData = new FormData(form);
+
   var form_data = {}
   Array.from(form.elements).map((el) => {
     if (!el.name) el.name = el.id // if no element name use id
     if (el.name == 'submit') el.value = Date.now()
 
     form_data[el.name] = el.value
-  })(
-    //   const rawResponse = await fetch( // ;(async () => { // post to api
-    // `https://api.sipstack.com/v1/f/www/cap/jobs/${slug}`,
-    //     {
-    //       method: 'GET',
-    //       headers: {
-    //         Accept: 'application/json',
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify(form_data),
-    //     }
-    //   )
-    //   rawResponse.json()
-    // })()
+  })
 
-    // console.log(window.btoa(JSON.stringify(form_data)));
-
-    // console.log(formData);
-
-    (document.getElementById('ss_submit').innerHTML =
-      'Your request has been received. <Br><Br>We will provide additional correspondance via your email provided in the form. Thank you..')
-  )
-}
-const job = ref<Job>()
-async function fetchJob() {
-  try {
-    job.value = await getJob(slug)
-  } catch {
-    router.replace({
-      name: 'all',
-      params: { all: `not-found-${route.params.slug}` },
-    })
+  if (!form_data.email) {
+    submitMessage('Please enter your email address and submit again.')
+  } else if (form_data.agree && form_data.agree != true) {
+    submitMessage('You must agree before submitting your application.')
+  } else {
+    form_data.slug = window.location.pathname
+    // console.log(form_data)
+    apiRequest(form_data)
   }
+  // post to api
 }
 
-onMounted(fetchJob)
-onServerPrefetch(fetchJob)
-watch(() => route.fullPath, fetchJob)
+function apiRequest(form_data) {
+  ;(async () => {
+    const rawResponse = await fetch(
+      // `https://api.sipstack.com/v1/f/www/cap/jobs`,
+      `http://192.168.1.13:3001/v1/f/www/cap/jobs`,
+      {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form_data),
+      }
+    )
+    // rawResponse.json()
+    rawResponse
+    // const content = await rawResponse
+    // console.log(content) // debug
+  })()
+
+  document.getElementById('form').innerHTML =
+    'Thank you!<br><br>Your application has been received.<br><Br>Please allow up to 48 hours for a team member to respond.'
+}
+
+function submitMessage(text) {
+  document.getElementById('submit_message').innerHTML = text
+}
 </script>
 
 <template>
@@ -102,9 +81,11 @@ watch(() => route.fullPath, fetchJob)
 
               <div class="column is-6">
                 <Field>
-                  <FieldLabel label="First Name">Full Name</FieldLabel>
+                  <FieldLabel label="First Name" name="fullname">
+                    Full Name
+                  </FieldLabel>
                   <Control icon="feather:user">
-                    <VInput placeholder="" />
+                    <VInput name="fullname" placeholder="Your full name..." />
                   </Control>
                 </Field>
               </div>
@@ -118,66 +99,70 @@ watch(() => route.fullPath, fetchJob)
             </div> -->
               <div class="column is-6">
                 <Field>
-                  <FieldLabel label="First Name">Email Address</FieldLabel>
+                  <FieldLabel label="Email" name="email">
+                    Email Address
+                  </FieldLabel>
                   <Control icon="feather:mail">
-                    <VInput placeholder="" />
+                    <VInput name="email" placeholder="Your email address..." />
                   </Control>
                 </Field>
               </div>
               <div class="column is-6">
                 <Field>
-                  <FieldLabel label="First Name">Phone Number</FieldLabel>
+                  <FieldLabel label="Phone Number" name="phone">
+                    Phone Number
+                  </FieldLabel>
                   <Control icon="feather:phone">
-                    <VInput placeholder="" />
+                    <VInput placeholder="Your phone number..." />
                   </Control>
                 </Field>
               </div>
               <div class="column is-6">
                 <Field>
-                  <FieldLabel label="First Name">Portfolio</FieldLabel>
-                  <Control icon="dashicons:portfolio">
-                    <VInput placeholder="" />
-                  </Control>
-                </Field>
-              </div>
-              <div class="column is-12">
-                <Field>
-                  <FieldLabel label="First Name">Short Introduction</FieldLabel>
-                  <Control>
-                    <VTextarea :rows="4" placeholder="" />
-                  </Control>
-                </Field>
-              </div>
-              <div class="column is-6">
-                <Field>
-                  <FieldLabel label="First Name">Resume</FieldLabel>
-                  <Control>
-                    <VInput
+                  <FieldLabel label="Resume">Resume</FieldLabel>
+                  <Control icon="carbon:user-profile">
+                    <!-- <VInput
                       id="myFile"
                       placeholder=""
                       type="file"
-                      name="filename" />
+                      name="resume" /> -->
+                    <VInput placeholder="Link to your resume..." />
+                  </Control>
+                </Field>
+              </div>
+              <div class="column is-12">
+                <Field>
+                  <FieldLabel label="Short Introduction">
+                    Short Introduction
+                  </FieldLabel>
+                  <Control>
+                    <VTextarea name="intro" :rows="4" placeholder="" />
                   </Control>
                 </Field>
               </div>
 
+              <div class="column is-12">
+                <Checkbox
+                  id="agree"
+                  name="agree"
+                  value="true"
+                  label="By entering your name, you affirm all information is true and accurate and wish to be considered for this job opportunity." />
+              </div>
               <!-- <div class="column is-12"> -->
-              <Section>
-                <container>
-                  <Checkbox
-                    id="checkbok"
-                    v-model="options1"
-                    name="checkbox-1"
-                    value="Option 1"
-                    label="By entering your name, you affirm all information is true and accurate. All information submitted to us may be relayed to the customer during our remediation process." />
-                </container>
-              </Section>
+
               <!-- </div> -->
 
               <div class="column is-12">
+                <div id="submit_message" class="pb-3 text-danger center"></div>
                 <Control>
-                  <Button color="primary" bold raised fullwidth>
-                    <span>Report Abuse</span>
+                  <Button
+                    name="submit"
+                    color="primary"
+                    bold
+                    raised
+                    fullwidth
+                    @click="() => submit()">
+                    <span>Apply now</span>
                   </Button>
                 </Control>
               </div>
@@ -186,7 +171,7 @@ watch(() => route.fullPath, fetchJob)
         </div>
       </container>
     </Section>
-    <SsFooterCC></SsFooterCC>
+    <ssFooter></ssFooter>
   </div>
 </template>
 

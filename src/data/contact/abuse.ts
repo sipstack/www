@@ -1,7 +1,7 @@
 export const abuseTypes = [
   {
-    title: 'Spam',
-    text: 'Spam is Unsolicited Bulk Email distributed to recipients who have not provided direct consent.',
+    title: 'Scanners',
+    text: 'Let us know if Whois ',
     // color: 'primary',
     // icon: 'feather:mail',
     link: 'abuse/spam',

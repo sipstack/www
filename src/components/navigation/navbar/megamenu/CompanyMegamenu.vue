@@ -73,7 +73,7 @@ const emit = defineEmits(['close'])
               </li>
 
               <li>
-                <a href="/jobs" class="list-link">Careers</a>
+                <a href="/jobs" class="list-link">Jobs</a>
               </li>
               <li>
                 <RouterLink

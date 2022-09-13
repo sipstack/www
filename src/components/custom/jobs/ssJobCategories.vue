@@ -27,9 +27,9 @@ const props = defineProps<BlogCategoriesProps>()
         to=""
         class="blog-category">
         <span>{{ category.name }}</span>
-        <div class="post-count">
+        <!-- <div class="post-count">
           <span>{{ category.postCount }}</span>
-        </div>
+        </div> -->
       </RouterLink>
     </div>
   </div>
