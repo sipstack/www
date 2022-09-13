@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 </script>
 
 <template>
@@ -56,8 +56,13 @@ const emit = defineEmits(["close"]);
                 </RouterLink>
               </li>
               <li>
-                <!-- <RouterLink v-preload-link to="/resources/case-studies/" class="list-link"> Case Studies </RouterLink> -->
-                <a class="list-link">Case Studies</a>
+                <RouterLink
+                  v-preload-link
+                  to="/resources/case-study/"
+                  class="list-link">
+                  Case Studies
+                </RouterLink>
+                <!-- <a class="list-link">Case Studies</a> -->
               </li>
               <li>
                 <RouterLink
@@ -161,7 +166,7 @@ const emit = defineEmits(["close"]);
             </div>
           </div>
         </div> -->
-			</div>
-		</Container>
-	</div>
+      </div>
+    </Container>
+  </div>
 </template>

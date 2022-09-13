@@ -2,24 +2,16 @@
 import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandler'
 import { useRoute } from 'vue-router'
 
-export interface PostGridItemAuthor {
-  photo: string
-  name: string
-  role: string
-}
-
 export interface PostItem {
-  id: number
-  author: PostGridItemAuthor
   category: string
   tags: []
+  link: string
   title: string
   abstract: string
   image: string
-  views: string
+  location: string
   content: string
-  // date: string;
-  duration: number
+  date: string
   related?: PostItem[]
   slug: string
   created: string
@@ -40,14 +32,14 @@ var basePath = ''
 if (route.fullPath.substring(route.fullPath.length - 1) != '/')
   basePath = route.fullPath + '/'
 </script>
-  
-  <template>
+
+<template>
   <RouterLink
     :to="basePath + props.post.slug"
     class="is-flex is-align-items-center">
     <div class="card">
       <div v-if="props.upsideDown" class="card-image">
-        <img
+        <!-- <img
           class="block"
           :src="props.post.image"
           alt="Post image"
@@ -55,13 +47,13 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
           height="200"
           @error.once="
             (event) => viaPlaceholderErrorHandler(event, `360x200`)
-          " />
+          " /> -->
       </div>
       <div class="card-content">
         <div class="media is-align-items-center">
-          <div class="media-left">
+          <!-- <div class="media-left">
             <AvatarSimple :picture="props.post.author.photo" />
-          </div>
+          </div> -->
           <div class="media-content">
             <Subtitle
               tag="p"
@@ -83,22 +75,24 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
         <div
           class="is-flex is-align-items-center is-justify-content-space-between">
           <div>
-            <!-- <RouterLink to="/blog/post" class="is-flex is-align-items-center"> -->
-            <span class="mr-2">Read More</span>
-            <i class="iconify" data-icon="feather:arrow-right"></i>
-            <!-- </RouterLink> -->
+            <RouterLink
+              :to="basePath + props.post.slug"
+              class="is-flex is-align-items-center">
+              <span class="mr-2">Read More</span>
+              <i class="iconify" data-icon="feather:arrow-right"></i>
+            </RouterLink>
           </div>
           <div
-            v-if="props.post.views"
+            v-if="props.post.created"
             class="card-stats is-flex is-align-items-center">
             <div class="is-flex is-align-items-center">
-              <i class="iconify" data-icon="feather:eye"></i>
-              <span class="ml-1">{{ props.post.views }}</span>
+              <i class="iconify" data-icon="feather:map"></i>
+              <span class="ml-1">{{ props.post.location }}</span>
             </div>
           </div>
         </div>
       </div>
-      <div v-if="!props.upsideDown" class="card-image">
+      <!-- <div v-if="!props.upsideDown" class="card-image">
         <img
           class="block"
           :src="props.post.image"
@@ -108,12 +102,12 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
           @error.once="
             (event) => viaPlaceholderErrorHandler(event, `360x200`)
           " />
-      </div>
+      </div> -->
     </div>
   </RouterLink>
 </template>
-  
-  <style lang="scss" scoped>
+
+<style lang="scss" scoped>
 .card {
   box-shadow: none;
   background: var(--blog-grid-item-bg-color);
@@ -132,7 +126,8 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
     // white-space: nowrap;
     // overflow: hidden;
     // text-overflow: ellipsis;
-    // max-width: 128ch;
+    min-width: 128ch;
+    // margin-left: 1500px;
     min-height: 2.25em; // 1.125x2
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -151,8 +146,11 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
   }
 
   .media {
+    display: inline;
     .media-content {
       overflow-x: visible;
+
+      // margin-right: 1px;
     }
   }
 
@@ -196,4 +194,3 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
   }
 }
 </style>
-  
