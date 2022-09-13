@@ -20,8 +20,7 @@ import { iconValues, founders, longTeam } from '/@src/data/about'
             imageFive: '/assets/img/team-v-9.jpg',
             imageSix: '/assets/img/team-v-10.jpg',
           }"
-          reverse
-        />
+          reverse />
       </Container>
     </Section>
 
@@ -67,16 +66,15 @@ import { iconValues, founders, longTeam } from '/@src/data/about'
           title-primary="We're Hiring!"
           content-primary="Interested in changing the world? Check our our current job offers regularly."
           cta-primary="Job offers"
-          cta-primary-link="/r/link?href=https://www2.sipstack.com/jobs"
+          cta-primary-link="/jobs"
           title-secondary="Help us grow"
           content-secondary="Like what we're doing and want to contribute to our products and offers?"
           cta-secondary="Sponsor page"
-          cta-secondary-link="/r/link?href=https://github.com/sponsor/sipstack"
+          cta-secondary-link="/r?href=https://github.com/sponsor/sipstack"
           boxed
           shapes
           animated
-          color="darker"
-        />
+          color="darker" />
       </Container>
     </Section>
 
@@ -96,8 +94,7 @@ import { iconValues, founders, longTeam } from '/@src/data/about'
           cta-secondary="Learn More"
           cta-secondary-link="/resources/media-kit"
           boxed
-          shapes
-        />
+          shapes />
         <!-- :logos="customerLogos" -->
       </Container>
     </Section>
