@@ -160,7 +160,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
           v-for="(topic, index) in props.topics.slice(0, 4)"
           :key="index"
           class="column is-3">
-          <RouterLink :to="basePath + topic.link" class="box">
+          <RouterLink :to="topic.link" class="box">
             <i
               class="iconify"
               :data-icon="topic.icon"
@@ -168,7 +168,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
             <Title tag="h3" :size="6" weight="semi" narrow>
               <span>{{ topic.title }}</span>
             </Title>
-            <p class="paragraph rem-85">{{ topic.text }}</p>
+            <p v-if="topic.text" class="paragraph rem-85">{{ topic.text }}</p>
           </RouterLink>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { posts } from '/@src/data/resources/blog'
+import { posts } from '/@src/data/resources/case-study'
 </script>
 
 <template>
@@ -7,7 +7,7 @@ import { posts } from '/@src/data/resources/blog'
     <Section color="grey" overflown>
       <Container>
         <div class="mx-auto max-w-9">
-          <PageTitle title="Our Latest Posts" subtitle="Company Blog">
+          <PageTitle title="Case Studies" subtitle="Company Blog">
             <template #content>
               <div class="mx-auto max-w-6 mt-2">
                 <!-- <p class="paragraph rem-115">
@@ -15,11 +15,11 @@ import { posts } from '/@src/data/resources/blog'
 								</p> -->
               </div>
 
-              <div class="mx-auto max-w-4 mt-4">
+              <!-- <div class="mx-auto max-w-4 mt-4">
                 <SubscriptionCompact
                   label="Subscribe"
                   placeholder="Enter your email" />
-              </div>
+              </div> -->
             </template>
           </PageTitle>
         </div>
