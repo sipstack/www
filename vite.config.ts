@@ -41,7 +41,7 @@ const plugins = [
    * @see https://github.com/hannoeru/vite-plugin-pages
    */
   Pages({
-    exclude: ['**/src/pages/r/**'],
+    exclude: ['**/src/pages/_**'],
     extensions: ['vue', 'ts', 'js'],
     pagesDir: [
       {
