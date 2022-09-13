@@ -326,8 +326,8 @@ As VoIP technology continues to evolve at breakneck speeds, we invite the teleco
         photo: "/assets/img/team/kanasu.png",
     },
     content: `
-![phonebooth](/assets/img/resources/blog/20210401-telephone-technology-explained/phonebooth.jpeg)
-Photo by [Paul Carmona](https://unsplash.com/@sydneylens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+![phonebooth](/assets/img/resources/blog/20210401-telephone-technology-explained/phonebooth.jpeg)  
+<sup>Photo by [Paul Carmona](https://unsplash.com/@sydneylens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</sup>
 
 When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange. When you dial the phone number, a second circuit is opened between the telephone exchange and the person you're calling. For as long as you're on the phone, the circuit remains open, and data (in the form of your voice) is sent and received over that open line. This [analog](http://sipstack.com/resources/blog/analog-technology) technology is called **circuit switching**.
 
@@ -459,7 +459,7 @@ If you're looking for a comprehensive VoIP solution for your business or want to
 ![lampphone](/assets/img/resources/blog/20210227-history-of-the-phone/lampphone.jpeg)
 Photo by [Johnny Briggs](https://unsplash.com/@johnnyboylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-Anjana probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.
+Everyone probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.
 
 In fact, the more I read about the innovators, the private companies and the milieu of the nineteenth century, the more amazed I am about the infinite and ever-changing possibilities of the communications industry.
 
