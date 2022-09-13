@@ -18,6 +18,7 @@ const submit = () => {
       'https://api.sipstack.com/v1/f/www/cap/contact',
       {
         method: 'POST',
+        credentials: 'include',
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',

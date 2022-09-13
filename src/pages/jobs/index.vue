@@ -15,8 +15,10 @@ const resp_cat = ref([{}])
 const getData = () => {
   fetch(
     `https://api.sipstack.com/v1/f/www/jobs`,
+
     // `http://192.168.1.13:3001/v1/f/www/jobs`,
     {
+      credentials: 'include',
       headers: { 'Content-type': 'application/json' },
     }
   )
