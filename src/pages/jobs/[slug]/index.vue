@@ -10,6 +10,7 @@ var slug = route.fullPath.split('/').slice(-1)
 
 const getData = () => {
   fetch(`http://192.168.1.13:3001/v1/f/www/jobs/${slug}`, {
+    credentials: 'include',
     headers: { 'Content-type': 'application/json' },
   })
     .then((res) => res.json())
