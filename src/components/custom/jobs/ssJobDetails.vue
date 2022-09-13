@@ -5,7 +5,7 @@ import Markdown from 'vue3-markdown-it'
 
 export interface JobDetailsSubProps {
   slug?: string
-  position?: string
+  title?: string
   salary?: string
   type?: string
   department?: string
@@ -13,7 +13,8 @@ export interface JobDetailsSubProps {
   email?: string
   recruiter?: string
   description?: string
-  extra?: []
+  stacks?: string
+  perks?: string
 }
 
 export interface JobDetailsProps {
@@ -41,7 +42,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
             <img :src="props.job.job.icon" alt="" />
           </div> -->
         <div class="meta">
-          <h3 class="job-title">{{ props.job.position }}</h3>
+          <h3 class="job-title">{{ props.job.title }}</h3>
           <h4 v-if="props.job.location || props.job.type" class="job-subtitle">
             <i
               class="iconify"
@@ -64,18 +65,20 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
         <div class="column is-7">
           <!-- <template
               v-for="(content, descKey) in props.job.description" :key="descKey"> -->
-          <h3>{{ props.job.position }}</h3>
-          <Markdown
-            :source="props.job.description"
-            :breaks="true"
-            html
-            xhtml-out />
+          <h3>{{ props.job.title }}</h3>
+          <Markdown :source="props.job.description" breaks html />
           <!-- </template> -->
         </div>
         <div class="column is-4 is-offset-1">
-          <div v-if="props.job.extra">
-            <h3>Additional</h3>
-            <Markdown :source="props.job.extra" :breaks="true" html />
+          <div v-if="props.job.stacks">
+            <h3>Stacks</h3>
+            <Markdown :source="props.job.stacks" :breaks="true" html />
+
+            <hr class="is-invisible" />
+          </div>
+          <div v-if="props.job.perks">
+            <h3>Perks</h3>
+            <Markdown :source="props.job.perks" :breaks="true" html />
 
             <hr class="is-invisible" />
           </div>

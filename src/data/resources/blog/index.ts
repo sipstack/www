@@ -459,7 +459,7 @@ If you're looking for a comprehensive VoIP solution for your business or want to
 ![lampphone](/assets/img/resources/blog/20210227-history-of-the-phone/lampphone.jpeg)
 Photo by [Johnny Briggs](https://unsplash.com/@johnnyboylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/tqdyMlJk7Wk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-Everyone probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.
+Anjana probably remembers from middle school that Alexander Graham Bell invented the telephone in 1876. However, the other nineteenth century technologies that came before the telephone (the telegraph, improvements to multiple telegraphy) and after the telephone (the switchboard, the telephone exchange, long distance calling) are equally influential and important.
 
 In fact, the more I read about the innovators, the private companies and the milieu of the nineteenth century, the more amazed I am about the infinite and ever-changing possibilities of the communications industry.
 
