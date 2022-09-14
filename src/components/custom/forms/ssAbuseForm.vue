@@ -43,11 +43,10 @@ function apiRequest(form_data) {
       // 'http://192.168.1.13:3001/v1/f/www/cap/abuse',
       {
         method: 'POST',
-        credentials: 'include',
+        // credentials: 'include',
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
-          'Sec-Fetch-Site': 'cross-site',
         },
         body: JSON.stringify(form_data),
       }
