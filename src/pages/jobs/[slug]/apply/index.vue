@@ -34,8 +34,8 @@ function apiRequest(form_data) {
       {
         method: 'POST',
         headers: {
-          credentials: 'include',
-          Accept: 'application/json',
+          // credentials: 'include',
+          // Accept: 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(form_data),
