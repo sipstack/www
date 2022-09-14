@@ -11,7 +11,10 @@ var slug = route.fullPath.split('/').slice(-1)
 const getData = () => {
   fetch(`https://api.sipstack.com/v1/f/www/jobs/${slug}`, {
     credentials: 'include',
-    headers: { 'Content-type': 'application/json' },
+    headers: {
+      'Content-type': 'application/json',
+      'Sec-Fetch-Site': 'cross-site',
+    },
   })
     .then((res) => res.json())
     .then((response) => {
