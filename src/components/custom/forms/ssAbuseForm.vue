@@ -47,6 +47,7 @@ function apiRequest(form_data) {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
+          'Sec-Fetch-Site': 'cross-site',
         },
         body: JSON.stringify(form_data),
       }

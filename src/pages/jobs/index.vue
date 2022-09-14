@@ -19,7 +19,11 @@ const getData = () => {
     // `http://192.168.1.13:3001/v1/f/www/jobs`,
     {
       credentials: 'include',
-      headers: { 'Content-type': 'application/json' },
+
+      headers: {
+        'Content-type': 'application/json',
+        'Sec-Fetch-Site': 'cross-site',
+      },
     }
   )
     .then((res) => res.json())
