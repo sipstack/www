@@ -10,6 +10,7 @@ echo ""
 echo "#############################################################################"
 echo ""
 
+
 BRANCH=$(git status | head -1 | cut -c 11-)
 # RELEASE=$(grep -oP '(?<="version": ").*?(?=",)' package.json)
 # IFS='.' read -r -a VERSION <<< "$RELEASE"
