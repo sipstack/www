@@ -2,4 +2,4 @@
 
 
 ![edited-whois-image](./edited-whois-image.png)
-_Global heat map of Whois requests in a single day_
+<p style="text-align: center;">_Global heat map of Whois requests in a single day_</p>
