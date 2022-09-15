@@ -12,7 +12,7 @@
     author: {
         name: "Anjana Uthayakumaran",
         role: "Author",
-        photo: "/assets/img/team/anaja.png",
+        photo: "/assets/img/team/anjana.png",
     },
     content: `
 @@include("content.md")
