@@ -1,1 +1,2 @@
-**Milestone alert!** Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release. [Learn more](https://www.sipstack.com/products/whois) and join us on our mission to building a secure connected tomorrow.
+**Milestone alert!** Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release. [Learn more](https://www.sipstack.com/products/whois) and join us on our mission to building a secure connected tomorrow.  
+edited-whois-image.png
