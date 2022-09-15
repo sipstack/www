@@ -10,7 +10,7 @@
     updated: "",
     duration: 1, // minute read
     author: {
-        name: "Anajana ",
+        name: "Anjana Uthayakumaran",
         role: "Author",
         photo: "/assets/img/team/anaja.png",
     },
