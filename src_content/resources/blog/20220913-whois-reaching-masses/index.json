@@ -1,11 +1,11 @@
 {
     slug: "whois-reaching-masses",
-    image: "/assets/posts/post-7.svg",
+    image: "/assets/posts/post-22.svg",
     category: "Press",
     tags: ["whois"],
     views: 0,
     title: "Whois already reaching the masses",
-    abstract: "",
+    abstract: "Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release.",
     created: "13/09/2022", //dd/mm/yyyy
     updated: "",
     duration: 1, // minute read
