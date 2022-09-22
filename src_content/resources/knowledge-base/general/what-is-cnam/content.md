@@ -10,7 +10,7 @@ Preventative measures, such as CNAM, work to provide callers with a sense of sec
 
 ## Not sure a call is safe?
 
-CNAM is not an automated feature granted to cellphone users. Additionally, there is no centralized database, meaning the name displayed may vary depending on the database chosen by the receiver’s carrier. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren’t sure whether it is safe, use Whois by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
+CNAM is not an automated feature granted to cellphone users. Additionally, there is no centralized database, meaning the name displayed may vary depending on the database chosen by the receiver’s carrier. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren’t sure whether it is safe, use [Whois](https://whois.sipstack.com/) by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
 
 #### References
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
