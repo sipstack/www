@@ -2,7 +2,7 @@
     slug: "what-is-cnam",
     image: "/assets/posts/post-16.svg",
     title: "What is CNAM?",
-    subtitle: "Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release.",
+    subtitle: "Simply put, CNAM is the Caller Name of an incoming phone call.",
     abstract: "",
     created: "22/09/2022", //dd/mm/yyyy
     updated: "",
