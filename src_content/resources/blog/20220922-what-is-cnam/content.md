@@ -2,9 +2,9 @@ Simply put, CNAM is the **C**aller **Nam**e of an incoming phone call. This is d
 
 ## Why does it exist?
 
-There is a variety of fraudulent scams that are rapidly advancing within the ever evolving sphere of telecommunications. A common misconception is that the majority of victims are seniors, given their vulnerable status. Yet millennials are also largely targeted, given the rise in cell phone owners and decline of land line owners. ^2^
+There is a variety of fraudulent scams that are rapidly advancing within the ever evolving sphere of telecommunications. A common misconception is that the majority of victims are seniors, given their vulnerable status. Yet millennials are also largely targeted, given the rise in cell phone owners and decline of land line owners. <sup>2</sup>
 
-A 2014 survey revealed that within the last 12 months, in the United States alone, over $8.6 billion dollars were lost to phone fraud.^3^ As a result, people have grown distrustful and no longer feel safe answering unknown numbers. Important and relevant calls are missed due to the fear of falling prey to a scam call.
+A 2014 survey revealed that within the last 12 months, in the United States alone, over $8.6 billion dollars were lost to phone fraud.<sup>3</sup> As a result, people have grown distrustful and no longer feel safe answering unknown numbers. Important and relevant calls are missed due to the fear of falling prey to a scam call.
 
 Preventative measures, such as CNAM, work to provide callers with a sense of security.
 
@@ -13,6 +13,6 @@ Preventative measures, such as CNAM, work to provide callers with a sense of sec
 CNAM is not an automated feature, granted to cellphone users. Additionally, there is no centralized database. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren’t sure whether it is safe, use Whois by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
 
 #### References
-^1^ [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/) 
-^2^ Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.
-^3^https://www.today.com/money/americans%E2%80%93lost%E2%80%938%E2%80%936%E2%80%93billion%E2%80%93phone%E2%80%93fraud%E2%80%93last%E2%80%93year%E2%80%93survey%E2%80%931D80108259
+<sup>1</sup> [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/) 
+<sup>1</sup> Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.
+<sup>1</sup>https://www.today.com/money/americans%E2%80%93lost%E2%80%938%E2%80%936%E2%80%93billion%E2%80%93phone%E2%80%93fraud%E2%80%93last%E2%80%93year%E2%80%93survey%E2%80%931D80108259
