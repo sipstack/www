@@ -1,4 +1,4 @@
-Simply put, CNAM is the **C**aller **Nam**e of an incoming phone call. This is displayed on the screen of a mobile or home device. The 15 available characters are indicative of either an individual or an organization. <sup>1 CNAM presents itself in replacement of, or in accompaniment with CLID, **C**aller **ID**. Caller ID is the phone number of an incoming phone call.
+Simply put, CNAM is the **C**aller **Nam**e of an incoming phone call. This is displayed on the screen of a mobile or home device. The 15 available characters are indicative of either an individual or an organization. <sup>1</sup> CNAM presents itself in replacement of, or in accompaniment with CLID, **C**aller **ID**. Caller ID is the phone number of an incoming phone call.
 
 ## Why does it exist?
 
