@@ -13,6 +13,6 @@ Preventative measures, such as CNAM, work to provide callers with a sense of sec
 CNAM is not an automated feature, granted to cellphone users. Additionally, there is no centralized database. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren’t sure whether it is safe, use Whois by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
 
 #### References
-<sup>1</sup> [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/) 
-<sup>1</sup> Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.
-<sup>1</sup>https://www.today.com/money/americans%E2%80%93lost%E2%80%938%E2%80%936%E2%80%93billion%E2%80%93phone%E2%80%93fraud%E2%80%93last%E2%80%93year%E2%80%93survey%E2%80%931D80108259
+<sup>1</sup> [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)   
+<sup>2</sup> Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.  
+<sup>3</sup>https://www.today.com/money/americans%E2%80%93lost%E2%80%938%E2%80%936%E2%80%93billion%E2%80%93phone%E2%80%93fraud%E2%80%93last%E2%80%93year%E2%80%93survey%E2%80%931D80108259
