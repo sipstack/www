@@ -1,14 +1,10 @@
 {
-    slug: "what-is-CNAM",
+    slug: "what-is-cnam",
     image: "/assets/posts/post-16.svg",
-    category: "Informative",
-    tags: ["whois"],
-    views: 0,
     title: "What is CNAM?",
     abstract: "Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release.",
     created: "22/09/2022", //dd/mm/yyyy
     updated: "",
-    duration: 3, // minute read
     author: {
         name: "Anjana Uthayakumaran",
         role: "Author",
