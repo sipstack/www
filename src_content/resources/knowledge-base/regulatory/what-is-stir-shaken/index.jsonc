@@ -1,1 +1,15 @@
-
+{
+    slug: "what-is-stir-shaken",
+    title: "What is STIR/SHAKEN",
+    subtitle: "",
+    abstract: "",
+    created: "22/09/2022",
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjana.png",
+    },
+    content: `
+@@include("content.md")
+`
+},
