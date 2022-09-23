@@ -15,4 +15,4 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 #### References
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
-<sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  
+<sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  

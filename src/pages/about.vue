@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { customerLogos } from "/@src/data-example/pages/logos";
-import { iconValues, founders, longTeam } from '/@src/data/about'
+import { iconValues, founders, longTeam, gridTeam } from '/@src/data/about'
 </script>
 
 <template>
@@ -46,23 +46,23 @@ import { iconValues, founders, longTeam } from '/@src/data/about'
       <Container>
         <SectionTitle title="About Our Leaders" subtitle="Meet the team" />
 
-        <TeamBlockC :items="longTeam" bubbles :limit="4" />
+        <ssTeamBlockC :items="longTeam" bubbles :limit="4" />
       </Container>
     </Section>
 
-    <!-- <Section>
-			<Container>
-				<SectionTitle title="About Our Talent" subtitle="Meet the team" />
+    <Section>
+      <Container>
+        <SectionTitle title="About Our Talent" subtitle="Meet the team" />
 
-				<TeamBlockE :items="gridTeam" :limit="3" shapes />
-			</Container>
-		</Section> -->
+        <ssTeamBlockE :items="gridTeam" :limit="4" shapes />
+      </Container>
+    </Section>
 
     <Section>
       <Container>
         <!-- <ValuesSection :values="plantValues" image-height="130px" /> -->
 
-        <CtaBlockB
+        <ssCtaBlockB
           title-primary="We're Hiring!"
           content-primary="Interested in changing the world? Check our our current job offers regularly."
           cta-primary="Job offers"
@@ -70,7 +70,7 @@ import { iconValues, founders, longTeam } from '/@src/data/about'
           title-secondary="Help us grow"
           content-secondary="Like what we're doing and want to contribute to our products and offers?"
           cta-secondary="Sponsor page"
-          cta-secondary-link="/r?href=https://github.com/sponsor/sipstack"
+          cta-secondary-link="https://github.com/sponsors/sipstack"
           boxed
           shapes
           animated

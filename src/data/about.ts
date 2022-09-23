@@ -35,7 +35,7 @@ export const founders = [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: '/r/link?href=https://www.linkedin.com/in/jonathangeller1/',
+        url: 'https://www.linkedin.com/in/jonathangeller1/',
       },
       // {
       // 	name: "Twitter",
@@ -45,7 +45,7 @@ export const founders = [
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com/jonathangeller',
+        url: 'https://github.com/jonathangeller',
       },
     ],
   },
@@ -61,13 +61,13 @@ export const longTeam = [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: '/r/link?href=https://www.linkedin.com/in/stamloizides/',
+        url: 'https://www.linkedin.com/in/stamloizides/',
       },
 
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com/sloizides',
+        url: 'https://github.com/sloizides',
       },
     ],
   },
@@ -80,7 +80,7 @@ export const longTeam = [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: '/r/link?href=https://www.linkedin.com/in/errolgeller/',
+        url: 'https://www.linkedin.com/in/errolgeller/',
       },
     ],
   },
@@ -93,7 +93,7 @@ export const longTeam = [
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com/espielberg',
+        url: 'https://github.com/espielberg',
       },
     ],
   },
@@ -106,13 +106,13 @@ export const longTeam = [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: '/r/link?href=https://www.linkedin.com/in/ralph-rouhana-b23aa31a8/',
+        url: 'https://www.linkedin.com/in/ralph-rouhana-b23aa31a8/',
       },
 
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com/ralphr123',
+        url: 'https://github.com/ralphr123',
       },
     ],
   },
@@ -120,47 +120,52 @@ export const longTeam = [
 
 export const gridTeam = [
   {
-    image: '/assets/img/team/iniyan.jpg',
-    name: 'Iniyan Chelladurai',
-    position: 'Junior Software Engineer',
+    image: '/assets/img/team/anjanaa.jpg',
+    name: 'Anjana Uthayakumaran',
+    position: 'Technical Writer',
     socialLinks: [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: '/r/link?href=https://www.linkedin.com/in/iniyan-chelladurai-67307a194/',
-      },
-
-      {
-        name: 'GitHub',
-        icon: 'feather:github',
-        url: '/r/link?href=https://github.com/iniyuh',
+        url: 'https://www.linkedin.com/in/anjana-uthayakumaran-406b6619/',
       },
     ],
   },
   {
-    image: '/assets/img/team/kanasu.png',
-    name: 'Kanasu Nagathihalli',
-    position: 'Technical Writer',
+    image: '/assets/img/team/marcr.jpg',
+    name: 'Marc Rouhana',
+    position: 'Junior Software Engineer',
     socialLinks: [
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com/kxtkrvn',
+        url: 'https://github.com/Rouhana1',
       },
     ],
   },
 
   {
-    image: '/assets/img/team/terry.png',
-    name: 'Terry Wu',
-    position: 'Product (Sales) Development',
+    image: '/assets/img/team/vrajp.jpg',
+    name: 'Vraj Patel',
+    position: 'Software Engineer',
     socialLinks: [
+      {
+        name: 'Linkedin',
+        icon: 'feather:linkedin',
+        url: 'https://www.linkedin.com/in/vraj-patel-1baa44197/',
+      },
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: '/r/link?href=https://github.com',
+        url: 'https://github.com/ChocoMufnChocoMufn',
       },
     ],
+  },
+  {
+    image: '/assets/img/team/pranitn.jpg',
+    name: 'Pranit Narula',
+    position: 'Software Engineer',
+    socialLinks: [],
   },
 ]
 
