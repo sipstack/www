@@ -7,7 +7,7 @@
     contributors: [
         {
             name: "Anjana Uthayakumaran",
-            picture: "/assets/img/team/anjana.jpg",
+            picture: "/assets/img/team/anjanaa.jpg",
         },
     ],
     articles: [@@include("general.articles.json")]

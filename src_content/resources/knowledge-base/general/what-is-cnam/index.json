@@ -7,7 +7,7 @@
     updated: "",
     author: {
         name: "Anjana Uthayakumaran",
-        photo: "/assets/img/team/anjana.jpg",
+        picture: "/assets/img/team/anjanaa.jpg",
     },
     content: `
 @@include("content.md")
