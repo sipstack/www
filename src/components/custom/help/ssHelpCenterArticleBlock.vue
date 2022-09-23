@@ -52,7 +52,7 @@ const activeRating = ref('')
         </div>
 
         <div class="content">
-          <Markdown :source="props.article.content" />
+          <Markdown :source="props.article.content" breaks="true" html />
         </div>
 
         <div class="rating-section">

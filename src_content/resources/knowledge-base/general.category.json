@@ -1,0 +1,14 @@
+{
+    slug: "general",
+    icon: "fa:book",
+    iconColor: "purple",
+    name: "General",
+    text: "General information",
+    contributors: [
+        {
+            name: "Anjana Uthayakumaran",
+            picture: "/assets/img/team/anjana.jpg",
+        },
+    ],
+    articles: [@@include("general.articles.json")]
+},

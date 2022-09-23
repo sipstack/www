@@ -25,6 +25,16 @@ function res_kb_articles(cb) {
     .pipe(concat('api.articles.json'))
     .pipe(dest('src_content/resources/knowledge-base/'))
 
+  src(['src_content/resources/knowledge-base/general/**/*.json'])
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+        basepath: '@file',
+      })
+    )
+    .pipe(concat('general.articles.json'))
+    .pipe(dest('src_content/resources/knowledge-base/'))
+
   src([
     'src_content/resources/knowledge-base/text-messaging/*.json',
     'src_content/resources/knowledge-base/text-messaging/*.jsonc',
@@ -93,7 +103,7 @@ function res_kb_categories(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const helpCenterCategories = ['))
     .pipe(gap.appendText(']'))
@@ -140,7 +150,7 @@ function res_blog_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
     .pipe(gap.appendText(']'))
@@ -207,7 +217,7 @@ function res_cs_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
     .pipe(gap.appendText(']'))
