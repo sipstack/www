@@ -65,7 +65,7 @@ const activeMenuItem = ref(0)
       </div>
       <div class="right">
         <div class="terms-content">
-          <Markdown :source="content" breaks="true" />
+          <Markdown :source="content" breaks="true" html />
         </div>
       </div>
     </div>
