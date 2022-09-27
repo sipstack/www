@@ -1,4 +1,4 @@
-STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling  of **A**sserted  information using  to**KENs**  are mandated in North America. Since its origin in 2020 <sup>1</sup>, governing bodies **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, and the **FCC** **F**ederal **C**ommunications **C**ommission oversee its implementation and maintenance.
+STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling  of **A**sserted  information using  to**KENs**  are mandated in North America. Since its origin in 2020 <sup>1</sup>, governing bodies **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, and the **FCC** **F**ederal **C**ommunications **C**ommission will oversee its implementation and maintenance.
 
 ## A Little Bit About Illegal Caller ID Spoofing
 
@@ -12,7 +12,7 @@ STIR leverages three levels of verification, corresponding to different levels o
 
 The short answer is no. STIR/ SHAKEN aids to verify a call, but does not prevent or block unverified calls.
 
-STIR/SHAKEN guidelines have yet to be fully implemented by the U.S. Qualified carriers with fewer than 100,000 subscribers have been granted full extensions until June 30, 2023, by the FCC <sup>3</sup>. Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
+STIR/SHAKEN guidelines have yet to be fully implemented in North America. Canada is in the beginning stages of implementation, while in the U.S., the FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers <sup>3</sup>.  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
 
 To learn more about protecting your company’s number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
 
