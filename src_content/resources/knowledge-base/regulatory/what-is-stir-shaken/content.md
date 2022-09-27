@@ -10,7 +10,7 @@ STIR leverages three levels of verification, corresponding to different levels o
 
 ## Does this mean I am safe from spoofing?
 
-The short answer is no.
+The short answer is no. STIR/ SHAKEN aids to verify a call, but does not prevent or block unverified calls.
 
 STIR/SHAKEN guidelines have yet to be fully implemented by the U.S. Qualified carriers with fewer than 100,000 subscribers have been granted full extensions until June 30, 2023, by the FCC <sup>3</sup>. Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
 
