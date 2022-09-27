@@ -2,7 +2,7 @@ STIR/SHAKEN are two separate initiatives that work to verify the identity of an 
 
 ## A Little Bit About Illegal Caller ID Spoofing
 
-Spoofing, as the name suggests, is the intentional act of tricking someone. In the context of telecommunications, it involves disguising the original  [CNAM **C**aller **NAM**e and/or CID, **C**aller **ID**. ](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)  Opting for a private or unknown caller CNAM will warrant at best, a 19% answering rate in the U.S.  <sup>2</sup>. Scammers armed with this knowledge, utilize the CID of other individuals and companies, without permission. This illegal activity damages the reputation of major companies and organization, creates more fear and hesitancy around answering calls and, increases the efficacy of fraud.
+Spoofing, as the name suggests, is the intentional act of tricking someone. In the context of telecommunications, it involves disguising the original  [CNAM, **C**aller **NAM**e, and/or CID, **C**aller **ID**. ](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)  Opting for a private or unknown caller CNAM will warrant at best, a 19% answering rate in the U.S.  <sup>2</sup>. Scammers armed with this knowledge, utilize the CID of other individuals and companies, without permission. This illegal activity damages the reputation of major companies and organization, creates more fear and hesitancy around answering calls and, increases the efficacy of fraud.
 
 ## How Does It Work?
 
