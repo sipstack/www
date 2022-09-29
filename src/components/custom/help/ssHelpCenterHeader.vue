@@ -160,7 +160,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
           v-for="(topic, index) in props.topics.slice(0, 4)"
           :key="index"
           class="column is-3">
-          <RouterLink :to="topic.link" class="box">
+          <RouterLink :to="basePath + topic.link" class="box">
             <i
               class="iconify"
               :data-icon="topic.icon"

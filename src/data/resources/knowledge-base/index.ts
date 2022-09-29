@@ -239,11 +239,48 @@ In most countries, mobile numbers are assigned to a particular range within the 
     text: "General information on Regulatory boards.",
     contributors: [
         {
-            name: "Kanasu Nagathihalli",
-            picture: "/assets/img/team/kanasu.png",
-        },
+            name: "Anjana Uthayakumaran",
+            picture: "/assets/img/team/anjanaa.jpg"
+        }
     ],
-    articles: []
+    articles: [{
+    slug: "what-is-stir-shaken",
+    title: "What is STIR/SHAKEN?",
+    subtitle: "STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.",
+    abstract: "",
+    created: "22/09/2022",
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling  of **A**sserted  information using  to**KENs**  are mandated in North America. Since its origin in 2020 <sup>1</sup>, governing bodies **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, and the **FCC** **F**ederal **C**ommunications **C**ommission will oversee its implementation and maintenance.
+
+## A Little Bit About Illegal Caller ID Spoofing
+
+Spoofing, as the name suggests, is the intentional act of tricking someone. In the context of telecommunications, it involves disguising the original  [CNAM, **C**aller **NAM**e, and/or CID, **C**aller **ID**. ](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)  Opting for a private or unknown caller CNAM will warrant at best, a 19% answering rate in the U.S.  <sup>2</sup>. Scammers armed with this knowledge, utilize the CID of other individuals and companies, without permission. This illegal activity damages the reputation of major companies and organization, creates more fear and hesitancy around answering calls and, increases the efficacy of fraud.
+
+## How Does It Work?
+
+STIR leverages three levels of verification, corresponding to different levels of security, to determine whether a call should be trusted via [VoIP](https://www.sipstack.com/resources/blog/voip-technology-explained) systems. This technology verifies information at several points in the call, disabling hackers from beating this authentication system. SHAKEN was created to address non-VoIP systems, such as the conventional cellphone. This results in providing the user with verified information, appended with tags such as *verified* or *no verification*. Note that messages may differ across devices and carriers types.
+
+## Does this mean I am safe from spoofing?
+
+The short answer is no. STIR/ SHAKEN aids to verify a call, but does not prevent or block unverified calls.
+
+STIR/SHAKEN guidelines have yet to be fully implemented in North America. Canada is in the beginning stages of implementation, while in the U.S., the FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers <sup>3</sup>.  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
+
+To learn more about protecting your company's number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
+
+#### References
+<sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
+<sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
+<sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
+
+`
+},
+]
 },
 {
     slug: "text-messaging",
@@ -390,21 +427,6 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
-    subtitle: "",
-    abstract: "",
-    created: "22/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`
-},
-{
     slug: "can-my-sms-messages-arrive-in-order",
     title: "Can my SMS messages arrive in order?",
     subtitle: "",
@@ -505,6 +527,21 @@ SIPSTACK does not offer short code numbers and therefore, does not support any s
 
 ## WhatsApp and other messaging channels
 The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
+`
+},
+{
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
@@ -729,6 +766,21 @@ Toll-free phone numbers may be a better fit for certain use cases. Unlike short 
 `
 },
 {
+    slug: "mms-message-long-code-cost",
+    title: "How much does it cost to send and receive an MMS message over long codes?",
+    subtitle: "",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
+`
+},
+{
     slug: "is-mms-supported-for-all-carriers",
     title: "Is MMS supported for all carriers in Canada and US?",
     subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
@@ -751,21 +803,6 @@ Currently, SIPSTACK supports sending MMS messages from local long code numbers t
 When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
 
 The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
-`
-},
-{
-    slug: "mms-message-long-code-cost",
-    title: "How much does it cost to send and receive an MMS message over long codes?",
-    subtitle: "",
-    abstract: "",
-    created: "31/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `
 },
 {

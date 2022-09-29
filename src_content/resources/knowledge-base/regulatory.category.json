@@ -6,9 +6,9 @@
     text: "General information on Regulatory boards.",
     contributors: [
         {
-            name: "Kanasu Nagathihalli",
-            picture: "/assets/img/team/kanasu.png",
-        },
+            name: "Anjana Uthayakumaran",
+            picture: "/assets/img/team/anjanaa.jpg"
+        }
     ],
     articles: [@@include("regulatory.articles.json")]
 },
