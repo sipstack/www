@@ -1,15 +1,3 @@
-{
-    slug: "what-is-stir-shaken",
-    title: "What is STIR/SHAKEN?",
-    subtitle: "STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.",
-    abstract: "",
-    created: "22/09/2022",
-    updated: "",
-    author: {
-        name: "Anjana Uthayakumaran",
-        picture: "/assets/img/team/anjanaa.jpg",
-    },
-    content: `
 STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling  of **A**sserted  information using  to**KENs**  are mandated in North America. Since its origin in 2020 <sup>1</sup>, governing bodies **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, and the **FCC** **F**ederal **C**ommunications **C**ommission will oversee its implementation and maintenance.
 
 ## A Little Bit About Illegal Caller ID Spoofing
@@ -32,6 +20,3 @@ To learn more about protecting your company’s number from getting spoofed visi
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
 <sup>2 McClain, Colleen. "Most Americans don’t answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
-
-`
-},

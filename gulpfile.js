@@ -13,8 +13,8 @@ const sort = require('gulp-sort')
 
 function res_kb_articles(cb) {
   src([
-    'src_content/resources/knowledge-base/api/*.json',
-    'src_content/resources/knowledge-base/api/*.jsonc',
+    'src_content/resources/knowledge-base/api/**/*.json',
+    'src_content/resources/knowledge-base/api/**/*.jsonc',
   ])
     .pipe(
       fileinclude({
@@ -36,8 +36,8 @@ function res_kb_articles(cb) {
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
-    'src_content/resources/knowledge-base/text-messaging/*.json',
-    'src_content/resources/knowledge-base/text-messaging/*.jsonc',
+    'src_content/resources/knowledge-base/text-messaging/**/*.json',
+    'src_content/resources/knowledge-base/text-messaging/**/*.jsonc',
   ])
     .pipe(
       fileinclude({
@@ -49,8 +49,8 @@ function res_kb_articles(cb) {
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
-    'src_content/resources/knowledge-base/fax/*.json',
-    'src_content/resources/knowledge-base/fax/*.jsonc',
+    'src_content/resources/knowledge-base/fax/**/*.json',
+    'src_content/resources/knowledge-base/fax/**/*.jsonc',
   ])
     .pipe(
       fileinclude({
@@ -62,8 +62,8 @@ function res_kb_articles(cb) {
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
-    'src_content/resources/knowledge-base/regulatory/*.json',
-    'src_content/resources/knowledge-base/regulatory/*.jsonc',
+    'src_content/resources/knowledge-base/regulatory/**/*.json',
+    'src_content/resources/knowledge-base/regulatory/**/*.jsonc',
   ])
     .pipe(
       fileinclude({
@@ -75,8 +75,8 @@ function res_kb_articles(cb) {
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
-    'src_content/resources/knowledge-base/phone-number/*.json',
-    'src_content/resources/knowledge-base/phone-number/*.jsonc',
+    'src_content/resources/knowledge-base/phone-number/**/*.json',
+    'src_content/resources/knowledge-base/phone-number/**/*.jsonc',
   ])
     .pipe(
       fileinclude({
