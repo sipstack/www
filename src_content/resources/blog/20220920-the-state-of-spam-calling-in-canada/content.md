@@ -26,7 +26,7 @@ The **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**
 
 However, Canadians are a far way from being fully protected from caller ID spoofing. The CRTC is only in the beginning stages of implementation, and is currently exploring mandated readiness assessments from carriers <sup>10</sup>. Once STIR/SHAKEN is implemented, numbers can only be verified if the device is compatible, and both carriers of a call have adopted the guidelines. While STIR/SHAKEN provides guidelines for authentication, no third party management exists to monitor the CID validation process, leaving each carrier to implement their own standards. Additionally, a majority of CID spoofing occurs when an individual is hacked. Calls made with this stolen ID will still be validated by STIR/SHAKEN as it is unable to identify the caller behind the phone number.
 
-## **How SIPSTACK will fight fraud**
+## **How SIPSTACK fights fraud**
 
 Using the latest technology and machine learning, SIPSTACK’s systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK’ Risk Rating Score they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow.  [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam. 
 
