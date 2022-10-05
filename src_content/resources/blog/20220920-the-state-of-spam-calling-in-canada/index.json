@@ -2,17 +2,17 @@
     slug: "the-state-of-spam-calling-in-canada",
     image: "/assets/posts/post-2.svg",
     category: "Spam",
-    tags: ["whois"],
+    tags: ["SIPSTACK"],
     views: 0,
     title: "The State of Spam Calling in Canada",
-    abstract: "Spam calling has become more than a nuisance in Canada. Nearly 5% of the revenue from Canada's telecom industry, amounting to $381 million, was lost to fraud and spam calling in 2021.",
+    abstract: "Spam calling, once dismissed as merely a nuisance, is now creating exponential losses for Canadians.",
     created: "20/09/2022", //dd/mm/yyyy
     updated: "",
     duration: 5, // minute read
     author: {
-        name: "Jonathan Geller",
+        name: "Anjana Uthayakumaran",
         role: "Author",
-        photo: "/assets/img/team/jon.jpg",
+        photo: "/assets/img/team/anjanaa.jpg",
     },
     content: `
 @@include("content.md")
