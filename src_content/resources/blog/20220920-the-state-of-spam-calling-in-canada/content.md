@@ -30,4 +30,4 @@ As the technology behind Voice over Internet Protocol (VoIP) gets more sophistic
 
 # How SIPSTACK will fight fraud
 
-  
+  <sup>2</sup>.
