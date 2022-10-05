@@ -8,7 +8,7 @@
     abstract: "Spam calling, once dismissed as merely a nuisance, is now creating exponential losses for Canadians.",
     created: "20/09/2022", //dd/mm/yyyy
     updated: "",
-    duration: 5, // minute read
+    duration: 7, // minute read
     author: {
         name: "Anjana Uthayakumaran",
         role: "Author",
