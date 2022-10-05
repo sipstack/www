@@ -39,6 +39,6 @@ Using the latest technology and machine learning, SIPSTACK’s systems authentic
 
 <sup>3[https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
 
-<sup>4, 5, 6, 7, 8` [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
+<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
 
 <sup>9[https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication) </sup>
