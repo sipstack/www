@@ -4,8 +4,8 @@
     category: "Spam",
     tags: ["SIPSTACK"],
     views: 0,
-    title: "The State of Spam Calling in Canada",
-    abstract: "Spam calling, once dismissed as merely a nuisance, is now creating exponential losses for Canadians.",
+    title: "The State of Telecommunications Spam in Canada",
+    abstract: "Spam calling and texting, once dismissed as merely a nuisance, is now creating exponential losses for Canadians.",
     created: "20/09/2022", //dd/mm/yyyy
     updated: "",
     duration: 7, // minute read
