@@ -1,5 +1,4 @@
-# THE STATE OF SPAM CALLING IN THE US
-Spam calling is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month<sup>1</sup>. Americans reported losses totalling nearly $30 billion to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost 1 in every 3 Americans have fallen victim to phone scams, 19% have been victimized on more than one occasion<sup>3</sup>.
+Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month<sup>1</sup>. Americans reported losses totalling nearly $30 billion to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost 1 in every 3 Americans have fallen victim to phone scams, 19% have been victimized on more than one occasion<sup>3</sup>.
 
 ## **The top five types of scams in the US**
 
