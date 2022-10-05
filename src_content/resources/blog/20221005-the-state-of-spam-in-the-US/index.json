@@ -1,0 +1,20 @@
+{
+    slug: "the-state-of-spam-calling-in-the-US",
+    image: "/assets/posts/post-2.svg",
+    category: "Spam",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "The State of Spam Calling in the United States",
+    abstract: "Spam calling is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month .",
+    created: "05/10/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 7, // minute read
+    author: {
+        name: "Anjana Uthayakumaran",
+        role: "Author",
+        photo: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
