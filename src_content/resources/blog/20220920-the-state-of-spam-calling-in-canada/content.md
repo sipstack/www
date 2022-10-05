@@ -1,5 +1,5 @@
 # THE STATE OF SPAM CALLING IN CANADA
-Spam calling, once dismissed as merely a nuisance, is now creating exponential losses for Canadians. Based on reports submitted to the **CAFC, C**anadian **A**nti-**F**raud **C**entre, last year’s loss were calculated at $383 million,`a steep increase from $160 million reported losses in 2020 `<sup>1</sup>`. It is important to note that only 5% of victims report to law enforcement or the CAFC, putting total losses immeasurably higher `<sup>2</sup>`. Currently, it is estimated that up to 25% of all calls made across mobile networks in Canada are spam or fraud calls, putting Canadians at serious risk`<sup>3</sup>.
+Spam calling, once dismissed as merely a nuisance, is now creating exponential losses for Canadians. Based on reports submitted to the **CAFC, C**anadian **A**nti-**F**raud **C**entre, last year’s loss were calculated at $383 million,a steep increase from $160 million reported losses in 2020 <sup>1</sup>. It is important to note that only 5% of victims report to law enforcement or the CAFC, putting total losses immeasurably higher <sup>2</sup>. Currently, it is estimated that up to 25% of all calls made across mobile networks in Canada are spam or fraud calls, putting Canadians at serious risk`<sup>3</sup>.
 
 ## The top five types of scams in Canada
 Scammers have evolved, to pursue a multitude of avenues and detailed schemes, in order to stay ahead of antispam measurements. Here are the five largest scams in 2021, ranked by monetary loss to Canadians:
@@ -29,20 +29,20 @@ However, Canadians are a far way from being fully protected from caller ID spoof
 ## **How SIPSTACK will fight fraud**
 
 Using the latest technology and machine learning, SIPSTACK’s systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK’ Risk Rating Score they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow.  [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam. 
-<![endif]-->
+
 
 #### References
 
-`<sup>1[https://www.antifraudcentre-centreantifraude.ca/index-eng.htm](https://www.antifraudcentre-centreantifraude.ca/index-eng.htm) `</sup>
+<sup>1[https://www.antifraudcentre-centreantifraude.ca/index-eng.htm](https://www.antifraudcentre-centreantifraude.ca/index-eng.htm)</sup>
 
-`<sup> 2[https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses](https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses) </sup>`
+<sup> 2[https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses](https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses)</sup>
 
-`<sup>3[https://toronto.ctvnews.ca/best-possible-news-relief-from-annoying-robocalls-soon-on-the-way-1.5669152#:~:text=According%20to%20the%20Canadian%20Radio,ever%20get%20to%20your%20phone]`</sup>.
+<sup>3[https://toronto.ctvnews.ca/best-possible-news-relief-from-annoying-robocalls-soon-on-the-way-1.5669152#:~:text=According%20to%20the%20Canadian%20Radio,ever%20get%20to%20your%20phone]</sup>
 
-`<sup>4,5,6,7,8 https://toronto.ctvnews.ca/these-are-the-top-five-scams-canadians-fell-for-in-2021-1.5718580`</sup>
+<sup>4,5,6,7,8 https://toronto.ctvnews.ca/these-are-the-top-five-scams-canadians-fell-for-in-2021-1.5718580</sup>
 
-`<sup>9 Arafat, Mais, Abdallah Qusef, and George Sammour. "Detection of wangiri telecommunication fraud using ensemble learning." _2019 IEEE Jordan International Joint Conference on Electrical Engineering and Information Technology (JEEIT)_. IEEE, 2019. `</sup>
+<sup>9 Arafat, Mais, Abdallah Qusef, and George Sammour. "Detection of wangiri telecommunication fraud using ensemble learning." _2019 IEEE Jordan International Joint Conference on Electrical Engineering and Information Technology (JEEIT)_. IEEE, 2019.</sup>
 
-`<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm) `</sup>.
+<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm) </sup>.
 
 
