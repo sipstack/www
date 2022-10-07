@@ -19,7 +19,7 @@ import {
     <Section wave="wave-2">
       <Container>
         <CollectionTitle
-          title="Beyond Unified Communications"
+          title="Beyond Telecom"
           subtitle="Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before."></CollectionTitle>
         <ssFeatureBlockJ :features="featuresBeyond" />
 
