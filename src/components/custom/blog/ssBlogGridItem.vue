@@ -125,6 +125,7 @@ if (route.fullPath.substring(route.fullPath.length - 1) != '/')
   .card-image {
     img {
       width: 100%;
+      height: 168px;
       object-fit: cover;
     }
   }

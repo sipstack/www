@@ -93,7 +93,7 @@ function res_kb_categories(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const helpCenterCategories = ['))
     .pipe(gap.appendText(']'))
@@ -140,7 +140,7 @@ function res_blog_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
     .pipe(gap.appendText(']'))
@@ -155,6 +155,8 @@ function res_blog_images(cb) {
     'src_content/resources/blog/**/*.png',
     'src_content/resources/blog/**/*.jpeg',
     'src_content/resources/blog/**/*.jpg',
+    'src_content/resources/blog/**/*.png',
+    'src_content/resources/blog/**/*.svg',
   ])
     // .pipe(
     //  tap(function (file, t) {
@@ -207,7 +209,7 @@ function res_cs_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
-    .pipe(replace("```", '\\`\\`\\`')) // eslint-disable-line
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
     .pipe(gap.appendText(']'))

@@ -109,9 +109,9 @@ const props = defineProps<SinglePostProps>()
         </a>
       </div>
     </div>
-    <Title tag="h2" :size="3" weight="bold" class="pt-6">Related Posts</Title>
+    <!-- <Title tag="h2" :size="3" weight="bold" class="pt-6">Related Posts</Title> -->
     <!-- <BlogGrid :posts="props.content.related" /> -->
-    <div class="py-12"></div>
+    <!-- <div class="py-12"></div> -->
   </div>
 </template>
 
