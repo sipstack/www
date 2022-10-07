@@ -42,6 +42,6 @@ Using the latest machine learning (AI) technology, SIPSTACK’s systems validate
 
 <sup>9 Arafat, Mais, Abdallah Qusef, and George Sammour. "Detection of wangiri telecommunication fraud using ensemble learning." _2019 IEEE Jordan International Joint Conference on Electrical Engineering and Information Technology (JEEIT)_. IEEE, 2019.</sup>
 
-<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm)</sup>.
+<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm)</sup>
 
 
