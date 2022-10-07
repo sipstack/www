@@ -171,7 +171,8 @@ watch(
     .navbar-logo {
       display: block;
       width: 100%;
-      max-width: 110px;
+      // max-width: 110px;
+      max-width: 38px;
       max-height: 38px;
     }
 
