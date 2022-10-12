@@ -1,4 +1,4 @@
-**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign in efforts to increase transparency in the messaging ecosystem.
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign, in the larger effort to increase transparency in the telecommunication ecosystem.
 
 ## Existing Alternatives
 
