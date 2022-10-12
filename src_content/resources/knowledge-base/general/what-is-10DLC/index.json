@@ -1,0 +1,15 @@
+{
+    slug: "what-is-A2P-10DLC",
+    title: "What is A2P 10DLC?",
+    subtitle: "A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .",
+    abstract: "",
+    created: "13/10/2022", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
