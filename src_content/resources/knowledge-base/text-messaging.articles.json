@@ -331,25 +331,6 @@ SIPSTACK also supports the receiving of concatenated messages up to 1,600 charac
 `
 },
 {
-    slug: "does-recipient-get-charged",
-    title: "Does the recipient of my SIPSTACK message get charged?",
-    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
-    abstract: "",
-    created: "13/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-We will not charge the recipient of your message for receiving a SIPSTACK message. However, it’s possible that the recipient can be charged by their phone provider.
-
-Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
-
-SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`
-},
-{
     slug: "emojis-on-sipstack-sms",
     title: "Can SIPSTACK SMS send and receive emoji?",
     subtitle: "",
@@ -414,6 +395,25 @@ Wireless carriers in Canada and the United States routinely publish Deactivation
 Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
 
 Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
+`
+},
+{
+    slug: "does-recipient-get-charged",
+    title: "Does the recipient of my SIPSTACK message get charged?",
+    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
+    abstract: "",
+    created: "13/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+We will not charge the recipient of your message for receiving a SIPSTACK message. However, it’s possible that the recipient can be charged by their phone provider.
+
+Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
+
+SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
 `
 },
 {
