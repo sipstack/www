@@ -30,14 +30,33 @@ func_dev1 () { # build
 func_dev2 () { # CI/CD prep
         ### if CI/CD performed in gitlab on main ------------------
         echo "--------------------------------------------------------------------------------"
-        echo "Pipleline is running... Check Gitlab for more information. This process is now done, exiting."
-        # echo "Pipleline not implemented. Proceeding to next steps..."
-        exit 0
+        # echo "Pipleline is running... Check Gitlab for more information. This process is now done, exiting."
+        echo "Pipleline not implemented. Proceeding to next steps..."
+        # exit 0
 }
 
 func_dev3 () {
-        # nothing required here:
-        exit 0
+       ### when CI/CD not used in gitlab -------------------------
+        func_yesno "Ready to publish ${APPNAME} ${SUBNAME}: ${BRANCH} to production servers?"
+        
+        echo "No pre-build required."
+
+        func_yesno "Ready to push latest (${VER}) docker container to registry (registry.sipstack.com)..."
+        docker image tag sipstack/${APPNAME}:dev registry.sipstack.com/web/${APPNAME}:${VER}
+        docker image push registry.sipstack.com/web/${APPNAME}:${VER}
+        docker image tag sipstack/${APPNAME}:dev registry.sipstack.com/web/${APPNAME}:latest
+        docker image push registry.sipstack.com/web/${APPNAME}:latest
+        ### review ------------------------------------------------
+        echo ""
+        echo "--------------------------------------------------------------------------------"
+
+        echo "Running remote SSH commands"
+        ssh root@dme-721.sipstack.com docker pull registry.sipstack.com/web/www
+        ssh root@dme-721.sipstack.com docker-compose -f /root/docker/compose/web/docker-compose.yml up -d
+        ### when pushing assets to CDN required --------------------
+        # echo "Pushing content to CDN"
+        # mkdir -p tmp
+        # gulp publish --env production
 }
 
 
