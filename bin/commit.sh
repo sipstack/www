@@ -1,5 +1,4 @@
 #!/bin/bash
-BRANCH=$(git status | head -1 | cut -c 11-)
 echo "#############################################################################"
 echo " ____ ___ ____  ____ _____  _    ____ _  __"
 echo "/ ___|_ _|  _ \/ ___|_   _|/ \  / ___| |/ /"
@@ -10,63 +9,99 @@ echo ""
 echo "#############################################################################"
 echo ""
 
-
+. "${BASH_SOURCE%/*}/commit_func.sh"
 BRANCH=$(git status | head -1 | cut -c 11-)
-# RELEASE=$(grep -oP '(?<="version": ").*?(?=",)' package.json)
-# IFS='.' read -r -a VERSION <<< "$RELEASE"
-# BUMP=$(expr ${VERSION[2]} + 1)
-# NEWRELEASE=${VERSION[0]}.${VERSION[1]}.$BUMP
+# RELEASE=$(tail -1 RELEASE)
+RELEASE=$(grep -oP '(?<="version": ").*?(?=",)' package.json)
+APPNAME=$(grep -oP '(?<="name": ").*?(?=",)' package.json)
+SUBNAME=""
 
-# read -p "Confirm new version bump - Current: ${RELEASE} -> ${NEWRELEASE} (Press enter to confirm or input new version): " VER
-# VER=${VER:-$NEWRELEASE}
-
-read -p "Are you ready to COMMIT ${BRANCH}: (y/n)?: " SE
-if [[ "${SE}" == "y" ]]; then
-    sed -i "s|\"version\": \"${RELEASE}\"|\"version\": \"${VER}\"|g" package.json
+## check if branch passed requirement (release)
+# if [[ "${BRANCH}" != "release-"* ]]; then 
+if [[ "${BRANCH}" == "main" ]]; then 
+    echo "Cannot publish from this branch (${BRANCH}).";
     exit 0
-    git commit -a -m "${BRANCH} (${VER})"
-    git push origin ${BRANCH}
-    git checkout master
-    git merge --no-ff ${BRANCH} -m "${BRANCH} -> master (${VER})"
-    git tag -a ${VER} -m "${VER}"
+else 
+    echo "Commit types:"
+    echo "--------------------------------------------------------------------------------"
+    echo "feat: (new feature for the user, not a new feature for build script) * DEFAULT"
+    echo "fix: (bug fix for the user, not a fix to a build script)"
+    echo "docs: (changes to the documentation)"
+    echo "style: (formatting, missing semi colons, etc; no production code change)"
+    echo "refactor: (refactoring production code, eg. renaming a variable)"
+    echo "test: (adding missing tests, refactoring tests; no production code change)"
+    echo "chore: (updating grunt tasks etc; no production code change)"
+    echo "--------------------------------------------------------------------------------"
+    read -p "Specify commit type (feat): " COMMIT_TYPE
+        COMMIT_TYPE=${COMMIT_TYPE:-feat} 
+        case "$COMMIT_TYPE" in 
+            feat ) echo "feat";;
+            fix ) echo "fix";;
+            docs ) echo "docs";;
+            style ) echo "style";;
+            refactor ) echo "refactor";;
+            test ) echo "test";;
+            chore ) echo "chore";;
+            * ) echo "Enter a valid commit type." && exit 0;;
+        esac 
+    
+    read -p "Commit message: " COMMIT_MSG
+    if [[ "${COMMIT_MSG}" == "" ]]; then
+        echo "Enter a valid commit message."
+        exit 0
+    fi
     git add .
-    git commit -m "${BRANCH} -> master (${VER})"
+    git commit -m "${COMMIT_TYPE}: ${COMMIT_MSG}"
     git push
-    git push origin --tags 
 
-        read -p "Ready to deploy to ${VER} environment using release: ${BRANCH}? (y/n): " SE 
-    SE=${SE:-n} 
-    case "$SE" in 
-        y|Y ) echo "yes";;
-        n|N ) echo "no" && exit 0;;
-        * ) echo "Options: y/n" && exit 0;;
-    esac
+    if [[ "${BRANCH}" == "develop" ]]; then 
+        func_dev1 # build
 
-    RESP=$(node_modules/.bin/pm2 deploy ecosystem.config.js production update --env production | tail -1 )
-    echo $RESP
+        echo ""
+        echo "--------------------------------------------------------------------------------"
+        func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main then deploy to production servers?"
+        
+        read -p "Specify new version of ${APPNAME} (Current: ${RELEASE}): " VER
+            VER=${VER:-${RELEASE}}
+        echo ${VER}
 
-    read -p "Did the publish succeed? (y/n): " SE 
-    SE=${SE:-n} 
-    case "$SE" in 
-        y|Y ) echo "yes";;
-        n|N ) echo "no" && exit 0;;
-        * ) echo "Options: y/n" && exit 0;;
-    esac
+        read -p "Are you ready to merge ${BRANCH} to main: (y/n)?: " SE
+        if [[ "${SE}" == "y" ]]; then
+            # echo ${VER} > RELEASE
+            sed -i "s|\"version\": \"${RELEASE}\"|\"version\": \"${VER}\"|g" package.json
+            git commit -a --no-verify -m "${BRANCH} (${VER})"
+            git push origin ${BRANCH}
+            git checkout main
+            # git merge --no-ff ${BRANCH} -m "${BRANCH} -> main (${VER})"
+            git merge --no-verify --no-ff ${BRANCH} -m "${VER}"
+            git tag -a ${VER} -m "${VER}"
+            git add .
+            # git commit -m "${BRANCH} -> master (${VER})"
+            git commit --no-verify -m "${VER}"
+            git push
+            git push origin --tags 
+            git checkout develop
+            echo ""
+            echo "Merge into main complete: review output above."
 
-    echo "Pushing content to CDN"
-    mkdir -p tmp
-    gulp publish --env production
+            func_dev2 # ci/cd
+            func_dev3 # deploy (if required)
 
-    git checkout develop
-    git merge --no-ff ${BRANCH} -m "${BRANCH} -> develop (${VER})"
-    git add .
-    git commit -m "${BRANCH} -> develop (${VER})"
-    git push
-    git branch -d ${BRANCH}
-    git push origin --delete ${BRANCH}
+            ### when using branch release- ----------------------------
+            # echo "Merging main -> develop to complete the commit."
+            # git checkout develop
+            # git merge --no-ff ${BRANCH} -m "${BRANCH} -> develop (${VER})"
+            # git add .
+            # git commit -m "${BRANCH} -> develop (${VER})"
+            # git push
+            # git branch -d ${BRANCH}
+            # git push origin --delete ${BRANCH}
 
-    echo "------------------------------------------------------------------"
-    echo "Success! https://hub.sipstack.com is now live with version: ${VER}"
+            echo "------------------------------------------------------------------"
+            echo "Success! ${APPNAME} is now live with version: ${VER}"
 
-    exit 0
+            exit 0
+        fi
+    fi
 fi
+
