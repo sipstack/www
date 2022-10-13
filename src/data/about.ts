@@ -152,12 +152,12 @@ export const gridTeam = [
       {
         name: 'Linkedin',
         icon: 'feather:linkedin',
-        url: 'https://www.linkedin.com/in/vraj-patel-1baa44197/',
+        url: 'https://www.linkedin.com/in/therealvrajpatel/',
       },
       {
         name: 'GitHub',
         icon: 'feather:github',
-        url: 'https://github.com/ChocoMufnChocoMufn',
+        url: 'https://github.com/ChocoMufn',
       },
     ],
   },
@@ -165,7 +165,13 @@ export const gridTeam = [
     image: '/assets/img/team/pranitn.jpg',
     name: 'Pranit Narula',
     position: 'Software Engineer',
-    socialLinks: [],
+    socialLinks: [
+      {
+        name: 'GitHub',
+        icon: 'feather:github',
+        url: 'https://github.com/peanut616',
+      },
+    ],
   },
 ]
 
