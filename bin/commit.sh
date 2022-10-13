@@ -55,8 +55,12 @@ else
     git push
 
     if [[ "${BRANCH}" == "develop" ]]; then 
-        func_dev1 # build
-
+        if [ -n "$(git status --porcelain)" ]; then
+            func_dev1 # build
+        else
+            echo "No changes on branch: ${BRANCH}. Continue next."
+        fi
+        
         echo ""
         echo "--------------------------------------------------------------------------------"
         func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main then deploy to production servers?"
