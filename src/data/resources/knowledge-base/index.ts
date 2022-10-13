@@ -244,6 +244,37 @@ In most countries, mobile numbers are assigned to a particular range within the 
         }
     ],
     articles: [{
+    slug: "what-is-A2P-10DLC",
+    title: "What is A2P 10DLC?",
+    subtitle: "A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .",
+    abstract: "",
+    created: "14/10/2022", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
+
+## Existing Alternatives
+
+While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
+
+**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
+
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
+
+**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
+
+## Benefits of 10DLC
+
+A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
+
+`
+},
+
+{
     slug: "what-is-stir-shaken",
     title: "What is STIR/SHAKEN?",
     subtitle: "STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.",
@@ -427,6 +458,21 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `
 },
 {
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`
+},
+{
     slug: "can-my-sms-messages-arrive-in-order",
     title: "Can my SMS messages arrive in order?",
     subtitle: "",
@@ -530,21 +576,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
-    subtitle: "",
-    abstract: "",
-    created: "22/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`
-},
-{
     slug: "delivery-order-of-multiple-media-files-via-mms",
     title: "Delivery order of multiple media files via MMS",
     subtitle: "",
@@ -557,25 +588,6 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
     },
     content: `
 Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
-`
-},
-{
-    slug: "does-recipient-get-charged",
-    title: "Does the recipient of my SIPSTACK message get charged?",
-    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
-    abstract: "",
-    created: "13/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-We will not charge the recipient of your message for receiving a SIPSTACK message. However, it's possible that the recipient can be charged by their phone provider.
-
-Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
-
-SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
 `
 },
 {
@@ -643,6 +655,25 @@ A single Unicode-encoded message to US Cellular can be up to 70 characters long,
 
 ## Receiving inbound concatenated SMS
 SIPSTACK also supports the receiving of concatenated messages up to 1,600 characters. Inbound messages over 160 characters long will be received on your SIPSTACK phone number as one single message, as long as the sending carrier supports concatenation. The price of the inbound message will be the sum of the total number of segments.
+`
+},
+{
+    slug: "does-recipient-get-charged",
+    title: "Does the recipient of my SIPSTACK message get charged?",
+    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
+    abstract: "",
+    created: "13/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+We will not charge the recipient of your message for receiving a SIPSTACK message. However, it's possible that the recipient can be charged by their phone provider.
+
+Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
+
+SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
 `
 },
 {
@@ -766,21 +797,6 @@ Toll-free phone numbers may be a better fit for certain use cases. Unlike short 
 `
 },
 {
-    slug: "mms-message-long-code-cost",
-    title: "How much does it cost to send and receive an MMS message over long codes?",
-    subtitle: "",
-    abstract: "",
-    created: "31/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
-`
-},
-{
     slug: "is-mms-supported-for-all-carriers",
     title: "Is MMS supported for all carriers in Canada and US?",
     subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
@@ -803,6 +819,21 @@ Currently, SIPSTACK supports sending MMS messages from local long code numbers t
 When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
 
 The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
+`
+},
+{
+    slug: "mms-message-long-code-cost",
+    title: "How much does it cost to send and receive an MMS message over long codes?",
+    subtitle: "",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `
 },
 {
