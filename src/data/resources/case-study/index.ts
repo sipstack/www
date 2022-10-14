@@ -1,20 +1,19 @@
 export const posts = [
-
-{
-    slug: "20210412-telair",
-    image: "/assets/img/resources/case-study/20210412-telair/telair.png",
-    category: "VoIP History",
+  {
+    slug: '20210412-telair',
+    image: '/assets/img/resources/case-study/20210412-telair/telair.png',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "Driving Success: Simplifying Customization with SIPSTACK",
-    abstract: "",
-    created: "12/03/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'Driving Success: Simplifying Customization with SIPSTACK',
+    abstract: '',
+    created: '12/03/2021', //dd/mm/yyyy
+    updated: '',
     duration: 4, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ## About Telair
@@ -54,7 +53,7 @@ SIPSTACK uses smart AI tools to continuously monitor a company's call destinatio
 
 But what really makes the overhaul of Telair's legacy software and equipment worth it for Telair is that customization is also just a few clicks away! 
 
-![four](src_content/resources/case-study/20210412-telair/four.png)
+![four](/src_content/resources/case-study/20210412-telair/four.png)
 
 ## Use Cases
 Telair has already been able to use SIPSTACK's APIs to support two distinct use cases. The first one is a CRM integration for a real estate brokerage. The second one is an order management system for a pizza franchise. For both cases, Telair leveraged SIPSTACK's ability to seamlessly integrate with third-party applications to provide each customer with the exact customizations they needed. The CEO of Telair, Jonathan Geller describes each use case in detail. 
@@ -65,7 +64,7 @@ Telair has already been able to use SIPSTACK's APIs to support two distinct use 
 ### Order Management
 *'The client wanted a VoIP solution that could help their delivery team coordinate web orders, customers get accurate wait times based on the number of staff working at each pizza location and the ability for staff at each pizza location torecommend pizzas based on a customer's previous order.'*
 
-![telair](src_content/resources/case-study/20210412-telair/telair.png)
+![telair](/src_content/resources/case-study/20210412-telair/telair.png)
 
 ## Driving Success with SIPSTACK
 By implementing the SIPSTACK platform, Telair is able to serve and support its customers at a whole new level without adding costs that would eat away at their bottom line. Now, Telair's customers can do more, understand more, and see more of their VoIP solution, all within one easy-to-use, visually appealing web portal. 
@@ -83,6 +82,6 @@ All customers who sign up with Telair before June 2021 will be transitioned to t
 
 
 
-`
-},
+`,
+  },
 ]
