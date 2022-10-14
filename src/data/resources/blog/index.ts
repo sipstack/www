@@ -29,7 +29,7 @@ Scammers have evolved, to pursue a multitude of avenues and detailed schemes, in
 4.  **Merchandising scams** costed Canadians $5.6 million<sup>7</sup>. Criminals create classified ads or a fake websites to sell a variety of items such as concert tickets, puppies, vehicles or even rent out apartments.
 5.  **Service scams** costed Canadians $4.8 million<sup>8</sup>. Here, scammers offer services such as credit cards, insurance or phone plans in an effort to gain access to the victims credit card or bank account.
 
-## **The technology behind telecommunication scams**
+## The technology behind telecommunication scams
 
 Scams and frauds rely on a multitude of advanced technology to outsmart fraud prevention. Below are the five most prevalent advancements in technology that are leveraged in scams.
 
@@ -39,13 +39,13 @@ Scams and frauds rely on a multitude of advanced technology to outsmart fraud pr
 4.  **Call Stretching:** This scam is run by fraudulent carriers to charge more money directly from legitimate carriers. A portion of live conversation is recorded from an active call which is played to one caller, after the other caller is dropped. The time it takes for the second caller to realize that the call has been disconnected and hangs up, is time that fraudulent carrier has successfully added to the duration of the call. Legitimate carriers measure pay out according to the duration of the call and so they end up paying more to the fraudulent carriers than they actually owe. While this may only add seconds, when conducted on a massive scale this technology can generate significant revenue.
 5.  **PBX Hacking:** One of the most common and significant types of telecom fraud is PBX Hacking. A PBX, **P**rivate **B**ranch **E**xchange, is a private telephone network within an organization. It connects the business to an external network, allowing users to share outside lines while reducing the number of lines needed. When one hacks into a PBX, they can run up a big bill initiating international calls, resulting in unauthorized charges for the PBX/business owner.
 
-**## What the government of Canada is doing to fight fraud**
+## What the government of Canada is doing to fight fraud
 
 The **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, will be overseeing the implementation of [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken%5D), in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling of **A**sserted information using to**KENs** work separately to authenticate caller information.
 
 However, Canadians are a far way from being fully protected from caller ID spoofing. The CRTC is only in the beginning stages of implementation, and is currently exploring mandated readiness assessments from carriers <sup>10</sup>. Once STIR/SHAKEN is implemented, numbers can only be verified if the device is compatible, and both carriers of a call have adopted the guidelines. While STIR/SHAKEN provides guidelines for authentication, no third party management exists to monitor the CID validation process, leaving each carrier to implement their own standards. Additionally, a majority of CID spoofing occurs when an individual is hacked. Calls made with this stolen ID will still be validated by STIR/SHAKEN as it is unable to identify the caller behind the phone number.
 
-## **How SIPSTACK fights fraud**
+## How SIPSTACK fights fraud
 
 Using the latest machine learning (AI) technology, SIPSTACK's systems validates callers phone numbers in real time which can provide enhanced security information to allow reciving callers to make informed desiscions about a phone call. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow.  [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam or visit [Whois by SIPSTACK](https://whois.sipstack.com) for real time lookups against phone numbers.
 
@@ -62,10 +62,7 @@ Using the latest machine learning (AI) technology, SIPSTACK's systems validates 
 
 <sup>9 Arafat, Mais, Abdallah Qusef, and George Sammour. "Detection of wangiri telecommunication fraud using ensemble learning." _2019 IEEE Jordan International Joint Conference on Electrical Engineering and Information Technology (JEEIT)_. IEEE, 2019.</sup>
 
-<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm)</sup>.
-
-
-
+<sup>10 [https://crtc.gc.ca/eng/archive/2021/2021-123.htm](https://crtc.gc.ca/eng/archive/2021/2021-123.htm)</sup>
 `,
   },
 
@@ -84,7 +81,7 @@ Using the latest machine learning (AI) technology, SIPSTACK's systems validates 
     author: {
       name: 'Anjana Uthayakumaran',
       role: 'Author',
-      photo: '/assets/img/team/anjana.jpg',
+      photo: '/assets/img/team/anjanaa.jpg',
     },
     content: `
 **Milestone alert!** Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release. [Learn more](https://www.sipstack.com/products/whois) and join us on our mission to building a secure connected tomorrow.
