@@ -146,21 +146,6 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
 `
 },
 {
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`
-},
-{
     slug: "can-sipstack-numbers-receive-sms-from-a-short-code",
     title: "Can SIPSTACK numbers receive SMS from a short code",
     subtitle: "",
@@ -183,6 +168,21 @@ Before you request for your account to be enabled to receive incoming short code
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
 - You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via “STOP,” or send “HELP” messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+`
+},
+{
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -261,6 +261,25 @@ The above information is applicable to MMS messaging. Other messaging channels s
     },
     content: `
 Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`
+},
+{
+    slug: "does-recipient-get-charged",
+    title: "Does the recipient of my SIPSTACK message get charged?",
+    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
+    abstract: "",
+    created: "13/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+We will not charge the recipient of your message for receiving a SIPSTACK message. However, it’s possible that the recipient can be charged by their phone provider.
+
+Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
+
+SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
 `
 },
 {
@@ -371,52 +390,6 @@ If a user tires to assign an outbound message with this category, the message wi
 `
 },
 {
-    slug: "handling-deactivated-phone-numbers",
-    title: "Handling Deactivated Phone Numbers",
-    subtitle: "This article describes best practices that should be followed while dealing with deactivated phone numbers, including how to find out if a phone number has been deactivated and how to deal with deactivated phone numbers.",
-    abstract: "",
-    created: "24/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-## What is a deactivated phone number?
-A phone number is deactivated on one wireless carrier when a mobile subscriber either terminates their service with that carrier or ports their number to a different wireless carrier. Eventually, each deactivated numbers get recycled, and gets assigned to new subscribers.
-
-## Why is it important to keep track of deactivated phone numbers?
-When a deactivated number is assigned to a new subscriber, it means that that phone number is no longer associated with the end user who opted in to your messaging campaign. 
-
-## How do I track deactivated phone numbers on my network?
-Wireless carriers in Canada and the United States routinely publish Deactivation Reports that contain a list of all the deactivated phone numbers within their networks. These reports help message senders keep their programs in compliance.
-
-## What happens if I don’t keep a list of healthy subscribers?
-Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
-
-Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
-`
-},
-{
-    slug: "does-recipient-get-charged",
-    title: "Does the recipient of my SIPSTACK message get charged?",
-    subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
-    abstract: "",
-    created: "13/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-We will not charge the recipient of your message for receiving a SIPSTACK message. However, it’s possible that the recipient can be charged by their phone provider.
-
-Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
-
-SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`
-},
-{
     slug: "how-to-use-toll-free-phone-numbers",
     title: "How to use toll-free phone numbers for SMS and MMS in Canada",
     subtitle: "Toll-free numbers are designated for business messaging use by most major mobile carriers in Canada (Rogers, Fido, Telus and Videotron) and by all major carriers in the US.",
@@ -467,6 +440,33 @@ A short code is the ideal solution for high-volume A2P use cases. By default, sh
 Toll-free phone numbers may be a better fit for certain use cases. Unlike short codes, toll-free phone numbers can be used for placing and receiving voice calls in addition to SMS messages. Toll-free SMS may also be a good choice for a business that needs A2P-type communications, but is not ready to apply for a short code.
 
 
+`
+},
+{
+    slug: "handling-deactivated-phone-numbers",
+    title: "Handling Deactivated Phone Numbers",
+    subtitle: "This article describes best practices that should be followed while dealing with deactivated phone numbers, including how to find out if a phone number has been deactivated and how to deal with deactivated phone numbers.",
+    abstract: "",
+    created: "24/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+## What is a deactivated phone number?
+A phone number is deactivated on one wireless carrier when a mobile subscriber either terminates their service with that carrier or ports their number to a different wireless carrier. Eventually, each deactivated numbers get recycled, and gets assigned to new subscribers.
+
+## Why is it important to keep track of deactivated phone numbers?
+When a deactivated number is assigned to a new subscriber, it means that that phone number is no longer associated with the end user who opted in to your messaging campaign. 
+
+## How do I track deactivated phone numbers on my network?
+Wireless carriers in Canada and the United States routinely publish Deactivation Reports that contain a list of all the deactivated phone numbers within their networks. These reports help message senders keep their programs in compliance.
+
+## What happens if I don’t keep a list of healthy subscribers?
+Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
+
+Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
 `
 },
 {
