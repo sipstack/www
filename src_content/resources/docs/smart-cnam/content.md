@@ -2,9 +2,11 @@
 Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comprehensive than a name response, with the capacity to pull up a tremendous amount of relevant, up to date information. Smart CNAM pairs with Whois Profiles in order to capture and return up to date and relevant caller information. 
 
 # Prerequisites
-[SIPTACK Partner Account](url)
+You will need a [SIPTACK Partner Account](url)
 
-[Funds in your account](url)
+If you are looking up risk scores, the destination callee number must be registered in your [Whois Profiles](url)
+
+Each lookup incurs an API charge so you need to have sufficient [funds in your account](url)
 # Smart CNAM
 To access the smart CNAM lookup system, select Smart CNAM on the left pane. 
 ## Lookup Type
@@ -18,5 +20,5 @@ To run a lookup, enter the Source caller and depending on the type of lookup als
 In order to run Source/ Risk lookup the Destination Callee number must be registered under Whois Profiles found on the left pane. 
 ## What do Score/Risk scores mean?
 Source/Risk scores are rated out of 5. SIPSTACK’s proprietary algorithm uses Artificial Intelligence and Machine Learning to uniquely weigh a number of factors to determine the score assigned to each call. These are dynamic and change based on a variety of factors. 
-Here is a breakdown of the scores: ## How much does it cost
-You can find out pricing by clicking on Pricing under Billing. Each lookup incurs an API charge. If you don’t have sufficient funds in your account, the system will return a null result. 
+## How much does it cost
+You can find out pricing by clicking on Pricing under Billing. . If you don’t have sufficient funds in your account, the system will return a null result. 
