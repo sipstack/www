@@ -52,7 +52,7 @@ export const faq = {
 		{
 			title: "How do I add funds to my account?",
 			content:
-				"You can add funds to your account throught the SIPSTACK Partner Portal.",
+				"You can add funds to your account through the SIPSTACK Partner Portal.",
 		},
 		{
 			title: "How accurate is the information returned?",
@@ -76,7 +76,7 @@ export const faq = {
 				"Depending on many factors, our AI/ML will determine the distance between callers, how often a caller makes calls to those regions or numbers just to list a few that makeup the learning conditions. Call rating will always be dynamic.",
 		},
 		{
-			title: "Why is a caller suddently receiving lower scores?",
+			title: "Why is a caller suddenly receiving lower scores?",
 			content:
 				"If the same number is calling the same destination and the score changes dramatically, this could indicate that abnormal or fraudulent call behaviours have been suspected and community feedback has been verified. Scoring is adaptive and much like turning on any new system, there is a warm up phase.",
 		},
@@ -88,6 +88,6 @@ export const faq = {
 };
 
 export const cta = {
-	title: "Smarter CNAM Begin Here",
+	title: "Smarter CNAM Begins Here",
 	subtitle: "Credit card not required to sign up.",
 };
