@@ -7,15 +7,15 @@ const topics = [
   {
     icon: 'ph:swap-duotone',
     iconColor: 'secondary',
-    title: 'API',
-    text: 'Check out our API Reference docs for everything SIPSTACK!',
-    link: 'api',
+    title: 'Partner Portal',
+    text: 'Access all of our products through one centralized portal.',
+    link: 'partner-portal',
   },
   {
     icon: 'ph:files-duotone',
     iconColor: 'primary',
-    title: 'Whois',
-    text: 'Say goodbye to fraudsters & spammers with Whois.',
+    title: 'Whois Profile',
+    text: 'Say goodbye to fraudsters & spammers with Whois Profiles.',
     link: 'whois',
   },
   {
@@ -32,6 +32,13 @@ const topics = [
     title: 'SIP Free',
     text: 'Lower your operational costs with enhanced SIP Trunks.',
     link: 'sip-free',
+  },
+  {
+icon: 'ph:swap-duotone',
+    iconColor: 'secondary',
+    title: 'API',
+    text: 'Check out our API Reference docs for everything SIPSTACK!',
+    link: 'api',
   },
 ]
 </script>
