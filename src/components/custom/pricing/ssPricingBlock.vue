@@ -7,6 +7,7 @@ export interface PricingBlockItem {
   monthlyPrice: number
   yearlyPrice: number
   features: string[]
+  tag: string
 }
 
 export interface PricingBlockProps {
@@ -47,11 +48,18 @@ watch(billing, (newVal, oldVal) => {
       <div class="pricing-card">
         <div class="columns is-gapless b-columns-half-tablet-p">
           <!-- Plan -->
+
           <div
             v-for="(plan, index) in props.plans.slice(0, 4)"
             :key="index"
             class="column is-3">
             <div class="condensed-plan">
+              <div v-if="plan.tag" class="ss-tag">
+                <Tag color="danger" label="danger">
+                  {{ plan.tag }}
+                </Tag>
+              </div>
+
               <div class="plan-header">{{ plan.name }}</div>
               <div class="plan-description">
                 {{ plan.text }}
@@ -158,6 +166,17 @@ watch(billing, (newVal, oldVal) => {
       box-shadow: var(--spread-shadow);
       z-index: 2;
 
+      .ss-tag {
+        display: flex;
+        // justify-content: center;
+        // margin-top: -13px;
+        position: absolute;
+        top: -0.75rem;
+        left: 3.2rem;
+        // right: 0;
+        // margin: 0 auto;
+      }
+
       .condensed-plan {
         padding: 1.75rem 1rem;
         text-align: center;
@@ -175,7 +194,7 @@ watch(billing, (newVal, oldVal) => {
           font-family: var(--font);
           font-size: 0.9rem;
           color: var(--medium-text);
-          padding-bottom: 20px;
+          // padding-bottom: 20px;
 
           span {
             font-weight: 500;
@@ -187,7 +206,8 @@ watch(billing, (newVal, oldVal) => {
           position: relative;
           left: -10px;
           font-family: var(--font);
-          font-size: 4.5rem;
+          // font-size: 4.5rem;
+          font-size: 3.5rem;
           font-weight: 400;
           color: var(--title-color);
           padding-bottom: 0;
