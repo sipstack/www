@@ -165,6 +165,7 @@ function res_blog_images(cb) {
     'src_content/resources/blog/**/*.png',
     'src_content/resources/blog/**/*.jpeg',
     'src_content/resources/blog/**/*.jpg',
+    'src_content/resources/blog/**/*.svg',
   ])
     // .pipe(
     //  tap(function (file, t) {
