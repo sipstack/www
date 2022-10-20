@@ -20,11 +20,3 @@ In order to run Source/ Risk lookup the Destination Callee number must be regist
 Source/Risk scores are rated out of 5. SIPSTACK’s proprietary algorithm uses Artificial Intelligence and Machine Learning to uniquely weigh a number of factors to determine the score assigned to each call. These are dynamic and change based on a variety of factors. 
 Here is a breakdown of the scores: ## How much does it cost
 You can find out pricing by clicking on Pricing under Billing. Each lookup incurs an API charge. If you don’t have sufficient funds in your account, the system will return a null result. 
-
-# Whois Profiles
-Whois profiles allows you to register and add information relating to the phone numbers that you manage, allowing you to enhance the score rating of those phone numbers. 
-## How do I register numbers? 
-To register a number under a carrier, select Whois Profiles on the left pane. Select the green plus button and fill all required fields under the three tabs general, location and additional. Transparency helps your own Source/Risk score and the larger goal of creating  safer telecommunications. To maintain privacy, simply toggle the private caller option to hide your information from others. Please note: not providing an accurate caller id may impact your overall score as a carrier. 
-## Can I register a number I don’t own?
-If a carrier attempts to register a number that they don’t own, we will be notified when the rightful owner signs up to register. Disciplinary actions will be sanctioned as seen fit, for example, lowering the score of the carrier for deceitful actions.  
-
