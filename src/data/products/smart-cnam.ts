@@ -46,9 +46,13 @@ export const features: IconFeature[] = [
 export const faq = {
 	left: [
 		{
-			title: "What is the difference between a Partner & Vertical?",
+			title: "How does it differ from regular CNAM lookup tools?",
+			content: "Smart CNAM is a next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.",
+		},
+		{
+			title: "How do I add funds to my account?",
 			content:
-				"Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.",
+				"You can add funds to your account throught the SIPSTACK Partner Portal.",
 		},
 		{
 			title: "How accurate is the information returned?",
@@ -56,11 +60,16 @@ export const faq = {
 				"Very accurate! Our AI/ML is constantly learning and adapting ensuring that caller information is up to date, and any meta data such as websites, emails, social, etc... are all current. Caller badges indicate call details are verified, however call ratings will always be dynamic.",
 		},
 		{
-			title: "How does it differ from regular CNAM lookup tools?",
-			content: "Smart CNAM is a next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.",
+			title: "What is the difference between a Partner & Vertical?",
+			content:
+				"Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.",
 		},
 	],
 	right: [
+		{
+			title: "How is sales tax applied?",
+			content: "If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.",
+		},
 		{
 			title: "Why some people receive different scores?",
 			content:
