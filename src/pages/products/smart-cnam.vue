@@ -13,6 +13,7 @@ const pricingBlockPlans = [
     monthlyPrice: 0.001,
     yearlyPrice: 0,
     features: ['Risk Score', '--', '--', '--', '--', '--'],
+    tag: 'Free for limited time',
   },
   {
     name: 'CNAM',
