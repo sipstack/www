@@ -1,43 +1,107 @@
 export const posts = [
-{
-    slug: "whois-reaching-masses",
-    image: "/assets/posts/post-22.svg",
-    category: "Press",
-    tags: ["whois"],
+  {
+    slug: 'the-state-of-spam-calling-in-the-US',
+    image:
+      '/assets/img/resources/blog/20221020-the-state-of-telecommunications-spam-in-the-US/issue-50.svg',
+    category: 'Spam',
+    tags: ['SIPSTACK'],
     views: 0,
-    title: "Whois already reaching the masses",
-    abstract: "Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release.",
-    created: "13/09/2022", //dd/mm/yyyy
-    updated: "",
+    title: 'The State of Telecommunications Spam in the United States',
+    abstract:
+      'Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month .',
+    created: '20/10/2022', //dd/mm/yyyy
+    updated: '',
+    duration: 7, // minute read
+    author: {
+      name: 'Anjana Uthayakumaran',
+      role: 'Author',
+      photo: '/assets/img/team/anjanaa.jpg',
+    },
+    content: `
+Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to **3 billion spam calls a month**<sup>1</sup>. Americans reported losses totalling nearly **$30 billion** to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost **1 in every 3 Americans have fallen victim to phone scams**, 19% have been victimized on more than one occasion<sup>3</sup>.
+
+## **The top five types of scams in the US**
+
+Scammers are rampant in the US and when unchecked, flourish on victims of various ages and backgrounds through a variety of detailed schemes. Here are the five of the most common scams in the US, ranked by rate of occurrence.
+
+1.  **Prizes and free gifts scams** make up 35.23% of total scams, and costed the average American victim $795 USD in 2021<sup>4</sup>. Here, scammers offer nonexistent prizes and free gifts in an effort to gain access to the victims credit card or bank account.
+2.  **Merchandising scams** make up 19.58% of total scams, and costed the average American victim $500 USD in 2021<sup>5</sup>. Criminals create classified ads or a fake websites to sell a variety of items such as concert tickets, puppies, vehicles or even rent out apartments.
+3.  **Spearfishing scams** make up 17.49 % of total scams, and costed the average American victim $800 USD in 2021<sup>6</sup>. Scammers' use [illegal caller ID spoofing](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken), posing as a government agency or a reputable business without permission.
+4.  **Fake check scams** make up 5.59 % of total scams, and costed the average American victim $2000 in 2021<sup>7</sup>. Victims are issued a check for an amount more than is owed to them, and are request to directly wire the excess funds back. Because cheques can days or even weeks to verify, it is only after the money is sent victims learn the original cheque was fake.
+5.  **Friendship and romance scams** make up 3.35% of scams, and costed the average American victim<sup>8</sup>. Criminals create fake profiles on social media platforms and/ or to build virtual relationships with people. At times they take years to build trust, and eventually solicit money out of their supposed friends and partners.
+
+## **The technology behind telecommunication scams**
+
+Scams and frauds rely on a multitude of advanced technology to outsmart fraud prevention. Below are the five most prevalent advancements in technology that are leveraged in scams.
+
+1.  **Wangiri:** Wangiri is a Japanese term directly translating to "one ring and cut" <sup>9</sup>. Like the translation suggests, the victims' phone will only ring once, often at odd hours, when calls are less likely to be answered. When victims return the call, it will get rerouted to a premium-rate number overseas for which they will get charged by their telecom provider.
+2.  **Caller ID spoofing:** CNAM, is the [**C**aller **NAM**e, and CID, is the **C**aller **ID**](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam) or phone number that is displayed when receiving a call. While call centres may have permission to duplicate their clients' CNAM and/or CID, it is illegal to replicate and imitate a CID without permission. Spammers either utilize the numbers of reputable companies or individuals within the same area code of the victim to gain their trust.
+3.  **Short stopping:** In this scheme, a hacker hijacks a call before it reaches its target destination by working with a rogue carrier on the call's path. The hacker the redirects the call to an international phone number, allowing hackers to surcharge their victim. Sometimes, the caller will hear a false ring tone or a doctored network message such as _The person you have called cannot be reached. Please try again later._ The hackers and rogue carriers share the revenue generated by these calls, which are either billed to the customer or another carrier in the routing flow.
+4.  **Call Stretching:** This scam is run by fraudulent carriers to charge more money directly from legitimate carriers. A portion of live conversation is recorded from an active call which is played to one caller, after the other caller is dropped. The time it takes for the second caller to realize that the call has been disconnected and hangs up, is time that fraudulent carrier has successfully added to the duration of the call. Legitimate carriers measure pay out according to the duration of the call and so they end up paying more to the fraudulent carriers than they actually owe. While this may only add seconds, when conducted on a massive scale this technology can generate significant revenue.
+5.  **PBX Hacking:** One of the most common and significant types of telecom fraud is PBX Hacking. A PBX, **P**rivate **B**ranch **E**xchange, is a private telephone network within an organization. It connects the business to an external network, allowing users to share outside lines while reducing the number of lines needed. When one hacks into a PBX, they can run up a big bill initiating international calls, resulting in unauthorized charges for the PBX/business owner.
+
+## **What the US government is doing to fight fraud**
+
+The **FCC** **F**ederal **C**ommunications **C**ommission is overseeing the implementation and maintenance of [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken), in efforts to deter illegal caller ID spoofing. **STIR,** **S**ecure **T**elephony **I**dentity **R**evisited, and **SHAKEN**, **S**ignature-based **H**andling of **A**sserted information using to**KENs** work separately to authenticate caller information.
+
+However, Americans are a far way from being fully protected from caller ID spoofing. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. Once STIR/SHAKEN is implemented, numbers can only be verified if the device is compatible, and both carriers of a call have adopted the guidelines. While STIR/SHAKEN provides guidelines for authentication, no third party management exists to monitor the CID validation process, leaving each carrier to implement their own standards. Additionally, a majority of CID spoofing occurs when an individual is hacked. Calls made with this stolen ID will still be validated by STIR/SHAKEN as it is unable to identify the caller behind the phone number.
+
+## **How SIPSTACK fights fraud**
+
+Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
+
+#### References
+
+<sup>1 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
+<sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>
+<sup>3 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
+<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
+<sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication) </sup>
+
+`,
+  },
+
+  {
+    slug: 'whois-reaching-masses',
+    image: '/assets/posts/post-22.svg',
+    category: 'Press',
+    tags: ['whois'],
+    views: 0,
+    title: 'Whois already reaching the masses',
+    abstract:
+      "Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release.",
+    created: '13/09/2022', //dd/mm/yyyy
+    updated: '',
     duration: 1, // minute read
     author: {
-        name: "Anjana Uthayakumaran",
-        role: "Author",
-        photo: "/assets/img/team/anjana.jpg",
+      name: 'Anjana Uthayakumaran',
+      role: 'Author',
+      photo: '/assets/img/team/anjana.jpg',
     },
     content: `
 **Milestone alert!** Whois by SIPSTACK has surpassed 3 million daily requests within months of it's release. [Learn more](https://www.sipstack.com/products/whois) and join us on our mission to building a secure connected tomorrow.
 
 <sup>![edited-whois-image](/assets/img/resources/blog/20220913-whois-reaching-masses/whois-milestone.png)_Global proportional symbol map of Whois requests in a single day_</sup>
 
-`
-},
+`,
+  },
 
-{
-    slug: "announcing-ucs-transition-into-open-source",
-    image: "/assets/posts/post-23.svg",
-    category: "Press",
-    tags: ["announcement"],
+  {
+    slug: 'announcing-ucs-transition-into-open-source',
+    image: '/assets/posts/post-23.svg',
+    category: 'Press',
+    tags: ['announcement'],
     views: 0,
-    title: "Announcing UCS transition into Open Source",
-    abstract: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
-    created: "12/06/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'Announcing UCS transition into Open Source',
+    abstract:
+      'Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.',
+    created: '12/06/2021', //dd/mm/yyyy
+    updated: '',
     duration: 2, // minute read
     author: {
-        name: "Jonathan Geller",
-        role: "CEO & Founder",
-        photo: "/assets/img/team/jon.jpg",
+      name: 'Jonathan Geller',
+      role: 'CEO & Founder',
+      photo: '/assets/img/team/jon.jpg',
     },
     content: `
 Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months. With the rise of the Covid-19 pandemic, the world began working from home, making all efforts to continue their operations at any capacity. For some businesses, these changes were effortless, but for most, the struggle and cost to adapt was staggering. SIPSTACK by design, is built to enable any business to adapt and rise to the new communication challenges with confidence by bringing secure, managed and affordable telecommunication environments to meet these pivotal demands. 
@@ -55,46 +119,48 @@ While our teams have been working overtime re-configuring our code to remove any
 We fully understand the depth and impact this decision has, but re-iterate our team remains fully committed to the platform and the community. Please continue to follow us on our website and social media for upcoming announcements.
 
 You can read more about the event that occurred on our github page here: [https://github.com/sipstack/ibm_softlayer-gross-negligence](https://github.com/sipstack/ibm_softlayer-gross-negligence). Official announcement available on this page.
-`
-},
-{
-    slug: "voip-timeline",
-    image: "/assets/posts/post-7.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'voip-timeline',
+    image: '/assets/posts/post-7.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "VoIP Timeline - An Infographic look",
-    abstract: "Voice over internet protocol (VoIP) is the capability to transmit voice signals in real time over the internet and telephone network.",
-    created: "18/05/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'VoIP Timeline - An Infographic look',
+    abstract:
+      'Voice over internet protocol (VoIP) is the capability to transmit voice signals in real time over the internet and telephone network.',
+    created: '18/05/2021', //dd/mm/yyyy
+    updated: '',
     duration: 1, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ![VOIP](/assets/img/resources/blog/20210518-voip-timeline/voipp.png)
 Timeline of VoIP History
 
 
-`
-},
-{
-    slug: "the-evolution-of-voip",
-    image: "/assets/posts/post-24.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'the-evolution-of-voip',
+    image: '/assets/posts/post-24.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "The Evolution of VoIP",
-    abstract: "Trace the evolution of VoIP from the traditional private branch exchange to a unified communication platform hosted on the cloud.",
-    created: "05/05/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'The Evolution of VoIP',
+    abstract:
+      'Trace the evolution of VoIP from the traditional private branch exchange to a unified communication platform hosted on the cloud.',
+    created: '05/05/2021', //dd/mm/yyyy
+    updated: '',
     duration: 4, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 Over the last two decades, VoIP has transitioned from hardware reliant technology to a unified communication platform that can be hosted on the cloud. Now that we understand [the history of VoIP](http://sipstack.com/resources/blog/the-history-of-voip) and [how VoIP works](http://sipstack.com/resources/blog/voip-technology-explaned), we can dive into how this shift from hardware-dependence to software-first philosophy changed the landscape of VoIP.
@@ -182,23 +248,24 @@ While each of these capabilities had to be configured at the hardware and softwa
 SIPSTACK offers a dynamic UCaas solution that can be completely customized for each unique business case. Check out our fully stacked feature list, designed to evolve with your needs.
 
 
-`
-},
-{
-    slug: "voip-technology-explained",
-    image: "/assets/posts/post-15.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'voip-technology-explained',
+    image: '/assets/posts/post-15.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "VoIP Technology Explained",
-    abstract: "VoIP emerged as a result of decades of experimentation with different scientific ideas and technologies such as packet switching, Linear Predictive Coding, TCP/IP and the internet.",
-    created: "16/04/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'VoIP Technology Explained',
+    abstract:
+      'VoIP emerged as a result of decades of experimentation with different scientific ideas and technologies such as packet switching, Linear Predictive Coding, TCP/IP and the internet.',
+    created: '16/04/2021', //dd/mm/yyyy
+    updated: '',
     duration: 4, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 As a Technical Writer at a cloud communication company, I'm invested in understanding technologies fundamental to the telecommunications industry. Now that I have written about the [invention of the telephone](http://sipstack.com/resources/blog/history-of-the-phone) and [the history of VoIP](http://sipstack.com/resources/blog/the-history-of-voip), I set out to answer a few fundamental questions about VoIP, such as how VoIP technology is different from [telephone technology](http://sipstack.com/resources/blog/telephone-technology-explained), and whether VoIP works over the telephone network or the internet.
@@ -250,23 +317,24 @@ Each of these technologies — packet switching, LPC, internet and TCP/IP ha
 Today's VoIP solutions do much more than transmit voice — they support audio and video conferencing, faxing, voicemail functions, and text messaging. A good VoIP platform will also support a wide range of integrations with third-party applications. The best VoIP solutions are powerful and agile enough to power customizations at scale.
 
 SIPSTACK is at the forefront of pushing the boundaries of VoIP. Stay ahead of your communication needs by [partnering with us](https://www.sipstack.com/partner).
-`
-},
-{
-    slug: "the-history-of-voip",
-    image: "/assets/posts/post-5.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'the-history-of-voip',
+    image: '/assets/posts/post-5.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "The History of VoIP",
-    abstract: "VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.",
-    created: "08/04/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'The History of VoIP',
+    abstract:
+      'VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.',
+    created: '08/04/2021', //dd/mm/yyyy
+    updated: '',
     duration: 3, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 The history of telecommunication dates back to 1662, when Robert Hooke discovered that sound could be transmitted over a string into an attached earpiece or mouthpiece.
@@ -331,23 +399,24 @@ Although VoIP has been around for over two decades, the technology is just matur
 As VoIP technology continues to evolve at breakneck speeds, we invite the telecommunications community to [join SIPSTACK](https://www.sipstack.com/signup) in our mission to uphold the original values that VoIP was founded on — making communication solutions accessible to everyone.
 
 
-`
-},
-{
-    slug: "telephone-technology-explained",
-    image: "/assets/posts/post-24.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'telephone-technology-explained',
+    image: '/assets/posts/post-24.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "Telephone Technology Explained",
-    abstract: "When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
-    created: "01/04/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'Telephone Technology Explained',
+    abstract:
+      'When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.',
+    created: '01/04/2021', //dd/mm/yyyy
+    updated: '',
     duration: 1, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ![phonebooth](/assets/img/resources/blog/20210401-telephone-technology-explained/phonebooth.jpeg)  
@@ -356,23 +425,24 @@ As VoIP technology continues to evolve at breakneck speeds, we invite the teleco
 When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange. When you dial the phone number, a second circuit is opened between the telephone exchange and the person you're calling. For as long as you're on the phone, the circuit remains open, and data (in the form of your voice) is sent and received over that open line. This [analog](http://sipstack.com/resources/blog/analog-technology) technology is called **circuit switching**.
 
 Landline telephones are connected to the **Public Switched Telephone Network** (PSTN), a network of physical copper and fibre-optic cables that carry electric signals across vast distances.
-`
-},
-{
-    slug: "analog-technology",
-    image: "/assets/posts/post-18.svg",
-    category: "VoIP History",
+`,
+  },
+  {
+    slug: 'analog-technology',
+    image: '/assets/posts/post-18.svg',
+    category: 'VoIP History',
     tags: [],
     views: 0,
-    title: "What is Analog Technology?",
-    abstract: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
-    created: "31/03/2021", //dd/mm/yyyy
-    updated: "",
+    title: 'What is Analog Technology?',
+    abstract:
+      'Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.',
+    created: '31/03/2021', //dd/mm/yyyy
+    updated: '',
     duration: 1, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ![tech](.tech.jpeg)
@@ -383,24 +453,25 @@ Analog technology, as the name suggests, refers to technologies that are **analo
 Similarly, the process of taking an audio signal (the human voice), and translating it into pulses over the telephone wire, and translating back to an audio signal (the same human voice) is an analogous process.
 
 All analog technologies are limited by their physicality. How many songs you can record on an audio cassette depends on how long the plastic reel of the cassette is. How many transcontinental telephone calls you can make at the same time is limited by the number of copper and fibre optic lines laid beneath the oceans.
-`
-},
-{
+`,
+  },
+  {
     id: 2,
-    slug: "dedicated-phone number",
-    image: "/assets/posts/post-1.svg",
-    category: "VoIP for Business",
+    slug: 'dedicated-phone number',
+    image: '/assets/posts/post-1.svg',
+    category: 'VoIP for Business',
     tags: [],
     views: 0,
     title: "Your Business Needs a Dedicated Phone Number. Here's Why.",
-    abstract: "Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.",
-    created: "24/03/2021", //dd/mm/yyyy
-    updated: "",
+    abstract:
+      'Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.',
+    created: '24/03/2021', //dd/mm/yyyy
+    updated: '',
     duration: 3, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ![phone3](/assets/img/resources/blog/20210324-dedicated-phone-number/phone3.jpeg)
@@ -461,23 +532,24 @@ Listing one phone number streamlines the sales process. Today, VoIP technology h
 SIPSTACK gives our [partners](https://www.sipstack.com/find-a-partner) the tools to set up a dedicated business lines in minutes, making it is easier than ever for your customers to reach you.
 
 If you're looking for a comprehensive VoIP solution for your business or want to be a SIPSTACK partner [contact us](https://www.sipstack.com/contact/us) and we will be able to help you.
-`
-},
-{
-    slug: "history-of-the-phone",
-    image: "/assets/posts/post-17.svg",
-    category: "VoIP Innovation",
+`,
+  },
+  {
+    slug: 'history-of-the-phone',
+    image: '/assets/posts/post-17.svg',
+    category: 'VoIP Innovation',
     tags: [],
     views: 0,
-    title: "3 Takeaways from the Invention of the Telephone",
-    abstract: "The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. Read the story behind these incredible nineteenth century innovations that dramatically changed our civilization.",
-    created: "27/02/2021", //dd/mm/yyyy
-    updated: "",
+    title: '3 Takeaways from the Invention of the Telephone',
+    abstract:
+      'The telegraph made the world faster. The telephone made the world closer. The telephone exchange made the world smaller. Read the story behind these incredible nineteenth century innovations that dramatically changed our civilization.',
+    created: '27/02/2021', //dd/mm/yyyy
+    updated: '',
     duration: 4, // minute read
     author: {
-        name: "Kanasu Nagathihalli",
-        role: "Author",
-        photo: "/assets/img/team/kanasu.png",
+      name: 'Kanasu Nagathihalli',
+      role: 'Author',
+      photo: '/assets/img/team/kanasu.png',
     },
     content: `
 ![lampphone](/assets/img/resources/blog/20210227-history-of-the-phone/lampphone.jpeg)
@@ -572,6 +644,6 @@ As we head into a post-pandemic world, the landscape of the communications indus
 - Building platforms where companies can innovate freely and share in each other's innovations.
 
 Become part of our origin story. [Partner](https://www.sipstack.com/signup) with SIPSTACK to stay ahead of the game.
-`
-},
+`,
+  },
 ]

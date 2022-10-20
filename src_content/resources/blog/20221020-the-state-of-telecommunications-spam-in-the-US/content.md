@@ -1,4 +1,4 @@
-Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month<sup>1</sup>. Americans reported losses totalling nearly $30 billion to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost 1 in every 3 Americans have fallen victim to phone scams, 19% have been victimized on more than one occasion<sup>3</sup>.
+Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to **3 billion spam calls a month**<sup>1</sup>. Americans reported losses totalling nearly **$30 billion** to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost **1 in every 3 Americans have fallen victim to phone scams**, 19% have been victimized on more than one occasion<sup>3</sup>.
 
 ## **The top five types of scams in the US**
 
@@ -6,7 +6,7 @@ Scammers are rampant in the US and when unchecked, flourish on victims of variou
 
 1.  **Prizes and free gifts scams** make up 35.23% of total scams, and costed the average American victim $795 USD in 2021<sup>4</sup>. Here, scammers offer nonexistent prizes and free gifts in an effort to gain access to the victims credit card or bank account.
 2.  **Merchandising scams** make up 19.58% of total scams, and costed the average American victim $500 USD in 2021<sup>5</sup>. Criminals create classified ads or a fake websites to sell a variety of items such as concert tickets, puppies, vehicles or even rent out apartments.
-3.  **Spearfishing scams** make up 17.49 % of total scams, and costed the average American victim $800 USD in 2021<sup>6</sup>. Scammers’ use [illegal caller ID spoofing](%5Bhttps://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken), posing as a government agency or a reputable business without permission.
+3.  **Spearfishing scams** make up 17.49 % of total scams, and costed the average American victim $800 USD in 2021<sup>6</sup>. Scammers’ use [illegal caller ID spoofing](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken), posing as a government agency or a reputable business without permission.
 4.  **Fake check scams** make up 5.59 % of total scams, and costed the average American victim $2000 in 2021<sup>7</sup>. Victims are issued a check for an amount more than is owed to them, and are request to directly wire the excess funds back. Because cheques can days or even weeks to verify, it is only after the money is sent victims learn the original cheque was fake.
 5.  **Friendship and romance scams** make up 3.35% of scams, and costed the average American victim<sup>8</sup>. Criminals create fake profiles on social media platforms and/ or to build virtual relationships with people. At times they take years to build trust, and eventually solicit money out of their supposed friends and partners.
 
@@ -33,11 +33,7 @@ Using the latest technology and machine learning, SIPSTACK’s systems authentic
 #### References
 
 <sup>1 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
-
 <sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>
-
 <sup>3 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
-
 <sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
-
 <sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication) </sup>
