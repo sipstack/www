@@ -22,12 +22,12 @@ from the drop-down menu and click lookup. The information based on the specific 
 In order to run Source/ Risk lookup the Destination Callee number must be registered under Whois Profiles found on the left pane. 
 
 ## Lookup Type
-Smart CNAM offers the following various Smart CallerID Lookups:
-•   Source/Risk: provides a score on a scale from 0-5.
-•   Caller ID: provides the name or location of the source caller. 
-•   Regional: provides specific and accurate location of the source caller such as city, region and country.
-•   Telco/Carrier: provides information on the source caller’s carrier, company, provider and type of device.
-•   Online Profiles: provides the source caller’s public address as well as information of their online presence including any public websites, emails and all available social platform accounts. 
+Smart CNAM offers the following various Smart CallerID Lookups:  
+•   Source/Risk: provides a score on a scale from 0-5.  
+•   Caller ID: provides the name or location of the source caller.   
+•   Regional: provides specific and accurate location of the source caller such as city, region and country.  
+•   Telco/Carrier: provides information on the source caller’s carrier, company, provider and type of device.  
+•   Online Profiles: provides the source caller’s public address as well as information of their online presence including any public websites, emails and all available social platform accounts.   
 
 ## Score/Risk scores calculations
 SIPSTACK’s proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. The algorithm is ever-evolving to provide the best possible security to our customers.
@@ -36,7 +36,7 @@ SIPSTACK’s proprietary algorithm uses artificial intelligence and machine lear
 Prices are listed under Billing, Pricing in the left pane. Please note that each lookup incurs an API charge and the system will return a null result, if you don’t have sufficient funds in your account. 
 
 ## Adding funds to your account. 
-Please see our article Partner Portal (insert url) 
+Please see our article [Partner Portal](insert url of partner portal doc) 
 
 ## Sales tax 
 If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.
