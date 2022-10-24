@@ -18,8 +18,8 @@ Provides the account balance which is the total available funds in your account 
 
  This is where the input and output of all our products and settings are displayed. 
 
-![Partner_Dashboard](./Partner_Dashboard.png)
-<sup> Different sections of the Partner Dashboard</sup>
+![Partner_Dashboard](./portal_design.png)
+<sup> Different areas of the Partner Dashboard</sup>
 
 # Getting Started 
 Creating an account gives you access to our ever-evolving suite of products. To create a SIPSTACK partner account, select Get Started, icon on the top right corner of the home page. Simply follow the prompts and complete the form. Don’t forget to select the box to indicate that you agree to the Terms of Service. You will receive an email confirmation to finish setting up your account. 
@@ -42,12 +42,11 @@ For documentation regarding our Smart CNAM product please [click here ](https://
 
 Whois profiles allows you to register and add information pertaining to phone numbers you own. This allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function. 
 
-![Whois](./Whois.png)
-<sup> An overview of the Whois Profiles</sup>
-
 ### How do I register numbers? 
 
 To register a number under a carrier, select Whois Profiles on the left pane. Select the green plus button and fill all required fields under the three tabs: general, location and additional. Transparency helps your own Source/Risk score and the larger goal of creating  safer telecommunications. To maintain privacy, simply toggle the private caller option to hide your information from others. Please note: failing to provide an accurate caller id information may impact your overall score as a carrier.
+
+![Whois](./whois_profiles_add_phonenumber.png)  
  
 ### Can I register a number I don’t own?
 
