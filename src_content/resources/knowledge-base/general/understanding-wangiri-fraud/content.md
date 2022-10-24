@@ -21,11 +21,11 @@ Keeping these things in mind will help ensure your safety against Wangiri fraud:
 
 
 #### References
-<sup>1 https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</sup> 
-<sup>2 https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud/</sup> 
-<sup>3 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup> 
-<sup>4 https://abhandshake.com/wangiri</sup> 
-<sup>5 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup>
+<sup>1 https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</sup>  
+<sup>2 https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud/</sup>   
+<sup>3 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup>   
+<sup>4 https://abhandshake.com/wangiri</sup>   
+<sup>5 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup>  
 
 
 
