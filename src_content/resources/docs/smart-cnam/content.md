@@ -30,7 +30,7 @@ Smart CNAM offers the following various Smart CallerID Lookups:
 •   Online Profiles: provides the source caller’s public address as well as information of their online presence including any public websites, emails and all available social platform accounts.   
 
 ## Score/Risk scores calculations
-SIPSTACK’s proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. The algorithm is ever-evolving to provide the best possible security to our customers.
+SIPSTACK’s proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. The algorithm is ever-evolving to provide the best possible security to our customers. SIPSTACK allows individual carriers to interpret scores and determine safety thersholds independetly. 
 
 ## Cost
 Prices are listed under Billing, Pricing in the left pane. Please note that each lookup incurs an API charge and the system will return a null result, if you don’t have sufficient funds in your account. 
