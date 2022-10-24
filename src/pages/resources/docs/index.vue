@@ -33,13 +33,13 @@ const topics = [
     text: 'Lower your operational costs with enhanced SIP Trunks.',
     link: 'sip-free',
   },
-  {
-icon: 'ph:swap-duotone',
-    iconColor: 'secondary',
-    title: 'API',
-    text: 'Check out our API Reference docs for everything SIPSTACK!',
-    link: 'api',
-  },
+//   {
+// icon: 'ph:swap-duotone',
+//     iconColor: 'secondary',
+//     title: 'API',
+//     text: 'Check out our API Reference docs for everything SIPSTACK!',
+//     link: 'api',
+//   },
 ]
 </script>
 
