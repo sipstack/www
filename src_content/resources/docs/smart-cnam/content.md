@@ -36,7 +36,7 @@ SIPSTACK’s proprietary algorithm uses artificial intelligence and machine lear
 Prices are listed under Billing, Pricing in the left pane. Please note that each lookup incurs an API charge and the system will return a null result, if you don’t have sufficient funds in your account. 
 
 ## Adding funds to your account. 
-Please see our article [Partner Portal](insert url of partner portal doc) 
+Please see our article [Partner Portal.](insert url of partner portal doc) 
 
 ## Sales tax 
 If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.
