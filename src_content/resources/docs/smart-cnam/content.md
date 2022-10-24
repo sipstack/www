@@ -1,16 +1,15 @@
-![Smart_CNAM](./Smart_CNAM.png)
-<sup> An overview of the Smart CNAM</sup>
-
-
 # Overview
 Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comprehensive than the traditional [CNAM, Caller Name,](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam). Smart CNAM pairs with Whois Profiles to pull up a tremendous amount of relevant, up to date information, with just the click of a  button. 
 
+![Smart_CNAM](./Smart_CNAM.png)
+<sup> An overview of the Smart CNAM</sup>
+
 # Prerequisites
-You will need a [SIPTACK Partner Account](insert url of partner portal).
+You will need a [SIPTACK Partner Account](https://www.sipstack.com/resources/docs/partner-portal).
 
-Each lookup incurs an API charge, ensure you have sufficient [funds in your account]( insert url of partner portal).
+Each lookup incurs an API charge, ensure you have sufficient [funds in your account](https://www.sipstack.com/resources/docs/partner-portal).
 
-To use the Source/Risk lookup function, the destination callee number must be registered in your [Whois Profiles](insert url of Whois Profile webpage)
+To use the Source/Risk lookup function, the destination callee number must be registered in your [Whois Profiles](https://www.sipstack.com/resources/docs/partner-portal)
 
 # Smart CNAM
 To access the Smart CNAM lookup system, select Smart CNAM on the left pane. 
@@ -36,8 +35,8 @@ SIPSTACK’s proprietary algorithm uses artificial intelligence and machine lear
 Prices are listed under Billing, Pricing in the left pane. Please note that each lookup incurs an API charge and the system will return a null result, if you don’t have sufficient funds in your account. 
 
 ## Adding funds to your account. 
-Please see our article [Partner Portal.](insert url of partner portal doc) 
+Please see our article [Partner Portal.](https://www.sipstack.com/resources/docs/partner-portal) 
 
-## Sales tax 
-If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.
+# FAQs 
+You can find our frequently asked questions [here](https://www.sipstack.com/products/smart-cnam#faqs)
 
