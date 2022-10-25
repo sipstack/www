@@ -1,8 +1,8 @@
 # Overview
-Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comprehensive than the traditional [CNAM, Caller Name,](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam). Smart CNAM pairs with Whois Profiles to pull up a tremendous amount of relevant, up to date information, with just the click of a  button. 
+Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comprehensive than the traditional [CNAM, Caller Name.](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam) Smart CNAM pairs with Whois Profiles to pull up a tremendous amount of relevant, up to date information, with just the click of a  button. 
 
 ![Smart_CNAM](./Smart_CNAM.png)
-<sup> An overview of the Smart CNAM</sup>
+<sup> An overview of the Smart CNAM.</sup>
 
 # Prerequisites
 You will need a [SIPTACK Partner Account](https://www.sipstack.com/resources/docs/partner-portal).
