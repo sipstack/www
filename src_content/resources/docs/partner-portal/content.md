@@ -6,15 +6,15 @@ The SIPSTACK partner portal is the central hub that gives you access to all the 
 
 The SIPSTCK partner portal is divided into three distinct areas: 
 
-**left pane**
+**Left pane**
 
 Provides access to all of the features, products, account management tools and resources.
 
- **top navigation bar** 
+ **Top navigation bar** 
  
 Provides the account balance which is the total available funds in your account and the profile icon which is a shortcut to user profile information, dark mode and logging out of your account. 
  
- **body**
+ **Body**
 
  This is where the input and output of all our products and settings are displayed. 
 
