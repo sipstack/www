@@ -4,7 +4,7 @@ const { src, dest, series } = require('gulp')
 // Gulp Sass
 const fileinclude = require('gulp-file-include')
 const replace = require('gulp-replace')
-// const rename = require("gulp-rename");
+const rename = require('gulp-rename')
 const concat = require('gulp-concat')
 const gap = require('gulp-append-prepend')
 // const urlPrefixer = require("gulp-url-prefixer");
@@ -247,9 +247,87 @@ function res_cs_images(cb) {
   cb()
 }
 
+function res_docs_doc(cb) {
+  var slug
+  src(['src_content/resources/docs/**/content.md'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(
+      // tap(function (file, t) {
+      tap(function (file) {
+        // console.log(file.path);
+        slug = file.path.split('/').slice(-2, -1)[0]
+        console.log(slug)
+        return slug
+      })
+    )
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+        basepath: '@file',
+      })
+    )
+    // prefix image urls (must have ./ prefix in markdown)
+    .pipe(
+      replace('./', function () {
+        return `/assets/img/resources/docs/${slug}/`
+      })
+    )
+    // .pipe(concat("articles.json"))
+    // .pipe(dest("src_content/resources/blog/"));
+    // -----
+    // .pipe(concat(`index.ts`))
+    .pipe(
+      rename(function (path) {
+        // Returns a completely new object, make sure you return all keys needed!
+        return {
+          dirname: path.dirname,
+          basename: (path.basename = `index`),
+          extname: '.ts',
+        }
+      })
+    )
+    // replace incompatible characters
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
+    // prepend / append export for ts file
+    .pipe(gap.prependText('export const content = `'))
+    .pipe(gap.appendText('`'))
+    .pipe(dest(`src/data/resources/docs`))
+
+  cb()
+}
+
+function res_docs_images(cb) {
+  // var slug;
+  src([
+    'src_content/resources/docs/**/*.png',
+    'src_content/resources/docs/**/*.jpeg',
+    'src_content/resources/docs/**/*.jpg',
+    'src_content/resources/docs/**/*.svg',
+  ])
+    // .pipe(
+    //  tap(function (file, t) {
+    //    slug = file.path.split("/").slice(-2, -1)[0];
+    //    console.log(slug);
+    //    return slug;
+    //  })
+    // )
+    .pipe(dest('public/assets/img/resources/docs/'))
+
+  cb()
+}
+
 exports.build_res_kb = series(res_kb_articles, res_kb_categories)
 exports.build_res_blog = series(res_blog_posts, res_blog_images)
 exports.build_res_cs = series(res_cs_posts, res_cs_images)
+exports.build_res_docs = series(res_docs_doc, res_docs_images)
 // exports.develop = function () {
 //  watch(["src/scss/*.scss", "src/scss/**"], scss);
 // };
