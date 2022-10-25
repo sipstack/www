@@ -18,8 +18,8 @@ Provides the account balance which is the total available funds in your account 
 
  This is where the input and output of all our products and settings are displayed. 
 
-![Partner_Dashboard](./portal_design.png)
-<sup> Different areas of the Partner Dashboard</sup>
+![Partner_Dashboard_edited_1](./Partner_Dashboard_edited_1.png)
+<sup> Different aspects of the Partner Dashboard.</sup>
 
 # Getting Started 
 Creating an account gives you access to our ever-evolving suite of products. To create a SIPSTACK partner account, select Get Started, icon on the top right corner of the home page. Simply follow the prompts and complete the form. Don’t forget to select the box to indicate that you agree to the Terms of Service. You will receive an email confirmation to finish setting up your account. 
@@ -34,7 +34,7 @@ The dashboard page provides shortcuts to the most frequented pages such as the U
 
 ## Smart CNAM 
 
-For documentation regarding our Smart CNAM product please [click here ](https://www.sipstack.com/resources/docs/smart-cnam)
+For documentation regarding our Smart CNAM product please [click here.](https://www.sipstack.com/resources/docs/smart-cnam)
 
 ## Whois Profiles  
 
