@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { content } from '/@src/data/resources/docs/smart-cnam'
+import { content } from '/@src/data/resources/docs/partner-portal'
 </script>
 
 <template>
@@ -7,7 +7,7 @@ import { content } from '/@src/data/resources/docs/smart-cnam'
     <Section color="grey" overflown>
       <Container>
         <ssHelpCenterHeaderDoc
-          title="Smart CNAM"
+          title="Partner Portal"
           subtitle="Documentation"
           class="mt-10" />
       </Container>
