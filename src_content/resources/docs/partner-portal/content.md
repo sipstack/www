@@ -28,8 +28,6 @@ Once you receive the email, click on verify email to finish setting up your acco
 
 # Partner Section
 
-The partner section in the the left pane 
-
 ## Dashboard 
 
 The dashboard page provides shortcuts to the most frequented pages such as the User Profile and Billing History. The header of dashboard holds the SIPSTACK logo on the left hand side, a shortcut to the dashboard. 
@@ -74,7 +72,7 @@ Here you are able to view the users that are part of your organization, generate
 
 ### Users
 
-View the users that are part of your organization
+View the users that are part of your organization.
 
 ### API Tokens
 
