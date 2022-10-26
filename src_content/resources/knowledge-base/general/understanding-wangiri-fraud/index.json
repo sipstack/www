@@ -7,7 +7,7 @@
     updated: "",
     author: {
         name: "Jeff Sager",
-        picture: "/assets/img/team/anjanaa.jpg",
+        picture: "/assets/img/team/jeffsa.jpg",
     },
     content: `
 @@include("content.md")
