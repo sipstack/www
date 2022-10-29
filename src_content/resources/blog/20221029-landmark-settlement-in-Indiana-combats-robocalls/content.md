@@ -4,12 +4,12 @@ The settlement prohibits both Startel and Hall from the telecommunications indus
 
 ## Tips to avoid scams and unwanted calls:
 1.	If you are unsure of whether a call is legitimate or not, enter the phone number in [Whois by SIPSTACK]( https://whois.sipstack.com/). This will provide you with instant information to help you determine the validity of the incoming caller. 
-2.	Don’t feel obligated to answer calls from unfamiliar numbers, and don’t return calls. It’s important to remember that legitimate callers trying to reach you will often leave a voicemail.
+2.	Don’t feel obligated to answer or return calls from unfamiliar numbers. Most legitimate callers trying to reach you will leave a voicemail.
 3.	If you are receiving a lot of robocalls, report it to your phone provider.
 4.	If you are a victims of telecom fraud, report the crime to the police. <sup>2</sup>
 5.	Inform yourself on the prevalent scams both in the [US](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). Increased awareness helps protect ourselves and loved ones against fraud.
 
 
 #### References
-<sup>1 https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/1/c6/1c6cd438-2d36-11ec-aad5-9358140365cf/6168a1c73b66f.pdf.pdf </sup>
+<sup>1 https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/1/c6/1c6cd438-2d36-11ec-aad5-9358140365cf/6168a1c73b66f.pdf.pdf </sup>  
 <sup>2 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup>
