@@ -1,0 +1,20 @@
+{
+    slug: "Landmark-settlement-in-Indiana-combats-robocalls",
+    image: "/assets/img/resources/blog/20221020-the-state-of-telecommunications-spam-in-the-US/issue-50.svg",
+    category: "News",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "Landmark Settlement in Indiana Combats Robocalls",
+    abstract: "Attorney General Todd Rokita publicly announced his settlement on October 20th,  after a  yearlong battle against Startel Communications LLC and its CEO, Wanda Hall.",
+    created: "31/10/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 7, // minute read
+    author: {
+        name: "Anjana Uthayakumaran",
+        role: "Author",
+        photo: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
