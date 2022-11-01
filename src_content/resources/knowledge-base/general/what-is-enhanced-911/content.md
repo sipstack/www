@@ -1,6 +1,6 @@
 Enhanced 911 or E-9-1-1 is a system utilized in North America that provides the caller’s location to emergency services. 9-1-1 dispatchers are able to retrieve physical addresses of landlines, and geographic coordinates of wireless callers, which is then passed on to police officers, firefighters, paramedics, and other services as deemed fit. Enhanced location information works to improve the effectiveness and reliability of wireless 911 services.  
 
-Canada mandates the following from local [VoIP service providers](https://www.sipstack.com/resources/blog/voip-technology-explained): 
+### Canada mandates the following from local [VoIP service providers](https://www.sipstack.com/resources/blog/voip-technology-explained): 
 
 1. To provide either basic or E-9-1-1 service to their customers.    
 2. To provide customers with adequate and accessible notifications of any service limitations with respect to their 9-1-1 or E-9-1-1 services.    
