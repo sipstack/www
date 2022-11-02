@@ -169,6 +169,7 @@ declare module '@vue/runtime-core' {
     ImageRatio: typeof import('./src/components/base/image/ImageRatio.vue')['default']
     InvertedNav: typeof import('./src/layouts/inverted-nav.vue')['default']
     IPhArrowCircleRightDuotone: typeof import('~icons/ph/arrow-circle-right-duotone')['default']
+    IPhArrowLeftBold: typeof import('~icons/ph/arrow-left-bold')['default']
     JobDetails: typeof import('./src/components/advanced/jobs/job-details/JobDetails.vue')['default']
     JobGrid: typeof import('./src/components/advanced/jobs/job-grid/JobGrid.vue')['default']
     JobTopics: typeof import('./src/components/advanced/jobs/job-topics/JobTopics.vue')['default']
