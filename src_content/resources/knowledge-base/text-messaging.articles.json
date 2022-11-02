@@ -131,18 +131,18 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
     subtitle: "",
     abstract: "",
-    created: "22/03/2021",
+    created: "07/04/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -171,18 +171,33 @@ Before you request for your account to be enabled to receive incoming short code
 `
 },
 {
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
+    slug: "carrier-support-for-pdf-files",
+    title: "Carrier support for PDF files sent using SIPSTACK MMS",
+    subtitle: "SIPSTACK MMS messaging is a popular way to send media files, especially images, to end users in Canada and US.",
     abstract: "",
-    created: "07/04/2021",
+    created: "22/04/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+Please note that PDF files are currently considered an [accepted file type](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types) by SIPSTACK. This means we will accept the file you submit to us and send it downstream to the mobile network, as long as it meets that network’s size limit for media files. However, we will not resize or make other adjustments to the file itself for device compatibility. For this reason, it’s important to ensure your PDF files are smaller than the maximum attachment size of the network you are sending toward. 
+
+## Long code MMS support for PDF files 
+Fido, Rogers and Telus in Canada and AT&T in US. do not support PDF attachments in MMS messages sent via long codes (standard 10-digit local numbers) toward subscribers on their networks.
+
+For users on these mobile networks, a PDF file attachment on an MMS message will not reach the device. The user will receive the Body text of your message (if one was included), with the following text appended: “One or more of the message components have been deleted by MMS Adaptation. Either the message was too large or the components were unsuitable for your handset.”
+
+As of today, long code MMS messaging is considered a person-to-person (P2P) channel by most mobile networks in Canada and US. These mobile networks may choose to extend support to PDF files via long code MMS at a later date. However, SIPSTACK is not aware of any specific plans relating to PDF support via long code.
+
+For a full list of content types supported by SIPSTACK, see [What MMS content types does SIPSTACK support](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types).
+
+## Short Code SMS not supported by SIPSTACK
+SIPSTACK does not offer short code numbers and therefore, does not support any short code SMS/MMS capabilities. 
+
+## WhatsApp and other messaging channels
+The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
 `
 },
 {
@@ -219,33 +234,18 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `
 },
 {
-    slug: "carrier-support-for-pdf-files",
-    title: "Carrier support for PDF files sent using SIPSTACK MMS",
-    subtitle: "SIPSTACK MMS messaging is a popular way to send media files, especially images, to end users in Canada and US.",
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
     abstract: "",
-    created: "22/04/2021",
+    created: "22/03/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Please note that PDF files are currently considered an [accepted file type](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types) by SIPSTACK. This means we will accept the file you submit to us and send it downstream to the mobile network, as long as it meets that network’s size limit for media files. However, we will not resize or make other adjustments to the file itself for device compatibility. For this reason, it’s important to ensure your PDF files are smaller than the maximum attachment size of the network you are sending toward. 
-
-## Long code MMS support for PDF files 
-Fido, Rogers and Telus in Canada and AT&T in US. do not support PDF attachments in MMS messages sent via long codes (standard 10-digit local numbers) toward subscribers on their networks.
-
-For users on these mobile networks, a PDF file attachment on an MMS message will not reach the device. The user will receive the Body text of your message (if one was included), with the following text appended: “One or more of the message components have been deleted by MMS Adaptation. Either the message was too large or the components were unsuitable for your handset.”
-
-As of today, long code MMS messaging is considered a person-to-person (P2P) channel by most mobile networks in Canada and US. These mobile networks may choose to extend support to PDF files via long code MMS at a later date. However, SIPSTACK is not aware of any specific plans relating to PDF support via long code.
-
-For a full list of content types supported by SIPSTACK, see [What MMS content types does SIPSTACK support](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types).
-
-## Short Code SMS not supported by SIPSTACK
-SIPSTACK does not offer short code numbers and therefore, does not support any short code SMS/MMS capabilities. 
-
-## WhatsApp and other messaging channels
-The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
@@ -390,6 +390,33 @@ If a user tires to assign an outbound message with this category, the message wi
 `
 },
 {
+    slug: "handling-deactivated-phone-numbers",
+    title: "Handling Deactivated Phone Numbers",
+    subtitle: "This article describes best practices that should be followed while dealing with deactivated phone numbers, including how to find out if a phone number has been deactivated and how to deal with deactivated phone numbers.",
+    abstract: "",
+    created: "24/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+## What is a deactivated phone number?
+A phone number is deactivated on one wireless carrier when a mobile subscriber either terminates their service with that carrier or ports their number to a different wireless carrier. Eventually, each deactivated numbers get recycled, and gets assigned to new subscribers.
+
+## Why is it important to keep track of deactivated phone numbers?
+When a deactivated number is assigned to a new subscriber, it means that that phone number is no longer associated with the end user who opted in to your messaging campaign. 
+
+## How do I track deactivated phone numbers on my network?
+Wireless carriers in Canada and the United States routinely publish Deactivation Reports that contain a list of all the deactivated phone numbers within their networks. These reports help message senders keep their programs in compliance.
+
+## What happens if I don’t keep a list of healthy subscribers?
+Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
+
+Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
+`
+},
+{
     slug: "how-to-use-toll-free-phone-numbers",
     title: "How to use toll-free phone numbers for SMS and MMS in Canada",
     subtitle: "Toll-free numbers are designated for business messaging use by most major mobile carriers in Canada (Rogers, Fido, Telus and Videotron) and by all major carriers in the US.",
@@ -440,33 +467,6 @@ A short code is the ideal solution for high-volume A2P use cases. By default, sh
 Toll-free phone numbers may be a better fit for certain use cases. Unlike short codes, toll-free phone numbers can be used for placing and receiving voice calls in addition to SMS messages. Toll-free SMS may also be a good choice for a business that needs A2P-type communications, but is not ready to apply for a short code.
 
 
-`
-},
-{
-    slug: "handling-deactivated-phone-numbers",
-    title: "Handling Deactivated Phone Numbers",
-    subtitle: "This article describes best practices that should be followed while dealing with deactivated phone numbers, including how to find out if a phone number has been deactivated and how to deal with deactivated phone numbers.",
-    abstract: "",
-    created: "24/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-## What is a deactivated phone number?
-A phone number is deactivated on one wireless carrier when a mobile subscriber either terminates their service with that carrier or ports their number to a different wireless carrier. Eventually, each deactivated numbers get recycled, and gets assigned to new subscribers.
-
-## Why is it important to keep track of deactivated phone numbers?
-When a deactivated number is assigned to a new subscriber, it means that that phone number is no longer associated with the end user who opted in to your messaging campaign. 
-
-## How do I track deactivated phone numbers on my network?
-Wireless carriers in Canada and the United States routinely publish Deactivation Reports that contain a list of all the deactivated phone numbers within their networks. These reports help message senders keep their programs in compliance.
-
-## What happens if I don’t keep a list of healthy subscribers?
-Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
-
-Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
 `
 },
 {

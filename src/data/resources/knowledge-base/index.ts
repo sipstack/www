@@ -166,7 +166,7 @@ The table below outlines error messages, likely causes and potential workarounds
         subtitle:
           'Simply put, CNAM is the Caller Name of an incoming phone call. This is displayed on the screen of a mobile or home device.',
         abstract: '',
-        created: '22/09/2022', //dd/mm/yyyy
+        created: '22/09/2022',
         updated: '',
         author: {
           name: 'Anjana Uthayakumaran',
@@ -191,6 +191,34 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
 <sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  
+
+`,
+      },
+
+      {
+        slug: 'what-is-enhanced-911',
+        title: 'What is Enhanced 911?',
+        subtitle:
+          "Enhanced 911 or E-9-1-1 is a system utilized in North America that provides the caller's location to emergency services.",
+        abstract: '',
+        created: '02/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+Enhanced 911 or E-9-1-1 is a system utilized in North America that provides the caller's location to emergency services. 9-1-1 dispatchers are able to retrieve physical addresses of landlines, and geographic coordinates of wireless callers, which is then passed on to police officers, firefighters, paramedics, and other services as deemed fit. Enhanced location information works to improve the effectiveness and reliability of wireless 911 services.  
+
+### Canada mandates the following from local [VoIP service providers](https://www.sipstack.com/resources/blog/voip-technology-explained): 
+
+1. To provide either basic or E-9-1-1 service to their customers.    
+2. To provide customers with adequate and accessible notifications of any service limitations with respect to their 9-1-1 or E-9-1-1 services.    
+3. To register with the **CRTC**, **C**anadian **R**adio-television and **T**elecommunications **C**ommission, as a reseller. If the company owns and controls transmission facilities, it has to register with the Commission as a **CLEC**, **C**ompetitive **L**ocal **E**xchange **C**arrier.    
+4. To obtain a **BITS**, **B**asic **I**nternational **T**elecommunication **S**ervice, license from the CRTC, if the company operates internationally.  
+5. Companies are required to keep up to date with all ongoing regulatory filings to maintain their BITS license and registration. Failure to do so could lead to deregistration and loss of the BITS license.  
+
+Having a hard time keeping up to date with ever-evolving mandatory guidelines and regulations as a carrier? [Contact us]( https://www.sipstack.com/contact/us) today and we will make sure you are exceeding industry standards in building a secure connected tomorrow.  
 
 `,
       },
@@ -459,21 +487,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
         slug: 'can-my-sms-messages-arrive-in-order',
         title: 'Can my SMS messages arrive in order?',
         subtitle: '',
@@ -561,6 +574,21 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
         },
         content: `
 Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
