@@ -48,6 +48,12 @@ const emit = defineEmits(["close"]);
 							<li>
 								<RouterLink v-preload-link to="/products/sip-free" class="list-link"> SIP Free </RouterLink>
 							</li>
+							<li>
+								<RouterLink v-preload-link to="/products/sip-free" class="list-link"> SIP Scribe </RouterLink>
+							</li>
+							<li>
+								<RouterLink v-preload-link to="/products/sip-free" class="list-link"> SIP Guard </RouterLink>
+							</li>
 						</ul>
 					</div>
 				</div>
