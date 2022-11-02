@@ -25,16 +25,6 @@ function res_kb_articles(cb) {
     .pipe(concat('api.articles.json'))
     .pipe(dest('src_content/resources/knowledge-base/'))
 
-  src(['src_content/resources/knowledge-base/general/**/*.json'])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('general.articles.json'))
-    .pipe(dest('src_content/resources/knowledge-base/'))
-
   src([
     'src_content/resources/knowledge-base/text-messaging/**/*.json',
     'src_content/resources/knowledge-base/text-messaging/**/*.jsonc',
@@ -85,6 +75,19 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('phone-number.articles.json'))
+    .pipe(dest('src_content/resources/knowledge-base/'))
+
+  src([
+    'src_content/resources/knowledge-base/general/**/*.json',
+    'src_content/resources/knowledge-base/general/**/*.jsonc',
+  ])
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+        basepath: '@file',
+      })
+    )
+    .pipe(concat('general.articles.json'))
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   cb()
