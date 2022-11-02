@@ -15,6 +15,15 @@ const props = withDefaults(defineProps<HelpCenterDocProps>(), {
 
 const scrollTo = VueScrollTo.scrollTo
 const activeMenuItem = ref(0)
+// dynamically pull headers from markdown for ToC on left side
+const regXHeader = /#{1,6}.+/g
+// console.log(props.content.match(regXHeader)) // debug
+var md_titles = props.content.match(regXHeader)
+var titles = []
+md_titles.forEach((title) => {
+  titles.push({ name: title.replaceAll('#', '').trim() })
+})
+// TODO: add link depth to toc left panel for links on md (# / ## / ###)
 </script>
 
 <template>
@@ -24,7 +33,7 @@ const activeMenuItem = ref(0)
         <div class="left-menu">
           <ul overflown>
             <li
-              v-for="group in props.sections.titles"
+              v-for="group in titles"
               :key="group.name.replace(/ /g, '-').toLowerCase()"
               @click="
                 activeMenuItem = group.name.replace(/ /g, '-').toLowerCase()
@@ -64,8 +73,8 @@ const activeMenuItem = ref(0)
         </div>
       </div>
       <div class="right">
-        <div class="terms-content">
-          <Markdown :source="content" breaks="true" html />
+        <div class="content">
+          <Markdown :source="content" :breaks="true" html />
         </div>
       </div>
     </div>
