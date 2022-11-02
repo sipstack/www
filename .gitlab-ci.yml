@@ -1,4 +1,13 @@
-# disable for commit.sh 
+# Cannot leave gitlab-ci.yml empty for pipelines -- adding below as placeholder
+placeholder:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "Pipeline placeholder."
+  only:
+    - main
+    - develop 
+# ----------------------------------------------------------------------------
 
 # image: docker:latest
 

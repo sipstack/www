@@ -267,6 +267,13 @@ const props = defineProps<SinglePostProps>()
   color: var(--blog-post-text-color) !important;
 }
 
+.ss-reference {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* Number of lines displayed before it truncate */
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   .post-header {
     :deep(.title) {
