@@ -11,5 +11,5 @@ The settlement prohibits both Startel and Hall from the telecommunications indus
 
 
 #### References
-<sup>1 https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/1/c6/1c6cd438-2d36-11ec-aad5-9358140365cf/6168a1c73b66f.pdf.pdf </sup>  
-<sup>2 https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</sup>
+<sup>1 <a class="ss-reference" href="https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/1/c6/1c6cd438-2d36-11ec-aad5-9358140365cf/6168a1c73b66f.pdf.pdf" target="_blank">https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/1/c6/1c6cd438-2d36-11ec-aad5-9358140365cf/6168a1c73b66f.pdf</a> </sup>  
+<sup>2 <a class="ss-reference" href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>
