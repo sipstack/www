@@ -1,0 +1,15 @@
+{
+    slug: "SIPSTACK-glossary",
+    title: "SIPSTACK Glossary",
+    subtitle: "A comprehensive and growing list of all things SIPSTACK.",
+    abstract: "",
+    created: "04/11/2022", 
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
