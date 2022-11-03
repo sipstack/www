@@ -16,7 +16,7 @@ Partners are typically telecom related entities that integrate Smart CNAM into t
 Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
 [**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
 Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
-[**SIPSTACK Partner Account**]((https://www.sipstack.com/resources/docs/partner-portal)   
+[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
 Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
 [**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
 The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
@@ -24,7 +24,7 @@ The SIPSTACK Partner Portal is the central hub that gives you access to all the 
 Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
 [**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
 Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
-[** Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
+[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
 Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
 [**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
 SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
