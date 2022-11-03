@@ -1,0 +1,15 @@
+{
+    slug: "what-do-score-risk-calculations-mean",
+    title: "What do Score/Risk Calculations mean?",
+    subtitle: "Ultimately, SIPSTACK allows individual carriers to interpret scores and determine safety thresholds independently.",
+    abstract: "",
+    created: "04/11/2022", 
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
