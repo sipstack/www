@@ -51,13 +51,13 @@ The **P**rivate **B**ranch **E**xchange connects all the stations (physical phon
 [**Rate Limit**](https://www.sipstack.com/resources/knowledge-base/api/rate-limits)   
 A policy that affects the frequency with which an API can be called. They are put in place to protect server infrastructure from being abused or misused.  
 [**SIP**](https://www.sipstack.com/resources/blog/the-history-of-voip)  
-The **S**ession **I**nitiaion **P*rotocol, designed by Henning Schulzrinne in 1996 outlines  a set of protocols through which two or more devices on the internet can initiate an audio or video session.  
+The **S**ession **I**nitiaion **P**rotocol, designed by Henning Schulzrinne in 1996 outlines  a set of protocols through which two or more devices on the internet can initiate an audio or video session.  
 [**Short Codes**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)
 A five/six digit telephone number that allows high-throughput, and two-way messaging.  
 **SMS**  
  **S**hort **M**essaging **S**ervice. A text message of up to 160 characters sent from one mobile device to another.  
 [**STIR/SHAKEN**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken)   
- **S**ecure **T**elephony **I**dentity **R**evisited and *S**ignature-based **H**andling of **A**sserted information using to**KEN**s. They are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.    
+ **S**ecure **T**elephony **I**dentity **R**evisited and **S**ignature-based **H**andling of **A**sserted information using to**KEN**s. They are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.    
 [**TCP**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
 The **T**ransmission **C**ontrol **P**rotocol sorts out how packets of data move back and forth between one computer and another.  
 [**TCR**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)   
