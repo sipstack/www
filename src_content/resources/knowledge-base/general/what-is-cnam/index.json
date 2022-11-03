@@ -3,7 +3,7 @@
     title: "What is CNAM?",
     subtitle: "Simply put, CNAM is the Caller Name of an incoming phone call. This is displayed on the screen of a mobile or home device.",
     abstract: "",
-    created: "22/09/2022", //dd/mm/yyyy
+    created: "22/09/2022", 
     updated: "",
     author: {
         name: "Anjana Uthayakumaran",
