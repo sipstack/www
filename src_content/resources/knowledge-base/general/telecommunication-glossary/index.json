@@ -1,0 +1,15 @@
+{
+    slug: "telecommunications-glossary",
+    title: "Telecommunications Glossary",
+    subtitle: "A comprehensive and growing list of all things telecommunications.",
+    abstract: "",
+    created: "04/11/2022", 
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
