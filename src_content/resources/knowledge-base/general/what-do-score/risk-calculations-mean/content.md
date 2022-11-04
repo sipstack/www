@@ -1,4 +1,4 @@
-Amongst the various [Smart CNAM lookup types](https://www.sipstack.com/resources/docs/smart-cnam), the score/risk score lookup function provides a dynamic score on a scale from 0.000-5.000.  SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. It is important to note that carriers have internal scores, contributing to the risk calculations. As the carrier continues to interact with our [partner portal]( https://www.sipstack.com/resources/docs/partner-portal), [cloud UC]( https://www.sipstack.com/products/cloud-uc) and continue to use other services, their internal score will go up. This strengthens the trust behind their clients’ phone numbers and as a result, provide their clients with higher scores. Conversely, deceitful actions of the carrier, not only lowers the carrier’s score but all of their clients scores as well. The algorithm is ever-evolving to provide the best possible security to our customers. 
+Amongst the various [Smart CNAM lookup types](https://www.sipstack.com/resources/docs/smart-cnam), the score/risk lookup function provides a dynamic score on a scale from 0.000-5.000.  SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. It is important to note that carriers have internal scores, contributing to the risk calculations. As the carrier continues to interact with our [partner portal]( https://www.sipstack.com/resources/docs/partner-portal), [cloud UC]( https://www.sipstack.com/products/cloud-uc) and continue to use other services, their internal score will go up. This strengthens the trust behind their clients’ phone numbers and as a result, provide their clients with higher scores. Conversely, deceitful actions of the carrier, not only lowers the carrier’s score but all of their clients scores as well. The algorithm is ever-evolving to provide the best possible security to our customers. 
 
 | Score | Remarks| 
 |---|---|   
@@ -10,7 +10,7 @@ Amongst the various [Smart CNAM lookup types](https://www.sipstack.com/resources
 | 3-4 | Safe |  
 | 4-5 | Trusted |  
 
-*Table 1*
+*Table 1 - SIPSTACK's suggested remarks based on score ranges*
 
 
 ### Steps to take 
