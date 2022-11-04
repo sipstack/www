@@ -1,7 +1,7 @@
 {
-    slug: "what-do-score-risk-calculations-mean",
+    slug: "risk-score",
     title: "What do Score/Risk Calculations mean?",
-    subtitle: "Ultimately, SIPSTACK allows individual carriers to interpret scores and determine safety thresholds independently.",
+    subtitle: "Our Smart CNAM's 'Risk Score' allows requestions to interpret the score of a calling phone number.",
     abstract: "",
     created: "04/11/2022", 
     updated: "",
