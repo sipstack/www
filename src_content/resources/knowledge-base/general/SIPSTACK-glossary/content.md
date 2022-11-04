@@ -1,5 +1,5 @@
 [**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
-Your brand is the domain that you have registered with SIPSTACK, and is leveraged for any [SMS/MMS]( https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC) campaigns you run.   
+Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
 [**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
 The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
 [**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
@@ -11,7 +11,7 @@ The Lookup types offered by Smart CNAM offer the following up to date informatio
 [**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
 Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
 [**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
-Partners are typically telecom related entities that integrate Smart CNAM into their call flows.   
+Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
 [**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
 Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
 [**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
