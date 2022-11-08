@@ -158,8 +158,62 @@ The table below outlines error messages, likely causes and potential workarounds
         name: 'Anjana Uthayakumaran',
         picture: '/assets/img/team/anjanaa.jpg',
       },
+      {
+        name: 'Jeff Sager',
+        picture: '/assets/img/team/jeffsa.jpg',
+      },
     ],
     articles: [
+      {
+        slug: 'understanding-wangiri-fraud',
+        title: 'Understanding Wangiri Fraud?',
+        subtitle:
+          'Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.',
+        abstract: '',
+        created: '26/10/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Jeff Sager',
+          picture: '/assets/img/team/jeffsa.jpg',
+        },
+        content: `
+Canadians have reported losses of $383 million in 2021 alone to telecommunication fraud, costing victims exponentially more money than ever before.<sup>1</sup> As spam calling and texting has become a growing concern, it's important to be aware of the prevalent scams both in the [US](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). Increased awareness helps protect ourselves and loved ones against fraud. One of the most prevalent of these telecommunications scams is called Wangiri.  
+
+Wangiri is a Japanese term that translates to _one ring and cut_, referring to a phone call that rings just one time before disconnecting. Typically, these calls will occur at nighttime or working hours in order to intentionally go unanswered and be displayed as a missed call in the call log. The intention is to have victims call the number back, which is then re-routed to an IPRN, International Premium Rate Number, or another number that charges excessively high fees.<sup>2</sup>  Oftentimes, victims receive multiple calls from the same premium-rate number, or even text messages, to influence them to call the number back.<sup>3</sup> This is known as the first leg of the Wangiri attack.  
+
+The second leg occurs once the victim actually calls the number back. The motivation of the scammer then becomes to keep the caller on the line for as long as possible. To this end, they typically use a recording centered around a lottery win, gambling, or other adult-themed content to entice the victim to stay on the line.<sup>4</sup> The longer the call is, the more expensive the fees are, most of which are paid to the scammer.
+ 
+
+## Signs of a Wangiri Call
+Here are a few telltale signs to look out for:
+1)	The phone will ring for only a short amount of time before disconnecting.
+2)	The call occurs at nighttime or working hours.
+3)	The number has an unusual international country code.
+
+## Takeaways and Tips to Protect Yourself
+Keep the following in mind to keep yourself safe against Wangiri fraud:
+1)	If you notice you have a missed call from a number unfamiliar to you, do not call back. As tempting as it may be to want to know whose call you missed, it's important to remember that legitimate callers trying to reach you will often leave a voicemail.
+2)	If you are receiving a lot of these calls, report it to your phone provider. 
+3)	If you have already been charged for calling one of these numbers back, you can report the crime to the police.<sup>5</sup>
+
+
+
+
+
+#### References
+<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href="https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud" target="_blank">https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud</a></sup>   
+<sup>3 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>   
+<sup>4 <a href="https://abhandshake.com/wangiri" target="_blank">https://abhandshake.com/wangiri</a></sup>   
+<sup>5 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>  
+
+
+
+
+
+`,
+      },
+
       {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
@@ -199,7 +253,7 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
         slug: 'risk-score',
         title: 'What do Score/Risk Calculations mean?',
         subtitle:
-          'Ultimately, SIPSTACK allows individual carriers to interpret scores and determine safety thresholds independently.',
+          "Our Smart CNAM's 'Risk Score' allows requestions to interpret the score of a calling phone number.",
         abstract: '',
         created: '04/11/2022',
         updated: '',
@@ -538,21 +592,6 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
         slug: 'can-my-sms-messages-arrive-in-order',
         title: 'Can my SMS messages arrive in order?',
         subtitle: '',
@@ -625,6 +664,21 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 **To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
 
 ***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -1222,6 +1276,54 @@ However, in critical situations, we recommend building in redundancies and using
 `,
       },
       {
+        slug: 'sms-restricted-messages',
+        title: 'What kind of messages are restricted on SIPSTACK SMS?',
+        subtitle:
+          'SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK's [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK's product and service.
+
+The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
+
+## Sending unsolicited messages
+No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
+
+## Sending mass marketing or bulk messaging using SIPSTACK 
+Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
+
+## Sending harassing or abusive messages
+Sending threats, unwanted messages and "SMS-bombing" – sending many messages to a single number without the recipient's permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
+
+## Using SIPSTACK numbers as the only means of communication during an emergency
+SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
+
+It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK's notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
+
+For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
+
+## Engaging in fraud, phishing or sending of sensitive data
+SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It's also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
+
+## Misrepresenting your identity (no spoofing)
+Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
+
+## Sending messages with pornographic or objectionable images
+Do not send pictures 
+- that promote or potentially further any illegal activity,
+- violate any legal or federal legislations, or
+- are likely to cause offense to recipients. 
+
+These include but are not limited to pornographic or objectionable images.
+`,
+      },
+      {
         slug: 'sms-with-toll-free-number',
         title:
           'Can I send or receive SMS with a SIPSTACK toll-free phone number?',
@@ -1278,54 +1380,6 @@ SIPSTACK does not offer short code SMS/MMS numbers, and therefore, cannot suppor
 **Notice:** Text message campaigns may be subject to various legal compliance requirements depending on the nature of your text messaging campaign, the location from where you are sending your text messages, and the location of your recipients. While SIPSTACK will handle the above-described messages on long codes and toll-free numbers in the way described in this article, you should consult with your legal counsel to ensure that your text messaging campaign conforms to all applicable legal compliance requirements.
 
 If you have further questions on this, please contact [SIPSTACK Support](https://www.sipstack.com/contact/us).
-`,
-      },
-      {
-        slug: 'sms-restricted-messages',
-        title: 'What kind of messages are restricted on SIPSTACK SMS?',
-        subtitle:
-          'SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK's [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK's product and service.
-
-The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
-
-## Sending unsolicited messages
-No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
-
-## Sending mass marketing or bulk messaging using SIPSTACK 
-Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
-
-## Sending harassing or abusive messages
-Sending threats, unwanted messages and "SMS-bombing" – sending many messages to a single number without the recipient's permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
-
-## Using SIPSTACK numbers as the only means of communication during an emergency
-SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
-
-It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK's notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
-
-For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
-
-## Engaging in fraud, phishing or sending of sensitive data
-SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It's also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
-
-## Misrepresenting your identity (no spoofing)
-Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
-
-## Sending messages with pornographic or objectionable images
-Do not send pictures 
-- that promote or potentially further any illegal activity,
-- violate any legal or federal legislations, or
-- are likely to cause offense to recipients. 
-
-These include but are not limited to pornographic or objectionable images.
 `,
       },
       {

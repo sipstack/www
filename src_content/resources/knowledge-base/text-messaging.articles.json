@@ -131,21 +131,6 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
-    subtitle: "",
-    abstract: "",
-    created: "22/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`
-},
-{
     slug: "can-my-sms-messages-arrive-in-order",
     title: "Can my SMS messages arrive in order?",
     subtitle: "",
@@ -158,6 +143,31 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
     },
     content: `
 SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+`
+},
+{
+    slug: "can-sipstack-numbers-receive-sms-from-a-short-code",
+    title: "Can SIPSTACK numbers receive SMS from a short code",
+    subtitle: "",
+    abstract: "",
+    created: "26/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
+
+Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
+
+Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
+
+- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
+- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
+- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
+- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via “STOP,” or send “HELP” messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
 `
 },
 {
@@ -194,28 +204,18 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `
 },
 {
-    slug: "can-sipstack-numbers-receive-sms-from-a-short-code",
-    title: "Can SIPSTACK numbers receive SMS from a short code",
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
     subtitle: "",
     abstract: "",
-    created: "26/05/2021",
+    created: "22/03/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
-
-Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
-
-Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
-
-- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
-- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
-- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
-- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via “STOP,” or send “HELP” messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
