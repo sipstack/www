@@ -116,21 +116,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`
-},
-{
     slug: "block-incoming-sms",
     title: "Is there a way to block an incoming SMS on a phone number?",
     subtitle: "",
@@ -143,6 +128,36 @@ SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number
     },
     content: `
 Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`
+},
+{
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`
+},
+{
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -168,39 +183,6 @@ Before you request for your account to be enabled to receive incoming short code
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
 - You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via “STOP,” or send “HELP” messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
-`
-},
-{
-    slug: "capabilities-of-phone-numbers",
-    title: "Capabilities of long code, short code, and toll-free phone numbers in Canada and U.S.",
-    subtitle: "This guide explains the capabilities and key differences between long code, short code, and toll-free phone numbers in Canada and US.",
-    abstract: "",
-    created: "20/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-**Notice:** There are major regulatory changes coming to long-code SMS in the US. due to carrier’s new A2P 10DLC systems. For full details about the regulation, read What is A2P 10DLC.
-
-Table 1 describes the capabilities of long code, toll-free and short code SMS messaging in Canada and US.
-| Capabilities | Long Code* | Toll-free | Short Code** |
-|---|---|---|---|
-| Coverage | Can send SMS to any country. | Can send SMS to any country. | Can send SMS within their own country only. |
-| Voice Call Capability | Yes | Yes | No |
-| SMS filtering profile | [Application-to-Person (A2P)](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a2p-and-p2p-messaging) traffic is subject to carrier filtering. | Reduced carrier filtering for Canadian networks (Rogers, Fido, Telus and Videotron) and all US. networks.*** | No carrier filtering, as long as you comply with the use case submitted in your short code application. |
-| SMS throughput | 1 SMS segment per second, can’t be increased. | 3 SMS segments per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. | 100 SMS per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. |
-| MMS Capability | Yes | Yes | Capable of MMS with a one-time enablement fee (US. only) |
-*Table 1*
-
-**Notes:**
-
-*In US, 10-digit long code application-to-person messaging (A2P 10DLC) will soon require business registration and be subject to additional carrier fees. For full details, see [What is A2P 10DLC](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a2p-10dlc).
-
-**To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
-
-***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
 `
 },
 {
@@ -249,6 +231,39 @@ Multiple media files can be sent as part of one MMS message. However, SIPSTACK c
 `
 },
 {
+    slug: "capabilities-of-phone-numbers",
+    title: "Capabilities of long code, short code, and toll-free phone numbers in Canada and U.S.",
+    subtitle: "This guide explains the capabilities and key differences between long code, short code, and toll-free phone numbers in Canada and US.",
+    abstract: "",
+    created: "20/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+**Notice:** There are major regulatory changes coming to long-code SMS in the US. due to carrier’s new A2P 10DLC systems. For full details about the regulation, read What is A2P 10DLC.
+
+Table 1 describes the capabilities of long code, toll-free and short code SMS messaging in Canada and US.
+| Capabilities | Long Code* | Toll-free | Short Code** |
+|---|---|---|---|
+| Coverage | Can send SMS to any country. | Can send SMS to any country. | Can send SMS within their own country only. |
+| Voice Call Capability | Yes | Yes | No |
+| SMS filtering profile | [Application-to-Person (A2P)](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a2p-and-p2p-messaging) traffic is subject to carrier filtering. | Reduced carrier filtering for Canadian networks (Rogers, Fido, Telus and Videotron) and all US. networks.*** | No carrier filtering, as long as you comply with the use case submitted in your short code application. |
+| SMS throughput | 1 SMS segment per second, can’t be increased. | 3 SMS segments per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. | 100 SMS per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. |
+| MMS Capability | Yes | Yes | Capable of MMS with a one-time enablement fee (US. only) |
+*Table 1*
+
+**Notes:**
+
+*In US, 10-digit long code application-to-person messaging (A2P 10DLC) will soon require business registration and be subject to additional carrier fees. For full details, see [What is A2P 10DLC](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a2p-10dlc).
+
+**To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
+
+***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
+`
+},
+{
     slug: "does-recipient-get-charged",
     title: "Does the recipient of my SIPSTACK message get charged?",
     subtitle: "SIPSTACK will only charge your SIPSTACK account for sending messages through our API.",
@@ -265,21 +280,6 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`
-},
-{
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
-    subtitle: "",
-    abstract: "",
-    created: "22/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
