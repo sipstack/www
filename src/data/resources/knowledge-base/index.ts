@@ -158,8 +158,197 @@ The table below outlines error messages, likely causes and potential workarounds
         name: 'Anjana Uthayakumaran',
         picture: '/assets/img/team/anjanaa.jpg',
       },
+      {
+        name: 'Jeff Sager',
+        picture: '/assets/img/team/jeffsa.jpg',
+      },
     ],
     articles: [
+      {
+        slug: 'glossary-sipstack',
+        title: 'SIPSTACK Glossary',
+        subtitle: 'A comprehensive and growing list of all things SIPSTACK.',
+        abstract: '',
+        created: '04/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+[**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
+Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
+[**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
+[**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
+Cloud **U**nified **C**ommunications is an Asterisk based, open source platform, that allows you to scale and manage from a single console.  
+[**Domain**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The name of the website belonging to the incoming caller is provided when using the Domain lookup tool in Smart CNAM.   
+[**Lookup**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The Lookup types offered by Smart CNAM offer the following up to date information: Risk score, Caller ID, Regional, Telco/Carrier, Online Profiles.     
+[**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
+Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
+[**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
+[**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
+[**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
+Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
+[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
+Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
+[**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
+The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
+[**SIPSTACK privacy policy**](https://www.sipstack.com/legal/privacy)   
+Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
+[**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
+Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
+[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
+[**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
+SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
+[**Users**](https://www.sipstack.com/resources/docs/partner-portal)  
+Users of an organization are authorized and given access through the SIPSTACK Partner Portal.  
+[**Vertical**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost.   
+[**Whois**](https://whois.sipstack.com/)  
+Whois is the world's most advanced lookup tool, proving information and trust ratings based on the incoming Caller ID number.  
+[**Whois Profiles**](https://www.sipstack.com/resources/docs/partner-portal)  
+Whois profiles is a directory containing phone numbers that you own, and any relevant information. Registering a number allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function.  
+
+`,
+      },
+
+      {
+        slug: 'glossary-telco',
+        title: 'Telecommunications Glossary',
+        subtitle:
+          'A comprehensive and growing list of all things telecommunications.',
+        abstract: '',
+        created: '04/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+[**10DLC**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)  
+ **10** **D**igit **L**ong **C**ode, a phone number.    
+[**A2P Messaging**](https://www.sipstack.com/resources/blog/analog-technology)  
+**A**pplication-to-**P**erson Messaging. Businesses and enterprises send SMS communications through software applications to a customer's device.  
+[**AI**](https://www.sipstack.com/products/smart-cnam#faqs)  
+**A**ritifical **I**ntelligence is the simulation/replication of human intelligence processes by machines.  
+[**ARPANET**](https://www.sipstack.com/resources/blog/voip-technology-explained)   
+The **A**dvanced **R**esearch **P**roject **A**gency **N**etwork is a decentralized phone network created by the US Department Defence so as to not be disrupted by a global war.  
+[**Analog technology**](https://www.sipstack.com/resources/blog/analog-technology)  
+Technologies that are analogous to the process occurring behind the technology. Consider, for example, the process of converting a piece of film into a developed photograph. The film negative is used to print a representation of the scene you photographed. The developed photograph, therefore, is an analogy of the image you captured.  
+[**CAFC**](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)  
+The **C**anadian **A**nti-**F**raud **C**entre collects information on fraud and identity theft, providing information on past and current scams affecting Canadians.   
+[**Circuit switching**](https://www.sipstack.com/resources/blog/voip-technology-explained)
+A form of analog technology.  
+**CITA**  
+**C**anadian **I**ndependent **T**elecommunication **A**ssociation. Canada-wide association of companies that provides telecommunication services throughout Canada.  
+[**CID**](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)   
+**C**aller **ID** is the phone number of an incoming phone call  
+[**CNAM**](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)   
+ The **C**aller **Nam**e of an incoming phone call.    
+[**CRTC**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken)   
+The **C**anadian **R**adio-television **T**elecommunications **C**ommission is an independent public authority in charge of regulating and supervising Canadian broadcasting and telecommunications.  
+[**CTIA**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)   
+ **C**ellular **T**elecommunications and **I**nternet **A**ssociation. Represents the U.S. wireless communications industry and companies throughout the mobile ecosystem.  
+[**E-911**](https://www.sipstack.com/resources/knowledge-base/general/what-is-enhanced-911)  
+Enhanced 911 or E-911 is a system utilized in North America that provides the caller's location to emergency services.  
+[**FCC**](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)  
+The **F**ederal **C**ommunications **C**ommission is an independent U.S. government agency overseen by Congress, the Commission is the federal agency responsible for implementing and enforcing America's communications law and regulations.  
+[**Hosted PBX**](https://www.sipstack.com/resources/blog/the-evolution-of-voip)  
+A Hosted **P**rivate **B**ranch **E**xchange is a telephone switching system hosted in the cloud; it is often managed by a third-party service provider who charges a monthly fee for maintenance and real-time support.  
+[**IP**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+The **I**nternet **P**rotocol  is the Internet's addressing system.  
+[**LPC**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+**L**inear **P**redictive **C**oding was invented in 1996 by two Japanese researchers as a way to convert speech into a digital signal so that it could be stored and played back on computers.  
+[**Local Numbers**](https://www.sipstack.com/resources/knowledge-base/phone-numbers/phone-number-types-and-capabilities)     
+Local numbers are telephone numbers which are assigned to a specific geographic region. These numbers are typically used by individuals and local businesses.  
+[**ML**](https://www.sipstack.com/products/smart-cnam#faqs)  
+**M**achine **L**earning is a branch of artificial intelligence that uses data and algorithms to continuously improve its accuracy.  
+[**MMS**](https://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types)    
+Multimedia Messaging Service. A message that includes multimedia content from a mobile phone to another.   
+[**National Numbers**](https://www.sipstack.com/resources/knowledge-base/phone-numbers/phone-number-types-and-capabilities)   
+National numbers are telephone numbers which are not region-specific, and were designed to be reachable from an entire country at the same cost.     
+[**P2P Messaging**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)  
+ **P**erson-to-**P**erson messaging is defined as a two-way conversation between two mobile devices sent by humans without any applications.     
+[**Packet switching**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+Packet switching works by breaking up data into tiny pieces or packets. To transfer voice over a data network, the human voice is packetized and each piece is marked with the destination it's supposed to reach.  
+[**PBX**](https://www.sipstack.com/resources/blog/the-evolution-of-voip)  
+The **P**rivate **B**ranch **E**xchange connects all the stations (physical phones, fax machines, printers, credit card terminals, and modems) within a private organization to each other, and to the PSTN network.   
+[**PSTN**](https://www.sipstack.com/resources/blog/telephone-technology-explained)     
+**P**ublic **S**witched **T**elephone **N**etwork, is a network of physical copper and fibre-optic cables that carry electric signals across vast distances for landlines.  
+[**Rate Limit**](https://www.sipstack.com/resources/knowledge-base/api/rate-limits)   
+A policy that affects the frequency with which an API can be called. They are put in place to protect server infrastructure from being abused or misused.  
+[**SIP**](https://www.sipstack.com/resources/blog/the-history-of-voip)  
+The **S**ession **I**nitiaion **P**rotocol, designed by Henning Schulzrinne in 1996 outlines  a set of protocols through which two or more devices on the internet can initiate an audio or video session.  
+[**Short Codes**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)
+A five/six digit telephone number that allows high-throughput, and two-way messaging.  
+**SMS**  
+ **S**hort **M**essaging **S**ervice. A text message of up to 160 characters sent from one mobile device to another.  
+[**STIR/SHAKEN**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken)   
+ **S**ecure **T**elephony **I**dentity **R**evisited and **S**ignature-based **H**andling of **A**sserted information using to**KEN**s. They are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.    
+[**TCP**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+The **T**ransmission **C**ontrol **P**rotocol sorts out how packets of data move back and forth between one computer and another.  
+[**TCR**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)   
+ The Campaign Registry is the governing authority for A2P 10DLC.   
+[**Toll-free Numbers**](https://www.sipstack.com/resources/knowledge-base/phone-numbers/phone-number-types-and-capabilities)  
+Toll-free numbers are telephone numbers that are free of charge for the calling party, and are typically used by businesses when they prefer to fully take on the cost of calls for their users.  
+[**TSP**](https://www.sipstack.com/resources/blog/the-history-of-voip)   
+**T**elephone **S**ervice **P**roviders  
+[**VoIP**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+**V**oice **O**ver **I**nternet **P**rotocol is the capability to transmit voice signals in real time over the internet and telephone network.  
+[**WWW**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
+ The **W**orld **W**ide **W**eb is an information system that can be accessed on the internet.  
+
+`,
+      },
+
+      {
+        slug: 'understanding-wangiri-fraud',
+        title: 'Understanding Wangiri Fraud?',
+        subtitle:
+          'Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.',
+        abstract: '',
+        created: '26/10/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Jeff Sager',
+          picture: '/assets/img/team/jeffsa.jpg',
+        },
+        content: `
+Canadians have reported losses of $383 million in 2021 alone to telecommunication fraud, costing victims exponentially more money than ever before.<sup>1</sup> As spam calling and texting has become a growing concern, it's important to be aware of the prevalent scams both in the [US](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). Increased awareness helps protect ourselves and loved ones against fraud. One of the most prevalent of these telecommunications scams is called Wangiri.  
+
+Wangiri is a Japanese term that translates to _one ring and cut_, referring to a phone call that rings just one time before disconnecting. Typically, these calls will occur at nighttime or working hours in order to intentionally go unanswered and be displayed as a missed call in the call log. The intention is to have victims call the number back, which is then re-routed to an IPRN, International Premium Rate Number, or another number that charges excessively high fees.<sup>2</sup>  Oftentimes, victims receive multiple calls from the same premium-rate number, or even text messages, to influence them to call the number back.<sup>3</sup> This is known as the first leg of the Wangiri attack.  
+
+The second leg occurs once the victim actually calls the number back. The motivation of the scammer then becomes to keep the caller on the line for as long as possible. To this end, they typically use a recording centered around a lottery win, gambling, or other adult-themed content to entice the victim to stay on the line.<sup>4</sup> The longer the call is, the more expensive the fees are, most of which are paid to the scammer.
+ 
+
+## Signs of a Wangiri Call
+Here are a few telltale signs to look out for:
+1)	The phone will ring for only a short amount of time before disconnecting.
+2)	The call occurs at nighttime or working hours.
+3)	The number has an unusual international country code.
+
+## Takeaways and Tips to Protect Yourself
+Keep the following in mind to keep yourself safe against Wangiri fraud:
+1)	If you notice you have a missed call from a number unfamiliar to you, do not call back. As tempting as it may be to want to know whose call you missed, it's important to remember that legitimate callers trying to reach you will often leave a voicemail.
+2)	If you are receiving a lot of these calls, report it to your phone provider. 
+3)	If you have already been charged for calling one of these numbers back, you can report the crime to the police.<sup>5</sup>
+
+
+#### References
+<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href="https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud" target="_blank">https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud</a></sup>   
+<sup>3 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>   
+<sup>4 <a href="https://abhandshake.com/wangiri" target="_blank">https://abhandshake.com/wangiri</a></sup>   
+<sup>5 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>  
+`,
+      },
+
       {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
@@ -199,7 +388,7 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
         slug: 'risk-score',
         title: 'What do Score/Risk Calculations mean?',
         subtitle:
-          'Ultimately, SIPSTACK allows individual carriers to interpret scores and determine safety thresholds independently.',
+          "Our Smart CNAM's 'Risk Score' allows requestions to interpret the score of a calling phone number.",
         abstract: '',
         created: '04/11/2022',
         updated: '',
@@ -538,21 +727,6 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
         slug: 'can-my-sms-messages-arrive-in-order',
         title: 'Can my SMS messages arrive in order?',
         subtitle: '',
@@ -565,6 +739,21 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
         },
         content: `
 SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -1170,25 +1359,6 @@ Canada and US. carriers do not currently pre-approve messages from long code num
 `,
       },
       {
-        slug: 'sms-messages-to-roaming-phone-numbers',
-        title: 'Can I send SMS messages to roaming phone numbers?',
-        subtitle: '',
-        abstract: '',
-        created: '14/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
-
-If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
-
-SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
-`,
-      },
-      {
         slug: 'sms-messaging-for-emergency-purposes',
         title: 'Can I use SIPSTACK SMS messaging for emergency purposes?',
         subtitle: '',
@@ -1219,6 +1389,73 @@ Voice calls to 911 are usually the most efficient way to reach emergency help be
 Absolutely. We encourage you to use SIPSTACK to send notifications that do not directly concern life safety. SIPSTACK can be used to send early warning alerts, public safety advisories, event cancellations, and so on. 
 
 However, in critical situations, we recommend building in redundancies and using SIPSTACK notifications in conjunction with other public warning systems, such as sirens, radio, and TV broadcasts.
+`,
+      },
+      {
+        slug: 'sms-messages-to-roaming-phone-numbers',
+        title: 'Can I send SMS messages to roaming phone numbers?',
+        subtitle: '',
+        abstract: '',
+        created: '14/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
+
+If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
+
+SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
+`,
+      },
+      {
+        slug: 'sms-restricted-messages',
+        title: 'What kind of messages are restricted on SIPSTACK SMS?',
+        subtitle:
+          'SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK's [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK's product and service.
+
+The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
+
+## Sending unsolicited messages
+No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
+
+## Sending mass marketing or bulk messaging using SIPSTACK 
+Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
+
+## Sending harassing or abusive messages
+Sending threats, unwanted messages and "SMS-bombing" – sending many messages to a single number without the recipient's permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
+
+## Using SIPSTACK numbers as the only means of communication during an emergency
+SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
+
+It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK's notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
+
+For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
+
+## Engaging in fraud, phishing or sending of sensitive data
+SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It's also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
+
+## Misrepresenting your identity (no spoofing)
+Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
+
+## Sending messages with pornographic or objectionable images
+Do not send pictures 
+- that promote or potentially further any illegal activity,
+- violate any legal or federal legislations, or
+- are likely to cause offense to recipients. 
+
+These include but are not limited to pornographic or objectionable images.
 `,
       },
       {
@@ -1278,54 +1515,6 @@ SIPSTACK does not offer short code SMS/MMS numbers, and therefore, cannot suppor
 **Notice:** Text message campaigns may be subject to various legal compliance requirements depending on the nature of your text messaging campaign, the location from where you are sending your text messages, and the location of your recipients. While SIPSTACK will handle the above-described messages on long codes and toll-free numbers in the way described in this article, you should consult with your legal counsel to ensure that your text messaging campaign conforms to all applicable legal compliance requirements.
 
 If you have further questions on this, please contact [SIPSTACK Support](https://www.sipstack.com/contact/us).
-`,
-      },
-      {
-        slug: 'sms-restricted-messages',
-        title: 'What kind of messages are restricted on SIPSTACK SMS?',
-        subtitle:
-          'SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK's [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK's product and service.
-
-The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
-
-## Sending unsolicited messages
-No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
-
-## Sending mass marketing or bulk messaging using SIPSTACK 
-Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
-
-## Sending harassing or abusive messages
-Sending threats, unwanted messages and "SMS-bombing" – sending many messages to a single number without the recipient's permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
-
-## Using SIPSTACK numbers as the only means of communication during an emergency
-SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
-
-It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK's notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
-
-For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
-
-## Engaging in fraud, phishing or sending of sensitive data
-SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It's also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
-
-## Misrepresenting your identity (no spoofing)
-Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
-
-## Sending messages with pornographic or objectionable images
-Do not send pictures 
-- that promote or potentially further any illegal activity,
-- violate any legal or federal legislations, or
-- are likely to cause offense to recipients. 
-
-These include but are not limited to pornographic or objectionable images.
 `,
       },
       {
