@@ -18,16 +18,9 @@ Keep the following in mind to keep yourself safe against Wangiri fraud:
 3)	If you have already been charged for calling one of these numbers back, you can report the crime to the police.<sup>5</sup>
 
 
-
-
-
 #### References
 <sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
 <sup>2 <a href="https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud" target="_blank">https://www.enghousenetworks.com/enghouse-resources/blog/infographics/detect-protect-against-wangiri-callback-fraud</a></sup>   
 <sup>3 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>   
 <sup>4 <a href="https://abhandshake.com/wangiri" target="_blank">https://abhandshake.com/wangiri</a></sup>   
 <sup>5 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>  
-
-
-
-
