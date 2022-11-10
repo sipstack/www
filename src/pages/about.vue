@@ -54,7 +54,7 @@ import { iconValues, founders, longTeam, gridTeam } from '/@src/data/about'
       <Container>
         <SectionTitle title="About Our Talent" subtitle="Meet the team" />
 
-        <ssTeamBlockE :items="gridTeam" :limit="4" shapes />
+        <ssTeamBlockE :items="gridTeam" :limit="6" shapes />
       </Container>
     </Section>
 
