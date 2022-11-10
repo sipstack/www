@@ -1,0 +1,15 @@
+{
+    slug: "what-is-call-spoofing",
+    title: "what-is-call-spoofing",
+    subtitle: "Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.",
+    abstract: "",
+    created: "26/10/2022", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Jeff Sager",
+        picture: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
