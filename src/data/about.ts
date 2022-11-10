@@ -173,6 +173,12 @@ export const gridTeam = [
       },
     ],
   },
+  {
+    image: '/assets/img/team/jeffsa.jpg',
+    name: 'Jeffrey Sager',
+    position: 'Creative Content Writer',
+    socialLinks: [],
+  },
 ]
 
 export const press = [
