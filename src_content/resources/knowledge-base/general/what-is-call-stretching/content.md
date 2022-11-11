@@ -10,6 +10,6 @@ Entering the Caller ID displayed will instantaneously provide a score rating out
 
 
 #### References
-<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup> 
+<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
 <sup>2 <a href=" https://community.abhandshake.com/call-stretching
 " class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
