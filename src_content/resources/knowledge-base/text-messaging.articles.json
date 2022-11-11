@@ -216,21 +216,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `
 },
 {
-    slug: "delivery-order-of-multiple-media-files-via-mms",
-    title: "Delivery order of multiple media files via MMS",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
-`
-},
-{
     slug: "capabilities-of-phone-numbers",
     title: "Capabilities of long code, short code, and toll-free phone numbers in Canada and U.S.",
     subtitle: "This guide explains the capabilities and key differences between long code, short code, and toll-free phone numbers in Canada and US.",
@@ -261,6 +246,21 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 **To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
 
 ***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
+`
+},
+{
+    slug: "delivery-order-of-multiple-media-files-via-mms",
+    title: "Delivery order of multiple media files via MMS",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `
 },
 {

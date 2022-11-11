@@ -385,6 +385,39 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
       },
 
       {
+        slug: 'what-is-pbx-hacking',
+        title: 'What is PBX Hacking?',
+        subtitle:
+          'While it is not widely known or understood, it stands to be of the most common and significant threats to telecommunications safety for businesses.',
+        abstract: '',
+        created: '11/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+**PBX**,  **P**rivate **B**ranch **E**xchange, Hacking, is one of five prevalent advancement in technology leveraged in scams in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). While it is not widely known or understood, it stands to be of the most common and significant threats to telecommunications safety for businesses. In 2021 alone US enterprises reported a loss of $1.82 billion USD to the **CFCA**, **C**ommunications **F**raud **C**ontrol **A**ssociation.<sup>1</sup>
+
+A PBX, **p**rivate **b**ranch **e**xchange, is a private telephone system used within an organization to communicate internally between users, while also connecting to an external network through shared number of phone lines. While reducing operating costs for businesses, they provide ample opportunity for hacking and fraud through initiating international calls resulting in unauthorized charges for the PBX owner if left unprotected. Users are often unaware of the threat PBX hacking poses and fail to implement protective measures. 
+
+
+## How to protect yourself 
+
+-	**Change passwords:** Avoid using the default passwords provided by your service provider, as they can be found online and in user manuals. Also, regularly change voicemail passcodes, to non-generic ones. 
+-	**Do not post a public call directory:** Although you would like your staff to be available to clients, providing a complete list of **DID**, **d**irect **i**nward **d**ialing numbers (phone numbers), will provide hackers a plethora of options to attempt hacking into, or target individuals directly by name and phone number. 
+-	**Use secure VoIP methods:** Using [VoIP]( https://www.sipstack.com/resources/blog/voip-technology-explained) over secure transports (similar to SSL for websites), VPN (virtual private network) or non-standard SIP ports helps mitigates hackers exponentially. SIP using TLS encrypts traffic and packets between client devices and SIP servers.  VPN allows SIP traffic to flow between client devices and SIP servers over public internet as if they exist in the same network. Use of non-standard SIP ports can help hide SIP devices/access from port scanners and sniffers when TLS or VPN is not available.
+-	**Close unactive accounts:** When an employee is no longer working for the company it is important to swiftly disable their access and close their mailbox.
+-	**Restrict password attempts:** Configure your system so access to outgoing calls and voicemails are locked after three failed password attempts. 
+-	**Choose SIPSTACK:** Enabling and managing security measures on every aspect of your telecommunications can be overwhelming. SIPSTACK provides its clients with the utmost security so that you can focus on making your business a success. [Contact us](https://www.sipstack.com/contact/us) to learn more.
+
+#### References
+<sup>1 <a href="https://cfca.org/wp-content/uploads/2021/12/CFCA-Fraud-Loss-Survey-2021-2.pdf" class="ss-reference" target="_blank">https://cfca.org/wp-content/uploads/2021/12/CFCA-Fraud-Loss-Survey-2021-2.pdf</a></sup>  
+
+`,
+      },
+
+      {
         slug: 'risk-score',
         title: 'What do Score/Risk Calculations mean?',
         subtitle:
@@ -712,18 +745,18 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
         subtitle: '',
         abstract: '',
-        created: '18/03/2021',
+        created: '22/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -742,18 +775,18 @@ SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
         abstract: '',
-        created: '22/03/2021',
+        created: '18/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -848,21 +881,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
-        slug: 'delivery-order-of-multiple-media-files-via-mms',
-        title: 'Delivery order of multiple media files via MMS',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
-`,
-      },
-      {
         slug: 'does-recipient-get-charged',
         title: 'Does the recipient of my SIPSTACK message get charged?',
         subtitle:
@@ -880,6 +898,21 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
+`,
+      },
+      {
+        slug: 'delivery-order-of-multiple-media-files-via-mms',
+        title: 'Delivery order of multiple media files via MMS',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `,
       },
       {
@@ -1359,6 +1392,25 @@ Canada and US. carriers do not currently pre-approve messages from long code num
 `,
       },
       {
+        slug: 'sms-messages-to-roaming-phone-numbers',
+        title: 'Can I send SMS messages to roaming phone numbers?',
+        subtitle: '',
+        abstract: '',
+        created: '14/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
+
+If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
+
+SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
+`,
+      },
+      {
         slug: 'sms-messaging-for-emergency-purposes',
         title: 'Can I use SIPSTACK SMS messaging for emergency purposes?',
         subtitle: '',
@@ -1389,25 +1441,6 @@ Voice calls to 911 are usually the most efficient way to reach emergency help be
 Absolutely. We encourage you to use SIPSTACK to send notifications that do not directly concern life safety. SIPSTACK can be used to send early warning alerts, public safety advisories, event cancellations, and so on. 
 
 However, in critical situations, we recommend building in redundancies and using SIPSTACK notifications in conjunction with other public warning systems, such as sirens, radio, and TV broadcasts.
-`,
-      },
-      {
-        slug: 'sms-messages-to-roaming-phone-numbers',
-        title: 'Can I send SMS messages to roaming phone numbers?',
-        subtitle: '',
-        abstract: '',
-        created: '14/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
-
-If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
-
-SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
 `,
       },
       {
