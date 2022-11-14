@@ -350,6 +350,38 @@ Keep the following in mind to keep yourself safe against Wangiri fraud:
       },
 
       {
+        slug: 'what-is-call-stretching',
+        title: 'What is Call Stretching ?',
+        subtitle:
+          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
+        abstract: '',
+        created: '12/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
+
+This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
+
+Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
+
+## What is the solution?
+If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
+Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
+
+
+#### References
+<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
+<sup>2 <a href=" https://community.abhandshake.com/call-stretching
+" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
+
+`,
+      },
+
+      {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
         subtitle:
@@ -541,38 +573,6 @@ In most countries, mobile numbers are assigned to a particular range within the 
     ],
     articles: [
       {
-        slug: 'what-is-A2P-10DLC',
-        title: 'What is A2P 10DLC?',
-        subtitle:
-          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
-        abstract: '',
-        created: '14/10/2022', //dd/mm/yyyy
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
-
-## Existing Alternatives
-
-While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
-
-**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
-
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
-
-**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
-
-## Benefits of 10DLC
-
-A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
-
-`,
-      },
-
-      {
         slug: 'what-is-stir-shaken',
         title: 'What is STIR/SHAKEN?',
         subtitle:
@@ -607,6 +607,38 @@ To learn more about protecting your company's number from getting spoofed visit 
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
 <sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
+
+`,
+      },
+
+      {
+        slug: 'what-is-A2P-10DLC',
+        title: 'What is A2P 10DLC?',
+        subtitle:
+          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
+        abstract: '',
+        created: '14/10/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
+
+## Existing Alternatives
+
+While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
+
+**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
+
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
+
+**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
+
+## Benefits of 10DLC
+
+A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
 
 `,
       },
@@ -881,6 +913,21 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
+        slug: 'delivery-order-of-multiple-media-files-via-mms',
+        title: 'Delivery order of multiple media files via MMS',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`,
+      },
+      {
         slug: 'does-recipient-get-charged',
         title: 'Does the recipient of my SIPSTACK message get charged?',
         subtitle:
@@ -898,21 +945,6 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`,
-      },
-      {
-        slug: 'delivery-order-of-multiple-media-files-via-mms',
-        title: 'Delivery order of multiple media files via MMS',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `,
       },
       {
@@ -943,44 +975,6 @@ In countries without a "mobile range" like Canada, U.S. and most Caribbean natio
 
 ## Best Practices when sending an SMS using SIPSTACK API
 We recommend that you collect the phone type during your opt-in process. You should only be sending SMS messages to opted-in users who want to receive your messages.
-`,
-      },
-      {
-        slug: 'does-sipstack-support-concatenated-sms-messages',
-        title: 'Does SIPSTACK support concatenated SMS messages',
-        subtitle:
-          'Messages over 160 characters are concatenated or broken up into multiple messages and transmitted separately.',
-        abstract: '',
-        created: '19/05/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK allows you to send and receive concatenated messages containing up to 1600 characters (as ten separate messages).
-
-## Sending concatenated messages
-All Canada and US carriers support the sending of concatenated messages except for US Cellular. 
-
-However, please note that some older handsets may be unable to display concatenated SMS. These devices may still display long SMS as separate segments marked with "1/3", "2/3" etc.
-
-When sending concatenated SMS, SIPSTACK will auto-segment long messages with a special header. Mobile carriers can use this header to reassemble the segments on the destination handset. In this way, concatenated SMS can appear as a single message on a receiving device. 
-
-Our [Pricing Page](https://www.sipstack.com/pricing) has more information on how our pricing works for outbound concatenated messages. 
-
-Some mobile carriers may have trouble handling SMS messages with more than 10 segments and Unicode characters. Please keep your messages shorter than 10 segments if possible.
-
-## What happens when a message is sent to a carrier that does not support concatenated messages?
-Even if a mobile carrier does not support concatenated messages, you can still send long SMS to recipients on that carrier. SIPSTACK will divide your long message into individual SMS to meet the character limit, and automatically add page information to the beginning of each one, for example (1/2), (2/2). On SIPSTACK, your message will still appear under a single Message ID.
-
-## US Cellular and the 150-character limit
-In addition to not supporting concatenated messages, US Cellular also limits the length of a single message to 150 characters (instead of 160) in GSM encoding. This means that long messages to US Cellular may segment differently than those sent to other networks.
-
-A single Unicode-encoded message to US Cellular can be up to 70 characters long, the same limit as other mobile carriers.
-
-## Receiving inbound concatenated SMS
-SIPSTACK also supports the receiving of concatenated messages up to 1,600 characters. Inbound messages over 160 characters long will be received on your SIPSTACK phone number as one single message, as long as the sending carrier supports concatenation. The price of the inbound message will be the sum of the total number of segments.
 `,
       },
       {
@@ -1023,6 +1017,44 @@ If a user tires to assign an outbound message with this category, the message wi
 | Gambling | Casino apps, Gambling websites |  |
 | "S.H.A.F.T." use cases | Sex, Hate, Alcohol, Firearms, Tobacco |  |
 *Table 1*
+`,
+      },
+      {
+        slug: 'does-sipstack-support-concatenated-sms-messages',
+        title: 'Does SIPSTACK support concatenated SMS messages',
+        subtitle:
+          'Messages over 160 characters are concatenated or broken up into multiple messages and transmitted separately.',
+        abstract: '',
+        created: '19/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK allows you to send and receive concatenated messages containing up to 1600 characters (as ten separate messages).
+
+## Sending concatenated messages
+All Canada and US carriers support the sending of concatenated messages except for US Cellular. 
+
+However, please note that some older handsets may be unable to display concatenated SMS. These devices may still display long SMS as separate segments marked with "1/3", "2/3" etc.
+
+When sending concatenated SMS, SIPSTACK will auto-segment long messages with a special header. Mobile carriers can use this header to reassemble the segments on the destination handset. In this way, concatenated SMS can appear as a single message on a receiving device. 
+
+Our [Pricing Page](https://www.sipstack.com/pricing) has more information on how our pricing works for outbound concatenated messages. 
+
+Some mobile carriers may have trouble handling SMS messages with more than 10 segments and Unicode characters. Please keep your messages shorter than 10 segments if possible.
+
+## What happens when a message is sent to a carrier that does not support concatenated messages?
+Even if a mobile carrier does not support concatenated messages, you can still send long SMS to recipients on that carrier. SIPSTACK will divide your long message into individual SMS to meet the character limit, and automatically add page information to the beginning of each one, for example (1/2), (2/2). On SIPSTACK, your message will still appear under a single Message ID.
+
+## US Cellular and the 150-character limit
+In addition to not supporting concatenated messages, US Cellular also limits the length of a single message to 150 characters (instead of 160) in GSM encoding. This means that long messages to US Cellular may segment differently than those sent to other networks.
+
+A single Unicode-encoded message to US Cellular can be up to 70 characters long, the same limit as other mobile carriers.
+
+## Receiving inbound concatenated SMS
+SIPSTACK also supports the receiving of concatenated messages up to 1,600 characters. Inbound messages over 160 characters long will be received on your SIPSTACK phone number as one single message, as long as the sending carrier supports concatenation. The price of the inbound message will be the sum of the total number of segments.
 `,
       },
       {
@@ -1134,22 +1166,6 @@ The URL (http://m.sipstack.com followed by 7 characters) will be appended to the
 `,
       },
       {
-        slug: 'mms-message-long-code-cost',
-        title:
-          'How much does it cost to send and receive an MMS message over long codes?',
-        subtitle: '',
-        abstract: '',
-        created: '31/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
-`,
-      },
-      {
         slug: 'mms-on-my-toll-free-phone-number',
         title:
           'How much does it cost to send and receive an MMS message over long codes?',
@@ -1165,6 +1181,22 @@ SIPSTACK currently offers MMS messaging over Canada and US long code phone numbe
 Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
 
 Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
+`,
+      },
+      {
+        slug: 'mms-message-long-code-cost',
+        title:
+          'How much does it cost to send and receive an MMS message over long codes?',
+        subtitle: '',
+        abstract: '',
+        created: '31/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `,
       },
       {
