@@ -26,11 +26,11 @@ Important to note is that these scams may also be known as “Emergency Scams”
 - If the caller claims to be a police officer, hang up and call your local police to verify.
 - Set the privacy settings on all your social media accounts so that only people you know can view their contents. This will help to ensure no scammers have access to any of your posts, photos, connections, or other private information that can be used in these scams.
 - Do not send money over the phone until the callers’ identity has been confirmed and verified. Be particularly wary of sending cash, prepaid credit cards, gift cards, or other unconventional cards that are difficult to trace. 
-- Be mindful of other scams that may be used in tandem with the Grandparent Scam, including caller ID spoofing, and continue to stay informed on how to protect yourself.
+- Be mindful of [other scams](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada) that may be used in tandem with the Grandparent Scam, including [caller ID spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing), and continue to stay informed on [how to protect yourself](https://www.sipstack.com/resources/knowledge-base/general/).
  
 
 ## How SIPSTACK Fights Fraud
-Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. Contact us today to learn how you can protect yourself from spam.
+Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References  
 <sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
