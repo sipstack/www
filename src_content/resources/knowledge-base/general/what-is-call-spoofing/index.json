@@ -1,9 +1,9 @@
 {
     slug: "what-is-call-spoofing",
     title: "what-is-call-spoofing",
-    subtitle: "Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.",
+    subtitle: "Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so.",
     abstract: "",
-    created: "26/10/2022", //dd/mm/yyyy
+    created: "18/11/2022", //dd/mm/yyyy
     updated: "",
     author: {
         name: "Jeff Sager",
