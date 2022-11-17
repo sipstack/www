@@ -21,7 +21,7 @@ There are a number of ways the scammer could receive money from the victim, most
 Important to note is that these scams may also be known as “Emergency Scams”, since scammers will sometimes target members of the family other than just grandparents. Aunts, uncles, husbands, wives, or even friends are all fair game. However, it is understood that grandparents and senior citizens are particularly vulnerable to these specific schemes. 
 
 ## Tips to Protect Yourself Against the Grandparent Scam
-- Use [Whois by SIPSTACK](whois.sipstack.com) to check information of the phone number calling you.
+- Use [Whois by SIPSTACK](https://whois.sipstack.com) to check information of the phone number calling you.
 - If you receive a call like this from an alleged family member, hang up and call that family member directly. This will help you to verify whether or not they are actually in trouble.
 - If the caller claims to be a police officer, hang up and call your local police to verify.
 - Set the privacy settings on all your social media accounts so that only people you know can view their contents. This will help to ensure no scammers have access to any of your posts, photos, connections, or other private information that can be used in these scams.
