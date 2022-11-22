@@ -1,0 +1,20 @@
+{
+    slug: "How-covid-19-has-impacted-fraud",
+    image: "/assets/img/resources/blog/20221122-how-covid-19-has-impacted-fraud/covid-19-blog.png",
+    category: "Fraud",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "How Covid-19 Has Impacted Fraud",
+    abstract: "In the wake of Covid-19, businesses around the world were forced to quickly adapt to the new reality the pandemic had brought in 2020.",
+    created: "22/11/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 5, // minute read
+    author: {
+        name: "Anjana Uthayakumaran",
+        role: "Author",
+        photo: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
