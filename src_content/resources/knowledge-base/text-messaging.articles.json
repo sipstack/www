@@ -116,18 +116,18 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
     subtitle: "",
     abstract: "",
-    created: "22/03/2021",
+    created: "07/04/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -143,21 +143,6 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
     },
     content: `
 Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
-`
-},
-{
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -219,6 +204,36 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `
 },
 {
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`
+},
+{
+    slug: "delivery-order-of-multiple-media-files-via-mms",
+    title: "Delivery order of multiple media files via MMS",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`
+},
+{
     slug: "carrier-support-for-pdf-files",
     title: "Carrier support for PDF files sent using SIPSTACK MMS",
     subtitle: "SIPSTACK MMS messaging is a popular way to send media files, especially images, to end users in Canada and US.",
@@ -246,21 +261,6 @@ SIPSTACK does not offer short code numbers and therefore, does not support any s
 
 ## WhatsApp and other messaging channels
 The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
-`
-},
-{
-    slug: "delivery-order-of-multiple-media-files-via-mms",
-    title: "Delivery order of multiple media files via MMS",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
 `
 },
 {
@@ -470,21 +470,6 @@ Toll-free phone numbers may be a better fit for certain use cases. Unlike short 
 `
 },
 {
-    slug: "mms-message-long-code-cost",
-    title: "How much does it cost to send and receive an MMS message over long codes?",
-    subtitle: "",
-    abstract: "",
-    created: "31/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
-`
-},
-{
     slug: "is-mms-supported-for-all-carriers",
     title: "Is MMS supported for all carriers in Canada and US?",
     subtitle: "Carrier support for MMS messages varies, and is dependent on the receiving carrier. ",
@@ -507,6 +492,21 @@ Currently, SIPSTACK supports sending MMS messages from local long code numbers t
 When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
 
 The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
+`
+},
+{
+    slug: "mms-message-long-code-cost",
+    title: "How much does it cost to send and receive an MMS message over long codes?",
+    subtitle: "",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `
 },
 {
