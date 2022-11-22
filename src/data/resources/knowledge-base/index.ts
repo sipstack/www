@@ -351,7 +351,7 @@ Keep the following in mind to keep yourself safe against Wangiri fraud:
 
       {
         slug: 'what-is-call-stretching',
-        title: 'What is Call Stretching ?',
+        title: 'What is Call Stretching?',
         subtitle:
           'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
         abstract: '',
@@ -429,16 +429,16 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
           picture: '/assets/img/team/anjanaa.jpg',
         },
         content: `
-**PBX**,  **P**rivate **B**ranch **E**xchange, Hacking, is one of five prevalent advancement in technology leveraged in scams in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). While it is not widely known or understood, it stands to be of the most common and significant threats to telecommunications safety for businesses. In 2021 alone US enterprises reported a loss of $1.82 billion USD to the **CFCA**, **C**ommunications **F**raud **C**ontrol **A**ssociation.<sup>1</sup>
+**PBX**, **P**rivate **B**ranch **E**xchange, Hacking is one of five prevalent advancement in technology leveraged in scams in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). While it is not widely known or understood, it stands to be of the most common and significant threats to telecommunications safety for businesses. In 2021 alone US enterprises reported a loss of $1.82 billion USD to the **CFCA**, **C**ommunications **F**raud **C**ontrol **A**ssociation.<sup>1</sup>
 
-A PBX, **p**rivate **b**ranch **e**xchange, is a private telephone system used within an organization to communicate internally between users, while also connecting to an external network through shared number of phone lines. While reducing operating costs for businesses, they provide ample opportunity for hacking and fraud through initiating international calls resulting in unauthorized charges for the PBX owner if left unprotected. Users are often unaware of the threat PBX hacking poses and fail to implement protective measures. 
+A PBX is a private telephone system used within an organization to communicate internally between users, while also connecting to an external network through shared number of phone lines. While reducing operating costs for businesses, they provide ample opportunity for hacking and fraud through initiating international calls resulting in unauthorized charges for the PBX owner if left unprotected. Users are often unaware of the threat PBX hacking poses and fail to implement protective measures. 
 
 
 ## How to protect yourself 
 
 -	**Change passwords:** Avoid using the default passwords provided by your service provider, as they can be found online and in user manuals. Also, regularly change voicemail passcodes, to non-generic ones. 
 -	**Do not post a public call directory:** Although you would like your staff to be available to clients, providing a complete list of **DID**, **d**irect **i**nward **d**ialing numbers (phone numbers), will provide hackers a plethora of options to attempt hacking into, or target individuals directly by name and phone number. 
--	**Use secure VoIP methods:** Using [VoIP]( https://www.sipstack.com/resources/blog/voip-technology-explained) over secure transports (similar to SSL for websites), VPN (virtual private network) or non-standard SIP ports helps mitigates hackers exponentially. SIP using TLS encrypts traffic and packets between client devices and SIP servers.  VPN allows SIP traffic to flow between client devices and SIP servers over public internet as if they exist in the same network. Use of non-standard SIP ports can help hide SIP devices/access from port scanners and sniffers when TLS or VPN is not available.
+-	**Use secure VoIP methods:** Using [VoIP]( https://www.sipstack.com/resources/blog/voip-technology-explained) over secure transports (similar to SSL for websites), **VPN** **V**irtual **P**rivate **N**etwork, or non-standard [**SIP**](https://www.sipstack.com/resources/knowledge-base/general/glossary-telco), **S**ession **I**nterent **P**rotocol, ports deters hackers exponentially. SIP uses **TLS**, **T**ransport **L**ayer **S**ecurity to encrypt traffic and packets between client devices and SIP servers. VPN allows SIP traffic to flow between client devices and SIP servers over public internet as if they exist in the same network. Use of non-standard SIP ports can help hide SIP devices/access from port scanners and sniffers when TLS or VPN is not available.
 -	**Close unactive accounts:** When an employee is no longer working for the company it is important to swiftly disable their access and close their mailbox.
 -	**Restrict password attempts:** Configure your system so access to outgoing calls and voicemails are locked after three failed password attempts. 
 -	**Choose SIPSTACK:** Enabling and managing security measures on every aspect of your telecommunications can be overwhelming. SIPSTACK provides its clients with the utmost security so that you can focus on making your business a success. [Contact us](https://www.sipstack.com/contact/us) to learn more.
@@ -573,6 +573,38 @@ In most countries, mobile numbers are assigned to a particular range within the 
     ],
     articles: [
       {
+        slug: 'what-is-A2P-10DLC',
+        title: 'What is A2P 10DLC?',
+        subtitle:
+          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
+        abstract: '',
+        created: '14/10/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
+
+## Existing Alternatives
+
+While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
+
+**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
+
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
+
+**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
+
+## Benefits of 10DLC
+
+A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
+
+`,
+      },
+
+      {
         slug: 'what-is-stir-shaken',
         title: 'What is STIR/SHAKEN?',
         subtitle:
@@ -607,38 +639,6 @@ To learn more about protecting your company's number from getting spoofed visit 
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
 <sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
-
-`,
-      },
-
-      {
-        slug: 'what-is-A2P-10DLC',
-        title: 'What is A2P 10DLC?',
-        subtitle:
-          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
-        abstract: '',
-        created: '14/10/2022', //dd/mm/yyyy
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
-
-## Existing Alternatives
-
-While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
-
-**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
-
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
-
-**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
-
-## Benefits of 10DLC
-
-A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
 
 `,
       },
@@ -792,21 +792,6 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
 `,
       },
       {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`,
-      },
-      {
         slug: 'block-incoming-sms',
         title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
@@ -819,6 +804,21 @@ SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number
         },
         content: `
 Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`,
+      },
+      {
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
@@ -994,32 +994,6 @@ SIPSTACK will do the best we can to ensure that the emoji in your message is del
 `,
       },
       {
-        slug: 'forbidden-message-categories',
-        title:
-          'Forbidden message categories for toll-free SMS and MMS in Canada and US',
-        subtitle:
-          'The following messaging use cases are not allowed on toll-free SMS or MMS in Canada and US.',
-        abstract: '',
-        created: '15/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-If a user tires to assign an outbound message with this category, the message will automatically be rejected by SIPSTACK. If a user tries to specify a different category to send a message that falls within any of the following forbidden categories, SIPSTACK will employ smart AI to detect and automatically suspend accounts that are breaking the rules. 
-| Category | Examples | Notes |
-|---|---|---|
-| High-risk financial services | Payday loans, Short term high-interest loans, Third-party auto loans, Third-party mortgage loans, Student loans | "Third-party" means originating from any party other than the one which will service the loan. |
-| Debt collection or forgiveness | Third-party debt collection, Debt consolidation, Debt reduction, Credit repair programs | "Third-party" means originating from any party other than the one who is owed the debt. For example, a hospital could send messages regarding bills for its own patients, assuming they provided opt-in to receive that messaging. |
-| "Get rich quick" schemes | Work-from-home programs, Risk investment opportunities, Pyramid schemes | This is different from outreach about employment as a result of compliant opt-in practices, messages from brokerages to their members, investment news alerts, or other investment-related messages. |
-| Illegal substances | Cannabis, CBD, Prescription drugs | Cannabis is illegal in Canada and US. Cannabis businesses will not be permitted to use SMS/MMS messaging in Canada or US, regardless of message content. |
-| Gambling | Casino apps, Gambling websites |  |
-| "S.H.A.F.T." use cases | Sex, Hate, Alcohol, Firearms, Tobacco |  |
-*Table 1*
-`,
-      },
-      {
         slug: 'does-sipstack-support-concatenated-sms-messages',
         title: 'Does SIPSTACK support concatenated SMS messages',
         subtitle:
@@ -1058,6 +1032,32 @@ SIPSTACK also supports the receiving of concatenated messages up to 1,600 charac
 `,
       },
       {
+        slug: 'forbidden-message-categories',
+        title:
+          'Forbidden message categories for toll-free SMS and MMS in Canada and US',
+        subtitle:
+          'The following messaging use cases are not allowed on toll-free SMS or MMS in Canada and US.',
+        abstract: '',
+        created: '15/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+If a user tires to assign an outbound message with this category, the message will automatically be rejected by SIPSTACK. If a user tries to specify a different category to send a message that falls within any of the following forbidden categories, SIPSTACK will employ smart AI to detect and automatically suspend accounts that are breaking the rules. 
+| Category | Examples | Notes |
+|---|---|---|
+| High-risk financial services | Payday loans, Short term high-interest loans, Third-party auto loans, Third-party mortgage loans, Student loans | "Third-party" means originating from any party other than the one which will service the loan. |
+| Debt collection or forgiveness | Third-party debt collection, Debt consolidation, Debt reduction, Credit repair programs | "Third-party" means originating from any party other than the one who is owed the debt. For example, a hospital could send messages regarding bills for its own patients, assuming they provided opt-in to receive that messaging. |
+| "Get rich quick" schemes | Work-from-home programs, Risk investment opportunities, Pyramid schemes | This is different from outreach about employment as a result of compliant opt-in practices, messages from brokerages to their members, investment news alerts, or other investment-related messages. |
+| Illegal substances | Cannabis, CBD, Prescription drugs | Cannabis is illegal in Canada and US. Cannabis businesses will not be permitted to use SMS/MMS messaging in Canada or US, regardless of message content. |
+| Gambling | Casino apps, Gambling websites |  |
+| "S.H.A.F.T." use cases | Sex, Hate, Alcohol, Firearms, Tobacco |  |
+*Table 1*
+`,
+      },
+      {
         slug: 'handling-deactivated-phone-numbers',
         title: 'Handling Deactivated Phone Numbers',
         subtitle:
@@ -1083,6 +1083,32 @@ Wireless carriers in Canada and the United States routinely publish Deactivation
 Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
 
 Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
+`,
+      },
+      {
+        slug: 'is-mms-supported-for-all-carriers',
+        title: 'Is MMS supported for all carriers in Canada and US?',
+        subtitle:
+          'Carrier support for MMS messages varies, and is dependent on the receiving carrier. ',
+        abstract: '',
+        created: '18/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+## MMS from Long Code (10-digit) numbers
+Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
+
+**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
+
+**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
+
+## What happens when I send an MMS to an unsupported carrier?
+When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
+
+The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
 `,
       },
       {
@@ -1140,29 +1166,19 @@ Toll-free phone numbers may be a better fit for certain use cases. Unlike short 
 `,
       },
       {
-        slug: 'is-mms-supported-for-all-carriers',
-        title: 'Is MMS supported for all carriers in Canada and US?',
-        subtitle:
-          'Carrier support for MMS messages varies, and is dependent on the receiving carrier. ',
+        slug: 'mms-message-long-code-cost',
+        title:
+          'How much does it cost to send and receive an MMS message over long codes?',
+        subtitle: '',
         abstract: '',
-        created: '18/05/2021',
+        created: '31/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-## MMS from Long Code (10-digit) numbers
-Currently, SIPSTACK supports sending MMS messages from local long code numbers to the following mobile carriers in Canada and the US.
-
-**Major supported carriers:** AT&T, Verizon, T-Mobile, Sprint, Rogers, Bell, Fido, Telus, Wind Canada
-
-**Minor supported carriers:** 365 Wireless, Alaska Communication System (ACS), Advantage Wireless, Alltel Wireless, Bluegrass Cellular, Boost Mobile, Carolina West Wireless, Cellcom, Cellular South, Clear Talk Wireless, Commnet Wireless, Copper Valley Telecom, CTC Telecom, GCI Wireless, Google Voice, Illinois Valley Cellular, Inland Cellular, James Valley Communications, Leaco, MetroPCS, MTA Communications, NewCore Wireless, Nex-Tech Wireless, Panhandle Communications, Peoples Wireless, Pine Cellular, Pinpoint Communications, Southern Linc, SRT Communications, Standing Rock Telecom, Thumb Cellular, Simmetry (TMP Corporation), United Wireless
-
-## What happens when I send an MMS to an unsupported carrier?
-When you send an MMS message to an unsupported carrier, SIPSTACK will send the message as an SMS with a shortened URL in the body, linking to your media. 
-
-The URL (http://m.sipstack.com followed by 7 characters) will be appended to the body of your SMS text message.
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `,
       },
       {
@@ -1181,22 +1197,6 @@ The URL (http://m.sipstack.com followed by 7 characters) will be appended to the
 Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
 
 Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
-`,
-      },
-      {
-        slug: 'mms-message-long-code-cost',
-        title:
-          'How much does it cost to send and receive an MMS message over long codes?',
-        subtitle: '',
-        abstract: '',
-        created: '31/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `,
       },
       {
