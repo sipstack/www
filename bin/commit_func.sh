@@ -51,8 +51,8 @@ func_dev3 () {
         echo "--------------------------------------------------------------------------------"
 
         echo "Running remote SSH commands"
-        ssh root@dme-721.sipstack.com docker pull registry.sipstack.com/web/www
-        ssh root@dme-721.sipstack.com docker-compose -f /root/docker/compose/web/docker-compose.yml up -d
+        ssh root@dse-510.sipstack.com docker pull registry.sipstack.com/web/www
+        ssh root@dse-510.sipstack.com docker-compose -f /root/docker/compose/web/docker-compose.yml up -d
         ### when pushing assets to CDN required --------------------
         # echo "Pushing content to CDN"
         # mkdir -p tmp
