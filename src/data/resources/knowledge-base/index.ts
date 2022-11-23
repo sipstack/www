@@ -165,60 +165,6 @@ The table below outlines error messages, likely causes and potential workarounds
     ],
     articles: [
       {
-        slug: 'glossary-sipstack',
-        title: 'SIPSTACK Glossary',
-        subtitle: 'A comprehensive and growing list of all things SIPSTACK.',
-        abstract: '',
-        created: '04/11/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-[**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
-Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
-[**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
-[**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
-Cloud **U**nified **C**ommunications is an Asterisk based, open source platform, that allows you to scale and manage from a single console.  
-[**Domain**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The name of the website belonging to the incoming caller is provided when using the Domain lookup tool in Smart CNAM.   
-[**Lookup**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The Lookup types offered by Smart CNAM offer the following up to date information: Risk score, Caller ID, Regional, Telco/Carrier, Online Profiles.     
-[**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
-Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
-[**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
-Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
-[**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
-Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
-[**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
-Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
-[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
-Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
-[**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
-The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
-[**SIPSTACK privacy policy**](https://www.sipstack.com/legal/privacy)   
-Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
-[**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
-Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
-[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
-Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
-[**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
-SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
-[**Users**](https://www.sipstack.com/resources/docs/partner-portal)  
-Users of an organization are authorized and given access through the SIPSTACK Partner Portal.  
-[**Vertical**](https://www.sipstack.com/products/smart-cnam#faqs)  
-Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost.   
-[**Whois**](https://whois.sipstack.com/)  
-Whois is the world's most advanced lookup tool, proving information and trust ratings based on the incoming Caller ID number.  
-[**Whois Profiles**](https://www.sipstack.com/resources/docs/partner-portal)  
-Whois profiles is a directory containing phone numbers that you own, and any relevant information. Registering a number allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function.  
-
-`,
-      },
-
-      {
         slug: 'glossary-telco',
         title: 'Telecommunications Glossary',
         subtitle:
@@ -303,6 +249,60 @@ Toll-free numbers are telephone numbers that are free of charge for the calling 
 **V**oice **O**ver **I**nternet **P**rotocol is the capability to transmit voice signals in real time over the internet and telephone network.  
 [**WWW**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
  The **W**orld **W**ide **W**eb is an information system that can be accessed on the internet.  
+
+`,
+      },
+
+      {
+        slug: 'glossary-sipstack',
+        title: 'SIPSTACK Glossary',
+        subtitle: 'A comprehensive and growing list of all things SIPSTACK.',
+        abstract: '',
+        created: '04/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+[**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
+Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
+[**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
+[**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
+Cloud **U**nified **C**ommunications is an Asterisk based, open source platform, that allows you to scale and manage from a single console.  
+[**Domain**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The name of the website belonging to the incoming caller is provided when using the Domain lookup tool in Smart CNAM.   
+[**Lookup**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The Lookup types offered by Smart CNAM offer the following up to date information: Risk score, Caller ID, Regional, Telco/Carrier, Online Profiles.     
+[**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
+Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
+[**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
+[**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
+[**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
+Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
+[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
+Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
+[**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
+The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
+[**SIPSTACK privacy policy**](https://www.sipstack.com/legal/privacy)   
+Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
+[**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
+Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
+[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
+[**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
+SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
+[**Users**](https://www.sipstack.com/resources/docs/partner-portal)  
+Users of an organization are authorized and given access through the SIPSTACK Partner Portal.  
+[**Vertical**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost.   
+[**Whois**](https://whois.sipstack.com/)  
+Whois is the world's most advanced lookup tool, proving information and trust ratings based on the incoming Caller ID number.  
+[**Whois Profiles**](https://www.sipstack.com/resources/docs/partner-portal)  
+Whois profiles is a directory containing phone numbers that you own, and any relevant information. Registering a number allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function.  
 
 `,
       },
@@ -397,38 +397,6 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
       },
 
       {
-        slug: 'what-is-call-stretching',
-        title: 'What is Call Stretching?',
-        subtitle:
-          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
-        abstract: '',
-        created: '12/11/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
-
-This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
-
-Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
-
-## What is the solution?
-If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
-Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
-
-
-#### References
-<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
-<sup>2 <a href=" https://community.abhandshake.com/call-stretching
-" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
-
-`,
-      },
-
-      {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
         subtitle:
@@ -459,6 +427,38 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
 <sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  
+
+`,
+      },
+
+      {
+        slug: 'what-is-call-stretching',
+        title: 'What is Call Stretching?',
+        subtitle:
+          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
+        abstract: '',
+        created: '12/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
+
+This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
+
+Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
+
+## What is the solution?
+If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
+Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
+
+
+#### References
+<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
+<sup>2 <a href=" https://community.abhandshake.com/call-stretching
+" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
 
 `,
       },
@@ -866,18 +866,58 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
         abstract: '',
-        created: '07/04/2021',
+        created: '18/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`,
+      },
+      {
+        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
+        title: 'Can SIPSTACK numbers receive SMS from a short code',
+        subtitle: '',
+        abstract: '',
+        created: '26/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
+
+Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
+
+Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
+
+- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
+- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
+- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
+- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
 `,
       },
       {
@@ -916,28 +956,18 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `,
       },
       {
-        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
-        title: 'Can SIPSTACK numbers receive SMS from a short code',
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
         subtitle: '',
         abstract: '',
-        created: '26/05/2021',
+        created: '07/04/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
-
-Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
-
-Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
-
-- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
-- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
-- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
-- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
@@ -972,21 +1002,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
         slug: 'delivery-order-of-multiple-media-files-via-mms',
         title: 'Delivery order of multiple media files via MMS',
         subtitle: '',
@@ -999,21 +1014,6 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
         },
         content: `
 Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
-`,
-      },
-      {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
-        subtitle: '',
-        abstract: '',
-        created: '18/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -1255,22 +1255,6 @@ The URL (http://m.sipstack.com followed by 7 characters) will be appended to the
 `,
       },
       {
-        slug: 'mms-message-long-code-cost',
-        title:
-          'How much does it cost to send and receive an MMS message over long codes?',
-        subtitle: '',
-        abstract: '',
-        created: '31/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
-`,
-      },
-      {
         slug: 'mms-on-my-toll-free-phone-number',
         title:
           'How much does it cost to send and receive an MMS message over long codes?',
@@ -1286,6 +1270,22 @@ SIPSTACK currently offers MMS messaging over Canada and US long code phone numbe
 Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
 
 Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
+`,
+      },
+      {
+        slug: 'mms-message-long-code-cost',
+        title:
+          'How much does it cost to send and receive an MMS message over long codes?',
+        subtitle: '',
+        abstract: '',
+        created: '31/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `,
       },
       {
@@ -1738,23 +1738,6 @@ No.
 `,
       },
       {
-        slug: 'what-is-a-message-ssid',
-        title: 'What is a Message SSID?',
-        subtitle: '',
-        abstract: '',
-        created: '01/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string. 
-
-Messages that contain media attachments are identified as MMS Messages. 
-`,
-      },
-      {
         slug: 'what-is-a-messaging-short-code',
         title: 'What is a Messaging Short Code?',
         subtitle: '',
@@ -1772,6 +1755,23 @@ Short codes may be a random number (in Canada or U.S.), or a vanity number that 
 
 ## Does SIPSTACK offer short code phone numbers? 
 No, SIPSTACK currently does not offer short code phone numbers. 
+`,
+      },
+      {
+        slug: 'what-is-a-message-ssid',
+        title: 'What is a Message SSID?',
+        subtitle: '',
+        abstract: '',
+        created: '01/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string. 
+
+Messages that contain media attachments are identified as MMS Messages. 
 `,
       },
       {
