@@ -308,8 +308,8 @@ Toll-free numbers are telephone numbers that are free of charge for the calling 
       },
 
       {
-        slug: 'understanding-wangiri-fraud',
-        title: 'Understanding Wangiri Fraud?',
+        slug: 'what-is-wangiri-fraud',
+        title: 'What is Wangiri Fraud',
         subtitle:
           'Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.',
         abstract: '',
@@ -346,6 +346,53 @@ Keep the following in mind to keep yourself safe against Wangiri fraud:
 <sup>3 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>   
 <sup>4 <a href="https://abhandshake.com/wangiri" target="_blank">https://abhandshake.com/wangiri</a></sup>   
 <sup>5 <a href="https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf" target="_blank">https://www.europol.europa.eu/sites/default/files/documents/wangiri_final_2.pdf</a></sup>  
+`,
+      },
+
+      {
+        slug: 'what-is-call-spoofing',
+        title: 'What is Call Spoofing?',
+        subtitle:
+          'Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so.',
+        abstract: '',
+        created: '18/11/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Jeff Sager',
+          picture: '/assets/img/team/jeffsa.jpg',
+        },
+        content: `
+Telecommunication fraud continues to grow exponentially, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and a whopping $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)<sup>2</sup>. There are several different types of spam calling and texting scams that have contributed to these losses. One of the most frequent is known as Call Spoofing.
+ 
+Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name [(CNAM)](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so. The call spoofing that we will discuss in this article, however, refers to spammers illegally replicating a CID without permission for illegitimate purposes. 
+ 
+The spammer's intention is to appear as a trustworthy and local caller or texter, so the recipient of the call will be more likely to answer and fall for whatever scam they are attempting. These scams usually involve the caller fraudulently impersonating government agencies or companies asking for personal information or money. In some cases, the caller may even specifically target senior citizens, pretending to be a grandchild or other family member asking for money.
+ 
+## Common Examples of Caller ID Spoofing
+There are different ways a call like this may appear on your phone. Here are a few examples:
+1.	Neighbouring: The caller ID is displayed as the first 6 digits of the number it is calling. This gives the impression that it is a local call, potentially even from a neighbour<sup>3</sup>.
+2.	Mirroring: The caller ID is displayed to match the exact phone number it is calling<sup>4</sup>.
+3.	The caller ID is displayed as the number of another individual or recognizable organization to make it seem like the call is coming from them<sup>5</sup>.
+ 
+## Tips to Identify Call Spoofing
+1.	The text message or caller will give you a generic greeting rather than using your real name.
+2.	The caller may use a recording asking you to press certain buttons to continue the call. This helps them identify potential targets.
+3.	The caller acts as though there is an urgent situation that demands you give them money or personal information, including social security numbers/social insurance numbers, passwords, or credit cards.
+ 
+## Tips to Protect Yourself Against Call Spoofing
+1.	Avoid answering calls or returning missed calls from unknown numbers, even if they appear to be from a local caller.
+2.	Be skeptical, and if you feel suspicious during a call, hang up immediately.
+3.	Block the phone number to ensure they cannot call your phone again.
+4.	Report these calls to your phone provider, national anti-fraud centre, or the police.
+
+## How SIPSTACK Fights Fraud
+Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
+ 
+### References
+<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href="https://firstorion.com/2021-scam-call-trends/" target="_blank">https://firstorion.com/2021-scam-call-trends/</a></sup>  
+<sup>3, 4, 5 <a href="https://crtc.gc.ca/eng/phone/telemarketing/identit.htm" target="_blank">https://crtc.gc.ca/eng/phone/telemarketing/identit.htm</a></sup>  
+
 `,
       },
 
@@ -819,58 +866,18 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
         subtitle: '',
         abstract: '',
-        created: '18/03/2021',
+        created: '07/04/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
-`,
-      },
-      {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
-        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
-        title: 'Can SIPSTACK numbers receive SMS from a short code',
-        subtitle: '',
-        abstract: '',
-        created: '26/05/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
-
-Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
-
-Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
-
-- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
-- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
-- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
-- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
@@ -909,6 +916,31 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `,
       },
       {
+        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
+        title: 'Can SIPSTACK numbers receive SMS from a short code',
+        subtitle: '',
+        abstract: '',
+        created: '26/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
+
+Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
+
+Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
+
+- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
+- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
+- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
+- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+`,
+      },
+      {
         slug: 'carrier-support-for-pdf-files',
         title: 'Carrier support for PDF files sent using SIPSTACK MMS',
         subtitle:
@@ -940,18 +972,18 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
         subtitle: '',
         abstract: '',
-        created: '07/04/2021',
+        created: '22/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -967,6 +999,21 @@ SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number
         },
         content: `
 Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`,
+      },
+      {
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
+        subtitle: '',
+        abstract: '',
+        created: '18/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -1224,6 +1271,24 @@ SIPSTACK currently offers MMS messaging over Canada and US long code phone numbe
 `,
       },
       {
+        slug: 'mms-on-my-toll-free-phone-number',
+        title:
+          'How much does it cost to send and receive an MMS message over long codes?',
+        subtitle: '',
+        abstract: '',
+        created: '31/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
+
+Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
+`,
+      },
+      {
         slug: 'mms-sent-as-sms',
         title: 'Why are my MMS messages being sent as SMS text messages?',
         subtitle: '',
@@ -1242,24 +1307,6 @@ This feature is called MMS Converter, and is enabled by default.
 When disabled, SIPSTACK will no longer convert your MMS messages into SMS text messages. Instead, your application will receive a HTTP 400 response when attempting to send MMS messages to unsupported carriers.
 
 
-`,
-      },
-      {
-        slug: 'mms-on-my-toll-free-phone-number',
-        title:
-          'How much does it cost to send and receive an MMS message over long codes?',
-        subtitle: '',
-        abstract: '',
-        created: '31/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
-
-Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
 `,
       },
       {
