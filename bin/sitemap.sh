@@ -23,7 +23,8 @@ while read -r line; do
   # FILE=${line:12} ## when find .
   FILE=${line:10}
   FILE=${FILE#"src_content/resources"}
-  if [[ $FILE == blog\/20* ]]; then FILE="blog/${FILE:14}"; fi
+  if [[ $FILE == \/blog\/20* ]]; then FILE="/blog/${FILE:15}"; fi
+  # echo $FILE
   if [[ $n > $i ]]; then
     # echo "<url>"
     # echo " <loc>${URL}${FILE}</loc>"
