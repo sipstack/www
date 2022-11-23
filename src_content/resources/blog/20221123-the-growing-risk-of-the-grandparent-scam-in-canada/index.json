@@ -1,0 +1,20 @@
+{
+    slug: "the-growing-risk-of-the-grandparent-scam-in-canada",
+    image: "/assets/img/resources/blog/20221123-the-growing-risk-of-the-grandparent-scam-in-canada/confused-grandparents.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "The Growing Risk of the Grandparent Scam in Canada",
+    abstract: "The Grandparent Scam refers to scammers who call senior citizens, pretending to be their grandchild in an emergency crisis.",
+    created: "23/11/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 5, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
