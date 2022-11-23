@@ -1,0 +1,20 @@
+{
+    slug: "CRTC Hosts ‘Combating Scam Communications’ Meeting with Five Countries",
+    image: "/assets/img/resources/blog/20221029-landmark-settlement-in-Indiana-combats-robocalls/Indiana-image.png",
+    category: "News",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "CRTC Hosts ‘Combating Scam Communications’ Meeting with Five Countries",
+    abstract: "On November 1st, 2022, the CRTC held its first cross-border meeting to discuss strategies to help combat the growing concerns of telecommunication fraud.",
+    created: "11/11/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 1, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
