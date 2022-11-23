@@ -29,7 +29,8 @@
     "gulp:res_blog": ":> src/data/resources/blog/index.ts && gulp build_res_blog",
     "gulp:res_cs": ":> src/data/resources/case-study/index.ts && gulp build_res_cs",
     "gulp:res_kb": ":> src/data/resources/knowledge-base/index.ts && gulp build_res_kb",
-    "gulp:res_docs": "gulp build_res_docs"
+    "gulp:res_docs": "gulp build_res_docs",
+    "gulp:sitemap": "bin/sitemap.sh"
   },
   "dependencies": {
     "@iconify/iconify": "2.2.1",

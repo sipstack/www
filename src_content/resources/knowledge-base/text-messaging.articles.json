@@ -116,6 +116,21 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`
+},
+{
     slug: "block-incoming-sms",
     title: "Is there a way to block an incoming SMS on a phone number?",
     subtitle: "",
@@ -131,18 +146,18 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
     subtitle: "",
     abstract: "",
-    created: "22/03/2021",
+    created: "07/04/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -201,21 +216,6 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 **To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
 
 ***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
-`
-},
-{
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -495,6 +495,21 @@ The URL (http://m.sipstack.com followed by 7 characters) will be appended to the
 `
 },
 {
+    slug: "mms-message-long-code-cost",
+    title: "How much does it cost to send and receive an MMS message over long codes?",
+    subtitle: "",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
+`
+},
+{
     slug: "mms-on-my-toll-free-phone-number",
     title: "How much does it cost to send and receive an MMS message over long codes?",
     subtitle: "",
@@ -509,21 +524,6 @@ The URL (http://m.sipstack.com followed by 7 characters) will be appended to the
 Yes, as of February 2021, all Canada/US toll-free numbers purchased through SIPSTACK can send/receive MMS messages to and from end users in Canada and US.
 
 Toll-free numbers from countries outside of Canada and US are Voice-only, and are not capable of SMS or MMS messaging.
-`
-},
-{
-    slug: "mms-message-long-code-cost",
-    title: "How much does it cost to send and receive an MMS message over long codes?",
-    subtitle: "",
-    abstract: "",
-    created: "31/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK currently offers MMS messaging over Canada and US long code phone numbers. For pricing information on MMS messages, please visit our [Pricing Page](https://www.sipstack.com/).
 `
 },
 {
@@ -965,6 +965,23 @@ No.
 `
 },
 {
+    slug: "what-is-a-message-ssid",
+    title: "What is a Message SSID?",
+    subtitle: "",
+    abstract: "",
+    created: "01/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string. 
+
+Messages that contain media attachments are identified as MMS Messages. 
+`
+},
+{
     slug: "what-is-a-messaging-short-code",
     title: "What is a Messaging Short Code?",
     subtitle: "",
@@ -982,23 +999,6 @@ Short codes may be a random number (in Canada or U.S.), or a vanity number that 
 
 ## Does SIPSTACK offer short code phone numbers? 
 No, SIPSTACK currently does not offer short code phone numbers. 
-`
-},
-{
-    slug: "what-is-a-message-ssid",
-    title: "What is a Message SSID?",
-    subtitle: "",
-    abstract: "",
-    created: "01/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string. 
-
-Messages that contain media attachments are identified as MMS Messages. 
 `
 },
 {
