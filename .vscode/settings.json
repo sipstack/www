@@ -25,7 +25,7 @@
   //   "editor.defaultFormatter": "johnsoncodehk.volar"
   // },
   "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
   },
   "json.validate.enable": true,
   "[json]": {

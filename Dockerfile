@@ -14,7 +14,7 @@ COPY . .
 RUN SITEMAP_HOST=$SITEMAP_HOST \
   yarn run build
 
-RUN bin/sitemap.sh
+# RUN bin/sitemap.sh
 
 FROM bitnami/node:16-prod AS prod
 WORKDIR /app
