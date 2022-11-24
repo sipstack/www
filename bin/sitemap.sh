@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# regenerate sitemap from vite
+# nvm use 
+# npm run build:vite
+
 # url configuration
 URL="https://www.sipstack.com/resources"
 
@@ -14,6 +18,8 @@ FREQ="daily"
 # echo '<!-- generator="Milkys Sitemap Generator, https://github.com/mcmilk/sitemap-generator" -->'
 # echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 
+
+
 # print urls
 # IFS=$'\r\n' GLOBIGNORE='*' command eval "OPTIONS=($(cat $0.options))"
 i=1 n=0
@@ -25,6 +31,8 @@ while read -r line; do
   FILE=${FILE#"src_content/resources"}
   if [[ $FILE == \/blog\/20* ]]; then FILE="/blog/${FILE:15}"; fi
   # echo $FILE
+  ## skip if already exists from vite build
+  if [[ $FILE == "/blog" ]] || [[ $FILE == \/docs* ]] || [[ $FILE == "/knowledge-base" ]] || [[ $FILE == "/case-study" ]] || [[ $FILE == "/" ]]; then continue; fi
   if [[ $n > $i ]]; then
     # echo "<url>"
     # echo " <loc>${URL}${FILE}</loc>"
@@ -35,7 +43,8 @@ while read -r line; do
   fi
   ((n++))
 done
-
+# hardset sitemap links
+echo "<url><loc>${URL}/resources</loc><lastmod>$DATE</lastmod><changefreq>$FREQ</changefreq></url>" >> sitemap.xml
 # print foot
 echo "</urlset>" >> sitemap.xml
 

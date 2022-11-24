@@ -161,8 +161,6 @@ declare module '@vue/runtime-core' {
     IconBox: typeof import('./src/components/base/icon/IconBox.vue')['default']
     IconPopover: typeof import('./src/components/base/popover/modules/IconPopover.vue')['default']
     IconSection: typeof import('./src/components/advanced/features/icon-section/IconSection.vue')['default']
-    IFeatherMoon: typeof import('~icons/feather/moon')['default']
-    IFeatherSun: typeof import('~icons/feather/sun')['default']
     IllustrationError: typeof import('./src/components/advanced/error/illustration-error/IllustrationError.vue')['default']
     ImageRatio: typeof import('./src/components/base/image/ImageRatio.vue')['default']
     InvertedNav: typeof import('./src/layouts/inverted-nav.vue')['default']
