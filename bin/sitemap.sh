@@ -32,7 +32,7 @@ while read -r line; do
   if [[ $FILE == \/blog\/20* ]]; then FILE="/blog/${FILE:15}"; fi
   # echo $FILE
   ## skip if already exists from vite build
-  if [[ $FILE == "/blog" ]] || [[ $FILE == "/docs" ]] || [[ $FILE == "/knowledge-base" ]] || [[ $FILE == "/case-study" ]] || [[ $FILE == "/" ]]; then continue; fi
+  if [[ $FILE == "/blog" ]] || [[ $FILE == \/docs* ]] || [[ $FILE == "/knowledge-base" ]] || [[ $FILE == "/case-study" ]] || [[ $FILE == "/" ]]; then continue; fi
   if [[ $n > $i ]]; then
     # echo "<url>"
     # echo " <loc>${URL}${FILE}</loc>"
