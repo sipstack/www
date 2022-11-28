@@ -10,7 +10,7 @@ One year later, Congress amended the act by including the requirement that telem
 
 ## 2003: The Invention of the National Do-Not-Call Registry
 
-Years later, the FCC and FTC established the national [Do-Not-Call registry](https://www.donotcall.gov/), which covers all telemarketers (with the exception of certain nonprofit organizations), and applies to both interstate and intrastate calls across the nation.
+Years later, the FCC and FTC established the national <a href="https://www.donotcall.gov/" class="ss-reference" target="_blank">Do-Not-Call registry</a>, which covers all telemarketers (with the exception of certain nonprofit organizations), and applies to both interstate and intrastate calls across the nation.
 
 ## 2012: Most Recent Amendments to the TCPA             
 
