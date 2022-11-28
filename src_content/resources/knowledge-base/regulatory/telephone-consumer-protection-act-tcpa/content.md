@@ -35,6 +35,5 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 
 ### References
 
-<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" class="ss-reference" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup> 
-
+<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" class="ss-reference" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
 <sup>2 <a href="https://firstorion.com/2021-scam-call-trends/" class="ss-reference" target="_blank">https://firstorion.com/2021-scam-call-trends/</a></sup> 
