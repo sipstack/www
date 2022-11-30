@@ -1,0 +1,20 @@
+{
+    slug: "where-does-the-term-spam-come-from",
+    image: "/assets/img/resources/blog/20221130-where-does-the-term-spam-come-from/thinking-image.png",
+    category: "",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "Where Does the Term Spam Come From?",
+    abstract: "In the era of prevalent fraud the term spam has become synonymous with persistent telemarketers, massive amounts of emails and advertisements. But how did that come to be? ",
+    created: "01/12/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 5, // minute read
+    author: {
+        name: "Anjana Uthayakumaran",
+        role: "Author",
+        photo: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
