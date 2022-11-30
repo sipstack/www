@@ -22,7 +22,7 @@ SHAKEN was created to address non-VoIP systems, such as conventional cellphones,
 
 ## RMPs Now Mandatory
 
-Voice service providers (VSPs) now have a legal obligation under the Telephone Robocall Abuse Criminal Enforcement and Deterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
+Voice service providers (VSPs) now have a legal obligation under the **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
 
 “As of April 20, 2021, the FCC requires that all providers certify in the Robocall Mitigation Database that they have fully implemented STIR/SHAKEN or have instituted a robocall mitigation program to ensure that they are not originating illegal robocalls… Filings in the Robocall Mitigation Database are due June 30, 2021.”
 
@@ -37,6 +37,9 @@ For all of these reasons, we recommend an extra boost of protection...
 Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References
-1 https://www.antifraudcentre-centreantifraude.ca/index-eng.htm
-2 https://firstorion.com/2021-scam-call-trends/
-3 https://www.subex.com/blog/2021-cfca-global-telecommunications-fraud-loss-survey/
+<sup>1 <a href=" https://www.antifraudcentre-centreantifraude.ca/index-eng.htm
+" class="ss-reference" target="_blank"> https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href=" https://firstorion.com/2021-scam-call-trends/
+" class="ss-reference" target="_blank"> https://firstorion.com/2021-scam-call-trends/</a></sup>  
+<sup>3 <a href=" https://www.subex.com/blog/2021-cfca-global-telecommunications-fraud-loss-survey/
+" class="ss-reference" target="_blank"> https://www.subex.com/blog/2021-cfca-global-telecommunications-fraud-loss-survey/</a></sup>
