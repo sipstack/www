@@ -11,12 +11,12 @@
     },
     content: `
 
-Please note: several “Special” Campaign types have been announced by AT&T, but support by other participating carriers has not yet been confirmed. These Special Use Cases are now listed at the bottom of this article, due to the fact that they are not yet confirmed to be supported by all carriers. 
+Please note: several "Special" Campaign types have been announced by AT&T, but support by other participating carriers has not yet been confirmed. These Special Use Cases are now listed at the bottom of this article, due to the fact that they are not yet confirmed to be supported by all carriers. 
 
 ## Campaign Type and Associated Fees
 | Campaign Type | Use cases within campaign type |
 |---|---|
-| Declared Use Case | Single use case covering 2FA, authentication, customer care, group messaging, notifications, operations, and anything else indicated “Declared” in Table 2 below. |
+| Declared Use Case | Single use case covering 2FA, authentication, customer care, group messaging, notifications, operations, and anything else indicated "Declared" in Table 2 below. |
 | Mixed / Marketing Use Case | Marketing use case or combination of use cases under one campaign. |
 | Basic / Unregistered | High risk provider or unregistered traffic | 
 *Table 1*
@@ -41,7 +41,7 @@ The following table contains the full list of Use Cases that are available withi
 *Table 2*
 
 ## Special Use Cases Proposed by AT&T
-The following “Special” Campaign types have been put forth by AT&T, but has not been confirmed by other carriers. We are listing these here for completeness, but additional carrier support will be necessary in order to offer these to our customers for messaging to all participating A2P 10DLC mobile networks.
+The following "Special" Campaign types have been put forth by AT&T, but has not been confirmed by other carriers. We are listing these here for completeness, but additional carrier support will be necessary in order to offer these to our customers for messaging to all participating A2P 10DLC mobile networks.
 
 ## List of Special Use Cases Proposed by AT&T
 | Use Case (AT&T Proposed) | Campaign Type | Description|
@@ -70,7 +70,7 @@ The following “Special” Campaign types have been put forth by AT&T, but has 
     content: `
 
 ## How does this affect me?
-If you don’t need to send messages to users in the United States, the new A2P 10DLC registration system does not affect you, and you don’t need to do anything. 
+If you don't need to send messages to users in the United States, the new A2P 10DLC registration system does not affect you, and you don't need to do anything. 
 
 If your business is sending messages in the US, continue reading. 
 
@@ -91,13 +91,13 @@ A Campaign represents a use case. In other words, a Campaign is a description of
 
 
 ## Do I need to buy new phone numbers to use the new A2P 10DLC services?
-You don’t have to buy new numbers if you’re already using long code phone numbers. You can enable existing phone numbers to use the new A2P 10DLC service by following the registration process. 
+You don't have to buy new numbers if you're already using long code phone numbers. You can enable existing phone numbers to use the new A2P 10DLC service by following the registration process. 
 
 ## Once my Brand and Campaign have been registered with the TRC, how can I make sure my phone numbers use 10DLC?
 After your Brand(s) and Campaign(s) are approved, please ensure that your inbound message configuration (e.g. the webhook for your application) is applied on your Messaging Service. Currently, the inbound configuration settings of a Messaging Service takes precedence over the existing inbound settings on those numbers.
 
 ## Do I need to use a different method to send outbound messages?
-If you don’t use Messaging Services in your application to send outbound messages, you don’t need to make any changes within your application. Modifying your application to include the Messaging Service SID in your API requests is not necessary. To associate phone numbers to a Campaign, you only need to add phone numbers to a Messaging Service.
+If you don't use Messaging Services in your application to send outbound messages, you don't need to make any changes within your application. Modifying your application to include the Messaging Service SID in your API requests is not necessary. To associate phone numbers to a Campaign, you only need to add phone numbers to a Messaging Service.
 
 ## How does the A2P 10DLC regulation affect MMS messaging?
 
@@ -116,18 +116,33 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
+    slug: "block-incoming-sms",
+    title: "Is there a way to block an incoming SMS on a phone number?",
     subtitle: "",
     abstract: "",
-    created: "07/04/2021",
+    created: "18/03/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you’ve queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`
+},
+{
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
@@ -152,7 +167,7 @@ Before you request for your account to be enabled to receive incoming short code
 - Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via “STOP,” or send “HELP” messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
 `
 },
 {
@@ -167,7 +182,7 @@ Before you request for your account to be enabled to receive incoming short code
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-**Notice:** There are major regulatory changes coming to long-code SMS in the US. due to carrier’s new A2P 10DLC systems. For full details about the regulation, read What is A2P 10DLC.
+**Notice:** There are major regulatory changes coming to long-code SMS in the US. due to carrier's new A2P 10DLC systems. For full details about the regulation, read What is A2P 10DLC.
 
 Table 1 describes the capabilities of long code, toll-free and short code SMS messaging in Canada and US.
 | Capabilities | Long Code* | Toll-free | Short Code** |
@@ -175,7 +190,7 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 | Coverage | Can send SMS to any country. | Can send SMS to any country. | Can send SMS within their own country only. |
 | Voice Call Capability | Yes | Yes | No |
 | SMS filtering profile | [Application-to-Person (A2P)](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a2p-and-p2p-messaging) traffic is subject to carrier filtering. | Reduced carrier filtering for Canadian networks (Rogers, Fido, Telus and Videotron) and all US. networks.*** | No carrier filtering, as long as you comply with the use case submitted in your short code application. |
-| SMS throughput | 1 SMS segment per second, can’t be increased. | 3 SMS segments per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. | 100 SMS per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. |
+| SMS throughput | 1 SMS segment per second, can't be increased. | 3 SMS segments per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. | 100 SMS per second by default, but can be increased. Contact [support](https://www.sipstack.com/contact/us) for more information. |
 | MMS Capability | Yes | Yes | Capable of MMS with a one-time enablement fee (US. only) |
 *Table 1*
 
@@ -186,21 +201,6 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 **To send short code SMS messages in both Canada and the US., you will need two different short codes; one for each country.
 
 ***Some messaging US.e cases are not allowed on toll-free SMS or MMS in Canada and US. For details, see [Forbidden message categories for SMS and MMS in the US. and Canada](http://www.sipstack.com/resources/knowledge-base/text-messaging/forbidden-message-categories).
-`
-},
-{
-    slug: "block-incoming-sms",
-    title: "Is there a way to block an incoming SMS on a phone number?",
-    subtitle: "",
-    abstract: "",
-    created: "18/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `
 },
 {
@@ -215,12 +215,12 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Please note that PDF files are currently considered an [accepted file type](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types) by SIPSTACK. This means we will accept the file you submit to us and send it downstream to the mobile network, as long as it meets that network’s size limit for media files. However, we will not resize or make other adjustments to the file itself for device compatibility. For this reason, it’s important to ensure your PDF files are smaller than the maximum attachment size of the network you are sending toward. 
+Please note that PDF files are currently considered an [accepted file type](http://www.sipstack.com/resources/knowledge-base/text-messaging/supported-mms-content-types) by SIPSTACK. This means we will accept the file you submit to us and send it downstream to the mobile network, as long as it meets that network's size limit for media files. However, we will not resize or make other adjustments to the file itself for device compatibility. For this reason, it's important to ensure your PDF files are smaller than the maximum attachment size of the network you are sending toward. 
 
 ## Long code MMS support for PDF files 
 Fido, Rogers and Telus in Canada and AT&T in US. do not support PDF attachments in MMS messages sent via long codes (standard 10-digit local numbers) toward subscribers on their networks.
 
-For users on these mobile networks, a PDF file attachment on an MMS message will not reach the device. The user will receive the Body text of your message (if one was included), with the following text appended: “One or more of the message components have been deleted by MMS Adaptation. Either the message was too large or the components were unsuitable for your handset.”
+For users on these mobile networks, a PDF file attachment on an MMS message will not reach the device. The user will receive the Body text of your message (if one was included), with the following text appended: "One or more of the message components have been deleted by MMS Adaptation. Either the message was too large or the components were unsuitable for your handset."
 
 As of today, long code MMS messaging is considered a person-to-person (P2P) channel by most mobile networks in Canada and US. These mobile networks may choose to extend support to PDF files via long code MMS at a later date. However, SIPSTACK is not aware of any specific plans relating to PDF support via long code.
 
@@ -249,18 +249,18 @@ Multiple media files can be sent as part of one MMS message. However, SIPSTACK c
 `
 },
 {
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
     subtitle: "",
     abstract: "",
-    created: "22/03/2021",
+    created: "07/04/2021",
     updated: "",
     author: {
         name: "Kanasu Nagathihalli",
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -275,9 +275,9 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-We will not charge the recipient of your message for receiving a SIPSTACK message. However, it’s possible that the recipient can be charged by their phone provider.
+We will not charge the recipient of your message for receiving a SIPSTACK message. However, it's possible that the recipient can be charged by their phone provider.
 
-Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don’t. This depends on the mobile plan your recipients are using.
+Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
 `
@@ -296,17 +296,17 @@ SIPSTACK does not offer premium SMS messaging where the cost of receiving a mess
     content: `
 SIPSTACK API has basic phone number validation logic built into it. We try to save you money by rejecting messages to numbers we are certain are incorrect. However, we trust that our users know more about the phone number they are trying to send a message to than we do. Our validation logic will only affect numbers which are unquestionably incorrect. It is your responsibility to provide accurate data.
 
-## Is the recipient’s phone number reachable?
-When you make a  POST request to SIPSTACK’s REST API, SIPSTACK will check the validity of the “To” phone number in the request. If SIPSTACK discovers that the “To” phone number provided cannot possibly exist, SIPSTACK will respond to your API request with an HTTP 400 response and flag your project with Error 21211. If there is a possibility that the phone number exists, SIPSTACK will hand the message off to the carrier, and the message will be recorded in the SMS logs with a status of queued.
+## Is the recipient's phone number reachable?
+When you make a  POST request to SIPSTACK's REST API, SIPSTACK will check the validity of the "To" phone number in the request. If SIPSTACK discovers that the "To" phone number provided cannot possibly exist, SIPSTACK will respond to your API request with an HTTP 400 response and flag your project with Error 21211. If there is a possibility that the phone number exists, SIPSTACK will hand the message off to the carrier, and the message will be recorded in the SMS logs with a status of queued.
 
-## Is the recipient’s phone number a mobile number?
-Depending on the country, SIPSTACK may do an extra check to confirm that the “To” number is capable of receiving SMS messages.
+## Is the recipient's phone number a mobile number?
+Depending on the country, SIPSTACK may do an extra check to confirm that the "To" number is capable of receiving SMS messages.
 
 #### Countries with a defined Mobile Range
-Most countries have a well-defined “mobile range”. Numbers within this range are almost always mobile numbers. When a request is made to send an SMS to a number outside of this range, SIPSTACK will respond with a 400 and Error 21614.
+Most countries have a well-defined "mobile range". Numbers within this range are almost always mobile numbers. When a request is made to send an SMS to a number outside of this range, SIPSTACK will respond with a 400 and Error 21614.
 
 #### Countries without a defined Mobile Range
-In countries without a “mobile range” like Canada, U.S. and most Caribbean nations, there is currently not a reliable way to determine if a phone number is a mobile number or not. SIPSTACK will attempt to send SMS messages to any phone number which is provided in these countries.
+In countries without a "mobile range" like Canada, U.S. and most Caribbean nations, there is currently not a reliable way to determine if a phone number is a mobile number or not. SIPSTACK will attempt to send SMS messages to any phone number which is provided in these countries.
 
 ## Best Practices when sending an SMS using SIPSTACK API
 We recommend that you collect the phone type during your opt-in process. You should only be sending SMS messages to opted-in users who want to receive your messages.
@@ -329,7 +329,7 @@ SIPSTACK allows you to send and receive concatenated messages containing up to 1
 ## Sending concatenated messages
 All Canada and US carriers support the sending of concatenated messages except for US Cellular. 
 
-However, please note that some older handsets may be unable to display concatenated SMS. These devices may still display long SMS as separate segments marked with “1/3”, “2/3” etc.
+However, please note that some older handsets may be unable to display concatenated SMS. These devices may still display long SMS as separate segments marked with "1/3", "2/3" etc.
 
 When sending concatenated SMS, SIPSTACK will auto-segment long messages with a special header. Mobile carriers can use this header to reassemble the segments on the destination handset. In this way, concatenated SMS can appear as a single message on a receiving device. 
 
@@ -380,12 +380,12 @@ SIPSTACK will do the best we can to ensure that the emoji in your message is del
 If a user tires to assign an outbound message with this category, the message will automatically be rejected by SIPSTACK. If a user tries to specify a different category to send a message that falls within any of the following forbidden categories, SIPSTACK will employ smart AI to detect and automatically suspend accounts that are breaking the rules. 
 | Category | Examples | Notes |
 |---|---|---|
-| High-risk financial services | Payday loans, Short term high-interest loans, Third-party auto loans, Third-party mortgage loans, Student loans | “Third-party” means originating from any party other than the one which will service the loan. |
-| Debt collection or forgiveness | Third-party debt collection, Debt consolidation, Debt reduction, Credit repair programs | “Third-party” means originating from any party other than the one who is owed the debt. For example, a hospital could send messages regarding bills for its own patients, assuming they provided opt-in to receive that messaging. |
-| “Get rich quick” schemes | Work-from-home programs, Risk investment opportunities, Pyramid schemes | This is different from outreach about employment as a result of compliant opt-in practices, messages from brokerages to their members, investment news alerts, or other investment-related messages. |
+| High-risk financial services | Payday loans, Short term high-interest loans, Third-party auto loans, Third-party mortgage loans, Student loans | "Third-party" means originating from any party other than the one which will service the loan. |
+| Debt collection or forgiveness | Third-party debt collection, Debt consolidation, Debt reduction, Credit repair programs | "Third-party" means originating from any party other than the one who is owed the debt. For example, a hospital could send messages regarding bills for its own patients, assuming they provided opt-in to receive that messaging. |
+| "Get rich quick" schemes | Work-from-home programs, Risk investment opportunities, Pyramid schemes | This is different from outreach about employment as a result of compliant opt-in practices, messages from brokerages to their members, investment news alerts, or other investment-related messages. |
 | Illegal substances | Cannabis, CBD, Prescription drugs | Cannabis is illegal in Canada and US. Cannabis businesses will not be permitted to use SMS/MMS messaging in Canada or US, regardless of message content. |
 | Gambling | Casino apps, Gambling websites |  |
-| “S.H.A.F.T.” use cases | Sex, Hate, Alcohol, Firearms, Tobacco |  |
+| "S.H.A.F.T." use cases | Sex, Hate, Alcohol, Firearms, Tobacco |  |
 *Table 1*
 `
 },
@@ -410,7 +410,7 @@ When a deactivated number is assigned to a new subscriber, it means that that ph
 ## How do I track deactivated phone numbers on my network?
 Wireless carriers in Canada and the United States routinely publish Deactivation Reports that contain a list of all the deactivated phone numbers within their networks. These reports help message senders keep their programs in compliance.
 
-## What happens if I don’t keep a list of healthy subscribers?
+## What happens if I don't keep a list of healthy subscribers?
 Maintaining a healthy list of subscribers who have opted in to receive your messages is crucial in both US and Canada. Sending messages to end users who have not opted into your programs can result in complaints, following which your messages could be marked as spam. Additionally, carriers can filter out your messages, and in worst-case scenarios, the Federal Communications Commission (FCC) can issue fines.
 
 Sending messages to deactivated phone numbers still incurs costs to you, so keeping your subscriber lists clean can save you charges on unnecessary messages.
@@ -439,12 +439,12 @@ Toll-free messaging is a great choice for transactional use cases, including the
 - Account-related alerts or notifications
 - Customer care messaging that includes some automated messaging (including satisfaction surveys)
 
-Toll-Free SMS can also be used for promotional or marketing-type traffic. However it is extremely important to ensure that all users have opted-in and that you maintain a low opt-out (“STOP” reply) rate to avoid filtering.
+Toll-Free SMS can also be used for promotional or marketing-type traffic. However it is extremely important to ensure that all users have opted-in and that you maintain a low opt-out ("STOP" reply) rate to avoid filtering.
 
 Short code numbers remain the best method of sending high-volume marketing or promotional messaging across Canada and US.
 
 ## Toll-free messaging best practices
-Toll-Free message filtering is primarily geared toward preventing unwanted messaging, fraud, or abuse. If you are sending A2P messages that align with SIPSTACK’s Acceptable Use Policy, you should generally see a low rate of filtering when using a toll-free number. 
+Toll-Free message filtering is primarily geared toward preventing unwanted messaging, fraud, or abuse. If you are sending A2P messages that align with SIPSTACK's Acceptable Use Policy, you should generally see a low rate of filtering when using a toll-free number. 
 
 Additionally, toll-free messaging users must adhere to the following standards:
 
@@ -452,10 +452,10 @@ Additionally, toll-free messaging users must adhere to the following standards:
 - Provide easy ways for your users to opt-out of messages.
 - Maintain a very low opt-out (STOP reply) rate from your recipients.
 - Use shortened, branded URLs for the highest deliverability levels when sending links in the message body. Avoid using shared URL shorteners (such as popular free URL shortening services) as these can increase risk of filtering.
-- Do not “load balance” by sending the same or similar message contents using multiple toll-free numbers. Carriers call this “snowshoeing” and it is specifically targeted for filtering on toll-free SMS.
+- Do not "load balance" by sending the same or similar message contents using multiple toll-free numbers. Carriers call this "snowshoeing" and it is specifically targeted for filtering on toll-free SMS.
 
 ## Toll-free messaging verification to reduce filtering risk on compliant traffic
-You can submit your business and message information for carrier verification of your toll-free SMS and MMS traffic. If your messaging traffic is compliant with all applicable rules, it greatly reduces the risk of filtering on your messaging traffic. SIPSTACK offers this verification service free of cost. Please contact [SIPSTACK Support](https://www.sipstack.com/contact/us) if you’re interested in having your toll-free messaging service verified.
+You can submit your business and message information for carrier verification of your toll-free SMS and MMS traffic. If your messaging traffic is compliant with all applicable rules, it greatly reduces the risk of filtering on your messaging traffic. SIPSTACK offers this verification service free of cost. Please contact [SIPSTACK Support](https://www.sipstack.com/contact/us) if you're interested in having your toll-free messaging service verified.
 
 **Error 30007:** Toll-free SMS filtered in spite of compliance 
 
@@ -563,11 +563,11 @@ When sending Toll-Free SMS messages, it is important to remember that Opt-out an
 
 Toll-Free SMS numbers have a layer of opt-out handling outside of SIPSTACK that cannot be removed or customized. When an end user texts the word STOP to your toll-free number, the user will be opted-out of further messaging from your number, and will receive this auto-reply:
 
-NETWORK MSG: You replied with the word “stop” which blocks all texts sent from this number. Text back “unstop” to receive messages again.
+NETWORK MSG: You replied with the word "stop" which blocks all texts sent from this number. Text back "unstop" to receive messages again.
 
 If the end user then sends the word START or UNSTOP, they will be opted back in to receive messaging from your number, and will receive this auto-reply:
 
-NETWORK MSG: You have replied “unstop” and will begin receiving messages again from this number.
+NETWORK MSG: You have replied "unstop" and will begin receiving messages again from this number.
 
 
 `
@@ -602,7 +602,7 @@ Whether Canada or US phone numbers (+1 country code) can receive incoming SMS me
     },
     content: `
 ## How does this affect me?
-If you don’t need to send messages to users in the United States, the new A2P 10DLC registration system does not affect you, and you don’t need to do anything. 
+If you don't need to send messages to users in the United States, the new A2P 10DLC registration system does not affect you, and you don't need to do anything. 
 
 If your business is sending messages in the US, continue reading. 
 
@@ -618,7 +618,7 @@ If your company sends messages for your own products and services, you must regi
 
 If your company provides messaging services to other businesses, who have their own brands, you must register with the TCR as an Independent Software Vendor (ISV). 
 
-If you are a small business, you don’t need to register with TCR at this time. 
+If you are a small business, you don't need to register with TCR at this time. 
 
 ## What information do I need to register with TCR? 
 You will need the following information to register with TCR. If you are a direct brand, collate the following information about your company. If you are an ISV, you will need to collect this information about your business and your clients.
@@ -672,7 +672,7 @@ If you own an MMS-enabled phone number, your phone number is capable of receivin
 {
     slug: "size-limitations",
     title: "Size limitations of combining text and images",
-    subtitle: "If you’re sending text and images in the same SMS, the message can contain up to 10 images and 1600 characters, as long as the entire message is under 5 MB.",
+    subtitle: "If you're sending text and images in the same SMS, the message can contain up to 10 images and 1600 characters, as long as the entire message is under 5 MB.",
     abstract: "",
     created: "07/04/2021",
     updated: "",
@@ -715,30 +715,30 @@ Wireless carriers in Canada and US. apply message filtering for two reasons. Fir
 Carriers in Canada and US. use adaptive (machine learning) software systems to filter messages. These systems look at both message content and volume, and behave very much like email filtering systems. Messages receive a cumulative score based on the following factors: 
 
 - How many messages have come from a phone number during a certain time period, and
-- How many similar messages have been transmitted over the carrier’s network (in other words, do the message contents resemble known spam or unwanted messages).
+- How many similar messages have been transmitted over the carrier's network (in other words, do the message contents resemble known spam or unwanted messages).
 
-In SIPSTACK’s experience, high opt-out rates and end user complaints also play a major role in carrier filtering. Because of this, the best thing to do to reduce the risk of filtering is to closely adhere to SIPSTACK’s [Acceptable Use Policy](https://sipstack.com/aup), in particular as they relate to user opt-in and opt-out policies.
+In SIPSTACK's experience, high opt-out rates and end user complaints also play a major role in carrier filtering. Because of this, the best thing to do to reduce the risk of filtering is to closely adhere to SIPSTACK's [Acceptable Use Policy](https://sipstack.com/aup), in particular as they relate to user opt-in and opt-out policies.
 
-Carriers in Canada and US. usually report to SIPSTACK when a message has been filtered. If you suddenly see that a large number of your messages are resulting in a status of ‘Undelivered’ with a 30007 error, the carrier’s filtering system has probably recently identified a pattern in your messages that triggered a block.
+Carriers in Canada and US. usually report to SIPSTACK when a message has been filtered. If you suddenly see that a large number of your messages are resulting in a status of 'Undelivered' with a 30007 error, the carrier's filtering system has probably recently identified a pattern in your messages that triggered a block.
 
 ## Filtering by SIPSTACK
-SIPSTACK uses filtering to target messaging that is in violation of our Acceptable Use Policy. SIPSTACK’s goal is to protect mobile users from fraud, spam, and other forms of unwanted messaging, as well as to comply with rules and regulations imposed by carriers and regulators.
+SIPSTACK uses filtering to target messaging that is in violation of our Acceptable Use Policy. SIPSTACK's goal is to protect mobile users from fraud, spam, and other forms of unwanted messaging, as well as to comply with rules and regulations imposed by carriers and regulators.
 
-SIPSTACK’s filtering systems are designed to allow A2P messaging. Filtering by SIPSTACK is unlikely as long as your recipients have provided consent to receive your messages, and are not raising spam complaints or sending a high amount of opt-out (“STOP”) replies.
+SIPSTACK's filtering systems are designed to allow A2P messaging. Filtering by SIPSTACK is unlikely as long as your recipients have provided consent to receive your messages, and are not raising spam complaints or sending a high amount of opt-out ("STOP") replies.
 
 ## Avoiding Carrier Filtering
-First, ensure you are closely adhering to the rules in SIPSTACK’s [Acceptable Use Policy](https://sipstack.com/aup). For example, ensure you only send messages to recipients who have provided explicit opt-in consent to receive messages from you. This greatly reduces the risk of complaints and opt-outs that lead to filtering.
+First, ensure you are closely adhering to the rules in SIPSTACK's [Acceptable Use Policy](https://sipstack.com/aup). For example, ensure you only send messages to recipients who have provided explicit opt-in consent to receive messages from you. This greatly reduces the risk of complaints and opt-outs that lead to filtering.
 
-In addition, ensure that your first message to a recipient always includes a phrase telling the user how to opt-out, e.g. “Reply STOP to unsubscribe.” Certain keywords including STOP are automatically handled by SIPSTACK by default.
+In addition, ensure that your first message to a recipient always includes a phrase telling the user how to opt-out, e.g. "Reply STOP to unsubscribe." Certain keywords including STOP are automatically handled by SIPSTACK by default.
 
 ## Unblocking Your Number
-If you think your SIPSTACK number or message contents may have been blocked by a carrier, here’s what you can do to get your number unblocked:
+If you think your SIPSTACK number or message contents may have been blocked by a carrier, here's what you can do to get your number unblocked:
 
-If you believe your messages are compliant with SIPSTACK and carrier policies, please collect 3 or more examples of [Message SSIDs](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid) that have the “undelivered” status with error 30007, and then contact our [Support team](https://www.sipstack.com/contact/us).
+If you believe your messages are compliant with SIPSTACK and carrier policies, please collect 3 or more examples of [Message SSIDs](http://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid) that have the "undelivered" status with error 30007, and then contact our [Support team](https://www.sipstack.com/contact/us).
 
-Most carrier block lists in Canada and US. use a “cooling off” period, which means that the numbers will automatically be removed from the block list after a period of time. The time period may vary, and carriers do not share this information with SIPSTACK. If your message bodies do not also change, carriers’ content filtering systems will continue blocking your messages.
+Most carrier block lists in Canada and US. use a "cooling off" period, which means that the numbers will automatically be removed from the block list after a period of time. The time period may vary, and carriers do not share this information with SIPSTACK. If your message bodies do not also change, carriers' content filtering systems will continue blocking your messages.
 
-As of March 2021, the filtering landscape in the US. is rapidly changing. AT&T and Verizon will accept appeals when “false positive” filtering seems to be occurring, and will review and potentially unblock these cases. T-Mobile is not currently accepting appeals of filtered traffic, but this is expected to change in the near future with the rollout of T-Mobile’s A2P 10DLC solution (details to be announced).
+As of March 2021, the filtering landscape in the US. is rapidly changing. AT&T and Verizon will accept appeals when "false positive" filtering seems to be occurring, and will review and potentially unblock these cases. T-Mobile is not currently accepting appeals of filtered traffic, but this is expected to change in the near future with the rollout of T-Mobile's A2P 10DLC solution (details to be announced).
 
 ## Getting Pre-Approved to Avoid Filtering: Currently Unavailable in Canada and US.
 Canada and US. carriers do not currently pre-approve messages from long code numbers. Short code numbers, on the other hand, are allowed for specific traffic types, and filtering is unlikely as long as you adhere to your stated use case and follow opt-in and opt-out rules. In addition, toll-free SMS can be verified through SIPSTACK to proactively reduce the risk of filtering on approved use cases.
@@ -764,53 +764,6 @@ SIPSTACK does not have the ability to determine whether or not the phone number 
 `
 },
 {
-    slug: "sms-restricted-messages",
-    title: "What kind of messages are restricted on SIPSTACK SMS?",
-    subtitle: "SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK’s [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK’s product and service.
-
-The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
-
-## Sending unsolicited messages
-No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
-
-## Sending mass marketing or bulk messaging using SIPSTACK 
-Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
-
-## Sending harassing or abusive messages
-Sending threats, unwanted messages and “SMS-bombing” – sending many messages to a single number without the recipient’s permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
-
-## Using SIPSTACK numbers as the only means of communication during an emergency
-SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
-
-It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK’s notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
-
-For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
-
-## Engaging in fraud, phishing or sending of sensitive data
-SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It’s also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
-
-## Misrepresenting your identity (no spoofing)
-Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
-
-## Sending messages with pornographic or objectionable images
-Do not send pictures 
-- that promote or potentially further any illegal activity,
-- violate any legal or federal legislations, or
-- are likely to cause offense to recipients. 
-
-These include but are not limited to pornographic or objectionable images.
-`
-},
-{
     slug: "sms-messaging-for-emergency-purposes",
     title: "Can I use SIPSTACK SMS messaging for emergency purposes?",
     subtitle: "",
@@ -822,7 +775,7 @@ These include but are not limited to pornographic or objectionable images.
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-No, you should not rely on SIPSTACK’s programmable SMS during emergency situations. SMS communications to emergency services are disabled by default. Instead, calling 911 is advised. Promising such connectivity to your end users would violate our [Acceptable Use Policy](https://www.sipstack.com/aup).
+No, you should not rely on SIPSTACK's programmable SMS during emergency situations. SMS communications to emergency services are disabled by default. Instead, calling 911 is advised. Promising such connectivity to your end users would violate our [Acceptable Use Policy](https://www.sipstack.com/aup).
 
 Please instruct your end users who may need to contact 911 to use an alternative method, such as a standard wireless service. In some countries including Canada and the United States, mobile phones can place emergency voice calls to 911 even if no SIM card is installed on the device.
 
@@ -844,6 +797,53 @@ However, in critical situations, we recommend building in redundancies and using
 `
 },
 {
+    slug: "sms-restricted-messages",
+    title: "What kind of messages are restricted on SIPSTACK SMS?",
+    subtitle: "SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK's [Acceptable Use Policy](https://www.sipstack.com/aup)(AUP) describes the agreement between you and SIPSTACK regarding the use of SIPSTACK's product and service.
+
+The following behaviors are not permitted when sending and receiving SMS messages using SIPSTACK. (Please note that the following restrictions apply to the owner of the SIPSTACK account as well as to all their end users.)
+
+## Sending unsolicited messages
+No one likes SPAM. You should only send SMS messages to recipients who have opted in to your service and are expecting communication from you. SIPSTACK actively monitors for this kind of activity and we may block the phone number or suspend your account if we receive complaints from your subscribers.
+
+## Sending mass marketing or bulk messaging using SIPSTACK 
+Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
+
+## Sending harassing or abusive messages
+Sending threats, unwanted messages and "SMS-bombing" - sending many messages to a single number without the recipient's permission - are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
+
+## Using SIPSTACK numbers as the only means of communication during an emergency
+SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
+
+It is acceptable to use SIPSTACK to send notifications that do not directly impact life safety. For example, early warning alerts, safety advisories, event cancellations, etc. are allowed. We recommend building in redundancy for important applications and using SIPSTACK's notifications in conjunction with other public warning systems like sirens, radio and TV broadcasts if applicable.
+
+For more information about how to use SIPSTACK during an emergency, please read [Can I use SIPSTACK SMS messaging for emergency purposes?](http://www.sipstack.com/resources/knowledge-base/text-messaging/sms-messaging-for-emergency-purposes)
+
+## Engaging in fraud, phishing or sending of sensitive data
+SIPSTACK takes fraud and abuse very seriously. Sending messages with fraudulent information or phishing to request confidential information from subscribers is not allowed. It's also never a good idea to provide financial information or any other sensitive personal information to your customers over SMS.
+
+## Misrepresenting your identity (no spoofing)
+Spoofing the SenderID or otherwise attempting to mislead message recipients as to who is sending the SMS message is not allowed. While it makes good business sense to identify your brand or name in each message you send, it is not acceptable to misrepresent yourself.
+
+## Sending messages with pornographic or objectionable images
+Do not send pictures 
+- that promote or potentially further any illegal activity,
+- violate any legal or federal legislations, or
+- are likely to cause offense to recipients. 
+
+These include but are not limited to pornographic or objectionable images.
+`
+},
+{
     slug: "sms-with-toll-free-number",
     title: "Can I send or receive SMS with a SIPSTACK toll-free phone number?",
     subtitle: "",
@@ -862,7 +862,7 @@ Please ensure your SIPSTACK phone number or messaging service is configured to r
 Please note that standard messaging rates apply when sending SMS to, and receiving SMS from, a toll-free number. Toll-free SMS in Canada and the US offers certain advantages, but is also subject to rules and limitations. 
 
 ## How do toll-free numbers work in other countries?
-Toll-free numbers from countries outside Canada and US don’t support the sending and receiving of SMS messages.
+Toll-free numbers from countries outside Canada and US don't support the sending and receiving of SMS messages.
 
 ## Sending SMS to other countries with a Canadian Toll-Free number
 To send one-way SMS to countries outside Canada and US using toll-free numbers, use the same process as you would to send a standard SIPSTACK Canada/US long code message. 
@@ -889,7 +889,7 @@ If a customer responds to a message from a SIPSTACK long code or toll-free phone
 ## How does the opt-out process work?
 When SIPSTACK receives any of the above keywords as replies, we will create a block list entry in our database, and then pass the message to your webhook. Once a number is on the block list, any future attempts to message them will be met with a 400 message from our API. Recipients can disable this message and resume receiving messages by entering any of the opt-in keywords. 
 
-Only single-word messages will trigger the block. For example, replying STOP will stop the customer from receiving messages from that particular SIPSTACK number but replying ‘STOP PLEASE’ or ‘PLEASE CANCEL’ will not. 
+Only single-word messages will trigger the block. For example, replying STOP will stop the customer from receiving messages from that particular SIPSTACK number but replying 'STOP PLEASE' or 'PLEASE CANCEL' will not. 
 
 The block works and is logged even if your number currently has no messaging request URL. The STOP keyword replies will only apply to the most recent number that messaged the recipient. If you are using more than one toll-free or long code phone number to send messages, it is your responsibility to prevent those customers from receiving messages from your other numbers. We recommend universalizing the block list to all your numbers. 
 
@@ -945,12 +945,12 @@ A list of accepted media content types is provided below. While all the listed s
 SMS message sending throughput is measured in Message Segments per Second (MPS). Each message segment consists of up to 160 GSM-7 encoded characters. An SMS with more characters and/or different character encoding can be comprised of multiple segments. 
 
 ## What is a Trust Score and how is it determined?
-The [Campaign Registry](https://www.campaignregistry.com/) (TRC) is a third party which administers the wireless carrier’s new registration system. TCR uses a reputation algorithm to assign your business a Trust Score. Your Trust Score level, (Low, Medium or High), combined with your Campaign Type will determine the message throughput allotted to your Campaign. The Trust Score is a representation of how trusted your business is, and determines your messaging throughput. The higher your Trust Score, the higher your messaging throughput (MPS). 
+The [Campaign Registry](https://www.campaignregistry.com/) (TRC) is a third party which administers the wireless carrier's new registration system. TCR uses a reputation algorithm to assign your business a Trust Score. Your Trust Score level, (Low, Medium or High), combined with your Campaign Type will determine the message throughput allotted to your Campaign. The Trust Score is a representation of how trusted your business is, and determines your messaging throughput. The higher your Trust Score, the higher your messaging throughput (MPS). 
 
 Obtaining a Trust Score is a mandatory step on all industry wide A2P 10DLC registrations.
 
-## Can I appeal the decision if I’m not satisfied with my Trust Score?
-Yes, you can appeal TCR’s decision by submitting a request for additional review. This appeal entails a one-time fee of $40 USD. However, there is no guarantee that your Trust Score will increase as a result of the additional review.
+## Can I appeal the decision if I'm not satisfied with my Trust Score?
+Yes, you can appeal TCR's decision by submitting a request for additional review. This appeal entails a one-time fee of $40 USD. However, there is no guarantee that your Trust Score will increase as a result of the additional review.
 
 ## How is throughput (MPS) allocated for A2P 10DLC? 
 Under the new A2P 10DLC regulations, the number of MPS you can send for all of your registered Campaigns is capped. This MPS limit is shared across all US/Canada long code numbers allocated to your campaign, and all wireless carriers. Whether you choose to send messages over a single number to a specific carrier, or split up messages over a collection of local numbers to multiple carriers, the same MPS limit applies.
@@ -995,7 +995,7 @@ Messages that contain media attachments are identified as MMS Messages.
     content: `
 A short code is a 5 or 6-digit number that can send and receive SMS (and MMS) to and from mobile phones. Short codes are recommended for high volume applications.
 
-Short codes may be a random number (in Canada or U.S.), or a vanity number that you pick. A vanity short code is a specific number of your voice, while a random short code is assigned to you and can’t be reviewed in advance.
+Short codes may be a random number (in Canada or U.S.), or a vanity number that you pick. A vanity short code is a specific number of your voice, while a random short code is assigned to you and can't be reviewed in advance.
 
 ## Does SIPSTACK offer short code phone numbers? 
 No, SIPSTACK currently does not offer short code phone numbers. 
@@ -1036,24 +1036,24 @@ According to the telecom regulations of Canada and the United States, P2P messag
         picture: "/assets/img/team/kanasu.png",
     },
     content: `
-SIPSTACK will not charge you for a message if your API request returns an HTTP error, or if the message status on SIPSTACK is “failed.” SIPSTACK will charge you for messages where delivery was attempted. Read on for details.
+SIPSTACK will not charge you for a message if your API request returns an HTTP error, or if the message status on SIPSTACK is "failed." SIPSTACK will charge you for messages where delivery was attempted. Read on for details.
 
 ## Delivery Attempts
-SIPSTACK will charge you for a message if delivery was attempted, i.e. the message status is “sent,” “delivered,” “undelivered,” or “delivery unknown.” 
+SIPSTACK will charge you for a message if delivery was attempted, i.e. the message status is "sent," "delivered," "undelivered," or "delivery unknown." 
 
-In some cases, messages may be sent from SIPSTACK to the carrier, but are not received at the end user’s handset. 
+In some cases, messages may be sent from SIPSTACK to the carrier, but are not received at the end user's handset. 
 
 ## API-level errors (HTTP response errors)
 If you make an API request to SIPSTACK to send a message, and SIPSTACK returns an HTTP response error (for example, an HTTP 400), this means that SIPSTACK was unable to process your request. You will not be charged for failed API requests.
 
 API requests to SIPSTACK may fail for a variety of reasons, usually because of an error in your API request. A few examples of API-level errors include: 
 
-- An invalid ‘To’ number,
-- SMS Geo-Permissions for the country you’re attempting to send messages to is not enabled, and
+- An invalid 'To' number,
+- SMS Geo-Permissions for the country you're attempting to send messages to is not enabled, and
 - An attempt to send messages to a user who has opted out of receiving messages from you.
 
-## “Failed” messages
-A message that is marked with the status “failed” did not leave SIPSTACK and you will not be charged. “Failed” messages can happen for various reasons including queue overflows, account suspensions and media errors (in the case of MMS).
+## "Failed" messages
+A message that is marked with the status "failed" did not leave SIPSTACK and you will not be charged. "Failed" messages can happen for various reasons including queue overflows, account suspensions and media errors (in the case of MMS).
 
 ## A note about WhatsApp and other non-SMS channels
 Messaging channels other than SMS and MMS may have slightly different billing behavior. For example, undelivered WhatsApp messages are not charged.

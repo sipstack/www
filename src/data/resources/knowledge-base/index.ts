@@ -458,7 +458,7 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 #### References
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
-<sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  
+<sup>3 [https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259](https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259)</sup>  
 
 `,
       },
@@ -815,15 +815,15 @@ The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement
 ## The major provisions of the TRACED Act:
 Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
 ### STIR/SHAKEN
-As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
- However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
+ However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
 ### Call Blocking 
 Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
 ### Reassigned Numbers Database 
 The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. ,This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
 
 ## Conclusion
-Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
+Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
 #### References
 <sup>1 <a href="https://www.fcc.gov/TRACEDAct" class="ss-reference" target="_blank">https://www.fcc.gov/TRACEDAct</a></sup>  
 <sup>2 <a href="https://www.fcc.gov/call-authentication" class="ss-reference" target="_blank">https://www.fcc.gov/call-authentication</a></sup> 
@@ -965,6 +965,21 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`,
+      },
+      {
         slug: 'can-my-sms-messages-arrive-in-order',
         title: 'Can my SMS messages arrive in order?',
         subtitle: '',
@@ -977,6 +992,21 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
         },
         content: `
 SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+`,
+      },
+      {
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
+        subtitle: '',
+        abstract: '',
+        created: '18/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -1002,21 +1032,6 @@ Before you request for your account to be enabled to receive incoming short code
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
 - You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
-`,
-      },
-      {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
-        subtitle: '',
-        abstract: '',
-        created: '18/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -1083,21 +1098,6 @@ SIPSTACK does not offer short code numbers and therefore, does not support any s
 
 ## WhatsApp and other messaging channels
 The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
-`,
-      },
-      {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -1687,7 +1687,7 @@ No one likes SPAM. You should only send SMS messages to recipients who have opte
 Mass marketing restrictions vary from country to country. Mobile carriers do not allow marketing SMS messages, whether solicited or not, to be sent on long codes (10-digit numbers).  SIPSTACK does not support mass marketing on Canadian, US or international phone numbers.
 
 ## Sending harassing or abusive messages
-Sending threats, unwanted messages and "SMS-bombing" – sending many messages to a single number without the recipient's permission – are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
+Sending threats, unwanted messages and "SMS-bombing" - sending many messages to a single number without the recipient's permission - are not allowed on SIPSTACK. You are responsible for ensuring that your end users do not send harassing or abusive messages.
 
 ## Using SIPSTACK numbers as the only means of communication during an emergency
 SIPSTACK phone numbers should not be used for inbound and outbound communications between emergency service providers and end users via text messaging. SMS notifications can be used to provide information during an emergency, but should not be used as a replacement for or a means to contacting actual emergency services. 
