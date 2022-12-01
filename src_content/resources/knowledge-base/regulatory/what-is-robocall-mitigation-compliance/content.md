@@ -24,12 +24,11 @@ SHAKEN was created to address non-VoIP systems, such as conventional cellphones,
 
 Voice service providers (VSPs) now have a legal obligation under the **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
 
-"As of April 20, 2021, the FCC requires that all providers certify in the Robocall Mitigation Database that they have fully implemented STIR/SHAKEN or have instituted a robocall mitigation program to ensure that they are not originating illegal robocalls… Filings in the Robocall Mitigation Database are due June 30, 2021."
+>As of April 20, 2021, the FCC requires that all providers certify in the >Robocall Mitigation Database that they have fully implemented STIR/SHAKEN >or have instituted a robocall mitigation program to ensure that they are >not originating illegal robocalls… Filings in the Robocall Mitigation >Database are due June 30, 2021.
 
 That means VSPs must either implement a robocall mitigation program, comply with the FCC's STIR/SHAKEN framework, or do both.
 
 While STIR/SHAKEN compliance and mandatory RMPs are a positive step in the right direction, they are simply not enough to eradicate robocalls. They are not foolproof solutions to Caller-ID Spoofing, and although they can help to verify some calls, they do not prevent or block unverified calls. Additionally, because STIR/SHAKEN is still relatively new, extensions have been granted until June of 2023 for carriers with under 100,000 subscribers to comply. Finally, limitations exist around certain phone numbers not being able to be verified unless the device is compatible or until both carriers have adopted the guidelines.
-
 
 For all of these reasons, we recommend an extra boost of protection...
 
