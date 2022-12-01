@@ -656,6 +656,10 @@ In most countries, mobile numbers are assigned to a particular range within the 
     text: 'General information on Regulatory boards.',
     contributors: [
       {
+        name: 'Jeff Sager',
+        picture: '/assets/img/team/jeffsa.jpg',
+      },
+      {
         name: 'Anjana Uthayakumaran',
         picture: '/assets/img/team/anjanaa.jpg',
       },
@@ -689,6 +693,68 @@ While 10DLC is not the only option for businesses, each alternative comes with i
 ## Benefits of 10DLC
 
 A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
+
+`,
+      },
+
+      {
+        slug: 'what-is-robocall-mitigation-compliance',
+        title: 'What is Robocall Mitigation Compliance?',
+        subtitle:
+          'A robocall mitigation program, or RMP for short, refers to programs that are used by voice service providers to prevent unlawful robocalls from originating on their network.',
+        abstract: '',
+        created: '30/11/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Jeff Sager',
+          picture: '/assets/img/team/jeffsa.jpg',
+        },
+        content: `
+Telecommunication fraud continues to grow each year, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada),<sup>1</sup> and $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>2</sup>. Total telecom-related losses in 2021 amounted to $39.89 billion, a 28% increase from 2020.<sup>3</sup> Clearly, it's never been more important to stay informed and vigilant when it comes to the various scams that contribute to these losses. One of the best ways to do this is through the compliance of robocall mitigation programs.
+
+## What is a Robocall Mitigation Program?
+A robocall mitigation program, or RMP for short, refers to programs that are used by voice service providers to prevent unlawful robocalls from originating on their network. These RMPs can come in many different forms. 
+
+## Examples of RMPs
+1) **Blocklists:** A collection of phone numbers that have originated spam calls, which will get blocked automatically in both incoming and outgoing calls. 
+2) **Caller ID Reputation:** Services that attribute a reputation or rating to any phone number in order to help decide whether or not to pick up incoming calls or place outgoing calls. For example, [Whois by SIPSTACK](https://whois.sipstack.com/) and our [SmartCNAM](https://www.sipstack.com/products/smart-cnam) platform uses a growing database of customer feedback to offer an advanced Risk Rating Score.
+3) **Dynamic Traffic Analysis:** A process that identifies patterns in calls and callers to determine which ones are most likely to be operated by scammers. For example, numbers with high answer rates but short average call durations typically belong to scammers.
+4) **Call Screening:** Services designed to let call recipients know who's calling and **why**, to help them decide if they wish to answer the call. For example, CAPTCHA gateways can prompt the caller to answer a question via text and only allow the call to go through if the caller answers the prompt correctly. This limits scammers by slowing them down and preventing them from reaching certain targets altogether. 
+
+## Challenges to RMPs: Caller-ID Spoofing
+One common spamming method that poses a major challenge to these RMPs is a trick known as [Caller-ID Spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). This refers to the altering of either the Caller ID (CID) phone number or Caller Name ([CNAM](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam)) displayed to the person receiving the call. Obviously, when a phone number is altered, many of these RMPs are limited in the protection they can offer. 
+
+## STIR/SHAKEN
+That's why in 2020, the [Canadian Radio-Television and Telecommunications Commission (CRTC)](https://crtc.gc.ca/eng/home-accueil.htm) and the [Federal Communications Commission (FCC)](https://www.fcc.gov/) implemented two separate initiatives that work to verify the identity of an inbound call, known as [STIR and SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken). Their intention is to deter illegal caller ID spoofing and to generally end robocalls on Voice over Internet Protocol (VoIP) networks. Compliance with these two initiatives are mandated for phone carriers in North America.
+
+STIR stands for **S**ecure **T**elephone **I**dentity **R**evisited. SHAKEN stands for **S**ignature-based **H**andling of **A**sserted Information Using to**KEN**s. Both initiatives require carriers to certify with the [Robocall Mitigation Database](https://www.fcc.gov/robocall-mitigation-database), which ensures they have taken every precaution not to originate spam calls on their voice networks.
+
+STIR leverages three levels of verification, each corresponding to different levels of security, in order to determine whether a call should be trusted via VoIP systems. This authentication system verifies information at several points in the call, disabling hackers from beating them to the punch.
+SHAKEN was created to address non-VoIP systems, such as conventional cellphones, which provide users with information about whether or not callers are verified.
+
+## RMPs Now Mandatory
+
+Voice service providers (VSPs) now have a legal obligation under the **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
+
+"As of April 20, 2021, the FCC requires that all providers certify in the Robocall Mitigation Database that they have fully implemented STIR/SHAKEN or have instituted a robocall mitigation program to ensure that they are not originating illegal robocalls… Filings in the Robocall Mitigation Database are due June 30, 2021."
+
+That means VSPs must either implement a robocall mitigation program, comply with the FCC's STIR/SHAKEN framework, or do both.
+
+While STIR/SHAKEN compliance and mandatory RMPs are a positive step in the right direction, they are simply not enough to eradicate robocalls. They are not foolproof solutions to Caller-ID Spoofing, and although they can help to verify some calls, they do not prevent or block unverified calls. Additionally, because STIR/SHAKEN is still relatively new, extensions have been granted until June of 2023 for carriers with under 100,000 subscribers to comply. Finally, limitations exist around certain phone numbers not being able to be verified unless the device is compatible or until both carriers have adopted the guidelines.
+
+
+For all of these reasons, we recommend an extra boost of protection...
+
+## How SIPSTACK Fights Fraud
+Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
+
+### References
+<sup>1 <a href=" https://www.antifraudcentre-centreantifraude.ca/index-eng.htm
+" class="ss-reference" target="_blank"> https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href=" https://firstorion.com/2021-scam-call-trends/
+" class="ss-reference" target="_blank"> https://firstorion.com/2021-scam-call-trends/</a></sup>  
+<sup>3 <a href=" https://www.subex.com/blog/2021-cfca-global-telecommunications-fraud-loss-survey/
+" class="ss-reference" target="_blank"> https://www.subex.com/blog/2021-cfca-global-telecommunications-fraud-loss-survey/</a></sup>
 
 `,
       },
@@ -728,6 +794,39 @@ To learn more about protecting your company's number from getting spoofed visit 
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
 <sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
+
+`,
+      },
+
+      {
+        slug: 'what-is-the-traced-act',
+        title: 'What is the TRACED Act?',
+        subtitle:
+          'The act grants the Federal Communications Comission (FCC) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers.',
+        abstract: '',
+        created: '01/12/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence Act is a piece of legislation that President Donald Trump signed into law on December 30, 2019.  <sup>1</sup> The act grants the **FCC** [**F**ederal **C**ommunications **C**omission](https://www.sipstack.com/resources/knowledge-base/general/glossary-telco) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers. The TRACED Act is a much needed update to its legislative precursor  **TCPA**  **T**elephone **C**onsumer **P**rotection **A**ct of 1991. While safeguarding customers by restricting  telemarketers and automated phone equipment, [technology behind telecommunications scams]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) has drastically evolved, requiring new and more comprehensive legislature. The goal of the TRACED Act is to support effective enforcement against unwanted, and often illegal, robocalls. 
+## The major provisions of the TRACED Act:
+Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
+### STIR/SHAKEN
+As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
+ However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+### Call Blocking 
+Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
+### Reassigned Numbers Database 
+The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. ,This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
+
+## Conclusion
+Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
+#### References
+<sup>1 <a href="https://www.fcc.gov/TRACEDAct" class="ss-reference" target="_blank">https://www.fcc.gov/TRACEDAct</a></sup>  
+<sup>2 <a href="https://www.fcc.gov/call-authentication" class="ss-reference" target="_blank">https://www.fcc.gov/call-authentication</a></sup> 
 
 `,
       },
@@ -866,36 +965,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
-        subtitle: '',
-        abstract: '',
-        created: '18/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
-`,
-      },
-      {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
         slug: 'can-my-sms-messages-arrive-in-order',
         title: 'Can my SMS messages arrive in order?',
         subtitle: '',
@@ -933,6 +1002,21 @@ Before you request for your account to be enabled to receive incoming short code
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
 - You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+`,
+      },
+      {
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
+        subtitle: '',
+        abstract: '',
+        created: '18/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -999,6 +1083,21 @@ SIPSTACK does not offer short code numbers and therefore, does not support any s
 
 ## WhatsApp and other messaging channels
 The above information is applicable to MMS messaging. Other messaging channels such as WhatsApp have different rules and file type support. PDF files are an officially supported media attachment type for WhatsApp users.
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `,
       },
       {
@@ -1513,6 +1612,25 @@ Canada and US. carriers do not currently pre-approve messages from long code num
 `,
       },
       {
+        slug: 'sms-messages-to-roaming-phone-numbers',
+        title: 'Can I send SMS messages to roaming phone numbers?',
+        subtitle: '',
+        abstract: '',
+        created: '14/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
+
+If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
+
+SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
+`,
+      },
+      {
         slug: 'sms-messaging-for-emergency-purposes',
         title: 'Can I use SIPSTACK SMS messaging for emergency purposes?',
         subtitle: '',
@@ -1591,25 +1709,6 @@ Do not send pictures
 - are likely to cause offense to recipients. 
 
 These include but are not limited to pornographic or objectionable images.
-`,
-      },
-      {
-        slug: 'sms-messages-to-roaming-phone-numbers',
-        title: 'Can I send SMS messages to roaming phone numbers?',
-        subtitle: '',
-        abstract: '',
-        created: '14/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee the deliverability of SMS messaging to roaming phone numbers.
-
-If you send an SMS message to a phone number roaming in an area other than where it normally operates, the SMS message may not arrive. In some cases, duplicate messages may be delivered. 
-
-SIPSTACK does not have the ability to determine whether or not the phone number you are sending SMS messages to is roaming at the time the SMS request is initiated.
 `,
       },
       {
