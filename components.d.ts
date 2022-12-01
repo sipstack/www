@@ -157,6 +157,7 @@ declare module '@vue/runtime-core' {
     HeroStacks: typeof import('./src/components/layout/hero/modules/HeroStacks.vue')['default']
     HeroWaveMask: typeof import('./src/components/misc/masks/HeroWaveMask.vue')['default']
     HeroWhois: typeof import('./src/components/custom/hero/HeroWhois.vue')['default']
+    ICilCheckCircle: typeof import('~icons/cil/check-circle')['default']
     Icon: typeof import('./src/components/base/icon/Icon.vue')['default']
     IconBox: typeof import('./src/components/base/icon/IconBox.vue')['default']
     IconPopover: typeof import('./src/components/base/popover/modules/IconPopover.vue')['default']
