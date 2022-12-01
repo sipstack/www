@@ -6,7 +6,7 @@ While 10DLC is not the only option for businesses, each alternative comes with i
 
 **Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
 
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today’s fast paced trends.
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
 
 **Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
 

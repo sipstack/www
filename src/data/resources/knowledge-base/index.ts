@@ -397,38 +397,6 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
       },
 
       {
-        slug: 'what-is-call-stretching',
-        title: 'What is Call Stretching?',
-        subtitle:
-          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
-        abstract: '',
-        created: '12/11/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
-
-This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
-
-Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
-
-## What is the solution?
-If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
-Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
-
-
-#### References
-<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
-<sup>2 <a href=" https://community.abhandshake.com/call-stretching
-" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
-
-`,
-      },
-
-      {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
         subtitle:
@@ -459,6 +427,38 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
 <sup>3 [https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259](https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259)</sup>  
+
+`,
+      },
+
+      {
+        slug: 'what-is-call-stretching',
+        title: 'What is Call Stretching?',
+        subtitle:
+          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
+        abstract: '',
+        created: '12/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
+
+This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
+
+Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
+
+## What is the solution?
+If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
+Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
+
+
+#### References
+<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
+<sup>2 <a href=" https://community.abhandshake.com/call-stretching
+" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
 
 `,
       },
@@ -671,7 +671,7 @@ In most countries, mobile numbers are assigned to a particular range within the 
         subtitle:
           'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
         abstract: '',
-        created: '14/10/2022', //dd/mm/yyyy
+        created: '14/10/2022',
         updated: '',
         author: {
           name: 'Anjana Uthayakumaran',
@@ -703,7 +703,7 @@ A2P 10DLC offers a happy medium of mass text messaging management with low overh
         subtitle:
           'A robocall mitigation program, or RMP for short, refers to programs that are used by voice service providers to prevent unlawful robocalls from originating on their network.',
         abstract: '',
-        created: '30/11/2022', //dd/mm/yyyy
+        created: '30/11/2022',
         updated: '',
         author: {
           name: 'Jeff Sager',
@@ -736,12 +736,11 @@ SHAKEN was created to address non-VoIP systems, such as conventional cellphones,
 
 Voice service providers (VSPs) now have a legal obligation under the **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
 
-"As of April 20, 2021, the FCC requires that all providers certify in the Robocall Mitigation Database that they have fully implemented STIR/SHAKEN or have instituted a robocall mitigation program to ensure that they are not originating illegal robocalls… Filings in the Robocall Mitigation Database are due June 30, 2021."
+>As of April 20, 2021, the FCC requires that all providers certify in the >Robocall Mitigation Database that they have fully implemented STIR/SHAKEN >or have instituted a robocall mitigation program to ensure that they are >not originating illegal robocalls… Filings in the Robocall Mitigation >Database are due June 30, 2021.
 
 That means VSPs must either implement a robocall mitigation program, comply with the FCC's STIR/SHAKEN framework, or do both.
 
 While STIR/SHAKEN compliance and mandatory RMPs are a positive step in the right direction, they are simply not enough to eradicate robocalls. They are not foolproof solutions to Caller-ID Spoofing, and although they can help to verify some calls, they do not prevent or block unverified calls. Additionally, because STIR/SHAKEN is still relatively new, extensions have been granted until June of 2023 for carriers with under 100,000 subscribers to comply. Finally, limitations exist around certain phone numbers not being able to be verified unless the device is compatible or until both carriers have adopted the guidelines.
-
 
 For all of these reasons, we recommend an extra boost of protection...
 
@@ -804,7 +803,7 @@ To learn more about protecting your company's number from getting spoofed visit 
         subtitle:
           'The act grants the Federal Communications Comission (FCC) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers.',
         abstract: '',
-        created: '01/12/2022', //dd/mm/yyyy
+        created: '01/12/2022',
         updated: '',
         author: {
           name: 'Anjana Uthayakumaran',
@@ -816,11 +815,11 @@ The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement
 Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
 ### STIR/SHAKEN
 As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
- However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
 ### Call Blocking 
 Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
 ### Reassigned Numbers Database 
-The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. ,This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
+The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number., This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
 
 ## Conclusion
 Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
@@ -965,36 +964,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
-        subtitle: '',
-        abstract: '',
-        created: '22/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`,
-      },
-      {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`,
-      },
-      {
         slug: 'block-incoming-sms',
         title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
@@ -1032,6 +1001,36 @@ Before you request for your account to be enabled to receive incoming short code
 - By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
 - SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
 - You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`,
+      },
+      {
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
