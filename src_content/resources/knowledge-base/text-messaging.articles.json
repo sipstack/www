@@ -116,36 +116,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
-    slug: "block-incoming-sms",
-    title: "Is there a way to block an incoming SMS on a phone number?",
-    subtitle: "",
-    abstract: "",
-    created: "18/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
-`
-},
-{
-    slug: "blocking-as-spam",
-    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
-    subtitle: "",
-    abstract: "",
-    created: "22/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
-`
-},
-{
     slug: "can-my-sms-messages-arrive-in-order",
     title: "Can my SMS messages arrive in order?",
     subtitle: "",
@@ -219,6 +189,21 @@ Table 1 describes the capabilities of long code, toll-free and short code SMS me
 `
 },
 {
+    slug: "block-incoming-sms",
+    title: "Is there a way to block an incoming SMS on a phone number?",
+    subtitle: "",
+    abstract: "",
+    created: "18/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`
+},
+{
     slug: "carrier-support-for-pdf-files",
     title: "Carrier support for PDF files sent using SIPSTACK MMS",
     subtitle: "SIPSTACK MMS messaging is a popular way to send media files, especially images, to end users in Canada and US.",
@@ -261,6 +246,21 @@ The above information is applicable to MMS messaging. Other messaging channels s
     },
     content: `
 Multiple media files can be sent as part of one MMS message. However, SIPSTACK cannot guarantee that the messages will be received in the same order that they were sent.
+`
+},
+{
+    slug: "blocking-as-spam",
+    title: "Can my SMS Messages or Phone Numbers be Blocked as Spam?",
+    subtitle: "",
+    abstract: "",
+    created: "22/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
 `
 },
 {
@@ -764,39 +764,6 @@ SIPSTACK does not have the ability to determine whether or not the phone number 
 `
 },
 {
-    slug: "sms-messaging-for-emergency-purposes",
-    title: "Can I use SIPSTACK SMS messaging for emergency purposes?",
-    subtitle: "",
-    abstract: "",
-    created: "31/03/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-No, you should not rely on SIPSTACK’s programmable SMS during emergency situations. SMS communications to emergency services are disabled by default. Instead, calling 911 is advised. Promising such connectivity to your end users would violate our [Acceptable Use Policy](https://www.sipstack.com/aup).
-
-Please instruct your end users who may need to contact 911 to use an alternative method, such as a standard wireless service. In some countries including Canada and the United States, mobile phones can place emergency voice calls to 911 even if no SIM card is installed on the device.
-
-## More about Text-to-911 in the US
-End users in the US who need to reach emergency services should make a voice call from a mobile phone or landline if possible.
-
-In the US, the FCC recommends that voice calls are preferable since Text-to-911 currently has limited support.
-
-Voice calls to 911 are usually the most efficient way to reach emergency help because:
-
-- Voice calls allow 911 operators to ask questions and obtain information while two-way communication by text can take more time,
-- Text messages can be subjected to a maximum length limit, and
-- Emergency services will usually automatically receive your phone number and approximate location. 
-
-## Can I use SIPSTACK for other types of notifications and alerts?
-Absolutely. We encourage you to use SIPSTACK to send notifications that do not directly concern life safety. SIPSTACK can be used to send early warning alerts, public safety advisories, event cancellations, and so on. 
-
-However, in critical situations, we recommend building in redundancies and using SIPSTACK notifications in conjunction with other public warning systems, such as sirens, radio, and TV broadcasts.
-`
-},
-{
     slug: "sms-restricted-messages",
     title: "What kind of messages are restricted on SIPSTACK SMS?",
     subtitle: "SIPSTACK provides you with a platform to send and receive SMS messages to phone numbers around the world. However, SIPSTACK may suspend your account if you violate our Acceptable Use Policy (AUP).",
@@ -841,6 +808,39 @@ Do not send pictures
 - are likely to cause offense to recipients. 
 
 These include but are not limited to pornographic or objectionable images.
+`
+},
+{
+    slug: "sms-messaging-for-emergency-purposes",
+    title: "Can I use SIPSTACK SMS messaging for emergency purposes?",
+    subtitle: "",
+    abstract: "",
+    created: "31/03/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+No, you should not rely on SIPSTACK’s programmable SMS during emergency situations. SMS communications to emergency services are disabled by default. Instead, calling 911 is advised. Promising such connectivity to your end users would violate our [Acceptable Use Policy](https://www.sipstack.com/aup).
+
+Please instruct your end users who may need to contact 911 to use an alternative method, such as a standard wireless service. In some countries including Canada and the United States, mobile phones can place emergency voice calls to 911 even if no SIM card is installed on the device.
+
+## More about Text-to-911 in the US
+End users in the US who need to reach emergency services should make a voice call from a mobile phone or landline if possible.
+
+In the US, the FCC recommends that voice calls are preferable since Text-to-911 currently has limited support.
+
+Voice calls to 911 are usually the most efficient way to reach emergency help because:
+
+- Voice calls allow 911 operators to ask questions and obtain information while two-way communication by text can take more time,
+- Text messages can be subjected to a maximum length limit, and
+- Emergency services will usually automatically receive your phone number and approximate location. 
+
+## Can I use SIPSTACK for other types of notifications and alerts?
+Absolutely. We encourage you to use SIPSTACK to send notifications that do not directly concern life safety. SIPSTACK can be used to send early warning alerts, public safety advisories, event cancellations, and so on. 
+
+However, in critical situations, we recommend building in redundancies and using SIPSTACK notifications in conjunction with other public warning systems, such as sirens, radio, and TV broadcasts.
 `
 },
 {

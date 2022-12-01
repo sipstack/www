@@ -1,0 +1,15 @@
+{
+    slug: "what-is-robocall-mitigation-compliance",
+    title: "What is Robocall Mitigation Compliance?",
+    subtitle: "A robocall mitigation program, or RMP for short, refers to programs that are used by voice service providers to prevent unlawful robocalls from originating on their network.",
+    abstract: "",
+    created: "30/11/2022", //dd/mm/yyyy
+    updated: "",
+    author: {
+        name: "Jeff Sager",
+        picture: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
