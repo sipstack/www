@@ -27,6 +27,8 @@ function res_kb_articles(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
@@ -41,6 +43,13 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('text-messaging.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
@@ -54,6 +63,13 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('fax.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
@@ -67,6 +83,13 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('regulatory.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
@@ -80,6 +103,13 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('phone-number.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
@@ -93,6 +123,13 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('general.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   cb()
@@ -111,6 +148,8 @@ function res_kb_categories(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const helpCenterCategories = ['))
@@ -158,6 +197,8 @@ function res_blog_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))
@@ -226,6 +267,7 @@ function res_cs_posts(cb) {
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
+    .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     // prepend / append export for ts file
     .pipe(gap.prependText('export const posts = ['))

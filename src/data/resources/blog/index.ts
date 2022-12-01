@@ -114,7 +114,7 @@ As per the [**ACFE**, **A**ssociation of **C**ertified **F**raud **E**xaminers,]
   },
 
   {
-    slug: "CRTC Hosts 'Combating Scam Communications' Meeting with Five Countries",
+    slug: 'crtc-hosts-combating-scam-communications-meeting-with-five-countries',
     image:
       '/assets/img/resources/blog/20221029-landmark-settlement-in-Indiana-combats-robocalls/Indiana-image.png',
     category: 'News',
@@ -354,7 +354,7 @@ Using the latest machine learning (AI) technology, SIPSTACK's systems validates 
     content: `
 Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months. With the rise of the Covid-19 pandemic, the world began working from home, making all efforts to continue their operations at any capacity. For some businesses, these changes were effortless, but for most, the struggle and cost to adapt was staggering. SIPSTACK by design, is built to enable any business to adapt and rise to the new communication challenges with confidence by bringing secure, managed and affordable telecommunication environments to meet these pivotal demands. 
 
-Our technology started off like most have in today's environment – in the virtual clouds only to make its way to IBM / Softlayer, a cloud company that brings high end Metal-as-a-Service (MaaS) coupled with their global secured network, truly enabling our services to scale world-wide within their one-of-a-kind offering that no other company can match.
+Our technology started off like most have in today's environment - in the virtual clouds only to make its way to IBM / Softlayer, a cloud company that brings high end Metal-as-a-Service (MaaS) coupled with their global secured network, truly enabling our services to scale world-wide within their one-of-a-kind offering that no other company can match.
 
 Recently, an event at the IBM / Softlayer TOR01 datacenter occurred affecting our  Lenovo SR630 ThinkSystem equipment within our environment. IBM / Softlayer reported that the reason for the series of component failures were likely a result of firmware updates and advisories ignored. Advisories from Lenovo pre-dating our systems deployment. While technicians quickly rebuilt new systems, recovery of affected equipment containing data became top priority of ours to secure and recover. As a regulated company by the CRTC, we worked very hard to recover damaged equipment containing sensitive data to ensure public interests were protected, and any proprietary code. Despite several attempts at recovery, IBM / Softlayer refused to cooperate unless SIPSTACK Inc. waived an addendum limiting "IBM's gross negligence" for damages. We were only able to physically secure the damaged equipment weeks later that contained sensitive data after SIPSTACK retained special legal counsel and intervened. The data contents were completely inaccessible and without risk during that time due to the nature of the damages to the equipment.
 
@@ -758,7 +758,7 @@ Here are a few simple modifications you can make to your voicemail greeting to e
 
 - If a customer calls when you're open, greet them with a 'Thank you for calling [Insert Business Name], someone will answer your call shortly, until their call can be directed to the right person.
 - If you're closed but have an emergency line, you could include that information after you list your business hours and direct your customers to a support channel.
-- If a customer calls when you're closed or on a stat holiday, give them your business hours, and provide them an option to leave a voicemail, and assure them that you will respond within a specific time (usually 24–48 business hours).
+- If a customer calls when you're closed or on a stat holiday, give them your business hours, and provide them an option to leave a voicemail, and assure them that you will respond within a specific time (usually 24-48 business hours).
 
 ## Call Screening
 A business line has more advanced capabilities than a personal phone number. Today's VoIP business lines can streamline your sales process by sending you notifications and allowing you to screen calls before receiving them.

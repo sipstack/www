@@ -18,7 +18,7 @@ While 10DLC is not the only option for businesses, each alternative comes with i
 
 **Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
 
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today’s fast paced trends.
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
 
 **Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
 
@@ -118,11 +118,11 @@ The short answer is no. STIR/ SHAKEN aids to verify a call, but does not prevent
 
 STIR/SHAKEN guidelines have yet to be fully implemented in North America. Canada is in the beginning stages of implementation, while in the U.S., the FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers <sup>3</sup>.  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
 
-To learn more about protecting your company’s number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
+To learn more about protecting your company's number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
 
 #### References
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
-<sup>2 McClain, Colleen. "Most Americans don’t answer cellphone calls from unknown numbers." (2020).</sup>
+<sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
 
 `
@@ -144,15 +144,15 @@ The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement
 ## The major provisions of the TRACED Act:
 Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
 ### STIR/SHAKEN
-As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
- However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
+ However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
 ### Call Blocking 
 Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
 ### Reassigned Numbers Database 
 The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. ,This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
 
 ## Conclusion
-Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK’s safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
+Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
 #### References
 <sup>1 <a href="https://www.fcc.gov/TRACEDAct" class="ss-reference" target="_blank">https://www.fcc.gov/TRACEDAct</a></sup>  
 <sup>2 <a href="https://www.fcc.gov/call-authentication" class="ss-reference" target="_blank">https://www.fcc.gov/call-authentication</a></sup> 
