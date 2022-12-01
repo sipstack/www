@@ -14,9 +14,9 @@ The short answer is no. STIR/ SHAKEN aids to verify a call, but does not prevent
 
 STIR/SHAKEN guidelines have yet to be fully implemented in North America. Canada is in the beginning stages of implementation, while in the U.S., the FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers <sup>3</sup>.  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines.
 
-To learn more about protecting your company’s number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
+To learn more about protecting your company's number from getting spoofed visit [SIPSTACK](https://www.sipstack.com/). 
 
 #### References
 <sup>1 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>
-<sup>2 McClain, Colleen. "Most Americans don’t answer cellphone calls from unknown numbers." (2020).</sup>
+<sup>2 McClain, Colleen. "Most Americans don't answer cellphone calls from unknown numbers." (2020).</sup>
 <sup>3 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>

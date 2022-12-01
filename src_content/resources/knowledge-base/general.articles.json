@@ -1,4 +1,58 @@
 {
+    slug: "glossary-sipstack",
+    title: "SIPSTACK Glossary",
+    subtitle: "A comprehensive and growing list of all things SIPSTACK.",
+    abstract: "",
+    created: "04/11/2022", 
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+[**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
+Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
+[**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
+[**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
+Cloud **U**nified **C**ommunications is an Asterisk based, open source platform, that allows you to scale and manage from a single console.  
+[**Domain**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The name of the website belonging to the incoming caller is provided when using the Domain lookup tool in Smart CNAM.   
+[**Lookup**](https://www.sipstack.com/resources/docs/smart-cnam)  
+The Lookup types offered by Smart CNAM offer the following up to date information: Risk score, Caller ID, Regional, Telco/Carrier, Online Profiles.     
+[**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
+Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
+[**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
+[**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
+[**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
+Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
+[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
+Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
+[**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
+The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
+[**SIPSTACK privacy policy**](https://www.sipstack.com/legal/privacy)   
+Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
+[**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
+Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
+[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
+Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
+[**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
+SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
+[**Users**](https://www.sipstack.com/resources/docs/partner-portal)  
+Users of an organization are authorized and given access through the SIPSTACK Partner Portal.  
+[**Vertical**](https://www.sipstack.com/products/smart-cnam#faqs)  
+Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost.   
+[**Whois**](https://whois.sipstack.com/)  
+Whois is the world's most advanced lookup tool, proving information and trust ratings based on the incoming Caller ID number.  
+[**Whois Profiles**](https://www.sipstack.com/resources/docs/partner-portal)  
+Whois profiles is a directory containing phone numbers that you own, and any relevant information. Registering a number allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function.  
+
+`
+},
+
+{
     slug: "glossary-telco",
     title: "Telecommunications Glossary",
     subtitle: "A comprehensive and growing list of all things telecommunications.",
@@ -13,7 +67,7 @@
 [**10DLC**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)  
  **10** **D**igit **L**ong **C**ode, a phone number.    
 [**A2P Messaging**](https://www.sipstack.com/resources/blog/analog-technology)  
-**A**pplication-to-**P**erson Messaging. Businesses and enterprises send SMS communications through software applications to a customer’s device.  
+**A**pplication-to-**P**erson Messaging. Businesses and enterprises send SMS communications through software applications to a customer's device.  
 [**AI**](https://www.sipstack.com/products/smart-cnam#faqs)  
 **A**ritifical **I**ntelligence is the simulation/replication of human intelligence processes by machines.  
 [**ARPANET**](https://www.sipstack.com/resources/blog/voip-technology-explained)   
@@ -35,9 +89,9 @@ The **C**anadian **R**adio-television **T**elecommunications **C**ommission is a
 [**CTIA**](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-A2P-10DLC)   
  **C**ellular **T**elecommunications and **I**nternet **A**ssociation. Represents the U.S. wireless communications industry and companies throughout the mobile ecosystem.  
 [**E-911**](https://www.sipstack.com/resources/knowledge-base/general/what-is-enhanced-911)  
-Enhanced 911 or E-911 is a system utilized in North America that provides the caller’s location to emergency services.  
+Enhanced 911 or E-911 is a system utilized in North America that provides the caller's location to emergency services.  
 [**FCC**](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)  
-The **F**ederal **C**ommunications **C**ommission is an independent U.S. government agency overseen by Congress, the Commission is the federal agency responsible for implementing and enforcing America’s communications law and regulations.  
+The **F**ederal **C**ommunications **C**ommission is an independent U.S. government agency overseen by Congress, the Commission is the federal agency responsible for implementing and enforcing America's communications law and regulations.  
 [**Hosted PBX**](https://www.sipstack.com/resources/blog/the-evolution-of-voip)  
 A Hosted **P**rivate **B**ranch **E**xchange is a telephone switching system hosted in the cloud; it is often managed by a third-party service provider who charges a monthly fee for maintenance and real-time support.  
 [**IP**](https://www.sipstack.com/resources/blog/voip-technology-explained)  
@@ -87,60 +141,6 @@ Toll-free numbers are telephone numbers that are free of charge for the calling 
 },
 
 {
-    slug: "glossary-sipstack",
-    title: "SIPSTACK Glossary",
-    subtitle: "A comprehensive and growing list of all things SIPSTACK.",
-    abstract: "",
-    created: "04/11/2022", 
-    updated: "",
-    author: {
-        name: "Anjana Uthayakumaran",
-        picture: "/assets/img/team/anjanaa.jpg",
-    },
-    content: `
-[**Brand**](https://www.sipstack.com/resources/docs/partner-portal)  
-Your brand is the domain that you have registered with SIPSTACK, you can create multiple brands within your [partner portal]( https://www.sipstack.com/resources/docs/partner-portal).   
-[**Carrier**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The telecom provider of the incoming caller is provided when using the Telco/Carrier lookup tool in Smart CNAM.  
-[**Cloud UC**]( https://www.sipstack.com/products/cloud-uc)  
-Cloud **U**nified **C**ommunications is an Asterisk based, open source platform, that allows you to scale and manage from a single console.  
-[**Domain**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The name of the website belonging to the incoming caller is provided when using the Domain lookup tool in Smart CNAM.   
-[**Lookup**](https://www.sipstack.com/resources/docs/smart-cnam)  
-The Lookup types offered by Smart CNAM offer the following up to date information: Risk score, Caller ID, Regional, Telco/Carrier, Online Profiles.     
-[**Message SSID**](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid)   
-Every message successfully created by SIPSTACK API generates a unique SSID. The SSID is a 34-character string.  
-[**Partners**](https://www.sipstack.com/products/smart-cnam#faqs)  
-Partners are typically telecom related entities that create an account with SIPSTACK and integrate our products into their call flows.   
-[**Region**](https://www.sipstack.com/resources/docs/smart-cnam)  
-Region describes the following information of the incoming caller when using the Regional lookup tool in Smart CNAM: city, region (province/territory/state) and country.   
-[**SIPSTACK Cookie Policy**](https://www.sipstack.com/legal/privacy)  
-Read our cookie policy, an exhaustive list of all the cookies used to enhance your user experience, before using our products of services.   
-[**SIPSTACK Partner Account**](https://www.sipstack.com/resources/docs/partner-portal)   
-Creating an account makes you a SIPSTACK partner, and gives you access to our ever-evolving suite of products.  
-[**SIPSTACK Partner Portal**](https://www.sipstack.com/resources/docs/partner-portal)   
-The SIPSTACK Partner Portal is the central hub that gives you access to all the products in the SIPSTACK ecosystem.   
-[**SIPSTACK privacy policy**](https://www.sipstack.com/legal/privacy)   
-Read our privacy policy, that outlines how we securely manage your private information, before using our products or services. 
-[**SIPSTACK terms of service**](https://www.sipstack.com/legal/tos)  
-Read and agree with our terms of service, that outlines our responsibilities as a service provider, as well as user obligations, before using our products or services.   
-[**Smart CNAM**](https://www.sipstack.com/resources/docs/smart-cnam)  
-Smart **C**aller **Nam**e is the next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.  
-[**Source/Risk score**](https://www.sipstack.com/resources/docs/smart-cnam)  
-SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine a safety score assigned to each individual call.  
-[**Users**](https://www.sipstack.com/resources/docs/partner-portal)  
-Users of an organization are authorized and given access through the SIPSTACK Partner Portal.  
-[**Vertical**](https://www.sipstack.com/products/smart-cnam#faqs)  
-Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost.   
-[**Whois**](https://whois.sipstack.com/)  
-Whois is the world’s most advanced lookup tool, proving information and trust ratings based on the incoming Caller ID number.  
-[**Whois Profiles**](https://www.sipstack.com/resources/docs/partner-portal)  
-Whois profiles is a directory containing phone numbers that you own, and any relevant information. Registering a number allows you to enhance the score rating of those phone numbers, as well as utilize the Source/Risk lookup function.  
-
-`
-},
-
-{
     slug: "what-is-wangiri-fraud",
     title: "What is Wangiri Fraud",
     subtitle: "Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.",
@@ -152,7 +152,7 @@ Whois profiles is a directory containing phone numbers that you own, and any rel
         picture: "/assets/img/team/jeffsa.jpg",
     },
     content: `
-Canadians have reported losses of $383 million in 2021 alone to telecommunication fraud, costing victims exponentially more money than ever before.<sup>1</sup> As spam calling and texting has become a growing concern, it’s important to be aware of the prevalent scams both in the [US](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). Increased awareness helps protect ourselves and loved ones against fraud. One of the most prevalent of these telecommunications scams is called Wangiri.  
+Canadians have reported losses of $383 million in 2021 alone to telecommunication fraud, costing victims exponentially more money than ever before.<sup>1</sup> As spam calling and texting has become a growing concern, it's important to be aware of the prevalent scams both in the [US](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). Increased awareness helps protect ourselves and loved ones against fraud. One of the most prevalent of these telecommunications scams is called Wangiri.  
 
 Wangiri is a Japanese term that translates to _one ring and cut_, referring to a phone call that rings just one time before disconnecting. Typically, these calls will occur at nighttime or working hours in order to intentionally go unanswered and be displayed as a missed call in the call log. The intention is to have victims call the number back, which is then re-routed to an IPRN, International Premium Rate Number, or another number that charges excessively high fees.<sup>2</sup>  Oftentimes, victims receive multiple calls from the same premium-rate number, or even text messages, to influence them to call the number back.<sup>3</sup> This is known as the first leg of the Wangiri attack.  
 
@@ -167,7 +167,7 @@ Here are a few telltale signs to look out for:
 
 ## Takeaways and Tips to Protect Yourself
 Keep the following in mind to keep yourself safe against Wangiri fraud:
-1)	If you notice you have a missed call from a number unfamiliar to you, do not call back. As tempting as it may be to want to know whose call you missed, it’s important to remember that legitimate callers trying to reach you will often leave a voicemail.
+1)	If you notice you have a missed call from a number unfamiliar to you, do not call back. As tempting as it may be to want to know whose call you missed, it's important to remember that legitimate callers trying to reach you will often leave a voicemail.
 2)	If you are receiving a lot of these calls, report it to your phone provider. 
 3)	If you have already been charged for calling one of these numbers back, you can report the crime to the police.<sup>5</sup>
 
@@ -197,7 +197,7 @@ Telecommunication fraud continues to grow exponentially, with reported losses in
  
 Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name [(CNAM)](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so. The call spoofing that we will discuss in this article, however, refers to spammers illegally replicating a CID without permission for illegitimate purposes. 
  
-The spammer’s intention is to appear as a trustworthy and local caller or texter, so the recipient of the call will be more likely to answer and fall for whatever scam they are attempting. These scams usually involve the caller fraudulently impersonating government agencies or companies asking for personal information or money. In some cases, the caller may even specifically target senior citizens, pretending to be a grandchild or other family member asking for money.
+The spammer's intention is to appear as a trustworthy and local caller or texter, so the recipient of the call will be more likely to answer and fall for whatever scam they are attempting. These scams usually involve the caller fraudulently impersonating government agencies or companies asking for personal information or money. In some cases, the caller may even specifically target senior citizens, pretending to be a grandchild or other family member asking for money.
  
 ## Common Examples of Caller ID Spoofing
 There are different ways a call like this may appear on your phone. Here are a few examples:
@@ -241,12 +241,12 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
   "content": `
 Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
 
-This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party’s voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
+This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
 
 Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
 
 ## What is the solution?
-If you are receiving a lot of these calls, report it to your phone provider. Don’t feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
+If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
 Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
 
 
@@ -282,12 +282,12 @@ Preventative measures, such as CNAM, work to provide callers with a sense of sec
 
 ## Not sure a call is safe?
 
-CNAM is not an automated feature granted to cellphone users. Additionally, there is no centralized database, meaning the name displayed may vary depending on the database chosen by the receiver’s carrier. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren’t sure whether it is safe, use [Whois](https://whois.sipstack.com/) by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
+CNAM is not an automated feature granted to cellphone users. Additionally, there is no centralized database, meaning the name displayed may vary depending on the database chosen by the receiver's carrier. That is where Whois comes in! If an unknown number is attempting to contact you, and you aren't sure whether it is safe, use [Whois](https://whois.sipstack.com/) by SIPSTACK. By entering the Caller ID displayed, you will be able to receive reliable information on the security level of the number.
 
 #### References
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
-<sup>3 [https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259](https://today.com/money/americans–lost–8–6–billion–phone–fraud–last–year–survey–1D80108259)</sup>  
+<sup>3 [https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259](https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259)</sup>  
 
 `
 },
@@ -336,7 +336,7 @@ A PBX is a private telephone system used within an organization to communicate i
         picture: "/assets/img/team/jeffsa.jpg",
     },
     content: `
-As telecommunication fraud continues to grow each year, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)<sup>2</sup>, it’s becoming increasingly important to stay informed and vigilant. Total telecom-related losses in 2021 amounted to $39.89 billion, a 28% increase from 2020. Of those total losses, $4 billion were at the hands of a scam called Short Stopping. 
+As telecommunication fraud continues to grow each year, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)<sup>2</sup>, it's becoming increasingly important to stay informed and vigilant. Total telecom-related losses in 2021 amounted to $39.89 billion, a 28% increase from 2020. Of those total losses, $4 billion were at the hands of a scam called Short Stopping. 
 
 ## What is Short Stopping?
 Short Stopping refers to a scam where hackers hijack a call before it reaches its target destination. By working with a rogue carrier on the call's path, the hacker redirects the call to an expensive destination country, causing the victim to get surcharged. The hackers and the rogue carriers then share the revenue generated by the fraudulent calls by billing either the end customer or another carrier in the routing flow.
@@ -344,15 +344,15 @@ Short Stopping refers to a scam where hackers hijack a call before it reaches it
 Once a call has been short-stopped, the motivation of the hacker becomes to keep the caller on the line for as long as possible. The longer the call, the higher the charge. To this end, scammers use a number of different tactics. 
 
 ## Potential Tactics to Watch Out For
-•	Providing a false ring tone or a fake network announcement that might say something like, “The person you are calling has not responded. Please try again later.”
-•	Playing a prerecorded message such as, “Hello? Hello? I can't hear you. Hold on…"
+•	Providing a false ring tone or a fake network announcement that might say something like, "The person you are calling has not responded. Please try again later."
+•	Playing a prerecorded message such as, "Hello? Hello? I can't hear you. Hold on…"
 •	Rerouting the call to a call center where a real person attempts to keep the conversation going with similar tactics. 
 
 ## How Short Stopping Impacts Callers
 Because these recordings or conversations are meant to seem legitimate, callers are often not even aware that any fraud has taken place until they receive an exorbitant bill for calls to a destination they never dialed. A further inconvenience is that some operators will block the numbering plans of costly countries altogether in order to protect themselves from this scam. This makes customers who legitimately need to reach these countries unable to do so.
 
 ## Why Short Stopping is Difficult to Stop
-Short Stopping is difficult both to detect and crack down upon because the fraud happens after a legitimate call is placed. The fraudulent element of the call is able to conveniently hide within the initial legitimate call, allowing it to go unnoticed by the systems put in place to catch it. It is especially difficult to track because the per-call profit margin is so small that it goes unnoticed. Unfortunately, the millions of small-scale calls being hijacked on a global scale allow the fraudsters’ cumulative profits to add up substantially. To put it simply, detecting Short Stopping is like trying to find a needle in a haystack. 
+Short Stopping is difficult both to detect and crack down upon because the fraud happens after a legitimate call is placed. The fraudulent element of the call is able to conveniently hide within the initial legitimate call, allowing it to go unnoticed by the systems put in place to catch it. It is especially difficult to track because the per-call profit margin is so small that it goes unnoticed. Unfortunately, the millions of small-scale calls being hijacked on a global scale allow the fraudsters' cumulative profits to add up substantially. To put it simply, detecting Short Stopping is like trying to find a needle in a haystack. 
 
 ## How SIPSTACK Fights Fraud
 Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
@@ -377,7 +377,7 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
         picture: "/assets/img/team/anjanaa.jpg",
     },
     content: `
-Amongst the various [Smart CNAM lookup types](https://www.sipstack.com/resources/docs/smart-cnam), the score/risk lookup function provides a dynamic score on a scale from 0.000-5.000.  SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. It is important to note that carriers have internal scores, contributing to the risk calculations. As the carrier continues to interact with our [partner portal]( https://www.sipstack.com/resources/docs/partner-portal), [cloud UC]( https://www.sipstack.com/products/cloud-uc) and continue to use other services, their internal score will go up. This strengthens the trust behind their clients’ phone numbers and as a result, provide their clients with higher scores. Conversely, deceitful actions of the carrier, not only lowers the carrier’s score but all of their clients scores as well. The algorithm is ever-evolving to provide the best possible security to our customers. 
+Amongst the various [Smart CNAM lookup types](https://www.sipstack.com/resources/docs/smart-cnam), the score/risk lookup function provides a dynamic score on a scale from 0.000-5.000.  SIPSTACK's proprietary algorithm uses artificial intelligence and machine learning to uniquely weigh a number of factors to determine the score assigned to each call. It is important to note that carriers have internal scores, contributing to the risk calculations. As the carrier continues to interact with our [partner portal]( https://www.sipstack.com/resources/docs/partner-portal), [cloud UC]( https://www.sipstack.com/products/cloud-uc) and continue to use other services, their internal score will go up. This strengthens the trust behind their clients' phone numbers and as a result, provide their clients with higher scores. Conversely, deceitful actions of the carrier, not only lowers the carrier's score but all of their clients scores as well. The algorithm is ever-evolving to provide the best possible security to our customers. 
 
 | Score | Remarks| 
 |---|---|   
@@ -412,7 +412,7 @@ Visit Smart CNAM product documentation to [learn more](https://www.sipstack.com/
         picture: "/assets/img/team/anjanaa.jpg",
     },
     content: `
-Enhanced 911 or E-9-1-1 is a system utilized in North America that provides the caller’s location to emergency services. 9-1-1 dispatchers are able to retrieve physical addresses of landlines, and geographic coordinates of wireless callers, which is then passed on to police officers, firefighters, paramedics, and other services as deemed fit. Enhanced location information works to improve the effectiveness and reliability of wireless 911 services.  
+Enhanced 911 or E-9-1-1 is a system utilized in North America that provides the caller's location to emergency services. 9-1-1 dispatchers are able to retrieve physical addresses of landlines, and geographic coordinates of wireless callers, which is then passed on to police officers, firefighters, paramedics, and other services as deemed fit. Enhanced location information works to improve the effectiveness and reliability of wireless 911 services.  
 
 ### Canada mandates the following from local [VoIP service providers](https://www.sipstack.com/resources/blog/voip-technology-explained): 
 
