@@ -23,6 +23,11 @@ function res_kb_articles(cb) {
       })
     )
     .pipe(concat('api.articles.json'))
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
     .pipe(dest('src_content/resources/knowledge-base/'))
 
   src([
