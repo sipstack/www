@@ -3,7 +3,7 @@
     title: "What is A2P 10DLC?",
     subtitle: "A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .",
     abstract: "",
-    created: "14/10/2022", //dd/mm/yyyy
+    created: "14/10/2022",
     updated: "",
     author: {
         name: "Anjana Uthayakumaran",
@@ -34,7 +34,7 @@ A2P 10DLC offers a happy medium of mass text messaging management with low overh
     title: "What is Robocall Mitigation Compliance?",
     subtitle: "A robocall mitigation program, or RMP for short, refers to programs that are used by voice service providers to prevent unlawful robocalls from originating on their network.",
     abstract: "",
-    created: "30/11/2022", //dd/mm/yyyy
+    created: "30/11/2022",
     updated: "",
     author: {
         name: "Jeff Sager",
@@ -67,12 +67,11 @@ SHAKEN was created to address non-VoIP systems, such as conventional cellphones,
 
 Voice service providers (VSPs) now have a legal obligation under the **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence (TRACED) Act to take action to stop robocalls. As quoted by the FCC:
 
-"As of April 20, 2021, the FCC requires that all providers certify in the Robocall Mitigation Database that they have fully implemented STIR/SHAKEN or have instituted a robocall mitigation program to ensure that they are not originating illegal robocalls… Filings in the Robocall Mitigation Database are due June 30, 2021."
+>As of April 20, 2021, the FCC requires that all providers certify in the >Robocall Mitigation Database that they have fully implemented STIR/SHAKEN >or have instituted a robocall mitigation program to ensure that they are >not originating illegal robocalls… Filings in the Robocall Mitigation >Database are due June 30, 2021.
 
 That means VSPs must either implement a robocall mitigation program, comply with the FCC's STIR/SHAKEN framework, or do both.
 
 While STIR/SHAKEN compliance and mandatory RMPs are a positive step in the right direction, they are simply not enough to eradicate robocalls. They are not foolproof solutions to Caller-ID Spoofing, and although they can help to verify some calls, they do not prevent or block unverified calls. Additionally, because STIR/SHAKEN is still relatively new, extensions have been granted until June of 2023 for carriers with under 100,000 subscribers to comply. Finally, limitations exist around certain phone numbers not being able to be verified unless the device is compatible or until both carriers have adopted the guidelines.
-
 
 For all of these reasons, we recommend an extra boost of protection...
 
@@ -133,7 +132,7 @@ To learn more about protecting your company's number from getting spoofed visit 
     title: "What is the TRACED Act?",
     subtitle: "The act grants the Federal Communications Comission (FCC) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers.",
     abstract: "",
-    created: "01/12/2022", //dd/mm/yyyy
+    created: "01/12/2022", 
     updated: "",
     author: {
         name: "Anjana Uthayakumaran",
@@ -145,11 +144,11 @@ The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement
 Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
 ### STIR/SHAKEN
 As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
- However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
 ### Call Blocking 
 Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
 ### Reassigned Numbers Database 
-The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. ,This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
+The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number., This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
 
 ## Conclusion
 Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  

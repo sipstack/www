@@ -11,9 +11,8 @@
         },
         {
             name: "Anjana Uthayakumaran",
-            picture: "/assets/img/team/anjanaa.jpg"
-        }
-        
+            picture: "/assets/img/team/anjanaa.jpg",
+        },
     ],
     articles: [@@include("regulatory.articles.json")]
 },
