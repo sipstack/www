@@ -62,7 +62,7 @@ func_dev3 () {
         echo "Waiting 30 seconds for app startup..."  
         sleep 30
         echo "Updating sitemap on search engines..."
-        https://www.google.com/ping?sitemap=https://www.sipstack.com/sitemap.xml
+        curl https://www.google.com/ping?sitemap=https://www.sipstack.com/sitemap.xml
         
 }
 
