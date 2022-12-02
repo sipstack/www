@@ -1,0 +1,21 @@
+{
+    slug: "the-growing-risk-of-friendship-and-romance-scams",
+    image: "/assets/img/resources/blog/20221130-the-growing-risk-of-friendship-and-romance-scamsfriendship-and-romance-scams/romance-scam-post.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "The Growing Risk of Friendship and Romance Scams",
+    abstract: "Friendship and romance scams refer to scammers who create fake profiles on dating apps, social media platforms, or other online communities with the intention of forming an online relationship with their victims.",
+    created: "30/11/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 5, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
+
