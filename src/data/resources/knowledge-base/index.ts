@@ -309,7 +309,7 @@ Toll-free numbers are telephone numbers that are free of charge for the calling 
 
       {
         slug: 'what-is-wangiri-fraud',
-        title: 'What is Wangiri Fraud',
+        title: 'What is Wangiri Fraud?',
         subtitle:
           'Wangiri is a Japanese term that translates to one ring and cut, referring to a phone call that rings just one time before disconnecting.',
         abstract: '',
@@ -353,7 +353,7 @@ Keep the following in mind to keep yourself safe against Wangiri fraud:
         slug: 'what-is-call-spoofing',
         title: 'What is Call Spoofing?',
         subtitle:
-          'Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so.',
+          'Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call.',
         abstract: '',
         created: '18/11/2022', //dd/mm/yyyy
         updated: '',
@@ -397,6 +397,38 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
       },
 
       {
+        slug: 'what-is-call-stretching',
+        title: 'What is Call Stretching?',
+        subtitle:
+          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
+        abstract: '',
+        created: '12/11/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
+
+This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
+
+Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
+
+## What is the solution?
+If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
+Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
+
+
+#### References
+<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
+<sup>2 <a href=" https://community.abhandshake.com/call-stretching
+" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
+
+`,
+      },
+
+      {
         slug: 'what-is-cnam',
         title: 'What is CNAM?',
         subtitle:
@@ -427,38 +459,6 @@ CNAM is not an automated feature granted to cellphone users. Additionally, there
 <sup>1 [https://rdi-it.com/user-guides/the-basics-of-caller-id/](https://rdi-it.com/user-guides/the-basics-of-caller-id/)</sup>  
 <sup>2 Tabron, Judith L. _Creating urgency in tech support scam telephone conversations_. Hofstra University, 2016.</sup>  
 <sup>3 [https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259](https://today.com/money/americans-lost-8-6-billion-phone-fraud-last-year-survey-1D80108259)</sup>  
-
-`,
-      },
-
-      {
-        slug: 'what-is-call-stretching',
-        title: 'What is Call Stretching?',
-        subtitle:
-          'Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.',
-        abstract: '',
-        created: '12/11/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers. It is amongst the five most prevalent telecommunications schemes in the [US]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) and [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada). As telecom operators and government agencies work to target a specific type of fraud, more complex and innovative methods are utilized by scammers.  Call stretching manages to bypass most skilled fraud management systems.<sup>1</sup> 
-
-This is carried out in one of two ways. The basic scenario is continuing to keep the line active for several seconds after the call has been terminated by the other party. The more intricate scheme involves the recording of a portion of live conservation. A portion of the other party's voice is played immediately after the originating party disconnects. It often takes many seconds, or even a few minutes before the party realizes this and hangs up.
-
-Although seeming minuscule, when conducted on a massive scale this method generates over a billion dollars annually.<sup>2</sup> Detection of this fraud is difficult as the call themselves are legitimate, and the profit per call is small. Because originating carriers measure pay out according to the duration of the call, they end up paying more to the fraudulent carriers than they actually owe. Recording a private conversation poses a massive breach in privacy. Call stretching results in carriers having to manage disgruntled subscribers and high customer turnover. 
-
-## What is the solution?
-If you are receiving a lot of these calls, report it to your phone provider. Don't feel obligated to answer each and every call from unknown numbers. It's important to remember that legitimate callers trying to reach you will often leave a voicemail. If you are expecting a call, and you aren't sure whether it is safe, use [Whois]( https://whois.sipstack.com/)  by SIPSTACK. 
-Entering the Caller ID displayed will instantaneously provide a score rating out of five stars, as well as other relevant information to help you determine whether the call is safe. 
-
-
-#### References
-<sup>1 <a href="https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/" class="ss-reference" target="_blank">https://cfca.org/the-key-to-stopping-call-stretching-fraud-a-real-time-handshake-between-operators/</a></sup>  
-<sup>2 <a href=" https://community.abhandshake.com/call-stretching
-" class="ss-reference" target="_blank"> https://community.abhandshake.com/call-stretching</a></sup> 
 
 `,
       },
@@ -498,7 +498,7 @@ A PBX is a private telephone system used within an organization to communicate i
 
       {
         slug: 'what-is-short-stopping',
-        title: 'What is short stopping',
+        title: 'What is Short Stopping?',
         subtitle:
           'Short Stopping refers to a scam where hackers hijack a call before it reaches its target destination.',
         abstract: '',
@@ -511,7 +511,6 @@ A PBX is a private telephone system used within an organization to communicate i
         content: `
 As telecommunication fraud continues to grow each year, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)<sup>2</sup>, it's becoming increasingly important to stay informed and vigilant. Total telecom-related losses in 2021 amounted to $39.89 billion, a 28% increase from 2020. Of those total losses, $4 billion were at the hands of a scam called Short Stopping. 
 
-## What is Short Stopping?
 Short Stopping refers to a scam where hackers hijack a call before it reaches its target destination. By working with a rogue carrier on the call's path, the hacker redirects the call to an expensive destination country, causing the victim to get surcharged. The hackers and the rogue carriers then share the revenue generated by the fraudulent calls by billing either the end customer or another carrier in the routing flow.
 
 Once a call has been short-stopped, the motivation of the hacker becomes to keep the caller on the line for as long as possible. The longer the call, the higher the charge. To this end, scammers use a number of different tactics. 
@@ -665,6 +664,62 @@ In most countries, mobile numbers are assigned to a particular range within the 
       },
     ],
     articles: [
+      {
+        slug: 'telephone-consumer-protection-act-tcpa',
+        title: 'A Brief History of the TCPA',
+        subtitle:
+          'In 1991, congress in Canada and the US enacted the TCPA (Telephone Consumer Protection Act).',
+        abstract: '',
+        created: '30/11/2022', //dd/mm/yyyy
+        updated: '',
+        author: {
+          name: 'Jeff Sager',
+          picture: '/assets/img/team/jeffsa.jpg',
+        },
+        content: `
+Our society may be objectively divided, but there is one thing pretty much everybody can agree on: Robocalls suck! While many businesses rely on robocalls for legitimate customer reach, from the consumer's point of view, being solicited for something over the phone by a prerecorded message is a universal nuisance.That's why in 1991, congress in Canada and the US enacted the TCPA (Telephone Consumer Protection Act). 
+
+## 1991: What is the TCPA?                  
+
+Essentially the TCPA placed regulations and restrictions on robocalls made by telemarketers, businesses, debt collectors, and political campaigns to help protect consumers. Included in the protection of this act were robocalls to residential phone lines/landlines, unsolicited faxes, and cell phones. 
+
+## 1992: The Invention of "Do-Not-Call Lists" 
+
+One year later, Congress amended the act by including the requirement that telemarketers create and maintain company-specific do-not-call lists, which consumers were able to add themselves to.
+
+## 2003: The Invention of the National Do-Not-Call Registry
+
+Years later, the FCC and FTC established the national <a href="https://www.donotcall.gov/" class="ss-reference" target="_blank">Do-Not-Call registry</a>, which covers all telemarketers (with the exception of certain nonprofit organizations), and applies to both interstate and intrastate calls across the nation.
+
+## 2012: Most Recent Amendments to the TCPA             
+
+Since 2012, telemarketers have been required to obtain written consent from consumers prior to robocalling them, and they are not allowed to rely on an "established business relationship" to avoid receiving said consent. Furthermore, each robocall must provide an automated, interaction "opt-out" option for the consumer. 
+
+## 2015: TCPA Weakened by "Budget Bill" Provision               
+
+The Budget Bill of 2015 saw congress making an exception to the TCPA, which allowed debt collectors to make robocalls in instances when debt is owed, or even just guaranteed by, the federal government. This allowed debt collectors to make robocalls to millions of Americans with education, mortgage, tax, and other federally-backed debt, which debt collectors were able to aggressively take advantage of. 
+
+## 2020: TCPA Upheld, Debt Loophole Eliminated              
+
+On July 5th, 2020 the Supreme Court upheld the TCPA and struck down the aforementioned debt collector provision in the 2015 budget bill. A win all around!
+
+## So Why Do You Still Get So Many Robocalls?             
+
+We know what you're thinking. Despite this protection, you still get robocalls that annoy you to no end, right? Us too. Simply put, the TCPA is meant to protect consumers from legitimate business and call centres who use telemarketing. Unfortunately, it does not account for illegitimate telecommunications fraud, which are conducted by people who obviously have no regard for the law. This illegitimate industry continues to grow exponentially, reporting losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) <sup>2</sup> . 
+There are a number of different scams used that contribute to these losses, but one of the most prevalent ones for robocalls in particular is known as [Caller ID Spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing)). With so many scams out there, and the limitations of protection that the TCPA can offer, it's never been more important to stay informed and vigilant.
+
+## How SIPSTACK Fights Fraud                      
+
+Using the latest technology and machine learning, SIPSTACK's systems authenticates all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
+
+### References
+
+<sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" class="ss-reference" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
+<sup>2 <a href="https://firstorion.com/2021-scam-call-trends/" class="ss-reference" target="_blank">https://firstorion.com/2021-scam-call-trends/</a></sup> 
+
+`,
+      },
+
       {
         slug: 'what-is-A2P-10DLC',
         title: 'What is A2P 10DLC?',
@@ -964,46 +1019,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'block-incoming-sms',
-        title: 'Is there a way to block an incoming SMS on a phone number?',
-        subtitle: '',
-        abstract: '',
-        created: '18/03/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
-`,
-      },
-      {
-        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
-        title: 'Can SIPSTACK numbers receive SMS from a short code',
-        subtitle: '',
-        abstract: '',
-        created: '26/05/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
-
-Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
-
-Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
-
-- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
-- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
-- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
-- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
-`,
-      },
-      {
         slug: 'blocking-as-spam',
         title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
         subtitle: '',
@@ -1019,18 +1034,18 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
 `,
       },
       {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
+        slug: 'block-incoming-sms',
+        title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
         abstract: '',
-        created: '07/04/2021',
+        created: '18/03/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
+Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
 `,
       },
       {
@@ -1100,6 +1115,31 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
+        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
+        title: 'Can SIPSTACK numbers receive SMS from a short code',
+        subtitle: '',
+        abstract: '',
+        created: '26/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
+
+Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
+
+Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
+
+- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
+- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
+- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
+- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
+`,
+      },
+      {
         slug: 'delivery-order-of-multiple-media-files-via-mms',
         title: 'Delivery order of multiple media files via MMS',
         subtitle: '',
@@ -1132,6 +1172,21 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
+`,
+      },
+      {
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {

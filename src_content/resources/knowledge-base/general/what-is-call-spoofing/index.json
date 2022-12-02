@@ -1,7 +1,7 @@
 {
     slug: "what-is-call-spoofing",
     title: "What is Call Spoofing?",
-    subtitle: "Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call. In some cases, caller ID spoofing can be used for legitimate purposes, such as call centres who have permission to do so.",
+    subtitle: "Call spoofing refers to the altering of either the Caller ID (CID) phone number or Caller Name (CNAM) displayed to the person receiving the call.",
     abstract: "",
     created: "18/11/2022", //dd/mm/yyyy
     updated: "",
