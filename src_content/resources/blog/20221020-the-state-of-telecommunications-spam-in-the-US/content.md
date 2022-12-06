@@ -32,8 +32,8 @@ Using the latest technology and machine learning, SIPSTACK’s systems authentic
 
 #### References
 
-<sup>1 [https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/](https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/) </sup>
-<sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>
-<sup>3 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
-<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
-<sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication) </sup>
+<sup>1 [https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/](https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/) </sup>  
+<sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>  
+<sup>3 [https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/](https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/)</sup>  
+<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>  
+<sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>  
