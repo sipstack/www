@@ -1,5 +1,43 @@
 export const posts = [
   {
+    slug: 'where-does-the-term-spam-come-from',
+    image:
+      '/assets/img/resources/blog/20221130-where-does-the-term-spam-come-from/thinking-image.png',
+    category: 'SPAM',
+    tags: ['SIPSTACK'],
+    views: 0,
+    title: 'Where Does the Term Spam Come From?',
+    abstract:
+      'In the era of prevalent fraud the term spam has become synonymous with persistent telemarketers, massive amounts of emails and advertisements. But how did that come to be? ',
+    created: '07/12/2022', //dd/mm/yyyy
+    updated: '',
+    duration: 5, // minute read
+    author: {
+      name: 'Anjana Uthayakumaran',
+      role: 'Author',
+      photo: '/assets/img/team/anjanaa.jpg',
+    },
+    content: `
+In the era of prevalent fraud, the term spam has become synonymous with persistent telemarketers calling, massive amount of emails from companies you shopped at once, and advertisements filling up your mailbox. But how did that come to be?   
+### Etymology 
+The term spam was first introduced through SPAM, the square can of pork invented during the Great Depression in 1937.<sup>1</sup> The company states that the name was the winning entry in a naming contest, as a result  of combing the words "**SP**iced h**AM**" .<sup>2</sup> Considering SPAM is largely made with pork and no spices, many were left confused and speculated about other less appealing expansions such as **S**houlder of **P**ork and h**AM** or alternatively, **S**pecial **P**rocessed **A**merican **M**eat.  Sales sky rocketed during World War II as American and Allied soldiers were fed this filling meat that was able to survive on the shelves for weeks. SPAM was celebrated! However, after eating it for three meals a day for an extended period of time, the thousands of soldiers that returned back to the US after the war refused to eat it.  
+SPAM was still a culturally relevant name American households when a hit television series Monty Python's Flying Circus aired the *Spam sketch* in 1970 on BBC. The sketch featured a cafe in which every option on the menu, except one included SPAM. As the diner patron  exclaims his distaste for the canned meat, a group of Vikings in the diner burst into a song with the word Spam repeatedly. Although a short sketch, the term SPAM is mentioned 132 times.<sup>3</sup>   
+The first use of spam as we now know it began in the 1980s in chat rooms such as AOL, previously known as Online America. In order to drive out new members or aggravate opposing  interest groups, (ex Star Wars vs Star Trek) users would intentionally spam the chat sessions with a ton of text. As messages appear chronologically, this would move the unwanted messages off the screen view. Users would either repeatedly use the term SPAM or even entire lyrics from the song in the Monty Python sketch.<sup>4</sup> 
+
+     
+So now you know! If you want to learn more about the wonderful world of telecommunications check out our [knowledge base articles](https://www.sipstack.com/resources/knowledge-base/) and our [latest blog articles.](https://www.sipstack.com/resources/blog/)  
+
+#### References  
+<sup>1 <a href="https://time.com/4827451/spam-history-80th-anniversary/" class="ss-reference" target="_blank">https://time.com/4827451/spam-history-80th-anniversary/</a></sup>   
+<sup>2 <a href="https://www.eater.com/2014/7/9/6191681/a-brief-history-of-spam-an-american-meat-icon" class="ss-reference" target="_blank">https://www.eater.com/2014/7/9/6191681/a-brief-history-of-spam-an-american-meat-icon</a></sup>   
+<sup>3 <a href="https://montypython.fandom.com/wiki/Spam" class="ss-reference" target="_blank">https://montypython.fandom.com/wiki/Spam</a></sup>   
+<sup>4 <a href="https://www.youtube.com/watch?v=zLih-WQwBSc&ab_channel=BusinessInsider" class="ss-reference" target="_blank">https://www.youtube.com/watch?v=zLih-WQwBSc&ab_channel=BusinessInsider</a></sup> 
+
+
+`,
+  },
+
+  {
     slug: 'the-growing-risk-of-friendship-and-romance-scams',
     image:
       '/assets/img/resources/blog/20221130-the-growing-risk-of-friendship-and-romance-scamsfriendship-and-romance-scams/romance-scam-post.png',
@@ -255,7 +293,7 @@ The settlement prohibits both Startel and Hall from the telecommunications indus
     abstract:
       'Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month .',
     created: '20/10/2022', //dd/mm/yyyy
-    updated: '',
+    updated: '07/12/2022',
     duration: 7, // minute read
     author: {
       name: 'Anjana Uthayakumaran',
@@ -263,7 +301,7 @@ The settlement prohibits both Startel and Hall from the telecommunications indus
       photo: '/assets/img/team/anjanaa.jpg',
     },
     content: `
-Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to **3 billion spam calls a month**<sup>1</sup>. Americans reported losses totalling nearly **$30 billion** to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost **1 in every 3 Americans have fallen victim to phone scams**, 19% have been victimized on more than one occasion<sup>3</sup>.
+Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to **1 billion spam calls a week**<sup>1</sup>. Americans reported losses totalling nearly **$30 billion** to phone scams, in a 2021 annual report, with more than a $10 billion increase from 2020 <sup>2</sup>. While almost **1 in every 3 Americans have fallen victim to phone scams**, 19% have been victimized on more than one occasion<sup>3</sup>.
 
 ## **The top five types of scams in the US**
 
@@ -297,11 +335,11 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 
 #### References
 
-<sup>1 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
-<sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>
-<sup>3 [https://www.truecaller.com/blog/insights/us-spam-scam-report-21](https://www.truecaller.com/blog/insights/us-spam-scam-report-21) </sup>
-<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>
-<sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication) </sup>
+<sup>1 [https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/](https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/) </sup>  
+<sup>2 [https://firstorion.com/2021-scam-call-trends/](https://firstorion.com/2021-scam-call-trends/)</sup>  
+<sup>3 [https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/](https://www.cnet.com/tech/mobile/tired-of-spam-calls-every-day-heres-how-to-stop-them/)</sup>  
+<sup>4, 5, 6, 7, 8 [https://fraud.org/top-ten-scams-2021/](https://fraud.org/top-ten-scams-2021/)</sup>  
+<sup>9 [https://www.fcc.gov/call-authentication](https://www.fcc.gov/call-authentication)</sup>  
 
 `,
   },

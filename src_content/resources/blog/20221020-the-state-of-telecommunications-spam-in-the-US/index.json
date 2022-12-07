@@ -7,7 +7,7 @@
     title: "The State of Telecommunications Spam in the United States",
     abstract: "Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month .",
     created: "20/10/2022", //dd/mm/yyyy
-    updated: "",
+    updated: "07/12/2022",
     duration: 7, // minute read
     author: {
         name: "Anjana Uthayakumaran",
