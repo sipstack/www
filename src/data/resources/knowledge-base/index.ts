@@ -665,6 +665,38 @@ In most countries, mobile numbers are assigned to a particular range within the 
     ],
     articles: [
       {
+        slug: 'what-is-A2P-10DLC',
+        title: 'What is A2P 10DLC?',
+        subtitle:
+          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
+        abstract: '',
+        created: '14/10/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
+
+## Existing Alternatives
+
+While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
+
+**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
+
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
+
+**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
+
+## Benefits of 10DLC
+
+A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
+
+`,
+      },
+
+      {
         slug: 'telephone-consumer-protection-act-tcpa',
         title: 'A Brief History of the TCPA',
         subtitle:
@@ -716,38 +748,6 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 
 <sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" class="ss-reference" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
 <sup>2 <a href="https://firstorion.com/2021-scam-call-trends/" class="ss-reference" target="_blank">https://firstorion.com/2021-scam-call-trends/</a></sup> 
-
-`,
-      },
-
-      {
-        slug: 'what-is-A2P-10DLC',
-        title: 'What is A2P 10DLC?',
-        subtitle:
-          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
-        abstract: '',
-        created: '14/10/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
-
-## Existing Alternatives
-
-While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
-
-**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
-
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
-
-**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
-
-## Benefits of 10DLC
-
-A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
 
 `,
       },
@@ -865,16 +865,25 @@ To learn more about protecting your company's number from getting spoofed visit 
           picture: '/assets/img/team/anjanaa.jpg',
         },
         content: `
-The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence Act is a piece of legislation that President Donald Trump signed into law on December 30, 2019.  <sup>1</sup> The act grants the **FCC** [**F**ederal **C**ommunications **C**omission](https://www.sipstack.com/resources/knowledge-base/general/glossary-telco) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers. The TRACED Act is a much needed update to its legislative precursor  **TCPA**  **T**elephone **C**onsumer **P**rotection **A**ct of 1991. While safeguarding customers by restricting  telemarketers and automated phone equipment, [technology behind telecommunications scams]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) has drastically evolved, requiring new and more comprehensive legislature. The goal of the TRACED Act is to support effective enforcement against unwanted, and often illegal, robocalls. 
+The **TRACED** **T**elephone **R**obocall **A**buse **C**riminal **E**nforcement and **D**eterrence Act is a piece of legislation that President Donald Trump signed into law on December 30, 2019.<sup>1</sup> The act grants the **FCC** [**F**ederal **C**ommunications **C**omission](https://www.sipstack.com/resources/knowledge-base/general/glossary-telco) and law enforcement more tools and authority to prosecute scammers and enact deterring measures against telephone scam to protect consumers. The TRACED Act is a much needed update to its legislative precursor  **TCPA**  **T**elephone **C**onsumer **P**rotection **A**ct of 1991. While safeguarding customers by restricting  telemarketers and automated phone equipment, [technology behind telecommunications scams]( https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US) has drastically evolved, requiring new and more comprehensive legislature. The goal of the TRACED Act is to support effective enforcement against unwanted, and often illegal, robocalls. 
 ## The major provisions of the TRACED Act:
-Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also require to provide reports to Congress regarding the status of particular provisions. 
+Many provisions in the Traced Act call for a collaborative and multifaceted effort to address the complex and deep rooted problem of fraudulent telephone scams. In order to measure efficacy, the FCC is also required to provide reports to Congress regarding the status of particular provisions. 
 ### STIR/SHAKEN
+
 As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing). STIR, Secure Telephony Identity Revisited, and SHAKEN, Signature-based Handling of Asserted information using toKENs are mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
-However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers. <sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+However, this does not mean you are safe spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers.<sup>2</sup>  Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+
+As provisioned by the TRACED act, the FCC will oversee the implementation and maintenance of the call authentication framework [STIR/SHAKEN](https://www.sipstack.com/resources/knowledge-base/regulatory/what-is-stir-shaken).  STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call, in efforts to deter [ illegal call spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing).STIR,SecureTelephonyIdentityRevisited, andSHAKEN,Signature-basedHandling ofAsserted information using toKENsare mandated in North America. These tools not only prevent illegal caller ID spoofing, but also help identify the original source of the illegal call.
+ However, this does not mean you are safe from spam! STIR/SHAKEN guidelines have yet to be fully implemented in North America. The FCC has granted extensions up until June 2023 for carriers with fewer than 100,000 subscribers.<sup>2</sup> Additionally, numbers can only be verified if the device is compatible, and both carriers have adopted the guidelines. This poses a large loophole for international robocalls that are able to avoid US authentication standards and law enforcement. 
+
 ### Call Blocking 
-Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK' Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
+Call blocking is a tool utilized by phone companies to stop illegal and what they deem are unwanted calls from reaching consumers phones. The issue with this of course, is that call blocking may unintentionally filter out legal and legitimate calls. With the TRACED Act, the FCC is responsible to ensure that recipients are notified when calls are blocked. Additionally, call blocking technology must be accessible and transparent for both callers and call recipients with effective redress when wanted calls are blocked inadvertently. When a carrier implements SIPSTACK's Risk Rating Score they are able to customize a threshold for calls to pass through, preventing the filtration of important calls. 
 ### Reassigned Numbers Database 
+
 The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number., This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
+
+The TRACED Act mandated the that service providers create and maintain a **RND** **R**eassigned **N**umbers **D**atabase, designed to prevent a consumer from receiving calls intended to the previous owner of the phone number. This up-to-date resource tracks permanent disconnections, phone number changes, and numbers that have been previously owned. It is to be referred to by callers to determine whether a telephone number has been reassigned to minimize unwanted calls. 
+
 
 ## Conclusion
 Reading and interpreting the [TRACED Act](https://www.govinfo.gov/content/pkg/BILLS-116s151enr/pdf/BILLS-116s151enr.pdf), and ensuring your company meets all of the regulations is no easy feat. SIPSTACK's safety measures go above and beyond the TRACED Act so you can focus on your business while we take care of your telecommunication safety. At SIPSTACK we take an active role in ensuring we are building a secure connected tomorrow. [Contact us]( https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.  
@@ -1019,18 +1028,18 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'blocking-as-spam',
-        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
         subtitle: '',
         abstract: '',
-        created: '22/03/2021',
+        created: '07/04/2021',
         updated: '',
         author: {
           name: 'Kanasu Nagathihalli',
           picture: '/assets/img/team/kanasu.png',
         },
         content: `
-Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
@@ -1046,6 +1055,46 @@ Yes. Recipient wireless carriers always reserve the right to filter out incoming
         },
         content: `
 Unlike voice, there is no way to block specific SMS messages on a phone number. You can disable SMS completely for one phone number or numbers within a Messaging Service. But you cannot selectively reject certain messages from one phone number. 
+`,
+      },
+      {
+        slug: 'blocking-as-spam',
+        title: 'Can my SMS Messages or Phone Numbers be Blocked as Spam?',
+        subtitle: '',
+        abstract: '',
+        created: '22/03/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`,
+      },
+      {
+        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
+        title: 'Can SIPSTACK numbers receive SMS from a short code',
+        subtitle: '',
+        abstract: '',
+        created: '26/05/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
+
+Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
+
+Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
+
+- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
+- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
+- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
+- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
+- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
 `,
       },
       {
@@ -1115,31 +1164,6 @@ The above information is applicable to MMS messaging. Other messaging channels s
 `,
       },
       {
-        slug: 'can-sipstack-numbers-receive-sms-from-a-short-code',
-        title: 'Can SIPSTACK numbers receive SMS from a short code',
-        subtitle: '',
-        abstract: '',
-        created: '26/05/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-By default, SIPSTACK long code numbers cannot receive messages from short code numbers.
-
-Upon request, SIPSTACK can enable your account(s) to receive incoming messages from short codes. This will allow long code phone numbers on your account to receive messages from short codes.
-
-Before you request for your account to be enabled to receive incoming short code SMS, please note the following important limitations:
-
-- The setting is applied to your SIPSTACK Account SID, and will affect all of the long code (local, national or mobile) SMS-capable numbers that belong to the Account SID you have requested.
-- Toll-free numbers cannot receive SMS from short codes, and, therefore, will not be affected by this setting.
-- By design, a short code number can only send messages to long code numbers from the same country as that of the short code number. In order to receive messages, you must use a SIPSTACK number from the same country as the short code. For example, if you are trying to receive messages from a Canada short code, you will need to use a Canadain SIPSTACK number.
-- SIPSTACK cannot guarantee that every short code globally will be able to reach SIPSTACK numbers, even if the SIPSTACK number is from the same country as the short code. There may be  cases where an external short code carrier does not have reach to SIPSTACK, or some other technical issue prevents those messages from reaching our platform.
-- You will NOT be able to send outbound messages to these short codes. Therefore, you will not be able to reply, opt out via "STOP," or send "HELP" messages. Before enabling this setting, our Support team will send you a disclaimer from our Legal team and ask you to confirm that you understand and accept this particular limitation.
-`,
-      },
-      {
         slug: 'delivery-order-of-multiple-media-files-via-mms',
         title: 'Delivery order of multiple media files via MMS',
         subtitle: '',
@@ -1172,21 +1196,6 @@ We will not charge the recipient of your message for receiving a SIPSTACK messag
 Different mobile plans have different agreements for messaging. Some mobile plans may charge the recipient to receive messages, while some don't. This depends on the mobile plan your recipients are using.
 
 SIPSTACK does not offer premium SMS messaging where the cost of receiving a message can be passed on to the sender.
-`,
-      },
-      {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {

@@ -60,7 +60,7 @@ Speaking of intelligent scammers, we’ve all seen emails in our junk or spam fo
 Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://whois.sipstack.com/) today to learn how you can protect yourself from spam.
 
 ### References
-[^1]: <a href="https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/" class="ss-reference" target="_blank">https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/</a>  
-[^2]: <a href="https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/" class="ss-reference" target="_blank">https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/</a>
+<sup>1 <a href="https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/" class="ss-reference" target="_blank">https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/</a></sup>
+<sup>2 <a href="https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/" class="ss-reference" target="_blank">https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/</a></sup>
 
 
