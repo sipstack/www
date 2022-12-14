@@ -22,10 +22,10 @@ const htmlClasses = computed(() => [darkmode.htmlClass])
   <component :is="LayoutComponent" />
 
   <ClientOnly>
-    <ReloadPrompt app-name="SIPSTACK">
+    <!-- <ReloadPrompt app-name="SIPSTACK">
       <template #logo>
         <img src="/assets/logo/logo.png" alt="logo" width="80" height="80" />
       </template>
-    </ReloadPrompt>
+    </ReloadPrompt> -->
   </ClientOnly>
 </template>

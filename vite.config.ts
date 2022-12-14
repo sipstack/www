@@ -12,7 +12,7 @@ import Components from 'unplugin-vue-components/vite'
 import ImageMin from 'vite-plugin-imagemin'
 import ViteFonts from 'vite-plugin-fonts'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
-import { VitePWA } from 'vite-plugin-pwa'
+// import { VitePWA } from 'vite-plugin-pwa'
 
 const SILENT = process.env.SILENT === 'true'
 const SITEMAP_HOST = process.env.SITEMAP_HOST || 'https://www.sipstack.com/'
@@ -137,41 +137,41 @@ const plugins = [
    *
    * @see https://github.com/antfu/vite-plugin-pwa
    */
-  VitePWA({
-    base: '/',
-    includeAssets: [
-      'favicon.svg',
-      'favicon.ico',
-      'robots.txt',
-      'apple-touch-icon.png',
-    ],
-    manifest: {
-      name: 'SIPSTACK | AI/ML Powered Telecom Tools',
-      short_name: 'SIPSTACK',
-      start_url: '/?utm_source=pwa',
-      display: 'standalone',
-      theme_color: '#ffffff',
-      background_color: '#ffffff',
-      icons: [
-        {
-          src: 'pwa-192x192.png',
-          sizes: '192x192',
-          type: 'image/png',
-        },
-        {
-          src: 'pwa-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-        },
-        {
-          src: 'pwa-512x512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any maskable',
-        },
-      ],
-    },
-  }),
+  // VitePWA({
+  //   base: '/',
+  //   includeAssets: [
+  //     'favicon.svg',
+  //     'favicon.ico',
+  //     'robots.txt',
+  //     'apple-touch-icon.png',
+  //   ],
+  //   manifest: {
+  //     name: 'SIPSTACK | AI/ML Powered Telecom Tools',
+  //     short_name: 'SIPSTACK',
+  //     start_url: '/?utm_source=pwa',
+  //     display: 'standalone',
+  //     theme_color: '#ffffff',
+  //     background_color: '#ffffff',
+  //     icons: [
+  //       {
+  //         src: 'pwa-192x192.png',
+  //         sizes: '192x192',
+  //         type: 'image/png',
+  //       },
+  //       {
+  //         src: 'pwa-512x512.png',
+  //         sizes: '512x512',
+  //         type: 'image/png',
+  //       },
+  //       {
+  //         src: 'pwa-512x512.png',
+  //         sizes: '512x512',
+  //         type: 'image/png',
+  //         purpose: 'any maskable',
+  //       },
+  //     ],
+  //   },
+  // }),
 
   /**
    * vite-imagetools plugin allow to perform transformation (blur, resize, crop, etc)
