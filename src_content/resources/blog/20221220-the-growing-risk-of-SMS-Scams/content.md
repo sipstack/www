@@ -4,15 +4,15 @@ In response to these exponentially growing numbers, the FCC is calling for regul
 
 ## SMS Scams: Smishing
 
-Like phishing, but for SMS, *smishing* refers to messages that pretend to be sent from either a personal or business contact, prompting the recipient to click a fraudulent URL link, which will result in malware installing onto their device and their personal details being tracked. Both the content and the alleged sender of the message can vary widely, but there is always one common trait: The messages will attempt to sound legitimate by mentioning some type of urgent action that is required on the recipient’s part, which will result in the recipient getting scammed. 
+Like phishing, but for SMS, *smishing* refers to messages that pretend to be sent from either a personal or business contact, prompting the recipient to click a fraudulent URL link, which will result in their personal details being tracked. Both the content and the alleged sender of the message can vary widely, but there is always one common trait: The messages will attempt to sound legitimate by mentioning some type of urgent action that is required on the recipient’s part, which will result in the recipient getting scammed. 
 
 ## Common Examples of Smishing
 
-1. **Delivery scams**: Text messages that say they are from a common delivery service like FedEx or Amazon, claiming that there is some issue with the recipient’s delivery. Delivery scams are especially prevalent during the [holidays](https://www.sipstack.com/resources/blog/ho-ho-holiday-scams) when online shopping ramps up.
+1. **Delivery scams**: Text messages that say they are from a common delivery service like FedEx or Amazon, claiming that there is some issue with the recipient’s delivery order. Delivery scams are especially prevalent during the [holidays](https://www.sipstack.com/resources/blog/ho-ho-holiday-scams) when online shopping ramps up.
 
 2. **Banking scams**: Text messages that say they are from the recipient’s bank or other financial institution, such as PayPal, claiming that there is some issue with their account. 
 
-3. **Personal contacts**: Text messages claiming they are sent from somebody the recipient knows, or in some cases, a friend of a friend. These may be sent with a local number using [Caller-ID Spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing) to trick the recipient.
+3. **Personal contacts**: Text messages that claim to be sent from a personal contact of the recipient, or in some cases, even a friend of a friend. These are often sent with a fake local number using [Caller-ID Spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing) to trick the recipient.
 
 4. **Rewards and Promotions**: Text messages that tempt the recipient to click a link by claiming they have won some kind of reward or promotion.
 
@@ -26,15 +26,16 @@ Like phishing, but for SMS, *smishing* refers to messages that pretend to be sen
 
 ## Tips to Avoid SMS Scams
 
+- Enter any suspicious number into [Whois by Sipstack](https://whois.sipstack.com/) to assess its Risk Rating Score.
 - Never click on a URL received in a text unless you have verified where it came from. Legitimate companies will almost never contact you via text for a real problem.
-- Ignore texts that tempt you to take some type of urgent action. When in doubt, contact the company it is pretending to be directly.
+- Ignore texts that tempt you to take some type of urgent action. When in doubt, contact the alleged company directly.
 - Never call the number given in the text.
 - Block the sender's number.
 - Register to your national Do Not Call Registry.
 
 ## How SIPSTACK Fights Fraud
 
-Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. Contact us today to learn how you can protect yourself from spam.
+Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References
 
