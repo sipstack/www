@@ -1,0 +1,20 @@
+{
+    slug: "the-growing-risk-of-SMS-scams",
+    image: "/assets/img/resources/blog/20221213-ho-ho-holiday-scams/holiday-scam.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "The Growing Risk of SMS Scams",
+    abstract: "SMS scams refers to messages that pretend to be sent from someone the recipient knows, prompting them to click a fraudulent link that will cause their personal details to be leaked and tracked.",
+    created: "22/12/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 4, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
