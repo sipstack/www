@@ -5,7 +5,7 @@
     tags: ["SIPSTACK"],
     views: 0,
     title: "The Growing Risk of SMS Scams",
-    abstract: "SMS scams refers to messages that pretend to be sent from someone the recipient knows, prompting them to click a fraudulent link that will cause their personal details to be leaked and tracked.",
+    abstract: "SMS scams refer to messages that pretend to be sent from either a personal or business contact, prompting the recipient to click a fraudulent URL link, which will result in their personal details being tracked."
     created: "22/12/2022", //dd/mm/yyyy
     updated: "",
     duration: 4, // minute read
