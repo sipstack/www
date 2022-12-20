@@ -8,13 +8,13 @@ Like phishing, but for SMS, smishing refers to messages that pretend to be sent 
 
 ## Common Examples of Smishing
 
-1. Delivery scams: Text messages that say they are from a common delivery service like FedEx or Amazon, claiming that there is some issue with the recipient’s delivery. Delivery scams are especially prevalent during the holidays https://www.sipstack.com/resources/blog/ho-ho-holiday-scams when online shopping ramps up.
+1. **Delivery scams**: Text messages that say they are from a common delivery service like FedEx or Amazon, claiming that there is some issue with the recipient’s delivery. Delivery scams are especially prevalent during the [holidays](https://www.sipstack.com/resources/blog/ho-ho-holiday-scams) when online shopping ramps up.
 
-2. Banking scams: Text messages that say they are from the recipient’s bank or other financial institution, such as PayPal, claiming that there is some issue with their account. 
+2. **Banking scams**: Text messages that say they are from the recipient’s bank or other financial institution, such as PayPal, claiming that there is some issue with their account. 
 
-3. Personal contact: Text messages claiming they are sent from somebody the recipient knows, or in some cases, a friend of a friend. These may be sent with a local number using Caller-ID Spoofing https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing to trick the recipient.
+3. **Personal contacts**: Text messages claiming they are sent from somebody the recipient knows, or in some cases, a friend of a friend. These may be sent with a local number using [Caller-ID Spoofing](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing) to trick the recipient.
 
-4. Rewards and Promotions: Text messages that tempt the recipient to click a link by claiming they have won some kind of reward or promotion.
+4. **Rewards and Promotions**: Text messages that tempt the recipient to click a link by claiming they have won some kind of reward or promotion.
 
 ## Some Quick SMS Stats
 
