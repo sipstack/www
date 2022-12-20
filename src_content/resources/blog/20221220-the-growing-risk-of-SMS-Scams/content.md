@@ -1,10 +1,10 @@
-As overall awareness of robocalls continues to grow, less people are answering fraudulent calls. Unfortunately, scammers evolve with the times, and knowing that people are more likely to engage via texts than phone calls, there has been a larger emphasis placed on SMS scams the past year, jumping from 1 billion in July 2021 to 12 billion in July 2022. According to Mavenir and the Global System for Mobile Communications Association (GSMA), between 5% and 20% of all SMS messages are spam or fraud related.[^1] With SMS read rates as high as 98%,[^2] text messages are a highly effective and lucrative tool for fraudsters.
+As overall awareness of robocalls continues to grow, less people are answering them. Although this is a step in the right direction, scammers unfortunately evolve with the times. Knowing that people are more likely to engage via texts than phone calls, there has been a larger emphasis placed on SMS scams this past year, with numbers jumping from 1 billion in July 2021 to a staggering 12 billion in July 2022. According to Mavenir and the Global System for Mobile Communications Association (GSMA), between 5% and 20% of all SMS messages are spam or fraud related.[^1] With SMS read rates as high as 98%,[^2] text messages are a highly effective and lucrative tool for fraudsters.
 
 In response to these exponentially growing numbers, the FCC is calling for regulations that would force wireless carriers to block illegal texts. However, these measures have not yet gone into effect. This article will break down various SMS scams to help our readers stay informed and vigilant while we wait for our government to take further action.
 
 ## SMS Scams: Smishing
 
-Like phishing, but for SMS, smishing refers to messages that pretend to be sent from someone the recipient knows, prompting them to click a fraudulent link that will cause their personal details to be leaked and tracked. Both the content of the message, and the alleged sender of the message, can vary widely, but there is always one common trait: The messages will attempt to sound legitimate by mentioning some type of urgent action that is required on the recipient’s part, which will result in them getting scammed. 
+Like phishing, but for SMS, *smishing* refers to messages that pretend to be sent from either a personal or business contact, prompting the recipient to click a fraudulent URL link, which will result in malware installing onto their device and their personal details being tracked. Both the content and the alleged sender of the message can vary widely, but there is always one common trait: The messages will attempt to sound legitimate by mentioning some type of urgent action that is required on the recipient’s part, which will result in the recipient getting scammed. 
 
 ## Common Examples of Smishing
 
@@ -38,7 +38,7 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 
 ### References
 
-1 https://www.mavenir.com/portfolio/advanced-services-applications/fraud-security/spamshield-messaging-fraud/
+[^1]: https://www.mavenir.com/portfolio/advanced-services-applications/fraud-security/spamshield-messaging-fraud/
 
-2 https://techjury.net/blog/sms-marketing-statistics/
+[^2]: https://techjury.net/blog/sms-marketing-statistics/
 
