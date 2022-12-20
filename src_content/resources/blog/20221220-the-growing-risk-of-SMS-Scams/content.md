@@ -1,4 +1,4 @@
-As overall awareness of robocalls continues to grow, less people are answering them. Although this is a step in the right direction, scammers unfortunately evolve with the times. Knowing that people are more likely to engage via texts than phone calls, there has been a larger emphasis placed on SMS scams this past year, with numbers jumping from 1 billion in July 2021 to a staggering 12 billion in July 2022. According to Mavenir and the Global System for Mobile Communications Association (GSMA), between 5% and 20% of all SMS messages are spam or fraud related.[^1] With SMS read rates as high as 98%,[^2] text messages are a highly effective and lucrative tool for fraudsters.
+As overall awareness of robocalls continues to grow, less people are answering calls from unknown numbers. Although this is a step in the right direction, scammers unfortunately evolve with the times. Knowing that people are more likely to engage via texts than phone calls, there has been a larger emphasis placed on SMS scams this past year, with numbers jumping from 1 billion in July of 2021 to a staggering 12 billion in July of 2022. According to Mavenir and the Global System for Mobile Communications Association (GSMA), between 5% and 20% of all SMS messages are spam or fraud related.[^1] With SMS read rates as high as 98%,[^2] text messages are a highly effective and lucrative tool for fraudsters.
 
 In response to these exponentially growing numbers, the FCC is calling for regulations that would force wireless carriers to block illegal texts. However, these measures have not yet gone into effect. This article will break down various SMS scams to help our readers stay informed and vigilant while we wait for our government to take further action.
 
@@ -27,7 +27,7 @@ Like phishing, but for SMS, *smishing* refers to messages that pretend to be sen
 ## Tips to Avoid SMS Scams
 
 - Enter any suspicious number into [Whois by Sipstack](https://whois.sipstack.com/) to assess its Risk Rating Score.
-- Never click on a URL received in a text unless you have verified where it came from. Legitimate companies will almost never contact you via text for a real problem.
+- Never click on a URL received in a text unless you have verified where it came from. Legitimate companies are highly unlikely to contact you via text when there is a real problem.
 - Ignore texts that tempt you to take some type of urgent action. When in doubt, contact the alleged company directly.
 - Never call the number given in the text.
 - Block the sender's number.
