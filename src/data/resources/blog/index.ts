@@ -2,14 +2,14 @@ export const posts = [
   {
     slug: 'why-am-i-receiving-calls-from-266696687',
     image:
-      '/assets/img/resources/blog/20221123-the-growing-risk-of-the-grandparent-scam-in-canada/confused-grandparents.png',
+      '/assets/img/resources/blog/20221227-why-am-i-receiving-calls-from-266696687/lookingatphone.png',
     category: 'Scams',
     tags: ['SIPSTACK'],
     views: 0,
     title: 'Why am I Receiving Calls From +266696687?',
     abstract:
       "The digits of this number actually spell out 'ANONYMOUS' on a telephone keypad, which is why it may be used by anyone who is trying to hide their identity from you.",
-    created: '15/12/2022', //dd/mm/yyyy
+    created: '27/12/2022', //dd/mm/yyyy
     updated: '',
     duration: 3, // minute read
     author: {
