@@ -1,4 +1,3 @@
-
 “*It’s the most wonderful time of the year…*”  was a Christmas song written well before telecommunications scams came into existence! Unfortunately, these days, holiday season means scammers are out in full force, which is statistically worse for Christmas than the Grinch, Scrooge, and the mean dad from Elf combined. We here at Sipstack would like to do our part to spread some holiday cheer and make sure you’re staying informed of two of the most prevalent holiday scams to look out for this holiday season. 
 
 ## Delivery Scams (Fed EX, Amazon, UPS, etc.)
@@ -57,7 +56,7 @@ Speaking of intelligent scammers, we’ve all seen emails in our junk or spam fo
 - Never follow any requested call prompts. ("Press 1 to claim your prize.") 
 
 ## How SIPSTACK Fights Fraud
-Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://whois.sipstack.com/) today to learn how you can protect yourself from spam.
+Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References
 <sup>1 <a href="https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/" class="ss-reference" target="_blank">https://www.ksnblocal4.com/2022/11/27/better-business-bureau-warns-against-holiday-scams/</a></sup>
