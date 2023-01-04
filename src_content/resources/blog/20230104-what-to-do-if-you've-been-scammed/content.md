@@ -1,4 +1,4 @@
-Telecommunication fraud continues to grow exponentially, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)[^1] and a whopping $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US).[^2] Now more than ever, it is important to recognize that if you have been a victim of a scam, your telephone carrier has responsibilities and steps they should be taking in retribution. Here are some of the measures we recommend taking if you or a loved one suspect you’ve been scammed.
+Telecommunication fraud continues to grow exponentially, with reported losses in 2021 of $383 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)<sup>1</sup> and a whopping $30 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US).<sup>2</sup> Now more than ever, it is important to recognize that if you have been a victim of a scam, your telephone carrier has responsibilities and steps they should be taking in retribution. Here are some of the measures we recommend taking if you or a loved one suspect you’ve been scammed.
 
 ## Report the Scam
 
@@ -24,5 +24,5 @@ While many scams attempt to gather personal or financial information, some try t
 Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's Risk Rating Score, they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam. 
 
 ### References
-[^1]: https://www.antifraudcentre-centreantifraude.ca/index-eng.htm
-[^2]: https://firstorion.com/2021-scam-call-trends/
+<sup>1</sup><a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a>
+<sup>1</sup><a href="https://firstorion.com/2021-scam-call-trends/" target="_blank">https://firstorion.com/2021-scam-call-trends/</a>
