@@ -1,0 +1,20 @@
+{
+    slug: "what-to-do-if-you've-been-scammed",
+    image: "/assets/img/resources/blog/20230104-what-to-do-if-you've-been-scammed/scamphoto.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "What To Do If You've Been Scammed",
+    abstract: "Here are some of the measures we recommend taking if you or a loved one suspect you’ve been scammed.",
+    created: "04/01/2023", //dd/mm/yyyy
+    updated: "",
+    duration: 2, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
