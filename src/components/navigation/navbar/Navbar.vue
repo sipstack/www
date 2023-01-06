@@ -131,11 +131,16 @@ watch(
             class="navbar-item is-flex is-align-items-center is-justify-content-center">
             <ThemeToggle />
           </div>
-          <a href="https://hub.sipstack.com" class="navbar-item has-naver">
+          <a href="https://partner.sipstack.com" class="navbar-item has-naver">
             Login
           </a>
           <div class="navbar-item">
-            <Button href="/signup" target="_blank" color="primary" raised bold>
+            <Button
+              href="https://partner.sipstack.com/signup"
+              target="_blank"
+              color="primary"
+              raised
+              bold>
               Get Started
             </Button>
           </div>
