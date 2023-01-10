@@ -275,9 +275,9 @@ export default defineConfig({
     rollupOptions: {
       external: [/\/assets\/demo\/.*/],
       output: {
-        entryFileNames: `[name]` + hash + `.js?v=${version}`,
-        chunkFileNames: `[name]` + hash + `.js?v=${version}`,
-        assetFileNames: `[name]` + hash + `.[ext]?v=${version}`,
+        entryFileNames: `[name]` + hash + `.js`,
+        chunkFileNames: `[name]` + hash + `.js`,
+        assetFileNames: `[name]` + hash + `.[ext]`,
       },
     },
   },
