@@ -2,7 +2,7 @@ Telecommunication fraud continues to grow exponentially, with reported losses in
 
 ## What are Veteran Charity Phone Scams?
 
-Simply put, these refer to scams where scammers pose as charities for war veterans and solicit donations via phone calls under this false pretence. Taking advantage of both the gratitude and generosity that people feel towards war veterans results in a very lucrative, and especially unethical, scam. Most of the donations are financial, but some have also included cars, boats, and other gifts. In most cases, these fake veterans charities will keep most, if not all, of the contributions for themselves.
+Simply put, these refer to scams where scammers pose as charities for war veterans and solicit donations via phone calls under this false pretense. Taking advantage of both the gratitude and generosity that people feel towards war veterans results in a very lucrative, and especially unethical, scam. Most of the donations are financial, but some have also included cars, boats, and other gifts. In most cases, these fake veterans charities will keep most, if not all, of the contributions for themselves.
 
 The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2018/07/ftc-states-combat-fraudulent-charities-falsely-claim-help-veterans-servicemembers' target="_blank"> announced a total of 100 enforcement actions against these types of fake veteran charities and released a PSA video warning about these scams.
 
