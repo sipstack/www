@@ -12,6 +12,7 @@ import Components from 'unplugin-vue-components/vite'
 import ImageMin from 'vite-plugin-imagemin'
 import ViteFonts from 'vite-plugin-fonts'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
+import { version } from './package.json'
 // import { VitePWA } from 'vite-plugin-pwa'
 
 const SILENT = process.env.SILENT === 'true'
@@ -223,6 +224,8 @@ if (process.env.OPTIMIZE_IMG !== 'false') {
   )
 }
 
+const hash = Math.floor(Math.random() * 90000) + 10000
+
 export default defineConfig({
   // Project root directory (where index.html is located).
   root: process.cwd(),
@@ -268,6 +271,11 @@ export default defineConfig({
      */
     rollupOptions: {
       external: [/\/assets\/demo\/.*/],
+      output: {
+        entryFileNames: `[name]` + hash + `.js?v=${version}`,
+        chunkFileNames: `[name]` + hash + `.js?v=${version}`,
+        assetFileNames: `[name]` + hash + `.[ext]?v=${version}`,
+      },
     },
   },
   plugins,
