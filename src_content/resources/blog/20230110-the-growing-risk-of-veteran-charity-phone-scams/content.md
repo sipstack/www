@@ -12,6 +12,8 @@ The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2
 
 2. Take these proactive steps recommended by the FTC: 
 
+![ftctip](./ftctip.png)
+
 3. Research any charity before donating. ‍A simple search for the charity, including articles and reviews, will often tell you all you need to know. If you can’t find a company website or information that explicitly states they’re a 501(c)(3) organization, it could be a for-profit scam posing as a charity. 
 
 Here are some websites we recommended looking up for ratings and reports:
