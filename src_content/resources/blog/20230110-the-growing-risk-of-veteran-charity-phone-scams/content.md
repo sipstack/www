@@ -16,7 +16,7 @@ The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2
 
 3. Research any charity before donating. ‍A simple search for the charity, including articles and reviews, will often tell you all you need to know. If you can’t find a company website or information that explicitly states they’re a 501(c)(3) organization, it could be a for-profit scam posing as a charity. 
 
-Here are some websites we recommended looking up for ratings and reports:
+Here are some websites we recommend looking up for ratings and reports:
 
 - <a href= 'https://www.give.org' target="_blank"> https://www.give.org </a>
 - <a href= 'https://www.charitywatch.org' target="_blank"> https://www.charitywatch.org </a>
@@ -63,6 +63,7 @@ Here are some websites we recommended looking up for ratings and reports:
 Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's [Smart CNAM](https://www.sipstack.com/products/smart-cnam), they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References
-[^1]: https://www.antifraudcentre-centreantifraude.ca/index-eng.htm
-[^2]: https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses
+[^1]: <a href= 'https://www.antifraudcentre-centreantifraude.ca/index-eng.htm' target="_blank"> https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a>
+
+[^2]: <a href= 'https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses' target="_blank"> https://www.rcmp-grc.gc.ca/en/news/2022/fraud-prevention-month-raises-awareness-a-historic-year-reported-losses</a>
 
