@@ -12,7 +12,11 @@ import Components from 'unplugin-vue-components/vite'
 import ImageMin from 'vite-plugin-imagemin'
 import ViteFonts from 'vite-plugin-fonts'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
+import { version } from './package.json'
 // import { VitePWA } from 'vite-plugin-pwa'
+
+// for cache buster -- jon
+import { version } from './package.json'
 
 const SILENT = process.env.SILENT === 'true'
 const SITEMAP_HOST = process.env.SITEMAP_HOST || 'https://www.sipstack.com/'
@@ -223,6 +227,8 @@ if (process.env.OPTIMIZE_IMG !== 'false') {
   )
 }
 
+const hash = Math.floor(Math.random() * 90000) + 10000
+
 export default defineConfig({
   // Project root directory (where index.html is located).
   root: process.cwd(),
@@ -268,6 +274,11 @@ export default defineConfig({
      */
     rollupOptions: {
       external: [/\/assets\/demo\/.*/],
+      output: {
+        entryFileNames: `[name]` + hash + `.js`,
+        chunkFileNames: `[name]` + hash + `.js`,
+        assetFileNames: `[name]` + hash + `.[ext]`,
+      },
     },
   },
   plugins,
