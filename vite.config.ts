@@ -14,6 +14,9 @@ import ViteFonts from 'vite-plugin-fonts'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
 // import { VitePWA } from 'vite-plugin-pwa'
 
+// for cache buster -- jon
+import { version } from './package.json'
+
 const SILENT = process.env.SILENT === 'true'
 const SITEMAP_HOST = process.env.SITEMAP_HOST || 'https://www.sipstack.com/'
 
@@ -268,6 +271,11 @@ export default defineConfig({
      */
     rollupOptions: {
       external: [/\/assets\/demo\/.*/],
+      output: {
+        entryFileNames: `[name].js?v=${version}`,
+        chunkFileNames: `[name].js?v=${version}`,
+        assetFileNames: `[name].[ext]?v=${version}`,
+      },
     },
   },
   plugins,
