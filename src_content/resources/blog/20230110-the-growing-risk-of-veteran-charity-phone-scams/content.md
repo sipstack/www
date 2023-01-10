@@ -15,10 +15,10 @@ The FTC recently announced <a href= 'https://www.ftc.gov/news-events/news/press-
 
 Here are some websites we recommended looking up for ratings and reports:
 
-- <a href= https://www.'give.org' target="_blank">
-- <a href= ‘https://www.charitywatch.org' target="_blank">
-- <a href= ‘https://www.guidestar.org' target="_blank">
-- <a href= ‘https://www.charitynavigator.org' target="_blank">
+- <a href= 'https://www.give.org' target="_blank"> https://www.give.org
+- <a href= 'https://www.charitywatch.org' target="_blank"> https://www.charitywatch.org
+- <a href= 'https://www.guidestar.org' target="_blank"> https://www.guidestar.org
+- <a href= 'https://www.charitynavigator.org' target="_blank"> https://www.charitynavigator.org
 
 4) Never pay by gift card or wire transfer. ‍Legitimate charities will never request these kinds of payment methods, and will also always be able to provide receipts for tax deductions.
 
