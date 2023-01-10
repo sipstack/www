@@ -4,7 +4,7 @@ Telecommunication fraud continues to grow exponentially, with reported losses in
 
 Simply put, these refer to scams where scammers pose as charities for war veterans and solicit donations via phone calls under this false pretense. Taking advantage of both the gratitude and generosity that people feel towards war veterans results in a very lucrative, and especially unethical, scam. Most of the donations are financial, but some have also included cars, boats, and other gifts. In most cases, these fake veterans charities will keep most, if not all, of the contributions for themselves.
 
-The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2018/07/ftc-states-combat-fraudulent-charities-falsely-claim-help-veterans-servicemembers' target="_blank"> announced a total of 100 enforcement actions against these types of fake veteran charities and released a PSA video warning about these scams.
+The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2018/07/ftc-states-combat-fraudulent-charities-falsely-claim-help-veterans-servicemembers' target="_blank"> announced </a> a total of 100 enforcement actions against these types of fake veteran charities and released a PSA video warning about these scams.
 
 ## How to Protect Yourself Against Veteran Charity Phone Scams
 
@@ -12,16 +12,16 @@ The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2
 
 2. Take these proactive steps recommended by the FTC: 
 
-![ftc](./ftc.jpeg)
+![ftc](./ftc.jpeg) ![ftc](./ftctip.png)
 
 3. Research any charity before donating. ‍A simple search for the charity, including articles and reviews, will often tell you all you need to know. If you can’t find a company website or information that explicitly states they’re a 501(c)(3) organization, it could be a for-profit scam posing as a charity. 
 
 Here are some websites we recommended looking up for ratings and reports:
 
-- <a href= 'https://www.give.org' target="_blank"> https://www.give.org
-- <a href= 'https://www.charitywatch.org' target="_blank"> https://www.charitywatch.org
-- <a href= 'https://www.guidestar.org' target="_blank"> https://www.guidestar.org
-- <a href= 'https://www.charitynavigator.org' target="_blank"> https://www.charitynavigator.org
+- <a href= 'https://www.give.org' target="_blank"> https://www.give.org </a>
+- <a href= 'https://www.charitywatch.org' target="_blank"> https://www.charitywatch.org </a>
+- <a href= 'https://www.guidestar.org' target="_blank"> https://www.guidestar.org </a> 
+- <a href= 'https://www.charitynavigator.org' target="_blank"> https://www.charitynavigator.org </a>
 
 4. Never pay by gift card or wire transfer. ‍Legitimate charities will never request these kinds of payment methods and will also always be able to provide receipts for tax deductions.
 
