@@ -2,15 +2,16 @@ Telecommunication fraud continues to grow exponentially, with reported losses in
 
 ## What are Veterans Charity Phone Scams?
 
-Simply put, these refer to scams where scammers pretend they are charities for war veterans and solicit donations via phone calls under this false pretence. Taking advantage of both the gratitude and generosity that people feel towards war veterans results in a very lucrative, and especially unethical, scam. Most donations are financial, but some have also included cars, boats, and other gifts. In most cases, these fake veterans charities will keep most, if not all, of the contributions for themselves.
+Simply put, these refer to scams where scammers pose as charities for war veterans and solicit donations via phone calls under this false pretence. Taking advantage of both the gratitude and generosity that people feel towards war veterans results in a very lucrative, and especially unethical, scam. Most of the donations are financial, but some have also included cars, boats, and other gifts. In most cases, these fake veterans charities will keep most, if not all, of the contributions for themselves.
 
-The FTC recently announced <a href= 'https://www.ftc.gov/news-events/news/press-releases/2018/07/ftc-states-combat-fraudulent-charities-falsely-claim-help-veterans-servicemembers target=“_blank"> a total of 100 enforcement actions against these types of fake veterans charities and released a PSA video warning about these scams.
+The FTC recently <a href= 'https://www.ftc.gov/news-events/news/press-releases/2018/07/ftc-states-combat-fraudulent-charities-falsely-claim-help-veterans-servicemembers' target="_blank"> announced a total of 100 enforcement actions against these types of fake veterans charities and released a PSA video warning about these scams.
 
 ## How to Protect Yourself Against Veteran Charity Phone Scams
 
-
 1. Use [Whois by SIPSTACK](https://whois.sipstack.com/) to check information of the phone number calling you.
-2. Take proactive steps recommended by the FTC: NOTE TO STAM: HERE IS WHERE PICTURE WOULD GO
+
+2. Take proactive steps recommended by the FTC: 
+
 3. Research any charity before donating. ‍A simple search for the charity, including articles and reviews, will often tell you all you need to know. If you can’t find a company website or information that explicitly states they’re a 501(c)(3) organization, it could be a for-profit scam posing as a charity. 
 
 Here are some websites we recommended looking up for ratings and reports:
@@ -20,33 +21,31 @@ Here are some websites we recommended looking up for ratings and reports:
 - <a href= 'https://www.guidestar.org' target="_blank"> https://www.guidestar.org
 - <a href= 'https://www.charitynavigator.org' target="_blank"> https://www.charitynavigator.org
 
-4) Never pay by gift card or wire transfer. ‍Legitimate charities will never request these kinds of payment methods, and will also always be able to provide receipts for tax deductions.
+4. Never pay by gift card or wire transfer. ‍Legitimate charities will never request these kinds of payment methods and will also always be able to provide receipts for tax deductions.
 
-5) ‍Beware of “charity” names that resemble well-known charities or appear to be legitimate, as this is a common scamming practice. The following is a list of so called “charities” who recently settled suits with the FTC and should be avoided:
+5. ‍Beware of so-called “charity” names that resemble well known charities, as imitating legitimate charities is a common scamming practice. The following is a list of fraudulent charities to avoid who have recently settled suits with the FTC:
 
-Help the Vets
-American Disabled Veterans Foundation
-Military Families of America
-Veterans Emergency Blood Bank
-Vets Fighting Breast Cancer
-Veterans Fighting Breast Cancer
-Veterans of America
-Vehicles for Veterans LLC
-Saving Our Soldiers
-Donate Your Car
-Donate That Car LLC
-Act of Valor
-Medal of Honor
+- Help the Vets
+- American Disabled Veterans Foundation
+- Military Families of America
+- Veterans Emergency Blood Bank
+- Vets Fighting Breast Cancer
+- Veterans Fighting Breast Cancer
+- Veterans of America
+- Vehicles for Veterans LLC
+- Saving Our Soldiers
+- Donate Your Car
+- Donate That Car LLC
+- Act of Valor
+- Medal of Honor
 
-6) Ask specific questions, of which real charities will have answers to, but scammers will often struggle to answer. The FTC recommends these ones in particular:
+6. Ask specific questions, of which real charities will have answers to, but scammers will often struggle to answer. The FTC recommends these ones in particular:
+- What’s the charity’s website, address, and mission?
+- How much of your donation will go directly to services that help veterans, rather than fundraising?
+- How much of your donation will be used for the specific programs you want to support?
+- If supporting veterans in your own community is important to you, ask how the charity spends money in your area.
 
-What’s the charity’s website, address, and mission?
-How much of your donation will go directly to services that help veterans, rather than fundraising?
-How much of your donation will be used for the specific programs you want to support?
-If supporting veterans in your own community is important to you, ask how the charity spends money in your area.
-
-7) Look for specific red flags/warning signs. Here is a checklist that the FTC recommends paying attention to.:
-
+7. Look for specific red flags/warning signs. Here is a checklist that the FTC recommends paying attention to:
 - Refusing to provide detailed information about its identity, mission, costs, and how the donation will be used.
 - Won’t provide proof that a contribution is tax deductible.
 - Thanks you for a previous pledge you don’t remember making.
@@ -55,7 +54,7 @@ If supporting veterans in your own community is important to you, ask how the ch
 - Offers to send a courier or overnight delivery service to collect the donation immediately.
 - Guarantees sweepstakes winnings in exchange for a contribution. Legally, you never have to give a donation to be eligible to win a sweepstakes.
 
-8)If you suspect you’ve been a victim of a veteran charity scam, report it to the FTC ASAP. The more information you can give them, the better they will be able to protect you and other potential victims in the future. Relevant details include the fundraiser’s name, phone number, website, address, and any other information they gave you.
+8. If you suspect you’ve been a victim of a veteran charity scam, report it to the FTC ASAP. The more information you can give them, the better they will be able to protect you and other potential victims in the future. Relevant details include the fundraiser’s name, phone number, website, address, and any other information they gave you.
 
 ## How SIPSTACK Fights Fraud
 
