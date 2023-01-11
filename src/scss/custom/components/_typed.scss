@@ -1,0 +1,10 @@
+.typed-cursor{
+    font-weight: $font-weight-light;
+    font-size: 75%;
+    display:inline-block;
+    line-height: inherit;
+    vertical-align: middle;
+    &.typed-cursor--blink{
+        animation: blink .6s both infinite;
+    }
+}

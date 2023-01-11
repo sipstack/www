@@ -1,0 +1,132 @@
+//
+//Timeline scss
+//
+// 
+// List Timeline verticle style
+//
+
+
+
+//Veticle simple icons
+.list-timeline-v {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+      margin-bottom: $spacer*1.5;
+    }
+
+    .timeline-icon {
+      margin-right: $spacer*1.5;
+      z-index: 1;
+      position: relative;
+    }
+
+    .timeline-icon+div {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+}
+
+.timeline-icon {
+  width: $spacer*3;
+  height: $spacer*3;
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 1.25rem;
+  color: $primary;
+}
+
+@include media-breakpoint-up(md) {
+  .list-timeline-v {
+    li {
+      width: 50%;
+      margin-left: 50%;
+      position: relative;
+
+      .timeline-icon {
+        margin-left: -$spacer*1.5;
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+        margin-left: 0;
+        margin-right: 50%;
+
+        .timeline-icon {
+          margin-right: -$spacer*1.5;
+          margin-left: $spacer*1.5;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: $spacer*3;
+        padding-bottom: 0;
+
+        &:after {
+          content: '';
+          display: block;
+          width: $border-width;
+          height:calc(100% - #{$spacer*2});
+          border-left: 1px dashed $border-color;
+          position: absolute;
+          top: $spacer*4;
+        }
+      }
+    }
+  }
+}
+
+
+
+//timeline-post type v2 - simple
+
+.step {
+  .step-item{
+    margin-bottom: $spacer * 1.25;
+  }
+  .step-row {
+    position: relative;
+    display: flex;
+    padding-bottom: $spacer * 1.25;
+  }
+
+  .step-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: $spacer * 3;
+    height: $spacer * 3;
+    border-radius: 50%;
+    margin-right: $spacer * 1.25;
+    &::after {
+      border-left: 2px dashed $border-color;
+      content: "";
+      position: absolute;
+      top:  $spacer * 3.75;
+    left: calc(1.5rem - 1px);
+    width: 1rem;
+    height: calc(100% - 3.25rem);
+    }
+  }
+  .step-item:last-child{
+    .step-icon{
+      &::after{
+        height: 0;
+      }
+    }
+  }
+}

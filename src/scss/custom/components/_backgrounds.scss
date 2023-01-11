@@ -1,0 +1,127 @@
+//
+//Backgrounds
+//
+
+
+//BG pattern dots
+.bg-pattern {
+  background-image: radial-gradient(circle, currentColor 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 1rem 1rem;
+}
+
+//bg-image
+//background-image styles
+img.bg-image {
+  object-fit: cover;
+  &.bg-top-center{
+    object-position: top center;
+  }
+  &.bg-center{
+    object-position: center;
+  }
+}
+
+.bg-image {
+  &:not([class*="position-absolute"]):not([class*="position-relative"]) {
+    position: absolute;
+  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  +* {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+//Gradient-backgrounds
+.bg-gradient-primary {
+  background-image: $bg-gradient-primary;
+}
+
+.bg-gradient-secondary {
+  background-image: $bg-gradient-secondary;
+}
+
+.bg-gradient-light {
+  background-image: $bg-gradient-light;
+}
+
+.bg-gradient-white {
+  background-image: $bg-gradient-white;
+  mask-image: $bg-gradient-white;
+  -webkit-mask-image: $bg-gradient-white;
+}
+
+.bg-gradient-dark {
+  background-image: $bg-gradient-dark;
+  mask-image: $bg-gradient-dark;
+  -webkit-mask-image: $bg-gradient-dark;
+}
+
+.bg-gradient-tint {
+  background-image: $bg-gradient-tint;
+}
+.bg-gradient-blur {
+  background-image: $bg-gradient-blur;
+}
+.bg-current{
+background-color: currentColor;
+}
+
+//Dark(shade) backgrounds for colors
+@mixin bg-shade($color: $theme-colors) {
+  background-color: shade-color($color, 50%) !important;
+}
+
+@each $color,
+$value in $theme-colors {
+  .bg-shade-#{$color} {
+    @include bg-shade($value);
+  }
+}
+
+
+//Overlay background
+.bg-overlay-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    background: radial-gradient(50% 50% at 50% 50%, tint-color($primary, 90%) 0, rgba(204, 244, 100, 0) 78.74%);
+    display: block;
+    position: absolute;
+    width: 118vh;
+    height: 118vh;
+    right: 20vh;
+    transform: translate(50%, -50%);
+  }
+
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, tint-color($gradient-alt, 90%) 0, rgba(248, 205, 209, 0) 78.74%);
+    position: absolute;
+    display: block;
+    content: "";
+    top: -60%;
+    left: -90%;
+    width: 200%;
+    padding-bottom: 200%;
+  }
+}

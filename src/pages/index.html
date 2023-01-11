@@ -1,0 +1,22 @@
+<!-- prettier-ignore -->
+@@include('../components/layouts/header.html', {
+    title: 'SIPSTACK',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+@@include('../components/layouts/nav.html')
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('../components/sections/hero-slider.html')
+
+<!-- prettier-ignore -->
+@@include('../components/sections/counter.html',{
+cols: [
+    {title: 'Unique Whois Pages', suffix: 'M+', count_to: '1100', description: ''},
+    {title: 'Machine Learning Data Points', suffix: '+', count_to: '88', description: ''}
+]
+})
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('../components/layouts/footer.html')

@@ -1,0 +1,29 @@
+//
+//Pagination styl
+//
+
+.page-item{
+    &:not(:first-child){
+        margin-left: .375rem;
+    }
+    .page-link{
+        border-radius: $pagination-border-radius;
+    }
+}
+.pagination-sm{
+    
+    .page-item:not(:first-child){
+        margin-left: .25rem;
+    }
+    .page-link{
+        border-radius: $pagination-border-radius-sm;
+    }
+}
+.pagination-lg{
+    .page-item:not(:first-child){
+        margin-left: .5rem;
+    }
+    .page-link{
+        border-radius: $pagination-border-radius-lg;
+    }
+}

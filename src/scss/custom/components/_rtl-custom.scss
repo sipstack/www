@@ -1,0 +1,205 @@
+//Customization of theme components according to RTL view
+
+html[dir=rtl],.dropdown-menu{
+    text-align: right;
+}
+html[dir=rtl]{
+    
+    ul,ol{
+        padding-right: 0px;
+    }
+    .navbar-brand{
+        margin-right: 0px;
+    }
+    .dropdown-toggle::after{
+        margin-left: 0;
+        margin-right: .25rem;
+    }
+    .nav.flex-column{
+        padding-right: 0;
+        padding-left: inherit;
+        .nav-link{
+            padding-right: 0;
+            padding-left: inherit;
+        }
+    }
+    .btn-hover-arrow{
+        &::after{
+            transform: translate3d(-12px,0,0);
+            content: "\eb33";
+        }
+        span{
+            transform: translate3d(-12px,0,0);
+        }
+        &:hover{
+            &::after{
+                transform: translate3d(-6px,0,0);
+            }
+            span{
+                transform: translate3d(0,0,0);
+            }
+        }
+    }
+    //dropdown-caret
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        &#{$infix} {
+            @include media-breakpoint-up($next) {
+                
+                .nav-item:not(:first-child) {
+                    margin-left:0px;
+                }
+                 .nav-item:not(:last-child) {
+                    margin-left: 0.65rem;
+                }
+                .dropdown-menu.dropdown-menu-end{
+                    left: 0;
+                    right: auto;
+                }
+               .navbar-nav .dropdown-menu {
+                .dropend .dropdown-menu{
+                    margin-left: 0;
+                    margin-right:0.725rem;
+                    &::before{
+                        left: unset;
+                        right: -.785rem;
+                    }
+                }
+               }
+                .dropdown-menu{
+                    .dropend .dropdown-menu{
+                        left: unset;
+                        right: 100%;
+                    }
+                    .dropend .dropdown-toggle::after{
+                        right: unset;
+                        left: $dropdown-item-padding-x;
+                        content: "\ed38";
+                    }
+                    //dropdown start(Means right in RTL :))
+                    
+                    .dropstart .dropdown-menu{
+                        left: 100%;
+                        right: unset;
+                    }
+                    .dropstart .dropdown-toggle{
+                        padding-right: $dropdown-item-padding-x * 1.75;
+                        &::before{
+                            right: $dropdown-item-padding-x * .25;
+                            left: unset;
+                            content: "\ed3b";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Underline links
+.link-hover-underline{
+    &::after{
+        transform-origin: 0% 100%;
+    }
+    &:hover::after{
+        transform-origin: 100% 0%;
+    }
+}
+//Back to top
+.toTop{
+    right:auto;
+    left:0;
+    margin-right: 0px;
+    margin-left: 1rem;
+}
+
+//Form switch
+.form-check{
+    padding-left: 0;
+    padding-right: $form-check-padding-start;
+    .form-check-input{
+        float: right;
+        margin-right: $form-check-padding-start * -1;
+        margin-left: 0;
+    }
+}
+
+.form-switch{
+    padding-left: 0;
+    padding-right:$form-switch-padding-start;
+    .form-check-input{
+        margin-left: 0;
+        margin-right: $form-switch-padding-start * -1;
+        background-position: right center;
+        &:checked{
+            background-position: left center;
+        }
+    }
+}
+
+//Offcanvas
+.offcanvas{
+    &.offcanvas-start{
+        left: unset;
+        right: 0;
+        transform: translateX(100%);
+        
+    &.show:not(.hiding), &.offcanvas.showing {
+        transform: none;
+    }
+    }
+    &.offcanvas-end{
+        left: 0;
+        right: unset;
+        transform: translateX(-100%);
+        
+    &.show:not(.hiding), &.offcanvas.showing {
+        transform: none;
+    }
+    }
+}
+
+//Toast
+.toast-header .btn-close{
+    margin-left: 0px;
+    margin-right: var(--bs-toast-padding-x);;
+}
+
+//Accordion
+.accordion-button::after{
+    margin-right: auto;
+    margin-left: unset;
+}
+.page-item:not(:first-child){
+    margin-left: 0px;
+    margin-right: .375rem;
+}
+
+//breadcrumb
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0px;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    &::before{
+        padding-left: var(--#{$prefix}breadcrumb-item-padding-x);
+        padding-right: 0px;
+    }
+}
+
+//alerts
+.alert-dismissible {
+    padding-left: $alert-dismissible-padding-r;
+    padding-right: $alert-padding-x;
+    .btn-close{
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: .25rem;
+        font-size: $font-size-lg;
+        right: unset;
+    }
+}
+}
+

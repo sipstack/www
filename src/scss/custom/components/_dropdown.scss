@@ -1,0 +1,195 @@
+
+.dropdown-menu{
+    box-shadow: $dropdown-box-shadow;
+    .dropdown-divider{
+        height: $border-width;
+    }
+}
+.dropdown-item {
+    font-family: $dropdown-font-family;
+    transition: $transition-base;
+    text-transform: $dropdown-text-transform;
+    letter-spacing: $dropdown-letter-spacing;
+    font-size: $dropdown-font-size;
+    font-weight: $dropdown-font-weight;
+    --#{$prefix}dropdown-border-radius: #{$dropdown-border-radius};
+    @include border-radius(var(--#{$prefix}dropdown-border-radius));
+}
+.text-white,
+.bg-dark,
+.dropdown-menu-dark {
+    .dropdown-divider {
+        opacity: .2;
+    }
+}
+
+.dropdown-menu {
+    .dropdown-header {
+        text-transform: $dropdown-text-transform;
+    }
+}
+
+
+//Dropdown-menu no collapse items in navbar
+.navbar-no-collapse-items {
+    .dropdown-menu.dropdown-menu-xs {
+        min-width: 300px;
+        width: 300px;
+    }
+}
+
+//Dropdown Mega Menu
+
+@include media-breakpoint-up(lg) {
+    .navbar .dropdown-menu-end {
+        right:0;
+        left: auto;
+    }
+    .dropdown-scroll-lg{
+        overflow-y: auto;
+        max-height: calc(100vh - 5rem - 1.25rem);
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .navbar {
+        .dropdown-menu {
+            top: 100%;
+            display: block;
+            visibility: hidden;
+            transform: translateY(16px);
+            opacity: 0;
+        }
+        .dropdown:hover>.dropdown-menu,.dropend:hover>.dropdown-menu,.dropstart:hover>.dropdown-menu {
+            transition: opacity .15s, transform .25s cubic-bezier(.25, .5, .75, 1);
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .dropdown-menu-fw {
+        width:auto;
+        max-width: none;
+        margin-left: .75rem;
+        margin-right: .75rem;
+        right: 0;
+        left:0;
+    }
+    .navbar-boxed .navbar{
+        .dropdown-menu-fw{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .dropdown-menu-md {
+        width: 720px;
+    }
+
+    .dropdown-menu-sm {
+        width: 540px;
+    }
+
+    .navbar-no-collapse-items {
+        .dropdown-menu.dropdown-menu-xs {
+            min-width: 360px;
+            width: 360px;
+        }
+    }
+
+    .dropdown-menu-xs {
+        width: 360px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .navbar {
+        .dropdown-menu-lg {
+            width: auto;
+            max-width: none;
+
+            &.dropdown-menu-end[data-bs-popper]{
+                right:0;
+                margin-right:.75rem;
+            }
+        }
+
+        .dropdown-menu-md {
+            width: 720px;
+        }
+
+        .dropdown-menu-sm {
+            width: 540px;
+        }
+
+        .dropdown-menu-xs {
+            width: 340px;
+        }
+    }
+}
+
+//Navbar search w icons
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        // stylelint-disable-next-line scss/selector-no-union-class-name
+        &#{$infix} {
+            @include media-breakpoint-down($next) {
+    &.navbar{
+        .dropdown-menu {
+            box-shadow: none;
+        }
+
+        .dropend,
+        .dropstart {
+            .dropdown-menu {
+                opacity: 1;
+                position: static;
+                padding-top: .25rem;
+                padding-right: 0;
+                padding-left: 1rem;
+                padding-bottom: 0;
+            }
+        }
+
+        .nav-item.dropdown {
+            position: static;
+        }
+
+        .navbar-no-collapse-items {
+            .dropdown-menu {
+                min-width: 100%;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+        }
+    }
+}
+
+.dropend .dropdown-menu {
+    top: 0;
+    right: auto;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.dropstart .dropdown-menu {
+    top: 0;
+    right: 100%;
+    left: auto;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.dropdown-menu.dropdown-menu-xxs {
+    max-width: 160px;
+    min-width: 160px;
+}

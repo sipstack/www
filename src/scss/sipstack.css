@@ -1,0 +1,20 @@
+.navbar-brand {
+  margin-right: -40px;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #35bb8a;
+  --bs-btn-border-color: #35bb8a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1bab80;
+  --bs-btn-hover-border-color: #1aa179;
+  --bs-btn-focus-shadow-rgb: 65, 209, 167;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #1aa179;
+  --bs-btn-active-border-color: #189771;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(13, 15, 12, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #35bb8a;
+  --bs-btn-disabled-border-color: #35bb8a;
+}

@@ -1,0 +1,30 @@
+//Breadcrumb
+
+.breadcrumb{
+    .breadcrumb-item{
+       + .breadcrumb-item::before{
+        font-family: boxicons!important;
+        font-size: 10px;
+        font-weight: normal;
+        color: currentColor;
+        opacity: .35;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+         }
+         &.active{
+            color: rgba($body-color,.6);
+        }
+    }
+}
+.text-white,.text-light{
+    .breadcrumb-item {
+        color: $white;
+        &.active{
+            color: rgba($white,.5);
+        }
+        + .breadcrumb-item::before{
+            color: rgba($white,.7);
+        }
+    }
+}

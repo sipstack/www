@@ -1,0 +1,39 @@
+//list styles
+.list-inline-divided{
+.list-inline-item{
+    &::after{
+        content: "/";
+        margin-left: .5rem;
+        font-size: $font-size-sm * .845;
+        color: currentColor;
+        opacity: .25;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: light;
+    }
+    &:last-child{
+        &::after{
+            display: none;
+        }
+    }
+}
+}
+
+.list-disc,.list-circle{
+    padding-left: 1rem;
+}
+.list-disc{
+    list-style-type: disc;
+}
+.list-circle{
+    list-style-type: circle;
+}
+
+
+//white
+.text-white,.text-light{
+    .list-group-item{
+    color:$white;
+    border-color:rgba($white,.25)
+    }
+}

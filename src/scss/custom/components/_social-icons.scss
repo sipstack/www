@@ -1,0 +1,90 @@
+//Social Media Icons
+//-----------------------------------------------------------
+// Social Brands
+
+@mixin si-hover-brands($parent, $brand-colors) {
+    #{$parent} {
+      &:hover{
+      background-color: $brand-colors!important;
+      border-color: $brand-colors!important;
+      color: $white!important;
+      }
+    } 
+  }
+  @mixin si-colored-brands($parent, $brand-colors) {
+    #{$parent} {
+      background-color: $brand-colors!important;
+      border-color: $brand-colors!important;
+      color: $white!important;
+        &:hover{
+            background-color:  shade-color($brand-colors,30%)!important;
+      border-color: shade-color($brand-colors,40%)!important;
+        }
+    } 
+  }
+.si{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width:40px;
+    height: 40px;
+    font-size: $input-btn-font-size * 1.25;
+    color: $body-color;
+    >i{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:color .15s, transform .45s cubic-bezier(0.19, 1, 0.22, 1);
+        line-height: 1;
+        &:last-child{
+            transform:translateY(100%);
+            opacity:0;
+            visibility:hidden;
+        }
+    }
+    &:hover{
+        >i{
+            &:first-child{
+                transform:translateY(-100%);
+            opacity:0;
+            visibility:hidden;
+            }
+            &:last-child{
+                transform:translateY(0);
+            opacity:1;
+            visibility:visible;
+            }
+        }
+    }
+    &.si-border{
+        border: 1px solid $border-color;
+    }
+}
+
+.si-list-inline{
+    li .si + .si{
+        margin-left: .25rem;
+    }
+}
+.si-circle{
+    border-radius: 100%;
+}
+
+@each $brand-colors, $value in $brand-colors {
+    @include si-hover-brands(".si-hover-#{$brand-colors}", $value);
+  }
+  
+@each $brand-colors, $value in $brand-colors {
+    @include si-colored-brands(".si-colored-#{$brand-colors}", $value);
+  }
+
+  .si-colored-instagram,.si-hover-instagram:hover,.si-colored-instagram:hover{
+      background-image: $instagram!important;
+      color: $white;
+      border-color: transparent;
+  }

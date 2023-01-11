@@ -1,0 +1,103 @@
+//avatars
+
+.avatar{
+    width: $spacer * 3;
+    height: $spacer * 3;
+    &.xs{
+        width: $spacer * 1.75;
+        height: $spacer * 1.75;
+    }
+    &.sm{
+        width: $spacer * 2;
+        height: $spacer * 2;
+    }
+    &.lg{
+        width: $spacer * 4;
+        height: $spacer * 4;
+    }
+    &.xl{
+        width: $spacer * 5;
+        height: $spacer * 5;
+    }
+}
+.avatar-status{
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        width: 20%;
+        height: 20%;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+    &.off::after{
+        background-color: $gray-300;
+    }
+    &.on::after{
+        background-color: shade-color($success,10%);
+    }
+    &.away::after{
+        background-color:shade-color($warning,10%);
+    }
+    &.dnd::after{
+        background-color: $red;
+    }
+    &:not(.rounded-pill):not(.rounded-circle){
+        &::after{ 
+        margin-right: -.4rem;
+        margin-bottom: -.4rem;
+        }
+    }
+    &.rounded-pill{
+        >img{
+            border-radius: $border-radius-pill;
+        }
+    }
+    &.rounded-circle{
+        >img{
+            border-radius:100%;
+        }
+    }
+    &.rounded-3{
+        >img{
+            border-radius:$border-radius-lg;
+        }
+    }
+    &.rounded-2{
+        >img{
+            border-radius:$border-radius;
+        }
+    }
+    &.rounded-1{
+        >img{
+            border-radius:$border-radius-sm;
+        }
+    }
+}
+
+//avatar group
+.avatar-group{
+    display: flex;
+    align-items: stretch;
+    .avatar-group-item{
+        >img{
+            border-radius: 100%;
+        }
+        &:not(:first-child){
+            position: relative;
+            box-shadow: 0px 2px 4px rgba($dark,.125);
+        }
+        &.avatar.xs:not(:first-child){
+            margin-left: -.5rem;
+        }
+        &.avatar.sm:not(:first-child){
+            margin-left: -.75rem;
+        }
+        &.avatar:not(:first-child):not(.xs):not(.sm):not(.lg):not(.xl){
+            margin-left: -1rem;
+        }
+    }
+}
