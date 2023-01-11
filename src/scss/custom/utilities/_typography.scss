@@ -1,0 +1,181 @@
+
+
+body {
+    letter-spacing: $letter-spacing-base;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    &:not(.loaded){
+        overflow-x: hidden;
+    }
+}
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior:auto;
+    }
+}
+html,body{
+    min-height: 100%;
+  }
+*{
+    outline: 0 !important;
+    &:focus {
+        outline: 0 !important;
+    }
+}
+a {
+    transition: $transition-base;
+}
+//Headings
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: $headings-font-family;
+}
+h1,
+h2,
+.h1,
+.h2{
+    letter-spacing: $headings-letter-spacing;
+}
+h3,h4,
+h5,
+h6,
+.h3,.h4,
+.h5,
+.h6{
+    letter-spacing: $headings-letter-spacing-sm;
+    font-weight: $headings-font-weight-sm;
+}
+
+//letter-spacing
+@for $i from 0 through 5 {
+    $size: ($i * 1);
+    .ls-#{$i} {
+        letter-spacing: #{$size}px;
+    }
+}
+//Text styles
+.text-strikethrough{
+    text-decoration: line-through;
+}
+.font-serif{
+    font-family: $font-family-secondary!important;
+    letter-spacing: 0;
+    font-weight: $font-weight-base;
+    &.display-6,&.display-5,&.display-4,&.display-3,&.display-2,&.display-1{
+        font-weight: $font-weight-base;
+    }
+}
+.display-6,.display-5,.display-4,.display-3,.display-2,.display-1{
+font-family: $display-font-family;
+}
+.text-mono {
+    font-family: $font-family-monospace!important;
+    font-weight: $font-weight-normal;
+}
+.text-italic {
+    font-style: italic;
+}
+sup,sub{
+    letter-spacing: $letter-spacing-base;
+}
+//Typography for dark backgrounds
+.text-white,
+.text-light {
+    --#{$prefix}body-color:#{$white};
+    --#{$prefix}body-color-rgb: 255,255,255;
+    --#{$prefix}text-opacity: 1;
+    .text-muted{
+        --bs-text-opacity: .6;
+        color: rgba(var(--#{$prefix}body-color-rgb),var(--bs-text-opacity))!important;
+    }
+    a:not(.btn):not(.dropdown-item):not([class*="text-"]):not(.nav-link){
+        --bs-text-opacity: .75;
+        color: rgba(var(--#{$prefix}body-color-rgb),var(--bs-text-opacity))!important;
+        &:hover{
+            --bs-text-opacity: 1;
+        }
+    }
+    a.text-muted,a.text-body{
+        --bs-text-opacity: .6;
+        color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+        &:hover{
+            --bs-text-opacity: 1;
+        }
+    }
+}
+//Footer links color
+.footer:not(.text-white){
+    --bs-link-color: var(--#{$prefix}body-color);
+}
+//Text gradients
+.text-gradient {
+    background:radial-gradient(circle at 70%, $gradient-alt 10%, $primary 30%);
+    background-size: 400% 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    animation: textGradientAnimation 5s ease-in-out infinite;
+    -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
+}
+.text-gradient-light {
+    background:radial-gradient(circle at 70%, $white 10%,tint-color($primary,50%) 30%);
+    background-size: 400% 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    animation: textGradientAnimation 5s ease-in-out infinite;
+    -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
+}
+//Dropcap text
+.dropcap::first-letter {
+    float: left;
+    line-height: 0.5;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0 6px 0 0;
+    color: $primary;
+}
+
+//TextOutline
+.text-outline {
+    -webkit-text-stroke-width: 2px;
+    text-decoration: none !important;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background: transparent;
+    -webkit-text-fill-color: transparent;
+}
+@each $color, $value in $theme-colors {
+    .text-outline.text-#{$color} {
+        -webkit-text-stroke: 2px $value;
+        color: transparent !important;
+    }
+}
+
+
+b,strong{
+    font-weight: $font-weight-semibold;
+}
+
+
+// Box Icons
+.bx{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}

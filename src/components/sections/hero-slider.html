@@ -1,0 +1,174 @@
+<section class="position-relative bg-dark overflow-hidden">
+  <!-- Swiper Main -->
+  <div class="swiper-container swiper-classic">
+    <div class="swiper-wrapper">
+      <div
+        class="swiper-slide"
+        style="background-image: url('assets/img/backgrounds/bg6.jpg')">
+        <!--Overlay-->
+        <div
+          class="bg-dark position-absolute start-0 top-0 w-100 h-100 opacity-75"></div>
+        <div class="container-fluid text-white d-flex align-items-center h-100">
+          <div class="row w-100">
+            <div class="col-xl-8 col-lg-10 mx-auto text-center">
+              <ul class="carousel-layers list-unstyled mb-0">
+                <li data-carousel-layer="fade-start">
+                  <h2 class="display-1 mb-4 mb-lg-7">
+                    We elevate the vision and the strategy
+                  </h2>
+                </li>
+                <li data-carousel-layer="fade-start">
+                  <a href="#" class="btn btn-white btn-lg">How it works</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url('assets/img/backgrounds/bg5.jpg')">
+        <!--Overlay-->
+        <div
+          class="bg-dark position-absolute start-0 top-0 w-100 h-100 opacity-75"></div>
+        <div class="container-fluid text-white d-flex align-items-center h-100">
+          <div class="row w-100">
+            <div class="col-xl-8 col-lg-10 mx-auto text-center">
+              <ul class="carousel-layers list-unstyled mb-0">
+                <li data-carousel-layer="fade-start">
+                  <h2 class="display-1 mb-4 mb-lg-7">
+                    We turns ideas into business
+                  </h2>
+                </li>
+                <li data-carousel-layer="fade-start">
+                  <a href="#" class="btn btn-white btn-lg">Purchase now</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="swiper-slide"
+        style="background-image: url('assets/img/backgrounds/bg2.jpg')">
+        <!--Overlay-->
+        <div
+          class="bg-dark position-absolute start-0 top-0 w-100 h-100 opacity-75"></div>
+        <div class="container-fluid text-white d-flex align-items-center h-100">
+          <div class="row w-100">
+            <div class="col-xl-8 col-lg-10 mx-auto text-center">
+              <ul class="carousel-layers list-unstyled mb-0">
+                <li data-carousel-layer="fade-start">
+                  <h2 class="display-1 mb-4 mb-lg-7">
+                    Take your business to the next level
+                  </h2>
+                </li>
+                <li data-carousel-layer="fade-start">
+                  <a href="#" class="btn btn-white btn-lg">Try it Now!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End swiper-main-->
+
+  <!--Swiper thumbnails-->
+  <div
+    class="progress-swiper-thumbs pb-3 pb-lg-5 position-absolute start-0 bottom-0 w-100 overflow-hidden text-white px-4 swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide -->
+      <div class="swiper-slide swiper-pagination-progress">
+        <div class="swiper-pagination-progress-bar mb-2">
+          <div
+            class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner"></div>
+        </div>
+        <span class="small d-block text-truncate">Elevate vision</span>
+      </div>
+      <!-- End Slide -->
+
+      <!-- Slide -->
+      <div class="swiper-slide swiper-pagination-progress">
+        <div class="swiper-pagination-progress-bar mb-2">
+          <div
+            class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner"></div>
+        </div>
+        <span class="small d-block text-truncate">
+          Turn ideas into business
+        </span>
+      </div>
+      <!-- End Slide -->
+
+      <!-- Slide -->
+      <div class="swiper-slide swiper-pagination-progress">
+        <div class="swiper-pagination-progress-bar mb-2">
+          <div
+            class="swiper-pagination-progress-inner swiper-pagination-progress-bar-inner"></div>
+        </div>
+        <span class="small d-block text-truncate">
+          Take your business to next level
+        </span>
+      </div>
+      <!-- End Slide -->
+    </div>
+  </div>
+  <!-- End Swiper Thumbs Slider -->
+</section>
+<!--/end:Hero section-->
+<script>
+  //Main Hero Slider
+  var sliderThumbs = new Swiper('.progress-swiper-thumbs', {
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    history: false,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+    },
+    on: {
+      afterInit: function (swiper) {
+        swiper.el
+          .querySelectorAll('.swiper-pagination-progress-inner')
+          .forEach(
+            ($progress) =>
+              ($progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+          )
+      },
+    },
+  })
+  var swiperClassic = new Swiper('.swiper-classic', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ['-20%', 0, -1],
+      },
+      next: {
+        translate: ['100%', 0, 0],
+      },
+    },
+    thumbs: {
+      swiper: sliderThumbs,
+    },
+  })
+</script>

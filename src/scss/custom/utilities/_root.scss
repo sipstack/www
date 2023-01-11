@@ -1,0 +1,11 @@
+:root {
+// Fonts
+
+  // Note: Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --#{$prefix}font-serif: #{inspect($font-family-serif)};
+  --#{$prefix}border-radius-block: #{$border-radius-block};
+  --#{$prefix}border-radius-blob: #{$border-radius-blob};
+  --#{$prefix}border-style-dotted: dotted;
+  --#{$prefix}border-style-dashed: dashed;
+}

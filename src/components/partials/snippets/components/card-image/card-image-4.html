@@ -1,0 +1,69 @@
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary mb-4 btn-sm" data-bs-toggle="modal"
+   data-bs-target="#snippet-component-card-image-4">
+    Show code
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="snippet-component-card-image-4" tabindex="-1" aria-labelledby="snippet-component-card-image-4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="btn z-index-1 btn-outline-secondary border-2 width-4x height-4x fs-4 lh-1 rounded-pill flex-center p-0 position-absolute end-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--Snippets tab nav-->
+          <nav class="nav nav-tabs mb-0">
+            <a href="#demo4HTML" data-bs-toggle="tab" class="nav-link active">HTML</a>
+            <a href="#demo4CSS" data-bs-toggle="tab" class="nav-link">CSS</a>
+        </nav>
+        <!--Snippets tabs-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="demo4HTML">
+                <div class="position-relative">
+                    <button
+                        class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                        data-clipboard-target="#copyCodeMain4" data-clipboard-action="copy" id="copyCodeMain4-1">Copy code</button>
+                    <pre id="copyCodeMain4" class="language-markup" data-lang="html">
+<code>
+    &lt;!--Card-product-->
+    &lt;div class="card hover-shadow-lg overflow-hidden hover-lift-lg border-0">
+        &lt;div class="px-5 py-4 d-block overflow-hidden">
+            &lt;!--Product image-->
+            &lt;a href="#!">
+                &lt;img src="assets/img/shop/products/01.jpg" class="img-fluid" alt="Product">
+            &lt;/a>
+        &lt;/div>
+        &lt;div class="px-4 pb-4 text-center">
+            &lt;a href="#!" class="h5 text-dark d-block position-relative mb-2">Product Title&lt;/a>
+            &lt;!--Price-->
+            &lt;span class="card-product-price">
+                &lt;span>$256&lt;/span> &lt;del>$299&lt;/del>
+            &lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;!--/Card product end-->   
+</code>
+</pre>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="demo4CSS">
+                <div class="position-relative">
+                    <button
+                    class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                    data-clipboard-target="#copyCodeCss4" data-clipboard-action="copy" id="copyCodeCss4-2">Copy code</button>
+                <pre id="copyCodeCss4" class="language-markup" data-lang="html">
+<code>
+&lt;!-- Bootstrap + Vendor + Theme -->
+&lt;link href="assets/css/theme.min.css" rel="stylesheet">
+</code>
+</pre>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>

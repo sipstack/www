@@ -1,7 +1,0 @@
-{
-	"useTabs": true,
-	"semi": true,
-	"singleQuote": false,
-	"printWidth": 180,
-	"quoteProps": "as-needed"
-}

@@ -1,0 +1,37 @@
+//Svg fill stroke
+
+
+//mixins
+  //Svg Fill/stroke
+  @mixin svg-fill-variant($color) {
+    fill:$color!important;
+  }
+  @mixin svg-stroke-variant($color) {
+    stroke:$color!important;
+  }
+
+@each $color, $value in $theme-colors {
+    .fill-#{$color} *,.fill-#{$color}{
+      @include svg-fill-variant($value);
+    }
+    .stroke-#{$color},.stroke-#{$color} *{
+      @include svg-stroke-variant($value);
+    }
+    .text-outline-#{$color}{
+      color: transparent!important;
+      -webkit-text-stroke: 1px ($value);
+    }
+  }
+  
+  .fill-currentColor {
+    fill: currentColor!important;
+    >*{
+      fill: currentColor!important;
+    }
+}
+.stroke-currentColor {
+  stroke: currentColor!important;
+  >*{
+    stroke: currentColor!important;
+  }
+}

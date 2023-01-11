@@ -1,0 +1,68 @@
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary mb-4 btn-sm" data-bs-toggle="modal"
+   data-bs-target="#snippet-component-card-image-2">
+    Show code
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="snippet-component-card-image-2" tabindex="-1" aria-labelledby="snippet-component-card-image-2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="btn z-index-1 btn-outline-secondary border-2 width-4x height-4x fs-4 lh-1 rounded-pill flex-center p-0 position-absolute end-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--Snippets tab nav-->
+          <nav class="nav nav-tabs mb-0">
+            <a href="#demo2HTML" data-bs-toggle="tab" class="nav-link active">HTML</a>
+            <a href="#demo2CSS" data-bs-toggle="tab" class="nav-link">CSS</a>
+        </nav>
+        <!--Snippets tabs-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="demo2HTML">
+                <div class="position-relative">
+                    <button
+                        class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                        data-clipboard-target="#copyCodeMain2" data-clipboard-action="copy" id="copyCodeMain2-1">Copy code</button>
+                    <pre id="copyCodeMain2" class="language-markup" data-lang="html">
+<code>
+    &lt;!--Card-->
+    &lt;div class="card-over rounded-3 card-hover overflow-hidden">
+        &lt;!--Image-->
+        &lt;img src="assets/img/960x640/7.jpg" alt="" class="img-fluid img-zoom">
+        &lt;!--Hover overlay-->
+        &lt;div class="card-overlay py-4 px-3 text-white d-flex align-items-end">
+            &lt;!--Overlay-items-->
+            &lt;ul class="list-unstyled overlay-items">
+                &lt;li>
+                    &lt;h5 class="fs-4 mb-1">Awesome title&lt;/h5>
+                &lt;/li>
+                &lt;li>&lt;span>Awesome Subtitle&lt;/span>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+</code>
+</pre>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="demo2CSS">
+                <div class="highlight-js position-relative">
+                    <!--Copy clipboard button-->
+                    <button
+                    class="btn btn-sm position-absolute end-0 top-0 me-3 mt-3 z-index-1 btn-primary copy-link"
+                    data-clipboard-target="#copyCodeCss2" data-clipboard-action="copy" id="copyCodeCss2-2">Copy code</button>
+                <pre id="copyCodeCss2" class="language-markup" data-lang="html">
+<code>
+&lt;!-- Bootstrap + Vendor + Theme -->
+&lt;link href="assets/css/theme.min.css" rel="stylesheet">
+</code>
+</pre>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
