@@ -1,12 +1,12 @@
 {
-    slug: "the-FCC's-proposed-rules-and-initiatives-to-combat-robotexts",
-    image: "/assets/img/resources/blog/20230104-what-to-do-if-you've-been-scammed/FCC.png",
+    slug: "the-fcc-proposed-rules-and-initiatives-to-combat-robotexts",
+    image: "/assets/img/resources/blog/20230112-the-fcc-proposed-rules-and-initiatives-to-combat-robotexts/v4-blog-legal-sign.jpeg",
     category: "Scams",
     tags: ["SIPSTACK"],
     views: 0,
     title: "The FCC's Proposed Rules and Initiatives to Combat Robotexts",
     abstract: "The FCC recently sought comment on proposed rules to prevent illegal robotexts.",
-    created: "09/01/2023", //dd/mm/yyyy
+    created: "12/01/2023", //dd/mm/yyyy
     updated: "",
     duration: 2, // minute read
     author: {
