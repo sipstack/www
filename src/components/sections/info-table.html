@@ -1,0 +1,27 @@
+<section class="position-relative bg-white overflow-hidden">
+    <!--content-->
+    <div class="container py-9 py-lg-12 position-relative">
+        <div class="row mb-7 mb-lg-3 align-items-center">
+            <div>
+                <!--Section Heading-->
+                <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
+                <!-- Description-->
+                <div class="mb-3" data-aos="fade-up">
+                    <span class="mb-4 text-muted">@@description</span>
+                </div>
+            </div>
+        </div>
+
+        <table class = "hideBorder">
+            <tr>
+                @@for (var i = 0; i <  cols.length; i++) {
+                    <td class = "hideBorder">
+                        <!--title-->
+                        <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
+                        <!--text-->
+                        <p class="mb-4 text-muted">`+cols[i].description+`</p>
+
+                    </td>
+                }
+            </tr>
+        </table>
