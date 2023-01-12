@@ -222,7 +222,7 @@ function html(cb) {
 }
 
 function ss_public(cb) {
-  src('public/*', 'public/**/*').pipe(dest('dist/'))
+  src(['public/*', 'public/**/*']).pipe(dest('dist/'))
 
   cb()
 }
