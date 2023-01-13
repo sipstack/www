@@ -25,7 +25,7 @@ watch(billing, (newVal, oldVal) => {
 
 <template>
   <div class="pricing-block">
-    <!-- <div class="billing-switcher-wrapper">
+    <div class="billing-switcher-wrapper">
       <div class="by-month" :class="billing.length > 0 ? '' : 'is-active'">
         Monthly
       </div>
@@ -37,12 +37,14 @@ watch(billing, (newVal, oldVal) => {
           color="primary"
           value="Yearly" />
       </div>
-      <div class="by-year" :class="billing.length > 0 ? 'is-active' : ''">Annualy</div>
-
-      <div class="discount">
-        <img src="/assets/illustrations/text/save-10.svg" alt="Save 10%" />
+      <div class="by-year" :class="billing.length > 0 ? 'is-active' : ''">
+        Annualy
       </div>
-    </div> -->
+
+      <!-- <div class="discount">
+        <img src="/assets/illustrations/text/save-10.svg" alt="Save 10%" />
+      </div> -->
+    </div>
 
     <div class="pricing-wrapper">
       <div class="pricing-card">
@@ -72,12 +74,21 @@ watch(billing, (newVal, oldVal) => {
                 <span v-else class="monthly-price">
                   {{ plan.monthlyPrice }}
                 </span>
-                <!-- <div v-if="billing.length > 0" class="yearly-billed">
-                  (Billed at ${{ plan.yearlyPrice }}/year)
+                <div v-if="plan.yearlyPrice > 0">
+                  <div v-if="billing.length > 0" class="yearly-billed">
+                    (Billed at ${{ plan.yearlyPrice * 12 }}/year)
+                  </div>
+                  <div v-else class="monthly-billed">
+                    (Billed at ${{ plan.monthlyPrice }}/month)
+                  </div>
                 </div>
-                <div v-else class="monthly-billed">
-                  (Billed at ${{ plan.monthlyPrice }}/month)
-                </div> -->
+                <div v-else>
+                  <div class="monthly-billed">
+                    <a href="/contact/us" style="color: var(--primary)">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
               </div>
               <ul class="plan-features">
                 <li v-for="(feature, f) in plan.features" :key="f">
@@ -172,7 +183,7 @@ watch(billing, (newVal, oldVal) => {
         // margin-top: -13px;
         position: absolute;
         top: -0.75rem;
-        left: 3.2rem;
+        left: 18.7rem;
         // right: 0;
         // margin: 0 auto;
       }
@@ -194,7 +205,7 @@ watch(billing, (newVal, oldVal) => {
           font-family: var(--font);
           font-size: 0.9rem;
           color: var(--medium-text);
-          // padding-bottom: 20px;
+          padding-bottom: 20px;
 
           span {
             font-weight: 500;
@@ -218,7 +229,7 @@ watch(billing, (newVal, oldVal) => {
               position: relative;
               left: 10px;
               display: block;
-              content: 'PER REQUEST';
+              content: 'PER MONTH';
               margin-top: -8px;
               font-size: 0.8rem;
               line-height: 1rem;
@@ -234,6 +245,42 @@ watch(billing, (newVal, oldVal) => {
               font-weight: 700;
               font-size: 1.75rem;
               margin-right: 0;
+            }
+          }
+
+          .plan-price-none {
+            position: relative;
+            left: -10px;
+            font-family: var(--font);
+            // font-size: 4.5rem;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: var(--title-color);
+            padding-bottom: 0;
+            border-bottom: 2px dashed var(--card-border-color);
+
+            span {
+              &::after {
+                position: relative;
+                left: 10px;
+                display: block;
+                // content: 'PER MONTH';
+                margin-top: -8px;
+                font-size: 0.8rem;
+                line-height: 1rem;
+                font-family: var(--font);
+                font-weight: 500;
+                color: var(--light-text);
+              }
+
+              &::before {
+                position: relative;
+                top: -35px;
+                // content: '$';
+                font-weight: 700;
+                font-size: 1.75rem;
+                margin-right: 0;
+              }
             }
           }
 

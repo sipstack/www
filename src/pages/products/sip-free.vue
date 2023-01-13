@@ -36,7 +36,7 @@ import { pageLinks, timeline, features, pricing, faq } from "/@src/data/products
 				<SectionTitle title="Get Started &#8212; It's Free" subtitle="Overview" />
 
 				<ssSubscriptionCompactBlock
-					text="Simple SIP Trunking with free termination to North Americal Toll-Free destination. Supporting ULAW, G729, G722 and T.38 where available."
+					text="Simple SIP Trunking with free termination to North American Toll-Free destination. Supporting ULAW, G729, G722 and T.38 where available."
 					label="Create account"
 					placeholder="Enter your email"
 				/>

@@ -44,7 +44,7 @@ export const timeline = [
 export const features: IconFeature[] = [
   {
     title: 'Premium Tier',
-    text: 'SIP Free utelizes premium tier routes only supporting ULAW, G729, G722 & T.38 where available.',
+    text: 'SIP Free utilizes premium tier routes only supporting ULAW, G729, G722 & T.38 where available.',
     color: 'purple',
     icon: 'iconoir:three-stars',
     link: '/',
