@@ -89,19 +89,17 @@ You can view your invoices, payments, detailed transaction history, and payment 
 ### Overview 
 This is where you will find your account details and make payments/add funds to your account. This page also provides a summary of the last payment made, as well as a shortcut to view transaction history. 
   
-####  Adding funds to your account 
-
-To add funds to your account instantly, select Overview in the left pane under Billing. Simply select the desired card, input the amount and click Pay Now.  You can add and manage your credit cards in Payment Methods, found under Billing in the left pane. Please note that there is a small convenience fee of 2.95% that is applied. For large accounts contact our billing team to discuss alternate payment options.   
+<!--- ####  Adding funds to your account 
+To add funds to your account instantly, select Overview in the left pane under Billing. Simply select the desired card, input the amount and click Pay Now.  You can add and manage your credit cards in Payment Methods, found under Billing in the left pane. Please note that there is a small convenience fee of 2.95% that is applied. For large accounts contact our billing team to discuss alternate payment options. --->  
  
 ###  View Invoices 
-A summary of all invoices is provided on the main page, which you can select to view the pertaining invoice. Invoices are generated on the 1st  of the month, with a breakdown of charges and applicable taxes for expensing and taxes. 
+A summary of all invoices is provided on the main page, which you can select to view the pertaining invoice. Invoices are generated on the 1st  of the month, with a breakdown of charges and applicable taxes. 
 
 ### View Payments 
-Anytime you add funds to your account through the website, a record of it is stored here, 
-This way, you can keep track of your payments. If you find that you are adding funds to your account often, contact our billing team to discuss a seamless payment plan. 
+Anytime a payment is made on your account, a record of it is stored here. 
   
 ###  View Transactions 
-A detailed transaction history is provided including all payments, credits and invoices.  The header sorts the information by type of payment, amount paid, and the new balance owing. 
+A detailed transaction history is provided including all payments, credits and invoices.  The header sorts the information by type of payment, amount paid, and any balance owing. 
 
 ### Payment Methods 
  
