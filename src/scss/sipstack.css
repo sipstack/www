@@ -30,13 +30,20 @@
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite;
 }
-
+.blackText{
+  color: black;
+  font-weight: lighter;
+}
 .bold{
   font-weight: 550;
   font-size: xx-large;
   
 }
-
+.whiteButton{
+  background-color: white;
+  border-color: lightgray;
+  color: black;
+}
 i{
   color: #35bb8a ;
   font-size: xx-large;
@@ -104,7 +111,7 @@ table td:last-child {
 }
 
 .sub-title{
-  font-size: medium;
+  font-size: medium !important;
   margin-bottom: 0px;
 }
 .fontLarge{
@@ -172,6 +179,66 @@ table td:last-child {
   border-radius:25px; 
   height: 450px; 
   object-fit: cover
+}
+
+.contact-card{
+  width: 40%;
+  border-color:lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5%;
+  border-radius: 10px;
+}
+.card-title{
+  font-size: x-large;
+  margin-bottom: 0px;
+}
+
+.form-label{
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.form-control-custom{
+  height: 2em !important;
+  min-height: 10px;
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.form-control-text{
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.text-email{
+  color:#35bb8a;
+}
+
+.custom-collapse{
+  background-color: white;
+  padding: 1rem 2rem;
+  margin: 5% auto;
+  width: 70%;
+  border-radius: 25px;
+  border-color:lightgrey;
+  border-width: 1px;
+  border-style: solid;
+}
+.cards{
+ 
+  margin-top: 5%;
+  max-width: 40%;
+  max-height: 10%;
+  margin-left: auto;
+  margin-right:auto ;
+  border-color:lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .left{
