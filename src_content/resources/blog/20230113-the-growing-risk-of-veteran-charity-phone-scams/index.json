@@ -1,12 +1,12 @@
 {
     slug: "the-growing-risk-of-veteran-charity-phone-scams",
-    image: "/assets/img/resources/blog/20230104-the-growing-risk-of-veteran-charity-phone-scams/veteranscam.png",
+    image: "/assets/img/resources/blog/20230113-the-growing-risk-of-veteran-charity-phone-scams/veteranscam.png",
     category: "Scams",
     tags: ["SIPSTACK"],
     views: 0,
     title: "The Growing Risk of Veteran Charity Phone Scams",
     abstract: "Veteran charity phone scams refer to scammers who pose as charities for war veterans and solicit donations via phone calls under this false pretense.",
-    created: "12/01/2023", //dd/mm/yyyy
+    created: "13/01/2023", //dd/mm/yyyy
     updated: "",
     duration: 5, // minute read
     author: {
