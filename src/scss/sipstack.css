@@ -116,7 +116,7 @@ table td:last-child {
 }
 .fontLarge{
   font-size: 2.5rem;
-  line-height: 1rem;
+  line-height: 2.75rem !important;
 }
 .fontWhite{
   color: white;
@@ -251,4 +251,69 @@ table td:last-child {
   width: 40%;
   float: right;
   margin: auto;
+}
+
+.custom-dropdown{
+  width: 85em;
+  padding: 5% 5% !important;
+}
+
+
+.nav-col-custom-inner{
+  flex: 0 0 auto;
+  width: 13%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.nav-col-custom-outer{
+  flex: 0 0 auto;
+  width: 27%;
+  margin-left: 3%;
+  margin-right: 3%;
+  
+}
+
+.border-left{
+  border-left: 1px solid lightgray;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+.button-dropdown {
+  border: none;
+  color: #969b95 ;
+  background:transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.button-dropdown span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-dropdown span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-dropdown:hover span {
+  padding-right: 25px;
+  color: #35bb8a;
+}
+
+.button-dropdown:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #35bb8a;
 }
