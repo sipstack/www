@@ -1,1 +1,20 @@
-
+{
+    slug: "FCC-proposes-record-high-$300M-fine-for-'auto-warranty'-robocalls",
+    image: "/assets/img/resources/blog/20230113-the-growing-risk-of-veteran-charity-phone-scams/veteranscam.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "FCC Proposes Record-High $300M Fine for Auto Warranty' Robocalls",
+    abstract: "The Federal Communications Commission has proposed a $300 million fine against two Californian men responsible for an auto warranty robocall campaign, the largest penalty ever proposed by the agency over robocalls.",
+    created: "17/01/2023", //dd/mm/yyyy
+    updated: "",
+    duration: 2, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},
