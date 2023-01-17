@@ -665,38 +665,6 @@ In most countries, mobile numbers are assigned to a particular range within the 
     ],
     articles: [
       {
-        slug: 'what-is-A2P-10DLC',
-        title: 'What is A2P 10DLC?',
-        subtitle:
-          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
-        abstract: '',
-        created: '14/10/2022',
-        updated: '',
-        author: {
-          name: 'Anjana Uthayakumaran',
-          picture: '/assets/img/team/anjanaa.jpg',
-        },
-        content: `
-**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
-
-## Existing Alternatives
-
-While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
-
-**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
-
-**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
-
-**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
-
-## Benefits of 10DLC
-
-A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
-
-`,
-      },
-
-      {
         slug: 'telephone-consumer-protection-act-tcpa',
         title: 'A Brief History of the TCPA',
         subtitle:
@@ -748,6 +716,38 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 
 <sup>1 <a href="https://www.antifraudcentre-centreantifraude.ca/index-eng.htm" class="ss-reference" target="_blank">https://www.antifraudcentre-centreantifraude.ca/index-eng.htm</a></sup>  
 <sup>2 <a href="https://firstorion.com/2021-scam-call-trends/" class="ss-reference" target="_blank">https://firstorion.com/2021-scam-call-trends/</a></sup> 
+
+`,
+      },
+
+      {
+        slug: 'what-is-A2P-10DLC',
+        title: 'What is A2P 10DLC?',
+        subtitle:
+          'A2P, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved 10DLC, 10 Digit Long Code, a phone number, to send mass text messages to consumers .',
+        abstract: '',
+        created: '14/10/2022',
+        updated: '',
+        author: {
+          name: 'Anjana Uthayakumaran',
+          picture: '/assets/img/team/anjanaa.jpg',
+        },
+        content: `
+**A2P**, Application-to-Person, messaging in the United States allows businesses to leverage a preapproved **10DLC, 10 D**igit **L**ong **C**ode, a phone number, to send mass text messages to consumers. Businesses can register with carriers whom work with **TCR** [**T**he **C**ampaign **R**egistry](https://www.campaignregistry.com/) to offer integrated registration for approval, or directly with the TCR themselves. Businesses must acquire approval for both their brand and each campaign as per **CITA**, **C**ellular **T**elecommunications and **I**nternet **A**ssociation guidelines, in the larger effort to increase transparency in the telecommunication ecosystem.
+
+## Existing Alternatives
+
+While 10DLC is not the only option for businesses, each alternative comes with its own caveats.
+
+**Toll-free long codes**: While 1-800 numbers are an affordable option with a high throughput rate of thousands a day, it requires a separate step of obtaining approval for the third party number. Additionally, using a toll-free number significantly reduces customer engagement and experience as it appears impersonal and foreign to consumers.
+
+**Short codes**: While using this 5/6 digit option has an impressive throughput rate of millions a day, purchasing short codes is an expensive ordeal. Acquiring approval for short codes is a long process, unfit for today's fast paced trends.
+
+**Local long codes**: Standard phone numbers come at no additional cost, but with little applicability. As they are not designed for A2P but rather **P2P** **P**erson-to-**P**erson use, the throughput rate is significantly lower, sitting at a few hundred a day. More importantly A2P messaging with unapproved long codes is against CITA, guidelines and so these unsanctioned texts are often filtered out by carriers.
+
+## Benefits of 10DLC
+
+A2P 10DLC offers a happy medium of mass text messaging management with low overhead costs, providing an accessible option to US businesses. While allotted throughput is dependent on a Trust Score assigned upon registration, its capacity is still impressively sitting in the thousands between toll-free long codes and short codes. Compliance with CITA guidelines improves deliverability rates but also brand image and reputation. A2P 10DLC enables campaign data management through tracking keyword performance, allowing for better business practices. Businesses are able to use an exisiting [dedicated phone number](https://www.sipstack.com/resources/blog/dedicated-phone%20number), translating to quick approval times and reduced costs. Ultimatly, utilizing A2P 10DLC significantly improves customer engagement and experiences.
 
 `,
       },
@@ -1028,21 +1028,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `,
       },
       {
-        slug: 'can-my-sms-messages-arrive-in-order',
-        title: 'Can my SMS messages arrive in order?',
-        subtitle: '',
-        abstract: '',
-        created: '07/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`,
-      },
-      {
         slug: 'block-incoming-sms',
         title: 'Is there a way to block an incoming SMS on a phone number?',
         subtitle: '',
@@ -1070,6 +1055,21 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
         },
         content: `
 Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`,
+      },
+      {
+        slug: 'can-my-sms-messages-arrive-in-order',
+        title: 'Can my SMS messages arrive in order?',
+        subtitle: '',
+        abstract: '',
+        created: '07/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `,
       },
       {
@@ -1451,27 +1451,6 @@ Toll-free numbers from countries outside of Canada and US are Voice-only, and ar
 `,
       },
       {
-        slug: 'mms-sent-as-sms',
-        title: 'Why are my MMS messages being sent as SMS text messages?',
-        subtitle: '',
-        abstract: '',
-        created: '04/04/2021',
-        updated: '',
-        author: {
-          name: 'Kanasu Nagathihalli',
-          picture: '/assets/img/team/kanasu.png',
-        },
-        content: `
-When you attempt to send an MMS message from a SIPSTACK MMS-enabled number to a recipient on a carrier that does not support MMS, SIPSTACK will convert the message to an SMS with a short URL linking to your media. This includes both international carriers as well as unsupported carriers in Canada and the US. These messages will be charged for the cost of the SMS message instead of an MMS. The message will still have a unique [SSID](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid).
-
-This feature is called MMS Converter, and is enabled by default.
-
-When disabled, SIPSTACK will no longer convert your MMS messages into SMS text messages. Instead, your application will receive a HTTP 400 response when attempting to send MMS messages to unsupported carriers.
-
-
-`,
-      },
-      {
         slug: 'opt-out-keyword-handling-for-toll-free-sms',
         title: 'Opt-out keyword handling for toll-free SMS',
         subtitle:
@@ -1511,6 +1490,27 @@ NETWORK MSG: You have replied "unstop" and will begin receiving messages again f
         },
         content: `
 Whether Canada or US phone numbers (+1 country code) can receive incoming SMS messages from international phone numbers outside of Canada and US is entirely dependent on the capabilities of that phone number. 
+
+
+`,
+      },
+      {
+        slug: 'mms-sent-as-sms',
+        title: 'Why are my MMS messages being sent as SMS text messages?',
+        subtitle: '',
+        abstract: '',
+        created: '04/04/2021',
+        updated: '',
+        author: {
+          name: 'Kanasu Nagathihalli',
+          picture: '/assets/img/team/kanasu.png',
+        },
+        content: `
+When you attempt to send an MMS message from a SIPSTACK MMS-enabled number to a recipient on a carrier that does not support MMS, SIPSTACK will convert the message to an SMS with a short URL linking to your media. This includes both international carriers as well as unsupported carriers in Canada and the US. These messages will be charged for the cost of the SMS message instead of an MMS. The message will still have a unique [SSID](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid).
+
+This feature is called MMS Converter, and is enabled by default.
+
+When disabled, SIPSTACK will no longer convert your MMS messages into SMS text messages. Instead, your application will receive a HTTP 400 response when attempting to send MMS messages to unsupported carriers.
 
 
 `,

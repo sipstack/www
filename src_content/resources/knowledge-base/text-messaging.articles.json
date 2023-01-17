@@ -116,21 +116,6 @@ No. WhatsApp messaging is unaffected by any of these changes. WhatsApp messages 
 `
 },
 {
-    slug: "can-my-sms-messages-arrive-in-order",
-    title: "Can my SMS messages arrive in order?",
-    subtitle: "",
-    abstract: "",
-    created: "07/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
-`
-},
-{
     slug: "block-incoming-sms",
     title: "Is there a way to block an incoming SMS on a phone number?",
     subtitle: "",
@@ -158,6 +143,21 @@ Unlike voice, there is no way to block specific SMS messages on a phone number. 
     },
     content: `
 Yes. Recipient wireless carriers always reserve the right to filter out incoming SMS and MMS messages from certain numbers. They routinely do this to protect their users from receiving spam messages. 
+`
+},
+{
+    slug: "can-my-sms-messages-arrive-in-order",
+    title: "Can my SMS messages arrive in order?",
+    subtitle: "",
+    abstract: "",
+    created: "07/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+SIPSTACK cannot guarantee that SMS messages sent from your SIPSTACK phone number will arrive in order. While we will send the SMS messages you pass to us in the order that you've queued them, the SMS messages are delivered individually with no association to each other. The order of delivery depends on the carrier.
 `
 },
 {
@@ -527,27 +527,6 @@ Toll-free numbers from countries outside of Canada and US are Voice-only, and ar
 `
 },
 {
-    slug: "mms-sent-as-sms",
-    title: "Why are my MMS messages being sent as SMS text messages?",
-    subtitle: "",
-    abstract: "",
-    created: "04/04/2021",
-    updated: "",
-    author: {
-        name: "Kanasu Nagathihalli",
-        picture: "/assets/img/team/kanasu.png",
-    },
-    content: `
-When you attempt to send an MMS message from a SIPSTACK MMS-enabled number to a recipient on a carrier that does not support MMS, SIPSTACK will convert the message to an SMS with a short URL linking to your media. This includes both international carriers as well as unsupported carriers in Canada and the US. These messages will be charged for the cost of the SMS message instead of an MMS. The message will still have a unique [SSID](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid).
-
-This feature is called MMS Converter, and is enabled by default.
-
-When disabled, SIPSTACK will no longer convert your MMS messages into SMS text messages. Instead, your application will receive a HTTP 400 response when attempting to send MMS messages to unsupported carriers.
-
-
-`
-},
-{
     slug: "opt-out-keyword-handling-for-toll-free-sms",
     title: "Opt-out keyword handling for toll-free SMS",
     subtitle: "Toll-free SMS is a great way to send messages to recipients in Canada and US.",
@@ -585,6 +564,27 @@ NETWORK MSG: You have replied "unstop" and will begin receiving messages again f
     },
     content: `
 Whether Canada or US phone numbers (+1 country code) can receive incoming SMS messages from international phone numbers outside of Canada and US is entirely dependent on the capabilities of that phone number. 
+
+
+`
+},
+{
+    slug: "mms-sent-as-sms",
+    title: "Why are my MMS messages being sent as SMS text messages?",
+    subtitle: "",
+    abstract: "",
+    created: "04/04/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+When you attempt to send an MMS message from a SIPSTACK MMS-enabled number to a recipient on a carrier that does not support MMS, SIPSTACK will convert the message to an SMS with a short URL linking to your media. This includes both international carriers as well as unsupported carriers in Canada and the US. These messages will be charged for the cost of the SMS message instead of an MMS. The message will still have a unique [SSID](https://www.sipstack.com/resources/knowledge-base/text-messaging/what-is-a-message-ssid).
+
+This feature is called MMS Converter, and is enabled by default.
+
+When disabled, SIPSTACK will no longer convert your MMS messages into SMS text messages. Instead, your application will receive a HTTP 400 response when attempting to send MMS messages to unsupported carriers.
 
 
 `
