@@ -1,0 +1,45 @@
+<section class="position-relative bg-white overflow-hidden">
+    <img src="assets/img/vectors/worldmap-light.svg"
+        class="w-100 h-auto position-absolute start-0 top-0 opacity-25" alt="">
+    <!--content-->
+    <div class="container py-9 position-relative">
+        <div class="row mb-7 mb-lg-5 align-items-center">
+            <div style = "padding-left: 2%;">
+                <!--Section Heading-->
+                <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
+                <!-- Description-->
+                <div class="mb-3" data-aos="fade-up">
+                    <span class="mb-4 text-muted">@@description</span>
+                </div>
+            </div>
+        </div>
+
+        <table class = "hideBorder mb-5">
+            <tr>
+                @@for (var i = 0; i <  cols.length; i++) {
+                    <td class = "hideBorder">
+                        <!--title-->
+                        <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
+                        <!--text-->
+                        <p class="mb-4 text-muted">`+cols[i].description+`</p>
+
+                    </td>
+                }
+            </tr>
+        </table>
+        <div class="row">
+            @@for (var i = 0; i <  cols2.length; i++) {
+                <div class="col-md-3 mb-5 mb-md-0 centerText">
+                    <h5 class="mb-3">
+                        <span data-countup='{"startVal": 0,"suffix":"`+cols2[i].suffix+`"}' data-to="`+cols2[i].count_to+`" data-aos=""
+                            data-aos-id="countup:in" class="display-4 text-primary"></span>
+                    </h5>
+                    <h6 class="small text-muted">`+cols2[i].title+`</h6>
+                    <p class="mb-0">
+                        `+cols2[i].description+`
+                    </p>
+                </div>
+            }  
+        </div>
+    </div>
+</section>
