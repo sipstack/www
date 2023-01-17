@@ -24,11 +24,24 @@
 }
 
 .subTitleGradient {
-  background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
+
+  background: radial-gradient(circle at 70%,#35bb8a 10%,#05915e 30%);
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: textGradientAnimation 10s ease-in-out infinite;
+  -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
+  font-weight: 510;
+
+
+  /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
   font-weight: 510;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite;
+  animation: shine 8s linear infinite; */
 }
 .blackText{
   color: black;
@@ -59,7 +72,7 @@ i{
 }
 
 .card-body:hover .icon{
-  transform: rotate(25deg);
+  /* transform: rotate(25deg); */
 }
 
 .card-body{
@@ -254,8 +267,13 @@ table td:last-child {
 }
 
 .custom-dropdown{
-  width: 96em;
+  width: 94.6em;
   padding: 5% 5% !important;
+}
+
+.border-left {
+  padding-left: 2.5em !important;
+
 }
 
 
@@ -320,17 +338,35 @@ table td:last-child {
 .dropdown-menu-fw{
   margin: 0 !important;
   position: absolute;
-  left: -5em;
+  /* left: -5em; */
 }
 
 .dropdown-menu{
-  margin: 0 !important;
+  /* margin: 0 !important; */
   position: absolute;
-  left: -6.25em;
+  /* left: -6.25em; */
   margin-top: 4em;
   border-radius: 0px;
+  margin-left: -5.6em !important;
 }
 
 .text-muted{
   color: rgb(102, 101, 101) !important;
 }
+
+
+
+.ss-custom-page-header{
+  background-color: #F5F6FA; 
+  background-image: url('assets/img/hero-shape-ss-k.svg'); 
+  background-repeat:no-repeat;
+  background-position: right top;
+  background-size: 75%;
+}
+
+/* nav menu ---------------------------- */
+header:not(.scroll-up):not(.is-sticky):not(.is-fixed) .navbar-light.navbar-link-white .navbar-nav .nav-link.active {
+  color:#35bb8a;
+  font-weight: 500;
+}
+

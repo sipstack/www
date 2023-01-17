@@ -1,6 +1,6 @@
 <header
 class="z-index-fixed header-absolute-top ">
-<nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
+<nav class="navbar navbar-expand-lg navbar-light @@if (context.page === 'products') {navbar-link-white}">
   <div class="container position-relative">
     <!--Logo Brand-->
     <a class="navbar-brand" href="index.html">
@@ -47,10 +47,10 @@ class="z-index-fixed header-absolute-top ">
   
     <!--begin:Products-->
     <li class="nav-item dropdown position-lg-static">
-      <a class="nav-link dropdown-toggle @@if (context.page === 'components') {active}" href="#" role="button"
+      <a class="nav-link dropdown-toggle @@if (context.page === 'products') {active}" href="#" role="button"
         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products
       </a>
-      <div class="dropdown-menu dropdown-menu-fw custom-dropdown">
+      <div class="dropdown-menu dropdown-menu-fw custom-dropdown flex-column">
        <div class="dropdown-scroll-lg">
         <div class="row mx-lg-">
           <!--Products-->
@@ -122,7 +122,7 @@ class="z-index-fixed header-absolute-top ">
       <a class="nav-link dropdown-toggle @@if (context.page === 'Solutions') {active}" href="#" role="button"
         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions
       </a>
-      <div class="dropdown-menu dropdown-menu-fw px-lg-0 custom-dropdown">
+      <div class="dropdown-menu dropdown-menu-fw px-lg-0 custom-dropdown ">
        <div class="dropdown-scroll-lg">
         <div class="row mx-lg-">
           <!--Products-->
@@ -241,7 +241,7 @@ class="z-index-fixed header-absolute-top ">
 
     <!--begin:Company-->
     <li class="nav-item dropdown position-lg-static">
-      <a class="nav-link dropdown-toggle @@if (context.page === 'components') {active}" href="#" role="button"
+      <a class="nav-link dropdown-toggle @@if (context.page === 'company') {active}" href="#" role="button"
         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company
       </a>
       <div class="dropdown-menu dropdown-menu-fw px-lg-0 custom-dropdown">
