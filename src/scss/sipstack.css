@@ -254,7 +254,7 @@ table td:last-child {
 }
 
 .custom-dropdown{
-  width: 85em;
+  width: 96em;
   padding: 5% 5% !important;
 }
 
@@ -281,7 +281,7 @@ table td:last-child {
 
 .button-dropdown {
   border: none;
-  color: #969b95 ;
+  color: rgb(102, 101, 101) !important ;
   background:transparent;
   transition: all 0.5s;
   cursor: pointer;
@@ -316,4 +316,21 @@ table td:last-child {
   opacity: 1;
   right: 0;
   color: #35bb8a;
+}
+.dropdown-menu-fw{
+  margin: 0 !important;
+  position: absolute;
+  left: -5em;
+}
+
+.dropdown-menu{
+  margin: 0 !important;
+  position: absolute;
+  left: -6.25em;
+  margin-top: 4em;
+  border-radius: 0px;
+}
+
+.text-muted{
+  color: rgb(102, 101, 101) !important;
 }
