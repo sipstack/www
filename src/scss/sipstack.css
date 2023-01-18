@@ -1,24 +1,7 @@
-.navbar-brand {
-  margin-right: -40px;
-}
+/**************************** CUSTOM TO SIPSTACK **************************/
 
-.btn-success {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #35bb8a;
-  --bs-btn-border-color: #35bb8a;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1bab80;
-  --bs-btn-hover-border-color: #1aa179;
-  --bs-btn-focus-shadow-rgb: 65, 209, 167;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1aa179;
-  --bs-btn-active-border-color: #189771;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(13, 15, 12, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #35bb8a;
-  --bs-btn-disabled-border-color: #35bb8a;
-}
 
+/********** FONT & TEXT ***********/
 .centerText {
   text-align: center;
 }
@@ -43,6 +26,7 @@
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite; */
 }
+
 .blackText{
   color: black;
   font-weight: lighter;
@@ -51,76 +35,6 @@
   font-weight: 550;
   font-size: xx-large;
   
-}
-.whiteButton{
-  background-color: white;
-  border-color: lightgray;
-  color: black;
-}
-i{
-  color: #35bb8a ;
-  font-size: xx-large;
-  font-weight: light;
-  margin-top: 7%;
-  margin-bottom: 3%;
-}
-.icon{
-  background-color: #35bb8a20;
-  padding: 3%;
-  border-radius: 12px;
-  margin-bottom: 5%;
-}
-
-.card-body:hover .icon{
-  /* transform: rotate(25deg); */
-}
-
-.card-body{
-  margin-top: 10%;
-  border-radius: 5%;
-}
-
-.centerImg{
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-table {
-  border:none;
-  border-collapse: collapse;
-}
-
-table td {
-  border-left: 1px solid #00000020;
-  border-right: 1px solid #00000020;
-  padding: 0% 1%;
-  width: 25%;
-}
-
-table td:first-child {
-  border-left: none;
-}
-
-table td:last-child {
-  border-right: none;
-}
-
-.custom-card{
-  padding: 3%;
-  margin-top: 5%;
-  border-radius: 20px;
-  max-width: 80%;
-  max-height: 10%;
-  margin-left: auto;
-  margin-right:auto ;
-  font-size: small;
-}
-
-.card{
-  border: solid #00000020;
-  border-width: 1px;
 }
 
 .sub-title{
@@ -148,6 +62,50 @@ table td:last-child {
   margin-bottom: 2px;
   line-height: 1.5em;
 }
+
+.card-title{
+  font-size: x-large;
+  margin-bottom: 0px;
+}
+
+
+/*********** BUTTONS **********/
+.whiteButton{
+  background-color: white;
+  border-color: lightgray;
+  color: black;
+}
+
+
+
+/* ******** CONTAINERS/CARDS/DIVS ********* */
+
+.card-body:hover .icon{
+  /* transform: rotate(25deg); */
+}
+
+.card-body{
+  margin-top: 10%;
+  border-radius: 5%;
+}
+
+
+.custom-card{
+  padding: 3%;
+  margin-top: 5%;
+  border-radius: 20px;
+  max-width: 80%;
+  max-height: 10%;
+  margin-left: auto;
+  margin-right:auto ;
+  font-size: small;
+}
+
+.card{
+  border: solid #00000020;
+  border-width: 1px;
+}
+
 .cardBox{
   max-width: 95%;
   margin-left:  auto;
@@ -155,14 +113,6 @@ table td:last-child {
   max-height: 80%;
 }
 
-.maxwidth{
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-.hideBorder{
-  border: 0px;
-}
 
 .custom-container{
   position: relative;
@@ -186,12 +136,31 @@ table td:last-child {
   padding: 3% 5%;
 }
 
-.success-story-img{
-  width: 100%;
-  margin: 0 auto;
-  border-radius:25px; 
-  height: 450px; 
-  object-fit: cover
+.cards{
+ 
+  margin-top: 5%;
+  max-width: 40%;
+  max-height: 10%;
+  margin-left: auto;
+  margin-right:auto ;
+  border-color:lightgrey;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.left{
+  margin-top: 0;
+  width: 40%;
+  float: left;
+}
+
+.right{
+  width: 40%;
+  float: right;
+  margin: auto;
 }
 
 .contact-card{
@@ -202,9 +171,91 @@ table td:last-child {
   padding: 5%;
   border-radius: 10px;
 }
-.card-title{
-  font-size: x-large;
-  margin-bottom: 0px;
+/*********** HTML ELEMENTS *************/
+i{
+  color: #35bb8a ;
+  font-size: xx-large;
+  font-weight: light;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+
+table {
+  border:none;
+  border-collapse: collapse;
+}
+
+table td {
+  border-left: 1px solid #00000020;
+  border-right: 1px solid #00000020;
+  padding: 0% 1%;
+  width: 25%;
+}
+
+table td:first-child {
+  border-left: none;
+}
+
+table td:last-child {
+  border-right: none;
+}
+
+
+/******* IMGS AND ICONS*******/
+
+.icon{
+  background-color: #35bb8a20;
+  padding: 3%;
+  border-radius: 12px;
+  margin-bottom: 5%;
+}
+
+.navbar-brand {
+  margin-right: -40px;
+}
+
+.centerImg{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.success-story-img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius:25px; 
+  height: 450px; 
+  object-fit: cover
+}
+
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #35bb8a;
+  --bs-btn-border-color: #35bb8a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1bab80;
+  --bs-btn-hover-border-color: #1aa179;
+  --bs-btn-focus-shadow-rgb: 65, 209, 167;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #1aa179;
+  --bs-btn-active-border-color: #189771;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(13, 15, 12, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #35bb8a;
+  --bs-btn-disabled-border-color: #35bb8a;
+}
+
+
+.maxwidth{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hideBorder{
+  border: 0px;
 }
 
 .form-label{
@@ -238,32 +289,6 @@ table td:last-child {
   border-color:lightgrey;
   border-width: 1px;
   border-style: solid;
-}
-.cards{
- 
-  margin-top: 5%;
-  max-width: 40%;
-  max-height: 10%;
-  margin-left: auto;
-  margin-right:auto ;
-  border-color:lightgrey;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5%;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.left{
-  margin-top: 0;
-  width: 40%;
-  float: left;
-}
-
-.right{
-  width: 40%;
-  float: right;
-  margin: auto;
 }
 
 .custom-dropdown{
