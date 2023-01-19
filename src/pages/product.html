@@ -39,7 +39,40 @@
     </div>
 
 
+@@include('../components/sections/paragraph.html', {
+    subTitle:'',
+    title: 'We are',
+    typedText: '{"strings": ["self hosted...", "open source..."]}',
+    id:'',
+    cols: [
+        {
+            title:'',
+            text: 'SIPSTACK Cloud UC has several major components that make up the platform. The core PBX functions are built on Asterisk and is provided as an open-source download in several installer methods and from our GitHub page.',
+        },
+        {
+            title:'',
+            text: 'The API, web portals and email relays are all contained within the SISPTACK network, across regional datacenters keeping data within borders where compliance and regulatory boards require.',
+        },
+    ]
+})
+
+@@include('../components/sections/pop-up-image.html', {
+    id:'',
+    cols: [
+        {
+            image:'/assets/img/stack-debian.png',
+            tooltip: 'Easily migrate existing Asterisk, FreePBX based systems into SIPSTACK Cloud UC.',
+        },
+        {
+            image:'/assets/img/stack-debian.png',
+            tooltip: 'Easily migrate existing Asterisk, FreePBX based systems into SIPSTACK Cloud UC.',  
+        },
+    ]
+})
+
+
 @@include('../components/sections/cta.html', {
+    id: 'overview',
     subTitle: 'Overview',
     class: '',
     title: 'Get Started - It\'s Free',
@@ -47,6 +80,8 @@
     button: 'Create Account',
     arrow: 'true',
 })
+
+
 
 @@include('../components/sections/overview-images-left.html', {
     headerTitle: '',
@@ -74,6 +109,7 @@
 
 @@include('../components/sections/features.html',{
     subTitle: 'Features',
+    id:'features',
     title: 'Asterisk trusted, AI/ML augmented',
     cols:
         [
@@ -127,6 +163,7 @@
 )
 
 @@include('../components/sections/faq.html', {
+    id: 'faq', 
     title: 'FAQs',
     subTitle: 'Frequently Asked Questions',
     cols: [
