@@ -146,6 +146,7 @@ function browserSync(done) {
     server: {
       baseDir: [paths.src.base.dest],
     },
+    open: false,
   })
   done()
 }
@@ -267,5 +268,6 @@ exports.default = series(
   copyVendorCss,
   copyImages,
   bundleJs,
+  series(buildCss, ss_css, minifyCss),
   parallel(browserSync, watchFiles)
 )

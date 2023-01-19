@@ -6,23 +6,20 @@
     '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
-@@include('../components/layouts/nav.html',{
-    context:{
-        page: 'company'
-    }
-})
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('../components/layouts/nav.html',{})
 @@include('../components/sections/page-header.html', {
     pageTitle :'Contact',
     subTitle: 'Have Questions? Please review our resources or contact us.',
-    greenButton: 'Knowledge Base',
-    whiteButton: 'Frequently Asked Questions',
+    button1: {
+        label: 'Knowledge Base',
+        link: '/resources/knowledge-base'
+    },
+    button2: {
+        label: 'Frequently Asked Questions',
+        link: '#faq'
+    }
 })
-
 @@include('../components/sections/contact-form.html')
-
-
 @@include('../components/sections/contact-info.html',{
     cols:
         [
@@ -55,35 +52,6 @@
         ],
 })
 
-
-@@include('../components/sections/contact-emails.html',{
-    cols:
-        [
-            {
-                title: 'Sales', 
-                description: 'To reach our sales team for new accounts or questions on pricing.',
-                email:'sales@sipstack.com',
-            },
-
-            {
-                title: 'Support',
-                description: 'Existing customers can contact support by email or via the Partner Portal.',
-                email:'support@sipstack.com',
-            },
-
-            {   
-                title: 'Billing',
-                description: 'For existing customers with questions regarding invoices and payments.',
-                email: 'billing@sipstack.com'
-            },
-            {   
-                title: 'Investor Relations',
-                description: 'For new groups interested in investing into SIPSTACK and our global future.',
-                email: 'invest@sipstack.com',
-            },
-        ],
-})
-
 @@include('../components/sections/collapse.html', {
     title: 'Read our FAQs',
     subTitle: 'Have a question?',
@@ -100,8 +68,6 @@
 
     ]
 })
-
-
 @@include('../components/sections/faq.html', {
     title: 'Read our FAQs',
     subTitle: 'Have a question?',
@@ -123,7 +89,6 @@
 
     ]
 })
-
 @@include('../components/sections/2card.html',{
     cols: [
         {
@@ -140,9 +105,5 @@
     ]
 })
 
-
-
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('../components/layouts/footer.html')
-
-

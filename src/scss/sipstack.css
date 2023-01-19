@@ -1,5 +1,13 @@
 /**************************** CUSTOM TO SIPSTACK **************************/
+.form-label {
+  font-weight: 300 !important;
+}
 
+.ss-footer-sub-link + .ss-footer-sub-link::before {
+  content: ' | ';
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
 
 /********** FONT & TEXT ***********/
 .centerText {
@@ -7,8 +15,7 @@
 }
 
 .subTitleGradient {
-
-  background: radial-gradient(circle at 70%,#35bb8a 10%,#05915e 30%);
+  background: radial-gradient(circle at 70%, #35bb8a 10%, #05915e 30%);
   background-size: 400% 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -19,7 +26,6 @@
   -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
   font-weight: 510;
 
-
   /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
   font-weight: 510;
   -webkit-background-clip: text;
@@ -27,94 +33,88 @@
   animation: shine 8s linear infinite; */
 }
 
-.blackText{
+.blackText {
   color: black;
   font-weight: lighter;
 }
-.bold{
+.bold {
   font-weight: 550;
   font-size: xx-large;
-  
 }
 
-.sub-title{
+.sub-title {
   font-size: medium !important;
   margin-bottom: 0px;
 }
-.fontLarge{
+.fontLarge {
   font-size: 2.5rem;
   line-height: 2.75rem !important;
 }
-.fontWhite{
+.fontWhite {
   color: white;
   font-weight: 900;
   line-height: normal;
 }
-.success-stories-font{
+.success-stories-font {
   font-weight: 510;
   font-size: medium;
   margin-bottom: 2px;
 }
 
-.success-stories-text{
+.success-stories-text {
   font-weight: 500;
   font-size: large;
   margin-bottom: 2px;
   line-height: 1.5em;
 }
 
-.card-title{
+.card-title {
   font-size: x-large;
   margin-bottom: 0px;
 }
 
-
 /*********** BUTTONS **********/
-.whiteButton{
+.whiteButton {
   background-color: white;
   border-color: lightgray;
   color: black;
 }
 
-
-
 /* ******** CONTAINERS/CARDS/DIVS ********* */
 
-.card-body:hover .icon{
+.card-body:hover .icon {
   /* transform: rotate(25deg); */
 }
 
-.card-body{
+.card-body {
   margin-top: 10%;
   border-radius: 5%;
 }
 
-
-.custom-card{
+.custom-card {
   padding: 3%;
   margin-top: 5%;
   border-radius: 20px;
   max-width: 80%;
   max-height: 10%;
   margin-left: auto;
-  margin-right:auto ;
+  margin-right: auto;
   font-size: small;
 }
 
-.card{
+.card {
   border: solid #00000020;
   border-width: 1px;
 }
 
-.cardBox{
+.cardBox {
   max-width: 95%;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
   max-height: 80%;
 }
 
-
-.custom-container{
+.custom-container {
   position: relative;
   margin-bottom: 5%;
   width: 80%;
@@ -123,27 +123,26 @@
   margin-top: 5%;
 }
 
-.divOverlay{
+.divOverlay {
   position: absolute;
-  top:0px;
+  top: 0px;
   left: 1%;
   right: 1%;
   border-radius: 25px;
-  background-color: #35bb8aDF;
+  background-color: #35bb8adf;
   height: 100%;
 
   overflow: hidden;
   padding: 3% 5%;
 }
 
-.cards{
- 
+.cards {
   margin-top: 5%;
   max-width: 40%;
   max-height: 10%;
   margin-left: auto;
-  margin-right:auto ;
-  border-color:lightgrey;
+  margin-right: auto;
+  border-color: lightgrey;
   border-width: 1px;
   border-style: solid;
   padding: 5%;
@@ -151,29 +150,29 @@
   background-color: white;
 }
 
-.left{
+.left {
   margin-top: 0;
   width: 40%;
   float: left;
 }
 
-.right{
+.right {
   width: 40%;
   float: right;
   margin: auto;
 }
 
-.contact-card{
+.contact-card {
   width: 40%;
-  border-color:lightgrey;
+  border-color: lightgrey;
   border-width: 1px;
   border-style: solid;
   padding: 5%;
   border-radius: 10px;
 }
 /*********** HTML ELEMENTS *************/
-i{
-  color: #35bb8a ;
+i {
+  color: #35bb8a;
   font-size: xx-large;
   font-weight: light;
   margin-top: 7%;
@@ -181,7 +180,7 @@ i{
 }
 
 table {
-  border:none;
+  border: none;
   border-collapse: collapse;
 }
 
@@ -200,10 +199,9 @@ table td:last-child {
   border-right: none;
 }
 
-
 /******* IMGS AND ICONS*******/
 
-.icon{
+.icon {
   background-color: #35bb8a20;
   padding: 3%;
   border-radius: 12px;
@@ -214,22 +212,20 @@ table td:last-child {
   margin-right: -40px;
 }
 
-.centerImg{
+.centerImg {
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-.success-story-img{
+.success-story-img {
   width: 100%;
   margin: 0 auto;
-  border-radius:25px; 
-  height: 450px; 
-  object-fit: cover
+  border-radius: 25px;
+  height: 450px;
+  object-fit: cover;
 }
-
 
 .btn-success {
   --bs-btn-color: #fff;
@@ -248,21 +244,20 @@ table td:last-child {
   --bs-btn-disabled-border-color: #35bb8a;
 }
 
-
-.maxwidth{
+.maxwidth {
   max-width: 80%;
   margin: 0 auto;
 }
 
-.hideBorder{
+.hideBorder {
   border: 0px;
 }
 
-.form-label{
+.form-label {
   font-weight: lighter;
   margin-bottom: 0px;
 }
-.form-control-custom{
+.form-control-custom {
   height: 2em !important;
   min-height: 10px;
   font-size: 1em;
@@ -270,53 +265,50 @@ table td:last-child {
   border-radius: 10px;
 }
 
-.form-control-text{
+.form-control-text {
   font-size: 1em;
   padding: 8px;
   border-radius: 10px;
 }
 
-.text-email{
-  color:#35bb8a;
+.text-email {
+  color: #35bb8a;
 }
 
-.custom-collapse{
+.custom-collapse {
   background-color: white;
   padding: 1rem 2rem;
   margin: 5% auto;
   width: 70%;
   border-radius: 25px;
-  border-color:lightgrey;
+  border-color: lightgrey;
   border-width: 1px;
   border-style: solid;
 }
 
-.custom-dropdown{
+.custom-dropdown {
   width: 94.6em;
   padding: 5% 5% !important;
 }
 
 .border-left {
   padding-left: 2.5em !important;
-
 }
 
-
-.nav-col-custom-inner{
+.nav-col-custom-inner {
   flex: 0 0 auto;
   width: 13%;
   margin-left: 2%;
   margin-right: 2%;
 }
-.nav-col-custom-outer{
+.nav-col-custom-outer {
   flex: 0 0 auto;
   width: 27%;
   margin-left: 3%;
   margin-right: 3%;
-  
 }
 
-.border-left{
+.border-left {
   border-left: 1px solid lightgray;
   padding-left: 1em;
   padding-bottom: 0.5em;
@@ -325,7 +317,7 @@ table td:last-child {
 .button-dropdown {
   border: none;
   color: rgb(102, 101, 101) !important ;
-  background:transparent;
+  background: transparent;
   transition: all 0.5s;
   cursor: pointer;
   padding: 0px;
@@ -360,13 +352,13 @@ table td:last-child {
   right: 0;
   color: #35bb8a;
 }
-.dropdown-menu-fw{
+.dropdown-menu-fw {
   margin: 0 !important;
   position: absolute;
   /* left: -5em; */
 }
 
-.dropdown-menu{
+.dropdown-menu {
   /* margin: 0 !important; */
   position: absolute;
   /* left: -6.25em; */
@@ -375,23 +367,23 @@ table td:last-child {
   margin-left: -5.6em !important;
 }
 
-.text-muted{
+.text-muted {
   color: rgb(102, 101, 101) !important;
 }
 
-
-
-.ss-custom-page-header{
-  background-color: #F5F6FA; 
-  background-image: url('assets/img/hero-shape-ss-k.svg'); 
-  background-repeat:no-repeat;
+.ss-custom-page-header {
+  background-color: #f5f6fa;
+  background-image: url('assets/img/hero-shape-ss-k.svg');
+  background-repeat: no-repeat;
   background-position: right top;
   background-size: 75%;
 }
 
 /* nav menu ---------------------------- */
-header:not(.scroll-up):not(.is-sticky):not(.is-fixed) .navbar-light.navbar-link-white .navbar-nav .nav-link.active {
-  color:#35bb8a;
+header:not(.scroll-up):not(.is-sticky):not(.is-fixed)
+  .navbar-light.navbar-link-white
+  .navbar-nav
+  .nav-link.active {
+  color: #35bb8a;
   font-weight: 500;
 }
-

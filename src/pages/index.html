@@ -7,115 +7,60 @@
     ]
 })
 @@include('../components/layouts/nav.html',{
-    context:{
-        page: 'products'
-    }
+    class: 'navbar-link-white'
 })
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
 @@include('../components/sections/hero-slider.html')
-
-
-<!-- prettier-ignore -->
-<!-- @@include('../components/sections/info-table.html',{
-    title: 'Beyond Telecom',
-    description: 'Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before.',
-    cols: [
-        {title: 'Origin', description: 'Every phone number cites origin data including regional, switch and carrier details.'},
-        {title: 'CallerID Name', description: 'Receive the most accurate CallerID Name information including any website, email and social links.'},
-        {title: 'Risk Scoring', description: 'Real-time risk scoring is provided on every phone number lookup when querying with a destination.'},
-        {title: 'Community Feedback',  description: 'Access up to date remarks about phone numbers from our community using our Whois applications.'},
-    ]
-}) -->
-
-
-<!-- prettier-ignore -->
-<!-- @@include('../components/sections/counter.html',{
-cols: [
-    {title: 'Unique Whois Pages', suffix: 'M+', count_to: '1100', description: ''},
-    {title: 'Machine Learning Data Points', suffix: '+', count_to: '88', description: ''},
-    {title: 'Voice Model Training Hours', suffix: '+', count_to: '3800', description: ''},
-    {title: 'Websites Scanned', suffix: 'M+', count_to: '220', description: ''},
-]
-}) -->
-
+@@include('../components/sections/feature.img-r.html',{ 
+    attr: 'id="intro"' 
+})
 @@include('../components/sections/world-map.html',{
-    title: 'Beyond Telecom',
-    description: 'Not just for telecommunication providers, SIPSTACK integrates into any system tapping into telco meta-data like never before.',
+    title: 'New Era of Trust',
+    description: 'Phone Number lookups on a whole new level. Tap into telco meta-data like never before.',
     cols: [
         {title: 'Origin', description: 'Every phone number cites origin data including regional, switch and carrier details.'},
         {title: 'CallerID Name', description: 'Receive the most accurate CallerID Name information including any website, email and social links.'},
         {title: 'Risk Scoring', description: 'Real-time risk scoring is provided on every phone number lookup when querying with a destination.'},
-        {title: 'Community Feedback',  description: 'Access up to date remarks about phone numbers from our community using our Whois applications.'},
+        {title: 'Community Feedback',  description: 'Access up to date community remarks about phone numbers using our Whois applications.'},
     ],
     cols2: [
     {title: 'Unique Whois Pages', suffix: 'M+', count_to: '1100', description: ''},
     {title: 'Machine Learning Data Points', suffix: '+', count_to: '88', description: ''},
-    {title: 'Voice Model Training Hours', suffix: '+', count_to: '3800', description: ''},
-    {title: 'Websites Scanned', suffix: 'M+', count_to: '220', description: ''},
+    {title: 'Identified Profiles', suffix: 'M+', count_to: '330', description: ''},
 ]
 })
-
-@@include('../components/sections/feature-chart.html',{
-    subTitle: 'Amazing Features',
+@@include('../components/sections/feature.cards.html',{
+    subTitle: 'Products',
     title: 'Beyond Unified Communications',
     cols:
         [
             {
-                title: 'Cloud UC', 
+                title: 'SIPSTACK UC', 
                 description: 'Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.',
+                link: '/product/sipstack-uc',
                 icon: 'bxs-cloud',
             },
 
             {
                 title: 'Smart CNAM',
                 description: 'AI/ML & Community driven CNAM / Caller ID Name lookup, absolutely FREE!',
-                icon: 'bxs-search',
+                link: '/product/smart-cnam',
+                icon: 'bxs-badge-check',
             },
 
             {   
                 title: 'SIP Free',
                 description: 'TF SIP trunk temination. Available for any SIP based system, 100% FREE!',
-                icon: 'bx-no-signal'
+                link: '/product/sip-free',
+                icon: 'bx-coffee-togo'
             },
             {   
                 title: 'Whois',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx-desktop'
+                description: 'Public CNAM / Caller ID Name lookup, because everyone deserves to know.',
+                link: '/product/whois',
+                icon: 'bx-search'
             },
         ],
 })
-
-@@include('../components/sections/benefit-cards.html',{
-    subTitle: 'Amazing Features',
-    title: 'Beyond Unified Communications',
-    cols:
-        [
-            {
-                title: 'Cloud UC', 
-                description: 'Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.',
-                icon: 'bxs-cloud',
-            },
-
-            {
-                title: 'Smart CNAM',
-                description: 'AI/ML & Community driven CNAM / Caller ID Name lookup, absolutely FREE!',
-                icon: 'bxs-search',
-            },
-
-            {   
-                title: 'SIP Free',
-                description: 'TF SIP trunk temination. Available for any SIP based system, 100% FREE!',
-                icon: 'bx-no-signal'
-            },
-            {   
-                title: 'Whois',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx-desktop'
-            },
-        ],
-})
-
 @@include('../components/sections/feature-cards.html',{
     subTitle: 'Cloud UC',
     title: 'Your next UCaaS platform, powered by AI & you',
@@ -140,7 +85,6 @@ cols: [
             },
         ],
 })
-
 @@include('../components/sections/success-stories.html',{
     header:'Success Stories',
     title:'Learn how TELAIR built a better managed PBX offering',
@@ -150,7 +94,6 @@ cols: [
     featureImg:'/assets/img/ta-console-v0.png',
     link:"https://www.sipstack.com/resources/case-study/20210412-telair"
 })
-
-@@include('../components/sections/cta.html')
+@@include('../components/sections/feature.posts.html')
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('../components/layouts/footer.html')
