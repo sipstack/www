@@ -1,6 +1,8 @@
 /**************************** CUSTOM TO SIPSTACK **************************/
 
-
+.ss-bg-lightgrey{
+  background-color: #F5F6FA;
+}
 /********** FONT & TEXT ***********/
 .centerText {
   text-align: center;
@@ -79,6 +81,24 @@
 
 
 /* ******** CONTAINERS/CARDS/DIVS ********* */
+
+.ss-background-gradient {
+
+  background: radial-gradient(circle at 60%,#35bb8a 5%,#5de4b2 70%);
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  animation: textGradientAnimation 5s ease-in-out infinite;
+  -webkit-animation: textGradientAnimation 3s ease-in-out infinite;
+
+
+  /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
+  font-weight: 510;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite; */
+}
 
 .card-body:hover .icon{
   /* transform: rotate(25deg); */
@@ -180,23 +200,23 @@ i{
   margin-bottom: 3%;
 }
 
-table {
+.ss-custom-table table {
   border:none;
   border-collapse: collapse;
 }
 
-table td {
+.ss-custom-table table td {
   border-left: 1px solid #00000020;
   border-right: 1px solid #00000020;
   padding: 0% 1%;
   width: 25%;
 }
 
-table td:first-child {
+.ss-custom-table table td:first-child {
   border-left: none;
 }
 
-table td:last-child {
+.ss-custom-table table td:last-child {
   border-right: none;
 }
 
@@ -395,3 +415,15 @@ header:not(.scroll-up):not(.is-sticky):not(.is-fixed) .navbar-light.navbar-link-
   font-weight: 500;
 }
 
+/* NOT OURS */
+
+
+
+.sticky-top{
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+}
+
+    

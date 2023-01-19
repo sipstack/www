@@ -14,25 +14,24 @@
 
 
 
-    <div class= "card custom-card border-1 shadow-lg">
-        <table>
-            <tr>
-                @@for (var i = 0; i <  cols.length; i++) {
-                    <td class = "centerText">
-                        <!-- icon-->
-                        <i class="bx `+cols[i].icon+`"></i>
-                        <!--title-->
-                        <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
-                        <!--text-->
-                        <p class="mb-4 text-muted">`+cols[i].description+`</p>
+        <div class= "card custom-card border-1 shadow-lg ss-custom-table">
+            <table>
+                <tr>
+                    @@for (var i = 0; i <  cols.length; i++) {
+                        <td class = "centerText">
+                            <!-- icon-->
+                            <i class="bx `+cols[i].icon+`"></i>
+                            <!--title-->
+                            <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
+                            <!--text-->
+                            <p class="mb-4 text-muted">`+cols[i].description+`</p>
 
-                    </td>
-                }
-            </tr>
-        </table>
+                        </td>
+                    }
+                </tr>
+            </table>
 
-    </div>
-
+        </div>
 
     </div>
 
