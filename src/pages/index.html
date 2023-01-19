@@ -8,7 +8,7 @@
 })
 @@include('../components/layouts/nav.html',{
     context:{
-        page: 'products'
+        page: 'index'
     }
 })
 
@@ -151,6 +151,12 @@ cols: [
     link:"https://www.sipstack.com/resources/case-study/20210412-telair"
 })
 
-@@include('../components/sections/cta.html')
+@@include('../components/sections/cta.html', {
+    subTitle: 'Get Started',
+    title: 'Start Connecting',
+    description: 'Seen enough? It\'s free to start now.',
+    button: 'Create Account',
+    arrow: 'false',
+})
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('../components/layouts/footer.html')
