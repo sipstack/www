@@ -15,7 +15,10 @@ const glob = require('glob')
 const fileinclude = require('gulp-file-include')
 const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
-// Define paths
+// added -----------------------------------------
+const markdown = require('gulp-markdown-it')
+
+// Define paths ----------------------------------
 var paths = {
   here: './',
   base: {
@@ -234,6 +237,12 @@ function ss_css(cb) {
   cb()
 }
 
+function ss_test(cb) {
+  src('tmp/*.md').pipe(markdown()).pipe(dest('tmp'))
+
+  cb()
+}
+
 // ------------------------------------------------------------------------------
 function watchFiles() {
   watch(
@@ -247,6 +256,8 @@ function watchFiles() {
     series(html, browsersyncReload)
   )
 }
+
+exports.test = ss_test
 
 exports.watchFiles = watch
 exports.buildCss = buildCss

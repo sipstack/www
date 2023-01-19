@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "example": "cd .example/assan-main/ && gulp && cd ../../",
-    "dev": "gulp"
+    "dev": "gulp",
+    "test": "gulp test"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-imagemin": "^7.1.0",
+    "gulp-markdown-it": "^0.1.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
