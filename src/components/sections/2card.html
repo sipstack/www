@@ -1,18 +1,25 @@
 <section class="position-relative bg-light" id="contact">
-    <div class="container py-9 py-lg-12" style="padding-top: 0px !important;">
-        <div class="row" style = "margin: auto auto;">
-           
-            @@for (var i = 0; i <  cols.length; i++) {
-                <div class="col-md-8 col-lg-7 mb-7 mb-md-0 me-auto  cards centerText">
-                <!--Section Heading-->
-                <h3 class="mb-0 display-1 bold small" data-aos="fade-up" data-aos-delay="100" style="font-size: x-large; font-weight: 500;">`+cols[i].title+`</h3>
+  <div class="container py-9 py-lg-12" style="padding-top: 0px !important">
+    <div
+      class="row"
+      style="margin: auto auto"
+      data-aos="fade-up"
+      data-aos-delay="300">
+      @@for (var i = 0; i < cols.length; i++) {
+      <div
+        class="col-md-8 col-lg-7 mb-7 mb-md-0 me-auto cards centerText shadow-md">
+        <!--Section Heading-->
+        <h3
+          class="mb-0 display-1 bold small"
+          style="font-size: x-large; font-weight: 500">
+          `+cols[i].title+`
+        </h3>
 
-                <p class="pt-3 text-muted">`+cols[i].description+`</p>
+        <p class="pt-3 text-muted">`+cols[i].description+`</p>
 
-                <a href="#!" class="btn btn-primary btn-lg small">`+cols[i].button+`</a>
-                </div>
-            }
-
-        </div>
+        <a href="#!" class="btn btn-primary btn-lg small">`+cols[i].button+`</a>
+      </div>
+      }
     </div>
+  </div>
 </section>
