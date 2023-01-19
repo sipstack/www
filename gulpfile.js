@@ -149,6 +149,9 @@ function browserSync(done) {
   browsersync.init({
     server: {
       baseDir: [paths.src.base.dest],
+      serveStaticOptions: {
+        extensions: ['html'],
+      },
     },
     open: false,
   })
