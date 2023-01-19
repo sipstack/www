@@ -1,13 +1,13 @@
 <!-- prettier-ignore -->
-@@include('../components/layouts/header.html', {
+@@include('components/layouts/header.html', {
     title: 'SIPSTACK',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
-@@include('../components/layouts/nav.html',{})
-@@include('../components/sections/page-header.html', {
+@@include('components/layouts/nav.html',{})
+@@include('components/sections/page-header.html', {
     pageTitle :'Contact',
     subTitle: 'Have Questions? Please review our resources or contact us.',
     button1: {
@@ -19,8 +19,8 @@
         link: '#faq'
     }
 })
-@@include('../components/sections/contact-form.html')
-@@include('../components/sections/contact-info.html',{
+@@include('components/sections/contact-form.html')
+@@include('components/sections/contact-info.html',{
     cols:
         [
             {
@@ -52,7 +52,7 @@
         ],
 })
 
-@@include('../components/sections/collapse.html', {
+@@include('components/sections/collapse.html', {
     title: 'Read our FAQs',
     subTitle: 'Have a question?',
     cols: [
@@ -68,7 +68,7 @@
 
     ]
 })
-@@include('../components/sections/faq.html', {
+@@include('components/sections/faq.html', {
     title: 'Read our FAQs',
     subTitle: 'Have a question?',
     cols: [
@@ -89,7 +89,7 @@
 
     ]
 })
-@@include('../components/sections/2card.html',{
+@@include('components/sections/2card.html',{
     cols: [
         {
             title: 'Start Now!',
@@ -106,4 +106,4 @@
 })
 
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
-@@include('../components/layouts/footer.html')
+@@include('components/layouts/footer.html')

@@ -1,19 +1,19 @@
 <!-- prettier-ignore -->
-@@include('../components/layouts/header.html', {
+@@include('components/layouts/header.html', {
     title: 'SIPSTACK',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
-@@include('../components/layouts/nav.html',{
+@@include('components/layouts/nav.html',{
     class: 'navbar-link-white'
 })
-@@include('../components/sections/hero-slider.html')
-@@include('../components/sections/feature.img-r.html',{ 
+@@include('components/sections/hero-slider.html')
+@@include('components/sections/feature.img-r.html',{ 
     attr: 'id="intro"' 
 })
-@@include('../components/sections/world-map.html',{
+@@include('components/sections/world-map.html',{
     title: 'New Era of Trust',
     description: 'Phone Number lookups on a whole new level. Tap into telco meta-data like never before.',
     cols: [
@@ -28,7 +28,7 @@
     {title: 'Identified Profiles', suffix: 'M+', count_to: '330', description: ''},
 ]
 })
-@@include('../components/sections/feature.cards.html',{
+@@include('components/sections/feature.cards.html',{
     subTitle: 'Products',
     title: 'Beyond Unified Communications',
     cols:
@@ -61,7 +61,7 @@
             },
         ],
 })
-@@include('../components/sections/feature-cards.html',{
+@@include('components/sections/feature-cards.html',{
     subTitle: 'Cloud UC',
     title: 'Your next UCaaS platform, powered by AI & you',
     cols:
@@ -85,7 +85,7 @@
             },
         ],
 })
-@@include('../components/sections/success-stories.html',{
+@@include('components/sections/success-stories.html',{
     header:'Success Stories',
     title:'Learn how TELAIR built a better managed PBX offering',
     description:'Migrating to SIPSTACK Cloud UC simplified administration and enhanced customer self care and experience.',
@@ -94,6 +94,6 @@
     featureImg:'/assets/img/ta-console-v0.png',
     link:"https://www.sipstack.com/resources/case-study/20210412-telair"
 })
-@@include('../components/sections/feature.posts.html')
+@@include('components/sections/feature.posts.html')
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
-@@include('../components/layouts/footer.html')
+@@include('components/layouts/footer.html')

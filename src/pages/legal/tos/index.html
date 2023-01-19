@@ -1,0 +1,33 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/header.html', {
+    title: 'SIPSTACK',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+@@include('components/layouts/nav.html',{})
+@@include('components/sections/page-header.html', {
+    pageTitle :'Contact',
+    subTitle: 'Have Questions? Please review our resources or contact us.',
+    button1: {
+        label: 'Knowledge Base',
+        link: '/resources/knowledge-base'
+    },
+    button2: {
+        label: 'Frequently Asked Questions',
+        link: '#faq'
+    }
+})
+<section class="position-relative">
+  <div class="container py-9 py-lg-11">
+    <div class="row pt-4 pt-lg-9 justify-content-center">
+      <div class="col-xl-9">
+        <div class="shadow-lg rounded-4 px-4 px-lg-6 py-5 py-lg-7">
+          @@include('pages/legal/tos/content.html')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('components/layouts/footer.html')

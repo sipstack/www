@@ -17,6 +17,7 @@ const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
 const markdown = require('gulp-markdown-it')
+const replace = require('gulp-replace')
 
 // Define paths ----------------------------------
 var paths = {
@@ -36,7 +37,7 @@ var paths = {
       dest: './dist',
     },
     html: {
-      dir: './src/pages/*.html',
+      dir: './src/pages/**/*.html',
       files: './src/pages/**/*.html',
       dest: './dist',
       cleanHtml: './dist/*.html',
@@ -211,7 +212,8 @@ function html(cb) {
     .pipe(
       fileinclude({
         prefix: '@@',
-        basepath: '@file',
+        // basepath: '@file',
+        basepath: 'src',
         indent: true,
       })
     )
@@ -237,8 +239,21 @@ function ss_css(cb) {
   cb()
 }
 
-function ss_test(cb) {
-  src('tmp/*.md').pipe(markdown()).pipe(dest('tmp'))
+function ss_markdown(cb) {
+  src('src/pages/**/*.md')
+    .pipe(replace('“', '"'))
+    .pipe(replace('”', '"'))
+    .pipe(replace('‘', "'"))
+    .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
+    .pipe(replace('–', '-'))
+    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
+    .pipe(markdown())
+    .pipe(
+      dest(function (file) {
+        return file.base
+      })
+    )
 
   cb()
 }
@@ -255,9 +270,10 @@ function watchFiles() {
     [paths.src.html.files, 'src/components/**/*.html'],
     series(html, browsersyncReload)
   )
+  watch(['src/**/*.md'], series(ss_markdown, html, browsersyncReload))
 }
 
-exports.test = ss_test
+exports.test = ss_markdown
 
 exports.watchFiles = watch
 exports.buildCss = buildCss
@@ -271,6 +287,7 @@ exports.copyImages = copyImages
 exports.default = series(
   cleanUp,
   ss_public,
+  ss_markdown,
   html,
   buildCss,
   ss_css,
