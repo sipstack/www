@@ -17,7 +17,52 @@ const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
 const markdown = require('gulp-markdown-it')
+const markdownIt = require('markdown-it')
+const tap = require('gulp-tap')
 const replace = require('gulp-replace')
+
+// require markdown-it plugins
+// const abbr = require("markdown-it-abbr");
+// const alerts = require("markdown-it-alerts");
+const md_anc = require('markdown-it-anchor')
+const md_attrs = require('markdown-it-attrs')
+// const embed = require("markdown-it-block-embed");
+// const fn = require("markdown-it-footnote");
+// const figs = require("markdown-it-implicit-figures");
+// const kbd = require("markdown-it-kbd");
+// const prism = require("markdown-it-prism");
+// const toc = require("markdown-it-table-of-contents");
+// const list = require("markdown-it-task-lists");
+
+// Markdown-It Options
+const options = {
+  preset: 'commonmark',
+  html: true,
+  xhtmlOut: true,
+  linkify: true,
+  // typographer: true,
+}
+
+const md = new markdownIt()
+// md.use(abbr);
+// md.use(alerts);
+md.use(md_attrs)
+md.use(md_anc)
+
+// md.use(embed);
+// md.use(fn);
+// md.use(figs);
+// md.use(kbd);
+// md.use(prism);
+// md.use(toc);
+// md.use(list);
+
+function markdownToHtml(file) {
+  const result = md.render(file.contents.toString())
+  file.contents = new Buffer(result)
+  // file.path = replaceExt(file.path, '.html')
+  return
+}
 
 // Define paths ----------------------------------
 var paths = {
@@ -251,7 +296,26 @@ function ss_markdown(cb) {
     .pipe(replace(' ', ''))
     .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(markdown())
+    // .pipe(
+    //   markdown({
+    //     options: {
+    //       html: true,
+    //       linkify: true,
+    //       breaks: true,
+    //       // typographer: true,
+    //     },
+    //     plugins: ['markdown-it-github-headings'],
+    //   })
+    // )
+    .pipe(tap(markdownToHtml))
+    .pipe(
+      rename(function (path) {
+        // Updates the object in-place
+        // path.dirname += "/ciao";
+        // path.basename += "-goodbye";
+        path.extname = '.html'
+      })
+    )
     .pipe(
       dest(function (file) {
         return file.base
