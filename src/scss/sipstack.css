@@ -9,6 +9,10 @@
   margin-left: 0.5rem;
 }
 
+.ss-nav-link-toc.active {
+  color: var(--bs-nav-link-hover-color) !important;
+}
+
 /********** FONT & TEXT ***********/
 .centerText {
   text-align: center;

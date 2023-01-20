@@ -16,7 +16,7 @@ const fileinclude = require('gulp-file-include')
 const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
-const markdown = require('gulp-markdown-it')
+// const markdown = require('gulp-markdown-it') //
 const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
 const replace = require('gulp-replace')
@@ -31,8 +31,8 @@ const md_attrs = require('markdown-it-attrs')
 // const figs = require("markdown-it-implicit-figures");
 // const kbd = require("markdown-it-kbd");
 // const prism = require("markdown-it-prism");
-// const toc = require("markdown-it-table-of-contents");
-// const list = require("markdown-it-task-lists");
+const md_toc = require('markdown-it-table-of-contents')
+const md_list = require('markdown-it-task-lists')
 
 // Markdown-It Options
 const options = {
@@ -54,12 +54,18 @@ md.use(md_anc)
 // md.use(figs);
 // md.use(kbd);
 // md.use(prism);
-// md.use(toc);
-// md.use(list);
+md.use(md_toc, {
+  containerClass: 'ss-toc-md',
+  // containerHeaderHtml: '<div class="col-md-3 col-xl-2">',
+  // containerFooterHtml: '</div></div><div class="col-md-9 col-xl-8 mx-auto">',
+})
+// md.use(md_toc, { includeLevel: [1, 2, 3, 4] })
+md.use(md_list)
 
 function markdownToHtml(file) {
   const result = md.render(file.contents.toString())
-  file.contents = new Buffer(result)
+  // file.contents = new Buffer(result)
+  file.contents = Buffer.from(result)
   // file.path = replaceExt(file.path, '.html')
   return
 }
@@ -308,6 +314,7 @@ function ss_markdown(cb) {
     //   })
     // )
     .pipe(tap(markdownToHtml))
+    .pipe(replace('<p></p>', ''))
     .pipe(
       rename(function (path) {
         // Updates the object in-place
