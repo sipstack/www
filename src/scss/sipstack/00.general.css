@@ -102,22 +102,6 @@
   animation: shine 8s linear infinite; */
 }
 
-.ss-background-gradient {
-  background: radial-gradient(circle at 60%, #35bb8a 5%, #5de4b2 70%);
-  background-size: 400% 400%;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  animation: textGradientAnimation 5s ease-in-out infinite;
-  -webkit-animation: textGradientAnimation 3s ease-in-out infinite;
-
-  /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
-  font-weight: 510;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite; */
-}
-
 .card-body:hover .icon {
   /* transform: rotate(25deg); */
 }
@@ -423,3 +407,5 @@ header:not(.scroll-up):not(.is-sticky):not(.is-fixed)
   color: #35bb8a;
   font-weight: 500;
 }
+
+

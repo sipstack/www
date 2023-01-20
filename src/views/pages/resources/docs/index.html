@@ -1,0 +1,56 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('components/sections/header.simple.html', {
+    subTitle : 'Resources',
+    title :'Documentation',
+    description: 'Guides to help you setup SIPSTACK products to get started as fast as possible.',
+    
+    
+})
+
+
+@@include('components/sections/feature.cards.html',{
+    subTitle: 'Products',
+    title: 'Beyond Unified Communications',
+    cols:
+        [
+        {
+            title: 'Partner Portal', 
+            description: 'Access all of our products through one centralized portal',
+            link: '/resources/docs/partner-portal',
+            icon: 'bx-window-alt',
+        },
+
+        {
+            title: 'Whois',
+            description: 'Sat goodbye to fraudsters & spammers with Whois profiles.',
+            link: '/resources/docs/whois',
+            icon: 'bx-desktop',
+        },
+
+        {   
+            title: 'Smart CNAM',
+            description: 'Integrate intelligent call lookups into any voice network.',
+            link: '/resources/docs/smart-cnam',
+            icon: 'bx-search',
+        },
+        {   
+            title: 'Sip Free',
+            description: 'Lower your operational costs with enhanced SIP Trunks.',
+            link: '/resources/docs/sip-free',
+            icon: 'bx-trash-alt',
+        },
+        ],
+})
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')
