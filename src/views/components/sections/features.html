@@ -1,0 +1,28 @@
+<section class="position-relative border-bottom ss-bg-lightgrey" id="@@id">
+    <div class="container py-9 py-lg-9">
+        <div class ="mb-6 mb-lg-6 centerText">
+            <!--Subheading-->
+            <div class="mb-3" data-aos="fade-up">
+                <span class="h4 subTitleGradient">@@subTitle</span>
+            </div>
+            <!--Section Heading-->
+            <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
+        </div>
+        <div class="row justify-content-around">
+            @@for (var i = 0; i <  cols.length; i++) {
+                <!--begin:Feature column-->
+                <div class="col-12 col-lg-3 mb-7 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <!--Icon-->
+                        <div class="mb-4 position-relative display-3 fw-normal text-primary">
+                        <i class="`+cols[i].icon+` position-relative"></i>
+                        </div>
+                        <h5 class="mb-3 sub-title">`+cols[i].title+`</h5>
+                        <p class="mb-3 px-lg-3 text-muted">`+cols[i].description+`</p>
+                    </div>
+                </div>
+                <!--end:Feature column-->
+            }
+        </div>
+    </div>
+</section>
