@@ -1,5 +1,13 @@
-# Terms of Service
+### Introduction {#intro}
 
-## test 1
+Welcome to the SIPSTACK General app (the “App”) Terms of Service. Our apps and websites, and the services made available via our apps and websites (all our apps, websites and services are referred to collectively as the “Services”). The App enables users to: (a) have incoming calls identified by SIPSTACK as a potentially “unknown identity/reputation” that are either missed or rejected by the user, to be automatically forwarded to a voice messaging system hosted by SIPSTACK that would appear on the App for retrieval by the user, in the event the caller leaves a voice message, or to have a voicemail emailed to the user. The App is offered by SIPSTACK on a purely opt-in basis and therefore a user would have to affirmatively elect to use it. Similarly, users can disable the App at any time, even after opting in to use it.
 
-this is a test
+We (“SIPSTACK,” “we,” or “us”) want you to have a great experience with our Services and so it is critical that you review and understand the terms and conditions that apply to your use of the Services. These Terms of Service (“Agreement”) form a legal contract between you and SIPSTACK, so please read every section and pay special attention to our dispute resolution policy in Section 9, which requires mandatory arbitration of disputes in many circumstances.
+
+This Agreement applies only to the non-commercial, personal use of SIPSTACK Services by consumers. If you are a business entity or otherwise intend to use SIPSTACK services for any commercial purpose, you must enter into a separate agreement with SIPSTACK (a “Commercial Use Agreement”), and this Agreement does not apply to your use of SIPSTACK services. You may not use SIPSTACK services for any commercial purpose unless you have entered into a Commercial Use Agreement with SIPSTACK. For more information about SIPSTACK services for businesses, please click here.
+
+### 1. Acceptance of Terms {#accept}
+
+By using any of the Services that contain or link to this Agreement, you agree to be legally bound by the terms and conditions of this Agreement and our App Privacy Policy, which is incorporated by this reference.
+
+Certain features of the Services may be subject to additional guidelines, terms or rules, which will be posted in or on the Services in connection with such features. All such additional terms, guidelines and rules are incorporated by reference into this Agreement.
