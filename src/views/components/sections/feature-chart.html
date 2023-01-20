@@ -1,0 +1,38 @@
+<section class="position-relative overflow-hidden" style="background-color: #F5F6FA;">
+    <!--content-->
+    <div class="container py-9 py-lg-9 position-relative">
+        <div class="row mb-7 mb-lg-3 align-items-center">
+            <div class ="centerText">
+                <!--Subheading-->
+                <div class="mb-3" data-aos="fade-up">
+                    <span class="h4 subTitleGradient">@@subTitle</span>
+                </div>
+                <!--Section Heading-->
+                <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
+            </div>
+        </div>
+
+
+
+        <div class= "card custom-card border-1 shadow-lg ss-custom-table">
+            <table>
+                <tr>
+                    @@for (var i = 0; i <  cols.length; i++) {
+                        <td class = "centerText">
+                            <!-- icon-->
+                            <i class="bx `+cols[i].icon+`"></i>
+                            <!--title-->
+                            <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
+                            <!--text-->
+                            <p class="mb-4 text-muted">`+cols[i].description+`</p>
+
+                        </td>
+                    }
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+</section>

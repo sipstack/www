@@ -16,6 +16,7 @@ const fileinclude = require('gulp-file-include')
 const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
+const concat = require('gulp-concat')
 // const markdown = require('gulp-markdown-it') //
 const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
@@ -88,8 +89,8 @@ var paths = {
       dest: './dist',
     },
     html: {
-      dir: './src/pages/**/*.html',
-      files: './src/pages/**/*.html',
+      dir: './src/views/pages/**/*.html',
+      files: './src/views/pages/**/*.html',
       dest: './dist',
       cleanHtml: './dist/*.html',
     },
@@ -132,6 +133,7 @@ var paths = {
         './node_modules/dropzone/dist/min/dropzone.min.js',
         './node_modules/autosize/dist/autosize.min.js',
         './node_modules/bs-stepper/dist/js/bs-stepper.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
       ],
       css: [
         './node_modules/swiper/swiper-bundle.min.css',
@@ -214,9 +216,9 @@ function browsersyncReload(done) {
   done()
 }
 
-function bundleJs() {
+function bundleJs(cb) {
   var files = glob.sync('./src/js/theme.js')
-  return browserify({
+  browserify({
     entries: files,
     debug: true,
     cache: {},
@@ -233,6 +235,16 @@ function bundleJs() {
     .pipe(uglify())
     .pipe(sourcemaps.write(paths.here))
     .pipe(dest(paths.src.js.dest))
+
+  src(['src/js/sipstack/*.js'])
+    .pipe(concat('sipstack.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.js.dest))
+
+  cb()
 }
 //styles
 function buildCss() {
@@ -244,8 +256,8 @@ function buildCss() {
     .pipe(dest(paths.src.scss.dest))
     .pipe(browsersync.stream())
 }
-function minifyCss() {
-  return src(paths.src.scss.main)
+function minifyCss(cb) {
+  src(paths.src.scss.main)
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer())
@@ -258,6 +270,23 @@ function minifyCss() {
     .pipe(sourcemaps.write(paths.here))
     .pipe(dest(paths.src.scss.dest))
     .pipe(browsersync.stream())
+
+  src(['src/scss/sipstack/*.css'])
+    .pipe(concat('sipstack.css'))
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.scss.dest))
+    .pipe(browsersync.stream())
+
+  cb()
 }
 
 //Copy html
@@ -267,7 +296,7 @@ function html(cb) {
       fileinclude({
         prefix: '@@',
         // basepath: '@file',
-        basepath: 'src',
+        basepath: 'src/views',
         indent: true,
       })
     )
@@ -287,14 +316,15 @@ function ss_public(cb) {
   cb()
 }
 
-function ss_css(cb) {
-  src('src/scss/sipstack.css').pipe(dest('dist/assets/css'))
+// function ss_css(cb) {
+//   src('src/scss/sipstack.css')
+//   .pipe(dest('dist/assets/css'))
 
-  cb()
-}
+//   cb()
+// }
 
 function ss_markdown(cb) {
-  src('src/pages/**/*.md')
+  src('src/views/pages/**/*.md')
     .pipe(replace('“', '"'))
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
@@ -335,16 +365,19 @@ function ss_markdown(cb) {
 // ------------------------------------------------------------------------------
 function watchFiles() {
   watch(
-    [paths.src.scss.files, 'src/scss/sipstack.css'],
-    series(buildCss, ss_css, minifyCss)
+    [paths.src.scss.files, 'src/scss/sipstack/*.css'],
+    series(buildCss, minifyCss)
   )
-  watch(paths.src.js.files, series(bundleJs, browsersyncReload))
+  watch(
+    [paths.src.js.files, 'src/js/sipstack/*.js'],
+    series(bundleJs, browsersyncReload)
+  )
   watch(paths.src.img.dir, series(copyImages, browsersyncReload))
   watch(
     [paths.src.html.files, 'src/components/**/*.html'],
     series(html, browsersyncReload)
   )
-  watch(['src/**/*.md'], series(ss_markdown, html, browsersyncReload))
+  watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))
 }
 
 exports.test = ss_markdown
@@ -364,12 +397,11 @@ exports.default = series(
   ss_markdown,
   html,
   buildCss,
-  ss_css,
   minifyCss,
   copyVendor,
   copyVendorCss,
   copyImages,
   bundleJs,
-  series(buildCss, ss_css, minifyCss),
+  series(buildCss, minifyCss),
   parallel(browserSync, watchFiles)
 )
