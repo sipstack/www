@@ -1,52 +1,60 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
     title: 'SIPSTACK - Knowledge-base',
-    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    body: '',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
-
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
 @@include('components/sections/header.simple.html', {
     subTitle : 'Resources',
     title :'Knowledge Base',
-    description: 'We have some nice resources to help you setup your project and get started as fast as possible.',
-    
-    
+    description: 'Find help on popular topics',
+})
+@@include('components/sections/header.sub-search.html', {
+    placeholder: 'Search Knowledge Base...',
+   topics: ['API','Robocall Mitigation','Smart CNAM', 'STIR/SHAKEN']
 })
 
 
-@@include('components/sections/knowledge-base.double-col.html', {
-    topics: ['API', 'Fax'],
-    cols: [
+@@include('components/sections/feature.article.html',{
+    cards:
+        [
         {
-            title: 'API',
+            title: 'General',
             description: 'General information on API usage.',
-            numberOfArticles: '1',
-            author: '<span class = "text-primary">Kanasu Nagathihalli</span> ',
-            icon: 'icon-Fax',
-            iconColor:'green',
-            link: 'api/',
-            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
-            
+            icon: 'bx bx-windows',
         },
         {
-            title: 'API',
+            title: 'API', 
             description: 'General information on API usage.',
-            numberOfArticles: '4',
-            author: '<span class = "text-primary">Kanasu Nagathihalli</span> and 2 others',
-            icon: 'icon-Coding',
-            iconColor:'orange',
-            link: '#',
-            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
-            
-        }
-    ]
+            icon: 'bx bx-code',
+        },
+        {
+            title: 'Fax', 
+            description: 'General information on API usage.',
+            icon: 'bx bx-printer',
+        },
+        {
+            title: 'Regulatory', 
+            description: 'General information on API usage.',
+            icon: 'bx bxs-bank',
+        },
+        {
+            title: 'Phone Numbers', 
+            description: 'General information on API usage.',
+            icon: 'bx bx-dialpad',
+        },
+        {
+            title: 'Text Messaging', 
+            description: 'General information on API usage.',
+            icon: 'bx bx-chat',
+        },
+
+        ],
 })
+<!-- prettier-ignore -->
 
-
-<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')

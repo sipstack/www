@@ -195,8 +195,8 @@ i {
   color: #35bb8a;
   font-size: xx-large;
   font-weight: light;
-  margin-top: 7%;
-  margin-bottom: 3%;
+  /* margin-top: 7%;
+  margin-bottom: 3%; */
 }
 
 table {
@@ -407,5 +407,3 @@ header:not(.scroll-up):not(.is-sticky):not(.is-fixed)
   color: #35bb8a;
   font-weight: 500;
 }
-
-

@@ -374,7 +374,7 @@ function watchFiles() {
   )
   watch(paths.src.img.dir, series(copyImages, browsersyncReload))
   watch(
-    [paths.src.html.files, 'src/components/**/*.html'],
+    [paths.src.html.files, 'src/views/components/**/*.html'],
     series(html, browsersyncReload)
   )
   watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))

@@ -1,19 +1,19 @@
 <section class="position-relative bg-light" id="@@id">
-    <div class="container py-3 pt-lg-11 position-relative">
-        <div class="row pt-3 justify-content-center maxwidth">
-            <div class ="col-md-6 mb-3 mb-lg-3 centerText">
-                <!--Subheading-->
-                <div class="mb-3" data-aos="fade-up">
-                    <span class="h4 subTitleGradient">@@subTitle</span>
-                </div>
-                <!--Section Heading-->
-                <h3 class="mb-3 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
-
-                @@if(description){
-                    <!-- Description -->
-                    <p class = "mb-3 centerText text-muted">@@description</p>
-                }
-            </div>
+  <div class="container py-3 pt-lg-11 position-relative">
+    <div class="row pt-3 justify-content-center maxwidth">
+      <div class="col-md-6 mb-3 mb-lg-3 centerText">
+        <!--Subheading-->
+        <div class="mb-3">
+          <span class="h4 subTitleGradient">@@subTitle</span>
         </div>
+        <!--Section Heading-->
+        <h3 class="mb-3 display-1 bold">@@title</h3>
+
+        @@if(description){
+        <!-- Description -->
+        <p class="mb-3 centerText text-muted">@@description</p>
+        }
+      </div>
     </div>
+  </div>
 </section>

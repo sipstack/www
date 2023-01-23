@@ -1,0 +1,35 @@
+<section class="position-relative bg-light">
+  <div class="container position-relative py-3 pb-lg-3">
+    <div class="row">
+      <div class="col-md-10 col-xl-7 mx-auto text-center">
+        <form>
+          <div class="d-flex align-items-center position-relative z-index-2">
+            <input
+              type="text"
+              class="form-control form-control-lg border-0 pe-8 py-3 shadow-xl rounded-pill"
+              placeholder="@@placeholder"
+              aria-label="Search by topics"
+              aria-describedby="basic-addon2" />
+            <button
+              role="button"
+              type="button"
+              class="btn rounded-circle p-0 width-6x h-100 position-absolute end-0 top-50 translate-middle-y"
+              id="basic-addon2">
+              <i class="bx bx-search fs-4"></i>
+            </button>
+          </div>
+        </form>
+        <div
+          class="d-flex justify-content-center align-items-center flex-wrap pt-4">
+          <div class="me-3 mb-2 small text-muted">Popular topics</div>
+          @@for (var i = 0; i < topics.length; i++) {
+          <a href="#!" class="badge bg-white text-dark rounded-pill me-2 mb-2">
+            `+topics[i]+`
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+    <!--/.row-->
+  </div>
+</section>
