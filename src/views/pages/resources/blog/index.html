@@ -1,0 +1,51 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK - blog',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('components/sections/cta.html', {
+    id: 'overview',
+    subTitle: 'Company Blog',
+    class: 'bg-light py-9',
+    title: 'Our Latest Posts',
+    description: '',
+    arrow: 'false',
+    button: 'Subscribe',
+})
+
+
+@@include('components/sections/feature.blog.html', {
+    categories : ['News', 'Scam', 'Spam'],
+    tags: [],
+    posts: [
+        {
+            title: 'FCC Proposes Record-High $300M Fine for Auto Warranty',
+            category: 'Scam',
+            tag: '',
+            postImage: '/assets/img/960x640/4.jpg',
+            authorImage: '/assets/img/team/jeffsa.jpg"',
+            author: 'Jeff Sager',
+            date: '10/12/2022',
+            link: '',
+        },
+        {
+            title: 'FCC Proposes Record-High $300M Fine for Auto Warranty',
+            category: 'Scam',
+            tag: '',
+            postImage: '/assets/img/960x640/4.jpg',
+            authorImage: '/assets/img/team/jeffsa.jpg"',
+            author: 'Jeff Sager',
+            date: '10/12/2022',
+            link: '',
+        },
+    ], 
+})
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')
