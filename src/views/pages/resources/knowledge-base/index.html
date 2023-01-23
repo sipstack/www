@@ -1,0 +1,52 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK - Knowledge-base',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('components/sections/header.simple.html', {
+    subTitle : 'Resources',
+    title :'Knowledge Base',
+    description: 'We have some nice resources to help you setup your project and get started as fast as possible.',
+    
+    
+})
+
+
+@@include('components/sections/knowledge-base.double-col.html', {
+    topics: ['API', 'Fax'],
+    cols: [
+        {
+            title: 'API',
+            description: 'General information on API usage.',
+            numberOfArticles: '1',
+            author: '<span class = "text-primary">Kanasu Nagathihalli</span> ',
+            icon: 'icon-Fax',
+            iconColor:'green',
+            link: 'api/',
+            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
+            
+        },
+        {
+            title: 'API',
+            description: 'General information on API usage.',
+            numberOfArticles: '4',
+            author: '<span class = "text-primary">Kanasu Nagathihalli</span> and 2 others',
+            icon: 'icon-Coding',
+            iconColor:'orange',
+            link: '#',
+            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
+            
+        }
+    ]
+})
+
+
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')

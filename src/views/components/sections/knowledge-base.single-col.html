@@ -1,0 +1,88 @@
+<section class="position-relative bg-light">
+    <div class="container position-relative py-3 pb-lg-3">
+        <div class="row pt-lg-6">
+            <div class="col-md-10 col-xl-7 mx-auto text-center">
+                <form>
+                    <div class="d-flex align-items-center position-relative z-index-2">
+                         <input type="text"
+                            class="form-control form-control-lg border-0 pe-8 py-3 shadow-xl rounded-pill"
+                            placeholder="Search library..." aria-label="Search by topics"
+                            aria-describedby="basic-addon2">
+                        <button role="button" type="button" class="btn rounded-circle p-0 width-6x h-100 position-absolute end-0 top-50 translate-middle-y"
+                            id="basic-addon2">
+                            <i class="bx bx-search fs-4"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+
+    <div class="container pt-7 pt-lg-9 pb-9 pb-lg-11">
+        <div class="row justify-content-right align-items-right col-md-10 mb-3 mb-md-3 mx-auto">
+            <div class="d-flex text-body">
+                <a href="@@backLink" class="link-underline fs-6 text-primary">
+                    <i class="bx bx-left-arrow-alt ms-1 fs-4"></i>Back
+                </a>  
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center col-md-10 mb-5 mb-md-0 mx-auto  p-7 bg-white  rounded-3">
+            <!--Topic item-->
+            <div class = "col-md-12 mb-5 mb-md-0">
+                <div class="px-4 py-4 mb-3  bg-white d-flex text-body">
+                    <div class=" my-auto" style="margin-right: 1.5rem">
+                        <i class="@@icon" style = "font-size: 4rem; color:@@iconColor"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <!--article-title-->
+                        <h3 class="text-reset">@@title</h3>
+                        <!--article-desc-->
+                        <p class="mb-3 text-muted">
+                        @@description
+                        </p>
+                        <!--article-footer-->
+                        <div class="d-flex align-items-center">
+                            <!--article-discussion-members-->
+                            <div class="avatar-group">
+                            @@images
+                            </div>
+                            <!--article-update-log-->
+                            <div class="small text-muted" style="margin-left: 1.5rem">
+                                <span>Number of Articles:</span> <span>@@numberOfArticles</span>
+                                <div><span>Written by</span> <span>@@author</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            @@for (var i = 0; i <  cols.length; i++) {
+                <div class = "col-md-12 mb-5 mb-md-0">
+                    <a class="px-4 py-4 mb-3 border bg-white hover-shadow-lg rounded-3 hover-lift d-flex text-body" href="`+cols[i].link+`">
+                        <div class="flex-grow-1">
+                            <!--article-title-->
+                            <h5 class="text-reset">`+cols[i].title+`</h5>
+                            <!--article-desc-->
+                            <p class="mb-3 text-muted">
+                                `+cols[i].description+`
+                            </p>
+                            <!--article-footer-->
+                            <div class="d-flex align-items-center">
+                                <!--article-discussion-members-->
+                                <div class="avatar-group">
+                                    `+cols[i].images+`
+                                </div>
+                                <!--article-update-log-->
+                                <div class="small text-muted" style="margin-left: 1.5rem">
+                                    <div><span>Written by</span> <span>`+cols[i].author+`</span></div>
+                                    <span>Created</span> <span>`+cols[i].date+`</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

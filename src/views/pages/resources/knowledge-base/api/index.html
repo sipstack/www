@@ -1,0 +1,53 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK - API',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('components/sections/header.simple.html', {
+    subTitle : 'Category',
+    title :'API',
+    description: '', 
+})
+
+
+@@include('components/sections/knowledge-base.single-col.html', {
+    title: 'API',
+    description: 'General information on API usage.',
+    numberOfArticles: '1',
+    author: '<span class = "text-primary">Kanasu Nagathihalli</span> ',
+    icon: 'icon-Fax',
+    iconColor:'green',
+    backLink: '/resources/knowledge-base/',
+    images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
+    cols: [
+        {
+            title: 'API',
+            description: 'General information on API usage.',
+            author: '<span class = "text-primary">Kanasu Nagathihalli</span> ',
+            link: 'api/',
+            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div>',
+            date: '16/04/2021',
+            
+        },
+        {
+            title: 'API',
+            description: 'General information on API usage.',
+            author: '<span class = "text-primary">Kanasu Nagathihalli</span> and 2 others',
+            link: '#',
+            images: '<div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/1.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/2.jpg" alt="" class="img-fluid"></div><div class="avatar-group-item avatar xs rounded-circle overflow-hidden"><img src="/assets/img/avatar/3.jpg" alt="" class="img-fluid"></div>',
+            date: '16/04/2021',
+            
+        }
+    ]
+})
+
+
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')
