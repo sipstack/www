@@ -1,78 +1,80 @@
-<section class="position-relative" id ="@@id">
-
-    <div class="container py-9 py-lg-11">
-        <div class ="centerText">
-            <!--Subheading-->
-            <div class="mb-3" data-aos="fade-up">
-                <span class="h4 subTitleGradient">@@subTitle</span>
-            </div>
-            <!--Section Heading-->
-            <h3 class="mb-5 display-1 bold" data-aos="fade-up" data-aos-delay="100">@@title</h3>
-        </div>
-
-        <!-- Plans--Switch -->
-        <div class="d-flex align-items-center justify-content-center mb-7 mb-lg-7">
-            <div class="price-monthly fs-5 position-relative">
-                <strong>Annually</strong>
-            </div>
-            <!-- Switch -->
-            <div class="form-check form-pricing-switch form-switch mx-3">
-                <input class="form-check-input me-0" type="checkbox" id="planSwitch" data-as-toggle="price"
-                    data-as-target=".price">
-                <label class="form-check-label" for="planSwitch"></label>
-            </div>
-            <div class="price-monthly fs-5">
-                <strong> Monthly </strong>
-            </div>
-        </div>
-
-
-        <!--/.row-->
-        <div class="table-responsive">
-            <!--Price tables comparision-->
-            <table class="table table-bordered centerText" style = "padding:0px !important;">
-                <!--Table header-->
-                <thead>
-                    <tr>
-                        @@for (var i = 0; i <  cols.length; i++) {
-                            
-                         
-                                <th scope="col" class="bg-white">
-                                    <div class="mb-3">
-                                        <span class="badge badge-pill bg-warning">`+cols[i].tag+`</span>
-                                    </div>
-
-                                    <h5 class="title">`+cols[i].name+`</h5>
-
-                                    <div class="d-flex pt-md-2 justify-content-center">
-                                    
-                                        <span class="h6">`+cols[i].sup+`</span> 
-                                        <div class="`+cols[i].class+` display-4 text-dark" data-as-annual="`+cols[i].yearly+`"
-                                            data-as-monthly="`+cols[i].monthly+`">`+cols[i].yearly+`
-                                        </div>
-
-                                    </div>
-                                    <span class="small d-block h6 mb-2 text-muted">`+cols[i].sub+`</span>
-                                </th>
-                           
-
-
-                        }
-                    </tr>
-                </thead>
-                <!--Table body-->
-                <tbody>
-                    @@for (var i = 0; i <  rows.length; i++) {
-                        <tr>
-                          `+rows[i]+`
-                        </tr>
-                    }
-                    
-                    
-                </tbody>
-            </table>
-        </div>
-        <!--End price tables comparision-->
+<section class="position-relative" id="@@id">
+  <div class="container py-9 py-lg-11">
+    <div class="centerText">
+      <!--Subheading-->
+      <div class="mb-3" data-aos="fade-up">
+        <span class="h4 subTitleGradient">@@subTitle</span>
+      </div>
+      <!--Section Heading-->
+      <h3 class="mb-5 display-1 bold" data-aos="fade-up" data-aos-delay="100">
+        @@title
+      </h3>
     </div>
-    <!--/.container-->
+
+    <!-- Plans--Switch -->
+    <div class="d-flex align-items-center justify-content-center mb-7 mb-lg-7">
+      <div class="price-monthly fs-5 position-relative">
+        <strong>Annually</strong>
+      </div>
+      <!-- Switch -->
+      <div class="form-check form-pricing-switch form-switch mx-3">
+        <input
+          class="form-check-input me-0"
+          type="checkbox"
+          id="planSwitch"
+          data-as-toggle="price"
+          data-as-target=".price" />
+        <label class="form-check-label" for="planSwitch"></label>
+      </div>
+      <div class="price-monthly fs-5">
+        <strong>Monthly</strong>
+      </div>
+    </div>
+
+    <!--/.row-->
+    <div class="table-responsive">
+      <!--Price tables comparision-->
+      <table
+        class="table table-bordered centerText"
+        style="padding: 0px !important">
+        <!--Table header-->
+        <thead>
+          <tr>
+            @@for (var i = 0; i < cols.length; i++) {
+
+            <th scope="col" class="bg-white" style="min-width: 150px">
+              <div class="mb-3">
+                <span class="badge badge-pill bg-warning">`+cols[i].tag+`</span>
+              </div>
+
+              <h5 class="title">`+cols[i].name+`</h5>
+
+              <div class="d-flex pt-md-2 justify-content-center">
+                <span class="h6">`+cols[i].sup+`</span>
+                <div
+                  class="`+cols[i].class+` display-4 text-dark"
+                  data-as-annual="`+cols[i].yearly+`"
+                  data-as-monthly="`+cols[i].monthly+`">
+                  `+cols[i].yearly+`
+                </div>
+              </div>
+              <span class="small d-block h6 mb-2 text-muted">
+                `+cols[i].sub+`
+              </span>
+            </th>
+
+            }
+          </tr>
+        </thead>
+        <!--Table body-->
+        <tbody>
+          @@for (var i = 0; i < rows.length; i++) {
+          <tr>`+rows[i]+`</tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <!--End price tables comparision-->
+  </div>
+  <!--/.container-->
 </section>

@@ -23,23 +23,24 @@
     },
     
 })
-<div>
-    <div class="sticky-top top-0" id="navbar-secondary">
-        <ul class="nav nav-fill bg-white nav-tabs position-relative">
-            <li class="nav-item">
-                <a class="nav-link  py-lg-3 active" href="#overview">Overview</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link py-lg-3" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link py-lg-3" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link py-lg-3" href="#faq">FAQs</a>
-            </li>
-        </ul>
-    </div>
+<div >
+        <div class=" sticky-top top-0 " id="navbar-secondary" >
+            <ul class="nav nav-fill bg-white nav-tabs position-relative">
+                <li class="nav-item">
+                    <a class="nav-link  py-lg-3" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-lg-3" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-lg-3" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-lg-3" href="#faq">FAQs</a>
+                </li>
+            </ul>
+        </div>
+
 
 
 @@include('components/sections/paragraph.html', {
@@ -149,17 +150,17 @@
         id:'pricing',
         cols: [
             { name: '' , sup: '', class: '', monthly: '', yearly: '', sub: '', tag: '' },
-            { name: 'Starter', sup: '$', class: 'price',monthly: '30', yearly: '24', sub: 'Per Request', tag: ''},
-            { name: 'Competitor', sup: '$', class: 'price',monthly: '700', yearly: '560', sub: 'Per Request', tag: 'Most Popular'},
-            { name: 'Provider', sup: '$', class: 'price',monthly: '2500', yearly: '2000', sub: 'Per Request', tag: ''},
+            { name: 'Starter', sup: '$', class: 'price',monthly: '30', yearly: '24', sub: 'Per Month', tag: ''},
+            { name: 'Competitor', sup: '$', class: 'price',monthly: '700', yearly: '560', sub: 'Per Month', tag: 'Most Popular'},
+            { name: 'Provider', sup: '$', class: 'price',monthly: '2500', yearly: '2000', sub: 'Per Month', tag: ''},
             { name: 'Carrier', sup: '', class: '', monthly: 'Call', yearly: 'Call', sub: 'for pricing', tag: ''},
         ],
         rows: [
-                '<td><div class="d-flex justify-content-between flex-nowrap"><span class="h6 mb-0">Score (risk)</span></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td>',
+                '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Score (risk)</small></div></td><td><div class="text-success"><i class="bx bx-check lh-1 fs-4"></i></div></td><td><div class="text-success"><i class="bx bx-check lh-1 fs-4"></i></div></td><td><div class="text-success"><i class="bx bx-check lh-1 fs-4"></i></div></td><td><div class="text-success"><i class="bx bx-check lh-1 fs-4"></i></div></td>',
 
-                '<td><div class="d-flex justify-content-between flex-nowrap"><span class="h6 mb-0">Test 2</span></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td>',
+                '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Test 2</small></div></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td>',
 
-                '<td><div class="d-flex justify-content-between flex-nowrap"><span class="h6 mb-0">Regional API Proximity </span><small class="mb-0 d-block text-muted">Smart CNAM API cluster deployed within 100 Miles of customer datacenter</small></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></div></td>' ,
+                '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">Regional API Proximity <i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-x lh-1 fs-4 text-danger"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></div></td>' ,
 
             ]
     }
