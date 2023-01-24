@@ -54,6 +54,12 @@
   animation: shine 8s linear infinite; */
 }
 
+.ss-i-hover-primary:hover{
+  color: #35bb8a !important;
+  border-color: #35bb8a !important;
+  
+}
+
 .blackText {
   color: black;
   font-weight: lighter;
