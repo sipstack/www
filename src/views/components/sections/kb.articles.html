@@ -1,0 +1,96 @@
+<section class="position-relative bg-white">
+  <div class="container pt-7 pt-lg-9 pb-9 pb-lg-11">
+    <div class="row justify-content-between">
+      <div class="col-md-8 mb-5 mb-md-0">
+        <h3 class="mb-4">Popular Articles:</h3>
+
+        <!--Topic item-->
+        @@for (var i = 0; i < articles.length; i++) {
+        <a
+          class="px-3 py-4 mb-3 border bg-white hover-shadow-lg rounded-3 hover-lift d-flex text-body"
+          href="`+articles[i].link+`">
+          <div class="me-3 text-muted">
+            <i class="bx bx-question-mark fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <!--article-title-->
+            <h5 class="text-reset">`+articles[i].title+`</h5>
+            <!--article-desc-->
+            <p class="mb-4 text-body">`+articles[i].abstract+`</p>
+            <!--article-footer-->
+            <div class="d-flex justify-content-between align-items-center">
+              <!--article-discussion-members-->
+              <div class="avatar-group">
+                <div
+                  class="avatar-group-item avatar xs rounded-circle overflow-hidden">
+                  <img
+                    src="/assets/img/team/`+articles[i].author+`.jpg"
+                    alt=""
+                    class="img-fluid" />
+                </div>
+                <div class="ms-3 small mt-n2">
+                  <span class="text-muted">Written by:</span>
+                  <span>Jeff Sager</span>
+                  <br />
+                  <span class="mt-n1" style="font-size: x-small">
+                    Created: `+articles[i].updated+`
+                  </span>
+                </div>
+              </div>
+              <!--article-update-log-->
+              <!-- <div class="small text-muted">
+                <span>Last updated:</span>
+                <span>`+articles[i].updated+`</span>
+              </div> -->
+            </div>
+          </div>
+        </a>
+        }
+      </div>
+      <div class="col-md-4 col-xl-3">
+        <div class="sticky-top top-0 pt-3">
+          <div class="card card-body py-5 px-4 border-0 shadow-lg rounded-3">
+            <a href="mailto:your@mail.com" class="d-table">
+              <h6 class="text-reset mb-2">Contact support</h6>
+              <p class="text-muted mb-0">
+                Get support when and where you need it. support staff available
+                24/7 just for you.
+              </p>
+            </a>
+            <hr class="mb-4 mt-3" />
+            <h6 class="text-muted mb-3">Popular topics:</h6>
+            <nav class="mb-0">
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Javascript
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Animations
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Lightbox
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Icons
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Modal
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Dropdown
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Hover
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Splitting
+              </a>
+              <a href="#" class="badge border text-body rounded-pill mb-1">
+                Javascript
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

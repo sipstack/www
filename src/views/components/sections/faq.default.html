@@ -1,0 +1,31 @@
+<section class="bg-light position-relative @@class">
+  <div class="container py-9 py-lg-9 position-relative">
+    <div class="row justify-content-around">
+      @@for (var i = 0; i < cols.length; i++) {
+      <div class="col-12 col-md-6 col-lg-5 mb-7">
+        <!--FAQ item card-->
+        <div
+          class="d-flex align-items-stretch"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="me-3 me-lg-4">
+            <span
+              class="text-primary fs-5 d-flex width-2x height-2x rounded-2 flex-center bg-white">
+              <i class="bx bx-question-mark"></i>
+            </span>
+            <!--/.Icon-->
+          </div>
+          <div>
+            <h5 class="mb-3 display-5 sub-title">`+cols[i].title+`</h5>
+            <p class="mb-0 text-muted small">`+cols[i].description+`</p>
+          </div>
+        </div>
+      </div>
+      }
+      <!-- KEEPS TABLE ALINED WHEN ODD NUMBER OF FAQs -->
+      @@if(cols.length %2 != 0){
+      <div class="col-12 col-md-6 col-lg-5 mb-7"></div>
+      }
+    </div>
+  </div>
+</section>

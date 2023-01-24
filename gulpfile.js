@@ -146,7 +146,7 @@ var paths = {
         './node_modules/flatpickr/dist/flatpickr.min.css',
         './node_modules/quill/dist/quill.snow.css',
         './node_modules/simplebar/dist/simplebar.min.css',
-        './node_modules/prismjs/themes/prism-tomorrow.css',
+        './node_modules/prismjs/themes/*.css',
         './node_modules/choices.js/public/assets/styles/choices.min.css',
         './node_modules/dropzone/dist/dropzone.css',
         './node_modules/bs-stepper/dist/css/bs-stepper.min.css',
