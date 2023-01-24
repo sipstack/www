@@ -12,8 +12,25 @@
 .ss-nav-link-toc.active {
   color: var(--bs-nav-link-hover-color) !important;
 }
+/********** SIZE ***********/
+.w-40 {
+  width: 40% !important;
+}
+.w-45 {
+  width: 35% !important;
+}
+.w-30 {
+  width: 30% !important;
+}
 
 /********** FONT & TEXT ***********/
+
+.display-7 {
+  font-size: xx-large;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .centerText {
   text-align: center;
 }

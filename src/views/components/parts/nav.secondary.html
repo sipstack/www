@@ -1,0 +1,9 @@
+<div class="sticky-top top-0" id="navbar-secondary">
+  <ul class="nav nav-fill bg-white nav-tabs position-relative">
+    @@for (var i = 0; i < menu.length; i++) {
+    <li class="nav-item">
+      <a class="nav-link py-lg-3" href="`+menu[i].link+`">`+menu[i].title+`</a>
+    </li>
+    }
+  </ul>
+</div>

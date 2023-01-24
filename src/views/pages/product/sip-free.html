@@ -4,17 +4,15 @@
     body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/prism.css',
-    
+    '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
 
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
 @@include('components/sections/header.logo.html', {
     label: 'Products',
-    title :'Smart CNAM',
-    description: 'Caller ID lookups just got smarter',
+    title :'SIP Free',
+    description: 'Unlimited SIP termination to toll free numbers in North America',
     button1: {
         label: 'Get Started',
         link: 'https://partner.sipstack.com/signup'
@@ -41,142 +39,91 @@
     id: 'overview',
     class: '',
     title: 'Overview',
-    description: 'Integrate Smart CNAM everywhere'
+    description: 'Get Started - It\'s Free'
 })
-
-<section class="position-relative py-3">
-    <div class="container position-relative">
-      <div class="row justify-content-between align-items-center py-4 my-4">
-        <div class="col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="50">
-          <div class="position-relative ps-4 z-index-1" data-aos="fade-left">
-            <div class="mx-auto p-1 position-relative @@image_class">
-                <img class="shadow-xl rounded-3 border border-gray-300 " style="max-width: 100%"  src="/assets/img/product/whois/overview-2.png">
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-5 order-lg-1 position-relative"
-          data-aos="fade-left"
-          data-aos-delay="100">
-
-          <!-- <h4 class="mb-4 display-6 bold">For Carriers</h4>
-          <p class="mb-5 lead">Integrate Smart CNAM into your system call flows and always receive the latest name information and call scores. Dynamic call scoring can return a 5 character spacing prefix to be handled or stripped on your inbound routes.</p>
-          
-          <h4 class="mb-4 display-6 bold">App developers</h4>
-          <p class="mb-5 lead">API calls can be used in a variety of mobile application for unique use cases. Provide your users with a rich experiences with Smart CNAM.</p>
-          
-          <h4 class="mb-4 display-6 bold">ITSP's & MSP's</h4>
-          <p class="mb-5 lead">Smart CNAM can be used in a wide range of applications. See Solutions for more details and industry specific use cases.</p>
-
-          <h4 class="mb-4 display-6 bold">Whois Powered</h4>
-          <p class="mb-5 lead">Whois by SIPSTACK is powered by the same powerful API that Smart CNAM offers, generating rich unique experiences on both web browsers and mobile. Increase the Whois score rating for your customers as well as earn a verified check badge and secure remarks when you add their numbers to your partner portal.</p> -->
-          <div class="row mx-sm-0">
-            <div class="col-sm-6 py-5 border-bottom border-end-sm pe-sm-4 pe-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-              
-              <h4 class="mb-3">Carrier</h4>
-              <p class="mb-0">
-                Quick & simple integration into any existing voice switch providing instant Robocall Mitigation certification.
-              </p>
-            </div>
-            <div class="col-sm-6 py-5 border-bottom ps-sm-4 ps-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
-      
-         
-              <h4 class="mb-3">Mobile developers</h4>
-              <p class="mb-0">
-                Access rich caller information from an API call across various programming languages and methods.
-              </p>
-            </div>
-            <div class="col-sm-6 py-5 border-end-sm pe-sm-4 pe-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-    
-           
-              <h4 class="mb-3">ITSP / MSP</h4>
-              <p class="mb-0">
-                Protect your customers and infrastructure with Smart CNAM risk detection while providing value added capabilities.
-              </p>
-            </div>
-            <div class="col-sm-6 pt-5 ps-sm-4 ps-md-5 border-top border-top-sm-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
-             
-              <h4 class="mb-3">Whois Connected</h4>
-              <p class="mb-0">
-                Manage your customers phone number profiles and trust from a single portal.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-<!-- prettier-ignore -->
-@@include('components/sections/feature.title.html', {
-    id: 'overview',
-    class: '',
-    title: '',
-    description: 'Add CNAM lookup to your call flows',
-    extra: 'With a few lines, get real-time CNAM data and risk score, or simply request Caller ID only.'
-})
-
-@@include('components/sections/feature.code.html',{
-    style: 'min-height:300px',
-    tabs: [
-        { tab: 'cURL', lang: 'bash', code: '$ curl --user "API-KEY:API-SECRET" \\ \n\t\t https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/<span class="text-primary">14164772004</span>' }
-    ],
-})
-
 
 <!-- prettier-ignore -->
-@@include('components/sections/feature.image-right.html', {
-    id: '',
-    title: 'Always learning',
-    description: 'Find out whos calling with trust ratings dynamic for your location. <Br><Br>Powered by AI and community users like you. SIPSTACK uses machine learning along with community feedback to provide hyper-accurate call ratings along with information related to the caller including website, email addresses, social profiles, local addresses and even other phone numbers.',
-    checkboxes:[],
-    image: '/assets/img/product/whois/circle.png', 
-    image_class: '',
-    pattern: ''    
-    
+@@include('components/sections/cta.starter.html', {
+    class: 'pb-9',
+    description: 'Simple SIP Trunking with free termination to North American Toll-Free destination. Supporting ULAW, G729, G722 and T.38 where available.',
+    button: 'Create Account',
+    arrow: 'true',
 })
 
-
-
-@@include('components/sections/features.html',{
-    subTitle: 'Features',
-    id:'features',
-    title: 'Asterisk trusted, AI/ML augmented',
+<!-- prettier-ignore -->
+@@include('components/sections/feature.card-list.html',{
+    class:'pb-9',
     cols:
         [
             {
-                title: 'Multi-Tenant', 
-                description: 'Deploy one or many hosts to serve multiple PBX from a single branded management web portal.',
-                icon: 'bx bx-server',
+                title: 'Create your account',
+                description: 'Sign up and confirm your email by following the sign-up wizard.',
+                icon: 'bi-1-circle',
             },
-
+            {   
+                title: 'Authorize your hosts',
+                description: 'Enable each of your hosts by authorizing their IP address, then add to your routes.',
+                icon: 'bi-2-circle'
+            },
             {
-                title: 'Multi-Brand',
-                description: 'Expand your reach to resellers and channels by allowing sub-whitelabeling without compromise.',
-                icon: 'bx bx-outline',
+                title: 'Authorize your DIDs', 
+                description: 'Submit your phone numbers in bulk or integrate via API to add additional layer of call security.',
+                icon: 'bi-3-circle',
             },
-
             {   
-                title: 'Self-Hosted',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx bx-desktop'
-            },
-
-            {   
-                title: 'Self-Hosted',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx bx-desktop'
+                title: 'Let the calls begin',
+                description: 'Enjoy free SIP calls with advanced call detail reporting from the partner portal.',
+                icon: 'bi-4-circle'
             },
         ],
 })
 
-@@include('components/sections/pricing-comparison.html', 
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'features',
+    class: 'bg-light',
+    title: 'Features',
+    description: 'Plug & play SIP Termination'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.card-list.html',{
+    class:'border-bottom bg-light pb-9',
+    cols:
+        [
+            {
+                title: 'Multi-Brand',
+                description: 'Create one or many brands with custom domains, color themes and logos for unique experiences.',
+                icon: 'bx bx-layer',
+            },
+            {   
+                title: 'Multi-host',
+                description: 'Scale your hosts in the cloud or on-premise while maintaining full control from a single portal.',
+                icon: 'bx bx-server'
+            },
+            {
+                title: 'Multi-Tenant', 
+                description: 'Deploy PBX\'s across hosts, regions and brands all from a single portal. Easility toggle between active tenants.',
+                icon: 'bx bx-network-chart',
+            },
+            {   
+                title: 'Asterisk based',
+                description: 'Manage customers though Cloud UC portal or use existing CLI on your hosts with commands you already know.',
+                icon: 'bi-braces-asterisk'
+            },
+        ],
+})
+
+  <!-- prettier-ignore -->
+  @@include('components/sections/feature.title.html', {
+    id: 'pricing',
+    class: 'mb-n10',
+    title: 'Pricing',
+    description: 'Smart plans, auto volume discounted'
+})
+
+@@include('components/sections/pricing.table.html', 
     {
-        subTitle: 'Pricing',
-        title: 'Our Plans',
-        id:'pricing',
         cols: [
             { name: '' , sup: '', class: '', monthly: '', yearly: '', sub: '', tag: '' },
             { name: 'Free', sup: '$', class: 'price',monthly: '0', yearly: '0', sub: 'Per Month', tag: ''},
@@ -218,10 +165,17 @@
     }
 )
 
-@@include('components/sections/faq.html', {
-    id: 'faq', 
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'faq',
+    class: 'bg-light',
     title: 'FAQs',
-    subTitle: 'Frequently Asked Questions',
+    description: 'Frequently Asked Questions'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/faq.default.html', {
+    class: 'bg-light',
     cols: [
         {
             title: 'How does billing work?',

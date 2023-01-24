@@ -7,15 +7,17 @@
     '/assets/vendor/node_modules/css/glightbox.min.css'
     ]
 })
+
 <!-- prettier-ignore -->
 @@include('components/sections/header.simple.html', {
     label : 'Resources',
     title :'Knowledge Base',
     description: 'Find help on popular topics',
 })
+
 @@include('components/sections/header.sub-search.html', {
-    placeholder: 'Search Knowledge Base...',
-   topics: ['API','Robocall Mitigation','Smart CNAM', 'STIR/SHAKEN']
+    placeholder: 'Search...',
+    topics: ['API','Robocall Mitigation','Smart CNAM', 'STIR/SHAKEN']
 })
 
 
@@ -31,6 +33,7 @@
             title: 'API', 
             description: 'Supplementary API reference.',
             icon: 'bx bx-code',
+            link: 'api'
         },
         {
             title: 'Fax', 
