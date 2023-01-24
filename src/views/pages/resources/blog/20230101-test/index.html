@@ -1,0 +1,64 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK - blog',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ]
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+
+@@include('components/sections/blog.article-header.html', {
+    category: 'SPAM',
+    title: 'Test blog article',
+    author: {
+        name: 'Jeff Sager',
+        role: 'Writer',
+        photo: 'jeffsa'
+    },
+    created: '2023/01/01',
+    duration: '2',
+    image: "posts/post-17.svg",
+})
+
+<section class="position-relative bg-white border-bottom">
+    <div class="container pb-9 pb-lg-11">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <article class="article mb-9">
+                    @@include('pages/resources/blog/20230101-test/content.html')
+                </article>
+                <!--/.article-->
+
+                <div class="d-flex justify-content-center align-items-center mb-9">
+                    <div>
+                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
+                            <i class="ss-i-hover-primary bx bxl-facebook fs-5"></i>
+                            <i class="ss-i-hover-primary bx bxl-facebook fs-5"></i>
+                          </a>
+                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
+                            <i class="ss-i-hover-primary bx bxl-twitter fs-5"></i>
+                            <i class="ss-i-hover-primary bx bxl-twitter fs-5"></i>
+                        </a>
+
+                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
+                            <i class="ss-i-hover-primary bx bxl-linkedin fs-5"></i>
+                            <i class="ss-i-hover-primary bx bxl-linkedin fs-5"></i>
+                        </a>
+
+                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
+                            <i class="ss-i-hover-primary bx bx-envelope fs-5"></i>
+                            <i class="ss-i-hover-primary bx bx-envelope fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')
