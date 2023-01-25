@@ -36,12 +36,26 @@
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite; */
 }
+.ss-bw-img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 
 .ss-i-hover-primary:hover{
   color: #35bb8a !important;
   border-color: #35bb8a !important;
   
 }
+
+.ss-icon-hover{
+  color: rgb(149, 3, 239) !important
+}
+
+.ss-icon-hover:hover{
+  color: #35bb8a !important
+}
+
 
 .blackText {
   color: black;
