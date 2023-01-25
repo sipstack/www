@@ -11,15 +11,15 @@
 <!-- prettier-ignore -->
 @@include('components/sections/header.logo.html', {
     label: 'Products',
-    title :'SIPSTACK UC',
-    description: 'The multi-tenant PBX management console you\'ve been waiting for',
+    title :'Whois',
+    description: 'Advanced CallerID name lookup for everyone',
     button1: {
-        label: 'Request Invite',
-        link: '/'
+        label: 'Try Now',
+        link: 'https://whois.sipstack.com'
     },
     button2: {
-        label: 'Book Demo',
-        link: '/'
+        label: '',
+        link: ''
     },
     
 })
@@ -38,101 +38,26 @@
     id: 'overview',
     class: 'mb-3',
     title: 'Overview',
-    description: 'PBX management has never looked so good (or this simple)',
+    description: 'Say goodbye to spam calls',
     extra: ''
 })
 
 <!-- prettier-ignore -->
-@@include('components/sections/feature.image-right.html', {
-    id: '',
-    title: 'Level up your hosted PBX service offering',
-    description: 'Cloud UC is an Asterisk based, open source, unified communications platform, that allows you to scale and manage from a single console. Cloud UC augments Smart CNAM and other rich data into all elements of the experience.',
-    checkboxes:['Multi-brand', 'Multi-tenant','Self-hosted'],
-    image: '/assets/img/product/uc/extension-create.png', 
-    image_class: 'shadow-lg',
-    pattern: 'dots'    
-    
-})
-
-<!-- prettier-ignore -->
-@@include('components/sections/feature.image-left.html', {
-    id: '',
-    title: 'Create multiple white-label brands',
-    description: 'Whether you want to allow re-sellers Cloud UC capabilities while still managing & scaling their hosts or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for white labeling.',
-    checkboxes:[],
-    image: '/assets/img/product/uc/brand-create.png', 
+@@include('components/sections/feature.image-left-list.html', {
+    title: 'Find out who is calling with trust ratings dynamic for your location. Powered by AI and community users like you.',
+    image: '/assets/img/product/whois/mobile-v1.png', 
     image_class: '',
-    pattern: 'dots'    
-    
-})
-
-<!-- prettier-ignore -->
-@@include('components/sections/feature.image-right.html', {
-    id: '',
-    title: 'Multi-tenant access across hosts',
-    description: 'Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and white-labelled portal.',
-    checkboxes:[],
-    image: '/assets/img/product/uc/pbx-create.png', 
-    image_class: '',
-    pattern: 'dots'    
-    
-})
-
-<!-- prettier-ignore -->
-@@include('components/sections/feature.image-left.html', {
-    id: '',
-    title: 'Branded desktop & mobile experience',
-    description: 'Offer customers an enhanced experience tailored to your existing brand by customizing domain, theme color and logo.',
-    checkboxes:[],
-    image: '/assets/img/product/uc/mobile-menu.png', 
-    image_class: 'w-50',
-    pattern: 'dots'    
-    
-})
-<!-- prettier-ignore -->
-@@include('components/sections/feature.title.html', {
-    id: '',
-    class: '',
-    title: '',
-    description: 'Self hosted & open source',
-    extra: ''
-})
-
-<!-- prettier-ignore -->
-@@include('components/sections/feature.cols-2.html', {
-    class:'mb-5',
-    col1:'SIPSTACK Cloud UC has several major components that make up the platform. The core PBX functions are built on Asterisk and is provided as an open-source download in several installer methods and from our GitHub page.',
-    col2:'The API, web portals and email relays are all contained within the SISPTACK network, across regional datacenters keeping data within borders where compliance and regulatory boards require.'
-})
-
-<!-- prettier-ignore -->
-@@include('components/sections/feature.image-tip.html', {
-    class: 'pb-9',
-    cols: [
-        {
-            image:'/assets/img/third/asterisk.png',
-            tooltip: 'Easily migrate existing Asterisk, FreePBX based systems into SIPSTACK Cloud UC.',
-        },
-        {
-            image:'/assets/img/third/docker.png',
-            tooltip: 'Docker makes it simple to maintain the latest from SIPSTACK Cloud UC.',  
-        },
-        {
-            image:'/assets/img/third/debian.png',
-            tooltip: 'Deploy SIPSTACK Cloud UC on Debian with our latest installer scripts.',
-        },
-        {
-            image:'/assets/img/third/ubuntu.png',
-            tooltip: 'Deploy SIPSTACK Cloud UC on Ubuntu with our latest installer scripts.',  
-        },
-        {
-            image:'/assets/img/third/proxmox.png',
-            tooltip: 'Quick templates for Proxmox, AWS, Azure, GCP, Digitalocean and other clouds.',
-        },
-      
+    pattern: 'dots',
+    list: [
+        { icon: 'bx bx-star', title: 'Trust rating', description: 'Real-time risk score assesment based on AI & community feedback.' },
+        { icon: 'bx bx-user', title: 'Name display', description: 'Latest caller information including regional & carrier data.' },
+        { icon: 'bx bx-detail', title: 'Caller details', description: 'See other phone numbers, website, email & social links at a glance' },
+        { icon: 'bx bx-share', title: 'Community feedback', description: 'Get the latest comments from users like you on recent call activity.' },
     ]
-
+    
 })
+
+
 
 <!-- prettier-ignore -->
 @@include('components/sections/feature.title.html', {
@@ -146,40 +71,60 @@
 <!-- prettier-ignore -->
 @@include('components/sections/feature.card-list.html',{
     class:'border-bottom bg-light pb-9',
-    cols:
-        [
-            {
-                title: 'Multi-Brand',
-                description: 'Create one or many brands with custom domains, color themes and logos for unique experiences.',
-                icon: 'bx bx-layer',
-            },
-            {   
-                title: 'Multi-host',
-                description: 'Scale your hosts in the cloud or on-premise while maintaining full control from a single portal.',
-                icon: 'bx bx-server'
-            },
-            {
-                title: 'Multi-Tenant', 
-                description: 'Deploy PBX\'s across hosts, regions and brands all from a single portal. Easility toggle between active tenants.',
-                icon: 'bx bx-network-chart',
-            },
-            {   
-                title: 'Asterisk based',
-                description: 'Manage customers though Cloud UC portal or use existing CLI on your hosts with commands you already know.',
-                icon: 'bi-braces-asterisk'
-            },
-        ],
-})
+    cols: [
+        {
+            title: 'Trust rating',
+            description: 'Real-time risk score assesment based on AI & community feedback.',
+            icon: 'bx bx-star',
+        },
+        {
+            title: 'Name display', 
+            description: 'Latest caller information including regional & carrier data.',
+            icon: 'bx bx-user',
+        },
+        {   
+            title: 'Caller details',
+            description: 'See other phone numbers, website, email & social links at a glance.',
+            icon: 'bx bx-detail'
+        },
+        {   
+            title: 'Community feedback',
+            description: 'Get the latest comments from users like you on recent call activity.',
+            icon: 'bx bx-share'
+        },
+   
+        {
+            title: 'Personal dashboard', 
+            description: 'Latest caller information including regional & carrier data.',
+            icon: 'bx bx-desktop',
+        },
+        {   
+            title: 'Social integrations',
+            description: 'See other phone numbers, website, email & social links at a glance.',
+            icon: 'bx bx-share-alt'
+        },
+        {   
+            title: 'My number',
+            description: 'Verify your phone number & control information accuracy for others.',
+            icon: 'bx bx-hash'
+        },
+        {   
+            title: 'Mobile ready',
+            description: 'Responsive design with PWA support & native apps coming soon.',
+            icon: 'bx bx-mobile'
+        },
+    ]}
+)
 
 <!-- prettier-ignore -->
 @@include('components/sections/feature.title.html', {
     id: 'pricing',
-    class: '',
+    class: 'mb-7',
     title: 'Pricing',
-    description: 'Pricing not available',
+    description: 'Free for everyone',
     extra: ''
 })
-  <center class="text-muted mb-10">Stay tuned for updates.</center>
+
 
 <!-- prettier-ignore -->
 @@include('components/sections/feature.title.html', {
@@ -195,21 +140,45 @@
     class: 'bg-light',
     cols: [
         {
-            title: 'How does billing work?',
-            description: 'Activated services that require billing will need a valid credit card to enable features and unlock capabilities. Billing and invoices are generated on the first of every month for the previous month’s usage. Invoices are billed in USD by default and in CAD for Canadian Partners.',
+            title: "Is it really free?",
+            description: "Yes, we believe that everyone should have access to who is calling them. It is the only real way to help identify authentic from fraudulent callers.",
         },
-        
         {
-            title: 'Do I need a credit card to create an account?',
-            description: 'No! Many products have a free basic/starter tier which covers access for most cases, and so we do not require a credit card. For products and services that do incur usage charges, a credit card payment method must be added in order to unlock the feature.',
+            title: "How does the rating / risk scoring work?",
+            description: "A broad range of factors are taken into account, and scoring is always changing depending on a broad range of things. Community feedback also is accounted for and is processed by our AI/ML before providing a caller score.",
+        },
+        {
+            title: "How does it differ from other tools?",
+            description: "Whois by SIPSTACK is the only tool that provides dyanmic call scoring along with any related information from websites, email addresses, locations and social networks.",
+        },
+        {
+            title: "How can I manage my own phone number listing?",
+            description: "In the description card box, you can click 'This is my phone number', which will guide you to creating an account, followed by steps to verify your phone number before being able to update and manage the listing. This option may not be available in all regions yet.",
+        },
+        {
+            title: "How can I improve my phone number call score?",
+            description: "A number of factors are processed by our AI/ML systems before providing a call score. Additionally people looking up your number from different regions may see different scores depending on how often you call those areas, and how often community members rate your call as OK are some elements accounted for in call scoring process. Scores will always be dynamic.",
+        },
+        {
+            title: "Can I claim multiple phone numbers?",
+            description: "Yes, this is particularly important for companies and business owners. You can verify multiple phone numbers from a single Whois community account, or have greater control when using a SIPSTACK Cloud UC powered phone system. Talk to your ITSP / MSP about deploying a SIPSTACK powered system for your business.",
         },
 
-        {
-            title: 'Are there alternative payment methods for frequent users?',
-            description: 'This is a common request. Partner accounts that expect to incur more than $10,000 USD in monthly recurring charges can contact our billing team for additional payment options.',
-        },
+
 
     ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+    class: 'p-9',
+    label: 'Start Searching',
+    title: 'Lookup callerID name details and more',
+    description: '',
+    input_class: 'bg-light',
+    placeholder: 'Lookup Phone Number...',
+    button: 'Search',
+    demo: '',
 })
 
   <!-- prettier-ignore -->

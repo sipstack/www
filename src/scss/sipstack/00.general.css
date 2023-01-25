@@ -12,6 +12,10 @@
 .ss-nav-link-toc.active {
   color: var(--bs-nav-link-hover-color) !important;
 }
+
+.ss-p-3 {
+  padding-left: 1rem;
+}
 /********** SIZE ***********/
 .w-40 {
   width: 40% !important;
@@ -29,6 +33,11 @@
   font-size: xx-large;
   font-weight: 500;
   line-height: 1;
+}
+
+.nav.nav-filter .nav-link.active {
+  text-decoration: unset;
+  color: var(--bs-nav-link-hover-color);
 }
 
 .centerText {
@@ -53,26 +62,23 @@
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite; */
 }
-.ss-bw-img{
+.ss-bw-img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
-
-.ss-i-hover-primary:hover{
+.ss-i-hover-primary:hover {
   color: #35bb8a !important;
   border-color: #35bb8a !important;
-  
 }
 
-.ss-icon-hover{
-  color: rgb(149, 3, 239) !important
+.ss-icon-hover {
+  color: #35bb8a !important;
 }
 
-.ss-icon-hover:hover{
-  color: #35bb8a !important
+.ss-icon-hover:hover {
+  color: #238963 !important;
 }
-
 
 .blackText {
   color: black;
@@ -124,7 +130,11 @@
 /* ******** CONTAINERS/CARDS/DIVS ********* */
 
 .ss-background-gradient {
-  background-image: radial-gradient(200% 160% at 75% 130%,#03241d 0,#010326 100%);
+  background-image: radial-gradient(
+    200% 160% at 75% 130%,
+    #03241d 0,
+    #010326 100%
+  );
 
   /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
   font-weight: 510;

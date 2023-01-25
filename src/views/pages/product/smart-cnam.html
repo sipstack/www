@@ -144,44 +144,46 @@
 })
 
 
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+  id: 'features',
+  class: 'bg-light',
+  title: 'Features',
+  description: 'Asterisk trusted, AI/ML augmented',
+  extra: ''
+})
 
-@@include('components/sections/features.html',{
-    subTitle: 'Features',
-    id:'features',
-    title: 'Asterisk trusted, AI/ML augmented',
+@@include('components/sections/feature.card-list.html',{
+  class:'border-bottom bg-light pb-9',
     cols:
         [
             {
-                title: 'Multi-Tenant', 
-                description: 'Deploy one or many hosts to serve multiple PBX from a single branded management web portal.',
-                icon: 'bx bx-server',
+                title: 'Simple text response', 
+                description: 'Returns a 20-character string response including a prefixed score followed by caller name.',
+                icon: 'bx bx-text',
             },
 
             {
-                title: 'Multi-Brand',
-                description: 'Expand your reach to resellers and channels by allowing sub-whitelabeling without compromise.',
-                icon: 'bx bx-outline',
+                title: 'Advanced JSON response',
+                description: 'When more details are required, JSON responses can be returned with rich data sets.',
+                icon: 'bx bx-code-curly',
             },
 
-            {   
-                title: 'Self-Hosted',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx bx-desktop'
-            },
-
-            {   
-                title: 'Self-Hosted',
-                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
-                icon: 'bx bx-desktop'
-            },
+           
         ],
 })
 
-@@include('components/sections/pricing-comparison.html', 
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+  id: 'pricing',
+  class: '',
+  title: 'Pricing',
+  description: 'Enhanced CNAM Lookups',
+  extra: ''
+})
+
+@@include('components/sections/pricing.table.html', 
     {
-        subTitle: 'Pricing',
-        title: 'Our Plans',
-        id:'pricing',
         cols: [
             { name: '' , sup: '', class: '', monthly: '', yearly: '', sub: '', tag: '' },
             { name: 'Free', sup: '$', class: 'price',monthly: '0', yearly: '0', sub: 'Per Month', tag: ''},

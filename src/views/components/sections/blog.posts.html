@@ -1,85 +1,108 @@
 <section class="position-relative">
-    <div class="container py-7 py-lg-7">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
-              
-                <!--/.widget-->
-                <div class="pb-5">
-                    <h5 class="title mb-3">Filter By</h5>
-                    <!-- Nav -->
-                    <ul class="mb-5 nav nav-filter mb-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" data-bs-toggle="pill" data-filter="*" data-bs-target="#all">
-                                All
-                            </a>
-                        </li>
-                        @@for (var i = 0; i <  categories.length; i++) {
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="pill" data-filter=".`+categories[i]+`" data-bs-target="#`+categories[i]+`">
-                                    `+categories[i]+`
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                </div>
-
-                @@if (tags.length > 0){
-                    <div class="pb-5">
-                        <h5 class="title mb-3">Tags</h5>
-                        @@for (var i = 0; i <  tags.length; i++) {
-                            <a href="#!" class="badge bg-white text-dark border badge-pill mb-1">
-                                `+tags[i]+`
-                            </a>
-                        }
-                    </div>
-                }
-    
-
-            </div>
-            <div class="col-md-8 col-lg-9 px-7">
-                
-                <div class="row position-relative z-index-1 " data-isotope='{"layoutMode": "masonry"}' >
-                    
-                    @@for (var i = 0; i <  posts.length; i++) {
-                        <div class="col-lg-6 mb-4 mb-lg-4 `+posts[i].category+`" data-aos="fade-up" data-aos-duration="400">
-                            <!--Article-->
-                            
-                            <article class="card-hover hover-lift">
-                                <div class=" px-1 d-flex pt-2 justify-content-between">
-                                    <small class="text-muted">`+posts[i].date+`</small>
-                                    <small class="mb-1 text-primary badge bg-white border badge-pill">`+posts[i].category+`</small>
-                                </div>
-
-                                <div class="position-relative rounded-3 overflow-hidden">
-                                    <img src="`+posts[i].postImage+`" class="img-fluid img-zoom" alt="">
-                                </div>
-                                <div class="pt-4">
-                                    <h4 class="link-multiline">
-                                        `+posts[i].title+`
-                                    </h4>
-
-                                    <div class="pt-3 d-flex align-items-center">
-                                        <!--article-discussion-members-->
-                                        <div class="avatar-group">
-                                            <div class="avatar-group-item avatar rounded-circle overflow-hidden">
-                                                <img src="`+posts[i].authorImage+`" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                        <!--article-update-log-->
-                                        <div class="small text-muted" style="margin-left: 1.5rem">
-                                            <div><span>Written by</span> <span class = "text-primary">`+posts[i].author+`</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Post link-->
-                                <a href="`+posts[i].link+`" class="stretched-link"></a>
-                            </article>
-                        </div>
-                    }
-                </div>
-            </div>
-            <!--/.col-->
+  <div class="container py-7 py-lg-7">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
+        <!--/.widget-->
+        <div class="pb-5">
+          <h5 class="title mb-3">Filter by category</h5>
+          <!-- Nav -->
+          <ul class="mb-5 nav nav-filter mb-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter="*"
+                data-bs-target="#all">
+                All
+              </a>
+            </li>
+            @@for (var i = 0; i < categories.length; i++) {
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter=".`+categories[i]+`"
+                data-bs-target="#`+categories[i]+`">
+                `+categories[i]+`
+              </a>
+            </li>
+            }
+          </ul>
         </div>
-        <!--/.blog-row-->
+
+        @@if (tags.length > 0){
+        <div class="pb-5">
+          <h5 class="title mb-3">Tags</h5>
+          @@for (var i = 0; i < tags.length; i++) {
+          <a href="#!" class="badge bg-white text-dark border badge-pill mb-1">
+            `+tags[i]+`
+          </a>
+          }
+        </div>
+        }
+      </div>
+      <div class="col-md-8 col-lg-9 px-7">
+        <div
+          class="row position-relative z-index-1"
+          data-isotope='{"layoutMode": "masonry"}'>
+          @@for (var i = 0; i < posts.length; i++) {
+          <div
+            class="col-lg-6 mb-4 mb-lg-4 `+posts[i].category+`"
+            data-aos="fade-up"
+            data-aos-duration="400">
+            <!--Article-->
+
+            <article class="card-hover hover-lift">
+              <div class="position-relative rounded-3 overflow-hidden">
+                <img
+                  src="`+posts[i].postImage+`"
+                  class="img-fluid img-zoom"
+                  alt="" />
+              </div>
+              <div class="pt-4">
+                <h4 class="link-multiline">`+posts[i].title+`</h4>
+
+                <div class="pt-3 d-flex align-items-center">
+                  <!--article-discussion-members-->
+                  <div class="avatar-group">
+                    <div
+                      class="avatar-group-item avatar rounded-circle overflow-hidden">
+                      <img
+                        src="`+posts[i].authorImage+`"
+                        alt=""
+                        class="img-fluid" />
+                    </div>
+                  </div>
+                  <!--article-update-log-->
+                  <div class="small text-muted" style="margin-left: 1.5rem">
+                    <div>
+                      <span>Written by</span>
+                      <span class="text-primary">`+posts[i].author+`</span>
+                      <br />
+                      <small class="text-muted">`+posts[i].date+`</small>
+                    </div>
+                  </div>
+                  <div
+                    class="small text-muted"
+                    style="margin-left: auto; margin-right: 0">
+                    <small
+                      class="mb-1 text-primary badge bg-white border badge-pill">
+                      `+posts[i].category+`
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <!--Post link-->
+              <a href="`+posts[i].link+`" class="stretched-link"></a>
+            </article>
+          </div>
+          }
+        </div>
+      </div>
+      <!--/.col-->
     </div>
+    <!--/.blog-row-->
+  </div>
 </section>

@@ -1,0 +1,66 @@
+<!--begin:feature image section-->
+<section class="position-relative py-3" id="@@id">
+  <div class="container position-relative">
+    <div class="row justify-content-between align-items-center py-4 my-4">
+      <div class="col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="50">
+        <div class="position-relative ps-4 z-index-1" data-aos="fade-left">
+          <!--Parallax-element-->
+          @@if (pattern){
+          <div
+            class="position-absolute start-0 top-50 translate-middle-y width-7x h-auto">
+            <div
+              class="rellax"
+              data-rellax-speed="-2"
+              data-rellax-percentage=".9">
+              <img
+                src="/assets/img/vectors/pattern-@@pattern.svg"
+                alt=""
+                class="fill-primary w-100 h-auto"
+                data-inject-svg />
+            </div>
+          </div>
+          }
+          <div class="mx-auto p-1 position-relative @@image_class">
+            <img src="@@image" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-6 order-lg-1 position-relative"
+        data-aos="fade-left"
+        data-aos-delay="100">
+        <!--Heading-->
+        <h2 class="mb-4 display-5 bold">@@title</h2>
+        <!--Text-->
+        <div class="row">
+          <div class="position-relative z-index-1">
+            <!--Feature icon card-->
+
+            @@for(var i = 0; i < list.length;i++){
+            <div
+              class="d-flex mb-5 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="150">
+              <!--Feature icon-->
+              <div class="me-3">
+                <!--Icon-->
+                <i
+                  class="`+list[i].icon+` lh-1 width-3x height-3x flex-center rounded-circle bg-light text-primary position-relative fs-4"></i>
+              </div>
+              <!--Feature text-->
+              <div>
+                <h5>`+list[i].title+`</h5>
+                <p class="mb-0">`+list[i].description+`</p>
+              </div>
+            </div>
+            }
+          </div>
+
+          <!--/column -->
+        </div>
+        <!--Feature-card-->
+      </div>
+    </div>
+  </div>
+</section>
+<!--end:feature image section-->

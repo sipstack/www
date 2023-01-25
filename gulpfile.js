@@ -44,7 +44,7 @@ const options = {
   // typographer: true,
 }
 
-const md = new markdownIt()
+const md = new markdownIt(options)
 // md.use(abbr);
 // md.use(alerts);
 md.use(md_attrs)
