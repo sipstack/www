@@ -72,6 +72,7 @@
     </div>
 </section>
 
+<!-- prettier-ignore -->
 @@include('components/sections/features.html',{
     subTitle: 'Dedicated Team',
     id:'values',
@@ -293,7 +294,7 @@
     </div>
 </section>
 
-<!-- TEAM -->
+<!-- prettier-ignore -->
 @@include('components/sections/about.leaders.html',{
     subTitle: 'Meet The Team',
     title: 'About Our Leaders',
@@ -306,7 +307,6 @@
                 image: '/assets/img/team/stam.jpg',
                 socials: '<a href="https://github.com/sloizides" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://www.linkedin.com/in/stamloizides/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>',
             },
-
             {
                 name: 'Errol Geller', 
                 description: 'Errol loves taking on challenges and is very good at math. He has several decades of experience as a Senior Risk Management Executive at IBM. Errol has been instrumental in getting SIPSTACK to where it is today.',
@@ -314,7 +314,6 @@
                 image: '/assets/img/team/errol.jpg',
                 socials: '<a href="https://www.linkedin.com/in/errolgeller/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>',
             },
-
             {
                 name: 'Elon Spielberg', 
                 description: 'With over a decade in the telecommunications industry, Elon is one of the fastest thinkers and problem solvers in the business. Our Cloud UC team could not be in more capable hands with his guidance.',
@@ -322,7 +321,6 @@
                 image: '/assets/img/team/elon.jpeg',
                 socials: '<a href="https://github.com/espielberg" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a>',
             },
-
             {
                 name: 'Ralph Rouhana', 
                 description: 'Pursuing a computer engineering degree from the University of Waterloo, Ralph has been building software since he was 12 and a continued leader at SIPSTACK. We have yet to see a problem that Ralph can not solve.',
@@ -330,11 +328,10 @@
                 image: '/assets/img/team/ralph.jpg',
                 socials: '<a href="https://github.com/ralphr123" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://www.linkedin.com/in/ralph-rouhana-b23aa31a8/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>',
             },
-
         ],
 })
 
-
+<!-- prettier-ignore -->
 @@include('components/sections/about.talent.html',{
     subTitle: 'Meet The Team',
     title: 'About Our Talent',
@@ -365,6 +362,7 @@
         ],
 })
 
+<!-- prettier-ignore -->
 @@include('components/sections/feature.card-double.html',{
     id: 'media',
     cols: [
@@ -390,5 +388,25 @@
 
 
 
-<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
 @@include('components/layouts/tail.html')
+<script>
+    // init Swiper:
+    const swiper = new Swiper('.swiper-history', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoHeight: true,
+        breakpoints: {
+            // when window width is >= 480px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            },
+            // when window width is >= 640px
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+</script>
