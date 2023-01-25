@@ -85,37 +85,3 @@
 
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')
-
-<script>
-    Splitting();
-    //Splitting text
-
-    //Swiper Slider
-    var swiper3 = new Swiper(".swiper-3", {
-        autoHeight: true,
-        spaceBetween: 16,
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 16
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 16
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            }
-        },
-        pagination: {
-            el: ".swiper3-pagination",
-            clickable: true
-        },
-        navigation: {
-            nextEl: ".swiper3-button-next",
-            prevEl: ".swiper3-button-prev"
-        }
-    });
-
-</script>
