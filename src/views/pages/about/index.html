@@ -46,7 +46,7 @@
             class="width-18x me-n3 h-auto fill-primary position-absolute end-0 bottom-0">
 
     </div>
-    <div class="container py-9 py-lg-9 position-relative">
+    <div class="container py-9 py-lg-9 position-relative" id="our-story">
         <div class="row justify-content-between">
             <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
                 <h2 class="mb-5 display-4">Our Story</h2>
@@ -264,7 +264,7 @@
 </section>
 
 <!-- FOUNDER -->
-<section class="position-relative bg-white">
+<section class="position-relative bg-white" id="team">
     <div class="container py-6 py-lg-6">
         <div class="pb-6 centerText">
             <!--Subheading-->
@@ -366,6 +366,7 @@
 })
 
 @@include('components/sections/feature.card-double.html',{
+    id: 'media',
     cols: [
         {
             title: 'We\'re Hiring!',
