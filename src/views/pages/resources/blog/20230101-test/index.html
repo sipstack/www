@@ -17,7 +17,7 @@
     author: {
         name: 'Jeff Sager',
         role: 'Writer',
-        photo: 'jeffsa'
+        photo: 'jeffsa.jpg'
     },
     created: '2023/01/01',
     duration: '2',
@@ -25,7 +25,7 @@
 })
 
 <section class="position-relative bg-white border-bottom">
-    <div class="container pb-9 pb-lg-11">
+    <div class="container pb-9 py-lg-8">
         <div class="row">
             <div class="col-xl-9 mx-auto">
                 <article class="article mb-9">
@@ -33,28 +33,12 @@
                 </article>
                 <!--/.article-->
 
-                <div class="d-flex justify-content-center align-items-center mb-9">
-                    <div>
-                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
-                            <i class="ss-i-hover-primary bx bxl-facebook fs-5"></i>
-                            <i class="ss-i-hover-primary bx bxl-facebook fs-5"></i>
-                          </a>
-                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
-                            <i class="ss-i-hover-primary bx bxl-twitter fs-5"></i>
-                            <i class="ss-i-hover-primary bx bxl-twitter fs-5"></i>
-                        </a>
-
-                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
-                            <i class="ss-i-hover-primary bx bxl-linkedin fs-5"></i>
-                            <i class="ss-i-hover-primary bx bxl-linkedin fs-5"></i>
-                        </a>
-
-                        <a href="#!" class="d-inline-block mb-1 ms-1 si rounded-pill si-border ss-i-hover-primary">
-                            <i class="ss-i-hover-primary bx bx-envelope fs-5"></i>
-                            <i class="ss-i-hover-primary bx bx-envelope fs-5"></i>
-                        </a>
-                    </div>
-                </div>
+                @@include('components/sections/blog.icon-share.html',{
+                    mail: '',
+                    linkedin: '',
+                    facebook: '',
+                    twitter: '',
+                })
             </div>
         </div>
     </div>

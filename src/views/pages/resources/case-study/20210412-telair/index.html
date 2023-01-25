@@ -1,0 +1,63 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: 'SIPSTACK - case-study',
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ],
+
+    nav: {
+        class: 'navbar-link-white'
+    }
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+
+@@include('components/sections/case-study.article-header.html', {
+    category: 'VoIP History',
+    title: 'Driving Success: Simplifying Customization with SIPSTACK',
+})
+
+
+
+<section class="position-relative">
+    <div class="container pt-9 pt-lg-0 pb-9 pb-lg-11 position-relative z-index-1">
+        <div class="row">
+            @@include('components/sections/case-study.article-info.html', {
+                category: 'VoIP History',
+                title: 'Driving Success: Simplifying Customization with SIPSTACK',
+                author: {
+                    name: 'Jeff Sager',
+                    role: 'Writer',
+                    photo: 'jeffsa.jpg'
+                },
+                created: '12/03/2021',
+                duration: '4',
+                image: "posts/post-17.svg",
+                mail: '',
+                linkedin: '',
+                facebook: '',
+                twitter: '',
+            })
+            <div class="col-lg-8">
+                <div class="pt-lg-11 h-100 d-flex flex-column">
+                    @@include('pages/resources/case-study/20210412-telair/content.html')
+                </div>
+                @@include('components/sections/blog.icon-share.html',{
+                    mail: '',
+                    linkedin: '',
+                    facebook: '',
+                    twitter: '',
+                })
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')
