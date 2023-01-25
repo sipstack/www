@@ -20,8 +20,8 @@ Provides the account balance which is the total available funds in your account 
 
 This is where the input and output of all our products and settings are displayed.
 
-![Partner_Dashboard_edited_1](./Partner_Dashboard_edited_1.png)
-<sup> Different aspects of the Partner Dashboard.</sup>
+![Partner_Dashboard_edited_1](./Partner_Dashboard_edited_1.png)  
+<sup>Different aspects of the Partner Dashboard.</sup>
 
 # Getting Started
 

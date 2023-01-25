@@ -8,6 +8,20 @@
     body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"'
 })
 
+@@include('components/sections/header.default.html', {
+  label : 'Documentation',
+  title :'Partner Portal',
+  description: '',
+  button1: {
+    label: 'Knowledge Base',
+    link: '/resources/knowledge-base'
+  },
+  button2: {
+    label: 'Developer Documentation',
+    link: 'https://developer.sipstack.com/partner'
+  }   
+})
+
 <section class="position-relative">
   <div class="container py-9 py-lg-11">
     <div class="row">
@@ -30,7 +44,7 @@
   window.addEventListener('load', function () {
     $('.ss-toc').html($('.ss-toc-md').html())
     $('.ss-toc-md').remove()
-    $('.ss-toc ul').addClass('nav  p-3 flex-column position-relative ')
+    $('.ss-toc ul').addClass('nav  ss-p-3 flex-column position-relative ')
     $('.ss-toc li').each(function (index) {
       $(this).addClass('nav-item')
     })
