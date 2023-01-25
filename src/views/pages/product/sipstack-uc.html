@@ -38,7 +38,8 @@
     id: 'overview',
     class: 'mb-3',
     title: 'Overview',
-    description: 'PBX management has never looked so good (or this simple)'
+    description: 'PBX management has never looked so good (or this simple)',
+    extra: ''
 })
 
 <!-- prettier-ignore -->
@@ -93,7 +94,8 @@
     id: '',
     class: '',
     title: '',
-    description: 'Self hosted & open source'
+    description: 'Self hosted & open source',
+    extra: ''
 })
 
 <!-- prettier-ignore -->
@@ -132,12 +134,15 @@
 
 })
 
+@@include('components/blocks/casestudy.telair.html')
+
 <!-- prettier-ignore -->
 @@include('components/sections/feature.title.html', {
     id: 'features',
     class: 'bg-light',
     title: 'Features',
-    description: 'Asterisk trusted, AI/ML augmented'
+    description: 'Asterisk trusted, AI/ML augmented',
+    extra: ''
 })
 
 <!-- prettier-ignore -->
@@ -162,7 +167,7 @@
             },
             {   
                 title: 'Asterisk based',
-                description: 'Manage customers though Cloud UC portal or use existing CLI on your hosts with commands you already know.',
+                description: 'Manage systems though the branded console or use commands on your hosts that you already familiar with.',
                 icon: 'bi-braces-asterisk'
             },
         ],
@@ -173,7 +178,8 @@
     id: 'pricing',
     class: '',
     title: 'Pricing',
-    description: 'Pricing not available'
+    description: 'Pricing not available',
+    extra: ''
 })
 <center class="text-muted mb-10">Stay tuned for updates.</center>
 
@@ -182,7 +188,8 @@
     id: 'faq',
     class: 'bg-light',
     title: 'FAQs',
-    description: 'Frequently Asked Questions'
+    description: 'Frequently Asked Questions',
+    extra: ''
 })
 
 <!-- prettier-ignore -->
@@ -190,32 +197,42 @@
     class: 'bg-light',
     cols: [
         {
-            title: 'How does billing work?',
-            description: 'Activated services that require billing will need a valid credit card to enable features and unlock capabilities. Billing and invoices are generated on the first of every month for the previous month\'s usage. Invoices are billed in USD by default and in CAD for Canadian Partners.',
+            title: 'How much does it cost?',
+            description: 'Pricing has not been announced yet as the product is still in beta. Partners who request an invite and get accepted will not be charged until full pricing is announced.',
+        },
+        {
+            title: 'Can we contribute to the project?',
+            description: 'Yes, via our GitHub page, you can open issues, contribute to our community forums / discussions. You may also request to join our contribution team, more details available in our resources section.',
         },
         
         {
-            title: 'Do I need a credit card to create an account?',
-            description: 'No! Many products have a free basic/starter tier which covers access for most cases, and so we do not require a credit card. For products and services that do incur usage charges, a credit card payment method must be added in order to unlock the feature.',
+            title: 'Is SIPSTACK UC customizable?',
+            description: 'Yes, SIPSTACK UC is designed to embrace asterisk and allow for custom scripts, dialplan execution and agi applications to be managed and maintained from the Brand Portal. Custom scripts can also be manually managed via the host directly using standard Asterisk configuration files.'
         },
-
         {
-            title: 'Are there alternative payment methods for frequent users?',
-            description: 'This is a common request. Partner accounts that expect to incur more than $10,000 USD in monthly recurring charges can contact our billing team for additional payment options.',
+            title: 'Is the user experience / portal branded?',
+            description: 'Yes, both administrative and user portals are branded to your domain, theme and logos. Email notifications are also branded and come from the branded domain.'
         },
-
+        {
+            title: 'How does SIPSTACK UC managment console differ from other portals?',
+            description: 'SIPSTACK UC allows Partners to bring their brands and utlilize the latest in management features while continuing to manage and scale the physical hosts within their own borders and environments. Cloud UC bridges all hosts regardless of cloud, public or private, and provides unparalleled administration across hosts from a single portal. Cloud UC users will also benefit from augmented caller data across user experiences. For example, incoming calls to users on the mobile apps will see enhanced Caller ID information including dynamic call score, and access to website, social, email and other relevant information.',
+        },
+        {
+            title: 'Is there desktop and mobile apps available?',
+            description: 'Yes and no. The user experience is currently available as a PWA (progressive web app) that can be installed directly from the browser. We are working out how we can offer a true mobile and branded experience without compromise to our Partners and their customers.'
+        }
     ]
 })
 
 <!-- prettier-ignore -->
 @@include('components/sections/cta.default.html', {
     class: 'p-9',
-    label: 'Get Started',
-    title: 'Start Connecting',
-    description: 'Seen enough? It\'s free to start.',
+    label: 'Request Invite',
+    title: 'Join our preview circle',
+    description: 'Join our preview program and be the first to experience next level UCaaS.',
     input_class: 'bg-light',
     placeholder: 'Email Address',
-    button: 'Sign Up',
+    button: 'Notify Me',
     demo: '',
 })
 

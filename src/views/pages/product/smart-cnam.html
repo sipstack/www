@@ -41,7 +41,8 @@
     id: 'overview',
     class: '',
     title: 'Overview',
-    description: 'Integrate Smart CNAM everywhere'
+    description: 'Integrate Smart CNAM everywhere',
+    extra: ''
 })
 
 <section class="position-relative py-3">
@@ -112,16 +113,19 @@
 <!-- prettier-ignore -->
 @@include('components/sections/feature.title.html', {
     id: 'overview',
-    class: '',
+    class: 'mb-n10',
     title: '',
     description: 'Add CNAM lookup to your call flows',
     extra: 'With a few lines, get real-time CNAM data and risk score, or simply request Caller ID only.'
 })
 
+<!-- prettier-ignore -->
 @@include('components/sections/feature.code.html',{
-    style: 'min-height:300px',
+    style: 'min-height:200px',
+    col: 'col-lg-10',
     tabs: [
-        { tab: 'cURL', lang: 'bash', code: '$ curl --user "API-KEY:API-SECRET" \\ \n\t\t https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/<span class="text-primary">14164772004</span>' }
+        { tab: 'cURL', lang: 'bash', code: '\t $ curl --user "API-KEY:API-SECRET" \\ \n\t\t https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/<span class="text-primary">14164772004</span>' },
+        { tab: 'Asterisk', lang: 'bash', code: '\t ... \n\t same => n,Verbose(Getting Smart CNAM) \n\t same => n,Set(CALLERID(name)=${CURL(https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/${CALLERID(num)}/${EXTEN}?type=cnam)}) \n\t same => n,Verbose(Returns:${CALLERID(name)}) ; <span class="text-danger">RISK</span><span class="text-primary">CALLERNAME</span> (RISK and CNAM can be called independantly) \n\t ...' }
     ],
 })
 
@@ -129,6 +133,7 @@
 <!-- prettier-ignore -->
 @@include('components/sections/feature.image-right.html', {
     id: '',
+    class: 'mt-n10',
     title: 'Always learning',
     description: 'Find out whos calling with trust ratings dynamic for your location. <Br><Br>Powered by AI and community users like you. SIPSTACK uses machine learning along with community feedback to provide hyper-accurate call ratings along with information related to the caller including website, email addresses, social profiles, local addresses and even other phone numbers.',
     checkboxes:[],
@@ -223,21 +228,66 @@
     title: 'FAQs',
     subTitle: 'Frequently Asked Questions',
     cols: [
-        {
-            title: 'How does billing work?',
-            description: 'Activated services that require billing will need a valid credit card to enable features and unlock capabilities. Billing and invoices are generated on the first of every month for the previous month’s usage. Invoices are billed in USD by default and in CAD for Canadian Partners.',
-        },
-        
-        {
-            title: 'Do I need a credit card to create an account?',
-            description: 'No! Many products have a free basic/starter tier which covers access for most cases, and so we do not require a credit card. For products and services that do incur usage charges, a credit card payment method must be added in order to unlock the feature.',
-        },
-
-        {
-            title: 'Are there alternative payment methods for frequent users?',
-            description: 'This is a common request. Partner accounts that expect to incur more than $10,000 USD in monthly recurring charges can contact our billing team for additional payment options.',
-        },
-
+      {
+        title: 'How does it differ from regular CNAM lookup tools?',
+        description: 'Smart CNAM is a next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.',
+      },
+      {
+        title: 'What payment methods are accepted?',
+        description: 'Credit cards issued by Visa, MasterCard, or American Express, Electronic Funds Transfer (EFT), Wire Transfer (for qualifying customers) or Cheque',
+      },
+      {
+        title: 'Do I need a credit card to sign up?',
+        description: 'Yes, a valid credit card is required.',
+      },
+      {
+        title: 'Will I receive an invoice?',
+        description: 'Yes, an invoice is issued on the 1st day of the month with the previous month\'s subscription fee and usage. When you join during a month the subscription fee invoiced on the 1st of the month will be for the full subscription amount.',
+      },
+      {
+        title: 'How do included monthly API requests get allotted?',
+        description: 'At the beginning of every month, your allotted API requests for that month are based on your subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. My subscription did not start on the first day of the month, how do included monthly API requests get allotted now? Even though you start during the month your allotted API requests are still based on the API\'s per the subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. In the event, you hardly used your allocation limit contact billing@sipstack.com and request an adjustment to your subscription fee.',
+      },
+      {
+        title: 'How do included monthly API requests get allotted?',
+        description: 'At the beginning of every month, your allotted API requests for that month are based on your subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. My subscription did not start on the first day of the month, how do included monthly API requests get allotted now? Even though you start during the month your allotted API requests are still based on the API\'s per the subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. In the event, you hardly used your allocation limit contact billing@sipstack.com and request an adjustment to your subscription fee.',
+      },
+      {
+        title: 'Is there a usage limit beyond my allotted API requests?',
+        description: 'Yes and No. You can go over your allotted API requests, however, once you exceed your designated credit limit, you will no longer be able to make additional requests unless you upgrade to a higher plan or contact billing@sipstack.com and authorize them to take an additional payment (specify the amount) from your credit card.',
+      },
+      {
+        title: 'What is my credit limit?',
+        description: 'In the beginning until there is a history on the account the credit limit will be twice your subscription fee. In other words, once the number of API requests meet twice the API requests of your subscription no further API requests will be processed. We are doing this so that you are not surprised at the end of the month with a larger than expected invoice. It is important to sign up knowing the number of API requests in your system each month to avoid constantly exceeding your credit limit. However, if you want to test our system with a lower subscription fee this is okay, but you need to remember that when you see your API requests approaching double the subscription amount then you might want to upgrade to a higher or contact billing@sipstack.com to authorize a payment from your credit card to keep the requests flowing or wait until next month to resume your requests. For customers with more than 2,000,000 monthly API requests please contact billing@sipstack.com. After a history is established the credit limit will be based on several factors such as your current subscription, your cumulative spend with SIPSTACK and longevity of your account.',
+      },
+      {
+        title: 'How is sales tax applied?',
+        description: 'If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.',
+      },
+      {
+        title: 'Why some people receive different scores?',
+        description: 'Depending on many factors, our AI/ML will determine the distance between callers, how often a caller makes calls to those regions or numbers just to list a few that makeup the learning conditions. Call rating will always be dynamic.',
+      },
+      {
+        title: 'Why is a caller suddenly receiving lower scores?',
+        description: 'If the same number is calling the same destination and the score changes dramatically, this could indicate that abnormal or fraudulent call behaviours have been suspected and community feedback has been verified. Scoring is adaptive and much like turning on any new system, there is a warm up phase.',
+      },
+      {
+        title: 'Are there any limitations?',
+        description: 'Yes, please read through our Terms of Service, Acceptable Use Policy and our API Rate limits from our Resource center.',
+      },
+      {
+        title: 'My API requests are not going through?',
+        description: 'You may have reached your credit limit. If your account has been paid and you have not exceeded your credit limit and API requests are not being processed contact Support. If you feel there has been a mistake, please contact billing@sipstack.com.',
+      },
+      {
+        title: 'How accurate is the information returned?',
+        description: 'Very accurate! Our AI/ML is constantly learning and adapting ensuring that caller information is up to date, and any meta data such as websites, emails, social, etc... are all current. Caller badges indicate call details are verified, however call ratings will always be dynamic.',
+      },
+      {
+        title: 'What is the difference between a Partner & Vertical?',
+        description: 'Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.',
+      },
     ]
 })
 
