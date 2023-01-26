@@ -21,6 +21,7 @@ const concat = require('gulp-concat')
 const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
 const replace = require('gulp-replace')
+const gap = require('gulp-append-prepend')
 
 // require markdown-it plugins
 // const abbr = require("markdown-it-abbr");
@@ -324,6 +325,7 @@ function ss_public(cb) {
 // }
 
 function ss_markdown(cb) {
+  var slug
   src('src/views/pages/**/*.md')
     .pipe(replace('“', '"'))
     .pipe(replace('”', '"'))
@@ -332,17 +334,6 @@ function ss_markdown(cb) {
     .pipe(replace(' ', ''))
     .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    // .pipe(
-    //   markdown({
-    //     options: {
-    //       html: true,
-    //       linkify: true,
-    //       breaks: true,
-    //       // typographer: true,
-    //     },
-    //     plugins: ['markdown-it-github-headings'],
-    //   })
-    // )
     .pipe(tap(markdownToHtml))
     .pipe(replace('<p></p>', ''))
     .pipe(
@@ -354,11 +345,56 @@ function ss_markdown(cb) {
       })
     )
     .pipe(
+      // tap(function (file, t) {
+      tap(function (file) {
+        // console.log(file.path);
+        slug = file.path.split('/').slice(-2, -1)[0]
+        // console.log(slug);
+        return slug
+      })
+    )
+    // prefix image urls (must have ./ prefix in markdown)
+    .pipe(
+      replace('./', function () {
+        return `/assets/img/resources/blog/${slug}/`
+      })
+    )
+
+    .pipe(
       dest(function (file) {
         return file.base
       })
     )
 
+  cb()
+}
+
+function ss_res_images(cb) {
+  src([
+    'src/views/pages/resources/blog/**/*.png',
+    'src/views/pages/resources/blog/**/*.jpeg',
+    'src/views/pages/resources/blog/**/*.jpg',
+    'src/views/pages/resources/blog/**/*.svg',
+    'src/views/pages/resources/blog/**/*.webp',
+  ])
+    // .pipe(
+    //  tap(function (file, t) {
+    //    slug = file.path.split("/").slice(-2, -1)[0];
+    //    console.log(slug);
+    //    return slug;
+    //  })
+    // )
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/blog/'))
   cb()
 }
 
@@ -401,6 +437,7 @@ exports.default = series(
   copyVendor,
   copyVendorCss,
   copyImages,
+  ss_res_images,
   bundleJs,
   series(buildCss, minifyCss),
   parallel(browserSync, watchFiles)

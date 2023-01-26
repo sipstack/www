@@ -3,8 +3,7 @@
     title: 'SIPSTACK - Knowledge-base',
     body: '',
     css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
+    '/assets/vendor/node_modules/css/choices.min.css'   
     ]
 })
 
@@ -59,5 +58,26 @@
         ],
 })
 <!-- prettier-ignore -->
-
+<script src="/assets/vendor/node_modules/js/choices.min.js"></script>
 @@include('components/layouts/tail.html')
+<script>
+  //   var cSelect = document.querySelectorAll('[data-choices]')
+  //   cSelect.forEach((el) => {
+  //     const t = {
+  //       ...(el.dataset.choices ? JSON.parse(el.dataset.choices) : {}),
+  //       ...{
+  //         classNames: {
+  //           containerInner: el.className,
+  //           input: 'form-control',
+  //           inputCloned: 'form-control-lg ',
+  //           listDropdown: 'dropdown-menu',
+  //           itemChoice: 'dropdown-item',
+  //           activeState: 'show',
+  //           selectedState: 'active',
+  //         },
+  //       },
+  //     }
+  //     new Choices(el, t)
+  //   })
+  form_autocomplete(document.getElementById('ss-search'), countries)
+</script>
