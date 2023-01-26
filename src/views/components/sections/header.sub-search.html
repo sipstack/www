@@ -3,13 +3,36 @@
     <div class="row">
       <div class="col-md-10 col-xl-7 mx-auto text-center">
         <form>
-          <div class="d-flex align-items-center position-relative z-index-2">
+          <div
+            class="align-items-center position-relative z-index-2 autocomplete">
             <input
               type="text"
               class="form-control form-control-lg border-0 pe-8 py-3 shadow-xl rounded-pill"
+              id="ss-search"
               placeholder="@@placeholder"
               aria-label="Search by topics"
               aria-describedby="basic-addon2" />
+
+            <!--Searchable Select Box-->
+
+            <!-- <select
+              class="form-control form-control-lg border-0 pe-8 py-3 shadow-xl rounded-pill"
+              data-choices='{"searchEnabled":true, "allowHTML":true,"itemSelectText":""}'
+              aria-label="Search by topics"
+              aria-describedby="basic-addon2">
+              <option value="" disabled>Country</option>
+              <option value="Usa"></option>
+              <option value="Uk">Uk</option>
+              <option value="India">India</option>
+              <option value="France">France</option>
+              <option value="Japan">Japan</option>
+              <option value="Ukrain">Ukrain</option>
+              <option value="Poland">Poland</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Germany">Germany</option>
+            </select> -->
+
             <button
               role="button"
               type="button"
@@ -33,3 +56,6 @@
     <!--/.row-->
   </div>
 </section>
+<script>
+  var countries = ['API', 'Robocall mitigation', 'STIR/SHAKEN']
+</script>
