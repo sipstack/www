@@ -34,14 +34,30 @@ const md_figs = require('markdown-it-implicit-figures')
 const md_prism = require('markdown-it-prism')
 const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
+// const md_table = require('markdown-it-multimd-table')
 
 // Markdown-It Options
 const options = {
-  preset: 'commonmark',
+  // preset: 'commonmark',
   html: true,
-  xhtmlOut: true,
+  // xhtmlOut: true,
   linkify: true,
   // typographer: true,
+  // highlight: function (str, lang) {
+  //   if (lang && hljs.getLanguage(lang)) {
+  //     try {
+  //       return (
+  //         '<pre class="hljs"><code>' +
+  //         hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+  //         '</code></pre>'
+  //       )
+  //     } catch (__) {}
+  //   }
+
+  //   return (
+  //     '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+  //   )
+  // },
 }
 
 const md = new markdownIt(options)
@@ -69,6 +85,13 @@ md.use(md_toc, {
 })
 // md.use(md_toc, { includeLevel: [1, 2, 3, 4] })
 md.use(md_list)
+// md.use(md_table, {
+//   multiline: false,
+//   rowspan: false,
+//   headerless: false,
+//   multibody: true,
+//   aotolabel: true,
+// })
 
 function markdownToHtml(file) {
   const result = md.render(file.contents.toString())
