@@ -1,0 +1,173 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+  title: "Apply for a Job // SIPSTACK",
+  meta: {
+      description: "Apply for a Job",
+      keywords: "jobs careers hiring work join team skilled engineers ai sales marketing executive",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "contact/abuse",
+      image: "logo/logo.png",
+      type: "website",
+      created: "", 
+      updated: "", 
+  },
+  body: "",
+  css: [],
+  nav: {
+      class: ''
+  }
+})
+
+@@include('components/sections/header.default.html', {
+    label: 'Contact',
+    title :'Apply for a Job',
+    description: 'Please complete the form below to submit your interest',
+    button1: {
+        label: '',
+        link: ''
+    },
+    button2: {
+        label: '',
+        link: ''
+    }
+})
+
+<section class="position-relative" id="contact">
+  <div class="container py-9">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-lg-8 mb-7 mb-md-0 me-auto">
+        <div class="position-relative">
+          <!-- <h2 class="card-title">Contact Us</h2>
+          <p class="text-muted">General contact or department specific below</p> -->
+          <!-- Contacts Form -->
+          <form
+            action="#"
+            method="post"
+            role="form"
+            class="needs-validation"
+            novalidate="">
+            <div class="row">
+              <!-- Input -->
+              <div class="col-lg-6 mb-3">
+                <label class="form-label" for="name">First Name</label>
+                <input
+                  type="text"
+                  name="name_first"
+                  class="form-control form-control-lg form-control-custom"
+                  id="name_first"
+                  placeholder=""
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <div class="col-6 mb-3">
+                <label class="form-label" for="company">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg form-control-custom"
+                  name="name_last"
+                  id="name_last"
+                  placeholder=""
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <!-- Input -->
+              <div class="col-6 mb-3">
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg form-control-custom"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <!-- Input -->
+              <div class="col-6 mb-3">
+                <label class="form-label" for="number">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control form-control-lg form-control-custom"
+                  name="subject"
+                  id="tel"
+                  placeholder="Your phone number"
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid phone number
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Resmue</label>
+              <input
+                class="form-control form-control-sm"
+                type="file"
+                id="formFile" />
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Short Introduction</label>
+              <textarea
+                class="form-control form-control-lg form-control-text"
+                name="message"
+                placeholder="Write your message indicating type of abuse."
+                required=""></textarea>
+              <div class="invalid-feedback">
+                Write your message indicating type of abuse.
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                required="" />
+
+              <label for="message" class="form-label">
+                By entering your name, you affirm all information is true and
+                accurate and wish to be considered for this job opportunity.
+              </label>
+              <div class="invalid-feedback">
+                Write your message indicating type of abuse.
+              </div>
+            </div>
+
+            <div
+              class="d-lg-flex d-grid justify-content-between align-items-center pt-5">
+              <input
+                type="submit"
+                name="submit"
+                value="Submit message"
+                id="sendBtn"
+                class="btn btn-lg btn-primary"
+                style="margin: 0 auto" />
+            </div>
+          </form>
+        </div>
+        <!-- End Contact Form -->
+      </div>
+      <!--End card -->
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>
+
+@@include('components/layouts/tail.html')

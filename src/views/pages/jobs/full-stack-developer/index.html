@@ -1,12 +1,23 @@
+<!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK',
-    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
-    css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+    title: "SIPSTACK",
+    meta: {
+        description: "Sipstack is rewriting the rules of telecommunications. If you believe in eliminating fraudulent and spam calling from our future and thrive on problem solving at scale, we want you to join our team.",
+        keywords: "jobs careers hiring work join team skilled engineers ai sales marketing executive",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
 })
-
 
 <!-- SECTIONS --------------------------------------------------------------------------------------------- -->
 <!-- @@include('components/sections/header.logo.html', {
@@ -24,8 +35,7 @@
     
 }) -->
 
-
-
+<!-- prettier-ignore -->
 @@include('components/sections/jobs.page.html',
     {
         slug: "full-stack-developer",
@@ -46,17 +56,14 @@
         recruiter: "Stamatis Loizides"
     }
 )
-
+<!-- prettier-ignore -->
 @@include('components/sections/jobs.footer.html', {
-    buttonLink: '/contact/us',
+    buttonLink: '/jobs/apply',
     facebook: '',
     twitter: '',
     linkedin: '',
     
 })
 
-<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
 @@include('components/layouts/tail.html')
-
-
-
