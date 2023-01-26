@@ -1,15 +1,27 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - blog',
-    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    title: "Blog// SIPSTACK",
+    meta: {
+        description: "Resources Blog",
+        keywords: "blog, latest posts, posts, articles, news, press",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/blog",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: '',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
-})
-
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+    ],
+    nav: {
+        class: ''
+    }
+  })
+<!-- prettier-ignore -->
 @@include('components/sections/cta.html', {
     id: 'overview',
     subTitle: 'Company Blog',
@@ -20,7 +32,7 @@
     button: 'Subscribe',
 })
 
-
+<!-- prettier-ignore -->
 @@include('components/sections/blog.posts.html', {
     categories : ['News', 'Scam', 'Spam'],
     tags: [],
@@ -47,5 +59,6 @@
         },
     ], 
 })
-<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+
+<!-- prettier-ignore -->
 @@include('components/layouts/tail.html')

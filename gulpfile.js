@@ -17,22 +17,21 @@ const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
 const concat = require('gulp-concat')
-// const markdown = require('gulp-markdown-it') //
 const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
 const replace = require('gulp-replace')
 const gap = require('gulp-append-prepend')
 
 // require markdown-it plugins
-// const abbr = require("markdown-it-abbr");
-// const alerts = require("markdown-it-alerts");
+const md_abbr = require('markdown-it-abbr')
+const md_alerts = require('markdown-it-alerts')
 const md_anc = require('markdown-it-anchor')
 const md_attrs = require('markdown-it-attrs')
-// const embed = require("markdown-it-block-embed");
-// const fn = require("markdown-it-footnote");
-// const figs = require("markdown-it-implicit-figures");
+const md_embed = require('markdown-it-block-embed')
+const md_fn = require('markdown-it-footnote')
+const md_figs = require('markdown-it-implicit-figures')
 // const kbd = require("markdown-it-kbd");
-// const prism = require("markdown-it-prism");
+const md_prism = require('markdown-it-prism')
 const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
 
@@ -46,16 +45,23 @@ const options = {
 }
 
 const md = new markdownIt(options)
-// md.use(abbr);
-// md.use(alerts);
+md.use(md_abbr)
+md.use(md_alerts)
 md.use(md_attrs)
 md.use(md_anc)
 
-// md.use(embed);
-// md.use(fn);
-// md.use(figs);
+md.use(md_embed)
+md.use(md_fn)
+md.use(md_figs, {
+  dataType: false, // <figure data-type="image">, default: false
+  figcaption: true, // <figcaption>alternative text</figcaption>, default: false
+  tabindex: false, // <figure tabindex="1+n">..., default: false
+  link: false, // <a href="img.png"><img src="img.png"></a>, default: false
+})
 // md.use(kbd);
-// md.use(prism);
+md.use(md_prism, {
+  highlightInlineCode: true,
+})
 md.use(md_toc, {
   containerClass: 'ss-toc-md',
   // containerHeaderHtml: '<div class="col-md-3 col-xl-2">',
@@ -293,6 +299,11 @@ function minifyCss(cb) {
 //Copy html
 function html(cb) {
   src([paths.src.html.dir])
+    .pipe(
+      tap(function (file) {
+        console.log('Compiling file: ' + file.path)
+      })
+    )
     .pipe(
       fileinclude({
         prefix: '@@',

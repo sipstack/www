@@ -1,13 +1,26 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK',
+    title: "SIPSTACK UC // SIPSTACK",
+    meta: {
+        description: "The multi-tenant PBX management console you\'ve been waiting for",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "product/sipstack-uc",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
     body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+    ],
+    nav: {
+        class: ''
+    }
 })
-
 <!-- prettier-ignore -->
 @@include('components/sections/header.logo.html', {
     label: 'Products',

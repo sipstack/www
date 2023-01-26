@@ -1,51 +1,65 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - Case Studies',
+    title: "Case Studies // SIPSTACK",
+    meta: {
+        description: "Case Studies",
+        keywords: "customers, testimonials, case study",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/case-study",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
     body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
-    css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
-    
-    ]
+    css: [],
+    nav: {
+        class: ''
+    }
 })
 
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
-@@include('components/sections/header.simple.html', {
-    label : 'Resources',
-    title :'Case Studies',
-    description: '',    
+<!-- prettier-ignore -->
+@@include('components/sections/header.simple.html', { 
+    label: 'Resources', 
+    title:'Case Studies', 
+    description: '', 
 })
-
 
 <!-- START SECTION  -->
 <section class="position-relative bg-light">
+  <div class="container pt-7 pt-lg-7 pb-lg-7">
+    <div
+      class="row justify-content-center align-items-center col-md-10 mb-5 mb-md-0 mx-auto">
+      <!--Topic item-->
+      <div class="col-md-12 mb-5 mb-md-0">
+        <a
+          class="row px-3 py-4 mb-3 border bg-white hover-shadow-lg rounded-3 hover-lift d-flex text-body"
+          href="/resources/case-study/20210412-telair">
+          <div class="p-3 d-flex mb-0 small align-items-center rounded-3">
+            <img
+              src="/assets/img/case-study/telair.png"
+              alt=""
+              class="width-9x height-9x me-2" />
+            <div class="flex-grow-1">
+              <!--article-title-->
+              <h5 class="text-reset">
+                Driving Success: Simplifying Customization with SIPSTACK
+              </h5>
 
-    <div class="container pt-7 pt-lg-7 pb-lg-7">
-
-        <div class="row justify-content-center align-items-center col-md-10 mb-5 mb-md-0 mx-auto ">
-            
-            <!--Topic item-->
-            <div class = "col-md-12 mb-5 mb-md-0">
-                <a class=" row px-3 py-4 mb-3 border bg-white hover-shadow-lg rounded-3 hover-lift d-flex text-body" href="/resources/case-study/20210412-telair">
-                    <div class=" p-3 d-flex mb-0 small align-items-center rounded-3">
-                        <img src="/assets/img/case-study/telair.png" alt="" class="width-9x height-9x me-2">
-                        <div class="flex-grow-1">
-                            <!--article-title-->
-                            <h5 class="text-reset">Driving Success: Simplifying Customization with SIPSTACK</h5>
-        
-                            <!--article-description-->
-                            <div class="d-flex justify-content-between align-items-center text-muted mb-1">
-                                Description goes here 
-                            </div>
-                            <!--article-company-->
-                            <p>TELAIR.NET LTD</p>
-                        </div>
-                    </div>
-                </a>
-            </div> 
-        </div>
+              <!--article-description-->
+              <div
+                class="d-flex justify-content-between align-items-center text-muted mb-1">
+                Description goes here
+              </div>
+              <!--article-company-->
+              <p>TELAIR.NET LTD</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 <!-- END SECTION  -->
 

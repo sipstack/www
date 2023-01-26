@@ -1,13 +1,23 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - API',
+    title: "KB: API // SIPSTACK",
+    meta: {
+        description: "Knowledge Base: API",
+        keywords: "knowledge base, kb, api",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/knowledge-base/api",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
     body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
-    css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+    css: [],
+    nav: {
+        class: ''
+    }
 })
-
 <!-- prettier-ignore -->
 @@include('components/sections/header.logo.html', {
     label : 'Knowledge Base',

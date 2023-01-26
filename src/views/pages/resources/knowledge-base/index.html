@@ -1,12 +1,23 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - Knowledge-base',
-    body: '',
-    css: [
-    '/assets/vendor/node_modules/css/choices.min.css'   
-    ]
+    title: "Knowledge Base // SIPSTACK",
+    meta: {
+        description: "Knowledge Base",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/knowledge-base",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
 })
-
 <!-- prettier-ignore -->
 @@include('components/sections/header.simple.html', {
     label : 'Resources',
@@ -14,12 +25,13 @@
     description: 'Find help on popular topics',
 })
 
+<!-- prettier-ignore -->
 @@include('components/sections/header.sub-search.html', {
     placeholder: 'Search...',
     topics: ['API','Robocall Mitigation','Smart CNAM', 'STIR/SHAKEN']
 })
 
-
+<!-- prettier-ignore -->
 @@include('components/sections/feature.article.html',{
     cards:
         [
