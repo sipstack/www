@@ -1,75 +1,117 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - about',
-    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    title: "About // SIPSTACK",
+    meta: {
+        description: "Post-modern suite of Telecommunication & VoIP tools. AI / ML at it's core, provides unprecedented meta data across the platform.",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "about",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
     css: [
     '/assets/vendor/node_modules/css/swiper-bundle.min.css',
     '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+    ],
+    nav: {
+        class: ''
+    }
 })
 
-
 <section class="position-relative">
-    
-    <div class="container position-relative py-9">
-        <div class="row pt-5 pt-lg-11 align-items-end">
-            <div class="col-12 col-xl-9 mx-auto text-center">
-                <h1 class="display-2 mb-2">Who we are</h1>
-                <p class="fs-5 w-lg-60 mb-0 mx-auto">Building a safer connected tomorrow, today.</p>
-            </div>
-        </div>
-        <!--/.row-->
+  <div class="container position-relative py-9">
+    <div class="row pt-5 pt-lg-11 align-items-end">
+      <div class="col-12 col-xl-9 mx-auto text-center">
+        <h1 class="display-2 mb-2">Who we are</h1>
+        <p class="fs-5 w-lg-60 mb-0 mx-auto">
+          Building a safer connected tomorrow, today.
+        </p>
+      </div>
     </div>
-    <!--/.content-->
+    <!--/.row-->
+  </div>
+  <!--/.content-->
 </section>
 
-
 <section class="position-relative overflow-hidden">
-    <div class="container-fluid position-relative">
-        <div class="row align-items-sm-center align-items-md-start">
-            <div class="col-6 col-sm-3 mb-4 mb-sm-0">
-                <img src="/assets/img/about/4.jpg" class="img-fluid rounded-4" alt="">
-            </div>
-            <div class="col-6 col-sm-3 mb-4 mb-sm-0">
-                <img src="/assets/img/about/4b.jpg" class="img-fluid rounded-4 mb-3" alt="">
-                <img src="/assets/img/about/2.jpg" class="img-fluid rounded-4" alt="">
-            </div>
-            <div class="col-sm-3 col-5">
-                <img src="/assets/img/about/2b.jpg" class="img-fluid rounded-4" alt="">
-            </div>
-            <div class="col-sm-3 col-7">
-                <img src="/assets/img/about/1b.jpg" class="img-fluid rounded-4" alt="">
-            </div>
-        </div>
-        <!--Decoration-->
-        <img src="/assets/img/vectors/line2.svg" data-inject-svg alt=""
-            class="width-18x me-n3 h-auto fill-primary position-absolute end-0 bottom-0">
-
+  <div class="container-fluid position-relative">
+    <div class="row align-items-sm-center align-items-md-start">
+      <div class="col-6 col-sm-3 mb-4 mb-sm-0">
+        <img src="/assets/img/about/4.jpg" class="img-fluid rounded-4" alt="" />
+      </div>
+      <div class="col-6 col-sm-3 mb-4 mb-sm-0">
+        <img
+          src="/assets/img/about/4b.jpg"
+          class="img-fluid rounded-4 mb-3"
+          alt="" />
+        <img src="/assets/img/about/2.jpg" class="img-fluid rounded-4" alt="" />
+      </div>
+      <div class="col-sm-3 col-5">
+        <img
+          src="/assets/img/about/2b.jpg"
+          class="img-fluid rounded-4"
+          alt="" />
+      </div>
+      <div class="col-sm-3 col-7">
+        <img
+          src="/assets/img/about/1b.jpg"
+          class="img-fluid rounded-4"
+          alt="" />
+      </div>
     </div>
-    <div class="container py-9 py-lg-9 position-relative" id="our-story">
-        <div class="row justify-content-between">
-            <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
-                <h2 class="mb-5 display-4">Our Story</h2>
-            </div>
-            <div class="col-md-9 col-xl-8">
-                <p class="lead" data-aos="fade-down" data-aos-delay="150">
-                    While every aspect of our lives are changing, from social to econimcal, we are all apart of the same transition. While spending over two decades imrpoving managed telecom solutions, many problems in the industry were identified that continue to persist without real solutions. SIPSTACK was founded to begin solving some of these problems by creating a unified management platform for Asterisk that is elastic by nature, and could scale and adapt while maintaining a single point of administration and access. This has become Cloud UC, the PBX management tool every carrier and provider has been waiting for. Although efforts have been made to stop fraudulent calls with technology, it is a 55 billion dollar industry in the US alone.
-                </p>
-            </div>
-        </div>
+    <!--Decoration-->
+    <img
+      src="/assets/img/vectors/line2.svg"
+      data-inject-svg
+      alt=""
+      class="width-18x me-n3 h-auto fill-primary position-absolute end-0 bottom-0" />
+  </div>
+  <div class="container py-9 py-lg-9 position-relative" id="our-story">
+    <div class="row justify-content-between">
+      <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="mb-5 display-4">Our Story</h2>
+      </div>
+      <div class="col-md-9 col-xl-8">
+        <p class="lead" data-aos="fade-down" data-aos-delay="150">
+          While every aspect of our lives are changing, from social to
+          econimcal, we are all apart of the same transition. While spending
+          over two decades imrpoving managed telecom solutions, many problems in
+          the industry were identified that continue to persist without real
+          solutions. SIPSTACK was founded to begin solving some of these
+          problems by creating a unified management platform for Asterisk that
+          is elastic by nature, and could scale and adapt while maintaining a
+          single point of administration and access. This has become Cloud UC,
+          the PBX management tool every carrier and provider has been waiting
+          for. Although efforts have been made to stop fraudulent calls with
+          technology, it is a 55 billion dollar industry in the US alone.
+        </p>
+      </div>
     </div>
-    <div class="container py-9 py-lg-9 position-relative">
-        <div class="row justify-content-between">
-            <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
-                <h2 class="mb-5 display-4">Our Mission</h2>
-            </div>
-            <div class="col-md-9 col-xl-8">
-                <p class="lead" data-aos="fade-down" data-aos-delay="150">
-                    Our products are designed with two purposes, first to provide next generation experiences and services to the telecommunications industry, and secondly to eradicate fraudulent and spam calling, period. By driving authentic data through our AI/ML models, community feedback and various other data collection methods, we are able to provide hyper-accurate call ratings that are dynamic to the recipient of the call. While our efforts are only in the beginning stages, we will be targeting this epidemic from all levels and angles to end this era of fraud for good.
-                </p>
-            </div>
-        </div>
+  </div>
+  <div class="container py-9 py-lg-9 position-relative">
+    <div class="row justify-content-between">
+      <div class="col-md-3" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="mb-5 display-4">Our Mission</h2>
+      </div>
+      <div class="col-md-9 col-xl-8">
+        <p class="lead" data-aos="fade-down" data-aos-delay="150">
+          Our products are designed with two purposes, first to provide next
+          generation experiences and services to the telecommunications
+          industry, and secondly to eradicate fraudulent and spam calling,
+          period. By driving authentic data through our AI/ML models, community
+          feedback and various other data collection methods, we are able to
+          provide hyper-accurate call ratings that are dynamic to the recipient
+          of the call. While our efforts are only in the beginning stages, we
+          will be targeting this epidemic from all levels and angles to end this
+          era of fraud for good.
+        </p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- prettier-ignore -->
@@ -105,124 +147,132 @@
         ],
 })
 
-
 <section class="overflow-hidden position-relative">
-    <!--Background-->
-    <div class="position-absolute start-0 top-0 w-100 h-100 bg-light"></div>
-    <div class="container py-9 py-lg-11 position-relative z-index-1">
-
-        <div class="row mb-7 mb-lg-9">
-            <div class="col-12" data-aos="fade-left" data-aos-delay="100">
-                <h2 class="mb-0 display-4">A brief History</h2>
-            </div>
-        </div>
-        <!--History swiper slider-->
-        <div class="swiper-history swiper-container overflow-visible">
-            <!--Slider wrapper-->
-            <div class="swiper-wrapper">
-                <!--Slide-->
-                <div class="swiper-slide">
-                    <div>
-                        <div class="pe-5 pb-3 pe-lg-7">
-                            <!--Time-->
-                            <p class="text-muted">At Present</p>
-                            <!--Year-->
-                            <h2 class="text-primary display-5">2023</h2>
-                        </div>
-                        <!--Divider line-->
-                        <div class="swiper-divider-line bg-primary position-relative w-100 my-4"></div>
-                        <!--Text-->
-                        <div class="pe-7 pt-3 pe-lg-7">
-                            <h5>Making Compliance Easy</h5>
-                            <p>SIPSTACK has been helping hundreds of licened providers comply with regulatory compliance. Complying has become as easy as plug & play.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Slide-->
-                <div class="swiper-slide">
-                    <div>
-                        <div class="pe-5 pb-3 pe-lg-7">
-                            <!--Time-->
-                            <p class="text-muted">June</p>
-                            <!--Year-->
-                            <h2 class="text-primary text-opacity-75 display-5">2022</h2>
-                        </div>
-                        <!--Divider line-->
-                        <div
-                            class="swiper-divider-line bg-primary bg-opacity-75 position-relative w-100 my-4">
-                        </div>
-                        <!--Text-->
-                        <div class="pe-7 pt-3 pe-lg-7">
-                            <h5>Announced Whois by SIPSTACK</h5>
-                            <p>Lorem ipsum is text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Slide-->
-                <div class="swiper-slide">
-                    <div>
-                        <div class="pe-5 pb-3 pe-lg-7">
-                            <!--Time-->
-                            <p class="text-muted">June</p>
-                            <!--Year-->
-                            <h2 class="text-primary text-opacity-75 display-5">2021</h2>
-                        </div>
-                        <!--Divider line-->
-                        <div
-                            class="swiper-divider-line bg-primary bg-opacity-50 position-relative w-100 my-4">
-                        </div>
-                        <!--Text-->
-                        <div class="pe-7 pt-3 pe-lg-7">
-                            <h5>Announced SIPSTACK UC is going open source</h5>
-                            <p>Lorem ipsum is text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Slide-->
-                <div class="swiper-slide">
-                    <div>
-                        <div class="pe-5 pb-3 pe-lg-7">
-                            <!--Time-->
-                            <p class="text-muted">July</p>
-                            <!--Year-->
-                            <h2 class="text-primary text-opacity-50 display-5">2020</h2>
-                        </div>
-                        <!--Divider line-->
-                        <div
-                            class="swiper-divider-line bg-primary bg-opacity-25 position-relative w-100 my-4">
-                        </div>
-                        <!--Text-->
-                        <div class="pe-7 pt-3 pe-lg-7">
-                            <h5>Changed the hosted PBX game</h5>
-                            <p>Lorem ipsum is text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Slide-->
-                <div class="swiper-slide">
-                    <div>
-                        <div class="pe-5 pb-3 pe-lg-7">
-                            <!--Time-->
-                            <p class="text-muted">August</p>
-                            <!--Year-->
-                            <h2 class="text-primary text-opacity-25 display-5">2016</h2>
-                        </div>
-                        <!--Divider line-->
-                        <div class="swiper-divider-line position-relative w-100 my-4"></div>
-                        <!--Text-->
-                        <div class="pe-7 pt-3 pe-lg-7">
-                            <h5>Launched SIPSTACK</h5>
-                            <p>Lorem ipsum is text commonly used in the graphic, print, and publishing
-                                industries for previewing layouts and visual mockups.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!--Background-->
+  <div class="position-absolute start-0 top-0 w-100 h-100 bg-light"></div>
+  <div class="container py-9 py-lg-11 position-relative z-index-1">
+    <div class="row mb-7 mb-lg-9">
+      <div class="col-12" data-aos="fade-left" data-aos-delay="100">
+        <h2 class="mb-0 display-4">A brief History</h2>
+      </div>
     </div>
+    <!--History swiper slider-->
+    <div class="swiper-history swiper-container overflow-visible">
+      <!--Slider wrapper-->
+      <div class="swiper-wrapper">
+        <!--Slide-->
+        <div class="swiper-slide">
+          <div>
+            <div class="pe-5 pb-3 pe-lg-7">
+              <!--Time-->
+              <p class="text-muted">At Present</p>
+              <!--Year-->
+              <h2 class="text-primary display-5">2023</h2>
+            </div>
+            <!--Divider line-->
+            <div
+              class="swiper-divider-line bg-primary position-relative w-100 my-4"></div>
+            <!--Text-->
+            <div class="pe-7 pt-3 pe-lg-7">
+              <h5>Making Compliance Easy</h5>
+              <p>
+                SIPSTACK has been helping hundreds of licened providers comply
+                with regulatory compliance. Complying has become as easy as plug
+                & play.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Slide-->
+        <div class="swiper-slide">
+          <div>
+            <div class="pe-5 pb-3 pe-lg-7">
+              <!--Time-->
+              <p class="text-muted">June</p>
+              <!--Year-->
+              <h2 class="text-primary text-opacity-75 display-5">2022</h2>
+            </div>
+            <!--Divider line-->
+            <div
+              class="swiper-divider-line bg-primary bg-opacity-75 position-relative w-100 my-4"></div>
+            <!--Text-->
+            <div class="pe-7 pt-3 pe-lg-7">
+              <h5>Announced Whois by SIPSTACK</h5>
+              <p>
+                Lorem ipsum is text commonly used in the graphic, print, and
+                publishing industries for previewing layouts and visual mockups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Slide-->
+        <div class="swiper-slide">
+          <div>
+            <div class="pe-5 pb-3 pe-lg-7">
+              <!--Time-->
+              <p class="text-muted">June</p>
+              <!--Year-->
+              <h2 class="text-primary text-opacity-75 display-5">2021</h2>
+            </div>
+            <!--Divider line-->
+            <div
+              class="swiper-divider-line bg-primary bg-opacity-50 position-relative w-100 my-4"></div>
+            <!--Text-->
+            <div class="pe-7 pt-3 pe-lg-7">
+              <h5>Announced SIPSTACK UC is going open source</h5>
+              <p>
+                Lorem ipsum is text commonly used in the graphic, print, and
+                publishing industries for previewing layouts and visual mockups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Slide-->
+        <div class="swiper-slide">
+          <div>
+            <div class="pe-5 pb-3 pe-lg-7">
+              <!--Time-->
+              <p class="text-muted">July</p>
+              <!--Year-->
+              <h2 class="text-primary text-opacity-50 display-5">2020</h2>
+            </div>
+            <!--Divider line-->
+            <div
+              class="swiper-divider-line bg-primary bg-opacity-25 position-relative w-100 my-4"></div>
+            <!--Text-->
+            <div class="pe-7 pt-3 pe-lg-7">
+              <h5>Changed the hosted PBX game</h5>
+              <p>
+                Lorem ipsum is text commonly used in the graphic, print, and
+                publishing industries for previewing layouts and visual mockups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Slide-->
+        <div class="swiper-slide">
+          <div>
+            <div class="pe-5 pb-3 pe-lg-7">
+              <!--Time-->
+              <p class="text-muted">August</p>
+              <!--Year-->
+              <h2 class="text-primary text-opacity-25 display-5">2016</h2>
+            </div>
+            <!--Divider line-->
+            <div class="swiper-divider-line position-relative w-100 my-4"></div>
+            <!--Text-->
+            <div class="pe-7 pt-3 pe-lg-7">
+              <h5>Launched SIPSTACK</h5>
+              <p>
+                Lorem ipsum is text commonly used in the graphic, print, and
+                publishing industries for previewing layouts and visual mockups.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- <section class="position-relative">
@@ -264,32 +314,54 @@
 
 <!-- FOUNDER -->
 <section class="position-relative bg-white" id="team">
-    <div class="container py-6 py-lg-6">
-        <div class="pb-6 centerText">
-            <!--Subheading-->
-            <div class="mb-3" data-aos="fade-up">
-              <span class="h4 subTitleGradient">Meet The Team</span>
-            </div>
-            <!--Section Heading-->
-            <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">About Our Founder</h3>
-        </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-lg-4 mt-auto text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-                <div class="position-relative mb-4 overflow-hidden">
-                    <img src="/assets/img/team/jon-full.png" alt="" class="img-fluid img-zoom">
-                </div>
-                <div>
-                    <h5 class="mb-1">Jonathan Geller</h5>
-                    <p class="d-block text-primary mb-3">CEO & Founder</p>
-                    <p class="small text-muted mx-auto mb-2">
-                        With over two decades in the telecommunications industry, our founder's inspiration comes from his interactions from real people across all industries. While finding commonality in feedback, Jonathan has taken a very personal mission to delivery better technology while ending telecom fraud at various levels.
-                    </p>
-                    <a href="https://github.com/jonathangeller" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://www.linkedin.com/in/jonathangeller1/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>
-                </div>
-            </div>
-        </div>
+  <div class="container py-6 py-lg-6">
+    <div class="pb-6 centerText">
+      <!--Subheading-->
+      <div class="mb-3" data-aos="fade-up">
+        <span class="h4 subTitleGradient">Meet The Team</span>
+      </div>
+      <!--Section Heading-->
+      <h3 class="mb-0 display-1 bold" data-aos="fade-up" data-aos-delay="100">
+        About Our Founder
+      </h3>
     </div>
+
+    <div class="row justify-content-center">
+      <div
+        class="col-lg-4 mt-auto text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="700">
+        <div class="position-relative mb-4 overflow-hidden">
+          <img
+            src="/assets/img/team/jon-full.png"
+            alt=""
+            class="img-fluid img-zoom" />
+        </div>
+        <div>
+          <h5 class="mb-1">Jonathan Geller</h5>
+          <p class="d-block text-primary mb-3">CEO & Founder</p>
+          <p class="small text-muted mx-auto mb-2">
+            With over two decades in the telecommunications industry, our
+            founder's inspiration comes from his interactions from real people
+            across all industries. While finding commonality in feedback,
+            Jonathan has taken a very personal mission to delivery better
+            technology while ending telecom fraud at various levels.
+          </p>
+          <a
+            href="https://github.com/jonathangeller"
+            class="d-inline-block mb-1 ms-1">
+            <i class="bx bxl-github fs-5 ss-icon-hover"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathangeller1/"
+            class="d-inline-block mb-1 ms-1">
+            <i class="bx bxl-linkedin fs-5 ss-icon-hover"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- prettier-ignore -->
@@ -297,7 +369,7 @@
     subTitle: 'Meet The Team',
     title: 'About Our Leaders',
     cols:
-        [
+    [
             {
                 name: 'Stamatis Loizides', 
                 description: 'Stam has lived and worked in over ten countries. He creates processes and procedures to ensure everything within SIPSTACK runs as smoothly as possible and maintains the overall day-to-day of the organization.',
@@ -326,37 +398,32 @@
                 image: '/assets/img/team/ralph.jpg',
                 socials: '<a href="https://github.com/ralphr123" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://www.linkedin.com/in/ralph-rouhana-b23aa31a8/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>',
             },
-        ],
-})
+        ]
+, })
 
 <!-- prettier-ignore -->
 @@include('components/sections/about.talent.html',{
     subTitle: 'Meet The Team',
     title: 'About Our Talent',
-    cols:
-        [
+    cols: [
             {
                 name: 'Marc Rouhana', 
                 title: 'Junior Software Engineer',
                 image: '/assets/img/team/marcr.jpg"',
                 socials: '<a href="https://github.com/Rouhana1" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a>',
-
             },
-
             {
                 name: 'Vraj Patel', 
                 title: 'Software Engineer',
                 image: '/assets/img/team/vrajp.jpg',
                 socials: '<a href="https://github.com/ChocoMufn" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://www.linkedin.com/in/therealvrajpatel/" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>',
             },
-
             {
                 name: 'Jeffrey Sager', 
                 title: 'Creative Content Writer',
                 image: '/assets/img/team/jeffsa.jpg',
                 socials: '',
             },
-
             {
                 name: 'Veer Khurana', 
                 title: 'Software Engineer',
@@ -364,8 +431,8 @@
                 socials: '<a href="https://github.com/VeerKhurana" class="d-inline-block mb-1 ms-1"><i class="bx bxl-github fs-5 ss-icon-hover"></i></a><a href="https://linkedin.com/in/veerkhurana" class="d-inline-block mb-1 ms-1"><i class="bx bxl-linkedin fs-5 ss-icon-hover"></i></a>'
             },
        
-        ],
-})
+        ]
+ })
 
 <!-- prettier-ignore -->
 @@include('components/sections/feature.card-double.html',{
@@ -392,27 +459,24 @@
     ]
 })
 
-
-
 <!-- prettier-ignore -->
 @@include('components/layouts/tail.html')
 <script>
-    // init Swiper:
-    const swiper = new Swiper('.swiper-history', {
-        slidesPerView: 1,
+  // init Swiper:
+  const swiper = new Swiper('.swiper-history', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoHeight: true,
+    breakpoints: {
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
         spaceBetween: 0,
-        autoHeight: true,
-        breakpoints: {
-            // when window width is >= 480px
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 0
-            },
-            // when window width is >= 640px
-            1024: {
-                slidesPerView: 3,
-            }
-        }
-    });
-
+      },
+      // when window width is >= 640px
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  })
 </script>

@@ -16,6 +16,11 @@
 .ss-p-3 {
   padding-left: 1rem;
 }
+
+figcaption {
+  font-size: x-small;
+  color: #666565 !important;
+}
 /********** image ***********/
 
 /********** SIZE ***********/

@@ -1,22 +1,32 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK - Docs',
-    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
-    css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+    title: "Documentation // SIPSTACK",
+    meta: {
+        description: "Post-modern suite of Telecommunication & VoIP tools. AI / ML at it's core, provides unprecedented meta data across the platform.",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/docs",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
 })
 
-
-<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
 @@include('components/sections/header.simple.html', {
     label : 'Resources',
     title :'Documentation',
     description: 'Guides to help you setup SIPSTACK products to get started as fast as possible.',    
 })
 
-
+<!-- prettier-ignore -->
 @@include('components/sections/feature.cards.html',{
     subTitle: 'Products',
     title: 'Beyond Unified Communications',
@@ -50,5 +60,6 @@
         },
         ],
 })
-<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+
+<!-- prettier-ignore -->
 @@include('components/layouts/tail.html')

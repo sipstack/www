@@ -1,16 +1,28 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: 'SIPSTACK',
-    css: [
-    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
-    '/assets/vendor/node_modules/css/glightbox.min.css'
-    ]
+  title: "Report Abuse // SIPSTACK",
+  meta: {
+      description: "Report abuse originating from a SIPSTACK network",
+      keywords: "abuse, report, bots, scanners, useragent",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "contact/abuse",
+      image: "logo/logo.png",
+      type: "website",
+      created: "", 
+      updated: "", 
+  },
+  body: "",
+  css: [],
+  nav: {
+      class: ''
+  }
 })
 
 @@include('components/sections/header.logo.html', {
     label: 'Contact',
     title :'Report Abuse',
-    description: 'Please let us know of any abuse from our networl',
+    description: 'Please let us know of any abuse from our network',
     button1: {
         label: 'Knowledge Base',
         link: '/resources/knowledge-base'
