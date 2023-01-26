@@ -1,0 +1,80 @@
+<section class="position-relative">
+    <div class="container pt-12 pb-9 pb-lg-7">
+        <div class="row pt-lg-5 justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="pb-2 mb-4 border-bottom border-2">
+                    <a href="/jobs" class="fw-semibold fs-6 text-dark">
+                      <i class="bx bx-left-arrow-alt fs-4 me-1"></i> Back</a>
+                </div>
+                <div class="row align-items-center justify-content-between mb-6">
+                    <div class="col-12 col-md-10 col-lg-9 mb-2">
+                        <h1 class="display-4 mb-3">
+                            @@title
+                        </h1>
+                        <p class="fs-6 mb-5 mb-md-0">
+                            <i class="bx bx-map-pin me-1 fs-5"></i>  @@location · <small class="text-primary fw-semibold">@@type</small> 
+                            <small class="d-block text-muted">
+                                <i class="bx bx-history me-1 fs-5"></i>  @@created
+                            </small>
+                        </p>
+                        
+
+                    </div>
+                </div>
+
+                <!--career details-->
+                <article>
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <h3 class = "me-2 me-lg-4 ">About Us</h3>
+                        <span class="border-top d-block flex-grow-1 border-light"></span>
+                    </div>
+                    <p class="mb-6 text-muted">
+                       @@about
+                    </p>
+
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <h3 class = "me-2 me-lg-4 ">Overview</h3>
+                        <span class="border-top d-block flex-grow-1 border-light"></span>
+                    </div>
+                    <p class="mb-6 text-muted">
+                        @@overview
+                    </p>
+
+                                    
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <h3 class = "me-2 me-lg-4 ">Responsibilities</h3>
+                        <span class="border-top d-block flex-grow-1 border-light"></span>
+                    </div>
+                    <div class="list-group list-group-flush mb-6">
+                        @@for (var i = 0; i < responsibilities.length; i++) {
+                            <div class="list-group-item px-0">
+                                <p class="mb-0 text-muted">
+                                    `+responsibilities[i]+`
+                                </p>
+                            </div>
+                        }
+                    </div>
+
+                    @@if(stacks.length){
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <h3 class = "me-2 me-lg-4 ">Stacks</h3>
+                            <span class="border-top d-block flex-grow-1 border-light"></span>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-disc">
+                                    @@for (var i = 0; i < stacks.length; i++) {
+                                        <li class="mb-2">`+stacks[i]+`</li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    }
+                </article>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
