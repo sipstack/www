@@ -387,6 +387,8 @@ function ss_res_images(cb) {
     'src/views/pages/resources/blog/**/*.jpg',
     'src/views/pages/resources/blog/**/*.svg',
     'src/views/pages/resources/blog/**/*.webp',
+    'src/views/pages/resources/case-study/**/*.png',
+    'src/views/pages/resources/case-study/**/*.jpg',
   ])
     // .pipe(
     //  tap(function (file, t) {

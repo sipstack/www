@@ -21,6 +21,9 @@ figcaption {
   font-size: x-small;
   color: #666565 !important;
 }
+figure img {
+  max-width: 100%;
+}
 /********** image ***********/
 
 /********** SIZE ***********/
