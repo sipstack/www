@@ -3,11 +3,11 @@
   title: "Announcing UCS transition into Open Source",
   description: "Keeping businesses, customers and people connected has never been as important as it has been in the past 16 months.",
   category: "News",
-  tags: [''],
+  tags: ['voip', 'history', 'technology'],
   image: "/assets/img/resources/blog/post-23.svg",
-  created: "2021-06-12",
+  created: "20210612",
   author: {
     name: "Jonathan Geller",
-    photo: "/assets/img/team/jonathang.jpg"
+    photo: "/assets/img/team/kanasu.png"
   }
 },
