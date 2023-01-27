@@ -45,10 +45,11 @@ TAGS="'${KEYWORDS//,/$'\', \''}'"
 TAGS="${TAGS//\' /$'\''}"
 
 # generate author image name from AUTHOR
-arr=(${AUTHOR})
-IMAGE_AUTHOR="${arr[0]}${arr[1]:0:1}" # returns first name + lastname letter1
-IMAGE_AUTHOR=${IMAGE_AUTHOR,,} #lower case
-
+if [ -z "${IMAGE_AUTHOR}" ]; then 
+  arr=(${AUTHOR})
+  IMAGE_AUTHOR="${arr[0]}${arr[1]:0:1}" # returns first name + lastname letter1
+  IMAGE_AUTHOR=${IMAGE_AUTHOR,,}.jpg #lower case
+fi
 # create folder if doesnt exist
 if [ ! -d "src/views/pages/resources/blog/${SLUG}" ]; then
   mkdir -p src/views/pages/resources/blog/${SLUG}
@@ -89,7 +90,7 @@ cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
     author: {
         name: "${AUTHOR}",
         role: "Author",
-        photo: "${IMAGE_AUTHOR}.jpg",
+        photo: "${IMAGE_AUTHOR}",
     },
 })
 
@@ -100,6 +101,23 @@ cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
 
 <!-- ARTICLE END -------------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')
+EOF
+
+## output the data json file for blog landing
+cat << EOF > src/data/blog/${CREATED}-${SLUG}.json
+{
+  slug: "${SLUG}",
+  title: "${TITLE}",
+  description: "${DESCRIPTION}",
+  category: "${CATEGORY}",
+  tags: [${TAGS}],
+  image: "/assets/img/resources/blog/${IMAGE}",
+  created: "${CREATED}",
+  author: {
+    name: "${AUTHOR}",
+    photo: "/assets/img/team/${IMAGE_AUTHOR}"
+  }
+},
 EOF
 
 echo "Completed successfully!"

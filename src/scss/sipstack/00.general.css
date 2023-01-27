@@ -45,6 +45,20 @@ figure img {
   line-height: 1;
 }
 
+.ss-blog-truncate-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* Number of lines displayed before it truncate */
+  overflow: hidden;
+}
+
+.ss-blog-truncate-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines displayed before it truncate */
+  overflow: hidden;
+}
+
 .nav.nav-filter .nav-link.active {
   text-decoration: unset;
   color: var(--bs-nav-link-hover-color);

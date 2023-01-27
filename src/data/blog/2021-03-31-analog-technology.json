@@ -1,0 +1,13 @@
+{
+  slug: "analog-technology",
+  title: "What is Analog Technology?",
+  description: "Analog technology, as the name suggests, refers to technologies that are analogous to the process occurring behind the technology.",
+  category: "History",
+  tags: ['voip', 'history', 'technology'],
+  image: "/assets/img/resources/blog/post-18.svg",
+  created: "2021-03-31",
+  author: {
+    name: "Kanasu Nagathihalli",
+    photo: "/assets/img/team/kanasu.png"
+  }
+},

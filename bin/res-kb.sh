@@ -16,8 +16,9 @@ echo "You can also run this with bin/res-kb.sh <catagory>/<slug>"
 echo "-----------------------------------------------------"
 
 ## if path provided as parameter check ini
-if [ ! -z "$1" ]; then
-SLUG=$1
+if [ ! -z "$2" ]; then
+CATEGORY=$1
+SLUG=$2
   echo "Checking for INI file: ${SLUG}"
   if [ -f "src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}/article.ini" ]; then
 
@@ -46,9 +47,11 @@ TAGS="'${KEYWORDS//,/$'\', \''}'"
 TAGS="${TAGS//\' /$'\''}"
 
 # generate author image name from AUTHOR
-arr=(${AUTHOR})
-IMAGE_AUTHOR="${arr[0]}${arr[1]:0:1}" # returns first name + lastname letter1
-IMAGE_AUTHOR=${IMAGE_AUTHOR,,} #lower case
+if [ -z "${IMAGE_AUTHOR}" ]; then 
+  arr=(${AUTHOR})
+  IMAGE_AUTHOR="${arr[0]}${arr[1]:0:1}" # returns first name + lastname letter1
+  IMAGE_AUTHOR=${IMAGE_AUTHOR,,}.jpg #lower case
+fi
 
 # create folder if doesnt exist
 if [ ! -d "src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}" ]; then
@@ -87,11 +90,28 @@ cat << EOF > src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}/index.
     author: {
         name: "${AUTHOR}",
         role: "Author",
-        photo: "${IMAGE_AUTHOR}.jpg",
+        photo: "${IMAGE_AUTHOR}",
     },
 })
 
 @@include('components/layouts/tail.html')
+EOF
+
+## output the data json file for blog landing
+
+cat << EOF > src/data/knowledge-base/${CATEGORY}/${SLUG}.json
+{
+  slug: "${SLUG}",
+  title: "${TITLE}",
+  description: "${DESCRIPTION}",
+  category: "${CATEGORY}",
+  tags: [${TAGS}],
+  created: "${CREATED}",
+  author: {
+    name: "${AUTHOR}",
+    photo: "/assets/img/team/${IMAGE_AUTHOR}"
+  }
+},
 EOF
 
 echo "Completed successfully!"
