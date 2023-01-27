@@ -322,7 +322,11 @@ function minifyCss(cb) {
 
 //Copy html
 function html(cb) {
-  src([paths.src.html.dir, '!src/views/pages/**/_*.html'])
+  src([
+    paths.src.html.dir,
+    '!src/views/pages/**/_*.html',
+    '!src/views/pages/resources/**/*',
+  ])
     .pipe(
       tap(function (file) {
         console.log('Compiling file: ' + file.path)
@@ -523,6 +527,33 @@ function ss_data(cb) {
   cb()
 }
 
+function ss_html(cb) {
+  src([
+    'src/views/pages/resources/**/*.html',
+    '!src/views/pages/resources/**/_*.html',
+  ])
+    .pipe(
+      tap(function (file) {
+        console.log('Compiling file: ' + file.path)
+      })
+    )
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+        // basepath: '@file',
+        basepath: 'src/views',
+        indent: true,
+      })
+    )
+    .pipe(dest('dist/resources'))
+    .pipe(
+      browsersync.reload({
+        stream: true,
+      })
+    )
+
+  cb()
+}
 // ------------------------------------------------------------------------------
 function watchFiles() {
   watch(
@@ -548,6 +579,10 @@ function watchFiles() {
     series(ss_res_images, browsersyncReload)
   )
   watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))
+  watch(
+    ['src/views/pages/resources/**/*.html'],
+    series(ss_html, browsersyncReload)
+  )
   // watch(
   //   ['src/data/blog/*.json', 'src/data/knowledge-base/**/*.json'],
   //   series(ss_data, html, browsersyncReload)
@@ -578,6 +613,7 @@ exports.default = series(
   copyImages,
   ss_res_images,
   bundleJs,
+  ss_html,
   series(buildCss, minifyCss),
   parallel(browserSync, watchFiles)
 )

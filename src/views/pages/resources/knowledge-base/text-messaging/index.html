@@ -1,0 +1,40 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "KB: Text Messaging // SIPSTACK",
+    meta: {
+        description: "Knowledge Base: Text Messaging",
+        keywords: "knowledge base, kb, api",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/knowledge-base/text-messaging",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+<!-- prettier-ignore -->
+@@include('components/sections/header.logo.html', {
+    label : 'Knowledge Base',
+    title :'API',
+    description: 'Helpful articles and guides', 
+    button1: {
+        label: 'Developer Documentation',
+        link: 'https://developers.sipstack.com'
+    },
+    button2: {
+        label: 'Back',
+        link: '/resources/knowledge-base'
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('pages/resources/knowledge-base/text-messaging/_articles.html')
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

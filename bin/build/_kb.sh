@@ -73,3 +73,10 @@ func4() {
   cat src/data/knowledge-base/${CATEGORY}/*.json >> ${DEST}
   echo ']})' >> ${DEST}
 }
+
+
+# clean up
+func5() {
+  echo "Cleaning up..."
+rm -rf src/data/knowledge-base
+}

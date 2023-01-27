@@ -306,6 +306,29 @@
     ]
 })
 
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+  class: 'p-9',
+  label: 'Get Started',
+  title: 'Smarter SIP Termination',
+  description: 'Volume discounted and STIR/SHAKEN managed',
+  input_class: 'bg-light',
+  placeholder: 'Your email address...',
+  button: 'Signup',
+  demo: '',
+  link: '',
+})
 
+<script>
+  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+  
+      var formData = $('#ss-form-cta').serialize()
+      
+      window.location.href=`https://partner.sipstack.com/signup?${formData}`
+    })
+  })
+</script>
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')

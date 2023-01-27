@@ -111,5 +111,29 @@
     extra: 'Stay tuned for updates.'
 })
 
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+    class: 'p-9',
+    label: 'Request Invite',
+    title: 'Join our preview circle',
+    description: 'Join our preview program and be the first to experience next level UCaaS.',
+    input_class: 'bg-light',
+    placeholder: 'Email Address',
+    button: 'Notify Me',
+    demo: '',
+    link: ''
+})
+
+<script>
+  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+
+      var formData = $('#ss-form-cta').serialize()
+      $('#ss-form-cta-submit').attr('disabled', '')
+      apiRequest('f/www/cap/invite?' + formData, 'GET')
+    })
+  })
+</script>
 <!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')

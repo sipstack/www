@@ -77,5 +77,25 @@
         },
     ]
 })
-
+<script>
+  window.addEventListener('load', function () {
+    $('form').submit(function (e) {
+      e.preventDefault()
+      var formData = $('form').serialize()
+      console.log(formData)
+      var resp = apiRequest('f/www/cap/contact', 'POST', formData, 'text/plain')
+      resp.done(function (data) {
+        // console.log('s');
+        // console.log(data)
+      })
+      resp.fail((req, status, err) => {
+        // console.log(err)
+        // console.log(req);
+      })
+      $('#submit').attr('disabled', 'disabled')
+      alert('Your request has been submitted!')
+      window.location.href = '/contact/us'
+    })
+  })
+</script>
 @@include('components/layouts/tail.html')
