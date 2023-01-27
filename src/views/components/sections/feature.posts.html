@@ -6,7 +6,8 @@
           class="position-relative"
           data-aos="fade-left"
           data-aos-duration="400">
-          <h3 class="display-3 mb-0">Recent Posts</h3>
+          <!-- <h3 class="display-3 mb-0">Recent Posts</h3> -->
+          <h6 class="display-7">Recent Posts</h6>
         </div>
       </div>
 
@@ -22,61 +23,70 @@
         </a>
       </div>
     </div>
-
     <div class="position-relative">
       <div class="row position-relative z-index-1">
+        @@for (var i = 0; i < posts.length; i++) {
         <div
-          class="col-lg-4 mb-4 mb-lg-0"
+          class="col-lg-4 `+posts[i].category+`"
           data-aos="fade-up"
           data-aos-duration="400">
           <!--Article-->
+
           <article class="card-hover hover-lift">
             <div class="position-relative rounded-3 overflow-hidden">
-              <img
-                src="assets/img/960x640/3.jpg"
-                class="img-fluid img-zoom"
-                alt="" />
+              <img src="`+posts[i].image+`" class="img-fluid img-zoom" alt="" />
             </div>
             <div class="pt-4">
-              <h4 class="link-multiline">
-                The recipe for excellent design management
+              <h4 class="link-multiline ss-blog-truncate-1">
+                `+posts[i].title+`
               </h4>
-              <p class="mb-0 pt-3 text-muted small">02 May</p>
+              <p class="small fs-7 text-muted pt-3 ss-blog-truncate-2">
+                `+posts[i].description+`
+              </p>
+
+              <div class="pt-3 d-flex align-items-center">
+                <div class="avatar-group">
+                  <div
+                    class="avatar-group-item avatar rounded-circle overflow-hidden">
+                    <img
+                      src="`+posts[i].author.photo+`"
+                      alt=""
+                      class="img-fluid" />
+                  </div>
+                </div>
+
+                <div class="small text-muted" style="margin-left: 1.5rem">
+                  <div>
+                    <span>Written by</span>
+                    <span class="text-primary">`+posts[i].author.name+`</span>
+                    <br />
+                    <small class="text-muted">`+posts[i].created+`</small>
+                  </div>
+                </div>
+                <div
+                  class="small text-muted"
+                  style="margin-left: auto; margin-right: 0">
+                  <small
+                    class="mb-1 text-primary badge bg-white border badge-pill">
+                    `+posts[i].category+`
+                  </small>
+                </div>
+              </div>
             </div>
 
-            <!--Post link-->
-            <a href="#" class="stretched-link"></a>
+            <a href="`+posts[i].slug+`" class="stretched-link"></a>
           </article>
         </div>
-        <div
-          class="col-lg-4 mb-4 mb-lg-0"
-          data-aos="fade-up"
-          data-aos-duration="400"
-          data-aos-delay="100">
-          <!--Article-->
-          <article class="card-hover hover-lift">
-            <div class="position-relative rounded-3 overflow-hidden">
-              <img
-                src="assets/img/960x640/4.jpg"
-                class="img-fluid img-zoom"
-                alt="" />
-            </div>
-            <div class="pt-4">
-              <h4 class="link-multiline">
-                How to use social media to invent or reinvent yourself
-              </h4>
-              <p class="mb-0 pt-3 text-muted small">01 May</p>
-            </div>
-            <!--Post link-->
-            <a href="#" class="stretched-link"></a>
-          </article>
-        </div>
+        }
+      </div>
+    </div>
+    <!-- <div class="position-relative">
+      <div class="row position-relative z-index-1">
         <div
           class="col-lg-4"
           data-aos="fade-up"
           data-aos-duration="400"
           data-aos-delay="150">
-          <!--Article-->
           <article class="card-hover hover-lift">
             <div class="position-relative rounded-3 overflow-hidden">
               <img
@@ -88,12 +98,10 @@
               <h4 class="link-multiline">Digital design trends in 2021</h4>
               <p class="mb-0 pt-3 text-muted small">21 April</p>
             </div>
-
-            <!--Post link-->
             <a href="#" class="stretched-link"></a>
           </article>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

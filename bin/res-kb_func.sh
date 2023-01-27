@@ -1,8 +1,4 @@
-func0 (){
-    echo $SLUG
-}
-
-func1(){
+func1() {
 # clean up 
 DESCRIPTION="${DESCRIPTION//’/$'\''}"
 TITLE="${TITLE//’/$'\''}"
@@ -17,12 +13,13 @@ if [ -z "${IMAGE_AUTHOR}" ]; then
   IMAGE_AUTHOR="${arr[0]}${arr[1]:0:1}" # returns first name + lastname letter1
   IMAGE_AUTHOR=${IMAGE_AUTHOR,,}.jpg #lower case
 fi
-# create folder if doesnt exist
-if [ ! -d "src/views/pages/resources/blog/${SLUG}" ]; then
-  mkdir -p src/views/pages/resources/blog/${SLUG}
-fi
 
-cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
+# create folder if doesnt exist
+# if [ ! -d "src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}" ]; then
+#   mkdir -p src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}
+# fi
+
+cat << EOF > src/views/pages/resources/knowledge-base/${CATEGORY}/${SLUG}/index.html
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
     title: "${TITLE} // SIPSTACK",
@@ -31,8 +28,8 @@ cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
         keywords: "${KEYWORDS}",
         author: "${AUTHOR}",
         robots: "index, follow",
-        url: "resources/blog/${SLUG}",
-        image: "resources/blog/${IMAGE}",
+        url: "resources/knowledge-base/${CATEGORY}/${SLUG}",
+        image: "logo/logo.png",
         type: "article",
         created: "${CREATED}", 
         updated: "", 
@@ -41,16 +38,13 @@ cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
     css: []
 })
 
-<!-- ARTICLE START --------------------------------------------------------------------------------------------- -->
+
 <!-- prettier-ignore -->
-@@include('components/sections/blog.article-header.html', {
+@@include('components/sections/kb.article.html', {
     slug: "${SLUG}",
-    image: "${IMAGE}",
-    category: "${CATEGORY}",
-    tags: [${TAGS}],
-    views: "0",
     title: "${TITLE}",
-    abstract: "${DESCRIPTION}",
+    description: "${DESCRIPTION}",
+    category: "${CATEGORY}",
     created: "${CREATED}",
     updated: "",
     duration: "${DURATION}",
@@ -61,28 +55,26 @@ cat << EOF > src/views/pages/resources/blog/${SLUG}/index.html
     },
 })
 
-<!-- prettier-ignore -->
-@@include('components/sections/blog.article-v1.html', {
-    slug: "${SLUG}",
-})
-
-<!-- ARTICLE END -------------------------------------------------------------------------------------------- -->
 @@include('components/layouts/tail.html')
 EOF
 }
 
 ## output the data json file for blog landing
-func2(){
-    CREATED="${CREATED//-/$''}"
+func2() {
+# CREATED="${CREATED//-/$''}"
+# create folder if doesnt exist
 
-cat << EOF > src/data/blog/${CREATED}-${SLUG}.json
+if [ ! -d "src/data/knowledge-base/${CATEGORY}" ]; then
+  mkdir -p src/data/knowledge-base/${CATEGORY}/
+fi
+
+cat << EOF > src/data/knowledge-base/${CATEGORY}/${SLUG}.json
 {
   slug: "${SLUG}",
   title: "${TITLE}",
   description: "${DESCRIPTION}",
   category: "${CATEGORY}",
   tags: [${TAGS}],
-  image: "/assets/img/resources/blog/${IMAGE}",
   created: "${CREATED}",
   author: {
     name: "${AUTHOR}",
@@ -90,12 +82,4 @@ cat << EOF > src/data/blog/${CREATED}-${SLUG}.json
   }
 },
 EOF
-}
-
-# output 3 latest articles for main page
-func3(){
-files=( src/data/blog/20*.json )
-echo "@@include('components/sections/feature.posts.html',{ posts: [" > src/views/pages/_posts.html
-cat "${files[@]: -3}" >> src/views/pages/_posts.html
-echo "]})" >> src/views/pages/_posts.html
 }

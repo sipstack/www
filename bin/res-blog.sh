@@ -43,6 +43,7 @@ else
     . src/views/pages/resources/blog/${SLUG}/article.ini
     func1
     func2
+    func3
   done
 
 fi
