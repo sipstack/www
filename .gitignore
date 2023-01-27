@@ -1,6 +1,7 @@
 # SIPSTACK
 
 public/assets/img/resources
+src/views/pages/**/content.html
 
 # Logs
 

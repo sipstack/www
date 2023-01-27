@@ -1,0 +1,13 @@
+{
+  slug: "voip-technology-explained",
+  title: "VoIP Technology Explained",
+  description: "VoIP emerged as a result of decades of experimentation with different scientific ideas and technologies such as packet switching, Linear Predictive Coding, TCP/IP and the internet.",
+  category: "History",
+  tags: [''],
+  image: "/assets/img/resources/blog/post-15.svg",
+  created: "2021-04-16",
+  author: {
+    name: "Kanasu Nagathihalli",
+    photo: "/assets/img/team/kanasu.png"
+  }
+},

@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 @@include('components/layouts/head.html', {
-    title: "Blog// SIPSTACK",
+    title: "Blog // SIPSTACK",
     meta: {
         description: "Resources Blog",
         keywords: "blog, latest posts, posts, articles, news, press",
@@ -33,32 +33,7 @@
 })
 
 <!-- prettier-ignore -->
-@@include('components/sections/blog.posts.html', {
-    categories : ['News', 'Scam', 'Spam'],
-    tags: [],
-    posts: [
-        {
-            title: 'FCC Proposes Record-High $300M Fine for Auto Warranty',
-            category: 'Scam',
-            tag: '',
-            postImage: '/assets/img/960x640/4.jpg',
-            authorImage: '/assets/img/team/jeffsa.jpg"',
-            author: 'Jeff Sager',
-            date: '10/12/2022',
-            link: '',
-        },
-        {
-            title: 'FCC Proposes Record-High $300M Fine for Auto Warranty',
-            category: 'Scam',
-            tag: '',
-            postImage: '/assets/img/960x640/4.jpg',
-            authorImage: '/assets/img/team/jeffsa.jpg"',
-            author: 'Jeff Sager',
-            date: '10/12/2022',
-            link: '',
-        },
-    ], 
-})
+@@include('pages/resources/blog/_articles.html')
 
 <!-- prettier-ignore -->
 @@include('components/layouts/tail.html')

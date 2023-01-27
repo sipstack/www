@@ -8,7 +8,7 @@
         @@for (var i = 0; i < articles.length; i++) {
         <a
           class="px-3 py-4 mb-3 border bg-white hover-shadow-lg rounded-3 hover-lift d-flex text-body"
-          href="`+articles[i].link+`">
+          href="`+articles[i].slug+`">
           <div class="me-3 text-muted">
             <i class="bx bx-question-mark fs-4"></i>
           </div>
@@ -16,7 +16,7 @@
             <!--article-title-->
             <h5 class="text-reset">`+articles[i].title+`</h5>
             <!--article-desc-->
-            <p class="mb-4 text-body">`+articles[i].abstract+`</p>
+            <p class="mb-4 text-body">`+articles[i].description+`</p>
             <!--article-footer-->
             <div class="d-flex justify-content-between align-items-center">
               <!--article-discussion-members-->
@@ -24,16 +24,16 @@
                 <div
                   class="avatar-group-item avatar xs rounded-circle overflow-hidden">
                   <img
-                    src="/assets/img/team/`+articles[i].author+`.jpg"
+                    src="`+articles[i].author.photo+`"
                     alt=""
                     class="img-fluid" />
                 </div>
                 <div class="ms-3 small mt-n2">
                   <span class="text-muted">Written by:</span>
-                  <span>Jeff Sager</span>
+                  <span>`+articles[i].author.name+`</span>
                   <br />
                   <span class="mt-n1" style="font-size: x-small">
-                    Created: `+articles[i].updated+`
+                    Created: `+articles[i].created+`
                   </span>
                 </div>
               </div>

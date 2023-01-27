@@ -35,6 +35,7 @@ const md_prism = require('markdown-it-prism')
 const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
 // const md_table = require('markdown-it-multimd-table')
+const sort = require('gulp-sort')
 
 // Markdown-It Options
 const options = {
@@ -321,7 +322,7 @@ function minifyCss(cb) {
 
 //Copy html
 function html(cb) {
-  src([paths.src.html.dir])
+  src([paths.src.html.dir, '!src/views/pages/**/_*.html'])
     .pipe(
       tap(function (file) {
         console.log('Compiling file: ' + file.path)
@@ -410,8 +411,6 @@ function ss_res_images(cb) {
     'src/views/pages/resources/blog/**/*.jpg',
     'src/views/pages/resources/blog/**/*.svg',
     'src/views/pages/resources/blog/**/*.webp',
-    'src/views/pages/resources/case-study/**/*.png',
-    'src/views/pages/resources/case-study/**/*.jpg',
   ])
     // .pipe(
     //  tap(function (file, t) {
@@ -431,6 +430,75 @@ function ss_res_images(cb) {
       ])
     )
     .pipe(dest('dist/assets/img/resources/blog/'))
+
+  src([
+    'src/views/pages/resources/case-study/**/*.png',
+    'src/views/pages/resources/case-study/**/*.jpg',
+  ])
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/case-study/'))
+
+  cb()
+}
+
+function ss_data(cb) {
+  // BLOG ---------------------------------
+  src(['src/data/blog/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/blog.posts.html", {categories : ["Business","History", "News", "Regulatory", "Robocall", "Technology"],tags: [],posts: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/blog/'))
+
+  // KB / API ----------------------------------------
+  src(['src/data/knowledge-base/api/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/kb.articles.html", {articles: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/knowledge-base/api/'))
+
+  // KB / Fax ----------------------------------------
+  src(['src/data/knowledge-base/fax/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/kb.articles.html", {articles: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/knowledge-base/fax/'))
+
   cb()
 }
 
@@ -449,7 +517,20 @@ function watchFiles() {
     [paths.src.html.files, 'src/views/components/**/*.html'],
     series(html, browsersyncReload)
   )
+  watch(
+    [
+      'src/views/pages/resources/**/*.jpg',
+      'src/views/pages/resources/**/*.jpeg',
+      'src/views/pages/resources/**/*.png',
+      'src/views/pages/resources/**/*.webp',
+    ],
+    series(ss_res_images, browsersyncReload)
+  )
   watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))
+  watch(
+    ['src/data/blog/*.json', 'src/data/knowledge-base/**/*.json'],
+    series(ss_data, html, browsersyncReload)
+  )
 }
 
 exports.test = ss_markdown
@@ -467,6 +548,7 @@ exports.default = series(
   cleanUp,
   ss_public,
   ss_markdown,
+  ss_data,
   html,
   buildCss,
   minifyCss,

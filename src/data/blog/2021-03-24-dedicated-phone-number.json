@@ -1,0 +1,13 @@
+{
+  slug: "dedicated-phone-number",
+  title: "Your Business Needs a Dedicated Phone Number. Here's Why.",
+  description: "Setting up a dedicated business line can have a positive influence on your brand image and a positive impact on your bottom line.",
+  category: "Business",
+  tags: ['voip', 'history', 'technology', 'business', 'did', 'phone number'],
+  image: "/assets/img/resources/blog/post-1.svg",
+  created: "2021-03-24",
+  author: {
+    name: "Kanasu Nagathihalli",
+    photo: "/assets/img/team/kanasu.png"
+  }
+},

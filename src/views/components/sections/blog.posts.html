@@ -57,12 +57,17 @@
             <article class="card-hover hover-lift">
               <div class="position-relative rounded-3 overflow-hidden">
                 <img
-                  src="`+posts[i].postImage+`"
+                  src="`+posts[i].image+`"
                   class="img-fluid img-zoom"
                   alt="" />
               </div>
               <div class="pt-4">
-                <h4 class="link-multiline">`+posts[i].title+`</h4>
+                <h4 class="link-multiline ss-blog-truncate-1">
+                  `+posts[i].title+`
+                </h4>
+                <p class="small fs-7 text-muted pt-3 ss-blog-truncate-2">
+                  `+posts[i].description+`
+                </p>
 
                 <div class="pt-3 d-flex align-items-center">
                   <!--article-discussion-members-->
@@ -70,7 +75,7 @@
                     <div
                       class="avatar-group-item avatar rounded-circle overflow-hidden">
                       <img
-                        src="`+posts[i].authorImage+`"
+                        src="`+posts[i].author.photo+`"
                         alt=""
                         class="img-fluid" />
                     </div>
@@ -79,9 +84,9 @@
                   <div class="small text-muted" style="margin-left: 1.5rem">
                     <div>
                       <span>Written by</span>
-                      <span class="text-primary">`+posts[i].author+`</span>
+                      <span class="text-primary">`+posts[i].author.name+`</span>
                       <br />
-                      <small class="text-muted">`+posts[i].date+`</small>
+                      <small class="text-muted">`+posts[i].created+`</small>
                     </div>
                   </div>
                   <div
@@ -95,7 +100,7 @@
                 </div>
               </div>
               <!--Post link-->
-              <a href="`+posts[i].link+`" class="stretched-link"></a>
+              <a href="`+posts[i].slug+`" class="stretched-link"></a>
             </article>
           </div>
           }
