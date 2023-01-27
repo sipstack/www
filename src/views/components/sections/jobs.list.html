@@ -1,77 +1,103 @@
 <section class="position-relative">
-    <div class="container pt-7 pt-lg-7 pb-7">
-        <div class="row mb-7 align-items-center">
-            <ul class="mb-3 nav nav-filter align-items-center justify-content-center">
-                <li class="nav-item small text-muted d-flex me-2 me-md-4">Filter by:</li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" data-bs-toggle="pill" data-filter="*" data-bs-target="#all">All Openings</a>
-                </li>
-                @@for (var i = 0; i < categories.length; i++) {
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="pill" data-filter=".`+categories[i]+`" data-bs-target="#`+categories[i]+`">
-                            `+categories[i]+`
-                        </a>
-                    </li>
-                }
-            </ul>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-8 order-last order-lg-1 mx-auto">
-                <!--Jobs-->
-
-
-                <div id="company-jobs" class="pb-3 pt-3 pt-lg-3" data-isotope='{"layoutMode": "masonry"}'>
-                    @@for (var i = 0; i <  cols.length; i++) {
-                        <!--Job card-->
-                        <div class="mb-4 card hover-shadow-xl border shadow-sm `+cols[i].category+`" style = "width: 100%;">
-                            <!--Card-body-->
-                            <div class="p-5">
-                                <div class="d-flex align-items-start">
-                                    <!--Job details-->
-                                    <div class="flex-grow-1">
-                                        <div class="d-flex flex-column flex-md-row">
-                                            <div class="flex-grow-1">
-                                                <h4 class="mb-3">`+cols[i].title+`</h4>
-                                                <p class = "text-muted">`+cols[i].abstract+`</p>
-                                                <ul class="d-flex small flex-wrap list-unstyled mb-2">
-                                                    <li class="me-3 mb-2">
-                                                        <h6 class="mb-0 text-primary">SIPSTACK</h6>
-                                                    </li>
-                                                    <li class="me-3 mb-2 text-muted d-flex align-items-center"><i
-                                                            class="bx bx-dollar me-1 text-muted" style="font-size: large;"></i>`+cols[i].salary+`</li>
-                                                    <li class="me-3 mb-2 text-muted d-flex align-items-center"><i
-                                                            class="bx bx-map me-1 text-muted" style="font-size: large;"></i>`+cols[i].location+`</li>
-                                                </ul>
-                                                <div class="d-flex align-items-center" style="font-size: large;">
-                                                    <span
-                                                        class="badge py-1 lh-base position-relative z-index-2 bg-primary bg-opacity-10 text-primary me-2 px-3">`+cols[i].type+`</span>
-                                                        
-                                                    <!--Category-->
-                                                    <span class="badge bg-gray-200 text-secondary py-1 lh-base position-relative z-index-2">
-                                                        <i class="`+cols[i].logo+` me-1 text-body" style="font-size: large;"></i> `+cols[i].category+`
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--Date-->
-                                            <div class="flex-shrink-0 d-md-block d-none">
-                                                <small class="text-muted">`+cols[i].created+`</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Link-->
-                            <a href=".`+cols[i].slug+`" class="stretched-link"></a>
-                        </div>
-                    }
-
-                </div>
-            </div>
-        </div>
+  <div class="container pt-7 pt-lg-7 pb-7">
+    <div class="row mb-7 align-items-center">
+      <ul class="mb-3 nav nav-filter align-items-center justify-content-center">
+        <li class="nav-item small text-muted d-flex me-2 me-md-4">
+          Filter by:
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="#"
+            data-bs-toggle="pill"
+            data-filter="*"
+            data-bs-target="#all">
+            All Openings
+          </a>
+        </li>
+        @@for (var i = 0; i < categories.length; i++) {
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+            data-bs-toggle="pill"
+            data-filter=".`+categories[i]+`"
+            data-bs-target="#`+categories[i]+`">
+            `+categories[i]+`
+          </a>
+        </li>
+        }
+      </ul>
     </div>
-</section>
-     
 
-        
+    <div class="row">
+      <div class="col-lg-8 order-last order-lg-1 mx-auto">
+        <!--Jobs-->
+
+        <div
+          id="company-jobs"
+          class="pb-3 pt-3 pt-lg-3"
+          data-isotope='{"layoutMode": "masonry"}'>
+          @@for (var i = 0; i < cols.length; i++) {
+          <!--Job card-->
+          <div
+            class="mb-4 card hover-shadow-xl border shadow-sm `+cols[i].category+`"
+            style="width: 100%">
+            <!--Card-body-->
+            <div class="p-5">
+              <div class="d-flex align-items-start">
+                <!--Job details-->
+                <div class="flex-grow-1">
+                  <div class="d-flex flex-column flex-md-row">
+                    <div class="flex-grow-1">
+                      <h4 class="mb-3">`+cols[i].title+`</h4>
+                      <p class="text-muted">`+cols[i].description+`</p>
+                      <ul class="d-flex small flex-wrap list-unstyled mb-2">
+                        <li
+                          class="me-3 mb-2 text-muted d-flex align-items-center">
+                          <i
+                            class="bx bx-map me-1 text-muted"
+                            style="font-size: large"></i>
+                          `+cols[i].location+`
+                        </li>
+                        <li
+                          class="me-3 mb-2 text-muted d-flex align-items-center ms-3">
+                          <i
+                            class="bx bx-money me-1 text-muted"
+                            style="font-size: large"></i>
+                          `+cols[i].salary+`
+                        </li>
+                      </ul>
+                      <div
+                        class="d-flex align-items-center"
+                        style="font-size: large">
+                        <span
+                          class="badge py-1 lh-base position-relative z-index-2 bg-primary bg-opacity-10 text-primary me-2 px-3">
+                          `+cols[i].type+`
+                        </span>
+
+                        <!--Category-->
+                        <span
+                          class="badge bg-gray-200 text-secondary py-1 lh-base position-relative z-index-2">
+                          `+cols[i].category+`
+                        </span>
+                      </div>
+                    </div>
+                    <!--Date-->
+                    <div class="flex-shrink-0 d-md-block d-none">
+                      <small class="text-muted">`+cols[i].created+`</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Link-->
+            <a href="`+cols[i].slug+`" class="stretched-link"></a>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

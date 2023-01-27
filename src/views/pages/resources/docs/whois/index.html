@@ -1,0 +1,68 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+  title: "Documentation: Whois // SIPSTACK",
+  meta: {
+      description: "Documentation: Whois",
+      keywords: "documentaion, partner, portal, howto, description, help, guide, admin, user, whois, lookup, cnam, reverse phone lookup",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "resources/docs/partner-portal",
+      image: "logo/logo.png",
+      type: "website",
+      created: "", 
+      updated: "", 
+  },
+  body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+  css: [],
+  nav: {
+      class: ''
+  }
+})
+
+@@include('components/sections/header.default.html', {
+  label : 'Documentation',
+  title :'Whois',
+  description: '',
+  button1: {
+    label: 'Developer Documentation',
+    link: 'https://developers.sipstack.com#whois'
+  },
+  button2: {
+    label: 'Back', 
+    link: '/resources/docs' 
+  } 
+})
+
+<section class="position-relative">
+  <div class="container py-9 py-lg-11">
+    <div class="row">
+      <div class="col-md-3 col-xl-2">
+        <div
+          class="sticky-top top-0 ss-toc border-end border-3"
+          id="navbar-secondary"></div>
+      </div>
+      <div
+        class="col-md-9 col-xl-8 mx-auto"
+        data-spy="scroll"
+        data-target="#navbar-secondary">
+        This section is being updated, please check back soon...
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', function () {
+    $('.ss-toc').html($('.ss-toc-md').html())
+    $('.ss-toc-md').remove()
+    $('.ss-toc ul').addClass('nav  ss-p-3 flex-column position-relative ')
+    $('.ss-toc li').each(function (index) {
+      $(this).addClass('nav-item')
+    })
+    $('.ss-toc a').each(function (index) {
+      $(this).addClass('nav-link ss-nav-link-toc')
+    })
+  })
+</script>
+
+@@include('components/layouts/tail.html')
