@@ -12,28 +12,30 @@
           @@title
         </h3>
         <!-- Description-->
-        <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
-          <span class="mb-4 text-muted">@@description</span>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <span class="text-muted">@@description</span>
         </div>
       </div>
     </div>
 
-    <table class="hideBorder mb-5" data-aos="fade-up" data-aos-delay="300">
-      <tr>
-        @@for (var i = 0; i < cols.length; i++) {
-        <td class="hideBorder">
-          <!--title-->
-          <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
-          <!--text-->
-          <p class="mb-4 text-muted">`+cols[i].description+`</p>
-        </td>
-        }
-      </tr>
-    </table>
-    <hr />
-    <div class="row" data-aos="fade-up" data-aos-delay="400">
+    <div class="row">
+      @@for (var i = 0; i < cols.length; i++) {
+      <!--Feature Column-->
+        <div class="col-md-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+          
+            <!--Card-->
+            <div class=" p-3">
+                <!--Feature title-->
+                <h4 class="mb-1 sub-title">`+cols[i].title+`</h4>
+                <!--text-->
+                <p class="text-muted">`+cols[i].description+`</p>
+            </div>
+        </div>
+      }
+    </div>
+    <div class="row border-top pt-3" data-aos="fade-up" data-aos-delay="400">
       @@for (var i = 0; i < cols2.length; i++) {
-      <div class="col-md-4 mb-5 mb-md-0 centerText">
+      <div class="col-md-4 mb-3 mb-md-0 text-center">
         <h5 class="mb-3">
           <span
             data-countup='{"startVal": 0,"suffix":"`+cols2[i].suffix+`"}'
