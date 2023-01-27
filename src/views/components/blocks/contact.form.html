@@ -7,21 +7,16 @@
           <p class="mb-3">General contact or department specific below</p>
           <div class="width-7x pt-1 bg-primary mb-5"></div>
           <!-- Contacts Form -->
-          <form
-            action="#"
-            method="post"
-            role="form"
-            class="needs-validation mb-5 mb-lg-7"
-            novalidate>
+          <form role="form" class="needs-validation mb-5 mb-lg-7" novalidate>
             <div class="row">
               <!-- first name input -->
               <div class="col-sm-6 mb-3">
-                <label class="form-label" for="name">First Name</label>
+                <label class="form-label" for="first_name">First Name</label>
                 <input
                   type="text"
-                  name="first-name"
+                  name="first_name"
                   class="form-control"
-                  id="first-name"
+                  id="first_name"
                   placeholder=""
                   required />
               </div>
@@ -33,8 +28,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="last-name"
-                  id="last-name"
+                  name="last_name"
+                  id="last_name"
                   placeholder=""
                   required />
               </div>
@@ -65,7 +60,8 @@
                   class="form-control"
                   name="subject"
                   id="subject"
-                  placeholder="" />
+                  placeholder=""
+                  required="" />
               </div>
               <!-- End Input -->
             </div>
@@ -76,7 +72,8 @@
               <textarea
                 class="form-control"
                 name="message"
-                placeholder=""></textarea>
+                placeholder=""
+                required=""></textarea>
             </div>
 
             <div
@@ -88,7 +85,7 @@
                 type="submit"
                 name="submit"
                 value="Submit message"
-                id="sendBtn"
+                id="submit"
                 class="btn btn-primary" />
             </div>
           </form>
