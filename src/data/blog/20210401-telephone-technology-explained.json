@@ -3,9 +3,9 @@
   title: "Telephone Technology Explained",
   description: "When you make a telephone call on a landline phone, you lift a receiver or press a button and listen for a dial tone. This opens up a circuit between your home phone and the telephone exchange.",
   category: "History",
-  tags: [''],
+  tags: ['voip', 'history', 'technology'],
   image: "/assets/img/resources/blog/post-24.svg",
-  created: "2021-04-01",
+  created: "20210401",
   author: {
     name: "Kanasu Nagathihalli",
     photo: "/assets/img/team/kanasu.png"

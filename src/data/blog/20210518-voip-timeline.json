@@ -3,9 +3,9 @@
   title: "VoIP Timeline - An Infographic look",
   description: "Voice over internet protocol (VoIP) is the capability to transmit voice signals in real time over the internet and telephone network.",
   category: "History",
-  tags: [''],
+  tags: ['voip', 'history', 'technology'],
   image: "/assets/img/resources/blog/post-7.svg",
-  created: "2021-05-18",
+  created: "20210518",
   author: {
     name: "Kanasu Nagathihalli",
     photo: "/assets/img/team/kanasu.png"
