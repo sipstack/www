@@ -24,9 +24,11 @@
 
 @@include('components/sections/hero.slider.html')
 
+<!-- prettier-ignore -->
 @@include('components/sections/feature.img-r.html',{ 
     attr: 'id="intro"' 
 })
+<!-- prettier-ignore -->
 @@include('components/sections/world-map.html',{
     title: 'New Era of Trust',
     description: 'Phone Number lookups on a whole new level. Tap into telco meta-data like never before.',
@@ -42,9 +44,18 @@
     {title: 'Identified Profiles', suffix: 'M+', count_to: '330', description: ''},
 ]
 })
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: '',
+    class: '',
+    title: 'Products',
+    description: 'Beyond Unified Communications',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
 @@include('components/sections/feature.cards.html',{
-    subTitle: 'Products',
-    title: 'Beyond Unified Communications',
     cols:
         [
             {
@@ -75,6 +86,8 @@
             },
         ],
 })
+
+
 @@include('components/sections/feature-cards.html',{
     subTitle: 'Cloud UC',
     title: 'Your next UCaaS platform, powered by AI & you',

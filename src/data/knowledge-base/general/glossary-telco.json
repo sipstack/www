@@ -1,0 +1,12 @@
+{
+  slug: "glossary-telco",
+  title: "Telecommunications Glossary",
+  description: "A comprehensive and growing list of all things telecommunications.",
+  category: "general",
+  tags: ['glossary', 'telecom', 'telecommunications', 'help'],
+  created: "2022-11-04",
+  author: {
+    name: "Anjana Uthayakumaran",
+    photo: "/assets/img/team/anjanaa.jpg"
+  }
+},

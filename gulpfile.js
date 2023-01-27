@@ -360,7 +360,7 @@ function ss_public(cb) {
 // }
 
 function ss_markdown(cb) {
-  var slug
+  var slug, category
   src('src/views/pages/**/*.md')
     .pipe(replace('“', '"'))
     .pipe(replace('”', '"'))
@@ -382,16 +382,21 @@ function ss_markdown(cb) {
     .pipe(
       // tap(function (file, t) {
       tap(function (file) {
-        // console.log(file.path);
-        slug = file.path.split('/').slice(-2, -1)[0]
-        // console.log(slug);
+        // console.log(file.path)
+        category = file.path.split('views/pages/')[1].split('/')
+        category.pop()
+        category = category.join('/')
+        slug = file.path.split('/').slice(-2, -1)[0] // TODO: can be removed or replaced category name wiht slug
+        // console.log(category)
+        // console.log(slug)
         return slug
       })
     )
     // prefix image urls (must have ./ prefix in markdown)
     .pipe(
       replace('./', function () {
-        return `/assets/img/resources/blog/${slug}/`
+        // return `/assets/img/resources/blog/${slug}/`
+        return `/assets/img/${category}/`
       })
     )
 
@@ -446,6 +451,22 @@ function ss_res_images(cb) {
       ])
     )
     .pipe(dest('dist/assets/img/resources/case-study/'))
+
+  src([
+    'src/views/pages/resources/docs/**/*.png',
+    'src/views/pages/resources/docs/**/*.jpg',
+  ])
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/docs/'))
 
   cb()
 }
@@ -527,10 +548,10 @@ function watchFiles() {
     series(ss_res_images, browsersyncReload)
   )
   watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))
-  watch(
-    ['src/data/blog/*.json', 'src/data/knowledge-base/**/*.json'],
-    series(ss_data, html, browsersyncReload)
-  )
+  // watch(
+  //   ['src/data/blog/*.json', 'src/data/knowledge-base/**/*.json'],
+  //   series(ss_data, html, browsersyncReload)
+  // )
 }
 
 exports.test = ss_markdown
@@ -548,7 +569,7 @@ exports.default = series(
   cleanUp,
   ss_public,
   ss_markdown,
-  ss_data,
+  // ss_data,
   html,
   buildCss,
   minifyCss,
