@@ -2,7 +2,7 @@
 
 
 # generate blog from params
-echo "Reminder: this command must be run as: npm run build"
+echo "Reminder: this command must be run as: npm run publish"
 echo "-----------------------------------------------------"
 
 bin/build-blog.sh
