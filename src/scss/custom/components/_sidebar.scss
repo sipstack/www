@@ -1,0 +1,230 @@
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.page-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all .3s;
+  width: 260px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1030;
+}
+.page-header{
+  z-index: 1040;
+}
+.navbar-brand{
+  .navbar-brand-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $primary;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.page-sidebar {
+  .page-sidebar-title,
+  .nav .nav-link,
+  .page-sidebar-brand {
+    padding: .25rem 1rem;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+    transition: all .25s;
+  }
+  .nav{
+    .nav-link{
+      &[data-bs-toggle="collapse"]{
+       &:after{
+         opacity: .5;
+        margin-right: 1rem;
+        font-size: .75rem;
+       }
+      }
+    }
+  }
+.page-sidebar-title{
+  opacity: .5;
+  font-size: $font-size-sm;
+  padding-left: 1.75;
+  position: relative;
+  i,span{
+transition: all .2s;
+  }
+  i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+    opacity: 0;
+    margin-left: 1.75rem;
+  }
+}
+  .nav-sidebar-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-style: normal;
+    border-radius: .25rem;
+    margin-right: .75rem;
+  }
+}
+
+.page-content {
+  padding-left: 260px;
+  transition: all .3s;
+}
+.page-content,.page-sidebar{
+  padding-top: 63px;
+}
+.sidebar-dropdown {
+  margin: 0;
+  padding: 0;
+  padding-left: $spacer * 3;
+display: flex;
+flex-direction: column;
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: .4rem 1rem;
+    font-size: $font-size-sm;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    &[data-bs-toggle="collapse"]{
+      &::after{
+        opacity: .5;
+       margin-right: 1rem;
+       font-size: .75rem;
+      }
+     }
+  }
+}
+.sidebar-dropdown.sd-second-level,.sidebar-dropdown.sd-thrid-level{
+  padding-left: .75rem;
+}
+.sidebar-light{
+  .nav{
+    .nav-link{
+      color: $body-color;
+    }
+  }
+  .sidebar-dropdown{
+    .sidebar-link{
+      color: $body-color;
+    }
+  }
+}
+.sidebar-toggler{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 2rem;
+ height: 2rem;
+ padding: 0;
+ position: relative;
+ &::before,&::after{
+  content: "";
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  left:15%;
+  width:70%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .25s;
+     }
+     &::before{
+  margin-top: 6px;
+     }
+     &::after{
+      margin-top: -6px;
+         }
+ i{
+  transition: all .25s;
+   display: block;
+   position: absolute;
+   width: 70%;
+   height: 100%;
+   left: 15%;
+   top: 50%;
+   transform: translateY(-50%);
+   height: 2px;
+   background-color: currentColor;
+ }
+ &.sidebar-toggled{
+   i{
+     width:50%;
+     transition-delay: .15s;
+   }
+   &::before{
+     width:25%;
+     transition-delay: .25s;
+   }
+ }
+}
+@include media-breakpoint-up(lg) {
+  body.page-collapsed {
+    .page-sidebar:not(:hover) {
+      width: 72px;
+      .sidebar-dropdown.collapse.show {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.3s ease 0s;
+      }
+      .nav-link-text,.navbar-brand-text{
+        opacity: 0;
+      }
+      .sidebar-toggler{
+        display: none;
+      }
+      .page-sidebar-title{
+        span{
+          opacity: 0;
+        }
+        i{
+          opacity: 1;
+          transform: translateX(0) translateY(-50%);
+        }
+      }
+    }
+    .page-content {
+      padding-left: 72px;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+.page-sidebar{
+  transform: translateX(-100%);
+}
+.page-content{
+  padding-left: 0;
+}
+body.page-collapsed{
+  .page-sidebar{
+    transform: translateX(0);
+  }
+}
+}

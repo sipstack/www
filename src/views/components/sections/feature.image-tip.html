@@ -1,0 +1,42 @@
+<section class="position-relative @@class">
+  <div class="container py-3 py-lg-3">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="mb-5">
+          <center>
+            @@for (var i = 0; i < cols.length; i++) {
+            <!-- <div class="col-6 col-lg-1 mb-2 mb-lg-0" data-aos="fade-up">
+        <article
+          class="card card-hover text-center hover-shadow-lg overflow-hidden border-0 rounded-4 shadow-sm"
+          st>
+          <div
+            class="overflow-hidden position-relative"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="`+cols[i].tooltip+`"
+            style="max-height: 3em; max-width: 3em">
+            <img src="`+cols[i].image+`" alt="" class="img-fluid img-zoom" />           
+          </div>
+        </article>
+      </div> -->
+
+            <button
+              type="button"
+              class="btn btn-outline-light mb-2 me-1 btn-square-md shadow-xl"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="`+cols[i].tooltip+`">
+              <img
+                src="`+cols[i].image+`"
+                alt=""
+                class="img-fluid img-zoom"
+                style="max-width: 70%" />
+            </button>
+
+            }
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

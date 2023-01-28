@@ -1,0 +1,28 @@
+//stripes
+.stripes {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.stripes-container {
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.stripes-item {
+    background-color:$gray-100;
+    height: 100%;
+    width: 1px;
+}
+
+.text-white,.text-light{
+    .stripes-item{
+        background-color: rgba($white,.075);
+    }
+}

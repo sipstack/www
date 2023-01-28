@@ -1,0 +1,170 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+  title: "Report Abuse // SIPSTACK",
+  meta: {
+      description: "Report abuse originating from a SIPSTACK network",
+      keywords: "abuse, report, bots, scanners, useragent",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "contact/abuse",
+      image: "logo/logo.png",
+      type: "website",
+      created: "", 
+      updated: "", 
+  },
+  body: "",
+  css: [],
+  nav: {
+      class: ''
+  }
+})
+
+@@include('components/sections/header.logo.html', {
+    label: 'Contact',
+    title :'Report Abuse',
+    description: 'Please let us know of any abuse from our network',
+    button1: {
+        label: 'Knowledge Base',
+        link: '/resources/knowledge-base'
+    },
+    button2: {
+        label: 'Contact Us',
+        link: '/contact/us'
+    }
+})
+
+<section class="position-relative" id="contact">
+  <div class="container py-9">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-lg-8 mb-7 mb-md-0 me-auto">
+        <div class="position-relative">
+          <!-- <h2 class="card-title">Contact Us</h2>
+          <p class="text-muted">General contact or department specific below</p> -->
+          <!-- Contacts Form -->
+          <form role="form" class="needs-validation" novalidate="">
+            <div class="row">
+              <!-- Input -->
+              <div class="col-lg-6 mb-3">
+                <label class="form-label" for="name">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control form-control-lg form-control-custom"
+                  id="name"
+                  placeholder=""
+                  required="" />
+              </div>
+              <!-- End Input -->
+
+              <div class="col-6 mb-3">
+                <label class="form-label" for="company">Company</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg form-control-custom"
+                  name="company"
+                  id="company"
+                  placeholder=""
+                  required="" />
+              </div>
+
+              <!-- Input -->
+              <div class="col-6 mb-3">
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg form-control-custom"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address
+                </div>
+              </div>
+              <!-- End Input -->
+
+              <!-- Input -->
+              <div class="col-6 mb-3">
+                <label class="form-label" for="number">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control form-control-lg form-control-custom"
+                  name="subject"
+                  id="tel"
+                  placeholder="Your phone number"
+                  required="" />
+                <div class="invalid-feedback">
+                  Please enter a valid phone number
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control form-control-lg form-control-text"
+                name="message"
+                placeholder="Write your message indicating type of abuse."
+                required=""></textarea>
+              <div class="invalid-feedback">
+                Write your message indicating type of abuse.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="log" class="form-label">Log</label>
+              <textarea
+                class="form-control form-control-lg form-control-text"
+                name="log"
+                placeholder="Include any logs or packet capture relating to this report."
+                required=""></textarea>
+              <div class="invalid-feedback">
+                Include any logs or packet capture relating to this report.
+              </div>
+            </div>
+
+            <div
+              class="d-lg-flex d-grid justify-content-between align-items-center">
+              <input
+                type="submit"
+                name="submit"
+                value="Submit message"
+                id="submit"
+                class="btn btn-lg btn-primary"
+                style="margin: 0 auto" />
+            </div>
+          </form>
+        </div>
+        <!-- End Contact Form -->
+      </div>
+      <!--End card -->
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('load', function () {
+    $('form').submit(function (e) {
+      e.preventDefault()
+      var formData = $('form').serialize()
+      console.log(formData)
+      var resp = apiRequest('f/www/cap/abuse', 'POST', formData, 'text/plain')
+      resp.done(function (data) {
+        // console.log('s');
+        // console.log(data)
+      })
+      resp.fail((req, status, err) => {
+        // console.log(err)
+        // console.log(req);
+      })
+      $('#submit').attr('disabled', 'disabled')
+      alert('Your request has been submitted!')
+      window.location.href = '/contact/us'
+    })
+  })
+</script>
+@@include('components/layouts/tail.html')

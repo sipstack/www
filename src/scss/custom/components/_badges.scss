@@ -1,0 +1,11 @@
+//Badges style
+.badge{
+    line-height: 1.3;
+    color: $headings-color;
+    &:not(.bg-light):not(.bg-white):not(.bg-gradient-light){
+        color: $white;
+    }
+    &.badge-pill{
+        border-radius: $border-radius-pill;
+    }
+}

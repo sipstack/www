@@ -1,0 +1,72 @@
+//
+//Quill Editor override 
+//
+.ql-toolbar.ql-snow,.ql-container.ql-snow{
+    border-color: $input-border-color;
+}
+.ql-container{
+    font-size: $font-family-base;
+    font-family: $font-family-base;
+}
+.ql-editor{
+    padding: $card-spacer-y $card-spacer-x;
+    background-color: $card-bg;
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+    font-family: $font-family-base;
+}
+.ql-container{
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+}
+.ql-toolbar.ql-snow{
+    font-family: $font-family-base;
+    padding: $card-cap-padding-y $card-cap-padding-x;
+    background-color: $card-bg;
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+    border-color: $input-border-color;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-label{
+    color: $body-color;
+}
+.ql-snow .ql-editor{
+    a{
+        text-decoration: none;
+        font-weight: $font-weight-bold;
+    }
+    img{
+        border-radius: $border-radius-lg;
+        box-shadow: $box-shadow-lg;
+    }
+}
+.ql-snow a{
+    color: $primary;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options{
+    border-color: $dropdown-border-color;
+    box-shadow: $box-shadow-lg;
+    padding: $dropdown-padding-y;
+}
+
+.ql-snow .ql-editor code, .ql-snow .ql-editor pre {
+    background-color: $light;
+    border-radius: $border-radius;
+}
+.ql-snow .ql-editor code {
+    padding: 4px 8px;
+}
+.ql-snow .ql-editor blockquote {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 16px;
+    background: transparent;
+    border: 1px solid $input-border-color;
+    border-left-width: 5px;
+    border-left-color: $component-active-bg;
+    padding-right: $spacer * .5;
+    padding-top: $spacer * .5;
+    padding-bottom: $spacer * .5;
+}

@@ -1,0 +1,322 @@
+.hover-lift,.hover-lift-lg{
+    will-change: transform;
+    transition: all .3s ease-in-out;
+}
+.hover-lift {
+    &:hover {
+        transform: translate(0, -5px);
+    }
+}
+.hover-lift-lg {
+    &:hover {
+        transform: translate(0, -20px);
+    }
+}
+.img-zoom {
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 1.8s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.card-over,.card-hover {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    &:not(.row):not([class~="col-"]):not(.d-block):not(.card){
+    display: block;
+    color: currentColor;
+    }
+}
+.card-overlay {
+    will-change: transform;
+    transition: opacity 1.1s cubic-bezier(0.5, 0, 0, 1) 0.3s, transform 1.1s cubic-bezier(0.5, 0, 0, 1) 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        z-index: -1;
+        filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        background: linear-gradient(0deg, rgba($dark, .8) 0, rgba($dark, .35) 25%, rgba($dark, 0) 50%);
+        transition: background-color, opacity 1.2s ease;
+      
+    }
+    &.overlay-center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &::before {
+            background: linear-gradient(-180deg, rgba($gradient-alt, 0.75) 0,rgba($gradient-alt, 0.8) 0,rgba($primary, 0.875) 110%);
+            transition: background-color, opacity 1.2s ease;
+        }
+    }
+
+    .overlay-items {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        font-weight: 400;
+        color: currentColor;
+        li {
+            transition:opacity 0.25s ease 0.2s,visibility 0.25s ease 0.2s,transform 0.25s ease 0.2s;
+            display: block;
+            position:relative;
+            opacity: 1;
+            filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            visibility: visible;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+.card-hover,
+.card-split-hover {
+    .card-overlay {
+        &::before {
+            opacity: 0;
+        }
+        .overlay-items {
+            position: relative;
+            li {
+                opacity: 0;
+                transform: translate3d(0, 30px, 0);
+            }
+        }
+    }
+
+    &:hover {
+        .card-overlay {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        .overlay-items {
+            li {
+                opacity: 1;
+                transform: translateZ(0);
+                transition-duration: .6s;
+                @for $i from 1 through 21 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: $i * 100ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-hover,
+.card-over,
+.card-hover-2 {
+    will-change: transform;
+    &:hover {
+        .img-zoom {
+            transform: scale(1.1);
+        }
+    }
+}
+
+//card text splitting on hover
+.card-split-hover {
+    will-change: transform;
+    .card-overlay {
+        opacity: 0;
+        transition: all 0.15s;
+    }
+
+    &:hover {
+        .card-overlay {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+//hover pulse
+.hover-pulse {
+    animation: pulse 1.5s infinite forwards;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+.card-hover:hover,
+.card-hover-2:hover {
+    .link-multiline {
+        background-size: 100% 1px;
+    }
+}
+
+//Card hover-2
+.card-hover-2 {
+    background-color: $dark;
+}
+
+.card-hover-2-overlay {
+    transition: all 0.25s ease-out;
+}
+
+.card-hover-2-header {
+    p {
+        transform: translateY(100%);
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s cubic-bezier(0.42, 0.01, 0.23, 1);
+    }
+}
+
+.card-hover-2-footer {
+    position: relative;
+    .card-hover-2-footer-link{
+        position: absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        height:100%;
+        display: flex;
+        align-items: center;
+    }
+    .tags {
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 1;
+        transition: opacity 0.3s, transform 0.3s cubic-bezier(0.42, 0.01, 0.23, 1);
+    }
+}
+
+.card-hover-2-footer-link {
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+
+    span {
+        display: block;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.3s, transform 0.3s cubic-bezier(0.42, 0.01, 0.23, 1);
+    }
+
+    &::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-size: 24px 24px;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.3s, transform 0.3s cubic-bezier(0.42, 0.01, 0.23, 1);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 24 24'%3E%3Cpath d='M22 12l-4-4v3H3v2h15v3z'/%3E%3C/svg%3E");
+    }
+}
+
+.card-hover-2 {
+    img {
+        transition: opacity .25s, transform .4s;
+    }
+
+    &:hover {
+
+        img {
+            opacity: .5;
+        }
+
+        .card-hover-2-overlay {
+            transition: all 0.6s ease-in;
+        }
+
+        .card-hover-2-header {
+            p {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        .card-hover-2-footer {
+            .tags {
+                opacity: 0;
+                -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+
+            .card-hover-2-footer-link {
+                span {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                &::after {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+//Card hover reveal-effect image using AOS animation
+.card-reveal-effect {
+    visibility:hidden;
+      overflow: hidden;
+      position: relative;
+      transition-property: transform;
+      will-change: transform;
+    transition-timing-function:cubic-bezier(0.25, 0.1, 0.25, 1);
+    a{
+      display: block;
+    }
+    > * {
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      position: relative;
+      animation-fill-mode: forwards;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: left top;
+      transform: scale(0.05, 0);
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      background-color:currentColor;
+  }
+  }
+  .card-reveal-effect.aos-animate,.is-inview .card-reveal-effect,.aos-animate .card-reveal-effect {
+    transform: translate(0,0);
+    visibility:visible;
+    > * {animation-name: show-img-1;}
+    &:after {animation-name: slide-bg-2;}
+  }
+
+  //Hover link arrow rotate
+  .link-hover-underline,.link-underline,.link-both-underline,.link-hover-no-underline{
+    >i{
+        display: inline-block;
+        transition: all .25s;
+    }
+    &:hover{
+        >i{
+            transform: rotate(-45deg);
+        }
+    }
+  }

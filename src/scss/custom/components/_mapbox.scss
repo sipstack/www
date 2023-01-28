@@ -1,0 +1,28 @@
+//Mapbox map marker style
+#marker{
+    display: inline-flex;
+    font-family: boxicons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    position: relative;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: $primary;
+    box-sizing: $box-shadow-xl;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: $border-radius-pill;
+    &::after{
+        content: "\eb56";
+    }
+}
+.mapboxgl-popup-content{
+    padding: 1.25rem;
+    border-radius: $border-radius-lg;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+}

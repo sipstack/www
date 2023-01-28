@@ -1,0 +1,63 @@
+<section class="position-relative">
+    <div class="container pt-12 pb-9 pb-lg-7">
+        <div class="row pt-lg-5 justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="pb-2 mb-4 border-bottom border-2">
+                    <a href="/jobs" class="fw-semibold fs-6 text-dark">
+                      <i class="bx bx-left-arrow-alt fs-4 me-1"></i> Back</a>
+                </div>
+                <div class="row align-items-center justify-content-between mb-6">
+                    <div class="col-12 col-md-10 col-lg-9 mb-2">
+           
+                        <h1 class="display-4 mb-3">
+                            @@title
+                        </h1>
+                        <p class="fs-6 mb-5 mb-md-0">
+                            <i class="bx bx-map me-1 fs-5"></i>  @@location · <small class="text-primary fw-semibold">@@type</small>
+                            <i class="ms-7 bx bx-money me-1 fs-5"></i>  Salary · <small class="text-primary fw-semibold">@@salary</small> 
+                            <small class="d-block text-muted">
+                                <i class="bx bx-history me-1 fs-5"></i>  @@created
+                            </small>
+                            
+                        </p>
+                    
+                       
+                        
+
+                    </div>
+                    
+                </div>
+
+                <!--career details-->
+                <article>
+                    @@include('pages/jobs/@@slug/content.html')
+              
+
+                    @@if(stacks.length){
+                        
+                        <div class="d-flex align-items-center justify-content-center mb-3">
+                            <h3 class = "me-2 me-lg-4 ">Stacks</h3>
+                            <span class="border-top d-block flex-grow-1 border-light"></span>
+                        </div>
+
+                        <p class="mb-0 d-flex flex-wrap mb-n2 position-relative">
+                 
+                        <!-- <div class="row">
+                            <div class="col-sm-4">
+                                <ul class="list-disc"> -->
+                                    @@for (var i = 0; i < stacks.length; i++) {
+                                        <!-- <li class="mb-2">`+stacks[i]+`</li> -->
+                                        <span class="btn btn-sm btn-outline-gray-200 text-muted me-2 mb-2">`+stacks[i]+`</span>
+                                    }
+                                </p>
+                                <!-- </ul>
+                            </div>
+                        </div> -->
+                    }
+                </article>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>

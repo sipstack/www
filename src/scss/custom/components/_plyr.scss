@@ -1,0 +1,30 @@
+//Video player style overrides
+.plyr {
+    border-radius: $border-radius-lg;
+    position: relative;
+    z-index: 2;
+}
+.plyr__control--overlaid,.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true]{
+    background-color: $primary;
+}
+.plyr--full-ui input[type=range]{
+    color: $primary;
+}
+.plyr__control--overlaid{
+    padding: 1.5rem;
+}
+.plyr__control--overlaid::before,
+.plyr__control--overlaid::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background: $primary;
+  opacity: 0.8;
+  animation: pulse 2s infinite ease-in-out;
+  z-index: -1;
+}

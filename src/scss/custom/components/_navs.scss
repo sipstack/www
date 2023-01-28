@@ -1,0 +1,97 @@
+//Navs
+
+
+.nav {
+    --#{$prefix}nav-link-color: #{$body-color};
+  --#{$prefix}nav-link-hover-color: #{$primary};
+  --#{$prefix}nav-link-disabled-color: #{$text-muted};
+
+    &.flex-column {
+        .nav-link {
+            padding-left: 0;
+        }
+    }
+}
+.text-white,.text-light{
+    --#{$prefix}body-color:#{$white};
+    --#{$prefix}body-color-rgb: 255,255,255;
+    .nav{
+        --#{$prefix}text-opacity: .75;
+        --#{$prefix}nav-link-color: rgba(var(--#{$prefix}body-color-rgb),var(--#{$prefix}text-opacity));
+        --#{$prefix}nav-link-hover-color: #{$white};
+        --#{$prefix}nav-link-active-color: #{$white};
+        --#{$prefix}nav-link-disabled-color: #{$text-muted};
+      .nav-link.active{
+        color: var(--#{$prefix}nav-link-active-color);
+      }
+    }
+}
+.nav.nav-filter {
+    .nav-link {
+        position: relative;
+        padding: 0;
+        &.active,
+        &:hover {
+            color: $text-muted;
+        }
+
+        &.active {
+            text-decoration: line-through;
+        }
+    }
+
+    &:not(.flex-column) {
+        .nav-item:not(:last-child) {
+            margin-right: $spacer;
+        }
+    }
+}
+
+.nav-overflow {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1px; // to prevent active links border bottom from hiding
+    // Hide scrollbar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+//Nav vertical outline
+.nav-tabs-vertical{
+    flex-direction: column;
+    flex-shrink: 0;
+    flex: 1;
+}
+.nav.nav-pills.nav-pills-white{
+    .nav-link.active{
+        background-color: $white;
+        color: $component-active-bg;
+    }
+}
+
+//Underline tabs
+.nav-tabs{
+    border-bottom: 2px solid $border-color;
+    .nav-link{
+        padding-left: 0px;
+        padding-right: 0px;
+        &:not(:first-child){
+            margin-left: 1.75rem;
+        }
+    }
+    .nav-link{
+        margin-bottom: -2px;
+        border-bottom: 2px solid transparent;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        background-color: transparent;
+        
+        &.active{
+            background-color: transparent;
+            border-bottom-color: $component-active-bg;
+        }
+    }
+}

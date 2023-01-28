@@ -1,0 +1,52 @@
+// offcanvas 
+
+.offcanvas{
+    transition:transform .25s cubic-bezier(.215,.61,.355,1),-webkit-transform .25s cubic-bezier(.215,.61,.355,1);
+    &.offcanvas-start,&.offcanvas-end,&.offcanvas-bottom{
+        border:0px;
+    }
+    .offcanvas-header{
+        .btn-close{
+            padding: 0px;
+        }
+    }
+    .nav-link{
+        font-weight: $font-weight-semibold;
+        display: block;
+    }
+    ul>li{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    ul.no-animation{
+        >li{
+            transform: none;
+            opacity: 1;
+            transition: none;
+        }
+    }
+    &.show:not(.offcanvas-navbar){
+        transition:transform .5s cubic-bezier(.215,.61,.355,1),-webkit-transform .5s cubic-bezier(.215,.61,.355,1);
+        ul>li{
+            overflow: hidden;
+            transition:opacity .45s, transform .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+            opacity: 1;
+            transform: translateZ(0);
+            &:nth-child(1){
+                transition-delay: .25s;
+            }
+            &:nth-child(2){
+                transition-delay: .5s;
+            }
+            &:nth-child(3){
+                transition-delay: .75s;
+            }
+            &:nth-child(4){
+                transition-delay: 1s;
+            }
+            &:nth-child(5){
+                transition-delay: 1.25s;
+            }
+        }
+    }
+}

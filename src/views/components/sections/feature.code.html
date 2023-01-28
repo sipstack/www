@@ -1,0 +1,45 @@
+<section class="position-relative @@class">
+  <div class="container py-9 py-lg-11 position-relative z-index-1">
+    <div class="row align-items-center">
+      <div class="@@col mx-auto">
+        <div class="border-1 shadow-lg border border-gray-300 rounded-3">
+          <!-- Tabs -->
+          <nav class="nav nav-tabs" role="tablist">
+            <span class="justify-content-middle ms-2 mt-2 small">🔴🟡🟢</span>
+            @@for(var i = 0; i < tabs.length;i++){
+            <a
+              class="nav-link ss-code-tabs"
+              data-bs-toggle="tab"
+              href="#`+tabs[i].tab+`"
+              role="tab"
+              aria-selected="true">
+              `+tabs[i].tab+`
+            </a>
+            }
+          </nav>
+          <div class="tab-content bg-light">
+            @@for(var i = 0; i < tabs.length;i++){
+            <div
+              class="tab-pane fade show ss-code-panes"
+              id="`+tabs[i].tab+`"
+              role="tabpanel"
+              style="@@style;">
+              <pre class="bg-light">
+                    <code class="language-`+tabs[i].lang+`" contenteditable="true">
+`+tabs[i].code+`
+                    </code>
+                </pre>
+            </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  window.addEventListener('load', function () {
+    $('.ss-code-panes').first().addClass('active')
+    $('.ss-code-tabs').first().addClass('active')
+  })
+</script>

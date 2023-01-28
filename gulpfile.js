@@ -1,371 +1,427 @@
-// require("dotenv").config();
-
-const { src, dest, series } = require('gulp')
-// Gulp Sass
-const fileinclude = require('gulp-file-include')
-const replace = require('gulp-replace')
+'use strict'
+const { src, dest, series, parallel, watch } = require('gulp')
+const browserify = require('browserify')
+const babelify = require('babelify')
+const source = require('vinyl-source-stream')
+const buffer = require('vinyl-buffer')
+const sass = require('gulp-sass')(require('sass'))
 const rename = require('gulp-rename')
+const sourcemaps = require('gulp-sourcemaps')
+const browsersync = require('browser-sync').create()
+const uglify = require('gulp-uglify')
+const cleanCSS = require('gulp-clean-css')
+const del = require('del')
+const glob = require('glob')
+const fileinclude = require('gulp-file-include')
+const imagemin = require('gulp-imagemin')
+const autoprefixer = require('gulp-autoprefixer')
+// added -----------------------------------------
 const concat = require('gulp-concat')
-const gap = require('gulp-append-prepend')
-// const urlPrefixer = require("gulp-url-prefixer");
+const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
+const replace = require('gulp-replace')
+const gap = require('gulp-append-prepend')
+
+// require markdown-it plugins
+const md_abbr = require('markdown-it-abbr')
+const md_alerts = require('markdown-it-alerts')
+const md_anc = require('markdown-it-anchor')
+const md_attrs = require('markdown-it-attrs')
+const md_embed = require('markdown-it-block-embed')
+const md_fn = require('markdown-it-footnote')
+const md_figs = require('markdown-it-implicit-figures')
+// const kbd = require("markdown-it-kbd");
+const md_prism = require('markdown-it-prism')
+const md_toc = require('markdown-it-table-of-contents')
+const md_list = require('markdown-it-task-lists')
+// const md_table = require('markdown-it-multimd-table')
 const sort = require('gulp-sort')
+const s3upload = require('gulp-s3-upload')()
 
-function res_kb_articles_api() {
-  return src([
-    'src_content/resources/knowledge-base/api/**/*.json',
-    'src_content/resources/knowledge-base/api/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('api.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
-}
-function res_kb_articles_text_messaging() {
-  return src([
-    'src_content/resources/knowledge-base/text-messaging/**/*.json',
-    'src_content/resources/knowledge-base/text-messaging/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('text-messaging.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
-}
-function res_kb_articles_fax() {
-  return src([
-    'src_content/resources/knowledge-base/fax/**/*.json',
-    'src_content/resources/knowledge-base/fax/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('fax.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
-}
-function res_kb_articles_regulatory() {
-  return src([
-    'src_content/resources/knowledge-base/regulatory/**/*.json',
-    'src_content/resources/knowledge-base/regulatory/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('regulatory.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
-}
-function res_kb_articles_phone_number() {
-  return src([
-    'src_content/resources/knowledge-base/phone-number/**/*.json',
-    'src_content/resources/knowledge-base/phone-number/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('phone-number.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
-}
-function res_kb_articles_general() {
-  return src([
-    'src_content/resources/knowledge-base/general/**/*.json',
-    'src_content/resources/knowledge-base/general/**/*.jsonc',
-  ])
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    .pipe(concat('general.articles.json'))
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    .pipe(dest('src_content/resources/knowledge-base/'))
+// Markdown-It Options
+const options = {
+  // preset: 'commonmark',
+  html: true,
+  // xhtmlOut: true,
+  linkify: true,
+  // typographer: true,
+  // highlight: function (str, lang) {
+  //   if (lang && hljs.getLanguage(lang)) {
+  //     try {
+  //       return (
+  //         '<pre class="hljs"><code>' +
+  //         hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+  //         '</code></pre>'
+  //       )
+  //     } catch (__) {}
+  //   }
+
+  //   return (
+  //     '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+  //   )
+  // },
 }
 
-function res_kb_categories() {
-  return (
-    src(['src_content/resources/knowledge-base/*.category.json'])
-      .pipe(
-        fileinclude({
-          prefix: '@@',
-          basepath: '@file',
-        })
-      )
-      .pipe(concat('index.ts'))
-      // replace incompatible characters
-      .pipe(replace('“', '"'))
-      .pipe(replace('”', '"'))
-      .pipe(replace('‘', "'"))
-      .pipe(replace('’', "'"))
-      .pipe(replace(' ', ''))
-      .pipe(replace('–', '-'))
-      .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-      // prepend / append export for ts file
-      .pipe(gap.prependText('export const helpCenterCategories = ['))
-      .pipe(gap.appendText(']'))
-      .pipe(dest('src/data/resources/knowledge-base/'))
-  )
+const md = new markdownIt(options)
+md.use(md_abbr)
+md.use(md_alerts)
+md.use(md_attrs)
+md.use(md_anc)
+
+md.use(md_embed)
+md.use(md_fn)
+md.use(md_figs, {
+  dataType: false, // <figure data-type="image">, default: false
+  figcaption: true, // <figcaption>alternative text</figcaption>, default: false
+  tabindex: false, // <figure tabindex="1+n">..., default: false
+  link: false, // <a href="img.png"><img src="img.png"></a>, default: false
+})
+// md.use(kbd);
+md.use(md_prism, {
+  highlightInlineCode: true,
+})
+md.use(md_toc, {
+  containerClass: 'ss-toc-md',
+  // containerHeaderHtml: '<div class="col-md-3 col-xl-2">',
+  // containerFooterHtml: '</div></div><div class="col-md-9 col-xl-8 mx-auto">',
+})
+// md.use(md_toc, { includeLevel: [1, 2, 3, 4] })
+md.use(md_list)
+// md.use(md_table, {
+//   multiline: false,
+//   rowspan: false,
+//   headerless: false,
+//   multibody: true,
+//   aotolabel: true,
+// })
+
+function markdownToHtml(file) {
+  const result = md.render(file.contents.toString())
+  // file.contents = new Buffer(result)
+  file.contents = Buffer.from(result)
+  // file.path = replaceExt(file.path, '.html')
+  return
 }
 
-function res_blog_posts(cb) {
-  var slug
-  src(['src_content/resources/blog/**/index.json'])
+// Define paths ----------------------------------
+var paths = {
+  here: './',
+  base: {
+    base: {
+      dest: './',
+    },
+    node: {
+      dest: './node_modules',
+    },
+  },
+  src: {
+    base: {
+      dir: './src/',
+      files: './src/**/*',
+      dest: './dist',
+    },
+    html: {
+      dir: './src/views/pages/**/*.html',
+      files: './src/views/pages/**/*.html',
+      dest: './dist',
+      cleanHtml: './dist/*.html',
+    },
+    js: {
+      dir: './src/js',
+      files: './src/js/custom/**/*.js',
+      theme: './src/js/theme.js',
+      dest: './dist/assets/js',
+      clean: './dist/assets/js/*.js',
+    },
+    scss: {
+      dir: './src/scss',
+      files: './src/scss/**/*',
+      main: './src/scss/*.scss',
+      dest: './dist/assets/css',
+    },
+    img: {
+      dir: './src/img/**/*',
+      dest: './dist/assets/img',
+      clean: './dist/assets/img/**/*',
+    },
+    vendor: {
+      files: [
+        './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
+        './node_modules/gsap/dist/gsap.min.js',
+        './node_modules/swiper/swiper-bundle.min.js',
+        './node_modules/splitting/dist/splitting.min.js',
+        './node_modules/locomotive-scroll/dist/locomotive-scroll.min.js',
+        './node_modules/flatpickr/dist/flatpickr.min.js',
+        './node_modules/quill/dist/quill.min.js',
+        './node_modules/cleave.js/dist/cleave.min.js',
+        './node_modules/simplebar/dist/simplebar.min.js',
+        './node_modules/particles.js/particles.js',
+        './node_modules/prismjs/prism.js',
+        './node_modules/plyr/dist/plyr.min.js',
+        './node_modules/clipboard/dist/clipboard.min.js',
+        './node_modules/nouislider/dist/nouislider.min.js',
+        './node_modules/choices.js/public/assets/scripts/choices.min.js',
+        './node_modules/dropzone/dist/min/dropzone.min.js',
+        './node_modules/autosize/dist/autosize.min.js',
+        './node_modules/bs-stepper/dist/js/bs-stepper.min.js',
+        './node_modules/jquery/dist/jquery.min.js',
+      ],
+      css: [
+        './node_modules/swiper/swiper-bundle.min.css',
+        './node_modules/nouislider/dist/nouislider.min.css',
+        './node_modules/splitting/dist/splitting.css',
+        './node_modules/splitting/dist/splitting-cells.css',
+        './node_modules/aos/dist/aos.css',
+        './node_modules/plyr/dist/plyr.css',
+        './node_modules/locomotive-scroll/dist/locomotive-scroll.min.css',
+        './node_modules/flatpickr/dist/flatpickr.min.css',
+        './node_modules/quill/dist/quill.snow.css',
+        './node_modules/simplebar/dist/simplebar.min.css',
+        './node_modules/prismjs/themes/*.css',
+        './node_modules/choices.js/public/assets/styles/choices.min.css',
+        './node_modules/dropzone/dist/dropzone.css',
+        './node_modules/bs-stepper/dist/css/bs-stepper.min.css',
+        './node_modules/glightbox/dist/css/glightbox.min.css',
+      ],
+      dest: './dist/assets/vendor/node_modules/js',
+      destCss: './dist/assets/vendor/node_modules/css',
+      clean: './dist/assets/vendor/node_modules',
+    },
+  },
+}
+//imagemin
+function copyImages() {
+  return src(paths.src.img.dir)
     .pipe(
-      sort({
-        asc: false,
-      })
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
     )
-    .pipe(
-      // tap(function (file, t) {
-      tap(function (file) {
-        // console.log(file.path);
-        slug = file.path.split('/').slice(-2, -1)[0]
-        // console.log(slug);
-        return slug
-      })
-    )
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    // prefix image urls (must have ./ prefix in markdown)
-    .pipe(
-      replace('./', function () {
-        return `/assets/img/resources/blog/${slug}/`
-      })
-    )
-    // .pipe(concat("articles.json"))
-    // .pipe(dest("src_content/resources/blog/"));
-    // -----
-    .pipe(concat('index.ts'))
+    .pipe(dest(paths.src.img.dest))
+}
+//Clean public folder html,css,js
+function cleanUp() {
+  //   return del([
+  //     paths.src.img.clean,
+  //     paths.src.js.clean,
+  //     paths.src.vendor.clean,
+  //     paths.src.scss.dest,
+  //     paths.src.html.cleanHtml,
+  //   ])
+  return del(['dist'])
+}
 
-    // replace incompatible characters
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace(' ', ''))
-    .pipe(replace('–', '-'))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    // prepend / append export for ts file
-    .pipe(gap.prependText('export const posts = ['))
-    .pipe(gap.appendText(']'))
-    .pipe(dest('src/data/resources/blog/'))
+//Copy vendor to assets/vendor folder
+function copyVendor() {
+  return src(paths.src.vendor.files)
+    .pipe(dest(paths.src.vendor.dest))
+    .pipe(browsersync.stream())
+}
+function copyVendorCss() {
+  return src(paths.src.vendor.css)
+    .pipe(dest(paths.src.vendor.destCss))
+    .pipe(browsersync.stream())
+}
+
+//BrowserSync
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: [paths.src.base.dest],
+      serveStaticOptions: {
+        extensions: ['html'],
+      },
+    },
+    open: false,
+  })
+  done()
+}
+
+function browsersyncReload(done) {
+  browsersync.reload()
+  done()
+}
+
+function bundleJs(cb) {
+  var files = glob.sync('./src/js/theme.js')
+  browserify({
+    entries: files,
+    debug: true,
+    cache: {},
+    packageCache: {},
+  })
+    .transform(babelify, {
+      global: true,
+      presets: ['@babel/preset-env'],
+    })
+    .bundle()
+    .pipe(source('theme.bundle.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.js.dest))
+
+  src(['src/js/sipstack/*.js'])
+    .pipe(concat('sipstack.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.js.dest))
+
+  cb()
+}
+//styles
+function buildCss() {
+  return src(paths.src.scss.main)
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.scss.dest))
+    .pipe(browsersync.stream())
+}
+function minifyCss(cb) {
+  src(paths.src.scss.main)
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.scss.dest))
+    .pipe(browsersync.stream())
+
+  src(['src/scss/sipstack/*.css'])
+    .pipe(concat('sipstack.css'))
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
+    .pipe(sourcemaps.write(paths.here))
+    .pipe(dest(paths.src.scss.dest))
+    .pipe(browsersync.stream())
 
   cb()
 }
 
-function res_blog_images(cb) {
-  // var slug;
+//Copy html
+function html(cb) {
   src([
-    'src_content/resources/blog/**/*.png',
-    'src_content/resources/blog/**/*.jpeg',
-    'src_content/resources/blog/**/*.jpg',
-    'src_content/resources/blog/**/*.svg',
+    paths.src.html.dir,
+    '!src/views/pages/**/_*.html',
+    '!src/views/pages/resources/**/*',
+    '!src/views/pages/**/content.html',
   ])
-    // .pipe(
-    //  tap(function (file, t) {
-    //    slug = file.path.split("/").slice(-2, -1)[0];
-    //    console.log(slug);
-    //    return slug;
-    //  })
-    // )
-    .pipe(dest('public/assets/img/resources/blog/'))
-
-  cb()
-}
-
-function res_cs_posts(cb) {
-  var slug
-  src(['src_content/resources/case-study/**/index.json'])
     .pipe(
-      sort({
-        asc: false,
-      })
-    )
-    .pipe(
-      // tap(function (file, t) {
       tap(function (file) {
-        // console.log(file.path);
-        slug = file.path.split('/').slice(-2, -1)[0]
-        // console.log(slug);
-        return slug
+        console.log('Compiling file: ' + file.path)
       })
     )
     .pipe(
       fileinclude({
         prefix: '@@',
-        basepath: '@file',
+        // basepath: '@file',
+        basepath: 'src/views',
+        indent: true,
       })
     )
-    // prefix image urls (must have ./ prefix in markdown)
+    .pipe(dest(paths.src.html.dest))
     .pipe(
-      replace('./', function () {
-        return `/assets/img/resources/case-study/${slug}/`
+      browsersync.reload({
+        stream: true,
       })
     )
-    // .pipe(concat("articles.json"))
-    // .pipe(dest("src_content/resources/blog/"));
-    // -----
-    .pipe(concat('index.ts'))
 
-    // replace incompatible characters
+  cb()
+}
+
+function ss_public(cb) {
+  src(['public/*', 'public/**/*']).pipe(dest('dist/'))
+
+  cb()
+}
+
+// function ss_css(cb) {
+//   src('src/scss/sipstack.css')
+//   .pipe(dest('dist/assets/css'))
+
+//   cb()
+// }
+
+function ss_markdown(cb) {
+  var slug, category
+  src('src/views/pages/**/*.md')
     .pipe(replace('“', '"'))
     .pipe(replace('”', '"'))
     .pipe(replace('‘', "'"))
     .pipe(replace('’', "'"))
+    .pipe(replace(' ', ''))
     .pipe(replace('–', '-'))
     .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    // prepend / append export for ts file
-    .pipe(gap.prependText('export const posts = ['))
-    .pipe(gap.appendText(']'))
-    .pipe(dest('src/data/resources/case-study/'))
-
-  cb()
-}
-
-function res_cs_images(cb) {
-  // var slug;
-  src([
-    'src_content/resources/case-study/**/*.png',
-    'src_content/resources/case-study/**/*.jpeg',
-    'src_content/resources/case-study/**/*.jpg',
-    'src_content/resources/case-study/**/*.svg',
-  ])
-    // .pipe(
-    //  tap(function (file, t) {
-    //    slug = file.path.split("/").slice(-2, -1)[0];
-    //    console.log(slug);
-    //    return slug;
-    //  })
-    // )
-    .pipe(dest('public/assets/img/resources/case-study/'))
-
-  cb()
-}
-
-function res_docs_doc(cb) {
-  var slug
-  src(['src_content/resources/docs/**/content.md'])
-    .pipe(
-      sort({
-        asc: false,
-      })
-    )
-    .pipe(
-      // tap(function (file, t) {
-      tap(function (file) {
-        // console.log(file.path);
-        slug = file.path.split('/').slice(-2, -1)[0]
-        console.log(slug)
-        return slug
-      })
-    )
-    .pipe(
-      fileinclude({
-        prefix: '@@',
-        basepath: '@file',
-      })
-    )
-    // prefix image urls (must have ./ prefix in markdown)
-    .pipe(
-      replace('./', function () {
-        return `/assets/img/resources/docs/${slug}/`
-      })
-    )
-    // .pipe(concat("articles.json"))
-    // .pipe(dest("src_content/resources/blog/"));
-    // -----
-    // .pipe(concat(`index.ts`))
+    .pipe(tap(markdownToHtml))
+    .pipe(replace('<p></p>', ''))
     .pipe(
       rename(function (path) {
-        // Returns a completely new object, make sure you return all keys needed!
-        return {
-          dirname: path.dirname,
-          basename: (path.basename = `index`),
-          extname: '.ts',
-        }
+        // Updates the object in-place
+        // path.dirname += "/ciao";
+        // path.basename += "-goodbye";
+        path.extname = '.html'
       })
     )
-    // replace incompatible characters
-    .pipe(replace('“', '"'))
-    .pipe(replace('”', '"'))
-    .pipe(replace('‘', "'"))
-    .pipe(replace('’', "'"))
-    .pipe(replace('```', '\\`\\`\\`')) // eslint-disable-line
-    // prepend / append export for ts file
-    .pipe(gap.prependText('export const content = `'))
-    .pipe(gap.appendText('`'))
-    .pipe(dest(`src/data/resources/docs`))
+    .pipe(
+      // tap(function (file, t) {
+      tap(function (file) {
+        // console.log(file.path)
+        category = file.path.split('views/pages/')[1].split('/')
+        category.pop()
+        category = category.join('/')
+        slug = file.path.split('/').slice(-2, -1)[0] // TODO: can be removed or replaced category name wiht slug
+        // console.log(category)
+        // console.log(slug)
+        return slug
+      })
+    )
+    // prefix image urls (must have ./ prefix in markdown)
+    .pipe(
+      replace('./', function () {
+        // return `/assets/img/resources/blog/${slug}/`
+        return `/assets/img/${category}/`
+      })
+    )
+
+    .pipe(
+      dest(function (file) {
+        return file.base
+      })
+    )
 
   cb()
 }
 
-function res_docs_images(cb) {
-  // var slug;
+function ss_res_images(cb) {
   src([
-    'src_content/resources/docs/**/*.png',
-    'src_content/resources/docs/**/*.jpeg',
-    'src_content/resources/docs/**/*.jpg',
-    'src_content/resources/docs/**/*.svg',
+    'src/views/pages/resources/blog/**/*.png',
+    'src/views/pages/resources/blog/**/*.jpeg',
+    'src/views/pages/resources/blog/**/*.jpg',
+    'src/views/pages/resources/blog/**/*.svg',
+    'src/views/pages/resources/blog/**/*.webp',
   ])
     // .pipe(
     //  tap(function (file, t) {
@@ -374,23 +430,235 @@ function res_docs_images(cb) {
     //    return slug;
     //  })
     // )
-    .pipe(dest('public/assets/img/resources/docs/'))
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/blog/'))
+
+  src([
+    'src/views/pages/resources/case-study/**/*.png',
+    'src/views/pages/resources/case-study/**/*.jpg',
+  ])
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/case-study/'))
+
+  src([
+    'src/views/pages/resources/docs/**/*.png',
+    'src/views/pages/resources/docs/**/*.jpg',
+  ])
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        }),
+        imagemin.gifsicle(),
+        imagemin.mozjpeg({ quality: 90, progressive: true }),
+        imagemin.optipng(),
+      ])
+    )
+    .pipe(dest('dist/assets/img/resources/docs/'))
 
   cb()
 }
 
-exports.build_res_kb = series(
-  res_kb_articles_api,
-  res_kb_articles_fax,
-  res_kb_articles_general,
-  res_kb_articles_phone_number,
-  res_kb_articles_regulatory,
-  res_kb_articles_text_messaging,
-  res_kb_categories
+function ss_data(cb) {
+  // BLOG ---------------------------------
+  src(['src/data/blog/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/blog.posts.html", {categories : ["Business","History", "News", "Regulatory", "Robocall", "Technology"],tags: [],posts: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/blog/'))
+
+  // KB / API ----------------------------------------
+  src(['src/data/knowledge-base/api/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/kb.articles.html", {articles: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/knowledge-base/api/'))
+
+  // KB / Fax ----------------------------------------
+  src(['src/data/knowledge-base/fax/*.json'])
+    .pipe(
+      sort({
+        asc: false,
+      })
+    )
+    .pipe(concat('_articles.html'))
+    .pipe(
+      gap.prependText(
+        '@@include("components/sections/kb.articles.html", {articles: ['
+      )
+    )
+    .pipe(gap.appendText(']})'))
+    .pipe(dest('src/views/pages/resources/knowledge-base/fax/'))
+
+  cb()
+}
+
+function ss_html(cb) {
+  src([
+    'src/views/pages/resources/**/*.html',
+    '!src/views/pages/resources/**/_*.html',
+    '!src/views/pages/resources/**/content.html',
+  ])
+    .pipe(
+      tap(function (file) {
+        console.log('Compiling file: ' + file.path)
+      })
+    )
+    .pipe(
+      fileinclude({
+        prefix: '@@',
+        // basepath: '@file',
+        basepath: 'src/views',
+        indent: true,
+      })
+    )
+    .pipe(dest('dist/resources'))
+
+  cb()
+}
+
+function ss_publish(cb) {
+  const s3Config = {
+    endpoint: 'sfo2.digitaloceanspaces.com', // note no https://
+    region: 'sfo2',
+    accessKeyId: process.env.DGO_KEY,
+    secretAccessKey: process.env.DGO_SECRET,
+  }
+
+  src('dist/assets/**')
+    .pipe(
+      rename(function (path) {
+        path.dirname = 'www/' + path.dirname
+      })
+    )
+    .pipe(
+      s3upload(
+        {
+          Bucket: 'sipstack',
+          ACL: 'public-read',
+          Metadata: {
+            // uploadedVia: 'gulp-s3-upload',
+          },
+        },
+        s3Config
+      )
+    )
+  cb()
+}
+// ------------------------------------------------------------------------------
+function watchFiles() {
+  watch(
+    [paths.src.scss.files, 'src/scss/sipstack/*.css'],
+    series(buildCss, minifyCss)
+  )
+  watch(
+    [paths.src.js.files, 'src/js/sipstack/*.js'],
+    series(bundleJs, browsersyncReload)
+  )
+  watch(paths.src.img.dir, series(copyImages, browsersyncReload))
+  watch(
+    [paths.src.html.files, 'src/views/components/**/*.html'],
+    series(html, browsersyncReload)
+  )
+  watch(
+    [
+      'src/views/pages/resources/**/*.jpg',
+      'src/views/pages/resources/**/*.jpeg',
+      'src/views/pages/resources/**/*.png',
+      'src/views/pages/resources/**/*.webp',
+    ],
+    series(ss_res_images, browsersyncReload)
+  )
+  watch(['src/views/**/*.md'], series(ss_markdown, html, browsersyncReload))
+  watch(
+    ['src/views/pages/resources/**/*.html'],
+    series(ss_html, browsersyncReload)
+  )
+  // watch(
+  //   ['src/data/blog/*.json', 'src/data/knowledge-base/**/*.json'],
+  //   series(ss_data, html, browsersyncReload)
+  // )
+}
+
+exports.test = ss_markdown
+
+exports.watchFiles = watch
+exports.buildCss = buildCss
+exports.bundleJs = bundleJs
+exports.minifyCss = minifyCss
+exports.html = html
+exports.copyVendor = copyVendor
+exports.copyVendorCss = copyVendorCss
+exports.cleanUp = cleanUp
+exports.copyImages = copyImages
+exports.build = series(
+  cleanUp,
+  ss_public,
+  ss_markdown,
+  // ss_data,
+  html,
+  buildCss,
+  minifyCss,
+  copyVendor,
+  copyVendorCss,
+  copyImages,
+  ss_res_images,
+  bundleJs,
+  ss_html,
+  series(buildCss, minifyCss)
 )
-exports.build_res_blog = series(res_blog_posts, res_blog_images)
-exports.build_res_cs = series(res_cs_posts, res_cs_images)
-exports.build_res_docs = series(res_docs_doc, res_docs_images)
-// exports.develop = function () {
-//  watch(["src/scss/*.scss", "src/scss/**"], scss);
-// };
+exports.default = series(
+  cleanUp,
+  ss_public,
+  ss_markdown,
+  // ss_data,
+  html,
+  buildCss,
+  minifyCss,
+  copyVendor,
+  copyVendorCss,
+  copyImages,
+  ss_res_images,
+  bundleJs,
+  ss_html,
+  series(buildCss, minifyCss),
+  parallel(browserSync, watchFiles)
+)
+
+exports.publish = ss_publish
