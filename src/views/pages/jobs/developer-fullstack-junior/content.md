@@ -4,13 +4,11 @@ Sipsters are on a mission to build a safer connected tomorrow. Our suite of inno
 
 ### Overview
 
-As a Full Stack Developer, you’ll be responsible to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. You should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.
+As a Junior Full Stack Developer, you’ll be responsible to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. You should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.
 
 ### Responsibilities
 
 - Work with development teams and product managers to ideate software solutions
-
-- Design client-side and server-side architecture
 
 - Build the front-end of applications through appealing visual design
 
@@ -25,5 +23,3 @@ As a Full Stack Developer, you’ll be responsible to produce scalable software 
 - Build features and applications with a mobile responsive design
 
 - Writing clean, high-quality, high-performance, maintainable code
-
-- Develop and support software including applications, database integration, interfaces, and new functionality enhancements
