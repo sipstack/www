@@ -1,0 +1,30 @@
+# Cannot leave gitlab-ci.yml empty for pipelines -- adding below as placeholder
+placeholder:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "Pipeline placeholder."
+  only:
+    - main
+    - develop 
+# ----------------------------------------------------------------------------
+
+# image: docker:latest
+
+# services:
+#   - docker:dind
+
+# before_script:
+#   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+
+# build-main:
+#   # image: node:12.18.4-buster ## only way to get npm / gulp to work
+#   stage: build
+#   script:
+#     - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+#     - docker push "$CI_REGISTRY_IMAGE"
+#     - docker tag "$CI_REGISTRY_IMAGE" "$CI_REGISTRY_IMAGE:$CI_COMMIT_TITLE"
+#     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TITLE"
+
+#   only:
+#     - main

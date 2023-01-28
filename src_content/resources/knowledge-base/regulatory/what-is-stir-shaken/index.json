@@ -1,0 +1,15 @@
+{
+    slug: "what-is-stir-shaken",
+    title: "What is STIR/SHAKEN?",
+    subtitle: "STIR/SHAKEN are two separate initiatives that work to verify the identity of an inbound call in efforts to deter illegal caller ID spoofing.",
+    abstract: "",
+    created: "22/09/2022",
+    updated: "",
+    author: {
+        name: "Anjana Uthayakumaran",
+        picture: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},

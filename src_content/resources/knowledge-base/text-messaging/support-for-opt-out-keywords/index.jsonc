@@ -1,0 +1,15 @@
+{
+    slug: "support-for-opt-out-keywords",
+    title: "SIPSTACK support for opt-out keywords",
+    subtitle: "",
+    abstract: "",
+    created: "25/05/2021",
+    updated: "",
+    author: {
+        name: "Kanasu Nagathihalli",
+        picture: "/assets/img/team/kanasu.png",
+    },
+    content: `
+@@include("content.md")
+`
+},

@@ -1,0 +1,20 @@
+{
+    slug: "the-state-of-spam-calling-in-the-US",
+    image: "/assets/img/resources/blog/20221020-the-state-of-telecommunications-spam-in-the-US/issue-50.svg",
+    category: "Spam",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "The State of Telecommunications Spam in the United States",
+    abstract: "Spam calling and texting is a massive phenomenon in the United States, and the daily reality of Americans who are subject to 3 billion spam calls a month .",
+    created: "20/10/2022", //dd/mm/yyyy
+    updated: "07/12/2022",
+    duration: 7, // minute read
+    author: {
+        name: "Anjana Uthayakumaran",
+        role: "Author",
+        photo: "/assets/img/team/anjanaa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},

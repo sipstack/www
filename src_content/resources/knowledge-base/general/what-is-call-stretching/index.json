@@ -1,0 +1,15 @@
+{
+  "slug": "what-is-call-stretching",
+  "title": "What is Call Stretching?",
+  "subtitle": "Call stretching is a method utilized by fraudulent carriers to inflate the duration of a call, and effectively charge more money directly from legitimate carriers.",
+  "abstract": "",
+  "created": "12/11/2022",
+  "updated": "",
+  "author": {
+    "name": "Anjana Uthayakumaran",
+    "picture": "/assets/img/team/anjanaa.jpg"
+  },
+  "content": `
+@@include("content.md")
+`
+},

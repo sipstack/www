@@ -1,0 +1,20 @@
+{
+    slug: "ho-ho-holiday-scams",
+    image: "/assets/img/resources/blog/20221213-ho-ho-holiday-scams/holiday-scam.png",
+    category: "Scams",
+    tags: ["SIPSTACK"],
+    views: 0,
+    title: "Ho Ho Holiday Scams",
+    abstract: "Delivery scams refer to emails with shipping notifications that appear to be sent from legitimate mail carriers and parcel delivery services, but are actually sent from illegitimate scammers trying to steal your money.",
+    created: "14/12/2022", //dd/mm/yyyy
+    updated: "",
+    duration: 5, // minute read
+    author: {
+        name: "Jeff Sager",
+        role: "Author",
+        photo: "/assets/img/team/jeffsa.jpg",
+    },
+    content: `
+@@include("content.md")
+`
+},

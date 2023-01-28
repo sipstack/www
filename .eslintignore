@@ -1,0 +1,15 @@
+# Ignore artifacts:
+build
+dist
+coverage
+node_modules
+public
+
+#
+README.md
+CHANGELOG.md
+
+# bulma-css-vars
+bulma-colors.js
+
+.example

@@ -1,0 +1,18 @@
+{
+    slug: "regulatory",
+    icon: "carbon:rule-cancelled",
+    iconColor: "blue",
+    name: "Regulatory",
+    text: "General information on Regulatory boards.",
+    contributors: [
+        {
+            name: "Jeff Sager",
+            picture: "/assets/img/team/jeffsa.jpg",
+        },
+        {
+            name: "Anjana Uthayakumaran",
+            picture: "/assets/img/team/anjanaa.jpg",
+        },
+    ],
+    articles: [@@include("regulatory.articles.json")]
+},
