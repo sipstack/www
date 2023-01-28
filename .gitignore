@@ -2,7 +2,7 @@
 
 public/assets/img/resources
 src/views/pages/**/content.html
-
+.tmp
 # Logs
 
 logs
