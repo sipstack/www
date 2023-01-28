@@ -37,7 +37,7 @@ func_dev2 () { # CI/CD prep
 
 func_dev3 () {
        ### when CI/CD not used in gitlab -------------------------
-        func_yesno "Ready to publish ${APPNAME} ${SUBNAME}: ${BRANCH} to production servers?"
+        # func_yesno "Ready to publish ${APPNAME} ${SUBNAME}: ${BRANCH} to production servers?"
         
         echo "No pre-build required."
 
