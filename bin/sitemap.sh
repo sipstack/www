@@ -30,5 +30,5 @@ done
 echo "</urlset>"
 
 # cleanup
-sed -i 's|/index.html||g' sitemap.xml
-sed -i 's|.html||g' sitemap.xml
+sed -i 's|index.html||g' sitemap.xml
+sed -i 's|.html|/|g' sitemap.xml
