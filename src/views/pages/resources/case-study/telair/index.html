@@ -1,0 +1,58 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+  title: "Case Study: TELAIR // SIPSTACK",
+  meta: {
+      description: "Case Study: TELAIR",
+      keywords: "case study, testimonial, telair",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "resources/case-study/telair",
+      image: "resources/case-study/telair.png",
+      type: "article",
+      created: "2021-12-03",
+      updated: "",
+  },
+  body: '',
+  css: [],
+  nav: {
+      class: 'navbar-link-white'
+  }
+})
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
+@@include('components/sections/case-study.article-header.html', { 
+  category: 'Case Study', 
+  title: 'Driving Success: Simplifying Customization with SIPSTACK',
+})
+
+<section class="position-relative">
+  <div class="container pt-9 pt-lg-0 pb-9 pb-lg-11 position-relative z-index-1">
+    <div class="row">
+      <!-- prettier-ignore -->
+      @@include('components/sections/case-study.article-info.html', { 
+        slug: 'telair',
+        company_image: 'telair/telair.png',
+        company: 'TELAIR.NET LTD.', 
+        website: 'https://www.telair.net',
+        title: 'Driving Success: Simplifying Customization with SIPSTACK', 
+        author: { 
+          name: 'Jeff Sager', 
+          role: 'Author', 
+          photo: 'jeffsa.jpg' 
+        },
+        created: '2021-12-03',
+        duration: '4',
+        image: "posts/post-17.svg",
+      })
+      <div class="col-lg-8">
+        <div class="pt-lg-11 h-100 d-flex flex-column ss-article">
+          <!-- prettier-ignore -->
+          @@include('pages/resources/case-study/telair/content.html')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

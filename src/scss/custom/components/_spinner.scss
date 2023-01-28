@@ -1,0 +1,26 @@
+//Spinner style
+
+//preloader spinner
+.spinner-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.loaded{
+    .spinner-loader{
+     opacity: 0;
+     visibility: hidden;
+    transition: .3s cubic-bezier(.785,.135,.15,.86) .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    }
+}

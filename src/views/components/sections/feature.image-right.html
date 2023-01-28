@@ -1,0 +1,54 @@
+<!--begin:feature image section-->
+<section class="position-relative py-3 @@class" id="@@id">
+  <div class="container position-relative">
+    <div class="row justify-content-between align-items-center py-4 my-4">
+      <div
+        class="col-lg-6 mb-5 mb-lg-0 order-lg-last"
+        data-aos="fade-up"
+        data-aos-delay="50">
+        <div class="position-relative ps-4 z-index-1" data-aos="fade-left">
+          <!--Parallax-element-->
+          @@if (pattern){
+          <div
+            class="position-absolute end-0 top-50 translate-middle-y width-7x h-auto">
+            <div
+              class="rellax"
+              data-rellax-speed="-2"
+              data-rellax-percentage=".9">
+              <img
+                src="/assets/img/vectors/pattern-@@pattern.svg"
+                alt=""
+                class="fill-primary w-100 h-auto"
+                data-inject-svg />
+            </div>
+          </div>
+          }
+          <div class="mx-auto p-1 position-relative @@image_class">
+            <img src="@@image" alt="" style="max-width: 100%" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-5 order-lg-1 position-relative"
+        data-aos="fade-left"
+        data-aos-delay="100">
+        <!--Heading-->
+        <h2 class="mb-4 display-5 bold">@@title</h2>
+        <!--Text-->
+        <p class="mb-5">@@description</p>
+        <!--Feature-card-->
+        @@for(var i = 0; i < checkboxes.length;i++){
+        <div class="d-flex mb-2">
+          <div class="me-3">
+            <i class="bx bx-check-circle fs-4"></i>
+          </div>
+          <div>
+            <p class="mb-0">`+checkboxes[i]+`</p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+<!--end:feature image section-->

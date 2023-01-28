@@ -1,0 +1,45 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "The History of VoIP // SIPSTACK",
+    meta: {
+        description: "VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.",
+        keywords: "voip, history, technology",
+        author: "Kanasu Nagathihalli",
+        robots: "index, follow",
+        url: "resources/blog/the-history-of-voip",
+        image: "resources/blog/post-5.svg",
+        type: "article",
+        created: "2021-04-08", 
+        updated: "", 
+    },
+    body: "",
+    css: []
+})
+
+<!-- ARTICLE START --------------------------------------------------------------------------------------------- -->
+<!-- prettier-ignore -->
+@@include('components/sections/blog.article-header.html', {
+    slug: "the-history-of-voip",
+    image: "post-5.svg",
+    category: "History",
+    tags: ['voip', 'history', 'technology'],
+    views: "0",
+    title: "The History of VoIP",
+    abstract: "VoIP technology was invented to overcome the limitations of the telephone. The first VoIP solutions used the internet to establish connections and transmit data.",
+    created: "2021-04-08",
+    updated: "",
+    duration: "3",
+    author: {
+        name: "Kanasu Nagathihalli",
+        role: "Author",
+        photo: "kanasu.png",
+    },
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/blog.article-v1.html', {
+    slug: "the-history-of-voip",
+})
+
+<!-- ARTICLE END -------------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')

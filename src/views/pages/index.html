@@ -1,0 +1,120 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIPSTACK",
+    meta: {
+        description: "Post-modern suite of Telecommunication & VoIP tools. AI / ML at it's core, provides unprecedented meta data across the platform.",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ],
+    nav: {
+        class: 'navbar-link-white'
+    }
+})
+
+@@include('components/sections/hero.slider.html')
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.img-r.html',{ 
+    attr: 'id="intro"' 
+})
+<!-- prettier-ignore -->
+@@include('components/sections/world-map.html',{
+    title: 'New Era of Trust',
+    description: 'Phone Number lookups on a whole new level. Tap into telco meta-data like never before.',
+    cols: [
+        {title: 'Origin', description: 'Every phone number cites origin data including regional, switch and carrier details.'},
+        {title: 'CallerID Name', description: 'Receive the most accurate CallerID Name information including any website, email and social links.'},
+        {title: 'Risk Scoring', description: 'Real-time risk scoring is provided on every phone number lookup when querying with a destination.'},
+        {title: 'Community Feedback',  description: 'Access up to date community remarks about phone numbers using our Whois applications.'},
+    ],
+    cols2: [
+    {title: 'Unique Whois Pages', suffix: 'M+', count_to: '1100', description: ''},
+    {title: 'Machine Learning Data Points', suffix: '+', count_to: '88', description: ''},
+    {title: 'Identified Profiles', suffix: 'M+', count_to: '330', description: ''},
+]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: '',
+    class: '',
+    title: 'Products',
+    description: 'Beyond Unified Communications',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.cards.html',{
+    cols:
+        [
+            {
+                title: 'SIPSTACK UC', 
+                description: 'Self-hosted multi-tenant open-source pbx, managed whitelabel web portals.',
+                link: '/product/sipstack-uc',
+                icon: 'bxs-cloud',
+            },
+
+            {
+                title: 'Smart CNAM',
+                description: 'Enhanced CNAM lookup with Robocall Mitigation / risk score capability and more.',
+                link: '/product/smart-cnam',
+                icon: 'bxs-badge-check',
+            },
+
+            {   
+                title: 'SIP Free',
+                description: 'SIP trunk temination with built in STIR/SHAKEN. Available for any SIP based system.',
+                link: '/product/sip-free',
+                icon: 'bx-coffee-togo'
+            },
+            {   
+                title: 'Whois',
+                description: 'Public CNAM / Caller ID Name lookup, because everyone deserves to know.',
+                link: '/product/whois',
+                icon: 'bx-search'
+            },
+        ],
+})
+
+
+@@include('components/sections/feature-cards.html',{
+    subTitle: 'Cloud UC',
+    title: 'Your next UCaaS platform, powered by AI & you',
+    cols:
+        [
+            {
+                title: 'Multi-Tenant', 
+                description: 'Deploy one or many hosts to serve multiple PBX from a single branded management web portal.',
+                icon: 'bx-server',
+            },
+
+            {
+                title: 'Multi-Brand',
+                description: 'Expand your reach to resellers and channels by allowing sub-whitelabeling without compromise.',
+                icon: 'bx-outline',
+            },
+
+            {   
+                title: 'Self-Hosted',
+                description: 'Open source and self hosted allows you to deploy hosts in cloud or on premise with your own equipment.',
+                icon: 'bx-desktop'
+            },
+        ],
+})
+<img class="centerImg" src="/assets/img/cloud-uc-preview.png" />
+<!-- prettier-ignore -->
+@@include('components/blocks/casestudy.telair.html')
+@@include('pages/_posts.html')
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')

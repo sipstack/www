@@ -1,0 +1,52 @@
+//Scroll back to top
+.toTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: $white;
+  color: $body-color;
+  box-shadow: $box-shadow;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: 9999;
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+//connect-line
+.connect-line {
+  display: block;
+  bottom: 0;
+  width: 1px;
+  height: $spacer * 4;
+  background-color: currentColor;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  z-index: 10;
+  animation: connectLine 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    -webkit-animation: connectLine 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+
+//Locomotive custom c-scrollbar
+
+.c-scrollbar_thumb{
+  background-color: rgba($primary,.5);
+  border-radius: 0px;
+  margin: 0px;
+}

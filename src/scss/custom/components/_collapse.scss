@@ -1,0 +1,115 @@
+//Collapse
+
+.showMore-link {
+  display: inline-block;
+
+  &[aria-expanded="false"] {
+    &::after {
+      content: "show more...";
+    }
+  }
+
+  &[aria-expanded="true"] {
+    &::after {
+      content: "show less...";
+    }
+  }
+}
+
+.collapse {
+  .search-collapse {
+    background-color: rgba($white, 1);
+  }
+}
+
+.collapse-link {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "+";
+    width: .5rem;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    display: inline-block;
+  }
+
+  &[aria-expanded="true"] {
+    &::before {
+      content: "-";
+    }
+  }
+}
+
+
+
+.collapse-group {
+  .nav-link[data-bs-toggle="collapse"],
+  [data-bs-toggle="collapse"] {
+    position: relative;
+    display: block;
+    color: $body-color;
+    padding-top: $spacer * .5;
+    padding-bottom: $spacer * .5;
+    &::after {
+      border: 0px;
+      margin-top: 0px;
+      content: "\ed35";
+      position: absolute;
+      top: 50%;
+      right: $spacer * .5;
+      width: $spacer * .75;
+      height: $spacer * .75;
+      transform: translateY(-50%) rotate(180deg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: boxicons !important;
+      font-style: normal;
+      font-weight: 400 !important;
+      box-sizing: content-box;
+      font-size: $input-font-size-sm;
+      transition: all .2s;
+      will-change: transform;
+    }
+
+    &[aria-expanded="true"] {
+      color: $primary;
+
+      &::after {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+
+  .nav.nav-level-2.flex-column {
+    padding-left: .5rem;
+  }
+
+  .nav.nav-level-3.flex-column {
+    padding-left: 1rem;
+  }
+
+  .nav.nav-level-2.flex-column,
+  .nav.nav-level-3.flex-column {
+    >.nav-link {
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+    }
+  }
+}
+
+.text-white,
+.bg-dark,
+.text-light {
+  .collapse-group {
+
+    .nav-link[data-bs-toggle="collapse"],
+    [data-bs-toggle="collapse"] {
+      &[aria-expanded="true"] {
+        color: rgba($white, .65);
+      }
+    }
+  }
+}

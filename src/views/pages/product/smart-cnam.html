@@ -1,0 +1,334 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+  title: "Smart CNAM // SIPSTACK",
+  meta: {
+      description: "Caller ID lookups just got smarter",
+      keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance, callerid, lookup",
+      author: "SIPSTACK",
+      robots: "index, follow",
+      url: "product/smart-cnam",
+      image: "logo/logo.png",
+      type: "website",
+      created: "", 
+      updated: "", 
+  },
+  body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+  css: [
+  '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+  '/assets/vendor/node_modules/css/glightbox.min.css'
+  ],
+  nav: {
+      class: ''
+  }
+})
+
+
+<!-- SECTIONS --------------------------------------------------------------------------------------------- -->
+@@include('components/sections/header.logo.html', {
+    label: 'Products',
+    title :'Smart CNAM',
+    description: 'Caller ID lookups just got smarter',
+    button1: {
+        label: 'Get Started',
+        link: 'https://partner.sipstack.com/signup'
+    },
+    button2: {
+        label: 'Book Demo',
+        link: '/'
+    },
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/parts/nav.secondary.html', {
+    menu: [
+        {title:'Overview', link:'#overview'},
+        {title:'Features', link:'#features'},
+        {title:'Pricing', link:'#pricing'},
+        {title:'FAQs', link:'#faq'},
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'overview',
+    class: '',
+    title: 'Overview',
+    description: 'Integrate Smart CNAM everywhere',
+    extra: ''
+})
+
+<section class="position-relative py-3">
+    <div class="container position-relative">
+      <div class="row justify-content-between align-items-center py-4 my-4">
+        <div class="col-md-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="50">
+          <div class="position-relative ps-4 z-index-1" data-aos="fade-left">
+            <div class="mx-auto p-1 position-relative @@image_class">
+                <img class="shadow-xl rounded-3 border border-gray-300 " style="max-width: 100%"  src="/assets/img/product/whois/overview-2.png">
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-5 order-lg-1 position-relative"
+          data-aos="fade-left"
+          data-aos-delay="100">
+
+          <!-- <h4 class="mb-4 display-6 bold">For Carriers</h4>
+          <p class="mb-5 lead">Integrate Smart CNAM into your system call flows and always receive the latest name information and call scores. Dynamic call scoring can return a 5 character spacing prefix to be handled or stripped on your inbound routes.</p>
+          
+          <h4 class="mb-4 display-6 bold">App developers</h4>
+          <p class="mb-5 lead">API calls can be used in a variety of mobile application for unique use cases. Provide your users with a rich experiences with Smart CNAM.</p>
+          
+          <h4 class="mb-4 display-6 bold">ITSP's & MSP's</h4>
+          <p class="mb-5 lead">Smart CNAM can be used in a wide range of applications. See Solutions for more details and industry specific use cases.</p>
+
+          <h4 class="mb-4 display-6 bold">Whois Powered</h4>
+          <p class="mb-5 lead">Whois by SIPSTACK is powered by the same powerful API that Smart CNAM offers, generating rich unique experiences on both web browsers and mobile. Increase the Whois score rating for your customers as well as earn a verified check badge and secure remarks when you add their numbers to your partner portal.</p> -->
+          <div class="row mx-sm-0">
+            <div class="col-sm-6 py-5 border-bottom border-end-sm pe-sm-4 pe-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              
+              <h4 class="mb-3">Carrier</h4>
+              <p class="mb-0">
+                Quick & simple integration into any existing voice switch providing instant Robocall Mitigation certification.
+              </p>
+            </div>
+            <div class="col-sm-6 py-5 border-bottom ps-sm-4 ps-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+      
+         
+              <h4 class="mb-3">Mobile developers</h4>
+              <p class="mb-0">
+                Access rich caller information from an API call across various programming languages and methods.
+              </p>
+            </div>
+            <div class="col-sm-6 py-5 border-end-sm pe-sm-4 pe-md-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+    
+           
+              <h4 class="mb-3">ITSP / MSP</h4>
+              <p class="mb-0">
+                Protect your customers and infrastructure with Smart CNAM risk detection while providing value added capabilities.
+              </p>
+            </div>
+            <div class="col-sm-6 pt-5 ps-sm-4 ps-md-5 border-top border-top-sm-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+             
+              <h4 class="mb-3">Whois Connected</h4>
+              <p class="mb-0">
+                Manage your customers phone number profiles and trust from a single portal.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'overview',
+    class: 'mb-n10',
+    title: '',
+    description: 'Add CNAM lookup to your call flows',
+    extra: 'With a few lines, get real-time CNAM data and risk score, or simply request Caller ID only.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.code.html',{
+    style: 'min-height:200px',
+    col: 'col-lg-10',
+    tabs: [
+        { tab: 'cURL', lang: 'bash', code: '\t $ curl --user "API-KEY:API-SECRET" \\ \n\t\t https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/<span class="text-primary">14164772004</span>' },
+        { tab: 'Asterisk', lang: 'bash', code: '\t ... \n\t same => n,Verbose(Getting Smart CNAM) \n\t same => n,Set(CALLERID(name)=${CURL(https://api.sipstack.com/v1/b/partner/smart-cnam/phoneNumber/${CALLERID(num)}/${EXTEN}?type=cnam)}) \n\t same => n,Verbose(Returns:${CALLERID(name)}) ; <span class="text-danger">RISK</span><span class="text-primary">CALLERNAME</span> (RISK and CNAM can be called independantly) \n\t ...' }
+    ],
+})
+
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-right.html', {
+    id: '',
+    class: 'mt-n10',
+    title: 'Always learning',
+    description: 'Find out whos calling with trust ratings dynamic for your location. <Br><Br>Powered by AI and community users like you. SIPSTACK uses machine learning along with community feedback to provide hyper-accurate call ratings along with information related to the caller including website, email addresses, social profiles, local addresses and even other phone numbers.',
+    checkboxes:[],
+    image: '/assets/img/product/whois/circle.png', 
+    image_class: '',
+    pattern: ''    
+    
+})
+
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+  id: 'features',
+  class: 'bg-light',
+  title: 'Features',
+  description: 'Asterisk trusted, AI/ML augmented',
+  extra: ''
+})
+
+@@include('components/sections/feature.card-list.html',{
+  class:'border-bottom bg-light pb-9',
+    cols:
+        [
+            {
+                title: 'Simple text response', 
+                description: 'Returns a 20-character string response including a prefixed score followed by caller name.',
+                icon: 'bx bx-text',
+            },
+
+            {
+                title: 'Advanced JSON response',
+                description: 'When more details are required, JSON responses can be returned with rich data sets.',
+                icon: 'bx bx-code-curly',
+            },
+
+           
+        ],
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+  id: 'pricing',
+  class: '',
+  title: 'Pricing',
+  description: 'Enhanced CNAM Lookups',
+  extra: ''
+})
+
+@@include('components/sections/pricing.table.html', 
+    {
+        cols: [
+            { name: '' , sup: '', class: '', monthly: '', yearly: '', sub: '', tag: '' },
+            { name: 'Free', sup: '$', class: 'price',monthly: '0', yearly: '0', sub: 'Per Month', tag: ''},
+            { name: 'Starter', sup: '$', class: 'price',monthly: '30', yearly: '24', sub: 'Per Month', tag: ''},
+            { name: 'Competitor', sup: '$', class: 'price',monthly: '700', yearly: '560', sub: 'Per Month', tag: 'Most Popular'},
+            { name: 'Provider', sup: '$', class: 'price',monthly: '2500', yearly: '2000', sub: 'Per Month', tag: ''},
+            { name: 'Carrier', sup: '', class: '', monthly: 'Call', yearly: 'Call', sub: 'for pricing', tag: ''},
+        ],
+        rows: [
+
+            '<td class="bg-gray-200"><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block"><strong>INCLUDED API REQUESTS PER MONTH</strong></small></div></td><td class="bg-gray-200">50</td><td class="bg-gray-200">10,000</td><td class="bg-gray-200">250,000</td><td class="bg-gray-200">1,000,000</td><td class="bg-gray-200">2,000,000+</td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Score (risk)</small></div></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></div></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">CNAM</small></div></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Regional</small></div></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Telco</small></div></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Do not call</small></div></td><td></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block">Profile</small></div></td><td></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4 "></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>',
+
+            '<td colspan="6" class="bg-gray-200"><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block"><strong>EXTRAS</strong></small></div></td>',
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">Support SLA<i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td>Community</td><td>Community</td><td>Within 8 hours</td><td>Within 4 hours</td><td>Within 2 hours</td>' ,
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">Integration specialist <i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>' ,
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">Regional API proximity <i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td></td><td></td><td></td><td><i class="bx bx-check lh-1 fs-4"></i></td><td><i class="bx bx-check lh-1 fs-4"></i></td>' ,
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">On-premise deployment <i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td></td><td></td><td></td><td></td><td><i class="bx bx-plus lh-1 fs-4"></i></td>' ,
+
+            '<td><div class="d-flex justify-content-between flex-nowrap"><small class="mb-0 d-block ">On-premise integration & training <i class="text-muted small bx bxs-help-circle" style="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Smart CNAM API cluster deployed within 100 Miles of customer datacenter"></i></small></div></td><td></td><td></td><td></td><td></td><td><i class="bx bx-plus lh-1 fs-4"></i><i class="bx bx-plus lh-1 fs-4"></i></td>' ,
+            '<td></td><td><button class="btn btn-primary">Get Started</button></td><td><button class="btn btn-primary">Subscribe</button></td><td><button class="btn btn-primary">Subscribe</button></td><td><button class="btn btn-primary">Subscribe</button></td><td><button class="btn btn-primary">Contact</button></td>' ,
+
+            ]
+    }
+)
+
+@@include('components/sections/faq.html', {
+    id: 'faq', 
+    title: 'FAQs',
+    subTitle: 'Frequently Asked Questions',
+    cols: [
+      {
+        title: 'How does it differ from regular CNAM lookup tools?',
+        description: 'Smart CNAM is a next generation lookup tool. Smart CNAM goes way beyond just a name response and can include a tremendous amount of information when requested.',
+      },
+      {
+        title: 'What payment methods are accepted?',
+        description: 'Credit cards issued by Visa, MasterCard, or American Express, Electronic Funds Transfer (EFT), Wire Transfer (for qualifying customers) or Cheque',
+      },
+      {
+        title: 'Do I need a credit card to sign up?',
+        description: 'Yes, a valid credit card is required.',
+      },
+      {
+        title: 'Will I receive an invoice?',
+        description: 'Yes, an invoice is issued on the 1st day of the month with the previous month\'s subscription fee and usage. When you join during a month the subscription fee invoiced on the 1st of the month will be for the full subscription amount.',
+      },
+      {
+        title: 'How do included monthly API requests get allotted?',
+        description: 'At the beginning of every month, your allotted API requests for that month are based on your subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. My subscription did not start on the first day of the month, how do included monthly API requests get allotted now? Even though you start during the month your allotted API requests are still based on the API\'s per the subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. In the event, you hardly used your allocation limit contact billing@sipstack.com and request an adjustment to your subscription fee.',
+      },
+      {
+        title: 'How do included monthly API requests get allotted?',
+        description: 'At the beginning of every month, your allotted API requests for that month are based on your subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. My subscription did not start on the first day of the month, how do included monthly API requests get allotted now? Even though you start during the month your allotted API requests are still based on the API\'s per the subscription. If you exceed the allotted requests, each additional request will be charged at the rate based on your subscription and volume. In the event, you hardly used your allocation limit contact billing@sipstack.com and request an adjustment to your subscription fee.',
+      },
+      {
+        title: 'Is there a usage limit beyond my allotted API requests?',
+        description: 'Yes and No. You can go over your allotted API requests, however, once you exceed your designated credit limit, you will no longer be able to make additional requests unless you upgrade to a higher plan or contact billing@sipstack.com and authorize them to take an additional payment (specify the amount) from your credit card.',
+      },
+      {
+        title: 'What is my credit limit?',
+        description: 'In the beginning until there is a history on the account the credit limit will be twice your subscription fee. In other words, once the number of API requests meet twice the API requests of your subscription no further API requests will be processed. We are doing this so that you are not surprised at the end of the month with a larger than expected invoice. It is important to sign up knowing the number of API requests in your system each month to avoid constantly exceeding your credit limit. However, if you want to test our system with a lower subscription fee this is okay, but you need to remember that when you see your API requests approaching double the subscription amount then you might want to upgrade to a higher or contact billing@sipstack.com to authorize a payment from your credit card to keep the requests flowing or wait until next month to resume your requests. For customers with more than 2,000,000 monthly API requests please contact billing@sipstack.com. After a history is established the credit limit will be based on several factors such as your current subscription, your cumulative spend with SIPSTACK and longevity of your account.',
+      },
+      {
+        title: 'How is sales tax applied?',
+        description: 'If you are a Canadian based company then sales tax will be applied to each of your transactions. At the moment, companies outside of Canada do not get charged sales tax.',
+      },
+      {
+        title: 'Why some people receive different scores?',
+        description: 'Depending on many factors, our AI/ML will determine the distance between callers, how often a caller makes calls to those regions or numbers just to list a few that makeup the learning conditions. Call rating will always be dynamic.',
+      },
+      {
+        title: 'Why is a caller suddenly receiving lower scores?',
+        description: 'If the same number is calling the same destination and the score changes dramatically, this could indicate that abnormal or fraudulent call behaviours have been suspected and community feedback has been verified. Scoring is adaptive and much like turning on any new system, there is a warm up phase.',
+      },
+      {
+        title: 'Are there any limitations?',
+        description: 'Yes, please read through our Terms of Service, Acceptable Use Policy and our API Rate limits from our Resource center.',
+      },
+      {
+        title: 'My API requests are not going through?',
+        description: 'You may have reached your credit limit. If your account has been paid and you have not exceeded your credit limit and API requests are not being processed contact Support. If you feel there has been a mistake, please contact billing@sipstack.com.',
+      },
+      {
+        title: 'How accurate is the information returned?',
+        description: 'Very accurate! Our AI/ML is constantly learning and adapting ensuring that caller information is up to date, and any meta data such as websites, emails, social, etc... are all current. Caller badges indicate call details are verified, however call ratings will always be dynamic.',
+      },
+      {
+        title: 'What is the difference between a Partner & Vertical?',
+        description: 'Partners are typically telecom related entities that integrate Smart CNAM into their call flows. API requests are typically sent with a destination phone number in order to return an accurate dynamic call score. While Vertical markets may not have a destination number to provide however, may wish to receive caller information. They can do so without a destination number for a minimial cost. Our AI/ML is enhanced by Partner integrations which contribute to hyper accurate realtime call ratings.',
+      },
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+  class: 'p-9',
+  label: 'Get Started',
+  title: 'Smarter SIP Termination',
+  description: 'Volume discounted and STIR/SHAKEN managed',
+  input_class: 'bg-light',
+  placeholder: 'Your email address...',
+  button: 'Signup',
+  demo: '',
+  link: '',
+})
+
+<script>
+  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+  
+      var formData = $('#ss-form-cta').serialize()
+      
+      window.location.href=`https://partner.sipstack.com/signup?${formData}`
+    })
+  })
+</script>
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')

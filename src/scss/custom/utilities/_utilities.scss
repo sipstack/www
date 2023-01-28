@@ -1,0 +1,348 @@
+$utilities: map-merge($utilities,
+    ("shadow": (property: box-shadow,
+            class: shadow,
+            values: (null: $box-shadow,
+                sm: $box-shadow-sm,
+                lg: $box-shadow-lg,
+                3d: $box-shadow-3d,
+                xl: $box-shadow-xl,
+                none: none,
+            )),
+            "rounded": (
+                property: border-radius,
+                class: rounded,
+                values: (
+                  null: var(--#{$prefix}border-radius),
+                  0: 0,
+                  1: var(--#{$prefix}border-radius-sm),
+                  2: var(--#{$prefix}border-radius),
+                  3: var(--#{$prefix}border-radius-lg),
+                  4: var(--#{$prefix}border-radius-xl),
+                  5: var(--#{$prefix}border-radius-2xl),
+                  blob: var(--#{$prefix}border-radius-blob),
+                  block: var(--#{$prefix}border-radius-block),
+                  circle: 50%,
+                  pill: var(--#{$prefix}border-radius-pill)
+                )
+              ),
+        "rounded-top": (
+            property: border-top-left-radius border-top-right-radius,
+            class: rounded-top,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3:var(--#{$prefix}border-radius-lg),
+                4:var(--#{$prefix}border-radius-xl),
+                5:var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-end": (
+            property: border-top-right-radius border-bottom-right-radius,
+            class: rounded-end,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                4:var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-bottom": (
+            property: border-bottom-right-radius border-bottom-left-radius,
+            class: rounded-bottom,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3:var(--#{$prefix}border-radius-lg),
+                4:var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-start": (
+            property: border-bottom-left-radius border-top-left-radius,
+            class: rounded-start,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                4: var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-top-start": (
+            property:border-top-left-radius,
+            class: rounded-top-start,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3: var(--#{$prefix}border-radius-lg),
+                4: var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-top-end": (
+            property:border-top-right-radius,
+            class: rounded-top-end,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3: var(--#{$prefix}border-radius-lg),
+                4: var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-bottom-start": (
+            property:border-bottom-left-radius,
+            class: rounded-bottom-start,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3: var(--#{$prefix}border-radius-lg),
+                4: var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+        "rounded-bottom-end": (
+            property:border-bottom-right-radius,
+            class: rounded-bottom-end,
+            values: (null: var(--#{$prefix}border-radius),
+                0:0,
+                3: var(--#{$prefix}border-radius-lg),
+                4: var(--#{$prefix}border-radius-xl),
+                5: var(--#{$prefix}border-radius-2xl),
+                block:var(--#{$prefix}border-radius-block),
+                pill: var(--#{$prefix}border-radius-pill))),
+
+                //Start border utilities
+        "border": (property: border,
+            values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+                0: 0,
+            )),
+        "border-end": (property: border-right, responsive:true,
+            class: border-end,
+            values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+                0: 0,
+            )),
+        "border-start": (property: border-left, responsive:true,
+            class: border-start,
+            values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+                0: 0,
+            )),
+            "border-bottom": (property: border-bottom, responsive:true,
+            class: border-bottom,
+            values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+                0: 0,
+            )),
+            "border-top": (property: border-top, responsive:true,
+            class: border-top,
+            values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+                0: 0,
+            )),
+        "border-color": (property: border-color,
+            class: border,
+            local-vars: ("border-opacity": 1),
+            values: $utilities-border-colors),
+        "border-width": (css-var: true,
+            css-variable-name: border-width,
+            class: border,
+            values: $border-widths),
+        "position": (property: position,
+            responsive:true,
+            values: static relative fixed absolute sticky),
+        "j-center": (property: align-items,
+            class: flex,
+            values: (center: center,
+            )),
+        "align-center": (property: justify-content,
+            class: flex,
+            values: (center: center,
+            )),
+        //Background-position
+        "backgroundPosition": (property: background-position,
+            class: bg,
+            values: (center:center center,
+                top-left:top left,
+                top-right:top right,
+                bottom-left:bottom left,
+                bottom-right:bottom right,
+            )),
+        //Background-size
+        "backgroundSize": (property: background-size,
+            class: bg,
+            values: (cover:cover,
+                contain:contain,
+                100:100%)),
+        //Background-size
+        "backgroundRepeat": (property: background-repeat,
+            class: bg,
+            values: (repeat:repeat,
+                no-repeat:no-repeat,
+                repeat-x:repeat-x,
+                repeat-y:repeat-y,
+            )),
+        "widthPixel": (property: width,
+            class: width,
+            values: (1x: 1rem,
+                2x: 1.5rem,
+                3x: 2rem,
+                4x: 2.5rem,
+                5x: 3rem,
+                6x: 3.5rem,
+                7x: 4rem,
+                8x: 5rem,
+                9x: 5.5rem,
+                10x: 6rem,
+                11x: 7rem,
+                12x: 8rem,
+                13x:9rem,
+                14x:9.5rem,
+                15x: 10rem,
+                16x: 11rem,
+                17x: 12rem,
+                18x: 13rem,
+                19x: 14rem,
+                20x: 15rem,
+                auto: auto)),
+        "heightPixel": (property: height,
+            class: height,
+            values: (1x: 1rem,
+                2x: 1.5rem,
+                3x: 2rem,
+                4x: 2.5rem,
+                5x: 3rem,
+                6x: 3.5rem,
+                7x: 4rem,
+                8x: 5rem,
+                9x: 5.5rem,
+                10x: 6rem,
+                11x: 7rem,
+                12x: 8rem,
+                13x:9rem,
+                14x:9.5rem,
+                15x: 10rem,
+                16x: 11rem,
+                17x: 12rem,
+                18x: 13rem,
+                19x: 14rem,
+                20x: 15rem,
+                auto: auto)),
+        "flip": (class:flip,
+            property: transform,
+            values: (y:rotateZ(180deg),
+                x:rotateY(180deg))),
+        "rotate": (property: transform,
+            class: rotate,
+            values: (1: rotate(1deg),
+                2: rotate(2deg),
+                3: rotate(3deg),
+                45: rotate(45deg),
+                n45: rotate(-45deg),
+                n3: rotate(-3deg),
+                none: none,
+            )),
+        //Viewport width and height
+        "viewport-height": (property: height,
+            class: vh,
+            values: (50: 50vh, 75: 75vh,
+                100: 100vh)),
+        "min-viewport-height": (property: min-height,
+            class: min-vh,
+            values: (
+                100: 100vh)),
+        "z-index": (class:z-index,
+            property: z-index,
+            values: (n1:-1,
+                0:0,
+                1:1,
+                2:2,
+                3:3,
+                fixed:$zindex-fixed)),
+        "width": (responsive: true,
+            class:w,
+            property: width,
+            values: (0:0,
+                25:25%,
+                50:50%,
+                60:60%,
+                75:75%,
+                100:100%, auto:auto,
+            )),
+        "height": (responsive: true,
+            class:h,
+            property: height,
+            values: (0:0,
+                25:25%,
+                50:50%,
+                60:60%,
+                75:75%,
+                100:100%,
+                auto:auto,
+            )),
+    ));
+
+
+//Additional utilities
+.flex-center {
+    display: inline-flex !important;
+}
+
+//Border-dashed/dotted
+.border{
+    &.border-dashed {
+        border-style: var(--#{$prefix}border-style-dashed)!important;
+    }
+    &.border-dotted {
+        border-style: var(--#{$prefix}border-style-dotted)!important;
+    }
+}
+
+//Hover box-shadows
+[class~="hover-shadow-"],
+[class*="hover-shadow-"],
+.hover-shadow {
+    transition: all .25s ease-in-out;
+}
+
+.hover-shadow-sm {
+    &:hover {
+        box-shadow: $box-shadow-sm !important;
+    }
+}
+
+.hover-shadow {
+    &:hover {
+        box-shadow: $box-shadow !important;
+    }
+}
+
+.hover-shadow-lg {
+    &:hover {
+        box-shadow: $box-shadow-lg !important;
+    }
+}
+
+.hover-shadow-xl {
+    &:hover {
+        box-shadow: $box-shadow-xl !important;
+    }
+}
+
+.hover-shadow-3d {
+    &:hover {
+        box-shadow: $box-shadow-3d !important;
+    }
+}
+
+
+//grid separator
+.grid-separator {
+    overflow: hidden;
+
+    >* {
+        box-shadow: -1px -1px 0px 0px rgba($border-color, 1);
+    }
+
+    >[class*="col-"],
+    [class^="col-"] {
+        padding: 2rem 1rem;
+    }
+}
+
+.text-white {
+    .grid-separator {
+        >* {
+            box-shadow: -1px -1px 0 0 rgba($white, .075);
+        }
+    }
+}

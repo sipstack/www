@@ -1,0 +1,86 @@
+
+<!--begin:Navbar items-->
+<ul class="navbar-nav ms-lg-auto">
+
+    <li class="nav-item">
+      <a class="nav-link @@if (context.page === 'home') {active}" href="index.html" role="button">Home
+      </a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link @@if (context.page === 'about') {active}" href="index.html" role="button">About us
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @@if (context.page === 'services') {active}" href="index.html" role="button">What we do
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link @@if (context.page === 'portfolio') {active}" href="index.html" role="button">Portfolio
+      </a>
+    </li>
+  
+    <!--begin:Dropdown-->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle @@if (context.page === 'portfolio') {active}" href="#" role="button"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">Dropdown
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Level 1</a>
+        <a class="dropdown-item" href="#">Another 1</a>
+        <div class="dropend">
+          <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Level 1</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Level 2</a>
+            <a class="dropdown-item" href="#">Level 2</a>
+          </div>
+        </div>
+        <a class="dropdown-item" href="#">More 1</a>
+      </div>
+    </li>
+  
+    <!--begin:demos-->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle @@if (context.page === 'demos') {active}" href="#" role="button"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos
+      </a>
+      <div class="dropdown-menu p-lg-3 dropdown-menu-end dropdown-menu-xs">
+        <a class="dropdown-item" target="_blank" href="index.html">
+          Classic <span class="badge bg-info">Main</span>
+        </a>
+        <a class="dropdown-item" target="_blank" href="demo-shop.html">
+          E-commerce
+        </a>
+        <a class="dropdown-item" target="_blank" href="demo-one-page.html">
+          One Page
+        </a>
+        <a class="dropdown-item" target="_blank" href="demo-real-estate.html">
+          Real estate
+        </a>
+        <a class="dropdown-item" target="_blank" href="demo-jobs.html">
+          Jobs
+        </a>
+        <a class="dropdown-item" target="_blank" href="demo-event-landing.html">
+          Event Landing
+        </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item disabled" target="_blank" href="demo-rtl.html">
+          RTL Starter <span class="badge bg-primary disabled ms-1">Current</span>
+        </a>
+        <!--footer-->
+        <div class="p-3">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+  
+              <span class="flex-grow-1 small text-muted">Many more demos
+                coming soon...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <!--end:Pages-->
+  </ul>
+  <!--end:Navbar items-->
+  
+
+

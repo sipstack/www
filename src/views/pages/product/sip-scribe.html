@@ -1,0 +1,139 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIP Scribe // SIPSTACK",
+    meta: {
+        description: "Transcribe recordings or voicemail with ease",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "product/sip-scribe",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/header.logo.html', {
+    label: 'Products',
+    title :'SIP Scribe',
+    description: 'Transcribe recordings or voicemail with ease',
+    button1: {
+        label: 'Request Invite',
+        link: '/invite'
+    },
+    button2: {
+        label: '',
+        link: ''
+    },
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/parts/nav.secondary.html', {
+    menu: [
+        {title:'Overview', link:'#overview'},
+        {title:'Features', link:'#features'},
+        {title:'Pricing', link:'#pricing'},
+        {title:'FAQs', link:'#faq'},
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'overview',
+    class: '',
+    title: 'Overview',
+    description: 'Drop in voice transcription — that works',
+    extra: 'Simple voice to text transcription service designed for ITSP\'s. Simple drop in API calls in your call routes to return transcribed messages. Offer your customers enhanced user experiences with transcribed voicemails and call recordings.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.starter.html', {
+    class: 'pb-9',
+    description: '',
+    button: 'Get Notified',
+    arrow: 'true',
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'features',
+    class: 'bg-light',
+    title: 'Features',
+    description: 'Plug & Play API Transcription',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.card-list.html',{
+    class:'border-bottom bg-light pb-9',
+    cols:
+        [
+            {
+                title: 'Voicemails',
+                description: 'Transcribe voicemails and send them in emails.',
+                icon: 'bx bx-voicemail',
+            },
+            {   
+                title: 'Call recordings',
+                description: 'Transcribe recorded calls for email or cdrs.',
+                icon: 'bx bx-microphone'
+            },
+            
+        ],
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'pricing',
+    class: '',
+    title: 'Pricing',
+    description: 'Pricing not available',
+    extra: 'Stay tuned for updates.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'faq',
+    class: 'bg-light',
+    title: 'FAQs',
+    description: 'Frequently Asked Questions',
+    extra: 'Stay tuned for updates.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+    class: 'p-9',
+    label: 'Request Invite',
+    title: 'Join our preview circle',
+    description: 'Join our preview program and be the first to experience next level UCaaS.',
+    input_class: 'bg-light',
+    placeholder: 'Email Address',
+    button: 'Notify Me',
+    demo: '',
+    link: ''
+})
+
+<script>
+  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+
+      var formData = $('#ss-form-cta').serialize()
+      $('#ss-form-cta-submit').attr('disabled', '')
+      apiRequest('f/www/cap/invite?' + formData, 'GET')
+    })
+  })
+</script>
+<!-- END SECTIONS ----------------------------------------------------------------------------------------- -->
+@@include('components/layouts/tail.html')

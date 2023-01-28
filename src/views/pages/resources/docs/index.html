@@ -1,0 +1,63 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "Documentation // SIPSTACK",
+    meta: {
+        description: "Post-modern suite of Telecommunication & VoIP tools. AI / ML at it's core, provides unprecedented meta data across the platform.",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/docs",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/header.simple.html', {
+    label : 'Resources',
+    title :'Documentation',
+    description: 'Guides to help you setup SIPSTACK products to get started as fast as possible.',    
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.cards.html',{
+    cols:
+        [
+        {
+            title: 'Partner Portal', 
+            description: 'Access all of our products through one centralized portal',
+            link: '/resources/docs/partner-portal',
+            icon: 'bx-window-alt',
+        },
+
+        {
+            title: 'Whois',
+            description: 'Say goodbye to fraudsters & spammers with Whois profiles.',
+            link: '/resources/docs/whois',
+            icon: 'bx-search',
+        },
+
+        {   
+            title: 'Smart CNAM',
+            description: 'Integrate intelligent call lookups into any voice network.',
+            link: '/resources/docs/smart-cnam',
+            icon: 'bx-badge-check',
+        },
+        {   
+            title: 'SIP Free',
+            description: 'Lower your operational costs with enhanced SIP Trunks.',
+            link: '/resources/docs/sip-free',
+            icon: 'bx-coffee-togo',
+        },
+        ],
+})
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

@@ -1,0 +1,24 @@
+<section class="position-relative bg-light" id="@@id">
+  <div class="container py-7 py-lg-7">
+    <div
+      class="row justify-content-center"
+      data-aos="fade-up"
+      data-aos-delay="300">
+      @@for (var i = 0; i < cols.length; i++) {
+      <div
+        class="p-5 col-10 col-lg-5 mb-7 mb-lg-5 mx-auto lg-mx-0  bg-white border rounded-3 text-center shadow-md">
+        <!--Section Heading-->
+        <h3
+          class="mb-0 display-1 bold small"
+          style="font-size: x-large; font-weight: 500">
+          `+cols[i].title+`
+        </h3>
+
+        <p class="pt-3 text-muted">`+cols[i].description+`</p>
+
+        <a href="#!" class="btn btn-primary">`+cols[i].button+`</a>
+      </div>
+      }
+    </div>
+  </div>
+</section>

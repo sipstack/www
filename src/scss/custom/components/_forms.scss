@@ -1,0 +1,70 @@
+//form styles
+.form-control.text-white,input.text-white,select.text-white,textarea.text-white{
+    &::placeholder{
+        color: rgba($white,.65);
+    }
+}
+//Form input icons
+.input-icon-group{
+    position:relative;
+    .form-control{
+      padding-left:3rem;
+    }
+    .form-control-lg{
+      padding-left:3.5rem;
+    }
+      .form-control-sm{
+      padding-left:2.25rem;
+    }
+    .input-icon{
+      position:absolute;
+      left:0;
+      top:0;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:2.5rem;
+      &::after{
+        content:"";
+        position:absolute;
+        right:0;
+        top:0;
+        width:1px;
+        height:100%;
+        background-image:linear-gradient(to top, rgba(#fff,0) 0%, rgba($border-color,.5)50%,rgba(#fff,0)100%)
+      }
+      >i{
+        font-size: $input-btn-font-size;
+        opacity:.3;
+      }
+    }
+    
+    &.input-icon-group-sm{
+      .input-icon{
+        width:2rem;
+         >i{
+           font-size: $input-btn-font-size-sm;
+        }
+      }
+    }
+     &.input-icon-group-lg{
+      .input-icon{
+        width:3rem;
+        >i{
+          font-size: $input-btn-font-size-lg;
+       }
+      }
+    }
+  }
+  //Form switch
+  .form-switch>.form-check-input {
+    height: 1.5rem;
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus{
+  box-shadow:0 $input-btn-focus-width $input-btn-focus-blur rgba($success,$input-btn-focus-color-opacity);
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus{
+  box-shadow:0 $input-btn-focus-width $input-btn-focus-blur rgba($danger,$input-btn-focus-color-opacity);
+}

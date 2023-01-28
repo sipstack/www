@@ -1,0 +1,11 @@
+//
+//Pricing Plan css
+//
+.form-pricing-switch.form-switch{
+  margin-bottom: 0;
+  >.form-check-input{
+height: $spacer * 1.75;
+width: $spacer * 3.25;
+margin-top: 0;
+  }
+}
