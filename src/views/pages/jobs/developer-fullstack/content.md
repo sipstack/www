@@ -1,29 +1,55 @@
-### About Us
+### About Us ###
 
 Sipsters are on a mission to build a safer connected tomorrow. Our suite of innovative products are built to eradicate fraudulent and spam calling as well as provide next generation experiences and services to the telecommunications industry. We are a hard-working team that are detail oriented and take pride in everything that we do. We are growing at a rapid pace and are looking for awesome talent that share our values and our mission.
 
-### Overview
+### Overview ###
 
-As a Full Stack Developer, you’ll be responsible to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. You should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.
+We are looking for an experienced and talented Chief Operating Officer that will enhance the company’s ongoing operations and procedures, and drive extensive and sustainable growth. As part of the senior leadership team, you’ll be responsible to execute on the strategic vision of the company. 
 
-### Responsibilities
+### Responsibilities ###
 
-- Work with development teams and product managers to ideate software solutions
+- Collaborate with the CEO, CFO and Chief of Staff on a broad range of strategic topics
 
-- Design client-side and server-side architecture
+- Work with team members to define, track, and report monthly, quarterly and annual objectives and metrics in an organized and digestible way
 
-- Build the front-end of applications through appealing visual design
+- Foster a strong sense of cohesion amongst teams
 
-- Write effective APIs
+- Prepare pitch decks, documentation and additional items needed for funding rounds
 
-- Test software to ensure responsiveness and efficiency
+- Participate in the strategic process of identifying goals, setting company OKRs
 
-- Troubleshoot, debug and upgrade software
+- Design and implement business strategies, plans and procedures
 
-- Create security and data protection settings
+- Set comprehensive goals for performance and growth
 
-- Build features and applications with a mobile responsive design
+- Additional COO related tasks
 
-- Writing clean, high-quality, high-performance, maintainable code
+### About the role: ###
 
-- Develop and support software including applications, database integration, interfaces, and new functionality enhancements
+Full transparency into everything in our business - financials, legal, strategy etc.
+
+Expected to solve problems like a founder
+
+**We’re looking for someone that:**
+
+- Can leverage other peoples strengths, and empower the people around them
+
+- Thrives when turning ambiguity into thoughtful, clear, and actionable plans
+
+- Ability to manage comprehensive budgets and business operations
+
+- Exceptional leadership and organizational skills
+
+- Excellent written, verbal and presentation communication skills
+
+- Ability to generate a strategic plan, communicate it, present it visually, and execute it.
+
+- Have a passion for working with team members in a fast-paced environment
+
+ - Have 5+ years experience in senior leadership
+
+- Have worked in series style funding
+
+- Have 10+ years experience in an operations and managerial role
+
+**(Bonus) Has previous regulatory/government and telecommunication experience** 
