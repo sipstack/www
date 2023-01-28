@@ -36,6 +36,7 @@ const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
 // const md_table = require('markdown-it-multimd-table')
 const sort = require('gulp-sort')
+const s3upload = require('gulp-s3-upload')()
 
 // Markdown-It Options
 const options = {
@@ -326,6 +327,7 @@ function html(cb) {
     paths.src.html.dir,
     '!src/views/pages/**/_*.html',
     '!src/views/pages/resources/**/*',
+    '!src/views/pages/**/content.html',
   ])
     .pipe(
       tap(function (file) {
@@ -531,6 +533,7 @@ function ss_html(cb) {
   src([
     'src/views/pages/resources/**/*.html',
     '!src/views/pages/resources/**/_*.html',
+    '!src/views/pages/resources/**/content.html',
   ])
     .pipe(
       tap(function (file) {
@@ -546,12 +549,36 @@ function ss_html(cb) {
       })
     )
     .pipe(dest('dist/resources'))
+
+  cb()
+}
+
+function ss_publish(cb) {
+  const s3Config = {
+    endpoint: 'sfo2.digitaloceanspaces.com', // note no https://
+    region: 'sfo2',
+    accessKeyId: process.env.DGO_KEY,
+    secretAccessKey: process.env.DGO_SECRET,
+  }
+
+  src('dist/assets/**')
     .pipe(
-      browsersync.reload({
-        stream: true,
+      rename(function (path) {
+        path.dirname = 'www/' + path.dirname
       })
     )
-
+    .pipe(
+      s3upload(
+        {
+          Bucket: 'sipstack',
+          ACL: 'public-read',
+          Metadata: {
+            // uploadedVia: 'gulp-s3-upload',
+          },
+        },
+        s3Config
+      )
+    )
   cb()
 }
 // ------------------------------------------------------------------------------
@@ -600,6 +627,22 @@ exports.copyVendor = copyVendor
 exports.copyVendorCss = copyVendorCss
 exports.cleanUp = cleanUp
 exports.copyImages = copyImages
+exports.build = series(
+  cleanUp,
+  ss_public,
+  ss_markdown,
+  // ss_data,
+  html,
+  buildCss,
+  minifyCss,
+  copyVendor,
+  copyVendorCss,
+  copyImages,
+  ss_res_images,
+  bundleJs,
+  ss_html,
+  series(buildCss, minifyCss)
+)
 exports.default = series(
   cleanUp,
   ss_public,
@@ -617,3 +660,5 @@ exports.default = series(
   series(buildCss, minifyCss),
   parallel(browserSync, watchFiles)
 )
+
+exports.publish = ss_publish

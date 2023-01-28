@@ -64,9 +64,6 @@ figure img {
   color: var(--bs-nav-link-hover-color);
 }
 
-.centerText {
-  text-align: center;
-}
 
 .subTitleGradient {
   background: radial-gradient(circle at 70%, #35bb8a 10%, #05915e 30%);
@@ -80,11 +77,6 @@ figure img {
   -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
   font-weight: 510;
 
-  /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
-  font-weight: 510;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite; */
 }
 .ss-bw-img {
   filter: grayscale(100%);
@@ -104,10 +96,6 @@ figure img {
   color: #238963 !important;
 }
 
-.blackText {
-  color: black;
-  font-weight: lighter;
-}
 .bold {
   font-weight: 550;
   font-size: xx-large;
@@ -117,59 +105,13 @@ figure img {
   font-size: medium !important;
   margin-bottom: 0px;
 }
-.fontLarge {
-  font-size: 2.5rem;
-  line-height: 2.75rem !important;
-}
-.fontWhite {
-  color: white;
-  font-weight: 900;
-  line-height: normal;
-}
-.success-stories-font {
-  font-weight: 510;
-  font-size: medium;
-  margin-bottom: 2px;
-}
 
-.success-stories-text {
-  font-weight: 500;
-  font-size: large;
-  margin-bottom: 2px;
-  line-height: 1.5em;
-}
 
 .card-title {
   font-size: x-large;
   margin-bottom: 0px;
 }
 
-/*********** BUTTONS **********/
-.whiteButton {
-  background-color: white;
-  border-color: lightgray;
-  color: black;
-}
-
-/* ******** CONTAINERS/CARDS/DIVS ********* */
-
-.ss-background-gradient {
-  background-image: radial-gradient(
-    200% 160% at 75% 130%,
-    #03241d 0,
-    #010326 100%
-  );
-
-  /* background: -webkit-linear-gradient(45deg, #35bb8a, #064f34);
-  font-weight: 510;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 8s linear infinite; */
-}
-
-.card-body:hover .icon {
-  /* transform: rotate(25deg); */
-}
 
 .card-body {
   margin-top: 10%;
@@ -199,69 +141,14 @@ figure img {
   max-height: 80%;
 }
 
-.custom-container {
-  position: relative;
-  margin-bottom: 5%;
-  width: 80%;
-  padding: auto;
-  max-height: 10%;
-  margin-top: 5%;
-}
 
-.divOverlay {
-  position: absolute;
-  top: 0px;
-  left: 1%;
-  right: 1%;
-  border-radius: 25px;
-  background-color: #35bb8adf;
-  height: 100%;
 
-  overflow: hidden;
-  padding: 3% 5%;
-}
 
-.cards {
-  margin-top: 5%;
-  max-width: 40%;
-  max-height: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5%;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.left {
-  margin-top: 0;
-  width: 40%;
-  float: left;
-}
-
-.right {
-  width: 40%;
-  float: right;
-  margin: auto;
-}
-
-.contact-card {
-  width: 40%;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-style: solid;
-  padding: 5%;
-  border-radius: 10px;
-}
 /*********** HTML ELEMENTS *************/
 i {
   color: #35bb8a;
   font-size: xx-large;
   font-weight: light;
-  /* margin-top: 7%;
-  margin-bottom: 3%; */
 }
 
 table {
@@ -269,20 +156,6 @@ table {
   border-collapse: collapse;
 }
 
-.ss-custom-table table td {
-  border-left: 1px solid #00000020;
-  border-right: 1px solid #00000020;
-  padding: 0% 1%;
-  width: 25%;
-}
-
-.ss-custom-table table td:first-child {
-  border-left: none;
-}
-
-.ss-custom-table table td:last-child {
-  border-right: none;
-}
 
 /******* IMGS AND ICONS*******/
 
@@ -304,13 +177,6 @@ table {
   margin-right: auto;
 }
 
-.success-story-img {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 25px;
-  height: 450px;
-  object-fit: cover;
-}
 
 .btn-success {
   --bs-btn-color: #fff;
@@ -334,10 +200,6 @@ table {
   margin: 0 auto;
 }
 
-.hideBorder {
-  border: 0px;
-}
-
 .form-label {
   font-weight: lighter;
   margin-bottom: 0px;
@@ -356,48 +218,6 @@ table {
   border-radius: 10px;
 }
 
-.text-email {
-  color: #35bb8a;
-}
-
-.custom-collapse {
-  background-color: white;
-  padding: 1rem 2rem;
-  margin: 5% auto;
-  width: 70%;
-  border-radius: 25px;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-style: solid;
-}
-
-.custom-dropdown {
-  width: 94.6em;
-  padding: 5% 5% !important;
-}
-
-.border-left {
-  padding-left: 2.5em !important;
-}
-
-.nav-col-custom-inner {
-  flex: 0 0 auto;
-  width: 13%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-.nav-col-custom-outer {
-  flex: 0 0 auto;
-  width: 27%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.border-left {
-  border-left: 1px solid lightgray;
-  padding-left: 1em;
-  padding-bottom: 0.5em;
-}
 
 .button-dropdown {
   border: none;
@@ -437,20 +257,8 @@ table {
   right: 0;
   color: #35bb8a;
 }
-.dropdown-menu-fw {
-  margin: 0 !important;
-  position: absolute;
-  /* left: -5em; */
-}
 
-.dropdown-menu {
-  /* margin: 0 !important; */
-  position: absolute;
-  /* left: -6.25em; */
-  margin-top: 4em;
-  border-radius: 0px;
-  margin-left: -5.6em !important;
-}
+
 
 .text-muted {
   color: rgb(102, 101, 101) !important;

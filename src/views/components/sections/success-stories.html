@@ -1,26 +1,35 @@
-<section class="position-relative bg-white overflow-hidden">
-    <!--content-->
-    <div class="container custom-container">
-        <img src="@@backgroundImg" alt="Background image" class="success-story-img">
-        <div class ="divOverlay">
-            <div class="right">
-                <img src = "@@featureImg" style = "max-width: 100%; margin-top: 10%;
-                margin-bottom: auto;">
+
+<!--begin:feature story section-->
+<section class="position-relative py-3" id="@@id">
+    <div class="container position-relative">
+      <div class="row justify-content-center align-items-center py-4 my-4">
+        <div
+          class="col-lg-6 mb-5 mb-lg-0 order-lg-last"
+          data-aos="fade-up"
+          data-aos-delay="50">
+          <div class="position-relative ps-4 z-index-1" data-aos="fade-left">
+            
+            <div class="mx-auto p-1 position-relative">
+              <img src="@@featureImg" alt="" style="max-width: 100%" />
             </div>
-
-            <div class = 'left'>
-                <span class="success-stories-font fontWhite">@@header</span>
-
-                <p class = 'fontLarge fontWhite'>@@title</p>
-
-                <p class = "success-stories-text fontWhite">@@description</p>
-
-                 
- <a href="@@link" class="link-underline text-dark fw-bold fs-6 " style = "color: white !important;">
-    @@button<i class=" fontWhite bx bx-right-arrow-alt ms-1 fs-4"></i>
- </a>              
-
-            </div>
+          </div>
         </div>
+        <div
+          class="col-lg-5 order-lg-1 position-relative"
+          data-aos="fade-left"
+          data-aos-delay="100">
+          <h2 class="mb-5 fw-bold fs-6 text-primary">@@header</h2>
+          <!--Heading-->
+          <h2 class="mb-4 display-5 bold">@@title</h2>
+          <!--Text-->
+          <p class="mb-5">@@description</p>
+
+          <a href="@@link" class="link-underline text-primary fw-bold fs-6 ">
+            @@button<i class=" bx bx-right-arrow-alt ms-1 fs-4"></i>
+        </a> 
+          
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+  <!--end:feature story section-->

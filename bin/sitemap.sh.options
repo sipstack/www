@@ -8,3 +8,6 @@
 ! -path ./tmp/\*
 ! -path ./fonts/\*
 ! -path ./stats/\*
+! -path ./assets/\*
+! -path ./\*.png
+! -path ./\*.ico
