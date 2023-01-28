@@ -1,0 +1,101 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "Knowledge Base // SIPSTACK",
+    meta: {
+        description: "Knowledge Base",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/knowledge-base",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+<!-- prettier-ignore -->
+@@include('components/sections/header.simple.html', {
+    label : 'Resources',
+    title :'Knowledge Base',
+    description: 'Find help on popular topics',
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/header.sub-search.html', {
+    placeholder: 'Search...',
+    topics: ['API','Robocall Mitigation','Smart CNAM', 'STIR/SHAKEN']
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.article.html',{
+    cards:
+        [
+        {
+            title: 'General',
+            description: 'General information.',
+            icon: 'bx bx-windows',
+            link: 'general'
+        },
+        {
+            title: 'API', 
+            description: 'Supplementary API reference.',
+            icon: 'bx bx-code',
+            link: 'api',
+            link: 'api'
+        },
+        {
+            title: 'Fax', 
+            description: 'Fax usage and more.',
+            icon: 'bx bx-printer',
+            link: 'fax'
+        },
+        {
+            title: 'Regulatory', 
+            description: 'Compliance and more.',
+            icon: 'bx bxs-bank',
+            link: 'regulatory'
+        },
+        {
+            title: 'Phone Numbers', 
+            description: 'Trust and more.',
+            icon: 'bx bx-dialpad',
+            link: 'phone-numbers'
+        },
+        {
+            title: 'Text Messaging', 
+            description: 'SMS/MMS and more.',
+            icon: 'bx bx-chat',
+            link: 'text-messaging'
+        },
+
+        ],
+})
+<!-- prettier-ignore -->
+<script src="/assets/vendor/node_modules/js/choices.min.js"></script>
+@@include('components/layouts/tail.html')
+<script>
+  //   var cSelect = document.querySelectorAll('[data-choices]')
+  //   cSelect.forEach((el) => {
+  //     const t = {
+  //       ...(el.dataset.choices ? JSON.parse(el.dataset.choices) : {}),
+  //       ...{
+  //         classNames: {
+  //           containerInner: el.className,
+  //           input: 'form-control',
+  //           inputCloned: 'form-control-lg ',
+  //           listDropdown: 'dropdown-menu',
+  //           itemChoice: 'dropdown-item',
+  //           activeState: 'show',
+  //           selectedState: 'active',
+  //         },
+  //       },
+  //     }
+  //     new Choices(el, t)
+  //   })
+  form_autocomplete(document.getElementById('ss-search'), countries)
+</script>

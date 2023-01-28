@@ -1,0 +1,96 @@
+//
+//BS Stepper custom Scss - Plugin URL - https://github.com/Johann-S/bs-stepper
+//
+
+.bs-stepper .step-trigger:hover{
+    background-color: transparent;
+}
+.bs-stepper-circle{
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    line-height: 1;
+    padding: 0;
+    margin-right: .75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-lg;
+}
+
+.bs-stepper .step-trigger{
+    font-weight: inherit;
+    .bs-stepper-circle{
+        background-color:tint-color($primary,90%);
+        color: $primary;
+    }
+    color: $body-color;
+    &:focus{
+        color: $primary;
+    }
+}
+.bs-stepper .active {
+    .bs-stepper-circle{
+        background-color: $primary;
+        color: tint-color($primary,90%);
+    }
+    .step-trigger>span:not(.bs-stepper-circle){
+        color: $primary;
+    }
+}
+.bs-stepper-vertical{
+    .bs-stepper-content{
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+    .step-trigger{
+        width: 100%;
+        justify-content: flex-start;
+        padding:1rem 0;
+        display: flex;
+        position: relative;
+        &::before{
+            content: "";
+            left:1.5rem;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: $gray-200;
+            position: absolute;
+            margin-left: -1px;
+        }
+        .bs-stepper-circle{
+            position: relative;
+            margin-left: 0px;
+        }
+    }
+}
+.bs-stepper{
+    .step:first-child{
+        .step-trigger::before{
+            bottom:0;
+            top: auto;
+            height: calc(100% - 1.25rem);
+        }
+    }
+    .step:last-child{
+        .step-trigger::before{
+            height: calc(100% - 1.5rem);
+        }
+    }
+}
+.bs-stepper .step-trigger.disabled, .bs-stepper .step-trigger:disabled{
+    opacity: 1;
+}
+@media (max-width: 520px){
+    .bs-stepper-header{
+        text-align: left;
+        margin: 0;
+        padding:0 1rem;
+    }
+  .bs-stepper .step-trigger {
+    flex-direction: row;
+    padding: 1rem 0;
+}  
+}

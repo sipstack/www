@@ -1,0 +1,206 @@
+//
+// Animations
+//
+
+
+//Gradient text
+@keyframes textGradientAnimation {
+    0% {
+        background-position: 50% 30%;
+    }
+
+    25% {
+        background-position: 100% 10%;
+    }
+
+    50% {
+        background-position: 100% 90%;
+    }
+
+    75% {
+        background-position: 60% 90%;
+    }
+
+    100% {
+        background-position: 50% 30%;
+    }
+}
+
+//transform-x
+@keyframes transform-x {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        animation-timing-function: ease
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
+}
+
+//scale-in
+@keyframes scaleIn {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    to {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+//scale out
+@keyframes scaleOut {
+    0% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    to {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+
+//scale-down
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+//underline-both
+@keyframes underline-both {
+    to {
+        transform: translate3d(101%, 0, 0);
+    }
+}
+
+//blink from typed.js
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+//connect line
+@keyframes connectLine {
+    0% {
+        transform-origin: 0% 0%;
+        transform: scaleY(0);
+    }
+    50% {
+        transform-origin: 0% 0%;
+        transform: scaleY(1);
+    }
+
+    51% {
+        transform-origin: 0 100%;
+        transform: scaleY(1);
+    }
+    100% {
+        transform-origin: 0 100%;
+        transform: scaleY(0);
+    }
+}
+
+//Pulse
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+//slide-bg-2
+@keyframes slide-bg-2 {
+    33.3% {
+        transform-origin: left top;
+        transform: scale(.05, 1)
+    }
+    66.6% {
+        transform-origin: left center;
+        transform: scale(1, 1)
+    }
+
+    66.7% {
+        transform-origin: right center;
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform-origin: right center;
+        transform: scale(0, 1)
+    }
+}
+
+//show-bg
+@keyframes show-img-1 {
+
+    0%,
+    66.6% {
+        visibility: hidden
+    }
+
+    100%,
+    66.7% {
+        visibility: visible
+    }
+}
+
+//bounce
+@keyframes bounce {
+    0% {
+        transform: translateY(0rem)
+    }
+
+    50% {
+        transform: translateY(-1rem)
+    }
+
+    100% {
+        transform: translateY(0rem)
+    }
+}
+
+//ripple
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

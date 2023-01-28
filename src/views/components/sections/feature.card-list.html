@@ -1,0 +1,23 @@
+<section class="position-relative @@class" id="@@id">
+  <div class="container py-3 py-lg-3">
+    <div class="row justify-content-around">
+      @@for (var i = 0; i < cols.length; i++) {
+      <!--begin:Feature column-->
+      <div
+        class="col-12 col-lg-3 mb-7 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-delay="100">
+        <div class="text-center">
+          <!--Icon-->
+          <div class="mb-1 position-relative display-3 fw-normal text-primary">
+            <i class="`+cols[i].icon+` position-relative"></i>
+          </div>
+          <h5 class="mb-1 display-5 sub-title">`+cols[i].title+`</h5>
+          <p class="mb-3 px-lg-3 text-muted">`+cols[i].description+`</p>
+        </div>
+      </div>
+      <!--end:Feature column-->
+      }
+    </div>
+  </div>
+</section>

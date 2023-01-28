@@ -1,0 +1,349 @@
+/* Recommended styles for Splitting */
+.splitting .word,
+.splitting .char {
+    display: inline-block;
+}
+
+/* Psuedo-element chars */
+.splitting .char {
+    position: relative;
+}
+
+/**
+ * Populate the psuedo elements with the character to allow for expanded effects
+ * Set to `display: none` by default; just add `display: block` when you want
+ * to use the psuedo elements
+ */
+.splitting .char::before,
+.splitting .char::after {
+    content: attr(data-char);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: inherit;
+    user-select: none;
+}
+
+/* Expanded CSS Variables */
+
+.splitting {
+    /* The center word index */
+    --word-center: calc((var(--word-total) - 1) / 2);
+    /* The center character index */
+    --char-center: calc((var(--char-total) - 1) / 2);
+    /* The center character index */
+    --line-center: calc((var(--line-total) - 1) / 2);
+}
+
+.splitting .word {
+    /* Pecent (0-1) of the word's position */
+    --word-percent: calc(var(--word-index) / var(--word-total));
+
+    /* Pecent (0-1) of the line's position */
+    --line-percent: calc(var(--line-index) / var(--line-total));
+}
+
+.splitting .char {
+    --char-percent: calc(var(--char-index) / var(--char-total));
+    --char-offset: calc(var(--char-index) - var(--char-center));
+    --distance: calc((var(--char-offset) * var(--char-offset)) / var(--char-center));
+    --distance-sine: calc(var(--char-offset) / var(--char-center));
+    --distance-percent: calc((var(--distance) / var(--char-center)));
+    line-height: 1.3;
+}
+//..............................................///////////////////////////////////////@at-root
+
+//Spliting type effects
+.splitting.splitting-vertical,
+.splitting.splitting-horizontal {
+    .char {
+        overflow: hidden;
+        color: transparent;
+        &::before,
+        &::after {
+            visibility: visible;
+            color: currentColor;
+            transition: transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
+            transition-delay: calc(0.2s + (0.02s * (var(--char-index))));
+        }
+
+        &::before {
+            transition-delay: calc(0.02s * (var(--char-index)));
+        }
+    }
+}
+//splitting-vertical
+.splitting.splitting-vertical {
+    .char::before {
+        transform: translateY(100%);
+    }
+}
+//splitting-horizontal
+.splitting.splitting-horizontal {
+    .char::before {
+        transform: translateX(110%);
+    }
+}
+//splitting-shift-right
+.shift-right {
+    &:before {
+        content: "\f135";
+        font-family: bootstrap-icons !important;
+        font-style: normal;
+        font-weight: normal !important;
+        vertical-align: middle;
+        display: inline-block;
+        transform: scaleY(0) translateX(-1em);
+        margin-right: -0.25em;
+        font-size: 1.5rem;
+    }
+
+    &:before,
+    .char {
+        transition: transform 0.8s cubic-bezier(0.75, 0, 0.24, 0.98);
+        transition-delay: calc(0.015s * var(--char-index));
+    }
+
+    .char {
+        transform: translateX(-0.15em);
+    }
+
+    &:hover:before {
+        transform: scaleY(1) translateX(0em);
+    }
+
+    &:hover .char {
+        transform: translateX(1em);
+        transform: translateX(0.5em) translateX(calc(0.1em * var(--char-index)));
+    }
+}
+//spliflip-it,spliflip-3d
+.spliflip-it,
+.spliflip-3d {
+    .char {
+        transition: transform 0.6s cubic-bezier(0.6, 0, 0, 0.6);
+        transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+        transition-delay: calc(0.3s * var(--distance-percent));
+    }
+
+    &:hover .char {
+        transform: rotateX(-1turn);
+        transition-duration: 1s;
+        transition-delay: calc(0.3s * var(--distance-percent));
+        transition-delay: calc(0.3s * (1 - var(--distance-percent)));
+    }
+}
+
+.spliflip-3d {
+    perspective: 200px;
+    transform-style: preserve-3d;
+}
+
+//On text white element
+.text-white,
+.text-light {
+    .splitting-vertical,
+    .splitting-horizontal {
+        .char {
+            &:before,
+            &:after {
+                color: white;
+            }
+        }
+    }
+}
+
+//Split text when text is already visible but split when mouse over
+.split-hover:hover {
+    .splitting-vertical,
+    .splitting-horizontal {
+        .char::before {
+            transition-delay: calc(0.2s + (0.02s * (var(--char-index))));
+        }
+        .char::after {
+            transition-delay: calc(0.02s * (var(--char-index)));
+        }
+    }
+    .splitting-vertical {
+        .char {
+            transform: translateY(0);
+        }
+        .char::before {
+            transform: translateY(0%);
+        }
+        .char::after {
+            transform: translateY(-100%);
+        }
+    }
+    .splitting-horizontal {
+        .char::before {
+            transform: translateX(0%);
+        }
+        .char::after {
+            transform: translateX(-110%);
+        }
+    }
+    .splitting-vertical {
+        .char::before {
+            transform: translateY(100%);
+        }
+        .char::before {
+            transform: translateY(0%);
+        }
+        .char::after {
+            transform: translateY(-100%);
+        }
+    }
+    &.split-hover {
+        &:hover {
+            .splitting-vertical,
+            .splitting-horizontal {
+                .char{
+                    opacity: 1;
+                }
+                .char::before {
+                    transition-delay: calc(0.2s + (0.02s * (var(--char-index))));
+                }
+                .char::after {
+                    transition-delay: calc(0.06s * (var(--char-index)));
+                }
+            }
+        }
+    }
+}
+
+//Animations for splitting for hidden(opacity:0, opacity 1 on hover with text-splitting) text
+.splitting {
+    overflow: hidden;
+    .char {
+        transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+        transition-delay: calc(30ms + (20ms * var(--char-index)));
+    }
+    &[class^="splitting-"],
+    &[class*="splitting-"] {
+       &:not(.splitting-vertical):not(.splitting-horizontal):not(.splitting-shift-right):not(.spliflip-3d):not(.spliflip-it){
+        .char {
+            transition-delay: calc(0ms + (0ms * var(--char-index)));
+            opacity: 0;
+        }
+       }
+    }
+    &.splitting-up .char {
+        transform: translateY(100%);
+    }
+    &.splitting-down .char {
+        transform: translateY(-100%);
+    }
+    &.splitting-left .char {
+        transform: translateX(calc(-0.2em * var(--char-index)));
+    }
+    &.splitting-right .char {
+        transform: translateX(calc(0.2em * var(--char-index)));
+    }
+    &.splitting-zoomIn .char {
+        transform: scale3d(0.6, 0.8, 0.6);
+    }
+    &.splitting-zoomOut .char {
+        transform: scale3d(1.6, 1.3, 1.6);
+    }
+}
+.aos-init.aos-animate,
+.card-split-hover:hover{
+    .splitting {
+        &[class^="splitting-"],
+        &[class*="splitting-"] {
+           &:not(.splitting-vertical):not(.splitting-horizontal):not(.splitting-shift-right):not(.spliflip-3d):not(.spliflip-it){
+            .char {
+                transition-delay: calc(40ms + (20ms * var(--char-index)));
+                opacity: 1;
+                transform: none;
+            }
+           }
+        }
+    }
+}
+//***********************************************************************************//
+//Splitting cells
+.splitting.cells img { width: 100%; display: block; }
+@supports ( display: grid ) {
+  .splitting.cells {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    visibility: hidden;
+  }
+  .splitting .cell-grid {
+    background: inherit;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    display: grid;
+    grid-template: repeat( var(--row-total), 1fr ) / repeat( var(--col-total), 1fr );
+  }
+  .splitting .cell {
+    background: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .splitting .cell-inner {
+    background: inherit;
+    position: absolute;
+    visibility: visible;
+    width: calc(100% * var(--col-total));
+    height: calc(100% * var(--row-total));
+    /* Position properly */
+    left: calc(-100% * var(--col-index));
+    top: calc(-100% * var(--row-index));
+  }
+  .splitting .cell {
+    --center-x: calc((var(--col-total) - 1) / 2);
+    --center-y: calc((var(--row-total) - 1) / 2);
+    --offset-x: calc(var(--col-index) - var(--center-x));
+    --offset-y: calc(var(--row-index) - var(--center-y));
+    --distance-x: calc( (var(--offset-x) * var(--offset-x)) / var(--center-x) );
+    --distance-y: calc( (var(--offset-y) * var(--offset-y)) / var(--center-y) );
+  }
+}
+
+
+//splitting image animation
+.splitting {
+    .cell,
+    .cell__inner,
+    img { 
+      transition: transform 1s cubic-bezier(.63,.01,.07,.99), opacity 1s linear;
+      /* No animation on leave */
+      //transition-duration: 0s;
+      transition-delay: calc( 0.1s * var(--cell-index) );
+      /* Reverse the animation */
+      transition-delay: calc( 0.1s * (var(--cell-total) - var(--cell-index)) );
+    }
+  
+    // Better hover support
+    img { 
+      transform: scale(0.8); 
+      transition-delay: 0s;
+      visibility: visible; 
+      opacity: 0;
+    }
+  
+    &:hover {
+      .cell,
+      .cell__inner {
+        transition-delay: calc( 0.1s * var(--cell-index) );
+      }
+  
+      img { 
+        opacity: 0.99;
+        transform: scale(1);
+        transition-delay: calc( 0.1s * var(--cell-total) );
+      }
+    }
+  }
+  .splitting-img.img-vertical:hover .cell { transform: translateY(100%); }
+  .splitting-img.img-horizontal:hover .cell { transform: translateX(100%); }
+  

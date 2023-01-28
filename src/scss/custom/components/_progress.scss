@@ -1,0 +1,35 @@
+//ProgressBar
+.progress-page {
+	position: fixed;
+	width: 100%;
+	top: 0;
+  left: 0;
+  right: 0;
+	z-index: 100;
+  background: none;
+  border: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+	progress {
+		position: relative;
+		display: block;
+		height: 5px;
+		width: 100%;
+		border: 0;
+		background-color: transparent;
+	}
+
+	progress::-moz-progress-bar { background-color: tint-color($primary,65%); }
+	progress::-webkit-progress-bar { background-color: transparent; }
+	progress::-webkit-progress-value { background-color: tint-color($primary,65%); }
+
+}
+
+
+
+//Progress bars
+.progress-bar.aos-init{
+	width:0;
+}

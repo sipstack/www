@@ -1,0 +1,265 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIPSTACK UC // SIPSTACK",
+    meta: {
+        description: "The multi-tenant PBX management console you\'ve been waiting for",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "product/sipstack-uc",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ],
+    nav: {
+        class: ''
+    }
+})
+<!-- prettier-ignore -->
+@@include('components/sections/header.logo.html', {
+    label: 'Products',
+    title :'SIPSTACK UC',
+    description: 'The multi-tenant PBX management console you\'ve been waiting for',
+    button1: {
+        label: 'Request Invite',
+        link: '/'
+    },
+    button2: {
+        label: 'Book Demo',
+        link: '/'
+    },
+    
+})
+<!-- prettier-ignore -->
+@@include('components/parts/nav.secondary.html', {
+    menu: [
+        {title:'Overview', link:'#overview'},
+        {title:'Features', link:'#features'},
+        {title:'Pricing', link:'#pricing'},
+        {title:'FAQs', link:'#faq'},
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'overview',
+    class: 'mb-3',
+    title: 'Overview',
+    description: 'PBX management has never looked so good (or this simple)',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-right.html', {
+    id: '',
+    title: 'Level up your hosted PBX service offering',
+    description: 'Cloud UC is an Asterisk based, open source, unified communications platform, that allows you to scale and manage from a single console. Cloud UC augments Smart CNAM and other rich data into all elements of the experience.',
+    checkboxes:['Multi-brand', 'Multi-tenant','Self-hosted'],
+    image: '/assets/img/product/uc/extension-create.png', 
+    image_class: 'border border-gray-300 rounded-3 shadow-lg',
+    pattern: 'dots'    
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-left.html', {
+    id: '',
+    title: 'Create multiple white-label brands',
+    description: 'Whether you want to allow re-sellers Cloud UC capabilities while still managing & scaling their hosts or if you are expanding into different markets, Cloud UC allows the creation of multiple brands for white labeling.',
+    checkboxes:[],
+    image: '/assets/img/product/uc/brand-create.png', 
+    image_class: '',
+    pattern: 'dots'    
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-right.html', {
+    id: '',
+    title: 'Multi-tenant access across hosts',
+    description: 'Create tenants in the cloud, or on premise & continue to manage and provide access through your branded portal regardless of location. Users can also access their portals through your branded domain and white-labelled portal.',
+    checkboxes:[],
+    image: '/assets/img/product/uc/pbx-create.png', 
+    image_class: '',
+    pattern: 'dots'    
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-left.html', {
+    id: '',
+    title: 'Branded desktop & mobile experience',
+    description: 'Offer customers an enhanced experience tailored to your existing brand by customizing domain, theme color and logo.',
+    checkboxes:[],
+    image: '/assets/img/product/uc/mobile-menu.png', 
+    image_class: 'border border-gray-300 shadow-xl w-50',
+    pattern: 'dots'    
+    
+})
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: '',
+    class: '',
+    title: '',
+    description: 'Self hosted & open source',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.cols-2.html', {
+    class:'mb-5',
+    col1:'SIPSTACK Cloud UC has several major components that make up the platform. The core PBX functions are built on Asterisk and is provided as an open-source download in several installer methods and from our GitHub page.',
+    col2:'The API, web portals and email relays are all contained within the SISPTACK network, across regional datacenters keeping data within borders where compliance and regulatory boards require.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-tip.html', {
+    class: 'pb-9',
+    cols: [
+        {
+            image:'/assets/img/third/asterisk.png',
+            tooltip: 'Easily migrate existing Asterisk, FreePBX based systems into SIPSTACK Cloud UC.',
+        },
+        {
+            image:'/assets/img/third/docker.png',
+            tooltip: 'Docker makes it simple to maintain the latest from SIPSTACK Cloud UC.',  
+        },
+        {
+            image:'/assets/img/third/debian.png',
+            tooltip: 'Deploy SIPSTACK Cloud UC on Debian with our latest installer scripts.',
+        },
+        {
+            image:'/assets/img/third/ubuntu.png',
+            tooltip: 'Deploy SIPSTACK Cloud UC on Ubuntu with our latest installer scripts.',  
+        },
+        {
+            image:'/assets/img/third/proxmox.png',
+            tooltip: 'Quick templates for Proxmox, AWS, Azure, GCP, Digitalocean and other clouds.',
+        },
+      
+    ]
+
+})
+
+@@include('components/blocks/casestudy.telair.html')
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'features',
+    class: 'bg-light',
+    title: 'Features',
+    description: 'Asterisk trusted, AI/ML augmented',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.card-list.html',{
+    class:'border-bottom bg-light pb-9',
+    cols:
+        [
+            {
+                title: 'Multi-Brand',
+                description: 'Create one or many brands with custom domains, color themes and logos for unique experiences.',
+                icon: 'bx bx-layer',
+            },
+            {   
+                title: 'Multi-host',
+                description: 'Scale your hosts in the cloud or on-premise while maintaining full control from a single portal.',
+                icon: 'bx bx-server'
+            },
+            {
+                title: 'Multi-Tenant', 
+                description: 'Deploy PBX\'s across hosts, regions and brands all from a single portal. Easility toggle between active tenants.',
+                icon: 'bx bx-network-chart',
+            },
+            {   
+                title: 'Asterisk based',
+                description: 'Manage systems though the branded console or use commands on your hosts that you already familiar with.',
+                icon: 'bi-braces-asterisk'
+            },
+        ],
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'pricing',
+    class: '',
+    title: 'Pricing',
+    description: 'Pricing not available',
+    extra: 'Stay tuned for updates.'
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'faq',
+    class: 'bg-light',
+    title: 'FAQs',
+    description: 'Frequently Asked Questions',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/faq.default.html', {
+    class: 'bg-light',
+    cols: [
+        {
+            title: 'How much does it cost?',
+            description: 'Pricing has not been announced yet as the product is still in beta. Partners who request an invite and get accepted will not be charged until full pricing is announced.',
+        },
+        {
+            title: 'Can we contribute to the project?',
+            description: 'Yes, via our GitHub page, you can open issues, contribute to our community forums / discussions. You may also request to join our contribution team, more details available in our resources section.',
+        },
+        
+        {
+            title: 'Is SIPSTACK UC customizable?',
+            description: 'Yes, SIPSTACK UC is designed to embrace asterisk and allow for custom scripts, dialplan execution and agi applications to be managed and maintained from the Brand Portal. Custom scripts can also be manually managed via the host directly using standard Asterisk configuration files.'
+        },
+        {
+            title: 'Is the user experience / portal branded?',
+            description: 'Yes, both administrative and user portals are branded to your domain, theme and logos. Email notifications are also branded and come from the branded domain.'
+        },
+        {
+            title: 'How does SIPSTACK UC managment console differ from other portals?',
+            description: 'SIPSTACK UC allows Partners to bring their brands and utlilize the latest in management features while continuing to manage and scale the physical hosts within their own borders and environments. Cloud UC bridges all hosts regardless of cloud, public or private, and provides unparalleled administration across hosts from a single portal. Cloud UC users will also benefit from augmented caller data across user experiences. For example, incoming calls to users on the mobile apps will see enhanced Caller ID information including dynamic call score, and access to website, social, email and other relevant information.',
+        },
+        {
+            title: 'Is there desktop and mobile apps available?',
+            description: 'Yes and no. The user experience is currently available as a PWA (progressive web app) that can be installed directly from the browser. We are working out how we can offer a true mobile and branded experience without compromise to our Partners and their customers.'
+        }
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+    class: 'p-9',
+    label: 'Request Invite',
+    title: 'Join our preview circle',
+    description: 'Join our preview program and be the first to experience next level UCaaS.',
+    input_class: 'bg-light',
+    placeholder: 'Email Address',
+    button: 'Notify Me',
+    demo: '',
+    link: ''
+})
+
+<script>
+  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+
+      var formData = $('#ss-form-cta').serialize()
+      $('#ss-form-cta-submit').attr('disabled', '')
+      apiRequest('f/www/cap/invite?' + formData, 'GET')
+    })
+  })
+</script>
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

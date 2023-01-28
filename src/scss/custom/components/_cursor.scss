@@ -1,0 +1,38 @@
+//Anime cursor
+@media (any-pointer: fine) {
+	.cursor {
+	  position: fixed;
+	  top:0;
+	  left: 0;
+	  display: block;
+	  pointer-events: none;
+	  z-index: 9999999;
+	  mix-blend-mode:difference;
+	}
+  
+	.cursor__inner {
+	  display: block;	  
+	  margin-top: -$spacer * .25;
+	  margin-left: -$spacer * .25;
+	  width: $spacer * 1.5;
+	  height: $spacer * 1.5;
+	  border-radius: 50%;
+	  background-color: $white;
+	  opacity: 1;
+	  transform: scale(1);
+	  transition: all 0.3s ease-out;
+	}
+  
+	.cursor.cHover .cursor__inner {
+	  width: $spacer * .5;
+	  height: $spacer * .5;
+	  margin-top:$spacer * .25;
+	  margin-left:$spacer * .25;
+	}
+  }
+  
+@include media-breakpoint-down(md){
+	.cursor{
+		display: none;
+	}
+}

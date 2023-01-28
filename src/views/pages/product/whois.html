@@ -1,0 +1,196 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "Whois // SIPSTACK",
+    meta: {
+        description: "Caller ID lookups just got smarter",
+        keywords: "voip, multi-tenant, hosted pbx, pbx, sip, trunk, trunking, robocall, mitigation, cnam, termination, fcc, crtc, regulatory, compliance, callerid, lookup",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "product/whois",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: 'data-bs-spy="scroll" data-bs-target="#navbar-secondary"',
+    css: [
+    '/assets/vendor/node_modules/css/swiper-bundle.min.css',
+    '/assets/vendor/node_modules/css/glightbox.min.css'
+    ],
+    nav: {
+        class: ''
+    }
+  })
+
+<!-- prettier-ignore -->
+@@include('components/sections/header.logo.html', {
+    label: 'Products',
+    title :'Whois',
+    description: 'Advanced CallerID name lookup for everyone',
+    button1: {
+        label: 'Try Now',
+        link: 'https://whois.sipstack.com'
+    },
+    button2: {
+        label: '',
+        link: ''
+    },
+    
+})
+<!-- prettier-ignore -->
+@@include('components/parts/nav.secondary.html', {
+    menu: [
+        {title:'Overview', link:'#overview'},
+        {title:'Features', link:'#features'},
+        {title:'Pricing', link:'#pricing'},
+        {title:'FAQs', link:'#faq'},
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'overview',
+    class: 'mb-3',
+    title: 'Overview',
+    description: 'Say goodbye to spam calls',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.image-left-list.html', {
+    title: 'Find out who is calling with trust ratings dynamic for your location. Powered by AI and community users like you.',
+    image: '/assets/img/product/whois/mobile-v1.png', 
+    image_class: '',
+    pattern: 'dots',
+    list: [
+        { icon: 'bx bx-star', title: 'Trust rating', description: 'Real-time risk score assesment based on AI & community feedback.' },
+        { icon: 'bx bx-user', title: 'Name display', description: 'Latest caller information including regional & carrier data.' },
+        { icon: 'bx bx-detail', title: 'Caller details', description: 'See other phone numbers, website, email & social links at a glance' },
+        { icon: 'bx bx-share', title: 'Community feedback', description: 'Get the latest comments from users like you on recent call activity.' },
+    ]
+    
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'features',
+    class: 'bg-light',
+    title: 'Features',
+    description: 'Asterisk trusted, AI/ML augmented',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.card-list.html',{
+    class:'border-bottom bg-light pb-9',
+    cols: [
+        {
+            title: 'Trust rating',
+            description: 'Real-time risk score assesment based on AI & community feedback.',
+            icon: 'bx bx-star',
+        },
+        {
+            title: 'Name display', 
+            description: 'Latest caller information including regional & carrier data.',
+            icon: 'bx bx-user',
+        },
+        {   
+            title: 'Caller details',
+            description: 'See other phone numbers, website, email & social links at a glance.',
+            icon: 'bx bx-detail'
+        },
+        {   
+            title: 'Community feedback',
+            description: 'Get the latest comments from users like you on recent call activity.',
+            icon: 'bx bx-share'
+        },
+   
+        {
+            title: 'Personal dashboard', 
+            description: 'Latest caller information including regional & carrier data.',
+            icon: 'bx bx-desktop',
+        },
+        {   
+            title: 'Social integrations',
+            description: 'See other phone numbers, website, email & social links at a glance.',
+            icon: 'bx bx-share-alt'
+        },
+        {   
+            title: 'My number',
+            description: 'Verify your phone number & control information accuracy for others.',
+            icon: 'bx bx-hash'
+        },
+        {   
+            title: 'Mobile ready',
+            description: 'Responsive design with PWA support & native apps coming soon.',
+            icon: 'bx bx-mobile'
+        },
+    ]}
+)
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'pricing',
+    class: 'mb-7',
+    title: 'Pricing',
+    description: 'Free for everyone',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/feature.title.html', {
+    id: 'faq',
+    class: 'bg-light',
+    title: 'FAQs',
+    description: 'Frequently Asked Questions',
+    extra: ''
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/faq.default.html', {
+    class: 'bg-light',
+    cols: [
+        {
+            title: "Is it really free?",
+            description: "Yes, we believe that everyone should have access to who is calling them. It is the only real way to help identify authentic from fraudulent callers.",
+        },
+        {
+            title: "How does the rating / risk scoring work?",
+            description: "A broad range of factors are taken into account, and scoring is always changing depending on a broad range of things. Community feedback also is accounted for and is processed by our AI/ML before providing a caller score.",
+        },
+        {
+            title: "How does it differ from other tools?",
+            description: "Whois by SIPSTACK is the only tool that provides dyanmic call scoring along with any related information from websites, email addresses, locations and social networks.",
+        },
+        {
+            title: "How can I manage my own phone number listing?",
+            description: "In the description card box, you can click 'This is my phone number', which will guide you to creating an account, followed by steps to verify your phone number before being able to update and manage the listing. This option may not be available in all regions yet.",
+        },
+        {
+            title: "How can I improve my phone number call score?",
+            description: "A number of factors are processed by our AI/ML systems before providing a call score. Additionally people looking up your number from different regions may see different scores depending on how often you call those areas, and how often community members rate your call as OK are some elements accounted for in call scoring process. Scores will always be dynamic.",
+        },
+        {
+            title: "Can I claim multiple phone numbers?",
+            description: "Yes, this is particularly important for companies and business owners. You can verify multiple phone numbers from a single Whois community account, or have greater control when using a SIPSTACK Cloud UC powered phone system. Talk to your ITSP / MSP about deploying a SIPSTACK powered system for your business.",
+        },
+
+
+
+    ]
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/cta.default.html', {
+    class: 'p-9',
+    label: 'Start Searching',
+    title: 'Lookup callerID name details and more',
+    description: '',
+    input_class: 'bg-light',
+    placeholder: 'Lookup Phone Number...',
+    button: 'Search',
+    demo: '',
+})
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

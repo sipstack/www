@@ -1,0 +1,109 @@
+//
+//Caret dropdown toggle
+//
+.dropdown-toggle {
+    &::before,
+    &::after {
+        font-family: boxicons !important;
+        font-weight: 400 !important;
+    }
+}
+
+.dropdown-toggle::after {
+    margin-left: $spacer * .125;
+    content: "\ed35";
+    vertical-align: -3px;
+}
+.dropup .dropdown-toggle::after {
+    margin-left: $spacer * .125;
+    content: "\ed42";
+    vertical-align: -3px;
+}
+.dropend .dropdown-toggle::after {
+    margin-left: $spacer * .125;
+    vertical-align: -3px;
+    content: "\ed3b";
+}
+
+.dropstart .dropdown-toggle {
+    &::before {
+        margin-right: $spacer * .175;
+        vertical-align: -.15em;
+        content: "\ed38";
+    }
+
+    &::after {
+        display: none;
+    }
+}
+.dropdown-toggle-split.dropdown-toggle::after {
+    margin-left: 0;
+}
+.dropstart .dropdown-toggle-split.dropdown-toggle::before {
+    margin-right: 0px;
+}
+
+.navbar {
+    .navbar-nav {
+        .dropdown-toggle:not(.active) {
+            &::before,
+            &::after {
+                opacity: .75;
+            }
+        }
+    }
+}
+
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
+
+        &#{$infix} {
+            @include media-breakpoint-up($next) {
+                .dropdown-menu {
+                    .dropend {
+                        .dropdown-toggle {
+                            &::after {
+                                content: "\ed3b";
+                                position: absolute;
+                                right: $dropdown-item-padding-x;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                vertical-align: initial;
+                                line-height: 1;
+                            }
+                        }
+                    }
+
+                    .dropstart {
+                        .dropdown-toggle {
+                            &::before {
+                                content: "\ed38";
+                                position: absolute;
+                                left: -$dropdown-item-padding-x * .125;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-breakpoint-down($next) {
+                .dropdown-menu .dropend .dropdown-toggle {
+                    &::after {
+                        content: "\ed35";
+                    }
+                }
+
+                .dropdown-menu .dropstart .dropdown-toggle {
+                    &::before {
+                        content: "\ed35";
+                    }
+                }
+            }
+        }
+    }
+}

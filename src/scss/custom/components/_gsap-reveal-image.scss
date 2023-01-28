@@ -1,0 +1,57 @@
+//Gsap mouseover reveal image and marquee text
+.js-hover-img {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    li {
+        position: relative;
+        img {
+            pointer-events: none;
+            position: absolute;
+            opacity: 0;
+            bottom:0;
+            width: auto;
+            height: 30vh;
+            transition: opacity 0.4s;
+        }
+
+        .js-hover-img-link {
+            position: relative;
+            transition: all 0.6s;
+            z-index: 2;
+            a {
+                display: block;
+                text-decoration: none;
+                color: currentColor;
+                z-index: 3;
+                line-height: 1.4;
+                transition: all 0.35s;
+                >* {
+                    pointer-events: none;
+                    display: block;;
+                }
+            }
+        }
+
+        &:hover {
+            .img {
+                opacity: .8;
+            }
+            .js-hover-img-link{
+                mix-blend-mode: luminosity;
+            }
+        }
+    }
+}
+.text-white,.text-light{
+    .js-hover-img{
+        li:hover{
+            .js-hover-img-link{
+                mix-blend-mode: color-dodge;
+            }
+        }
+    }
+}

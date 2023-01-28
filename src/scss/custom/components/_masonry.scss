@@ -1,0 +1,15 @@
+//Masonry
+.masonry {
+    grid-column-gap: 32px;
+}
+.masonry-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@include media-breakpoint-up(md){
+    .masonry .masonry-col:nth-child(even) {
+        margin-top: 32px;
+    }
+    .masonry{
+        display: grid;
+    }
+}
