@@ -57,7 +57,7 @@ EOF
 
 
 func2() {
-cat << EOF > src/views/pages/jobs/_jobs.json
+cat << EOF >> src/views/pages/jobs/_jobs.json
 {
     slug: "${SLUG}",
     title: "${TITLE}",
