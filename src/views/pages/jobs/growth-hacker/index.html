@@ -1,0 +1,46 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIPSTACK",
+    meta: {
+        description: "You are all about intentionality and efficiency to produce the latest viral content.",
+        keywords: "job, jobs, carrer, hiring, hire, resume, Growth Hacker, Facebook, Instagram, Linkedin, Tiktok, Twitter, Youtube, Google Analytics, Google SEO, Bing SEO, Matomo",
+        author: "Stamatis Loizides",
+        robots: "index, follow",
+        url: "",
+        image: "logo/logo.png",
+        type: "article",
+        created: "2022-11-30", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.page.html',
+    {
+        slug: "growth-hacker",
+        category: "Marketing",
+        location: "Toronto, ON",
+        title: "Growth Hacker",
+        description: "You are all about intentionality and efficiency to produce the latest viral content.",
+        created: "2022-11-30",
+        email: "",
+        salary: "TBD",
+        type: "Full-time",
+        stacks:['Facebook', 'Instagram', 'Linkedin', 'Tiktok', 'Twitter', 'Youtube', 'Google Analytics', 'Google SEO', 'Bing SEO', 'Matomo'],
+        perks: "",
+        recruiter: "Stamatis Loizides"
+    }
+)
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.footer.html', {
+    job_id: '13',
+    slug: 'growth-hacker',
+})
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')
