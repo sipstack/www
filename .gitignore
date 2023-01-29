@@ -1,8 +1,3 @@
-# SIPSTACK
-.env
-public/assets/img/resources
-src/views/pages/**/content.html
-.tmp
 # Logs
 
 logs
@@ -173,3 +168,6 @@ public/robots.txt
 # sipstack additional
 .example/
 .env
+public/assets/img/resources
+src/views/pages/**/content.html
+.tmp
