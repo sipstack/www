@@ -1,0 +1,46 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIPSTACK",
+    meta: {
+        description: "You are the kind of person that doesn't take no for an answer and always finds the angle.",
+        keywords: "job, jobs, carrer, hiring, hire, resume, Sales Representative, Linkedin Sales Navigator, Odoo CRM",
+        author: "Stamatis Loizides",
+        robots: "index, follow",
+        url: "",
+        image: "logo/logo.png",
+        type: "article",
+        created: "2022-09-14", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.page.html',
+    {
+        slug: "sales-representative",
+        category: "Sales",
+        location: "Toronto, ON",
+        title: "Sales Representative",
+        description: "You are the kind of person that doesn't take no for an answer and always finds the angle.",
+        created: "2022-09-14",
+        email: "",
+        salary: "TBD",
+        type: "Full-time",
+        stacks:['Linkedin Sales Navigator', 'Odoo CRM'],
+        perks: "",
+        recruiter: "Stamatis Loizides"
+    }
+)
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.footer.html', {
+    job_id: '14',
+    slug: 'sales-representative',
+})
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

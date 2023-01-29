@@ -1,0 +1,46 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "SIPSTACK",
+    meta: {
+        description: "You have the experience and the vision to lead the day-to-day operations and help take us to the next level. ",
+        keywords: "job, jobs, carrer, hiring, hire, resume, Chief Operating Officer, ",
+        author: "Stamatis Loizides",
+        robots: "index, follow",
+        url: "",
+        image: "logo/logo.png",
+        type: "article",
+        created: "2023-01-20", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.page.html',
+    {
+        slug: "coo",
+        category: "Executive",
+        location: "Toronto, ON",
+        title: "Chief Operating Officer",
+        description: "You have the experience and the vision to lead the day-to-day operations and help take us to the next level. ",
+        created: "2023-01-20",
+        email: "",
+        salary: "TBD",
+        type: "Full-time",
+        stacks:[''],
+        perks: "",
+        recruiter: "Stamatis Loizides"
+    }
+)
+<!-- prettier-ignore -->
+@@include('components/sections/jobs.footer.html', {
+    job_id: '12',
+    slug: 'coo',
+})
+
+<!-- prettier-ignore -->
+@@include('components/layouts/tail.html')

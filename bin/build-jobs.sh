@@ -26,6 +26,9 @@ COUNT=0
 echo "Reminder: this command must be run from project root."
 echo "-----------------------------------------------------"
 
+## pre loop ------------------------------------------------------------
+rm src/views/pages/jobs/_jobs.html
+
   for file in src/views/pages/jobs/*/article.ini ; do
     IFS="\/" read -a TEST <<< $file
     SLUG=${TEST[4]}
