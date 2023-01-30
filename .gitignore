@@ -171,3 +171,4 @@ public/robots.txt
 public/assets/img/resources
 src/views/pages/**/content.html
 .tmp
+.cache
