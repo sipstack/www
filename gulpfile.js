@@ -22,6 +22,8 @@ const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
 const replace = require('gulp-replace')
 const gap = require('gulp-append-prepend')
+const sort = require('gulp-sort')
+const awspublish = require('gulp-awspublish')
 
 // require markdown-it plugins
 const md_abbr = require('markdown-it-abbr')
@@ -36,8 +38,7 @@ const md_prism = require('markdown-it-prism')
 const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
 // const md_table = require('markdown-it-multimd-table')
-const sort = require('gulp-sort')
-const awspublish = require('gulp-awspublish')
+
 // Markdown-It Options
 const options = {
   // preset: 'commonmark',
