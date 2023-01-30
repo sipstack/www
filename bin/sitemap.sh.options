@@ -1,4 +1,8 @@
 -prune
+! -iname 404.html
+! -iname 401.html
+! -iname 403.html
+! -iname 500.html
 ! -iname robots.txt
 ! -iname sitemap.\*
 ! -iname .\*

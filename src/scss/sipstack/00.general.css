@@ -24,6 +24,7 @@ figcaption {
 figure img {
   max-width: 100%;
 }
+
 /********** image ***********/
 
 /********** SIZE ***********/
@@ -64,7 +65,6 @@ figure img {
   color: var(--bs-nav-link-hover-color);
 }
 
-
 .subTitleGradient {
   background: radial-gradient(circle at 70%, #35bb8a 10%, #05915e 30%);
   background-size: 400% 400%;
@@ -76,7 +76,6 @@ figure img {
   animation: textGradientAnimation 10s ease-in-out infinite;
   -webkit-animation: textGradientAnimation 5s ease-in-out infinite;
   font-weight: 510;
-
 }
 .ss-bw-img {
   filter: grayscale(100%);
@@ -106,12 +105,10 @@ figure img {
   margin-bottom: 0px;
 }
 
-
 .card-title {
   font-size: x-large;
   margin-bottom: 0px;
 }
-
 
 .card-body {
   margin-top: 10%;
@@ -141,9 +138,6 @@ figure img {
   max-height: 80%;
 }
 
-
-
-
 /*********** HTML ELEMENTS *************/
 i {
   color: #35bb8a;
@@ -155,7 +149,6 @@ table {
   border: none;
   border-collapse: collapse;
 }
-
 
 /******* IMGS AND ICONS*******/
 
@@ -176,7 +169,6 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .btn-success {
   --bs-btn-color: #fff;
@@ -218,7 +210,6 @@ table {
   border-radius: 10px;
 }
 
-
 .button-dropdown {
   border: none;
   color: rgb(102, 101, 101) !important ;
@@ -257,8 +248,6 @@ table {
   right: 0;
   color: #35bb8a;
 }
-
-
 
 .text-muted {
   color: rgb(102, 101, 101) !important;

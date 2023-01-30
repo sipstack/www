@@ -19,6 +19,10 @@ func_yesno () {
 
 func_dev1 () { # build
    echo "On branch develop: we are going to build and deploy dev-${APPNAME} (when required)"
+
+#    bin/publish.sh
+   func_yesno "Did the above complete successfully?"
+   
    docker build -t sipstack/www:dev .
    echo "Enter lws password:"
    sudo docker-compose -f /root/docker/compose/dev/docker-compose.yml up -d

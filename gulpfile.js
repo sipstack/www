@@ -16,6 +16,7 @@ const fileinclude = require('gulp-file-include')
 const imagemin = require('gulp-imagemin')
 const autoprefixer = require('gulp-autoprefixer')
 // added -----------------------------------------
+require('dotenv').config()
 const concat = require('gulp-concat')
 const markdownIt = require('markdown-it')
 const tap = require('gulp-tap')
@@ -36,8 +37,7 @@ const md_toc = require('markdown-it-table-of-contents')
 const md_list = require('markdown-it-task-lists')
 // const md_table = require('markdown-it-multimd-table')
 const sort = require('gulp-sort')
-const s3upload = require('gulp-s3-upload')()
-
+const awspublish = require('gulp-awspublish')
 // Markdown-It Options
 const options = {
   // preset: 'commonmark',
@@ -334,6 +334,7 @@ function html(cb) {
         console.log('Compiling file: ' + file.path)
       })
     )
+    // replace(/href="(.*)"/g, 'href="$1/"')
     .pipe(
       fileinclude({
         prefix: '@@',
@@ -554,31 +555,49 @@ function ss_html(cb) {
 }
 
 function ss_publish(cb) {
-  const s3Config = {
-    endpoint: 'sfo2.digitaloceanspaces.com', // note no https://
-    region: 'sfo2',
-    accessKeyId: process.env.DGO_KEY,
-    secretAccessKey: process.env.DGO_SECRET,
+  var publisher = awspublish.create(
+    {
+      endpoint: 'https://sfo2.digitaloceanspaces.com',
+      region: 'sfo2',
+      params: {
+        Bucket: 'sipstack',
+      },
+      credentials: {
+        accessKeyId: process.env.DGO_KEY,
+        secretAccessKey: process.env.DGO_SECRET,
+        signatureVersion: 'v3',
+      },
+    },
+    {
+      cacheFileName: '.cache',
+    }
+  )
+
+  // define custom headers
+  var headers = {
+    'Cache-Control': 'max-age=300, no-transform, public',
+    // ...
   }
 
   src('dist/assets/**')
     .pipe(
       rename(function (path) {
-        path.dirname = 'www/' + path.dirname
+        path.dirname = 'www/assets/' + path.dirname
       })
     )
-    .pipe(
-      s3upload(
-        {
-          Bucket: 'sipstack',
-          ACL: 'public-read',
-          Metadata: {
-            // uploadedVia: 'gulp-s3-upload',
-          },
-        },
-        s3Config
-      )
-    )
+    // gzip, Set Content-Encoding headers and add .gz extension
+    // .pipe(awspublish.gzip({ ext: '.gz' }))
+
+    // publisher will add Content-Length, Content-Type and headers specified above
+    // If not specified it will set x-amz-acl to public-read by default
+    .pipe(publisher.publish(headers))
+
+    // create a cache file to speed up consecutive uploads
+    .pipe(publisher.cache())
+
+    // print upload updates to console
+    .pipe(awspublish.reporter())
+
   cb()
 }
 // ------------------------------------------------------------------------------

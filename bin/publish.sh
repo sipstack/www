@@ -18,9 +18,8 @@ npm run publish:assets
 
 ## rewrite assets to load from cdn
 cd dist
-grep -rl '/assets/' . | xargs sed -i 's|/assets/|https://sfo2.digitaloceanspaces.com/sipstack/www/|g'
+grep -rl '"/assets/' . | xargs sed -i 's|"/assets/|"https://sfo2.digitaloceanspaces.com/sipstack/www/assets/|g'
 cd ..
 
 
 echo "Completed successfully!"
-exit 0
