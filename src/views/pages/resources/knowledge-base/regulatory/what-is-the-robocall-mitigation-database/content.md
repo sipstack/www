@@ -38,7 +38,7 @@ Additionally, the FCC has listed some standards that a program must meet to be c
 - It complies with the best practices that the FCC has outlined via their website.
 The voice service provider in question also participates in standard industry traceback protocols.
 
-## Can You see if Your Voice Provider is Registered?
+## Can You See if Your Voice Provider is Registered?
 
 Yes, you can do so <a href= 'https://fccprod.servicenowservices.com/rmd?id=rmd_welcome/' target="_blank"> here. </a> Then either download a copy of the database or view the database in your browser, which also allows you to manually search for all voice service providers who have taken the appropriate registration steps.
 
