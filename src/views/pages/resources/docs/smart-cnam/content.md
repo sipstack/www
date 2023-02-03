@@ -2,7 +2,7 @@
 
 # Overview
 
-Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comprehensive than the traditional [CNAM, Caller Name.](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam) Smart CNAM pairs with Whois Profiles to pull up a tremendous amount of relevant, up to date information, with just the click of a button.
+Smart CNAM is the next generation lookup tool. It is immensely more comprehensive than the traditional [CNAM, Caller Name.](https://www.sipstack.com/resources/knowledge-base/general/what-is-cnam), pairaing with Whois Profiles to pull up a tremendous amount of relevant, up to date information, with just the click of a button.
 
 ![An overview of the Smart CNAM.](./Smart_CNAM.png 'Smart CNAM Portal')
 
@@ -10,7 +10,7 @@ Smart CNAM is the next generation lookup tool. Smart CNAM is immensely more comp
 
 You will need a [SIPTACK Partner Account](https://www.sipstack.com/resources/docs/partner-portal).
 
-Each lookup incurs an API charge, ensure you have sufficient [funds in your account](https://www.sipstack.com/resources/docs/partner-portal).
+Each lookup incurs an API charge. Ensure you have sufficient [funds in your account](https://www.sipstack.com/resources/docs/partner-portal).
 
 To use the Source/Risk lookup function, the destination callee number must be registered in your [Whois Profiles](https://www.sipstack.com/resources/docs/partner-portal)
 
@@ -23,7 +23,7 @@ To access the Smart CNAM lookup system, select Smart CNAM on the left pane.
 Input the Source Caller phone number to request information on, and if required, the Destination Callee as the phone number receiving the call. Select the desired lookup type
 from the drop-down menu and click lookup. The information based on the specific lookup type will be returned under the Results section. Please note standard API charges apply for each type of lookup.
 
-In order to run Source/ Risk lookup the Destination Callee number must be registered under Whois Profiles found on the left pane.
+In order to run Source/ Risk lookup, the Destination Callee number must be registered under Whois Profiles found on the left pane.
 
 ## Lookup Type
 
@@ -40,7 +40,7 @@ SIPSTACK’s proprietary algorithm uses artificial intelligence and machine lear
 
 ## Cost
 
-Prices are listed under Billing, Pricing in the left pane. Please note that each lookup incurs an API charge and the system will return a null result, if you don’t have sufficient funds in your account.
+Please note that each lookup incurs an API charge. The cost is based your subscription level. Please check our pricing page for more information.
 
 ## Adding funds to your account
 
