@@ -1,6 +1,6 @@
 ## About TELAIR
 
-TELAIR was the first telecommunication company in Canada to utilize SIPSTACK UC, a new class 5 enterprise-grade platform. TELAIR managed PBX offering has empowered Canadian businesses with capabilities beyond phone system basics by enabling true customization in a shared cloud environment. TELAIR is also known for it's fanatical customer support. While they boast of a 2-hour response window, they typically respond to any service requests within ten minutes.
+TELAIR was the first telecommunication company in Canada to utilize SIPSTACK UC, a new class 5 enterprise-grade platform. TELAIR managed PBX offering has empowered Canadian businesses with capabilities beyond phone system basics by enabling true customization in a shared cloud environment. TELAIR is also known for it's enthusiastic customer support. While they boast of a 2-hour response window, they typically respond to any service requests within ten minutes.
 
 ## Evolution of VoIP
 
@@ -8,16 +8,16 @@ Since the inception of TELAIR, the scope of VoIP has expanded exponentially. VoI
 
 ## The Answer
 
-To stay competitive, TELAIR needs to be able to offer its customers
+To stay competitive, TELAIR needs to be able to offer its customers:
 
 - VoIP solutions with text messaging capabilities
 - Interactive AI-enabled VoIP solutions that reduce the strain on TELAIR’s customer service resources
 - More autonomy within TELAIR’s web portals
-- Advanced features setting TELAIR apart with competitive features and services
+- Advanced tools, setting TELAIR apart with competitive features and services
 
 ## The Problem
 
-In a post-Covid world, demand for better communications tools are required for survival. Deploying any other solution short term would eventually require a large financial Investment to overhaul existing equipment while maintenance migrations windows could pose additional risk.
+In a post-Covid world, demand for better communications tools are required for survival. Deploying any other solution short term would eventually require a large financial investment to overhaul existing equipment while maintenance migrations windows could pose additional risk.
 
 ### Customization is Time Consuming
 
@@ -57,7 +57,7 @@ _‘Our client’s paging system was quite antiquated. When a lead called in, th
 
 ### Order Management
 
-_‘The client wanted a VoIP solution that could help their delivery team coordinate web orders, customers get accurate wait times based on the number of staff working at each pizza location and the ability for staff at each pizza location torecommend pizzas based on a customer’s previous order.’_
+_‘The client wanted a VoIP solution that could help their delivery team coordinate web orders, customers get accurate wait times based on the number of staff working at each pizza location and the ability for staff at each pizza location to recommend pizzas based on a customer’s previous order.’_
 
 ![Quote](./ta-quote.png)
 
@@ -67,7 +67,7 @@ By implementing the SIPSTACK platform, TELAIR is able to serve and support its c
 
 ### The Cost of Staying Competitive
 
-> ###### _Although overhauling all of our legacy systems is going to incur a significant amount of upfront cost, we realize that there’s no other way to stay competitive while continuing to support customers in the way we want to, and they need to be! Our customers need to know that they can count on us to give them more than what Telus, Bell, or Rogers can at half the cost. with features they can’t live without._
+> ###### _Although overhauling all of our legacy systems is going to incur a significant amount of upfront cost, we realize that there’s no other way to stay competitive while continuing to support customers in the way we want to, and they need to be! Our customers need to know that they can count on us to give them more than what Telus, Bell, or Rogers can at half the cost, with features they can’t live without._
 >
 > ###### _SIPSTACK’s software has received tremendous positive feedback._
 >
