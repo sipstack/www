@@ -16,7 +16,7 @@ Established in 2003, the Do Not Call Registry is a database maintained by the Un
 
 ## Does the Do No Call Registry Totally Prevent Robocalls?
 
-Unfortunately not. While there will certainly be a decrease in the number of robocalls you receive, registering will not eliminate them altogether. There are a number of reasons for this. 
+Unfortunately not. While there will certainly be a decrease in the number of robocalls you receive, registering your number will not eliminate them altogether. There are a number of reasons for this. 
 
 ## 1. Domestic vs. Overseas Callers
 
