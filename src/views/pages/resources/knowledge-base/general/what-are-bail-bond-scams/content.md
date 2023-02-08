@@ -1,7 +1,7 @@
 As telecommunication fraud continues to grow exponentially, with reported losses in 2022 of $530 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada)[^1]  and nearly $40 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-US)[^2],  it's never been more important to stay informed. There are several different types of spam calling and texting scams that have contributed to these losses. One particularly unsettling one is known as the bail bond scam.
 
 Bail bond scams refer to scammers who pose as police officers or bondsmen, claiming that an inmate’s bond will be revoked unless they send money directly to them. They target inmates, their families, and sometimes even police officers who are trying to protect them from reoffending.
-Because the phone numbers of bail bondsman clients are available through public records, this scam has unfortunately made inmates and their families a pretty easy target.
+Because the phone numbers of bail bondsman clients are available through public records, this scam has unfortunately made inmates and their families easy and vulnerable targets.
 
 In other cases, scammers may target [senior citizens](https://www.sipstack.com/resources/blog/the-growing-risk-of-the-grandparent-scam-in-canada/), claiming that a family member is in legal trouble and will be arrested unless they agree to pay them a certain amount of money. 
 
