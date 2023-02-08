@@ -32,6 +32,18 @@
     button: 'Subscribe',
 })
 
+
+<script>  window.addEventListener('load', function () {
+    $('#ss-form-cta').submit(function (e) {
+      e.preventDefault()
+      var formData = $('#ss-form-cta').serialize()
+      $('#ss-form-cta-submit').attr('disabled', '')
+      apiRequest('f/www/cap/newsletter?' + formData, 'GET')
+    })
+  })
+</script>
+
+
 <!-- prettier-ignore -->
 @@include('pages/resources/blog/_articles.html')
 
