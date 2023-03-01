@@ -14,7 +14,7 @@ The following is a summary of the noteworthy proposed changes found in the FCC's
 ## Meeting on March 16th, 2023
 At the FCC's meeting on March 16th, 2023, the commissioners will vote to approve the Sixth Report and Order. The results of the vote will establish these rules as law and set compliance dates for them to go into effect. 
 
-Here’s the full text of the Report and Order and FNPRM. 
+Here’s the [full text of the Report and Order and FNPRM.](/DOC-391238A1.pdf) 
 
 ## How SIPSTACK Fights Fraud
 
