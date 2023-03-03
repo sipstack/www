@@ -45,11 +45,11 @@ Scammers may also target victims by phone, requesting money be transferred via c
 This scam refers to scammers who take advantage of vulnerable victims in some type of tax jeopardy, offering them the chance to resolve their issue with one easy direct payment. This can understandably be very tempting if you're in this kind of desperate situation, but before making any payment, always remember to verify and communicate with the CRA through their regular channels.
 
 ## Tips to Protect Yourself Against CRA Scams
-- The real CRA does not contact taxpayers by email, text message, or social media to request personal or financial information. They also do not ask for credit or debit card numbers over the phone, nor will they ever request payment via gift card or cryptocurrency. If anyone claims to be from the CRA doing any of those things, it is most definitely a scam.
-- The real CRA may sometimes call you, but not without attempting to contact you by mail first. If they do call, they will never demand money directly.
-- The real CRA will never threaten to immediately bring in local police or other law-enforcement groups to have the taxpayer arrested for not paying. They will also never demand taxes be paid without giving the taxpayer the opportunity to question or appeal the amount owed.
-- The <a href= 'https://www.canada.ca/en/revenue-agency.html' target="_blank"> CRA website</a> is a great resource to consult if you're suspicious that someone is attempting to scam you, as well as any other tax-related question you might have.
-- When in doubt, [Whois by SIPSTACK](https://www.sipstack.com/product/whois) allows you to easily check the safety of any phone number that's calling you.
+1. The real CRA does not contact taxpayers by email, text message, or social media to request personal or financial information. They also do not ask for credit or debit card numbers over the phone, nor will they ever request payment via gift card or cryptocurrency. If anyone claims to be from the CRA doing any of those things, it is most definitely a scam.
+2. The real CRA may sometimes call you, but not without attempting to contact you by mail first. If they do call, they will never demand money directly.
+3. The real CRA will never threaten to immediately bring in local police or other law-enforcement groups to have the taxpayer arrested for not paying. They will also never demand taxes be paid without giving the taxpayer the opportunity to question or appeal the amount owed.
+4. The <a href= 'https://www.canada.ca/en/revenue-agency.html' target="_blank"> CRA website</a> is a great resource to consult if you're suspicious that someone is attempting to scam you, as well as any other tax-related question you might have.
+5. When in doubt, [Whois by SIPSTACK](https://www.sipstack.com/product/whois) allows you to easily check the safety of any phone number that's calling you.
 
 ## How SIPSTACK Fights Fraud
 
