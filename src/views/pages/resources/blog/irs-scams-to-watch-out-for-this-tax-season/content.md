@@ -11,7 +11,7 @@ The SSAN tax scam refers to scammers who threaten to suspend or cancel their vic
 If you receive a call or email like this, keep in mind that nobody, including the federal government, can just “cancel” your SSAN. This is an identification number that lasts for life. 
 
 ## COVID Related Tax Fraud
-COVID changed the world in many ways, and the [impact it had on scams](https://www.sipstack.com/resources/blog/how-covid-19-has-impacted-fraud/) were no exception. For tax related scams in particular, scammers have attempted to defraud victims by suggesting misuse of pandemic related assistance, Economic Impact Payments (EIPs), or stimulus packages. Scammers will impersonate members of the IRS, the treasury department, or even law enforcement agencies and demand payment in the form of debit cards or gift cards. Other reports have shown them asking for bank accounts and routing numbers. 
+COVID changed the world in many ways, and the [impact it had on scams](https://www.sipstack.com/resources/blog/how-covid-19-has-impacted-fraud/) was no exception. For tax related scams in particular, scammers have attempted to defraud victims by suggesting misuse of pandemic related assistance, Economic Impact Payments (EIPs), or stimulus packages. Scammers will impersonate members of the IRS, the treasury department, or even law enforcement agencies and demand payment in the form of debit cards or gift cards. Other reports have shown them asking for bank accounts and routing numbers. 
 
 ## Unemployment Fraud/Identity Theft
 Unemployment fraud can take many forms, but again due to COVID resulting in so many people losing their jobs and filing for unemployment, a common scam to look out for is the identity theft based scam. If you receive a Form 1099-G for unemployment compensation that you haven’t actually received, this is a sign that your identity may have already been stolen. If there is any indication that you’ve been a victim of this, notify law enforcement authorities immediately.  
@@ -40,7 +40,7 @@ This scam refers to scammers who take advantage of vulnerable victims in some ty
 
 5.  The <a href= 'https://www.irs.gov/payments/penalty-relief' target="_blank"> IRS website</a> is a great resource to consult if you’re suspicious that someone is attempting to scam you, as well as any other tax-related question you might have.
 
-6. When in doubt, [Whois by SIPSTACK](https://whois.sipstack.com/) allows you to easily check the safety of any phone number that's calling you.
+6. When in doubt, [Whois by SIPSTACK](https://www.sipstack.com/product/whois) allows you to easily check the safety of any phone number that's calling you.
 
 
 
