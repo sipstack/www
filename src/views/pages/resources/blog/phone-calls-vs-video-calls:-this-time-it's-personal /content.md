@@ -15,7 +15,7 @@ From cleaning your room to cooking dinner to picking your nose multiple times, e
 PACE MEME
 
 ## Casual Work Calls 
-As much as video calls have dominated the work space the last few years, sometimes initiating a simple voice call with a colleague is the most considerate etiquette. Just imagine... No need to fix your hair. No need to move from your couch to your desk. No need to put on a shirt, (since we all know nobody’s wearing pants…)
+As much as video calls have dominated the work space the last few years, sometimes initiating a simple voice call with a colleague is the most considerate etiquette. Just imagine... No need to fix your hair. No need to move from your couch to your desk. No need to put on a shirt, (since we _all_ know nobody’s wearing pants…)
 
 PANTS MEME
 
@@ -42,4 +42,4 @@ Dogs. Cats. Hell, I’ll even add your newborn baby to this list! What do these 
 
 Captain Obvious meme
 
-You’re welcome! We hope you enjoyed this educational and invaluable article. And remember, whether you’re receiving a voice call or video call, [WHOIS by Sipstack](https://www.sipstack.com/product/whois) can help make sure you stay safe against spam. (Nice segue, Jeff!) 
+You’re so very welcome! We hope you enjoyed this educational and invaluable article. And remember, whether you’re receiving a voice call or video call, [WHOIS by Sipstack](https://www.sipstack.com/product/whois) can help make sure you stay safe against spam. (Nice segue, Jeff!) 
