@@ -1,4 +1,6 @@
-In 2022, telecommunication fraud continued to grow exponentially with reported losses of $530 million in Canada[1] and nearly $40 billion in the United States[2]. With total robocalls to US consumers totalling 50.3 billion, it’s easy to see why 94% of customers do not trust calls from unknown numbers and therefore refuse to answer them.  
+As telecommunication fraud continues to grow exponentially, with reported losses in 2022 of $530 million in  and nearly $40 billion inthe , it's clear that spam affects pretty much everyone with a phone. After the number of robocalls to US consumers totaled 50.3 billion ,
+
+In 2022, telecommunication fraud continued to grow exponentially with reported losses of $530 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada/) [^1] and nearly $40 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-us/)[^2]. With total robocalls to US consumers totalling 50.3 billion[^3], it’s easy to see why 94% of customers do not trust calls from unknown numbers and therefore refuse to answer them.  
 
 If you’re a business, you’ll want to be aware of these facts and stay proactive in combatting trust erosion with consumers. Simply put, the more information you make accessible to customers when trying to call them, the more likely they will answer your calls. One of the most effective ways to do this is through branded caller ID.
 
