@@ -4,6 +4,8 @@ JETSONS MEME
 
 With video chats being all the rage at work, catching up with friends overseas, and with your parents who still haven’t figured out how to turn their camera the right way, it’s becoming a bit ambiguous as to when a good, old fashioned phone call makes the most sense. We’re here to help you figure this out once and for all!
 
+PHONE V VIDEO IMAGE
+
 First off, we have…
 
 ## WHEN TO MAKE A VOICE CALL
