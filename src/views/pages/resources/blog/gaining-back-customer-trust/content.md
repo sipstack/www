@@ -1,7 +1,6 @@
-
 In 2022, telecommunication fraud continued to grow exponentially with reported losses of $530 million in [Canada](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-canada/)[^1] and nearly $40 billion in the [United States](https://www.sipstack.com/resources/blog/the-state-of-spam-calling-in-the-us/)[^2]. With robocalls to US consumers totalling 50.3 billion[^3], it’s easy to see why 94% of customers refuse to answer  calls from unknown numbers.  
 
-If you’re a business, you’ll want to be aware of these facts and stay proactive in combatting trust erosion with consumers. Simply put, the more information you make accessible to your customers when trying to call them, the more likely they will be to answer your calls. One of the most effective ways to do this is through branded caller ID.
+If you’re a business, you’ll want to be aware of these facts and stay proactive in combatting trust erosion with customers. Simply put, the more information you make accessible to your customers when trying to call them, the more likely they will be to answer your calls. One of the most effective ways to do this is through branded caller ID.
 
 ## What is Branded Caller ID?
 Branded caller ID refers to projecting your company name, logo, and reason for calling customers, so they’ll know your calls are from you rather than a robocaller or scammer. It is an invaluable tool that can:
