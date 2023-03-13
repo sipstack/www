@@ -1,26 +1,45 @@
 ## Overview ##
 
 Whois by SIPSTACK is the world’s most advanced caller ID reverse lookup tool. It is a community driven super tool that was built to help eradicate spam and fraud from the telecommunications industry. It allows users to search a phone number that is calling them, or has called them in the past, to determine its level of safety. Users can tag a phone number as spam or safe and even leave a written review to let other users know more about that number. Whois also provides further details on specific phone numbers in our database, such as caller ID, region, carrier, emails, social media profiles, and more.
-You can create an account, which will give you immediate access to the SIPSTACK Whois user portal. This will allow you to create Caller ID profiles, add and verify your phone numbers to help them get a higher score rating, and see all of your past reviews.
+You can verify your number, which will give you immediate access to the SIPSTACK Whois user portal. This will allow you to take control of your profile, increase your caller transperancy and risk score rating and protect your number from spam calls.
+
+## Phone Number Lookup ##
+
+**Search a Phone Number**
+
+Get rich caller data from the [Whois by SIPSTACK](https://whois.sipstack.com) homepage. Go to Whois by SIPSTACK and search any North American phone number. 
+
+WHOIS HOME PAGE SCREENSHOT
+
+**Understanding Whois**
+
+Once you search a phone number, you will be shown rich caller information on that phone number. Whois by SIPSTACK is broken down in different sections. 
+
+_Caller ID information_
+
+The first information you see at the top left of any search page is the phone number, caller ID, location and whois score rating. The whois score rating gives you an idea of how safe the phone number is and if the number has been verified with SIPSTACK. You can also mark a phone number as safe or spam using the thumb icons. 
+
+_Regional and Carrier Information_
+
+On the top right you will find regional and carrier information
+
+_Whois Card_ 
+
+On the bottom right you will find the Whois Card which will show you any additional information that SIPSTACK has on this phone number, such as, email adresses, social media accounts and much more. 
+
+_Location and Reviews_
+
+On the bottom left you will find the map highlighting were the phone number is located along with reviews. 
+
 
 ## Whois User Portal ##
 
 **Login**
-To begin, go to the top top right corner of your screen and click on the arrow going through the square. This will bring you to the Whois login, where, if you already have an account set up with Whois, you can enter your email and password and then click “login”.
-If you have forgotten your password, simply enter your email. This will prompt an email to be sent to you, which will include a verification link with a temporary password.
-Clicking on the link in your email will bring you to a page to reset your password.
-Enter your temporary password and then change your password to whatever you’d like it to be.
 
-Sign Up
-If you do not yet have an account with Whois, enter your email.
-You will receive a registration link to that email account. Clicking on that link will bring you to the next page to enter some personal details, such as your full name, email, and password.
-After entering in these details, click “sign up”.
-You will see a message that says, “Confirmation link has been sent to email”.
-You will receive an email with a verification link.
-Clicking on the link in your email will verify you on our systems and bring you back to Whois.
-At this point, your account will be set up, and registration will be complete.
+To begin, go to the top top right corner of your screen and click on Login. This will prompt you to enter your phone number and click "send verification code", a code will then be sent to your phone number which you can enter in the space provided. Once you have entered the code, your phone number will now be verified with SIPSTACK and you will be taken to your profile.
 
-Main Dashboard
+**Main Dashboard**
+
 On the top left corner of the screen, you will see some of your details, including your username and email directly underneath it.
 On the top right corner of your screen, you may see some personal statistics. However, if you are a new user, you will not yet have any reviews or search history to display.
 
