@@ -44,4 +44,4 @@ Dogs. Cats. Hell, I’ll even add your newborn baby to this list! What do these 
 
 Captain Obvious meme
 
-You’re so very welcome! We hope you enjoyed this educational and invaluable article. And remember, whether you’re receiving a voice call or video call, [WHOIS by Sipstack](https://www.sipstack.com/product/whois) can help make sure you stay safe against spam. (Nice segue, Jeff!) 
+You’re so very welcome! We hope you enjoyed this highly educational and invaluable article. And remember, whether you’re receiving a voice call or video call, [WHOIS by Sipstack](https://www.sipstack.com/product/whois) can help protect you against spam. Just make sure you verify your number, so your score is high enough for your friends to answer your calls! 
