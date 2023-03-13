@@ -10,11 +10,13 @@ Branded caller ID refers to projecting your company name, logo, and reason for c
 - Analyze useful data regarding first call closure, conversion rates, and call abandonment rates.
 - Familiarize your customers with your company’s brand and build customer confidence by connecting them to legitimate calls.
 
-There are many factors to running a successful business, but without customer trust, almost all of them will fall short. Consider Branded Caller ID to help instil trust and loyalty in your customers as we all continue to navigate the rough waters of telecommunications fraud.
+There are many factors to running a successful business, but without customer trust, almost all of them will fall short. Consider Branded Caller ID to help instil trust and loyalty in your customers as we all continue to navigate the rough waters of telecommunications fraud. 
+
+Lastly, don't forget to verify your business's phone number with [Whois by SIPSTACK](https://whois.sipstack.com/) and manage your profile, so your customers will know you're a safe caller. 
 
 ## How SIPSTACK Fights Fraud
 
-Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's [Smart CNAM](https://www.sipstack.com/products/smart-cnam), they are able to customize a threshold for calls to pass through, based on their specific needs. At SIPSTACK we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
+Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's [Smart CNAM](https://www.sipstack.com/products/smart-cnam), they are able to customize a threshold for calls to pass through, based on their specific needs. Additionally, [Whois by Sipstack](https://whois.sipstack.com/) is the biggest and best AI-powered reverse lookup database that individuals can use to help eradicate spam. At SIPSTACK, we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
 
 ### References
 [^1]: <a href= 'https://www.antifraudcentre-centreantifraude.ca/index-eng.htm' target="_blank"> https://www.antifraudcentre-centreantifraude.ca/index-eng.htm </a>
