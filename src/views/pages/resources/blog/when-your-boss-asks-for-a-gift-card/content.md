@@ -2,7 +2,7 @@ As telecommunication fraud continues to grow exponentially with reported losses 
 
 ## What is the Gift Card Scam?
 
-Also known as the “fake boss scam”, the gift card scam refers to scammers who impersonate supervisors of employees and trick them into buying gift cards for them over text or email. The reasons they supposedly need their employee to buy them a gift card may vary, but the result is always the same: financial losses to the employee that cannot be retrieved. It’s also worth noting that because so many employees work remotely these days, there is more and more opportunity for this scam to be successful. 
+Also known as “fake boss scams”, the gift card scam refers to scammers who impersonate supervisors of employees and trick them into buying gift cards for them over text or email. The reasons they supposedly need their employee to buy them a gift card may vary, but the result is always the same: financial losses to the employee that cannot be retrieved. It’s also worth noting that because so many employees work remotely these days, there is more and more opportunity for this scam to be successful. 
 
 ## How Does it Work?
 
