@@ -1,8 +1,8 @@
-As telecommunication fraud continues to grow exponentially with reported losses in 2022 of $530 million in Canada[^1] and nearly $40 billion in the United States[^2], it's never been more important to stay informed and vigilant. There are a multitude of scams contributing to these numbers, and among them is one that has cost North American companies billions of dollars already. This is known as the gift card scam.
+As telecommunication fraud continues to grow exponentially with reported losses in 2022 of $530 million in Canada[^1] and nearly $40 billion in the United States[^2], it's never been more important to stay informed and vigilant. There are a multitude of scams that have contributed to these numbers, and among them is one that has cost North American companies billions of dollars already. This is known as the gift card scam.
 
 ## What is the Gift Card Scam?
 
-Also known as a “fake boss scam”, the gift card scam refers to scammers who impersonate supervisors of employees and trick them into buying gift cards for them over text or email. The reasons they supposedly need their employee to buy them a gift card may vary, but the result is always the same: financial losses to the employee that cannot be retrieved. It’s also worth noting that because so many employees work remotely these days, there is more and more opportunity for this scam to be successful. 
+Also known as the “fake boss scam”, the gift card scam refers to scammers who impersonate supervisors of employees and trick them into buying gift cards for them over text or email. The reasons they supposedly need their employee to buy them a gift card may vary, but the result is always the same: financial losses to the employee that cannot be retrieved. It’s also worth noting that because so many employees work remotely these days, there is more and more opportunity for this scam to be successful. 
 
 ## How Does it Work?
 
@@ -10,13 +10,13 @@ Also known as a “fake boss scam”, the gift card scam refers to scammers who 
 
 **STEP 2**: The scammer either hacks into the supervisor's business account or creates a similar email domain that will likely go unnoticed. For example, “joesmith@microsoft.com” might become “joesmith@micr0soft.com”. 
 
-Alternatively, they sometimes create fake email accounts through Gmail, Hotmail, or other services, and make up some kind of excuse for needing to use their “personal” email. In some cases, they may even [spoof a phone number](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing/)  from your area code and send a text message instead.
+Alternatively, they sometimes create fake email accounts through Gmail, Hotmail, or other services, and make up some kind of excuse for needing to use their “personal email". In some cases, they may even [spoof a phone number](https://www.sipstack.com/resources/knowledge-base/general/what-is-call-spoofing/)  from your area code and send a text message instead.
 
 **STEP 3**: Either by email or text, the scammer successfully makes contact with a lower level employee, asking them to buy gift cards and send the gift card numbers or PINs back via email or text.
 
 ## Common Examples for Needing a Gift Card
 
-- Pay for upcoming office party
+- Pay for an upcoming office party
 - Support a charity
 - Ask an employee to pay a bill and promise to pay them back
 - Needing urgent assistance with something they don't have the time to explain
@@ -24,7 +24,7 @@ Alternatively, they sometimes create fake email accounts through Gmail, Hotmail,
 Scammers can be very convincing and will have often done their research through various “phishing” tactics. The best ones will know details about your company and even the way your boss might communicate via text. Keep this in mind if you find yourself in a situation like this and make sure to verify your “boss”’s identity before pulling any triggers.
 
 ## Why Gift Cards?
-Gift cards are the perfect currency for scammers because they are untraceable. Once a purchase with a gift card has been made, it’s gone and has no money trail. Gift cards also do not provide the same protection that credit cards and debit cards do, so they really are the perfect crime. 
+Gift cards are the perfect currency for scammers because they are untraceable. Once a purchase with a gift card has been made... POOF! It’s gone and has no money trail. Gift cards also do not provide the same protection that credit cards and debit cards do, so they really are the perfect crime. 
 
 ## Tips to Protect Yourself Against Gift Card Scams
 
@@ -43,6 +43,6 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 ### References
 [^1]: <a href= 'https://www.antifraudcentre-centreantifraude.ca/index-eng.htm' target="_blank"> https://www.antifraudcentre-centreantifraude.ca/index-eng.htm </a>
 
-[^2]: <a href= 'https://www.cnbc.com/2022/11/05/how-phone-scammers-tricked-americans-out-of-tens-of-billions-of-dollars-in-2022.html#:~:text=Phone%20scams%20are%20on%20the,nearly%20%2440%20billion%20in%20total.' target="_blank"> https://www.cnbc.com/2022/11/05/how-phone-scammers-tricked-americans-out-of-tens-of-billions-of-dollars-in-2022.html#:~:text=Phone%20scams%20are%20on%20the,nearly%20%2440%20billion%20in%20total. </a>
+[^2]: <a href= 'https://www.cnbc.com/2022/11/05/how-phone-scammers-tricked-americans-out-of-tens-of-billions-of-dollars-in-2022.html#:~:text=Phone%20scams%20are%20on%20the,nearly%20%2440%20billion%20in%20total.' target="_blank"> https://www.cnbc.com/2022/11/05/how-phone-scammers-tricked-americans-out-of-tens-of-billions-of-dollars-in-2022.html#:~:text=Phone%20scams%20are%20on%20the,nearly%20%2440%20billion%20in%20total. </a>contributing to these numbers, and among them is one t
 
  
