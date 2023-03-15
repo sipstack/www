@@ -13,7 +13,7 @@ These refer to transactions made on your account or device that you did not appr
 **Pro tip:** Never click on a link in an email or text message from an unknown sender, regardless of how much they try to entice you! That “free gift card” they’re offering you will more than likely end up as their own. 
 
 ## Bank Impersonators
-This refers to scammers impersonating your bank and pretending that there has been suspicious activity in your account. These fraudsters have been known to request that you send them money to ensure your account has not been disabled, or to solve the problems of the suspicious activity. In reality, the only thing suspicious going on is this interaction! 
+This refers to scammers impersonating your bank and pretending that there has been suspicious activity in your account. These fraudsters have been known to request that you send them money to ensure your account has not been disabled or to solve the problems of the suspicious activity. In reality, the only thing suspicious going on is this interaction! 
 
 **Pro tip:** Never entertain these calls, texts, or emails before first calling your bank directly to verify if anything is actually wrong with your account.
 
