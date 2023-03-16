@@ -1,0 +1,5 @@
+On March 6, 2023, John Spiller of Rising Eagle Capital Group LLC finally got what was coming to him. For years, he and his partner, Jakob A. Mears, had initiated millions of robocalls, advertising various goods and services to a multitude of residential and cellular telephone numbers throughout the United States. Given that this was done without the prior express consent of the called parties, it violated multiple sections of the TCPA and its implementing rules. 
+
+For this, Spiller received a permanent ban on robocalling, telemarketing, and lead generation, and a judgment of $122,339,320 (One Hundred and Twenty-Two Million, Three Hundred and Thirty-Nine Thousand, Three Hundred and Twenty Dollars)  was entered. 
+
+This is a big win in the fight against telecommunications fraud. Further details of the case can be found <a href= 'https://content.govdelivery.com/attachments/INAG/2023/03/06/file_attachments/2428379/Spiller%20Signed%20Stipulated%20Order%203.6.2023.pdf' target="_blank"> here</a>. 
