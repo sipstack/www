@@ -12,7 +12,7 @@ First off, we have…
 
 ## Multitasking
 
-From cleaning your room to cooking dinner to picking your nose multiple times, everyone knows you can get a lot done during a classic speaker phone call. Since people like to think you’re giving them your full and utmost attention, video calls can really impede our ability to multitask. They also pretty much rule out pacing around aimlessly during a call. Or am I the only one who does that? 
+From cleaning your room to cooking dinner, everyone knows you can get a lot done during a classic speaker phone call. Since people like to think you’re giving them your full and utmost attention, video calls can really impede our ability to multitask. They also pretty much rule out pacing around aimlessly during a call. Or am I the only one who does that? 
 
 ![PACE MEME](./pacing.png)
 
