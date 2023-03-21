@@ -34,5 +34,3 @@ Using the latest technology and machine learning, SIPSTACK's systems authenticat
 ### References
 
 [^1]: <a href= 'https://www.aboutamazon.com/news/retail/how-to-avoid-amazon-scams#:~:text=These%20unsolicited%20communications%20often%20refer,your%20personal%20or%20financial%20information.' target="_blank"> https://www.aboutamazon.com/news/retail/how-to-avoid-amazon-scams#:~:text=These%20unsolicited%20communications%20often%20refer,your%20personal%20or%20financial%20information. </a>
-
-https://www.aboutamazon.com/news/retail/how-to-avoid-amazon-scams#:~:text=These%20unsolicited%20communications%20often%20refer,your%20personal%20or%20financial%20information.
