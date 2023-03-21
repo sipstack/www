@@ -14,7 +14,7 @@ Here are some verbatim examples of Amazon scam phone calls:
 
 Other examples of Amazon scams include offering phoney gift cards or luring you in to cancel a fake monthly fee. Again, both are attempts to acquire your personal or financial information, which could result in massive financial losses and even bigger inconveniences.
 
-Be especially aware of [“Amazon delivery scams” during the holidays](https://www.sipstack.com/resources/blog/ho-ho-holiday-scams/) when scammers knows online shopping ramps up.
+Be especially aware of [“Amazon delivery scams” during the holidays](https://www.sipstack.com/resources/blog/ho-ho-holiday-scams/) when scammers know online shopping ramps up.
 
 ## Tips to Protect Yourself From Amazon Scams
 
