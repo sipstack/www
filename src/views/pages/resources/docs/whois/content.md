@@ -18,7 +18,7 @@ The [Risk Score Rating](https://www.sipstack.com/resources/knowledge-base/genera
 
 You can also report a spam or fraudulent call by clicking the 'Thumbs Down' button and you can also mark a call as safe by clicking the 'Thumbs Up' button. This helps our AI model improve and better protect users from future scams.
  
- [image]
+![Whois Search](./Whois_search.png 'Whois Search Page')
 
 ### Verifying Your Number
 
@@ -26,7 +26,7 @@ In order to better protect yourself from spam calls, we recommend verifying your
 
 To verify your phone number, click on login, then enter your phone number, at which point you will receive a text message with a Two-Factor Authentication code. Simply enter the code, and your phone number will be verified, giving you a green verification badge next to your caller ID when someone searches your phone number.
 
-[image]
+![Verified Badge](./whois_verified_badge.png 'verified badge')
  
 ### Profile
 
