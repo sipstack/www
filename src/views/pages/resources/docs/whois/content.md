@@ -8,7 +8,7 @@ Whois by SIPSTACK is the world’s most advanced AI driven phone number lookup t
 
 On the homepage, you will see a search bar. Simply enter the phone number you wish to search and click 'Search'. 
 
-[image]
+![Whois by SIPSTACK homepage.](./whois_home.png 'Whois Home Page')
 
 The website will then generate a Risk Score Rating based on our proprietary algorithm and various factors, including the phone number's history, location, and type of call.
 
