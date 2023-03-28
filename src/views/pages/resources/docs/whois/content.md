@@ -50,9 +50,3 @@ This tab can also be used for deleting your profile if you choose to do so.
 So there you have it! Whether you're looking to avoid spam calls, protect yourself from fraud, or simply learn more about a caller, we've got you covered.
 
 Try it out for yourself at [Whois by Sipstack](https://whois.sipstack.com.)
-
-
-Profile Settings
-If you wish, you can change your avatar at any time.
-You can also change your password if you wish by entering in your new password and then clicking “save password”.
-If you wish to delete your account, enter your password and then click “delete account”. It will give you a warning to ensure you really want to delete your account. Simply click “proceed”. At this point, your account will be wiped from the SIPSTACK database, and you will be brought back to the login page.
