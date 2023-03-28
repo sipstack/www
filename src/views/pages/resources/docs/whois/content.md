@@ -49,4 +49,4 @@ This tab can also be used for deleting your profile if you choose to do so.
  
 So there you have it! Whether you're looking to avoid spam calls, protect yourself from fraud, or simply learn more about a caller, we've got you covered.
 
-Try it out for yourself at [Whois by Sipstack](https://whois.sipstack.com.)
+Try it out for yourself at [Whois by Sipstack](https://whois.sipstack.com)
