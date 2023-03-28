@@ -24,7 +24,11 @@ You can also report a spam or fraudulent call by clicking the 'Thumbs Down' butt
 
 In order to better protect yourself from spam calls, we recommend verifying your phone number with SIPSTACK.
 
-To verify your phone number, click on login, then enter your phone number, at which point you will receive a text message with a Two-Factor Authentication code. Simply enter the code, and your phone number will be verified, giving you a green verification badge next to your caller ID as well as a "Verified" remark when someone searches your phone number.
+To verify your phone number, click on login, then enter your phone number, at which point you will receive a text message with a Two-Factor Authentication code. 
+
+![whois login](./whois_login.png 'login')
+
+Simply enter the code, and your phone number will be verified, giving you a green verification badge next to your caller ID as well as a "Verified" remark when someone searches your phone number.
 
 ![Verified Badge](./whois_verified_badge.png 'verified badge')
  
@@ -32,20 +36,26 @@ To verify your phone number, click on login, then enter your phone number, at wh
 
 Once verified, you can add as much or as little information as you’d like to your profile in the Profile tab. However, keep in mind the more you add, the higher your “Caller Transparency” will be, which means that our AI algorithm will rate your phone number higher. 
  
+![whois profile](./whois_profile.png 'whois profile')
+
 ### About
 
 Similarly, the About tab allows you to add further information to your profile, such as your company, description, socials, and more. What you decide to include is up to you, but it will influence your Caller Transparency. 
- 
+
+![whois about](./whois_about.png 'whois about')
 
 ### Preferences
 
 You can choose what information is shown on your public profile by using the toggles in the Preferences tab.
  
+ ![whois preferences](./whois_preferences.png 'whois preferences')
 
 ### Account
 
 If you’d like to copy your profile over to another number, you can do so in the Account tab. Enter the new phone number and the two-factor authentication code you receive, and then click copy profile.
 This tab can also be used for deleting your profile if you choose to do so. 
+
+![whois account](./whois_account.png 'whois account')
  
 So there you have it! Whether you're looking to avoid spam calls, protect yourself from fraud, or simply learn more about a caller, we've got you covered.
 
