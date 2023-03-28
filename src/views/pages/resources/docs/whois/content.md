@@ -1,63 +1,56 @@
 ## Overview ##
 
-Whois by SIPSTACK is the world’s most advanced caller ID reverse lookup tool. It is a community driven super tool that was built to help eradicate spam and fraud from the telecommunications industry. It allows users to search a phone number that is calling them, or has called them in the past, to determine its level of safety. Users can tag a phone number as spam or safe and even leave a written review to let other users know more about that number. Whois also provides further details on specific phone numbers in our database, such as caller ID, region, carrier, emails, social media profiles, and more.
-You can verify your number, which will give you immediate access to the SIPSTACK Whois user portal. This will allow you to take control of your profile, increase your caller transperancy and risk score rating and protect your number from spam calls.
+Whois by SIPSTACK is the world’s most advanced AI driven phone number lookup tool. It is a community driven super tool that was built to help eradicate spam and fraud from the telecommunications industry. Whois allows you to search any North American number and get a Risk Score Rating along with additional caller information. You can tag a phone number as spam or safe and even leave a written review to let other users know more about that number. Whois also provides further details on specific phone numbers in our database, such as caller ID, region, carrier, emails, social media profiles, and much more. You can verify your number, which will give you immediate access to the SIPSTACK Whois user portal. This will allow you to take control of your profile, increase your caller transperancy and risk score rating and protect your number from spam calls.
 
-## Phone Number Lookup ##
+## How it Works?
 
-**Search a Phone Number**
+### Homepage
 
-Get rich caller data from the [Whois by SIPSTACK](https://whois.sipstack.com) homepage. Go to Whois by SIPSTACK and search any North American phone number. 
+On the homepage, you will see a search bar. Simply enter the phone number you wish to search and click 'Search'. 
 
-WHOIS HOME PAGE SCREENSHOT
+[image]
 
-**Understanding Whois**
+The website will then generate a Risk Score Rating based on our proprietary algorithm and various factors, including the phone number's history, location, and type of call.
 
-Once you search a phone number, you will be shown rich caller information on that phone number. Whois by SIPSTACK is broken down in different sections. 
+### Risk Rating Score
 
-_Caller ID information_
+The [Risk Score Rating](https://www.sipstack.com/resources/knowledge-base/general/risk-score/) ranges from 0 to 5, with a lower rating indicating a greater risk of fraud or spam. You can also view additional caller information, including the caller's name, address, and even social media profiles.
 
-The first information you see at the top left of any search page is the phone number, caller ID, location and whois score rating. The whois score rating gives you an idea of how safe the phone number is and if the number has been verified with SIPSTACK. You can also mark a phone number as safe or spam using the thumb icons. 
+You can also report a spam or fraudulent call by clicking the 'Thumbs Down' button and you can also mark a call as safe by clicking the 'Thumbs Up' button. This helps our AI model improve and better protect users from future scams.
+ 
+ [image]
 
-_Regional and Carrier Information_
+### Verifying Your Number
 
-On the top right you will find regional and carrier information
+In order to better protect yourself from spam calls, we recommend verifying your phone number with SIPSTACK.
 
-_Whois Card_ 
+To verify your phone number, click on login, then enter your phone number, at which point you will receive a text message with a Two-Factor Authentication code. Simply enter the code, and your phone number will be verified, giving you a green verification badge next to your caller ID when someone searches your phone number.
 
-On the bottom right you will find the Whois Card which will show you any additional information that SIPSTACK has on this phone number, such as, email adresses, social media accounts and much more. 
+[image]
+ 
+### Profile
 
-_Location and Reviews_
+Once verified, you can add as much or as little information as you’d like to your profile in the Profile tab. However, keep in mind the more you add, the higher your “Caller Transparency” will be, which means that our AI algorithm will rate your phone number higher. 
+ 
+### About
 
-On the bottom left you will find the map highlighting were the phone number is located along with reviews. 
+Similarly, the About tab allows you to add further information to your profile, such as your company, description, socials, and more. What you decide to include is up to you, but it will influence your Caller Transparency. 
+ 
 
+### Preferences
 
-## Whois User Portal ##
+You can choose what information is shown on your public profile by using the toggles in the Preferences tab.
+ 
 
-**Login**
+### Account
 
-To begin, go to the top top right corner of your screen and click on Login. This will prompt you to enter your phone number and click "send verification code", a code will then be sent to your phone number which you can enter in the space provided. Once you have entered the code, your phone number will now be verified with SIPSTACK and you will be taken to your profile.
+If you’d like to copy your profile over to another number, you can do so in the Account tab. Enter the new phone number and the two-factor authentication code you receive, and then click copy profile.
+This tab can also be used for deleting your profile if you choose to do so. 
+ 
+So there you have it! Whether you're looking to avoid spam calls, protect yourself from fraud, or simply learn more about a caller, we've got you covered.
 
-**Main Dashboard**
+Try it out for yourself at whois.sipstack.com.
 
-On the top left corner of the screen, you will see some of your details, including your username and email directly underneath it.
-On the top right corner of your screen, you may see some personal statistics. However, if you are a new user, you will not yet have any reviews or search history to display.
-
-Caller ID Profiles
-On this page, you will see a list of all the profiles you have created.
-If you are a new user, you can click, “Add new profile to your list”.
-This will allow you to enter some personal information, such as your name, photo/logo, website, address, description, and social media accounts.
-
-If you’d like to edit your profile, just click “edit”. Then make your changes and click “save”.
-
-Phone Numbers
-If you would like to add a new phone number, simply click “add number”, then assign your caller ID profile to that number.
-You may enter in multiple numbers for the same caller ID if you wish.
-Once your number(s) and caller ID profile are entered, simply click “add number”.
-Any new numbers added will need to be verified.
-To verify, click “send code”. You will then receive a text message with a code to verify that you are the owner of that phone number.
-Enter in the code in the “Enter code” box and the word “verify” will turn into “verified”.
-To edit a phone number, simply click “edit phone number”.
 
 Profile Settings
 If you wish, you can change your avatar at any time.
