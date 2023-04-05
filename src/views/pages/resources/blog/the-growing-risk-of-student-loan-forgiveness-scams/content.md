@@ -27,7 +27,7 @@ ED works closely with several private companies, including both lenders and serv
 
 Here is a list of contracted federal loan servicers, which you should always review before reaching out to a potential partner.
 
-SCREENSHOT
+![studentloan](./studentloan.png)
 
 ## What to Do if You See a Potential Student Loan Forgiveness Scam
 
