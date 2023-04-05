@@ -45,7 +45,3 @@ Here is a list of contracted federal loan servicers, which you should always rev
 ## How SIPSTACK Fights Fraud
 
 Using the latest technology and machine learning, SIPSTACK's systems authenticate all activity in real time against variables that affect your security. When a carrier implements SIPSTACK's [Smart CNAM](https://www.sipstack.com/products/smart-cnam), they are able to customize a threshold for calls to pass through, based on their specific needs. Additionally, [Whois by Sipstack](https://whois.sipstack.com/) is the biggest and best AI-powered reverse lookup database that individuals can use to help eradicate spam. At SIPSTACK, we take an active role in ensuring we are building a secure and connected tomorrow. [Contact us](https://www.sipstack.com/contact/us) today to learn how you can protect yourself from spam.
-
-
-
-
