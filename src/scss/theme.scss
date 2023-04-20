@@ -1,14 +1,20 @@
 // Required
 @import './node_modules/bootstrap/scss/functions';
 //Import bootstrap overrides variables - theme variables
-@import './custom/variables/variables-theme-sipstack';
+@import './sipstack/variables-theme-sipstack';
 
+// added for dark
+@import './custom/variables/variables-dark-theme-green';
+@import './node_modules/bootstrap/scss/variables';
+@import './node_modules/bootstrap/scss/variables-dark';
+
+// other
 @import './node_modules/bootstrap/scss/maps';
 @import './node_modules/bootstrap/scss/mixins';
 @import './node_modules/bootstrap/scss/utilities';
 @import './custom/utilities/utilities';
-//Import bootstrap scss
 
+//Import bootstrap scss
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 
 //Custom css variables for Assan Theme
@@ -20,3 +26,4 @@
 @import './custom/utilities/typography';
 @import './custom/utilities/animations';
 @import './custom/components/components';
+@import './custom/utilities/dark-mode';

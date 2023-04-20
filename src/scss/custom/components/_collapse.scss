@@ -48,7 +48,6 @@
   [data-bs-toggle="collapse"] {
     position: relative;
     display: block;
-    color: $body-color;
     padding-top: $spacer * .5;
     padding-bottom: $spacer * .5;
     &::after {
@@ -75,7 +74,7 @@
     }
 
     &[aria-expanded="true"] {
-      color: $primary;
+      color: $nav-link-hover-color;
 
       &::after {
         transform: translateY(-50%) rotate(0deg);

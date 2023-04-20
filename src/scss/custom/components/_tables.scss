@@ -5,3 +5,15 @@ th{
 .table>:not(:first-child) {
     border-top: 1px solid currentColor;
 }
+
+.card-table{
+    .table tfoot{
+        tr{
+            &:last-child{
+                td,th{
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}

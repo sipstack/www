@@ -178,19 +178,13 @@
 //multi-line
 .link-multiline {
     display: inline;
-    background-image: linear-gradient($dark, $dark);
+    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size 0.3s, color .3s;
-
     &:hover {
         background-size: 100% 1px;
-    }
-}
-.text-light,.text-white{
-    .link-multiline{
-        background-image: linear-gradient($white, $white);
     }
 }
 .link-2x{

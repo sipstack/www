@@ -1,6 +1,7 @@
 .choices__list--dropdown, .choices__list[aria-expanded]{
 visibility: visible;
 --#{$prefix}input-border-radius: #{$input-border-radius};
+background-color: var(--#{$prefix}dropdown-bg);
 @include border-radius(var(--#{$prefix}input-border-radius));
 border-width: $dropdown-border-width;
 border-color: $dropdown-border-color;
@@ -129,8 +130,13 @@ background-color: transparent;
     box-shadow: none;
     display: inline;
     min-width: 3rem!important;
+    width: auto;
 }
 .choices__list--multiple .choices__item{
+    margin-top: 1.675px;
+    margin-bottom: 1.675px;
+}
+.choices__list--multiple .choices__item,.choices__list--multiple .choices__item.is-highlighted{
     background-color: $primary;
     border-color:shade-color($primary,1%);
 }

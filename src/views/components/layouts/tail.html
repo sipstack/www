@@ -1,7 +1,7 @@
 
         
 <!--Cookies card-->
-<div class="offcanvas offcanvas-bottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel" style="height: unset;" id="ss-cookie">
+<div class="offcanvas offcanvas-bottom bg-body-tertiary" tabindex="-1" aria-labelledby="offcanvasBottomLabel" style="height: unset;" id="ss-cookie">
     <!-- <div class="offcanvas-header  d-none d-md-block">
     </div> -->
     <div class="offcanvas-body">
@@ -14,7 +14,7 @@
          </p>
        </div>
        <div class="flex-shrink-0 text-lg-center">
-             <button type="button" class="btn me-2 me-lg-0 mb-lg-3 btn-outline-secondary rounded-pill" data-bs-dismiss="offcanvas" aria-label="Close" id="ss-cookie-accept">Accept</button>
+             <button type="button" class="btn me-2 me-lg-0 mb-lg-3 btn-secondary rounded-pill" data-bs-dismiss="offcanvas" aria-label="Close" id="ss-cookie-accept">Accept</button>
 
        </div>
    </div>
@@ -54,6 +54,45 @@
                     <!-- <a class="link-underline fs-5" href="mailto:mail@doamin.com">mail@domain.com</a> -->
                     <span class="small">Data sciences through telecom</span>
                 </div>
+                <div class="position-relative">
+					<!--:Dark Mode:-->
+                    <div class="d-inline-flex width-13x align-items-center dropup mt-6">
+                        <button class="btn border text-body py-2 px-2 d-flex align-items-center" id="assan-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+                            <span class="theme-icon-active d-flex align-items-center">
+                                <i class="bx align-middle text-white" style="font-size: unset;"></i>
+                            </span>
+                        </button>
+                        <!--:Dark Mode Options:-->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="assan-theme" style="--bs-dropdown-min-width: 2rem;">
+                            <li class="mb-1">
+                                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light">
+                                    <span class="theme-icon d-flex align-items-center">
+                                        <i class="bx bx-sun align-middle me-2" style="font-size: unset;"> </i>
+                                    </span>
+                                    Light
+                                </button>
+                            </li>
+                            <li class="mb-1">
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                                    <span class="theme-icon d-flex align-items-center">
+                                        <i class="bx bx-moon align-middle me-2" style="font-size: unset;"></i>
+                                    </span>
+                                    Dark
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                                    <span class="theme-icon d-flex align-items-center">
+                                        <i class="bx bx-color-fill align-middle me-2" style="font-size: unset;"></i>
+                                    </span>
+                                    Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+				</div>
+
             </div>
             <div class="col-md-4 col-lg-3 col-xl-2 mb-5 mb-md-0 ms-auto h-100">
                 <!--Title-->

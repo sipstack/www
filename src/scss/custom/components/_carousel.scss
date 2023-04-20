@@ -228,14 +228,14 @@ transform-origin: left;
 .swiper-thumbs {
   .swiper-slide {
     transition: all .25s;
-    opacity: .35;
+    opacity: .4;
     cursor: pointer;
     img{
       width: 100%;
       max-width:70px;
       transition: all .25s;
       border-radius: 100%;
-    transform: scale(.75);
+    transform: scale(.875);
     transform-origin: center;
       height: auto;
       display: block;
@@ -261,7 +261,7 @@ transform-origin: left;
   cursor: pointer;
 }
 .swiper-pagination-progress-bar{
-  background-color: rgba($dark,.125);
+  background-color: rgba(var(--#{$prefix}body-color-rgb),.25);
   height:4px;
   position:relative;
 }
@@ -272,7 +272,7 @@ transform-origin: left;
   display: block;
   width: 0;
   height: 100%;
-  background-color: $dark;
+  background-color: rgba(var(--#{$prefix}body-color-rgb),1);
   transition: none;
 }
 
@@ -299,7 +299,7 @@ transform-origin: left;
     margin-top: -10px;
     border-radius: 100%;
     background-color: $primary;
-    border: 5px solid $light;
+    border: 5px solid var(--#{$prefix}body-bg);
     margin-left: -1px;
   }
 }

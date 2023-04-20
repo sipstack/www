@@ -25,4 +25,11 @@
     border-radius: $border-radius-lg;
     font-family: $font-family-base;
     font-size: $font-size-base;
+    background-color: var(--#{$prefix}body-bg);
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-top-color: var(--#{$prefix}body-bg);
+}
+.mapboxgl-popup-close-button{
+    color: var(--#{$prefix}body-color);
 }

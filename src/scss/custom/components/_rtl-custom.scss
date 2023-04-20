@@ -1,19 +1,39 @@
 //Customization of theme components according to RTL view
 
-html[dir=rtl],.dropdown-menu{
-    text-align: right;
-}
+
 html[dir=rtl]{
-    
+    .dropdown-item,.dropdown-header{
+        text-align: right;
+    }
+    .dropend{
+        .dropdown-menu{
+            left: auto;
+            right: 100%;
+        }
+    }
+    body{
+        text-align: right;
+    }
     ul,ol{
         padding-right: 0px;
     }
     .navbar-brand{
         margin-right: 0px;
     }
-    .dropdown-toggle::after{
+    .dropdown-toggle:not(.dropdown-toggle-split):after{
         margin-left: 0;
         margin-right: .25rem;
+    }
+    .btn-group.dropstart{
+        .dropdown-toggle-split{
+            order: -1;
+        }
+    }
+    .dropstart .dropdown-toggle:before{
+        content:"\ea50";
+    }
+    .dropend .dropdown-toggle:after{
+        content: "\ea4d"
     }
     .nav.flex-column{
         padding-right: 0;
@@ -63,6 +83,7 @@ html[dir=rtl]{
                 .dropend .dropdown-menu{
                     margin-left: 0;
                     margin-right:0.725rem;
+                    text-align: right;
                     &::before{
                         left: unset;
                         right: -.785rem;

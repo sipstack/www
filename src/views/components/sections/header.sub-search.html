@@ -1,4 +1,4 @@
-<section class="position-relative bg-light">
+<section class="position-relative bg-body-tertiary">
   <div class="container position-relative py-3 pb-lg-3">
     <div class="row">
       <div class="col-md-10 col-xl-7 mx-auto text-center">
@@ -46,9 +46,11 @@
           class="d-flex justify-content-center align-items-center flex-wrap pt-4">
           <div class="me-3 mb-2 small text-muted">Popular topics</div>
           @@for (var i = 0; i < topics.length; i++) {
-          <a href="#!" class="badge bg-white text-dark rounded-pill me-2 mb-2">
-            `+topics[i]+`
-          </a>
+          <strong>
+            <a href="" class="badge text-reset rounded-pill me-2 mb-2">
+              `+topics[i]+`
+            </a>
+          </strong>
           }
         </div>
       </div>

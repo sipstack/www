@@ -30,7 +30,7 @@
         right: 5%;
         width: 20%;
         height: 20%;
-        border: 2px solid #fff;
+        border: 2px solid var(--#{$prefix}body-bg);
         border-radius: 50%;
     }
     &.off::after{

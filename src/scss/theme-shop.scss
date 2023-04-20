@@ -1,0 +1,49 @@
+// Required
+@import "./node_modules/bootstrap/scss/functions";
+//Import bootstrap overrides variables - theme variables
+@import "./custom/variables/variables-theme-shop";
+@import "./custom/variables/variables-dark-theme-shop";
+@import "./node_modules/bootstrap/scss/maps";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./node_modules/bootstrap/scss/utilities";
+@import "./custom/utilities/utilities";
+
+
+//Import bootstrap scss
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//Custom css variables for Assan Theme
+@import "./custom/utilities/root";
+
+
+//Theme core style import
+@import "./custom/mixins/transition";
+@import "./custom/utilities/typography";
+@import "./custom/utilities/animations";
+@import "./custom/components/buttons";
+@import "./custom/components/breadcrumb";
+
+@import "./custom/components/scroll-elements";
+@import "./custom/components/caret";
+@import "./custom/utilities/dark-mode";
+@import "./custom/components/collapse";
+@import "./custom/components/carousel";
+@import "./custom/components/dropdown";
+@import "./custom/components/navbar";
+@import "./custom/components/navs";
+@import "./custom/components/choices-select";
+@import "./custom/components/backgrounds";
+@import "./custom/components/forms";
+@import "./custom/components/jarallax"; 
+@import "./custom/components/modal";
+@import "./custom/components/spinner";
+@import "./custom/components/avatar";
+@import "./custom/components/offcanvas";
+@import "./custom/components/hovers";
+@import "./custom/components/badges";
+@import "./custom/components/tables";
+@import "./custom/components/tabs";
+@import "./custom/components/links";
+@import "./custom/components/shop/shop-products";
+@import "./custom/components/nouislider";
