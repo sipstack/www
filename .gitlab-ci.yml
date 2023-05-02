@@ -1,7 +1,8 @@
 # Cannot leave gitlab-ci.yml empty for pipelines -- adding below as placeholder
 placeholder:
   stage: build
-  image: alpine:latest
+  # image: alpine:latest
+  image: node:16-bullseye-slim
   script:
     - echo "Pipeline placeholder."
     - npm run build
