@@ -4,9 +4,10 @@ placeholder:
   image: alpine:latest
   script:
     - echo "Pipeline placeholder."
+    - npm run build
   only:
     - main
-    - develop 
+    - develop
 # ----------------------------------------------------------------------------
 
 # image: docker:latest
