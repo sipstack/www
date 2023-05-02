@@ -5,6 +5,7 @@ placeholder:
   image: node:16-bullseye-slim
   script:
     - echo "Pipeline placeholder."
+    - npm install
     - npm run build
   only:
     - main
