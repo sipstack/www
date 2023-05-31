@@ -32,7 +32,7 @@ Rate Limits are returned in specific headers in response to each request, unless
 
 These headers are returned in order to enable apps to preemptively respond to circumstances in which their requests may be impacted by a rate limit enforcement.
 
-<pre class="bg-light">
+<pre class="bg-body-tertiary">
 
 HTTP/1.1 200 OK
 X-Rate-Limit-Policy: light

@@ -5,46 +5,46 @@
 //
 
 //core bootstrap with custom scripts for tooltips,popovers,toast etc.
-import './custom/custom-bootstrap'
+import './custom/custom-bootstrap';
 
 //bootstrap validations
-import './custom/form-validation'
+import './custom/form-validation';
 
 //sticky header
-import './custom/header-sticky'
+import './custom/header-sticky';
 
 //preloader
-import './custom/preloader'
+import './custom/preloader';
 
 //back to top
-import './custom/topTop'
+import './custom/topTop';
+//dark mode
+import './custom/dark-mode';
 
 //Header sticky on reverse scroll
-import './custom/header-sticky-reverse'
+import './custom/header-sticky-reverse';
 
 //On scroll animations
-import './custom/aos'
+import './custom/aos';
 
 //Lightbox for image/video popups
-import './custom/glightbox'
+import './custom/glightbox';
 
 //Portfolio filter / masonry layouts
-import './custom/isotope-layout'
+import './custom/isotope-layout';
 
 //background image/video parallax
-import './custom/jarallax'
+import './custom/jarallax';
 
 //Smooth scroll
-import './custom/smooth-scroll'
+import './custom/smooth-scroll';
 
 //Inject image[svg] to svg
-import './custom/svgInjector'
+import './custom/svgInjector';
 
 //Typed Text
-import './custom/typed'
+import './custom/typed';
 
 //Element parallax
-import './custom/rellax'
+import './custom/rellax';
 
-// SIPSTACK CUSTOM -----------------------------------
-import '../../node_modules/jquery/dist/jquery'

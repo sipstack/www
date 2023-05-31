@@ -2,10 +2,6 @@
 
 
 .nav {
-    --#{$prefix}nav-link-color: #{$body-color};
-  --#{$prefix}nav-link-hover-color: #{$primary};
-  --#{$prefix}nav-link-disabled-color: #{$text-muted};
-
     &.flex-column {
         .nav-link {
             padding-left: 0;
@@ -30,10 +26,6 @@
     .nav-link {
         position: relative;
         padding: 0;
-        &.active,
-        &:hover {
-            color: $text-muted;
-        }
 
         &.active {
             text-decoration: line-through;
@@ -66,14 +58,14 @@
 }
 .nav.nav-pills.nav-pills-white{
     .nav-link.active{
-        background-color: $white;
-        color: $component-active-bg;
+        background-color: $component-active-bg;
+        color: $component-active-color;
     }
 }
 
 //Underline tabs
 .nav-tabs{
-    border-bottom: 2px solid $border-color;
+    border-bottom: 2px solid var(--#{$prefix}border-color);
     .nav-link{
         padding-left: 0px;
         padding-right: 0px;
@@ -94,4 +86,8 @@
             border-bottom-color: $component-active-bg;
         }
     }
+}
+
+.nav-link.active{
+    color: var(--#{$prefix}link-hover-color);
 }

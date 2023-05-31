@@ -1,0 +1,30 @@
+// Dark mode style
+.theme-icon-active {
+    i {
+        font-family: boxicons !important;
+    }
+}
+
+html[data-bs-theme=light] {
+    .theme-icon-active {
+        i::after {
+            content: "\eebe";
+        }
+    }
+}
+
+html[data-bs-theme=dark] {
+    .theme-icon-active {
+        i::after {
+            content: "\ee4e";
+        }
+    }
+}
+
+html[data-bs-theme=auto] {
+    .theme-icon-active {
+        i::after {
+            content: "\ed56";
+        }
+    }
+}

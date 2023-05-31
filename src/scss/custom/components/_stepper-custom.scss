@@ -22,10 +22,10 @@
 .bs-stepper .step-trigger{
     font-weight: inherit;
     .bs-stepper-circle{
-        background-color:tint-color($primary,90%);
+        background-color:var(--#{$prefix}secondary-bg);
         color: $primary;
     }
-    color: $body-color;
+    color: var(--#{$prefix}body-color);
     &:focus{
         color: $primary;
     }
@@ -56,7 +56,7 @@
             top: 0;
             height: 100%;
             width: 2px;
-            background-color: $gray-200;
+            background-color: var(--#{$prefix}secondary-bg);
             position: absolute;
             margin-left: -1px;
         }

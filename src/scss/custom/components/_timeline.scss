@@ -80,7 +80,7 @@
           display: block;
           width: $border-width;
           height:calc(100% - #{$spacer*2});
-          border-left: 1px dashed $border-color;
+          border-left: 1px dashed var(--#{$prefix}border-color);
           position: absolute;
           top: $spacer*4;
         }
@@ -113,7 +113,7 @@
     border-radius: 50%;
     margin-right: $spacer * 1.25;
     &::after {
-      border-left: 2px dashed $border-color;
+      border-left: 2px dashed var(--#{$prefix}border-color);
       content: "";
       position: absolute;
       top:  $spacer * 3.75;

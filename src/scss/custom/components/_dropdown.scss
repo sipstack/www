@@ -38,6 +38,17 @@
     }
 }
 
+//Input dropdown menu
+.dropdown-menu-input{
+    min-width: 100%;
+    overflow-y: auto;
+    max-height: 290px;
+}
+.form-control.show{
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+}
+
 //Dropdown Mega Menu
 
 @include media-breakpoint-up(lg) {
@@ -70,6 +81,16 @@
         }
     }
 
+    //Input dropdown search
+    .dropdown-menu.dropdown-menu-input{
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        &.show{
+            display: block;
+        }
+    }
     .dropdown-menu-fw {
         width:auto;
         max-width: none;

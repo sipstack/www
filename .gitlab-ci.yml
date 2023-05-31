@@ -2,11 +2,14 @@
 placeholder:
   stage: build
   image: alpine:latest
+  # image: node:16-bullseye-slim
   script:
     - echo "Pipeline placeholder."
+    # - npm install
+    # - npm run build
   only:
     - main
-    - develop 
+    - develop
 # ----------------------------------------------------------------------------
 
 # image: docker:latest

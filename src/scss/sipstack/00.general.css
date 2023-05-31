@@ -1,4 +1,25 @@
 /**************************** CUSTOM TO SIPSTACK **************************/
+
+[data-bs-theme='light'] {
+  --ss_bg: white;
+  --ss_input-color: white;
+  --ss-text-color: black;
+  --ss-border-color: lightgrey;
+  --bw: white;
+  --nav-link-active: black;
+  --bg-light: #f5f5f5;
+}
+
+[data-bs-theme='dark'] {
+  --ss_bg: #202020;
+  --ss_input-color: #202020;
+  --ss-text-color: white;
+  --ss-border-color: rgb(92, 91, 91);
+  --bw: #0d0f0c;
+  --nav-link-active: #35bb8a;
+  --bg-light: #202020;
+}
+
 .form-label {
   font-weight: 300 !important;
 }
@@ -267,4 +288,43 @@ header:not(.scroll-up):not(.is-sticky):not(.is-fixed)
   .nav-link.active {
   color: #35bb8a;
   font-weight: 500;
+}
+
+/* The below code is for dark mode */
+.card,
+.dropdown-menu,
+.dropdown-item:hover,
+.modal-content {
+  background-color: var(--ss_bg) !important;
+  border-color: var(--ss_bg);
+}
+
+.list-group-item,
+.dropdown-item {
+  background-color: var(--ss_bg) !important;
+  border-color: var(--ss_bg);
+  color: var(--ss-text-color);
+}
+
+.dropdown-toggle {
+  color: var(--ss-text-color);
+}
+
+.dropdown-toggle:hover {
+  color: #35bb8a;
+}
+
+.ss_bg {
+  background-color: var(--bw);
+}
+
+.ss-bg-light {
+  background-color: var(--bg-light) !important;
+}
+.form-control,
+.form-check-input,
+.form-control:focus {
+  background-color: var(--ss_input-color);
+  border-color: var(--ss-border-color);
+  color: var(--ss-text-color);
 }

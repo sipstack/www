@@ -147,7 +147,7 @@ header.header-transparent.sticky-fixed {
 
         .navbar-light {
             .navbar-fixed-bg {
-                background-color: rgba($white, 0.985);
+                background-color:var(--#{$prefix}body-bg);
             }
 
             &.navbar-link-white {
@@ -221,7 +221,7 @@ header.header-transparent.sticky-fixed {
                     border-bottom-color: $border-color;
                     box-shadow: 0 16px 32px 0 rgba($dark, .04);
                     backdrop-filter: blur(20px);
-                    background-color: rgba($white, 0.85);
+                    background-color:var(--#{$prefix}body-bg);
                 }
 
                 &.navbar-dark {
@@ -378,7 +378,7 @@ header.header-transparent.sticky-fixed {
             }
 
             .navbar-light {
-                background-color: rgba($white, 0.985);
+                background-color: rgba(var(--#{$prefix}body-bg-rgb), 0.985);
             }
 
             .navbar-dark {
@@ -475,7 +475,7 @@ header.header-transparent.sticky-fixed {
             position: absolute;
             top: 50%;
             margin-top: -1px;
-            background-color: currentColor;
+            background-color:currentColor;
             transition: background-color 0s 0.3s;
 
             &::before,
@@ -486,7 +486,7 @@ header.header-transparent.sticky-fixed {
                 position: absolute;
                 display: block;
                 left: 0;
-                background-color: currentColor;
+                background-color:currentColor;
             }
 
             &::before {
@@ -522,7 +522,20 @@ header.header-transparent.sticky-fixed {
         }
     }
 }
-
+.navbar-dark{
+    .navbar-toggler{
+        .navbar-toggler-icon{
+            >i,>i::after,i::before{
+                background-color: white;
+            }
+        }
+        &[aria-expanded="true"] .navbar-toggler-icon{
+            >i{
+                background-color: transparent;
+            }
+        }
+    }
+}
 
 
 
@@ -554,7 +567,7 @@ header.header-transparent.sticky-fixed {
 
         &.navbar-light {
             .navbar-collapse {
-                background-color: $white;
+                background-color:var(--#{$prefix}body-bg);
                 box-shadow: $box-shadow;
             }
         }
@@ -605,5 +618,39 @@ header.header-transparent.sticky-fixed {
                 }
             }
         }
+    }
+}
+
+
+//Dark mode
+.navbar-brand-dark{
+    display: none;
+}
+[data-bs-theme=dark]{
+    header.header-transparent.sticky-fixed.is-fixed,header.header-sticky.is-sticky{
+        .navbar-light{
+            .navbar-brand .navbar-brand-sticky{
+                display: none;
+            }
+            .navbar-brand .navbar-brand-transparent{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .navbar-brand-dark{
+        display: block;
+    }
+    .navbar-brand-light{
+        display: none;
+    }
+    header.is-sticky .navbar-link-white .navbar-brand .navbar-brand-sticky, header.scroll-up .navbar-link-white .navbar-brand .navbar-brand-sticky{
+        opacity: 0;
+        visibility: hidden;
+    }
+    header.is-sticky .navbar-link-white .navbar-brand .navbar-brand-transparent, header.scroll-up .navbar-link-white .navbar-brand .navbar-brand-transparent{
+        opacity: 1;
+        visibility: visible;
     }
 }

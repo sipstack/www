@@ -1,13 +1,16 @@
-.ss-border-left{
-    border-left: 1px solid #d3d3d3;
-    padding-left: 2.5em;
+.ss-border-left {
+  border-left: 1px solid #d3d3d3;
+  padding-left: 2.5em;
 }
 
-
-
 @media (max-width: 768px) {
-    .ss-border-left {
-        border: 0px;
-        padding-left: 0;
-    }
+  .ss-border-left {
+    border: 0px;
+    padding-left: 0;
+  }
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--nav-link-active) !important;
 }

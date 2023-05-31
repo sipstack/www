@@ -25,7 +25,7 @@ func_dev1 () { # build
    
    docker build -t sipstack/www:dev .
    echo "Enter lws password:"
-   sudo docker-compose -f /root/docker/compose/dev/docker-compose.yml up -d
+   sudo docker-compose -f /root/docker/compose/dev/docker-compose.yml up -d ${APPNAME}
    echo ""
    echo "Completed above, https://dev-www.sipstack.com should be live / updated."
    

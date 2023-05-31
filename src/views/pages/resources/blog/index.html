@@ -25,15 +25,15 @@
 @@include('components/sections/cta.html', {
     id: 'overview',
     subTitle: 'Company Blog',
-    class: 'bg-light pt-9',
+    class: 'bg-body-tertiary pt-9',
     title: 'Our Latest Posts',
     description: '',
     arrow: 'false',
     button: 'Subscribe',
 })
 
-
-<script>  window.addEventListener('load', function () {
+<script>
+  window.addEventListener('load', function () {
     $('#ss-form-cta').submit(function (e) {
       e.preventDefault()
       var formData = $('#ss-form-cta').serialize()
@@ -42,7 +42,6 @@
     })
   })
 </script>
-
 
 <!-- prettier-ignore -->
 @@include('pages/resources/blog/_articles.html')

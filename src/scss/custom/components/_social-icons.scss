@@ -29,7 +29,7 @@
     width:40px;
     height: 40px;
     font-size: $input-btn-font-size * 1.25;
-    color: $body-color;
+    color:var(--#{$prefix}body-color);
     >i{
         position: absolute;
         left: 0;
@@ -62,7 +62,7 @@
         }
     }
     &.si-border{
-        border: 1px solid $border-color;
+        border: 1px solid var(--#{$prefix}border-color);
     }
 }
 

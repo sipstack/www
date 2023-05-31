@@ -5,10 +5,10 @@
     height: 4px;
   box-shadow:none;
   border:0px;
-  background-color:$border-color;
+  background-color:var(--#{$prefix}border-color);
 }
 .noUi-connect{
-  background-color:$dark;
+  background-color:rgba(var(--#{$prefix}body-color),.25);
 }
 .noUi-horizontal .noUi-handle{
   width:1.5rem;
@@ -18,8 +18,8 @@
   border-radius:.75rem;
   border:0px;
   box-shadow:none;
-  background-color:$dark;
-  border:3px solid white;
+  background-color:var(--#{$prefix}primary);
+  border:3px solid var(--#{$prefix}body-bg);
   transition: all .2s;
   cursor: pointer;
   &:before,&:after{

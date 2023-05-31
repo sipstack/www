@@ -5,11 +5,11 @@
 
 //custo underline-accordion
 .accordion{
-    --#{$prefix}accordion-color: #{$body-color};
+    --#{$prefix}accordion-color: var(--#{$prefix}body-color);
 }
 .accordion.accordion-custom {
     .accordion-item {
-        border: 0px;
+        border: $border-width solid var(--#{$prefix}border-color);
         border-radius: $accordion-border-radius;
     }
     .accordion-body {
@@ -20,9 +20,9 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-        background-color: $white;
+        background-color: var(--#{$prefix}body-bg);
         border-radius: $border-radius;
-        box-shadow: $btn-focus-box-shadow;
+        box-shadow:none;
         &::after {
             background-image: none;
             font-weight: 400;
@@ -42,7 +42,8 @@
         }
     }
     .accordion-collapse,.accordion-button:not(.collapsed){
-        background-color: tint-color($primary, 90%);
+        background-color:var(--#{$prefix}tertiary-bg);
+        color: var(--#{$prefix}body-color);
     }
     .accordion-collapse{
         border-bottom-left-radius: $accordion-border-radius;
