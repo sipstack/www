@@ -1,33 +1,117 @@
-# Cannot leave gitlab-ci.yml empty for pipelines -- adding below as placeholder
-placeholder:
-  stage: build
-  image: alpine:latest
-  # image: node:16-bullseye-slim
-  script:
-    - echo "Pipeline placeholder."
-    # - npm install
-    # - npm run build
-  only:
-    - main
-    - develop
-# ----------------------------------------------------------------------------
-
-# image: docker:latest
-
-# services:
-#   - docker:dind
-
 # before_script:
-#   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+#   - echo "Run stuff before script..."
 
-# build-main:
-#   # image: node:12.18.4-buster ## only way to get npm / gulp to work
+# after_script:
+#   - echo "Run stuff after script..."
+
+# build-develop: ## staging to: https://dev- ...
+#   image: node:18.16.0-bullseye ## only way to get npm / gulp to work
 #   stage: build
 #   script:
-#     - docker build --pull -t "$CI_REGISTRY_IMAGE" .
-#     - docker push "$CI_REGISTRY_IMAGE"
-#     - docker tag "$CI_REGISTRY_IMAGE" "$CI_REGISTRY_IMAGE:$CI_COMMIT_TITLE"
-#     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TITLE"
+#     - npm install
+#     - npm run build
+#     - bin/release.sh
+#   artifacts:
+#     expire_in: 1 day
+#     paths:
+#       - dist/
+#   only:
+#     - develop
 
+# build-main: ## staging to: https:// ...
+#   image: node:18.16.0-bullseye ## only way to get npm / gulp to work
+#   stage: build
+#   script:
+#     - npm install
+#     - npm run build ## double check it runs with NODE_ENV=production
+#     - bin/release.sh
+#   artifacts:
+#     expire_in: 1 day
+#     paths:
+#       - dist/
+#   only:
+#     - main
+
+# deploy-develop:
+#   image: alpine:latest
+#   stage: deploy
+#   before_script:
+#     - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )'
+#     - eval $(ssh-agent -s)
+#     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+#     - mkdir -p ~/.ssh
+#     - chmod 700 ~/.ssh
+#     - ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
+#     - chmod 644 ~/.ssh/known_hosts
+#     - ping -c 1 $SSH_HOST
+#   script:
+#     - ssh $SSH_USER@$SSH_HOST "cd ~/code/athenty/secure && rm package-lock.json && git pull && bin/dev.sh"
+#     - ssh $SSH_USER@$SSH_HOST "cd ~/docker/compose/athenty && docker-compose up -d secure"
+#   only:
+#     - develop
+#   # rules:
+#   #   - if: '$CI_COMMIT_MESSAGE =~ /(nopipe|no-pipeline)/'
+#   #     when: never
+
+deploy-stage:
+  stage: deploy
+  script:
+    - 'npm i'
+    - 'npm i http-server'
+    - 'bin/publish.sh'
+    - 'pm2 start ecosystem.config.js'
+    - 'pm2 save'
+    - 'pm2 logs --nostream'
+  tags:
+    - shell
+  only:
+    - develop
+# deploy-main:
+#   image:
+#     name: docker:stable
+#   services:
+#     - name: docker:dind
+#       alias: thedockerhost
+#   variables:
+#     DOCKER_HOST: tcp://thedockerhost:2375/
+#     DOCKER_DRIVER: overlay2
+#     DOCKER_TLS_CERTDIR: ''
+#   stage: deploy
+#   environment:
+#     name: production
+#   # before_script: # bring SSH keys to deploy to server
+#   #   - apk add openssh-client sshpass
+#   script:
+#     - du -sh dist
+#     - du -sh src
+#     - RELEASE=$(head -1 RELEASE)
+#     - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" $CI_REGISTRY --password-stdin
+#     - docker build --pull -t $CI_REGISTRY_IMAGE .
+#     - docker push $CI_REGISTRY_IMAGE:latest
+#     - docker image tag $CI_REGISTRY_IMAGE:$latest $CI_REGISTRY_IMAGE:$RELEASE
+#     - docker image push $CI_REGISTRY_IMAGE:$RELEASE
+#   # after_script: # issue update on docker app server
+#   #   - sshpass -p "$WEB_PASSWORD" ssh -oStrictHostKeyChecking=no gitlab@$WEB_SERVER "hostname"
+#   dependencies:
+#     - build-main
+#   only:
+#     - main
+
+## remove below and uncomment other mains on production
+# deploy-main:
+#   image: alpine:latest
+#   stage: deploy
+#   before_script:
+#     - 'command -v ssh-agent >/dev/null || ( apk add --update openssh )'
+#     - eval $(ssh-agent -s)
+#     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+#     - mkdir -p ~/.ssh
+#     - chmod 700 ~/.ssh
+#     - ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
+#     - chmod 644 ~/.ssh/known_hosts
+#     - ping -c 1 $SSH_HOST
+#   script:
+#     - ssh $SSH_USER@$SSH_HOST "cd ~/code/athenty/secure-production && rm package-lock.json && git pull && bin/prod.sh"
+#     - ssh $SSH_USER@$SSH_HOST "cd ~/docker/compose/athenty && docker-compose up -d secure-production"
 #   only:
 #     - main
