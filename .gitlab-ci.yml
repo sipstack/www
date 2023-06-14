@@ -56,17 +56,20 @@
 deploy-stage:
   stage: deploy
   script:
-    - 'npm i'
-    - 'npm i http-server'
     - 'bin/build-blog.sh'
     - 'bin/build-kb.sh'
     - 'bin/build-jobs.sh'
+    - 'npm i'
+    - 'npm i http-server'
     - 'npm run build'
     - 'pm2 start ecosystem.config.js'
     - 'pm2 save'
-    - 'pm2 logs --nostream'
+    - 'pm2 logs sipstack_www:8380 --nostream'
+  environment:
+    name: development
   tags:
     - shell
+    - dev-110
   only:
     - develop
 # deploy-main:
