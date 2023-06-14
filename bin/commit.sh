@@ -64,7 +64,7 @@ else
 
         # func_dev1 # build ## pm2
         echo "--------------------------------------------------------------------------------"
-        echo "Please preview staged app @ ${STAGNG} before proceeding to merge & deploy to main."
+        func_yesno "Please verify ${STAGNG} and confirm if changes are okay?"
         echo "--------------------------------------------------------------------------------"
         func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main & deploy to production servers?"
         

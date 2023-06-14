@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "description": "SIPSTACK main website",
   "main": "gulpfile.js",
   "scripts": {
