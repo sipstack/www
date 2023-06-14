@@ -53,6 +53,7 @@ EOF
 ## output the data json file for blog landing
 func2(){
     CREATE="${CREATED//-/$''}"
+    echo "test: src/data/blog/${CREATE}-${SLUG}.json"
 
 cat << EOF > src/data/blog/${CREATE}-${SLUG}.json
 {
@@ -92,5 +93,5 @@ func4() {
 # clean up
 func5() {
   echo "Cleaning up..."
-# rm -rf src/data/blog/*.json
+rm -rf src/data/blog/*.json
 }
