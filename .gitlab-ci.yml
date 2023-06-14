@@ -53,7 +53,7 @@
 #   #   - if: '$CI_COMMIT_MESSAGE =~ /(nopipe|no-pipeline)/'
 #   #     when: never
 
-deploy-stage:
+deploy-develop:
   stage: deploy
   before_script:
     - 'npm i'
@@ -74,6 +74,28 @@ deploy-stage:
     - dev-110
   only:
     - develop
+
+deploy-main:
+  stage: deploy
+  before_script:
+    - 'npm i'
+    - 'npm i http-server'
+    - 'bin/build-jobs.sh'
+    - 'bin/build-blog.sh'
+    - 'bin/build-kb.sh'
+    - 'npm run build'
+  script:
+    - 'pm2 start ecosystem.config.js --env production'
+  after_script:
+    - 'pm2 save'
+    - 'pm2 logs sipstack_www:8380 --nostream'
+  environment:
+    name: production
+  tags:
+    - shell
+    - app-510
+  only:
+    - main
 # deploy-main:
 #   image:
 #     name: docker:stable
