@@ -53,7 +53,6 @@ EOF
 ## output the data json file for blog landing
 func2(){
     CREATE="${CREATED//-/$''}"
-    echo "test: src/data/blog/${CREATE}-${SLUG}.json"
 
 cat << EOF > src/data/blog/${CREATE}-${SLUG}.json
 {
