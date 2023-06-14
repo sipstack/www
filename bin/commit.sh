@@ -15,6 +15,7 @@ BRANCH=$(git status | head -1 | cut -c 11-)
 RELEASE=$(grep -oP '(?<="version": ").*?(?=",)' package.json)
 APPNAME=$(grep -oP '(?<="name": ").*?(?=",)' package.json)
 SUBNAME=""
+STAGING="http://dev:8380"
 
 ## check if branch passed requirement (release)
 # if [[ "${BRANCH}" != "release-"* ]]; then 
@@ -62,8 +63,8 @@ else
         # fi
 
         # func_dev1 # build ## pm2
-
-        echo ""
+        echo "--------------------------------------------------------------------------------"
+        func_yesno "Please verify ${STAGNG} and confirm if changes are okay?"
         echo "--------------------------------------------------------------------------------"
         func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main & deploy to production servers?"
         
