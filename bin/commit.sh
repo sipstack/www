@@ -60,10 +60,12 @@ else
         # else
         #     echo "No changes on branch: ${BRANCH}. Continue next."
         # fi
-        func_dev1 # build
+
+        # func_dev1 # build ## pm2
+
         echo ""
         echo "--------------------------------------------------------------------------------"
-        func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main then deploy to production servers?"
+        func_yesno "Ready to merge ${APPNAME}: ${BRANCH} to main & deploy to production servers?"
         
         read -p "Specify new version of ${APPNAME} (Current: ${RELEASE}): " VER
             VER=${VER:-${RELEASE}}
@@ -88,8 +90,8 @@ else
             echo ""
             echo "Merge into main complete: review output above."
 
-            func_dev2 # ci/cd
-            func_dev3 # deploy (if required)
+            # func_dev2 # ci/cd  ## pm2
+            # func_dev3 # deploy (if required)  ## pm2
 
             ### when using branch release- ----------------------------
             # echo "Merging main -> develop to complete the commit."
