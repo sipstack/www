@@ -92,5 +92,5 @@ func4() {
 # clean up
 func5() {
   echo "Cleaning up..."
-rm -rf src/data/blog/*.json
+# rm -rf src/data/blog/*.json
 }
