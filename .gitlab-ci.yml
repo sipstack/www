@@ -30,7 +30,7 @@ build-main:
     - shell
     - dev-110
     - development
-  - only:
+  only:
     - main
 
 deploy-staging:
