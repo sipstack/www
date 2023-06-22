@@ -1,3 +1,108 @@
+# .base-rules:
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH == "main"'
+#       when: always
+#     - if: '$CI_PIPELINE_SOURCE == "push"'
+#       when: never
+#     - if: $CI_COMMIT_TAG
+#       when: never
+
+# cache: &global_cache
+#   key: $CI_COMMIT_REF_SLUG
+#   policy: pull-push
+#   paths:
+#     - node_modules/
+#     - package-lock.json
+#     - dist/
+
+build-main:
+  stage: build
+  # extends: .base-rules
+  # before_script:
+  # - source ~/.bashrc
+  script:
+    - npm i
+    - npm run build
+  # cache:
+  #   <<: *global_cache
+  #   policy: push
+  tags:
+    - shell
+    - dev-110
+    - development
+  - only:
+    - main
+
+deploy-staging:
+  stage: deploy
+  before_script:
+    - 'npm i'
+    - 'npm run build'
+  script:
+    - 'pm2 restart ecosystem.config.js --update-env'
+  after_script:
+    - 'pm2 save'
+    - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
+  # cache:
+  #   <<: *global_cache
+  #   policy: push
+  environment:
+    name: development
+  tags:
+    - shell
+    - dev-110
+    - staging
+  only:
+    - develop
+
+deploy-main:
+  stage: deploy
+  # before_script:
+  #   - 'npm i'
+  #   - 'npm run build'
+  script:
+    # - 'pm2 restart ecosystem.config.js --env production --update-env'
+    - 'pm2 restart ecosystem.config.js --update-env'
+  after_script:
+    - 'pm2 save'
+    - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
+  environment:
+    name: production
+  # cache:
+  #   <<: *global_cache
+  #   policy: pull
+  needs:
+    - job: build-main
+  tags:
+    - shell
+    - app-511
+    - production
+  only:
+    - main
+
+
+# deploy-develop:
+#   stage: deploy
+#   before_script:
+#     - 'npm i'
+#     - 'npm i http-server'
+#     - 'bin/build-jobs.sh'
+#     - 'bin/build-blog.sh'
+#     - 'bin/build-kb.sh'
+#     - 'npm run build'
+#   script:
+#     - 'pm2 start ecosystem.config.js'
+#   after_script:
+#     - 'pm2 save'
+#     - 'pm2 logs sipstack_www:8380 --nostream'
+#   environment:
+#     name: development
+#   tags:
+#     - shell
+#     - dev-110
+#   only:
+#     - develop
+
 # before_script:
 #   - echo "Run stuff before script..."
 
@@ -53,49 +158,8 @@
 #   #   - if: '$CI_COMMIT_MESSAGE =~ /(nopipe|no-pipeline)/'
 #   #     when: never
 
-deploy-develop:
-  stage: deploy
-  before_script:
-    - 'npm i'
-    - 'npm i http-server'
-    - 'bin/build-jobs.sh'
-    - 'bin/build-blog.sh'
-    - 'bin/build-kb.sh'
-    - 'npm run build'
-  script:
-    - 'pm2 start ecosystem.config.js'
-  after_script:
-    - 'pm2 save'
-    - 'pm2 logs sipstack_www:8380 --nostream'
-  environment:
-    name: development
-  tags:
-    - shell
-    - dev-110
-  only:
-    - develop
 
-deploy-main:
-  stage: deploy
-  before_script:
-    - 'npm i'
-    - 'npm i http-server'
-    - 'bin/build-jobs.sh'
-    - 'bin/build-blog.sh'
-    - 'bin/build-kb.sh'
-    - 'npm run build'
-  script:
-    - 'pm2 start ecosystem.config.js --env production'
-  after_script:
-    - 'pm2 save'
-    - 'pm2 logs sipstack_www:8380 --nostream'
-  environment:
-    name: production
-  tags:
-    - shell
-    - app-511
-  only:
-    - main
+
 # deploy-main:
 #   image:
 #     name: docker:stable
