@@ -26,6 +26,10 @@ build-main:
   # cache:
   #   <<: *global_cache
   #   policy: push
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
   tags:
     - shell
     - dev-110
