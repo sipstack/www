@@ -15,6 +15,30 @@
 #     - package-lock.json
 #     - dist/
 
+# staging ------------------------------------------------------------------------------
+deploy-staging:
+  stage: deploy
+  before_script:
+    - 'npm i'
+    - 'npm run build'
+  script:
+    - 'pm2 restart ecosystem.config.js --update-env'
+  after_script:
+    - 'pm2 save'
+    - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
+  # cache:
+  #   <<: *global_cache
+  #   policy: push
+  environment:
+    name: development
+  tags:
+    - shell
+    - dev-110
+    - staging
+  only:
+    - develop
+
+# production  ------------------------------------------------------------------------------
 build-main:
   stage: build
   # extends: .base-rules
@@ -37,27 +61,6 @@ build-main:
   only:
     - main
 
-deploy-staging:
-  stage: deploy
-  before_script:
-    - 'npm i'
-    - 'npm run build'
-  script:
-    - 'pm2 restart ecosystem.config.js --update-env'
-  after_script:
-    - 'pm2 save'
-    - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
-  # cache:
-  #   <<: *global_cache
-  #   policy: push
-  environment:
-    name: development
-  tags:
-    - shell
-    - dev-110
-    - staging
-  only:
-    - develop
 
 deploy-main:
   stage: deploy
@@ -84,6 +87,8 @@ deploy-main:
   only:
     - main
 
+
+# old (unused) ------------------------------------------------------------------------------
 
 # deploy-develop:
 #   stage: deploy
