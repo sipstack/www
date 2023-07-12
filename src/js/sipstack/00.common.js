@@ -121,31 +121,3 @@ function apiRequest(
     },
   })
 }
-
-function fetch(
-  uri = '',
-  method = 'GET',
-  _data = [],
-  dataType = 'JSON',
-  async = true
-) {
-  return $.ajax({
-    url: `${uri}`,
-    type: method,
-    data: _data,
-    dataType,
-    async,
-    crossDomain: true,
-    xhrFields: {
-      withCredentials: true,
-    },
-    headers: {
-      // Authorization: "Bearer " + window.sessionStorage.getItem("ss_token"),
-      // "X-HTTP-Method-Override": method.toUpperCase(),
-      // "X-TA-SESSION": localStorage.session_id,
-      // "X-TA-ACCOUNT": localStorage.account_id,
-      // "X-TA-C": localStorage.c_id,
-      // "X-TA-META": localStorage.meta,
-    },
-  })
-}
