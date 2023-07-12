@@ -1,0 +1,94 @@
+<!-- prettier-ignore -->
+@@include('components/layouts/head.html', {
+    title: "Knowledge Base // SIPSTACK",
+    meta: {
+        description: "Tools",
+        keywords: "asterisk, audio, convert, converter, convert audio, audio converter, voip, free, tools, tool, sox, ffmpeg, online",
+        author: "SIPSTACK",
+        robots: "index, follow",
+        url: "resources/knowledge-base",
+        image: "logo/logo.png",
+        type: "website",
+        created: "", 
+        updated: "", 
+    },
+    body: "",
+    css: [],
+    nav: {
+        class: ''
+    }
+})
+
+<!-- prettier-ignore -->
+@@include('components/sections/header.simple.html', {
+    label : 'Resources',
+    title :'Tools',
+    description: 'Free Asterisk Tools',
+})
+
+
+
+<section class="position-relative" id="contact">
+    <div class="container py-9">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-lg-8 mb-7 mb-md-0 me-auto">
+          <div class="position-relative">
+            <h2 class="card-title">Audio Converter For Asterisk®.</h2>
+            <p class="text-muted">
+                Submit any .wav file to convert to Asterisk® format.
+            </p>
+            <!-- Contacts Form -->
+            
+            <form id="form">
+              <div class="row">
+       
+                <div>
+                    <label for="formFileLg" class="form-label">Audio File (.wav)</label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file" name="audio" accept=".wav,.WAV">
+                </div>
+              
+              <div
+                class="d-lg-flex d-grid justify-content-between align-items-center pt-2">
+                <input
+                  type="submit"
+                  value="Convert"
+                  class="btn btn-lg btn-primary"
+                  style="margin: 0 auto" />
+              </div>
+            </form>
+          </div>
+          <!-- End Contact Form -->
+        </div>
+        <!--End card -->
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+
+@@include('components/layouts/tail.html')
+<script>
+    console.log('test')
+      $('#form').on('submit', function(e) {
+        e.preventDefault();
+
+        var resp = fetch(`https://api.sipstack.com/convert/`,'POST',$(this).serialize())
+
+        resp.done(function(data) {
+            console.log(data);
+        });
+
+        resp.fail(function(jqXHR, textStatus, errorThrown) {
+            var message = errorThrown;
+            if (jqXHR.responseJSON && jqXHR.responseJSON.message) message = jqXHR.responseJSON.message;
+            $('#ss-alert').removeClass('d-none');
+            $('#ss-alert-message').html(message);
+            console.log(message)
+        });
+
+        resp.always(function(jqXHR, textStatus, errorThrown) {
+            $(':submit').removeAttr('disabled');
+        });
+
+    });
+</script>
