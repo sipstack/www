@@ -44,8 +44,8 @@
               <div class="row">
        
                 <div>
-                    <label for="formFileLg" class="form-label">Audio File (.wav)</label>
-                    <input class="form-control form-control-lg" id="formFileLg" type="file" name="audio" accept=".wav,.WAV">
+                    <label for="audioInput" class="form-label">Audio File (.wav)</label>
+                    <input class="form-control form-control-lg"  type="file" name="audio" accept=".wav,.WAV" id="audioInput">
                 </div>
               
               <div
@@ -56,6 +56,7 @@
                   class="btn btn-lg btn-primary"
                   style="margin: 0 auto" />
               </div>
+
             </form>
           </div>
           <!-- End Contact Form -->
@@ -68,27 +69,32 @@
 
 @@include('components/layouts/tail.html')
 <script>
-    console.log('test')
+
       $('#form').on('submit', function(e) {
         e.preventDefault();
 
-        var resp = fetch(`https://api.sipstack.com/convert/`,'POST',$(this).serialize())
-
-        resp.done(function(data) {
-            console.log(data);
-        });
-
-        resp.fail(function(jqXHR, textStatus, errorThrown) {
-            var message = errorThrown;
-            if (jqXHR.responseJSON && jqXHR.responseJSON.message) message = jqXHR.responseJSON.message;
-            $('#ss-alert').removeClass('d-none');
-            $('#ss-alert-message').html(message);
-            console.log(message)
-        });
-
-        resp.always(function(jqXHR, textStatus, errorThrown) {
-            $(':submit').removeAttr('disabled');
-        });
+        $.ajax({
+            url: 'https://api.sipstack.com/convert/',
+            type: 'POST',
+            processData: false,
+            contentType: false,
+            data: new FormData($('#form')[0]),
+            xhrFields: {
+                responseType: 'blob' // Set the response type to blob
+            },
+            success: function(response) {
+                const downloadLink = document.createElement('a');
+                const url = window.URL.createObjectURL(response);
+                downloadLink.href = url;
+                downloadLink.download = 'converted_file.wav';
+                downloadLink.click();
+                window.URL.revokeObjectURL(url);
+                console.log('Conversion successful');
+            },
+            error: function(xhr, status, error) {
+                console.error('Error:', error);
+            }
+            });
 
     });
 </script>
