@@ -91,9 +91,11 @@ build-main:
   stage: build
   script:
     - npm i
-    - npm run build
+    # - npm run build
+    - bin/publish.sh
     - docker build -t registry.sipstack.com/sipstack/www .
     - docker push registry.sipstack.com/sipstack/www
+    - curl http://app-510.sipstack.com:90/hooks/30-www
   tags:
     - shell
     - dev-110
