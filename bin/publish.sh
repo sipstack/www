@@ -13,13 +13,13 @@ cd dist
 ../bin/sitemap.sh
 cd ..
 
-## publish assets
-npm run publish:assets
+## publish assets (push to bucket)
+# npm run publish:assets
 
 
 cd dist
 ## rewrite assets to load from cdn
-grep -rl '"/assets/' . | xargs sed -i 's|"/assets/|"https://sfo2.digitaloceanspaces.com/sipstack/www/assets/|g'
+# grep -rl '"/assets/' . | xargs sed -i 's|"/assets/|"https://sfo2.digitaloceanspaces.com/sipstack/www/assets/|g'
 grep -rl 'alt=""' . | xargs sed -i 's|alt=""|alt="ss image"|g'
 
 cd ..

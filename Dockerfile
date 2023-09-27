@@ -11,8 +11,8 @@ RUN npm install -g http-server
 COPY dist/ /var/www/html/
 WORKDIR /var/www/html
 
-EXPOSE 3000
-CMD ["http-server", "-c-1", "--log-ip","--no-dotfiles","-p3000"]
+EXPOSE 80
+CMD ["http-server", "-c-1", "--log-ip","--no-dotfiles","-p80"]
 
 # NOTE: PORT to link 
 # docker run --rm -it -p 8082:8080 localhost:5000/hub:0.1.1

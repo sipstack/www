@@ -39,55 +39,67 @@ deploy-staging:
     - develop
 
 # production  ------------------------------------------------------------------------------
+## pm2 method
+# build-main:
+#   stage: build
+#   # extends: .base-rules
+#   # before_script:
+#   # - source ~/.bashrc
+#   script:
+#     - npm i
+#     - npm run build
+#   # cache:
+#   #   <<: *global_cache
+#   #   policy: push
+#   artifacts:
+#     paths:
+#       - dist/
+#     expire_in: 1 week
+#   tags:
+#     - shell
+#     - dev-110
+#     - development
+#   only:
+#     - main
+
+# deploy-main:
+#   stage: deploy
+#   before_script:
+#     - 'npm i http-server'
+#   #   - 'npm run build'
+#   script:
+#     # - 'pm2 restart ecosystem.config.js --env production --update-env'
+#     - 'pm2 restart ecosystem.config.js --update-env'
+#   after_script:
+#     - 'pm2 save'
+#     - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
+#   environment:
+#     name: production
+#   # cache:
+#   #   <<: *global_cache
+#   #   policy: pull
+#   needs:
+#     - job: build-main
+#   tags:
+#     - shell
+#     - app-511
+#     - production
+#   only:
+#     - main
+## new docker app-510 -------------------
 build-main:
   stage: build
-  # extends: .base-rules
-  # before_script:
-  # - source ~/.bashrc
   script:
     - npm i
     - npm run build
-  # cache:
-  #   <<: *global_cache
-  #   policy: push
-  artifacts:
-    paths:
-      - dist/
-    expire_in: 1 week
+    - docker build -t registry.sipstack.com/sipstack/www .
+    - docker push registry.sipstack.com/sipstack/www
   tags:
     - shell
     - dev-110
     - development
   only:
     - main
-
-
-deploy-main:
-  stage: deploy
-  before_script:
-    - 'npm i http-server'
-  #   - 'npm run build'
-  script:
-    # - 'pm2 restart ecosystem.config.js --env production --update-env'
-    - 'pm2 restart ecosystem.config.js --update-env'
-  after_script:
-    - 'pm2 save'
-    - 'pm2 logs sipstack_whois:8385 --nostream --lines 1'
-  environment:
-    name: production
-  # cache:
-  #   <<: *global_cache
-  #   policy: pull
-  needs:
-    - job: build-main
-  tags:
-    - shell
-    - app-511
-    - production
-  only:
-    - main
-
-
 # old (unused) ------------------------------------------------------------------------------
 
 # deploy-develop:
@@ -166,8 +178,6 @@ deploy-main:
 #   # rules:
 #   #   - if: '$CI_COMMIT_MESSAGE =~ /(nopipe|no-pipeline)/'
 #   #     when: never
-
-
 
 # deploy-main:
 #   image:
