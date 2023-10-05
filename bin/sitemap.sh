@@ -4,7 +4,7 @@
 URL="https://www.sipstack.com/"
 
 # values: always hourly daily weekly monthly yearly never
-FREQ="weekly"
+FREQ="monthly"
 
 # begin new sitemap
 exec 1> sitemap.xml
