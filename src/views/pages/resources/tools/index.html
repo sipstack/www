@@ -80,8 +80,10 @@
             contentType: false,
             data: new FormData($('#form')[0]),
             xhrFields: {
+                withCredentials: true,
                 responseType: 'blob' // Set the response type to blob
             },
+            crossDomain: true,
             success: function(response) {
                 const downloadLink = document.createElement('a');
                 const url = window.URL.createObjectURL(response);
