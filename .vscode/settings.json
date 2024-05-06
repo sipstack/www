@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
 
   "prettier.enable": true,
@@ -26,8 +26,6 @@
   "json.validate.enable": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    
+    "editor.formatOnSave": true
   }
-  
 }
